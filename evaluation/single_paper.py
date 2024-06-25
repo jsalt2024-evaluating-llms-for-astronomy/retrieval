@@ -2,6 +2,8 @@ import random
 import os
 import anthropic
 import yaml
+import json
+from tqdm.auto import tqdm
 
 path = "/Users/charlesoneill/Desktop/~/Desktop/arxiv-data"
 
@@ -35,7 +37,8 @@ def claude(prompt, **kwargs):
         max_tokens=1024,
         messages=[
             {"role": "user", "content": prompt}
-        ]
+        ],
+        **kwargs,
     )
     return message.content[0].text
 
@@ -46,7 +49,7 @@ NUM_QUESTIONS = 100
 API_KEY = config['anthropic_api_key']
 question_answer_dict = {}
 
-for i in range(NUM_QUESTIONS):
+for i in tqdm(range(NUM_QUESTIONS)):
 
     introduction = ''
 
@@ -71,9 +74,15 @@ for i in range(NUM_QUESTIONS):
     # Print everything
     print(folder_file)
     print(question)
+    print('\n\n\n')
+    print('-' * 100)
 
 
-    break
+    # break
+
+# Save the dictionary as a JSON
+with open('../data/single_paper.json', 'w') as f:
+    json.dump(question_answer_dict, f, indent=4)
 
 
 
