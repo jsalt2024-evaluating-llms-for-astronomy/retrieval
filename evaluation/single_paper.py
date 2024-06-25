@@ -1,6 +1,7 @@
 import random
 import os
 import anthropic
+import yaml
 
 path = "/Users/charlesoneill/Desktop/~/Desktop/arxiv-data"
 
@@ -40,8 +41,9 @@ def claude(prompt, **kwargs):
 
 
 # Create the dataset
+config = yaml.safe_load(open('../config.yaml', 'r'))
 NUM_QUESTIONS = 100
-API_KEY = "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",
+API_KEY = config['anthropic_api_key']
 question_answer_dict = {}
 
 for i in range(NUM_QUESTIONS):
@@ -67,7 +69,9 @@ for i in range(NUM_QUESTIONS):
     question_answer_dict[folder_file] = {'question': question, 'introduction': introduction}
 
     # Print everything
-    print(f"Question {i+1}: {question}")
+    print(folder_file)
+    print(question)
+
 
     break
 
