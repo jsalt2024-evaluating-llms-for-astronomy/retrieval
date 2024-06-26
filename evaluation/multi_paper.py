@@ -123,7 +123,7 @@ def scrape_citations(text):
     return citations
 
 def citation_density(content, k, mode = "topk", maxn = 12):
-    num_citations = np.array([len(scrape_citations(p)) for p in content])
+    num_citations = np.array([len(set(scrape_citations(p))) for p in content])
     
     if mode == "topk":
         indices = np.flip(np.argsort(num_citations))[:k]
@@ -146,37 +146,37 @@ def get_best_paragraphs(content, k, mode = "threshold"):
     return string
 
 def claude_paragraphs(paper):
+    # literally using a less overloaded character '{' to split the paragraphs}
     message = client.messages.create(
         model="claude-3-5-sonnet-20240620",
         max_tokens=500,
         temperature=0,
-        
         system="""You are an expert astronomer. Given this list of paragraphs from a scientific paper, generate a focused research question for each paragraph.
                 Formulate the question such that it is focused and concise, but covers all topics in the paragraph. 
                 Then assess which paragraphs are most on-topic and closely related to their research question.
                 If the question has multiple sub-questions, a good and focused paragraph shoudl address all of them.
-                Return the 3 best question-paragraph pairs in this format: (index, question).
-                Be concise and do not include any text before or after the formatted question-answer pairs.""",
+                Return the 3 best question-paragraph pairs in this format: {index, question}.
+                Do not include any text before or after each {index, question}, including any introduction or rationale.""",
                 # Also return the 3 paragraphs and corresponding questions that are least on-topic and related to the research question.
-        
         messages=[{"role": "user",
                 "content": [{"type": "text", "text": paper,}] }]
     )
     
     return message
 
-def process_paper(paper):
+def process_paper(paper, verbose = False):
     content = paper['text']
     paragraphs = get_best_paragraphs(content, 5)
     message = claude_paragraphs(paragraphs)
     message = message.content[0].text
     
     results = []
+    if verbose: print(message)
     for pair in message.split('\n\n'):
-        if '(' in pair:
+        if '{' and '}' in pair:
             index, question = pair[1:-1].split(',', 1)
             paragraph = content[int(index)]
-            results.append({'question': question, 'paragraph': paragraph, 'citations': scrape_citations(paragraph)})
+            results.append({'title': paper['title'], 'id': paper['id'], 'question': question, 'paragraph': paragraph, 'citations': set(scrape_citations(paragraph))})
     
     return results
 
