@@ -6,10 +6,13 @@ import requests
 from bs4 import BeautifulSoup
 import nest_asyncio
 import asyncio
-from playwright.async_api import async_playwright
+from playwright.async_api import async_playwright, ElementHandle
 from markdownify import markdownify as md
 import yaml
 from urllib.parse import urlencode, quote_plus
+from tqdm import tqdm
+import arxiv
+arxiv_client = arxiv.Client()
 
 ads_token = "6pmanBZytaNltPsonmdbJATGnDZO7mAxluAxgYfz"
 with open("/users/christineye/retrieval/config.yaml", 'r') as stream:
@@ -42,12 +45,12 @@ def pull_arxiv_and_doi(idlist):
             doi = item
     return arxiv, doi
 
-def format_reviews(json_docs, cutoff = 2000):
+def format_reviews(json_docs, cutoff = 2010):
     all_reviews = []
     for result in json_docs:
         if int(result['year']) > cutoff:
             arxiv, doi = pull_arxiv_and_doi(result['identifier'])
-            if doi != "" and arxiv != "":
+            if doi != "":
                 url = "https://www.annualreviews.org/content/journals/" + doi
                 all_reviews.append({'title': result['title'][0], "id": arxiv, 'url': url, })
     return all_reviews
@@ -55,22 +58,50 @@ def format_reviews(json_docs, cutoff = 2000):
 # FETCHING PAPER TEXTS
 async def fetch_page_content(url):
     async with async_playwright() as playwright:
-        browser = await playwright.chromium.launch(headless=False)  # Set headless=True if you don't need a browser UI
+        browser = await playwright.chromium.launch(headless=False)  
         context = await browser.new_context()
         page = await context.new_page()
 
         await page.goto(url)
         await page.wait_for_load_state('networkidle')
 
+        # Extract the reference content
+        ref_elements = await page.query_selector_all('span.references li.refbody')
+
+        async def process_ref(element: ElementHandle):
+            surname_elements, year_element, collab_element = await asyncio.gather(
+                element.query_selector_all('span.reference-surname'),
+                #element.query_selector_all('span.reference-given-names'),
+                element.query_selector('span.reference-year'),
+                #element.query_selector('span.reference-source'),
+                element.query_selector('span.reference-collab')
+            )
+
+            surnames = await asyncio.gather(*[surname.inner_text() for surname in surname_elements])
+            #given_names = await asyncio.gather(*[given_names.inner_text() for given_names in given_names_elements])
+            year = await year_element.inner_text() if year_element else None
+            #source = await source_element.inner_text() if source_element else None
+            collab = await collab_element.inner_text() if collab_element else None
+            
+            return {
+                'surnames': surnames,
+                #'given_names': given_names,
+                'year': year,
+                #'source': source,
+                'collab': collab,
+            }
+
+        ref_data = await asyncio.gather(*[process_ref(element) for element in ref_elements])
+        
         content = await page.content()
+        soup = BeautifulSoup(content, 'html.parser')
+        paragraphs = [md(p.text) for p in soup.find_all('p')]
 
         await browser.close()
-        
-        soup = BeautifulSoup(content, 'html.parser')
-        
-        paragraphs = [md(p.text) for p in soup.find_all('p')]
-        
-        return paragraphs
+        return {
+            'references': ref_data,
+            'paragraphs': paragraphs
+        }
 
 async def fetch_multiple_pages(urls):
     tasks = [fetch_page_content(url) for url in urls]
@@ -80,40 +111,80 @@ def get_page_contents(reviews):
     urls = [review["url"] for review in reviews]
     return asyncio.run(fetch_multiple_pages(urls))
 
+
 def scrape_all_papers(reviews, batch_size = 10):
     reviews_with_text = []
 
-    for i in range(len(reviews) // batch_size + 1):
+    for i in tqdm(range(len(reviews) // batch_size + 1)):
         batch = reviews[i * batch_size : i * batch_size + (batch_size - 1)]
         content = get_page_contents(batch)
         
         for j, paper in enumerate(content):
-            if "institutional or personal subscription" not in paper[-1]:
+            paper['paragraphs'] = [re.sub('\(#right-ref-[A-Za-z0-9]+\)', '', p) for p in paper['paragraphs']]
+
+            if "institutional or personal subscription" not in paper['paragraphs'][-1]:
                 review = reviews[i * batch_size + j].copy()
-                review['text'] = paper
+                review['text'] = paper['paragraphs']
+                review['fullbib'] = paper['references']
                 reviews_with_text.append(review)
     
     return reviews_with_text
 
-def load_papers(from_file = True):
+def load_papers(from_file = True, batch_size = 10):
     if from_file:
         with open('./araa_papers.json', 'r') as f:
             papers = json.load(f)
     else:
         review_json = load_araa(from_file = True)
         reviews = format_reviews(review_json)
-        papers = scrape_all_papers(reviews)
+        print('Number of reviews:', len(reviews))
+        papers = scrape_all_papers(reviews, batch_size = batch_size)
     
     return papers
 
+
+def link_to_bib(review, citations): # paragraph level
+    cited_refs = []
+    for citation in set(citations):
+        for ref in review['fullbib']:
+            if ref['year'] == citation[-1]:
+                if set(citation[:-1]).issubset(ref['surnames']) or citation[0] == ref['collab']:
+                    cited_refs.append(ref)
+    
+    return cited_refs
+
+def search_arxiv(ref):
+    query = ""
+    for i, surname in enumerate(ref['surnames']):
+        if '-' not in surname: query += "au:"
+        query += surname.replace("'","")
+        
+        if i != len(ref['surnames']) - 1: query += " AND "
+    
+    search = arxiv.Search(query = query, max_results = 10)
+    results = arxiv_client.results(search)
+    
+    for r in results:
+        valid = True
+        if r.published.year > int(ref['year']) + 2 or r.published.year < int(ref['year']) - 2:
+            continue
+        for i, surname in enumerate(ref['surnames']):
+            if surname not in r.authors[i].name:
+                valid = False
+                break
+        if valid: return r.entry_id.split('/')[-1]
+    return None
+
+
 # PARAGRAPH SELECTION AND QUERY GENERATION
 def scrape_citations(text):
-    patterns = ['([A-Z][a-z´]+)\s+(\d{4})', # Name Year
-                '([A-Z][a-z´]+) et al\. (\d{4})', # Name et al. Year
-                '([A-Z][a-z´]+) et al\. \((\d{4})\)', # Name et al. (Year)
-                '([A-Z][a-z´]+) & ([A-Z][a-z]+) (\d{4})', # Name & Name Year
-                '([A-Z][a-z´]+) & ([A-Z][a-z]+) \((\d{4})\)',
-                '([A-Z][a-z´]+),\s+([A-Z][a-z]+) & ([A-Z][a-z]+) (\d{4})']
+    patterns = ['([A-Z][A-Za-z´-]+) \(?(\d{4})', # Name Year
+                '([A-Z][A-Za-z´-]+) et al\. \(?(\d{4})',
+                '([A-Z][A-Za-z´-]+) & ([A-Z][a-z]+) \(?(\d{4})',
+                '([A-Z][A-Za-z´-]+),\s+([A-Z][a-z]+) & ([A-Z][a-z]+) \(?(\d{4})',
+                '([A-Z][A-Za-z]+) ([A-Z][a-zA-Z]+) et al. \(?(\d{4})',
+                '([A-Z][a-zA-Z]+[A-Z][a-zA-Z]+) et al. \(?(\d{4})',
+                '([A-Z][a-zA-Z]+\s[A-Z][a-zA-Z]+) & ([A-Z][a-zA-Z]+\s[A-Z][a-zA-Z]+) \(?(\d{4})']
     
     citations = []
     for pattern in patterns:
@@ -122,7 +193,7 @@ def scrape_citations(text):
     
     return citations
 
-def citation_density(content, k, mode = "topk", maxn = 12):
+def citation_density(content, k, mode = "topk", maxn = 15):
     num_citations = np.array([len(set(scrape_citations(p))) for p in content])
     
     if mode == "topk":
@@ -170,15 +241,30 @@ def process_paper(paper, verbose = False):
     message = claude_paragraphs(paragraphs)
     message = message.content[0].text
     
-    results = []
+    pqueries = []
     if verbose: print(message)
     for pair in message.split('\n\n'):
         if '{' and '}' in pair:
             index, question = pair[1:-1].split(',', 1)
             paragraph = content[int(index)]
-            results.append({'title': paper['title'], 'id': paper['id'], 'question': question, 'paragraph': paragraph, 'citations': set(scrape_citations(paragraph))})
+            citations = set(scrape_citations(paragraph))
+            pqueries.append({'title': paper['title'], 'id': paper['id'], 
+                            'question': question, 'paragraph': paragraph, 
+                            'citations': citations, 'bibs': link_to_bib(paper, citations)})
     
-    return results
+    return pqueries
+
+def arxiv_link(pqueries): # on the paper level (K queries)
+    for i, query in enumerate(pqueries):
+        query['arxiv'] = []
+        for bib in query['bibs']:
+            arxiv_id = search_arxiv(bib)
+            if arxiv_id is not None:
+                query['arxiv'].append(arxiv_id)
+    
+    query['arxiv'] = set(query['arxiv'])
+            
+    return pqueries
 
 # MAIN
 def main():
@@ -189,6 +275,16 @@ def main():
     query_pairs = []
     for paper in test_papers:
         query_pairs.append(process_paper(paper['text']))
+
+    fname = ""#'../data/multi_paper_examples.json'
+    with open(fname, 'w') as json_file:
+        for paper in query_pairs:
+            for entry in paper:
+                partial_json = json.dumps({k: v for k, v in entry.items() if k != 'arxiv'}, indent = 2)
+                citations_json = json.dumps(list(entry['arxiv']), separators=(',', ':'))
+                combined_json = partial_json.rstrip('}') + ',"arxiv": ' + citations_json + '\n}'
+                json_file.write(combined_json)
+                json_file.write('\n')
 
 if __name__ == '__main__':
     main()
