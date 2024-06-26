@@ -235,9 +235,9 @@ def claude_paragraphs(paper):
     
     return message
 
-def process_paper(paper, verbose = False):
+def process_paper(paper, verbose = False, mode = "topk", k = 10):
     content = paper['text']
-    paragraphs = get_best_paragraphs(content, 5)
+    paragraphs = get_best_paragraphs(content, k, mode)
     message = claude_paragraphs(paragraphs)
     message = message.content[0].text
     
@@ -281,8 +281,9 @@ def main():
         for paper in query_pairs:
             for entry in paper:
                 partial_json = json.dumps({k: v for k, v in entry.items() if k != 'arxiv'}, indent = 2)
-                citations_json = json.dumps(list(entry['arxiv']), separators=(',', ':'))
-                combined_json = partial_json.rstrip('}') + ',"arxiv": ' + citations_json + '\n}'
+                arxiv_json = json.dumps(list(entry['arxiv']), separators=(',', ':'))
+                citations_json = json.dumps(list(entry['citations']), separators=(',', ':'))
+                combined_json = partial_json.rstrip('}') + ', "citations": ' + citations_json + ',\n "arxiv": ' + arxiv_json + '\n}'
                 json_file.write(combined_json)
                 json_file.write('\n')
 
