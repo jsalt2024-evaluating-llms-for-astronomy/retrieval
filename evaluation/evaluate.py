@@ -5,13 +5,13 @@ from collections import defaultdict
 
 class RetrievalSystem(ABC):
     @abstractmethod
-    def retrieve(self, query: str, **kwargs) -> List[str]:
+    def retrieve(self, query: str, top_k: int = 10) -> List[str]:
         """
         Retrieve relevant documents based on the given query.
         
         Args:
             query (str): The input query.
-            **kwargs: Additional arguments (e.g., top_k).
+            top_k (int): Number of top documents to retrieve.
         
         Returns:
             List[str]: List of document IDs (folder_file) of the retrieved documents.
@@ -28,12 +28,11 @@ class Evaluator:
         with open(file_path, 'r') as f:
             return json.load(f)
     
-    def evaluate(self, queries: List[str], top_k: int = 10) -> Dict[str, float]:
+    def evaluate(self, top_k: int = 10) -> Dict[str, float]:
         """
         Evaluate the retrieval system using various IR metrics.
         
         Args:
-            queries (List[str]): List of queries to evaluate.
             top_k (int): Number of top documents to retrieve.
         
         Returns:
@@ -41,9 +40,9 @@ class Evaluator:
         """
         results = defaultdict(list)
         
-        for query in queries:
-            retrieved_docs = self.retrieval_system.retrieve(query, top_k=top_k)
-            relevant_doc = self._get_relevant_doc(query)
+        for query, data in self.ground_truth.items():
+            retrieved_docs = self.retrieval_system.retrieve(data['question_intro'], top_k=top_k)
+            relevant_doc = query  # The folder_file is the key in ground truth
             
             precision = self._calculate_precision(retrieved_docs, relevant_doc)
             recall = self._calculate_recall(retrieved_docs, relevant_doc)
@@ -56,10 +55,6 @@ class Evaluator:
             results['mrr'].append(mrr)
         
         return {metric: sum(values) / len(values) for metric, values in results.items()}
-    
-    def _get_relevant_doc(self, query: str) -> str:
-        # In this case, we assume the query is the key in the ground truth
-        return query
     
     @staticmethod
     def _calculate_precision(retrieved_docs: List[str], relevant_doc: str) -> float:
@@ -83,24 +78,17 @@ class Evaluator:
         except ValueError:
             return 0
 
-def main():
-    # Example usage
-    class DummyRetrievalSystem(RetrievalSystem):
-        def retrieve(self, query: str, **kwargs) -> List[str]:
-            # This is just a dummy implementation
-            return [f"doc_{i}" for i in range(kwargs.get('top_k', 10))]
-    
-    retrieval_system = DummyRetrievalSystem()
+def main(retrieval_system: RetrievalSystem):
     evaluator = Evaluator(retrieval_system, '../data/single_paper.json')
-    
-    # Assuming the keys in single_paper.json are the queries
-    with open('../data/single_paper.json', 'r') as f:
-        queries = list(json.load(f).keys())
-    
-    results = evaluator.evaluate(queries, top_k=10)
+    results = evaluator.evaluate(top_k=10)
     print("Evaluation Results:")
     for metric, value in results.items():
         print(f"{metric}: {value:.4f}")
 
 if __name__ == "__main__":
-    main()
+    # This part will be commented out, as we'll import and use this script from the Bag of Words script
+    pass
+    # Example usage:
+    # from bow_retrieval import BagOfWordsRetrievalSystem
+    # retrieval_system = BagOfWordsRetrievalSystem("charlieoneill/jsalt-astroph-dataset")
+    # main(retrieval_system)
