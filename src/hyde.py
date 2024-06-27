@@ -33,14 +33,13 @@ class HydeRetrievalSystem(RetrievalSystem):
 
     def retrieve(self, query: str, top_k: int = 10):
         doc = self.generate_doc(query)
-        
-        similarities = cosine_similarity(doc, self.embeddings).flatten()
+        doc_embedding = self.embed_doc(doc)
+        similarities = cosine_similarity(doc_embedding, self.embeddings).flatten()
         top_indices = similarities.argsort()[-top_k:][::-1]
         
         return [self.document_ids[i] for i in top_indices]
 
     def generate_doc(self, query: str, max_doclen: int = 500):
-        
         message = self.client.messages.create(
             model = "claude-3-5-sonnet-20240620",
             max_tokens = max_doclen,
