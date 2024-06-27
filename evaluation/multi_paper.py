@@ -299,21 +299,22 @@ def main():
     papers = load_papers(from_file = True)
     print('Number of papers:', len(papers))
 
-    test_papers = papers[:3]
     query_pairs = []
-    for paper in test_papers:
+    for paper in papers:
         query_pairs.append(process_paper(paper['text']))
 
+    query_pairs_formatted = {}
+    for paper in query_pairs:
+        for i, query in enumerate(paper):
+            id_str = query['id'].split('_')[0] + '_' + str(i + 1)
+            query_pairs_formatted[id_str] = {'title':query['title'], 'question':query['question'], 
+                                            'text': query['paragraph'], 'citations':query['citations'],
+                                            'arxiv': list(query['arxiv'])}
+
     fname = ""#'../data/multi_paper_examples.json'
-    with open(fname, 'w') as json_file:
-        for paper in query_pairs:
-            for entry in paper:
-                partial_json = json.dumps({k: v for k, v in entry.items() if k != 'arxiv'}, indent = 2)
-                arxiv_json = json.dumps(entry['arxiv'], separators=(',', ':'))
-                citations_json = json.dumps(entry['citations'], separators=(',', ':'))
-                combined_json = partial_json.rstrip('}') + ', "citations": ' + citations_json + ',\n "arxiv": ' + arxiv_json + '\n}'
-                json_file.write(combined_json)
-                json_file.write('\n')
+    
+    with open('../data/multi_paper.json', 'w') as f:
+        json.dump(query_pairs_formatted, f, indent = 2)
 
 if __name__ == '__main__':
     main()
