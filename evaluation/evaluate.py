@@ -33,8 +33,8 @@ class Evaluator:
 
         results = {}
         
-        #single_results = self._evaluate_single_document(single_doc_file, top_k)
-        results['single_doc'] = None #single_results
+        single_results = self._evaluate_single_document(single_doc_file, top_k)
+        results['single_doc'] = single_results
 
         multi_results = self._evaluate_multi_document(multi_doc_file, top_k)
         results['multi_doc'] = multi_results
@@ -73,11 +73,10 @@ class Evaluator:
         ground_truth = self._load_ground_truth(ground_truth_file)
         results = defaultdict(list)
         
-        for item in tqdm(ground_truth, desc="Multi-doc progress"):
-            item = item[list(item.keys())[0]]
+        for k, item in tqdm(ground_truth.items(), desc="Multi-doc progress"):
             query = item['question']
             retrieved_docs = self.retrieval_system.retrieve(query, top_k=top_k)
-            relevant_docs = self._map_arxiv_to_filenames(item['arxiv'])
+            relevant_docs = item['arxiv'] #self._map_arxiv_to_filenames(item['arxiv'])
 
             # Remove 'astro-ph' prefix from arxiv IDs
             retrieved_docs = [doc.replace('astro-ph', '') for doc in retrieved_docs]
