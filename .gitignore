@@ -1,3 +1,5 @@
 config.yaml
 # Anything ending in pkl
 *.pkl
+# Any pycache
+__pycache__
