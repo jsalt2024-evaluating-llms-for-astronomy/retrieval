@@ -1,0 +1,52 @@
+
+
+
+
+
+
+
+Multi-doc progress:   5%|█████▏                                                                                          | 12/221 [00:14<04:11,  1.21s/it]
+Traceback (most recent call last):
+  File "/Users/charlesoneill/retrieval/src/bag_of_words.py", line 117, in <module>
+    main()
+  File "/Users/charlesoneill/retrieval/src/bag_of_words.py", line 114, in main
+    evaluate_main(retrieval_system, "BagOfWordsAll")
+  File "/Users/charlesoneill/retrieval/src/../evaluation/evaluate.py", line 135, in main
+    results = evaluator.evaluate('../data/single_paper.json', '../data/multi_paper.json', top_k=10)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/charlesoneill/retrieval/src/../evaluation/evaluate.py", line 37, in evaluate
+    multi_results = self._evaluate_multi_document(multi_doc_file, top_k)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/charlesoneill/retrieval/src/../evaluation/evaluate.py", line 76, in _evaluate_multi_document
+    retrieved_docs = self.retrieval_system.retrieve(query, top_k=top_k)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/charlesoneill/retrieval/src/bag_of_words.py", line 103, in retrieve
+    similarities = cosine_similarity(query_vector, self.tfidf_matrix).flatten()
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/charlesoneill/miniconda3/envs/jsalt/lib/python3.12/site-packages/sklearn/utils/_param_validation.py", line 213, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/charlesoneill/miniconda3/envs/jsalt/lib/python3.12/site-packages/sklearn/metrics/pairwise.py", line 1676, in cosine_similarity
+    K = safe_sparse_dot(X_normalized, Y_normalized.T, dense_output=dense_output)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/charlesoneill/miniconda3/envs/jsalt/lib/python3.12/site-packages/sklearn/utils/extmath.py", line 208, in safe_sparse_dot
+    ret = a @ b
+          ~~^~~
+  File "/Users/charlesoneill/miniconda3/envs/jsalt/lib/python3.12/site-packages/scipy/sparse/_base.py", line 669, in __matmul__
+    return self._matmul_dispatch(other)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/charlesoneill/miniconda3/envs/jsalt/lib/python3.12/site-packages/scipy/sparse/_base.py", line 580, in _matmul_dispatch
+    return self._matmul_sparse(other)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/charlesoneill/miniconda3/envs/jsalt/lib/python3.12/site-packages/scipy/sparse/_compressed.py", line 529, in _matmul_sparse
+    other = self.__class__(other)  # convert to this format
+            ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/charlesoneill/miniconda3/envs/jsalt/lib/python3.12/site-packages/scipy/sparse/_compressed.py", line 35, in __init__
+    arg1 = arg1.asformat(self.format)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/charlesoneill/miniconda3/envs/jsalt/lib/python3.12/site-packages/scipy/sparse/_base.py", line 409, in asformat
+    return convert_method(copy=copy)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/charlesoneill/miniconda3/envs/jsalt/lib/python3.12/site-packages/scipy/sparse/_csc.py", line 52, in tocsr
+    csc_tocsr(M, N,
+KeyboardInterrupt
