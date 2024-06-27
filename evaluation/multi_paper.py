@@ -12,6 +12,7 @@ import yaml
 from urllib.parse import urlencode, quote_plus
 from tqdm import tqdm
 import arxiv
+from urllib.parse import urlencode, quote_plus
 arxiv_client = arxiv.Client()
 
 ads_token = "6pmanBZytaNltPsonmdbJATGnDZO7mAxluAxgYfz"
@@ -23,10 +24,9 @@ client = anthropic.Anthropic(api_key = api_key)
 # COLLECTING DATA FROM ARA&A
 def load_araa(from_file = True):
     if from_file:
-        with open('./araa.json', 'r') as f:
+        with open('./araa_index.json', 'r') as f:
             json_results = json.load(f)
     else:
-        from urllib.parse import urlencode, quote_plus
         query = {"q": "bibstem:ara&a", "fl": "title, year, bibcode, identifier", "rows":1000}
         encoded_query = urlencode(query)
         results = requests.get("https://api.adsabs.harvard.edu/v1/search/query?{}".format(encoded_query), \
@@ -37,12 +37,14 @@ def load_araa(from_file = True):
 
 def pull_arxiv_and_doi(idlist):
     arXiv_pattern = r'arXiv:\d{4}\.\d{4}'
-    arxiv, doi = "", ""
+    arxiv, doi = None, None
     for item in idlist:
         if re.match(arXiv_pattern, item):
             arxiv = item.split('arXiv:')[1]
         elif '10.1146/annurev' in item:
             doi = item
+        elif re.match('([a-zA-Z:.]*)astro-ph/(\d*)', item):
+            arxiv = item.split('astro-ph/')[1]
     return arxiv, doi
 
 def format_reviews(json_docs, cutoff = 2010):
@@ -50,7 +52,7 @@ def format_reviews(json_docs, cutoff = 2010):
     for result in json_docs:
         if int(result['year']) > cutoff:
             arxiv, doi = pull_arxiv_and_doi(result['identifier'])
-            if doi != "":
+            if doi is not None:
                 url = "https://www.annualreviews.org/content/journals/" + doi
                 all_reviews.append({'title': result['title'][0], "id": arxiv, 'url': url, })
     return all_reviews
@@ -149,30 +151,53 @@ def link_to_bib(review, citations): # paragraph level
         for ref in review['fullbib']:
             if ref['year'] == citation[-1]:
                 if set(citation[:-1]).issubset(ref['surnames']) or citation[0] == ref['collab']:
-                    cited_refs.append(ref)
+                    if ref not in cited_refs:
+                        cited_refs.append(ref)
     
     return cited_refs
 
-def search_arxiv(ref):
-    query = ""
-    for i, surname in enumerate(ref['surnames']):
-        if '-' not in surname: query += "au:"
-        query += surname.replace("'","")
-        
-        if i != len(ref['surnames']) - 1: query += " AND "
+def search_arxiv(ref, verbose = False):
+    if int(ref['year']) < 2000:
+        return None
     
-    search = arxiv.Search(query = query, max_results = 10)
-    results = arxiv_client.results(search)
+    # query = ""
+    # for i, surname in enumerate(ref['surnames']):
+    #     if '-' not in surname: 
+    #         query += "au:"
+    #         query += surname.replace("'","")
+    #         if i != len(ref['surnames']) - 1: query += " AND "
     
-    for r in results:
+    # print(query)
+    # search = arxiv.Search(query = query, max_results = 10)
+    # results = arxiv_client.results(search)
+
+    qstring = "first_author:{} ".format(ref['surnames'][0])
+    for surname in ref['surnames'][1:]:
+        if surname != "":
+            qstring += "author:{} ".format(surname)
+    qstring += "year:{}".format(ref['year'])
+    if verbose: print(qstring)
+    
+    query = {"q": qstring, "fl": "title, year, bibcode, author, identifier", "rows":1000}
+    encoded_query = urlencode(query)
+    results = requests.get("https://api.adsabs.harvard.edu/v1/search/query?{}".format(encoded_query), \
+                        headers={'Authorization': 'Bearer ' + ads_token})
+    
+    json_results = results.json()['response']['docs']
+    
+    
+    for r in json_results:
         valid = True
-        if r.published.year > int(ref['year']) + 2 or r.published.year < int(ref['year']) - 2:
-            continue
+        # if r.published.year > int(ref['year']) + 2 or r.published.year < int(ref['year']) - 2:
+        #     continue
         for i, surname in enumerate(ref['surnames']):
-            if surname not in r.authors[i].name:
-                valid = False
+            if i > (len(r['author']) - 1) or surname not in r['author'][i]:
                 break
-        if valid: return r.entry_id.split('/')[-1]
+        if valid: 
+            if verbose: print(r['identifier'])
+            arxiv, doi = pull_arxiv_and_doi(r['identifier'])
+            return arxiv
+    print('Failed on ' + ref['surnames'][0] + ' ' + ref['year'])
     return None
 
 
@@ -193,19 +218,22 @@ def scrape_citations(text):
     
     return citations
 
-def citation_density(content, k, mode = "topk", maxn = 15):
+def citation_density(content, k, mode = "topk", maxn = 20):
     num_citations = np.array([len(set(scrape_citations(p))) for p in content])
     
     if mode == "topk":
-        indices = np.flip(np.argsort(num_citations))[:k]
+        indices = np.flip(np.argsort(num_citations))
+        mask = [num_citations[index] < maxn for index in indices]
+        indices = indices[mask][:k]
+
     elif mode == "threshold":
-        mask = np.logical_and(num_citations >= k, num_citations < maxn)
-        indices = np.arange(len(content))[mask]
-    
+        tmask = np.logical_and(num_citations >= k)
+        indices = np.arange(len(content))[tmask]
+
     return np.sort(indices)
 
-def get_best_paragraphs(content, k, mode = "threshold"):
-    indices = citation_density(content, k, mode)
+def get_best_paragraphs(content, k, mode = "topk", maxn = 25):
+    indices = citation_density(content, k, mode, maxn)
     string = ""
     
     for index in indices:
@@ -222,10 +250,10 @@ def claude_paragraphs(paper):
         model="claude-3-5-sonnet-20240620",
         max_tokens=500,
         temperature=0,
-        system="""You are an expert astronomer. Given this list of paragraphs from a scientific paper, generate a focused research question for each paragraph.
-                Formulate the question such that it is focused and concise, but covers all topics in the paragraph. 
+        system="""You are an expert astronomer. Given this list of paragraphs from a scientific paper, generate a focused research question for each paragraph that is answered by the paragraph text.
+                Formulate the question such that it is expert-level, focused, and relevant to the paragraph. Be concise.
                 Then assess which paragraphs are most on-topic and closely related to their research question.
-                If the question has multiple sub-questions, a good and focused paragraph shoudl address all of them.
+                If the question has multiple sub-questions, a good and focused paragraph should address all of them.
                 Return the 3 best question-paragraph pairs in this format: {index, question}.
                 Do not include any text before or after each {index, question}, including any introduction or rationale.""",
                 # Also return the 3 paragraphs and corresponding questions that are least on-topic and related to the research question.
@@ -281,8 +309,8 @@ def main():
         for paper in query_pairs:
             for entry in paper:
                 partial_json = json.dumps({k: v for k, v in entry.items() if k != 'arxiv'}, indent = 2)
-                arxiv_json = json.dumps(list(entry['arxiv']), separators=(',', ':'))
-                citations_json = json.dumps(list(entry['citations']), separators=(',', ':'))
+                arxiv_json = json.dumps(entry['arxiv'], separators=(',', ':'))
+                citations_json = json.dumps(entry['citations'], separators=(',', ':'))
                 combined_json = partial_json.rstrip('}') + ', "citations": ' + citations_json + ',\n "arxiv": ' + arxiv_json + '\n}'
                 json_file.write(combined_json)
                 json_file.write('\n')
