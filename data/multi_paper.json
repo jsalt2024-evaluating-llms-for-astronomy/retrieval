@@ -4206,186 +4206,220 @@
       "0808.0260"
     ]
   },
-  "_1": {
-    "title": "Evidence for Initial Mass Function Variation in Massive Early-Type Galaxies",
-    "question": " What physical processes have been proposed to explain the shape of the initial mass function (IMF), and how do observations constrain its environmental dependence?",
-    "text": "To date, there is no complete theoretical understanding of the origin of the whole shape of the IMF, including the characteristic mass of the break or turnover. A wide range of physical processes has been invoked as being responsible for shaping the IMF during star formation, including turbulent fragmentation, magnetic fields, and radiative feedback from massive protostars (e.g., Padoan & Nordlund 2002, Bonnell et al. 2006, Krumholz 2006, Hennebelle & Chabrier 2008, Bate 2009, Hopkins 2012). Some of these conjectures favor an IMF that depends on the environment in which star formation proceeds: e.g., those where the characteristic mass scale is set by the Jeans mass (or its equivalent in turbulent models), which in turn depends on the ambient density, temperature, etc. Extensive efforts to measure the IMF in different star-forming regions in the MW have not found compelling evidence for systematic dependence on such properties (e.g., Bastian et al. 2010), although localized deviations from the standard form do seem to be present in a few regions (e.g., Luhman 2004, Lu et al. 2013). Hence much of the theoretical modeling effort cited above was aimed at accounting for the apparent near-universality of the IMF.",
+  "Accretion_1": {
+    "title": "Accretion onto Pre-Main-Sequence Stars",
+    "question": " What are the key findings from magnetic field reconstructions of T Tauri stars, and how do they relate to disk truncation and accretion processes?",
+    "text": "As an example, \nFigure 3\n shows the reconstructed magnetic field of V2129 Oph, indicating separately the complex 1.2-kG octupolar surface field and the 0.35-kG dipolar large-scale field, the latter tilted relative to the stellar rotation axis by 20\u00b0 (Donati et al. 2007, Gregory et al. 2008). In these magnetic field maps, the quadrupolar fields are assumed to be negligible because their presence would channel the accretion flow to equatorial locations on the star, in contrast to the detections of polar accretion spots. The weaker dipole fields found in Zeeman\u2013Doppler imaging campaigns lead to smaller truncation radii than if the total magnetic flux is used (Bessolaz et al. 2008, Johnstone et al. 2014). However, the dipole field strengths of dark spots may be underestimated, depending on whether the surface filling factor is considered (Chen & Johns-Krull 2013) or if magnetic flux cancellation is important (see the review by Hussain & Alecian 2014). In any case, a truncation radius near or inside corotation is consistent with the structure of the inner disk (see the review by Dullemond & Monnier 2010), including the inner radius of CO emission (Najita et al. 2003, Salyk et al. 2011). These truncation radii are also consistent with the location of extinction events, which are caused by disk warps associated with accretion along inclined dipoles (e.g., Bouvier et al. 2007, McGinnis et al. 2015) and have periods that are roughly consistent with corotation.\n",
     "citations": [
       [
-        "Padoan",
-        "Nordlund",
-        "2002"
+        "Hussain",
+        "Alecian",
+        "2014"
       ],
       [
-        "Bastian",
+        "Dullemond",
+        "Monnier",
         "2010"
       ],
       [
-        "Lu",
-        "2013"
+        "Salyk",
+        "2011"
       ],
       [
-        "Krumholz",
-        "2006"
-      ],
-      [
-        "Hennebelle",
-        "Chabrier",
-        "2008"
-      ],
-      [
-        "Bate",
-        "2009"
-      ],
-      [
-        "Chabrier",
-        "2008"
-      ],
-      [
-        "Luhman",
-        "2004"
-      ],
-      [
-        "Bonnell",
-        "2006"
-      ],
-      [
-        "Hopkins",
-        "2012"
-      ],
-      [
-        "Nordlund",
-        "2002"
-      ]
-    ],
-    "arxiv": [
-      "0011465",
-      "1001.2965",
-      "1301.0540",
-      "0608471",
-      "0805.0691",
-      "0811.0163",
-      "0411447",
-      "0603444",
-      "1110.4638"
-    ]
-  },
-  "_2": {
-    "title": "Evidence for Initial Mass Function Variation in Massive Early-Type Galaxies",
-    "question": " How do strong gravitational lensing measurements of low-redshift elliptical galaxies constrain their stellar initial mass functions?",
-    "text": "For many years, the only known low-redshift strong-lens system was Q2237+0305, the Einstein Cross (Huchra et al. 1985). In this case, the lensing galaxy is a barred spiral with \u03c3 \u2248 165 km s\u22121, at z = 0.038, and analysis yields a total Einstein-aperture M/L that is too small to be consistent with a Salpeter or heavier IMF (Ferreras et al. 2010), even assuming no contribution from DM. Smith et al. (2005) discovered the first low-redshift elliptical galaxy known to act as a strong lens. ESO325\u2013G004, at z = 0.034, images a background galaxy into a partial Einstein ring, providing a very robust measurement of the mass projected inside a radius of 1.9 kpc (\u223c0.25 R\neff). With a high velocity dispersion (\u03c3 \u223c300 km s\u22121), absence of any apparent ongoing star formation, negligible rotation, and \u03b1-enhanced abundance pattern, this galaxy is typical of the objects found in other studies to have a (bottom-)heavy IMF. However, Smith & Lucey (2013) showed that the lensing mass implies \u03a8 to be consistent with a MW IMF (\u03b1lens = 1.04 \u00b1 0.15). They assumed a theoretically motivated estimate for the projected DM contribution, but this is a small correction (15%) due to the small projected Einstein radius, and even attributing all mass to the stars yields a sub-Salpeter \u03b1 factor. Three further low-z early-type lens galaxies have since been discovered (Smith et al. 2015, Collier et al. 2018). After corrections for the likely projected DM content, based on cosmological simulations, all of these galaxies have \u03b1 consistent with a MW IMF, on \u223c2-kpc scales. Efforts are underway to enlarge the samples of low-redshift strong lenses (Talbot et al. 2018, Collier et al. 2020). The approach can be augmented with upper limits on \u03b1 from galaxies with close-projected but singly imaged background galaxies, when unambiguous limits on counter-images can be established (Smith et al. 2018).",
-    "citations": [
-      [
-        "Collier",
-        "2018"
-      ],
-      [
-        "Smith",
-        "2018"
-      ],
-      [
-        "However",
-        "Smith",
-        "Lucey",
-        "2013"
-      ],
-      [
-        "Smith",
+        "McGinnis",
         "2015"
       ],
       [
-        "Ferreras",
+        "Monnier",
         "2010"
       ],
       [
-        "Smith",
+        "Alecian",
+        "2014"
+      ],
+      [
+        "Bessolaz",
+        "2008"
+      ],
+      [
+        "Donati",
+        "2007"
+      ],
+      [
+        "Gregory",
+        "2008"
+      ],
+      [
+        "Bouvier",
+        "2007"
+      ],
+      [
+        "Najita",
+        "2003"
+      ],
+      [
+        "Johnstone",
+        "2014"
+      ],
+      [
+        "Johns-Krull",
+        "2013"
+      ]
+    ],
+    "arxiv": [
+      "1402.7130",
+      "1006.3485",
+      "1109.4579",
+      "1502.07692",
+      "1006.1651",
+      "0712.2921",
+      "0709.1414",
+      "0807.0758",
+      "0611787",
+      "0611028",
+      "0608696",
+      "1310.8194",
+      "1301.3182"
+    ]
+  },
+  "Accretion_2": {
+    "title": "Accretion onto Pre-Main-Sequence Stars",
+    "question": " How do high-resolution X-ray spectra of T Tauri stars inform our understanding of accretion shocks and column densities, and how have models evolved to reconcile discrepancies in derived accretion rates?",
+    "text": "\n\nFigure 4\n shows that the high-resolution Chandra spectrum of TW Hya is rich in emission lines, identified with model components produced by the accretion shock and by the stellar corona (Brickhouse et al. 2010). The luminosities of these components are 6.9\u00d71029erg\u00b7s\u22121 for the shock and 3.4\u00d71030erg\u00b7s\u22121 for the corona. Only \u223c4% of the total accretion energy from TW Hya escapes as X-rays, as most of this energy is reprocessed into the ultraviolet-optical continuum emission (e.g., Alencar & Batalha 2002, Herczeg & Hillenbrand 2008, Ingleby et al. 2013). The fluxes in forbidden and intercombination lines of the helium-like ions of nitrogen, oxygen, neon, and magnesium have been modeled with accretion column models aiming to determine departures from the single-column model. The sophistication of these models varies from 1D, stationary models with nonequilibrium ionization (Lamzin 1998, G\u00fcnther et al. 2007b, Lamzin 1998, Brickhouse et al. 2010) to 1D and 3D MHD simulations including gravity, thermal conduction, and interaction with surrounding chromospheric material (Sacco et al. 2008, 2010; Bonito et al. 2014). It was realized early that high column densities (N\u22481024cm\u22122) at shock formation (Calvet & Gullbring 1998) would lead to absorption of the X-ray spectrum of the postshock emission (Drake 2005)\u2014the shock would be buried in the atmosphere\u2014although these effects would be mitigated by columns of low density (Sacco et al. 2008, 2010). Detailed calculations of deep high-resolution Chandra spectra of TW Hya by Brickhouse et al. (2010, 2012) showed that multiple high-density diagnostics can be fitted, assuming photoelectric absorption in a column consistent with the standard accretion model. Moreover, the mass accretion rates derived from the X-rays, when accounting for absorption, are similar to ultraviolet and optical determinations (Sacco et al. 2010, Brickhouse et al. 2010), eliminating discrepancies found in early treatments (Stelzer & Schmitt 2004, G\u00fcnther et al. 2007b).\n",
+    "citations": [
+      [
+        "Herczeg",
+        "Hillenbrand",
+        "2008"
+      ],
+      [
+        "Stelzer",
+        "Schmitt",
+        "2004"
+      ],
+      [
+        "Gullbring",
+        "1998"
+      ],
+      [
+        "Lamzin",
+        "1998"
+      ],
+      [
+        "Brickhouse",
+        "2010"
+      ],
+      [
+        "Batalha",
+        "2002"
+      ],
+      [
+        "Alencar",
+        "Batalha",
+        "2002"
+      ],
+      [
+        "Sacco",
+        "2010"
+      ],
+      [
+        "Hillenbrand",
+        "2008"
+      ],
+      [
+        "Drake",
         "2005"
       ],
       [
-        "Lucey",
+        "Schmitt",
+        "2004"
+      ],
+      [
+        "Calvet",
+        "Gullbring",
+        "1998"
+      ],
+      [
+        "Ingleby",
         "2013"
       ],
       [
-        "Talbot",
-        "2018"
+        "Bonito",
+        "2014"
       ],
       [
-        "Collier",
-        "2020"
-      ],
-      [
-        "Huchra",
-        "1985"
-      ],
-      [
-        "Smith",
-        "Lucey",
-        "2013"
+        "Sacco",
+        "2008"
       ]
     ],
     "arxiv": [
-      "1803.07082",
-      "1808.08235",
-      "1805.05964",
-      "1806.08300",
-      "1509.01253",
-      "1503.02661",
-      "1008.4363",
-      "0504453",
-      "1306.4983",
-      "1803.03604",
-      "2002.07191"
+      "0801.3525",
+      "0402108",
+      "1001.0750",
+      "0912.1799",
+      "1007.2423",
+      "0807.2483",
+      "0506182",
+      "1303.0769",
+      "1410.2775",
+      "0810.0192"
     ]
   },
-  "_3": {
-    "title": "Evidence for Initial Mass Function Variation in Massive Early-Type Galaxies",
-    "question": " How does the two-phase formation scenario for massive early-type galaxies potentially explain observed radial variations in their initial mass functions?",
-    "text": "CONNECTION TO THE TWO-PHASE GALAXY FORMATION SCENARIOEvidence from both observations and simulations seems to support a two-phase scenario for the formation of massive ETGs (Oser et al. 2010). In this picture, an early phase of in situ star formation (Barro et al. 2013) leads to a population of initially compact (1\u20132 kpc) but massive (\u223c1011 M\u2299) quiescent galaxies at z\n\n\n 1.5 (Trujillo et al. 2006), which later grow by accreting stars that formed elsewhere, through minor mergers (Belli et al. 2014). The similarity in size-scale with the radial extent of the IMF variations in massive ETGs (\n\n2 kpc, e.g., van Dokkum et al. 2017, La Barbera et al. 2019) tempts speculation that the IMF signal is linked specifically to the surviving stars from the in situ formation phase, which are thought still to dominate the innermost regions (<0.1 R\neff) of their descendent galaxies at z = 0 (e.g., Rodriguez-Gomez et al. 2016). This picture finds support in some rare relic galaxies at low redshift that are thought to have suffered little accretion after the initial phase, and which indeed seem to exhibit bottom-heavy IMFs at all radii (Ferr\u00e9-Mateu et al. 2017).",
+  "Accretion_3": {
+    "title": "Accretion onto Pre-Main-Sequence Stars",
+    "question": " What have recent photometric monitoring campaigns revealed about the variability of T Tauri stars, particularly regarding accretion processes and outburst rates?",
+    "text": "Variability is one of the defining characteristics of T Tauri stars (Joy et al. 1945). Photometric campaigns with sporadic cadence clearly demonstrate that accretion variability, extinction events, and stellar spots all contribute to the rich variability of T Tauri stars (e.g., Herbst et al. 1994, Grankin et al. 2007). In this section we concentrate only on changes in accretion. Recent dedicated photometric campaigns, including a month-long campaign to continuously monitor NGC 2264 with COROT (the Convection Rotation and Planetary Transits satellite) and the Spitzer Space Telescope (Spitzer) (Alencar et al. 2010, Stauffer et al. 2014), have successfully discriminated between different sources of variability (see \nFigure 9\n). Meanwhile, systematic optical wide-field sky surveys for transients are supplanting the substantial prior contributions from amateur astronomers (e.g., Jones 2008), and have discovered FU Ori and EX Lup-type outbursts (see below) at a rate of a \u223c1 per year, leading to estimates for an FUor outburst rate of \u223c10\u22124 per accreting star per year (e.g., Hillenbrand & Findeisen 2015). These strong outbursts may be especially important during the main growth phase of a star (Section 4), but the optical focus of transient surveys at optical wavelengths means that only a few outbursts have been identified in heavily embedded protostars (e.g., K\u00f3sp\u00e1l et al. 2007, Safron et al. 2015).\n",
     "citations": [
       [
-        "Dokkum",
-        "2017"
-      ],
-      [
-        "Barro",
-        "2013"
-      ],
-      [
-        "Mateu",
-        "2017"
-      ],
-      [
-        "La",
-        "Barbera",
-        "2019"
-      ],
-      [
-        "Oser",
+        "Alencar",
         "2010"
       ],
       [
-        "Rodriguez-Gomez",
-        "2016"
+        "Jones",
+        "2008"
       ],
       [
-        "Trujillo",
-        "2006"
+        "Safron",
+        "2015"
       ],
       [
-        "Barbera",
-        "2019"
+        "Hillenbrand",
+        "Findeisen",
+        "2015"
       ],
       [
-        "Belli",
+        "Herbst",
+        "1994"
+      ],
+      [
+        "Joy",
+        "1945"
+      ],
+      [
+        "Stauffer",
         "2014"
+      ],
+      [
+        "NGC",
+        "2264"
+      ],
+      [
+        "Grankin",
+        "2007"
+      ],
+      [
+        "Findeisen",
+        "2015"
       ]
     ],
     "arxiv": [
-      "1206.5000",
-      "0608657",
-      "1311.3317",
-      "1511.08804",
-      "1010.1381"
+      "0611028",
+      "1401.6582",
+      "1005.4384",
+      "1007.3976",
+      "1401.6600",
+      "1501.00492",
+      "1506.01126"
     ]
   },
   "1612.06891_1": {
@@ -4696,6 +4730,142 @@
       "1402.6695",
       "0411383",
       "1010.3651"
+    ]
+  },
+  "Carrington_1": {
+    "title": "Carrington Events",
+    "question": " What are the key processes and energy partitioning involved in solar flares and coronal mass ejections (CMEs)?",
+    "text": "Both flares (e.g., Fletcher et al. 2011) and CMEs (e.g., Chen 2011), which often go together, result from the sudden extraction of magnetic free energy on short timescales and its distribution into other forms. This requires the operation of plasma instabilities and the restructuring of the coronal magnetic field, usually described in terms of magnetic reconnection or flux transfer. An energy release may or may not result in an eruption of the field as the observable mass motion of a CME; if not, the result is simply enhanced radiation across an extremely wide spectral range, and the disturbance is purely a flare. If an eruption of the field occurs, a large amount of the released magnetic energy may go into the CME kinetic energy and eventually even into high-energy particles (e.g., Hudson & Ryan 1995). The details of the partitioning of the energy release remain somewhat ill-defined because of observational unknowns as well as theoretical weaknesses (e.g., Emslie et al. 2012, Aschwanden et al. 2017). Again, one should remember that these events often involve plasmas at \u03b2 \u226a 1, meaning that the dynamically important structures may not be readily visible at any wavelength\u2014the emissions may help us to understand these structures but may not directly represent the important components. These disruptions ultimately derive their energy and momentum (e.g., Hudson 2011) solely from the star's dynamics (convection, rotation, and oscillation).",
+    "citations": [
+      [
+        "Hudson",
+        "2011"
+      ],
+      [
+        "Ryan",
+        "1995"
+      ],
+      [
+        "Emslie",
+        "2012"
+      ],
+      [
+        "Fletcher",
+        "2011"
+      ],
+      [
+        "Chen",
+        "2011"
+      ],
+      [
+        "Hudson",
+        "Ryan",
+        "1995"
+      ],
+      [
+        "Aschwanden",
+        "2017"
+      ]
+    ],
+    "arxiv": [
+      "1209.2654",
+      "1109.5932",
+      "1701.01176"
+    ]
+  },
+  "Carrington_2": {
+    "title": "Carrington Events",
+    "question": " How do hard X-ray observations inform our understanding of energy release and particle acceleration in solar flares?",
+    "text": "Based upon the discovery of hard X-ray emission at the beginning of a solar flare (Peterson & Winckler 1958) and its interpretation as nonthermal bremsstrahlung continuum from mildly relativistic electrons (Anderson & Winckler 1962), one could identify the loop heating as owing to the collisional losses of electrons injected by some unknown mechanism operating in the corona. From a coronal electron source, known to exist via the radio type III (fast drift) emission (e.g., Wild et al. 1963), one could imagine a thick-target region in the dense chromosphere for electrons projected downward, rather than upward as in a type III burst. The existence of the rare reverse-slope type III emission (Tarnstrom & Zehntner 1975) lends some support for this idea. This kind of model matches the idea of the Neupert effect (Neupert 1968), but one should note that this very common morphology would result from any impulsive heating mechanism. The hard X-ray continuum and the microwave gyrosynchrotron radiation tend to occur at the beginning of a flare (the impulsive phase). The Neupert effect neatly allows one to think of the coronal soft X-ray sources and chromospheric line emissions (H\u03b1) as showing the drastic evolution and heating of cool chromospheric mass injected (by evaporation) into coronal magnetic traps, where its soft X-ray emission constitutes the gradual phase of the flare.",
+    "citations": [
+      [
+        "Wild",
+        "1963"
+      ],
+      [
+        "Anderson",
+        "Winckler",
+        "1962"
+      ],
+      [
+        "Winckler",
+        "1958"
+      ],
+      [
+        "Tarnstrom",
+        "Zehntner",
+        "1975"
+      ],
+      [
+        "Winckler",
+        "1962"
+      ],
+      [
+        "Neupert",
+        "1968"
+      ],
+      [
+        "Peterson",
+        "Winckler",
+        "1958"
+      ],
+      [
+        "Zehntner",
+        "1975"
+      ]
+    ],
+    "arxiv": []
+  },
+  "Carrington_3": {
+    "title": "Carrington Events",
+    "question": " What is the standard model for eruptive solar flares and CMEs, and how does it explain the observed phenomena?",
+    "text": "By fits and starts, theorists began to concentrate on this behavior of eruptive flares, leading to the CSHKP picture (Carmichael 1964, Sturrock 1966, Hirayama 1974, Kopp & Pneuman 1976)\n4\n as summarized by Moore et al. (2001) and Shibata & Magara (2011), for example. In this scenario, the erupting solar magnetic field pushes coronal material out into the heliosphere as a CME, leaving a current sheet behind (a 2D manifold), as well as a flare arcade of hot X-ray-emitting loops that result when magnetic reconnection restores the closed field, leading eventually to the H\u03b1 loop prominence system. A 3D version of this model can incorporate a flux rope (e.g., Janvier et al. 2013), either formed during the eruption or perhaps preexisting as a part of the structure supporting the filament; in situ observations can detect this flux rope as a magnetic cloud (Burlaga et al. 1982) as it rises through the heliosphere.",
+    "citations": [
+      [
+        "Sturrock",
+        "1966"
+      ],
+      [
+        "Pneuman",
+        "1976"
+      ],
+      [
+        "Moore",
+        "2001"
+      ],
+      [
+        "Carmichael",
+        "1964"
+      ],
+      [
+        "Magara",
+        "2011"
+      ],
+      [
+        "Hirayama",
+        "1974"
+      ],
+      [
+        "Kopp",
+        "Pneuman",
+        "1976"
+      ],
+      [
+        "Burlaga",
+        "1982"
+      ],
+      [
+        "Shibata",
+        "Magara",
+        "2011"
+      ],
+      [
+        "Janvier",
+        "2013"
+      ]
+    ],
+    "arxiv": [
+      "1305.4053"
     ]
   },
   "2309.17075_1": {
@@ -10525,6 +10695,196 @@
       "1504.08012"
     ]
   },
+  "Protostellar_1": {
+    "title": "Protostellar Outflows",
+    "question": " What observational tracers and instruments are used to study protostellar outflows across different wavelengths?",
+    "text": "Visual and near-IR emission lines in the Balmer, Paschen, and Brackett series of hydrogen; forbidden transitions of [Sii], [Oi], [Oii], [Oiii], and [Nii]; and the near emission lines of \n\n and [Feii] trace the atomic and ionized components in outflows. Near-IR K-band emission in the rovibrational transition of H2 trace \u223c10 to 100 km s\u22121 shocks propagating into molecular gas (MHOs). The Hubble Space Telescope (HST) and ground-based adaptive optics provide subarcsecond resolution at visual and near-IR wavelengths. During the past two decades, wide-field imaging at visual and near-IR wavelengths has shown that outflows can be very large. Chains of HH objects with angular sizes of degrees in nearby clouds such as Taurus, Chamaeleon, and Orion indicate that outflows can be many parsecs in extent, with a few exceeding 10 pc (Ogura 1995; Reipurth et al. 1997a; Bally et al. 2006b, 2012a). The radio continuum can trace jets near their sources and, in some outflows, acceleration of relativistic particles that produce synchrotron emission (Rodr\u00edguez-Kamenetzky et al. 2015). X-rays have been detected from a few outflows indicating fast shocks and mega-Kelvin plasmas (Pravdo et al. 2001, 2004; Pravdo & Tsuboi 2005). The Infrared Space Observatory (ISO), the Spitzer Space Observatory (Spitzer), and the Herschel Space Observatory (Herschel) have extended outflow studies into the mid- and far-IR wavelength regime where extinction is low and most of the luminosity of shocked gas emerges (Maret et al. 2009, Neufeld et al. 2009, van Dishoeck et al. 2011, Kristensen et al. 2012). The submillimeter and far-IR fine-structure lines such as [Oi] trace the neutral atomic component (Nisini et al. 2015), and lines such as [Cii] and [Nii] trace the ionized component. Stratospheric Observatory for Infrared Astronomy (SOFIA) continues studies of mid- and far-IR emission lines. Millimeter- and submillimeter-wavelength interferometers provide arcsecond angular resolution images and data cubes (Arce et al. 2013). Thus, protostellar outflows can be probed using a very wide array of tracers. No tracer is perfect. A complete characterization of the outflow phenomenon requires the observation of many tracers.",
+    "citations": [
+      [
+        "Bally",
+        "2006"
+      ],
+      [
+        "Nisini",
+        "2015"
+      ],
+      [
+        "Reipurth",
+        "1997"
+      ],
+      [
+        "Tsuboi",
+        "2005"
+      ],
+      [
+        "Dishoeck",
+        "2011"
+      ],
+      [
+        "Arce",
+        "2013"
+      ],
+      [
+        "Kristensen",
+        "2012"
+      ],
+      [
+        "Neufeld",
+        "2009"
+      ],
+      [
+        "Pravdo",
+        "2001"
+      ],
+      [
+        "Kamenetzky",
+        "2015"
+      ],
+      [
+        "Ogura",
+        "1995"
+      ],
+      [
+        "Pravdo",
+        "Tsuboi",
+        "2005"
+      ],
+      [
+        "Maret",
+        "2009"
+      ]
+    ],
+    "arxiv": [
+      "0606242",
+      "1501.03681",
+      "0502543",
+      "1304.0674",
+      "1307.3558",
+      "1204.0009",
+      "0904.0603",
+      "0910.1107"
+    ]
+  },
+  "Protostellar_2": {
+    "title": "Protostellar Outflows",
+    "question": " What are the key characteristics and structures of the HH 34 outflow system, and how does it exemplify properties of outflows from low-mass Class I young stellar objects?",
+    "text": "The S-symmetric HH 34 system illustrates many general properties of outflows from low-mass Class I YSOs. \nFigure 7\n shows the 2.7-pc-long chain of HH objects associated with HH 34 in the Orion A cloud (Bally & Devine 1994, Devine et al. 1997). As is the case with HH 46/47, the source of HH 34, a Class I protostar, powers a 2 arcmin (0.3-parsec) molecular outflow (Chernin & Masson 1995). A highly collimated, low-excitation, knotty jet with a mean radial velocity of approximately \u2212100 km s\u22121 and proper motions of \u223c200 km s\u22121 emerges from the source. Jet proper motions decline to \u223c160 km s\u22121 about 30 arcsec away, where the jet fades (Raga et al. 2012a). A pair of higher-excitation bow shocks, HH 34 and HH 34N (\nFigure 7\n), are symmetrically located \u223c90 arcsec from the source on both sides. A chain of more widely spaced shocks with decreasing velocities terminates in HH 33/40 to the north and HH 87/88 to the south, marking the ends of a 2.7-pc-long flow. Deceleration of fragmented ejecta by the surrounding medium may be responsible for the declining velocity with increasing distance from the source (Cabrit & Raga 2000). Multimode variations in the ejection velocity of the jet can explain the observed morphology and proper motions (Raga & Noriega-Crespo 1998; Raga et al. 2002, 2012b). Point-symmetric orientation changes are most likely an indication of forced precession of the stellar and/or disk rotation axes. Possible causes of forced precession include accretion flows that change direction with time or the torques generated by a binary companion whose orbital plane is tilted with respect to the disk associated with the outflow source (Bally & Reipurth 2001).\n",
+    "citations": [
+      [
+        "Noriega-Crespo",
+        "1998"
+      ],
+      [
+        "Devine",
+        "1997"
+      ],
+      [
+        "Raga",
+        "2000"
+      ],
+      [
+        "Masson",
+        "1995"
+      ],
+      [
+        "Bally",
+        "Reipurth",
+        "2001"
+      ],
+      [
+        "Devine",
+        "1994"
+      ],
+      [
+        "Chernin",
+        "Masson",
+        "1995"
+      ],
+      [
+        "Raga",
+        "2012"
+      ],
+      [
+        "Raga",
+        "2002"
+      ],
+      [
+        "Bally",
+        "Devine",
+        "1994"
+      ],
+      [
+        "Reipurth",
+        "2001"
+      ],
+      [
+        "Cabrit",
+        "Raga",
+        "2000"
+      ]
+    ],
+    "arxiv": [
+      "0009376",
+      "0208277"
+    ]
+  },
+  "Protostellar_3": {
+    "title": "Protostellar Outflows",
+    "question": " How do disk wind models explain the observed properties of protostellar jets and outflows, and what evidence supports the presence of both X-winds and disk winds?",
+    "text": "In disk wind models, open field lines inherited from the parent cloud are compressed by the gravitational collapse of the core and twisted by rotation (K\u00f6nigl et al. 2010, 2011). The disk field can be amplified by convection and shear in the disk, resulting in a twisted, pinched, helical hourglass configuration with open field lines tending to bend away from the direction to the YSO. Charged particles above or below the disk that end up on outward-bending field lines can be accelerated by centripetal forces to several times the Kepler speed at the injection point. Given that most YSO jets have speeds of \u223c102 km s\u22121, much of the material in this component must originate within \u223c1 AU of the YSO. However, slower winds can be launched from larger radii. The visual wavelength forbidden [Oi] lines (Natta et al. 2014) and multiple absorption components of NaI and Ca H and K toward some TTauri stars (Mundt 1984, Hartigan et al. 1995, Pascucci et al. 2015) and Herbig AeBe stars (Waters & Waelkens 1998) provide evidence for a range of ejection velocities. The densest gas associated with the collimated jets tends to have the highest speeds, whereas the lower-density material may trace slower winds from a disk (Wardle & Koenigl 1993). Additionally, the swept-back appearance and increasing excitation conditions in the wings of the jet-powered internal working surfaces associated with jet knots indicate the presence of a lower-density, slower component surrounding the jets. HST images of HH 34 (Reipurth et al. 2002), HH 47 (Heathcote et al. 1996), and HH 111 (Reipurth et al. 1997b) provide examples. Thus, both X-winds and disk winds may be present in YSOs.",
+    "citations": [
+      [
+        "Natta",
+        "2014"
+      ],
+      [
+        "Reipurth",
+        "1997"
+      ],
+      [
+        "Heathcote",
+        "1996"
+      ],
+      [
+        "Mundt",
+        "1984"
+      ],
+      [
+        "Koenigl",
+        "1993"
+      ],
+      [
+        "Pascucci",
+        "2015"
+      ],
+      [
+        "Wardle",
+        "Koenigl",
+        "1993"
+      ],
+      [
+        "Hartigan",
+        "1995"
+      ],
+      [
+        "Reipurth",
+        "2002"
+      ],
+      [
+        "Waelkens",
+        "1998"
+      ],
+      [
+        "Waters",
+        "Waelkens",
+        "1998"
+      ]
+    ],
+    "arxiv": [
+      "1510.02022",
+      "1406.5630"
+    ]
+  },
   "2307.08464_1": {
     "title": "Atomic Hydrogen in the Milky Way: A Stepping Stone in the Evolution of Galaxies",
     "question": " What are the key properties and roles of neutral hydrogen (HI) in galaxy disks and their relationship to star formation?",
@@ -10714,6 +11074,258 @@
       "9912509",
       "0211298",
       "1110.4638"
+    ]
+  },
+  "Pulsar_1": {
+    "title": "Pulsar Magnetospheres and Their Radiation",
+    "question": " What are the limitations of force-free electrodynamics (FFE) and relativistic magnetohydrodynamics (MHD) models in describing pulsar magnetospheres, and why are kinetic models needed?",
+    "text": "FFE and its numerical solutions describe the general structure of the (mostly ideal, magnetically dominated) magnetosphere. However, they fail to provide information on plasma conditions in regions where nonthermal pulsar radiation presumably originates. The magnetospheric current sheet was hypothesized as a source of multiwavelength, high-energy emission by Lyubarskii (1996b), even before the first self-consistent magnetospheric solution became available. In particular, FFE misses the physics of magnetic reconnection in the equatorial current sheet (e.g., Parfrey et al. 2012, Mahlmann et al. 2021), where the neglected plasma pressure and inertia terms become important. An obvious extension is to consider the full set of equations of relativistic MHD (e.g., Komissarov 1999), which capture the conversion of magnetic energy into plasma pressure in the current sheet. Such studies were performed for both aligned (Komissarov 2006) and oblique (Tchekhovskoy et al. 2013) rotators. However, the very low density of plasma in the magnetosphere, and, thus, its collisionless nature, implies that collisional fluid-based theories cannot correctly capture the physics of plasma production in the discharge and of reconnection in the current sheet. In particular, local studies of reconnection in pair plasma revealed that the anisotropic pressure tensor of heated pairs is important in setting the reconnection dynamics (Bessho & Bhattacharjee 2005). Thus, the E > B regions are possible at plasma microscales, and nonthermal particle distributions can be easily produced (Guo et al. 2014, Sironi & Spitkovsky 2014). Furthermore, the existence of the FFE solutions relies on the abundant supply of electron\u2013positron pairs everywhere in the magnetosphere. This requires the presence of regions with unscreened electric field that can sustain particle acceleration and pair production. These regions are not described by FFE or relativistic MHD. Such limitations motivate the development of kinetic models, which are able to describe the dynamics of collisionless plasmas,\n8\n particle acceleration, photon emission, pair production, and plasma feedback on the magnetospheric structure, all self-consistently, as described in the next section.",
+    "citations": [
+      [
+        "Komissarov",
+        "1999"
+      ],
+      [
+        "Tchekhovskoy",
+        "2013"
+      ],
+      [
+        "Bessho",
+        "Bhattacharjee",
+        "2005"
+      ],
+      [
+        "Parfrey",
+        "2012"
+      ],
+      [
+        "Komissarov",
+        "2006"
+      ],
+      [
+        "Bhattacharjee",
+        "2005"
+      ],
+      [
+        "Mahlmann",
+        "2021"
+      ],
+      [
+        "Guo",
+        "2014"
+      ],
+      [
+        "Spitkovsky",
+        "2014"
+      ],
+      [
+        "Sironi",
+        "Spitkovsky",
+        "2014"
+      ],
+      [
+        "Lyubarskii",
+        "1996"
+      ]
+    ],
+    "arxiv": [
+      "1211.2803",
+      "1201.3635",
+      "0510310",
+      "2007.06580",
+      "1405.4040",
+      "1312.4970",
+      "1401.5471",
+      "1210.3346"
+    ]
+  },
+  "Pulsar_2": {
+    "title": "Pulsar Magnetospheres and Their Radiation",
+    "question": " How does relativistic magnetic reconnection accelerate particles in pulsar magnetospheres, and what are the effects of synchrotron cooling on this process?",
+    "text": "Simulations show that relativistic reconnection is an efficient source of accelerated particles. Acceleration occurs in two steps: primary, by a nonideal electric field, E > B, at the X-point, and secondary, by a Fermi-type process in compressed growing plasmoids (in 2D; Petropoulou & Sironi 2018, Hakobyan et al. 2021) or by bouncing between converging upstream flows (in 3D; Zhang et al. 2021). The first process directly accelerates particles to energies of \u03b3 \u2248 few \u00d7 \u03c3, which roughly corresponds to the potential drop across the X-point (Werner et al. 2016), whereas the second process can accelerate to much higher energies. Near the light cylinder of young pulsars, however, the strength of synchrotron cooling is large, such that radiative losses become significant at \u03b3 \u223c \u03b3rad \u223c \u03c3LC, where \u03b3rad\n = 105(B\nLC/105G)\u22121/2, and secondary acceleration of pairs is not efficient. However, it can be important for the acceleration of ions extracted from the surface in the return current region (Philippov & Spitkovsky 2018, Gu\u00e9pin et al. 2020). Synchrotron cooling is suppressed at the X-points, because the magnetic field vanishes, so particles can be accelerated into a spectrum with a cutoff at \u03b3 \u2248 few \u00d7 \u03c3 even if cooling is strong, \u03b3rad \u2272 \u03c3LC \u2248 106(B\nLC/105G)(\u03bb/104)\u22121(P/0.1s) (e.g., Cerutti et al. 2013, Hakobyan et al. 2019). In this regime, called radiative reconnection (e.g., Uzdensky 2016), particles are accelerated in X-points, but radiate in plasmoids. Here, plasma particles quickly radiate a significant amount of their transverse momentum, i.e., pressure, which leads to a strong compression of the plasma to maintain the balance between the plasma and magnetic pressure across the current sheet. The resulting cross-layer pressure balance and the energy balance between reconnection-powered heating and synchrotron cooling fully set the plasma temperature, the width of the current sheet, and characteristic sizes of plasmoids (Lyubarskii 1996a, Uzdensky & Spitkovsky 2014).",
+    "citations": [
+      [
+        "Cerutti",
+        "2013"
+      ],
+      [
+        "Petropoulou",
+        "Sironi",
+        "2018"
+      ],
+      [
+        "Hakobyan",
+        "2021"
+      ],
+      [
+        "Hakobyan",
+        "2019"
+      ],
+      [
+        "Philippov",
+        "Spitkovsky",
+        "2018"
+      ],
+      [
+        "Uzdensky",
+        "2016"
+      ],
+      [
+        "Sironi",
+        "2018"
+      ],
+      [
+        "Spitkovsky",
+        "2018"
+      ],
+      [
+        "Werner",
+        "2016"
+      ],
+      [
+        "Spitkovsky",
+        "2014"
+      ],
+      [
+        "Zhang",
+        "2021"
+      ],
+      [
+        "Uzdensky",
+        "Spitkovsky",
+        "2014"
+      ],
+      [
+        "Lyubarskii",
+        "1996"
+      ]
+    ],
+    "arxiv": [
+      "1302.6247",
+      "1808.00966",
+      "2006.12530",
+      "1809.10772",
+      "1707.04323",
+      "1507.07756",
+      "1411.4295",
+      "1409.8262",
+      "1312.4970",
+      "1401.5471",
+      "1210.3346",
+      "2105.00009"
+    ]
+  },
+  "Pulsar_3": {
+    "title": "Pulsar Magnetospheres and Their Radiation",
+    "question": " What are the challenges in developing a self-consistent theory of coherent curvature radiation as the mechanism for pulsar radio emission?",
+    "text": "A more self-consistent approach, that of the second class, is focused on identifying a possible plasma instability in the outflow that can lead to maser amplification of the curvature radiation. This can happen if a seed wave, which satisfies the dispersion relation in the medium, triggers currents that emit in phase with the seed wave, which leads to its amplification. In principle, this is possible (Blandford 1975, Melrose 1978, Zheleznyakov & Shaposhnikov 1979, Chugunov & Shaposhnikov 1988, Luo & Melrose 1992). Goldreich & Keeley (1971) found an instability for the flow of plasma along the infinitely strong circular magnetic field. Asseo et al. (1983) and Larroche & Pellat (1987) argued that the instability develops only if the flow is sharply bounded and that the necessary conditions are unlikely to be satisfied in pulsars. Beskin et al. (1988b) derived the dielectric tensor of an inhomogeneous cold plasma in the infinitely strong magnetic field and found unstable modes. Their approach has been criticized (Larroche & Pellat 1987, Nambu 1989, Machabeli 1991), although most of the criticism has been rigorously addressed (Beskin et al. 1988a, Istomin 1994, Nambu 1996, Bornatici & Kravtsov 2000). Among other problems (see, e.g., Lyutikov 2021), even a small velocity dispersion was argued to significantly suppress coherent curvature radiation (Melrose 1992, Melrose & Gedalin 1999, Melrose et al. 2021b). To conclude, a universally accepted solution has never appeared for this class of proposed mechanisms.",
+    "citations": [
+      [
+        "Melrose",
+        "Gedalin",
+        "1999"
+      ],
+      [
+        "Nambu",
+        "1989"
+      ],
+      [
+        "Zheleznyakov",
+        "Shaposhnikov",
+        "1979"
+      ],
+      [
+        "Gedalin",
+        "1999"
+      ],
+      [
+        "Machabeli",
+        "1991"
+      ],
+      [
+        "Kravtsov",
+        "2000"
+      ],
+      [
+        "Pellat",
+        "1987"
+      ],
+      [
+        "Keeley",
+        "1971"
+      ],
+      [
+        "Luo",
+        "Melrose",
+        "1992"
+      ],
+      [
+        "Bornatici",
+        "Kravtsov",
+        "2000"
+      ],
+      [
+        "Melrose",
+        "1978"
+      ],
+      [
+        "Beskin",
+        "1988"
+      ],
+      [
+        "Istomin",
+        "1994"
+      ],
+      [
+        "Asseo",
+        "1983"
+      ],
+      [
+        "Blandford",
+        "1975"
+      ],
+      [
+        "Shaposhnikov",
+        "1979"
+      ],
+      [
+        "Nambu",
+        "1996"
+      ],
+      [
+        "Melrose",
+        "2021"
+      ],
+      [
+        "Melrose",
+        "1992"
+      ],
+      [
+        "Chugunov",
+        "Shaposhnikov",
+        "1988"
+      ],
+      [
+        "Larroche",
+        "Pellat",
+        "1987"
+      ],
+      [
+        "Lyutikov",
+        "2021"
+      ],
+      [
+        "Goldreich",
+        "Keeley",
+        "1971"
+      ],
+      [
+        "Shaposhnikov",
+        "1988"
+      ]
+    ],
+    "arxiv": [
+      "2102.07010"
     ]
   },
   "1501.06921_1": {
@@ -12304,6 +12916,212 @@
       "1705.05868"
     ]
   },
+  "Interstellar_1": {
+    "title": "Interstellar Dust Grain Alignment",
+    "question": " What is the size distribution and composition of interstellar dust grains that contribute to polarization, and how is this determined from observations?",
+    "text": "Determining the mechanisms responsible for the alignment of the dust grains requires an understanding of the fraction of the total dust grain population that contributes to the polarization in different environments (see Draine 2003). The total grain size distribution can be estimated on the basis of the UV-optical interstellar extinction curve (Mathis et al. 1977, Kim et al. 1994, Clayton et al. 2003) and from emission in the mid-IR (MIR) and FIR together with elemental depletion measurements (L\u00e9ger & Puget 1984, Draine & Anderson 1985, D\u00e9sert et al. 1990, Compi\u00e8gne et al. 2011). Similarly, the distribution of aligned grains can be derived from the wavelength-dependent polarization curve (Mathis 1986, Kim & Martin 1995, Draine & Fraisse 2009). The resulting total grain population is made up of large (\u223c0.01\u20131 \u03bcm) and very small (\u223c0.001\u20130.01 \u03bcm) grains and of polycyclic aromatic hydrocarbon (PAH) macromolecules (e.g., Compi\u00e8gne et al. 2011). For polarization measurements the large \u201cclassical\u201d grains are the most relevant, because, as we shall see below, grains smaller than \u223c0.05 \u03bcm are typically not aligned in the ISM (however, see Sections 2.1.3, 3.2, and 3.7 below). The overall number density of the large grains was first modeled, on the basis of such observations, by a power-law size distribution with an exponent of approximately \u22123.5 and grains in the range of 0.005\u20130.25 \u03bcm (Mathis et al. 1977). Additional models have extended the upper size limit to larger grains, with an exponential decay of number with increasing size (Kim et al. 1994, Clayton et al. 2003, Draine & Li 2007). The dust is usually assumed to consist of silicates, amorphous carbon, and small graphite particles composed of simple shapes (e.g., spheres, spheroids, or cylinders). In the dark, cold parts of molecular clouds grain aggregates may form (e.g., Ysard et al. 2013) as well as mantles of volatile ice materials (Whittet 2003, Boogert et al. 2015 in this volume).",
+    "citations": [
+      [
+        "Kim",
+        "1994"
+      ],
+      [
+        "Anderson",
+        "1985"
+      ],
+      [
+        "Mathis",
+        "1977"
+      ],
+      [
+        "Clayton",
+        "2003"
+      ],
+      [
+        "Li",
+        "2007"
+      ],
+      [
+        "Martin",
+        "1995"
+      ],
+      [
+        "Puget",
+        "1984"
+      ],
+      [
+        "Boogert",
+        "2015"
+      ],
+      [
+        "Ysard",
+        "2013"
+      ],
+      [
+        "Draine",
+        "2003"
+      ],
+      [
+        "Draine",
+        "Li",
+        "2007"
+      ],
+      [
+        "Fraisse",
+        "2009"
+      ],
+      [
+        "Mathis",
+        "1986"
+      ],
+      [
+        "Draine",
+        "Fraisse",
+        "2009"
+      ],
+      [
+        "Draine",
+        "Anderson",
+        "1985"
+      ],
+      [
+        "Whittet",
+        "2003"
+      ],
+      [
+        "Kim",
+        "Martin",
+        "1995"
+      ]
+    ],
+    "arxiv": [
+      "0301488",
+      "0608003",
+      "0809.2094",
+      "1309.6489",
+      "0304489",
+      "0211342"
+    ]
+  },
+  "Interstellar_2": {
+    "title": "Interstellar Dust Grain Alignment",
+    "question": " How did radiative torques emerge as a dominant mechanism for grain alignment, and what computational advances enabled this development?",
+    "text": "Radiative torques as a possible grain alignment mechanism was first introduced by Dolginov & Mytrophanov (1976) but, for the most part, was subsequently ignored for the next 20 years. The availability of powerful computers allowed Draine & Weingartner (1996) to apply the discrete dipole approximation, embodied in the DDSCAT code (Draine & Flatau 1994), to perform detailed scattering calculations and thereby demonstrate that RATs can dominate other torques acting on interstellar grains. These torques can spin the grains up to suprathermal velocities and also act to align the grains. In the presence of a magnetic field the grain rotational axis precesses about the field while the radiative torques act to align the grain with the field (Draine & Weingartner 1997). This confirmed the prediction by Dolginov & Mytrophanov (1976) that anisotropic radiation itself induces alignment (see also Weingartner & Draine 2003).",
+    "citations": [
+      [
+        "Dolginov",
+        "Mytrophanov",
+        "1976"
+      ],
+      [
+        "Draine",
+        "Weingartner",
+        "1997"
+      ],
+      [
+        "Mytrophanov",
+        "1976"
+      ],
+      [
+        "Draine",
+        "Weingartner",
+        "1996"
+      ],
+      [
+        "Draine",
+        "2003"
+      ],
+      [
+        "Weingartner",
+        "1997"
+      ],
+      [
+        "Weingartner",
+        "1996"
+      ],
+      [
+        "Draine",
+        "Flatau",
+        "1994"
+      ],
+      [
+        "Weingartner",
+        "Draine",
+        "2003"
+      ],
+      [
+        "Flatau",
+        "1994"
+      ]
+    ],
+    "arxiv": [
+      "0304489",
+      "0211342"
+    ]
+  },
+  "Interstellar_3": {
+    "title": "Interstellar Dust Grain Alignment",
+    "question": " What observational evidence indicates that silicate grains are aligned while carbon grains are not aligned in the interstellar medium?",
+    "text": "The strong polarization seen in the 9.7-\u03bcm and 18-\u03bcm silicate spectral features (Smith et al. 2000) shows that silicate grains are aligned. In contrast, sensitive searches for polarization in the 3.4-\u03bcm line of the aliphatic C\u2212H stretch mode do not show detectable polarization (e.g., Chiar et al. 2006). As a result of the exposure to atomic hydrogen and UV photons, such surface groups are expected to be present on all forms of carbonaceous dust in the diffuse ISM (Chiar et al. 2013 and references therein). Thus, the lack of polarization in this spectral feature indicates that carbon grains are not aligned. This is supported by the fact that in models of the FIR-to-submillimeter polarization spectra by Draine & Fraisse (2009), only those assuming spherical carbon grains (equivalent to nonalignment) match the observations (Vaillancourt & Matthews 2012; Section 3.5). The spectral dependence of the submillimeter-to-millimeter polarization determined by the Planck project is also consistent with this interpretation (Planck Collab. XXII 2015). Additionally, comparisons of linear and circular polarization in the ISM indicate that the grains responsible for the polarization are good dielectrics (Martin 1974, Martin & Angel 1976, Mathis 1986). This is a characteristic consistent with silicate dust but not with carbonaceous grains.",
+    "citations": [
+      [
+        "Chiar",
+        "2013"
+      ],
+      [
+        "Martin",
+        "1974"
+      ],
+      [
+        "Smith",
+        "2000"
+      ],
+      [
+        "Chiar",
+        "2006"
+      ],
+      [
+        "Vaillancourt",
+        "Matthews",
+        "2012"
+      ],
+      [
+        "Angel",
+        "1976"
+      ],
+      [
+        "Martin",
+        "Angel",
+        "1976"
+      ],
+      [
+        "Fraisse",
+        "2009"
+      ],
+      [
+        "Mathis",
+        "1986"
+      ],
+      [
+        "Draine",
+        "Fraisse",
+        "2009"
+      ],
+      [
+        "XXII",
+        "2015"
+      ],
+      [
+        "Matthews",
+        "2012"
+      ]
+    ],
+    "arxiv": [
+      "0809.2094",
+      "0607245",
+      "1204.1378"
+    ]
+  },
   "1406.2207_1": {
     "title": "Tidal Dissipation in Stars and Giant Planets",
     "question": " How does the Coriolis force affect linear dynamical tides in rotating fluid bodies, and what are the implications for tidal dissipation rates?",
@@ -12429,6 +13247,119 @@
       ]
     ],
     "arxiv": []
+  },
+  "Asteroseismology_1": {
+    "title": "Asteroseismology Across the Hertzsprung-Russell Diagram",
+    "question": " What were the key developments in the discovery and understanding of solar five-minute oscillations that led to the birth of helioseismology?",
+    "text": "It is more than 50 years since I first read Eddington's treatise, at a time when it was then only 40 years since he had written about such uncertainties in our understandings of the physics of the interior of stars. As I finished my undergraduate studies and moved to the University of Texas in 1970 to undertake my PhD, I heard from my fellow students about the solar five-minute oscillations. These were first noted in a broad report on the velocity fields in the solar atmosphere by Leighton et al. (1962). Then Ulrich (1970) and Leibacher & Stein (1971) correctly identified the five-minute oscillations as standing acoustic waves. The breakthrough came just a few years later when Deubner (1975, p. 371) resolved \u201cthree or four discrete stable modes\u201d in a plot of wave number versus frequency. Many other studies followed, and Helioseismology was born. (See Christensen-Dalsgaard 2021 for a comprehensive history and account of solar structure and evolution, including helioseismology.) Eddington's appliance that could pierce through the outer layers of a star had been found, at least for the Sun.",
+    "citations": [
+      [
+        "Deubner",
+        "1975"
+      ],
+      [
+        "Stein",
+        "1971"
+      ],
+      [
+        "Ulrich",
+        "1970"
+      ],
+      [
+        "Christensen-Dalsgaard",
+        "2021"
+      ],
+      [
+        "Leibacher",
+        "Stein",
+        "1971"
+      ],
+      [
+        "Leighton",
+        "1962"
+      ]
+    ],
+    "arxiv": [
+      "2007.06488"
+    ]
+  },
+  "Asteroseismology_2": {
+    "title": "Asteroseismology Across the Hertzsprung-Russell Diagram",
+    "question": " How do period spacing patterns in g-modes of \u03b3 Dor and SPB stars provide information about their internal rotation rates?",
+    "text": "A big breakthrough in determining internal rotation in \u03b3 Dor and SPB stars came when it was shown that, for a series of g modes with high radial overtones, the difference in the periods, \u0394P, for consecutive overtones versus the periods, P, provides a direct measure of rotation in the pulsation cavity, with most sensitivity just above the convective core deep in the star. Bouabid et al. (2013), Van Reeth et al. (2016), and Ouazzani et al. (2017) showed how the slope of points in the \u0394P \u2212 P diagram measures the interior rotation rate. The slopes differ for series of prograde sectoral, zonal, and retrograde sectoral dipole modes (Ouazzani et al. 2017, their figure 2), and all series are useful. The prograde modes are most common and in many cases dozens of consecutive radial overtone modes are detected, particularly in the 4-year Kepler data in which the frequency resolution is the best to date. Ouazzani et al. (2019, their figure 5) showed good agreement between the internal rotation rates determined by Cunha et al. (2020) and Van Reeth et al. (2016), supporting the robustness of the two methods.",
+    "citations": [
+      [
+        "Bouabid",
+        "2013"
+      ],
+      [
+        "Reeth",
+        "2016"
+      ],
+      [
+        "Cunha",
+        "2020"
+      ],
+      [
+        "Ouazzani",
+        "2017"
+      ],
+      [
+        "Van",
+        "Reeth",
+        "2016"
+      ],
+      [
+        "Ouazzani",
+        "2019"
+      ]
+    ],
+    "arxiv": [
+      "2009.09873",
+      "1801.09228",
+      "1610.06184"
+    ]
+  },
+  "Asteroseismology_3": {
+    "title": "Asteroseismology Across the Hertzsprung-Russell Diagram",
+    "question": " What are the main characteristics and developments in the understanding of rapidly oscillating Ap (roAp) stars since their discovery?",
+    "text": "I discovered this class (Kurtz 1982) and later discussed them in this journal (Kurtz 1990). These were the first stars found to have oblique pulsation axes in which the rotational deformation of the star did not dominate the physical selection of the pulsation axis. Many theoretical studies refined and improved the oblique pulsator model that I had proposed. Bigot & Dziembowski (2002) showed that the pulsation axis is not necessarily the magnetic axis but is still inclined to the rotation axis (see also Bigot & Kurtz 2011). Holdsworth (2021) has recently reviewed the roAp stars, and Holdsworth et al. (2021) give a detailed introduction to them in their report on TESS cycle 1 observations. I refer the reader to these two papers for the many references to the theoretical and observational literature on roAp stars.",
+    "citations": [
+      [
+        "Bigot",
+        "Dziembowski",
+        "2002"
+      ],
+      [
+        "Dziembowski",
+        "2002"
+      ],
+      [
+        "Kurtz",
+        "2011"
+      ],
+      [
+        "Bigot",
+        "Kurtz",
+        "2011"
+      ],
+      [
+        "Kurtz",
+        "1982"
+      ],
+      [
+        "Kurtz",
+        "1990"
+      ],
+      [
+        "Holdsworth",
+        "2021"
+      ]
+    ],
+    "arxiv": [
+      "2105.13274",
+      "1110.0988"
+    ]
   },
   "1809.07779_1": {
     "title": "Angular Momentum Transport in Stellar Interiors",
@@ -13554,6 +14485,191 @@
       "1404.0887"
     ]
   },
+  "Observing_1": {
+    "title": "Observing Interstellar and Intergalactic Magnetic Fields",
+    "question": " What methods have been used to measure magnetic fields in HII regions and what are the typical field strengths found?",
+    "text": "There had been efforts decades ago (e.g., Heiles & Chu 1980) to measure magnetic fields in Hii regions from RMs of background radio sources with the electron density estimated from emission measures. New observations led to a firm determination of magnetic fields in Hii regions and bubbles. By using RMs of an ensemble of background sources from the RM catalog (Taylor et al. 2009) derived from the NVSS (NRAO VLA Sky Survey, here NRAO stands for National Radio Astronomical Observatory, VLA for the Very Large Array) archived polarization data and estimating the electron density from the surface brightness from an H\u03b1 survey (Finkbeiner 2003), Harvey-Smith et al. (2011) showed an excess of RMs from five Hii regions (one example is shown in \nFigure 3\n) and derived the strength of the magnetic field component parallel to the line of sight as being in the range of 2\u20136 \u03bcG, assuming a filling factor (i.e., the fraction of occupied space) of f=0.1. The analysis of multiband data for the Gum Nebula (Purcell et al. 2015) and new observations of RMs of background radio sources behind or near the Rosette Nebula (Savage et al. 2013, Costa et al. 2016, Planck Collab. et al. 2016d) gave similar results, i.e., B\n|| of 2\u20135 \u03bcG depending on the lines of sight in the nebulae and the assumed filling factor. The RM excess produced by nebulae or Hii regions may reach a few hundred rad m\u22122. By contrast, the analysis of the depolarizing effect of Hii regions, i.e., comparing the polarization orientations and polarization fractions of diffuse Galactic emission on and off the regions, as done for the Hii region W1 (see \nFigure 3b\n\n) and the north part of the superbubble W4 (Gao et al. 2015), confirmed that the B\n|| is roughly a few \u03bcG within these objects. Magnetic fields in Hii regions and superbubbles are probably not enhanced significantly compared with ambient magnetic fields. As concluded by Costa et al. (2016), it is mainly the enhanced electron density, rather than the enhanced magnetic fields, that causes the RM excess and Faraday screen effect.\n",
+    "citations": [
+      [
+        "Purcell",
+        "2015"
+      ],
+      [
+        "Gao",
+        "2015"
+      ],
+      [
+        "Harvey-Smith",
+        "2011"
+      ],
+      [
+        "Chu",
+        "1980"
+      ],
+      [
+        "Finkbeiner",
+        "2003"
+      ],
+      [
+        "Costa",
+        "2016"
+      ],
+      [
+        "Heiles",
+        "Chu",
+        "1980"
+      ],
+      [
+        "Taylor",
+        "2009"
+      ],
+      [
+        "Savage",
+        "2013"
+      ]
+    ],
+    "arxiv": [
+      "1502.06296",
+      "1504.00142",
+      "1106.0931",
+      "0301558",
+      "1510.04664",
+      "1206.5173"
+    ]
+  },
+  "Observing_2": {
+    "title": "Observing Interstellar and Intergalactic Magnetic Fields",
+    "question": " What does the antisymmetry of the Faraday rotation measure sky reveal about the magnetic field structure in the Galactic halo?",
+    "text": "Because of the geometry, the Faraday RMs in the mid-latitude regions (e.g., 8\u00b0<|b|<45\u00b0) of the inner Galaxy (|l|<90\u00b0) are the best probes for the magnetic fields in the halo. After \u201canomalous\u201d RMs are discarded if their values deviate from the average of their neighbors by more than 3\u03c3, which probably results from the large intrinsic RMs, the \u201ccleaned\u201d RM sky shows a striking antisymmetry to Galactic coordinates (\nFigure 6\n): positive RMs dominating above but negative RMs below the Galactic plane in the first quadrant (l<90\u00b0), and RMs reversing their signs in the fourth quadrant (l>270\u00b0). The antisymmetry of the RM sky has been confirmed now after much more RM data have become available\u2014especially from the NVSS RM catalog (Taylor et al. 2009)\u2014regardless of how data are analyzed and presented (e.g., Stil et al. 2011, Xu & Han 2014b, Oppermann et al. 2015). Recalling that positive RMs indicate the averaged magnetic fields with a direction pointing toward us along the line of sight, whereas in negative RMs the fields point away from us, the antisymmetry of the RM sky has been interpreted as an indication of toroidal magnetic fields in the Galactic halo with reversed field directions below and above the Galactic plane (Han et al. 1997, 1999b). This configuration is consistent with the magnetic field in the concentrated halo described by Sofue & Fujimoto (1987; see their figure 1b) or the field of the A0 dynamo (see Wielebinski & Krause 1993, their figure 10). The observed radio filaments near the Galactic Center (see Section 3.3) reflect the poloidal fields in both scenarios. Note that the RMs in the outer Galaxy (90\u00b0<l<270\u00b0) are mostly produced by the ISM in the Perseus arm (e.g., Mao et al. 2012a) and are not sensitive to such a halo magnetic field.",
+    "citations": [
+      [
+        "Sofue",
+        "Fujimoto",
+        "1987"
+      ],
+      [
+        "Han",
+        "2014"
+      ],
+      [
+        "Mao",
+        "2012"
+      ],
+      [
+        "Xu",
+        "Han",
+        "2014"
+      ],
+      [
+        "Stil",
+        "2011"
+      ],
+      [
+        "Han",
+        "1997"
+      ],
+      [
+        "Fujimoto",
+        "1987"
+      ],
+      [
+        "Wielebinski",
+        "Krause",
+        "1993"
+      ],
+      [
+        "Oppermann",
+        "2015"
+      ],
+      [
+        "Taylor",
+        "2009"
+      ],
+      [
+        "Krause",
+        "1993"
+      ]
+    ],
+    "arxiv": [
+      "1407.7331",
+      "1010.5299",
+      "1012.2938",
+      "1404.3701"
+    ]
+  },
+  "Observing_3": {
+    "title": "Observing Interstellar and Intergalactic Magnetic Fields",
+    "question": " How have pulsar rotation measures been used to map out the large-scale magnetic field structure in the Galactic disk?",
+    "text": "In the early days RMs of pulsars were analyzed by simply fitting a magnetic field model together with a model of electron density distribution (Thomson & Nelson 1980, Han & Qiao 1994, Indrani & Deshpande 1999). The model-fitting method was also applied to fit the RM distribution of extragalactic radio sources behind the Galactic disk (e.g., Simard-Normandin & Kronberg 1980, Sofue & Fujimoto 1983). With the reasonable assumption that magnetic fields always follow the spiral arms, as inferred from polarization images of nearby galaxies (see Section 4.3), the large-scale structure of magnetic fields can be outlined from the derived parallel magnetic fields in those disk regions in which pulsar RMs have been observed. Han et al. (2006) analyzed the pulsar data in the tangential regions of spiral arms and showed that the magnetic fields in the spiral arms (i.e., the Norma arm, the Scutum-Crux arm, and the Carina-Sagittarius arm) are always counterclockwise (though some disordered fields appear in some segments of some arms), and that magnetic fields in the interarm regions are reversed to be clockwise. The field reversals have also been shown by Noutsos et al. (2008) and Nota & Katgert (2010) by using pulsar RM data. Up to now, RMs have been measured for more than 1,100 pulsars. By using the RM and DM differentiation method for pulsar RMs and DMs, and also comparing RMs of foreground pulsars with RMs of background radio sources, J.L. Han, R.N. Manchester, W. van Straten, and P. Demorest (in preparation) recently confirmed the multiple reversals of magnetic fields in the Galactic disk, as shown in \nFigure 8\n. RMs of radio sources behind the Galactic disk are averaged after the outliers were discarded and then compared with RMs of the farthest pulsars to judge if there is a magnetic field reversal in the regions beyond pulsars. Because of the sparsity of pulsar RM data and distance uncertainties, there are still uncertainties about exactly where the reversals take place. The magnetic field strengths near the tangential regions tend to get stronger at smaller Galactocentric radii, from about 2 \u03bcG near the Sun to 4 \u03bcG near the Norma arm (Han et al. 2006).\n",
+    "citations": [
+      [
+        "Han",
+        "2006"
+      ],
+      [
+        "Han",
+        "Qiao",
+        "1994"
+      ],
+      [
+        "Sofue",
+        "Fujimoto",
+        "1983"
+      ],
+      [
+        "Thomson",
+        "Nelson",
+        "1980"
+      ],
+      [
+        "Qiao",
+        "1994"
+      ],
+      [
+        "Katgert",
+        "2010"
+      ],
+      [
+        "Noutsos",
+        "2008"
+      ],
+      [
+        "Fujimoto",
+        "1983"
+      ],
+      [
+        "Simard-Normandin",
+        "Kronberg",
+        "1980"
+      ],
+      [
+        "Nelson",
+        "1980"
+      ],
+      [
+        "Deshpande",
+        "1999"
+      ],
+      [
+        "Nota",
+        "Katgert",
+        "2010"
+      ],
+      [
+        "Indrani",
+        "Deshpande",
+        "1999"
+      ],
+      [
+        "Kronberg",
+        "1980"
+      ]
+    ],
+    "arxiv": [
+      "0803.0677",
+      "0601357"
+    ]
+  },
   "1911.06925_1": {
     "title": "Spatially Resolved Spectroscopic Properties of Low-Redshift Star-Forming Galaxies",
     "question": " How does the star formation rate bimodality in galaxies at low redshift relate to their morphological and structural properties, and what processes drive the transition between star-forming and retired galaxies?",
@@ -14154,6 +15270,165 @@
         "Hamilton",
         "Ward",
         "2004"
+      ]
+    ],
+    "arxiv": []
+  },
+  "Solar_1": {
+    "title": "Solar Dynamo Theory",
+    "question": " What is the main challenge facing dynamo theory regarding the solar magnetic field, and what are the key areas of recent advances in solar dynamo theory?",
+    "text": "The challenge facing dynamo theory is thus to explain the existence and observed evolution of the solar magnetic field. This is an immense topic, which has already been the subject of numerous monographs (e.g., Moffatt 1978, Parker 1979, Krause & R\u00e4dler 1980, R\u00fcdiger & Hollerbach 2004, Charbonneau 2013). The present review focuses on a few areas where significant advances have been made in the past two decades in a manner such as to complement, rather than duplicate, other recent reviews on the topic, notably Ossendrijver (2003), Brandenburg & Subramanian (2005), Miesch & Toomre (2009), and Charbonneau (2010). General aspects of magnetohydrodynamics most pertinent to magnetic field amplification in electrically conducting fluid are first briefly reviewed in Section 2. This is followed in Section 3 by a survey of recent global magnetohydrodynamical simulations of solar convection having achieved the production of large-scale magnetic fields undergoing polarity reversals. Section 4 introduces mean-field electrodynamics, both as a tool to analyze and interpret numerical simulations as well as a means of building simplified evolutionary models of the solar magnetic cycle. Section 5 focuses on a class of mean-field-like simplified dynamo models, the so-called flux transport dynamos, which have received considerable attention in recent years as they provide an attractive framework within which to understand the origin of fluctuations in solar cycle amplitude and duration and perhaps even reliably predict these characteristics for future cycles. The review closes in Section 6 with a survey of promising future research directions and outstanding challenges in solar dynamo theory.",
+    "citations": [
+      [
+        "Ossendrijver",
+        "2003"
+      ],
+      [
+        "Charbonneau",
+        "2010"
+      ],
+      [
+        "Toomre",
+        "2009"
+      ],
+      [
+        "Moffatt",
+        "1978"
+      ],
+      [
+        "Brandenburg",
+        "Subramanian",
+        "2005"
+      ],
+      [
+        "Subramanian",
+        "2005"
+      ],
+      [
+        "Miesch",
+        "Toomre",
+        "2009"
+      ],
+      [
+        "Charbonneau",
+        "2013"
+      ],
+      [
+        "Hollerbach",
+        "2004"
+      ],
+      [
+        "Parker",
+        "1979"
+      ]
+    ],
+    "arxiv": [
+      "0405052",
+      "1210.1209"
+    ]
+  },
+  "Solar_2": {
+    "title": "Solar Dynamo Theory",
+    "question": " How is meridional circulation characterized in the Sun, and what are the observational and theoretical findings regarding its structure and variability?",
+    "text": "Meridional circulation refers to the large-scale axisymmetric flow component confined to meridional planes. It is weaker and shows more temporal variability than differential rotation. Directed poleward with speeds of \u223c10 m s\u22121 at the surface low to midlatitudes, it is also ultimately powered by convection. Observational attempts to detect the expected equatorward return flow, carried out through helioseismology or the tracking of deeply anchored magnetic tracers, have yielded conflicting results, some inferring a return flow located deep in the convective envelope, whereas others infer a shallow return flow (cf. Braun & Fan 1998, Schou & Bogart 1998, Hathaway 2012, Zhao et al. 2013). Theory (Kitchatinov & R\u00fcdiger 1995) and numerical simulations (Miesch & Toomre 2009, see their section 3.5) indicate that multiple flow cells stacked in radius and/or latitude are indeed likely. Both differential rotation and meridional circulation show low-amplitude cyclic variability phase locked to the magnetic cycle (see Howe 2009, see her section 9; Ulrich 2010).",
+    "citations": [
+      [
+        "Bogart",
+        "1998"
+      ],
+      [
+        "Zhao",
+        "2013"
+      ],
+      [
+        "Toomre",
+        "2009"
+      ],
+      [
+        "Fan",
+        "1998"
+      ],
+      [
+        "Braun",
+        "Fan",
+        "1998"
+      ],
+      [
+        "Ulrich",
+        "2010"
+      ],
+      [
+        "Howe",
+        "2009"
+      ],
+      [
+        "Schou",
+        "Bogart",
+        "1998"
+      ],
+      [
+        "Miesch",
+        "Toomre",
+        "2009"
+      ],
+      [
+        "Hathaway",
+        "2012"
+      ]
+    ],
+    "arxiv": []
+  },
+  "Solar_3": {
+    "title": "Solar Dynamo Theory",
+    "question": " How does the Babcock-Leighton mechanism contribute to the solar dynamo cycle, and what role does meridional flow play in coupling the spatially segregated source regions?",
+    "text": "Because sunspot pairs represent the surface manifestation of a deep-seated toroidal magnetic component, globally the Babcock-Leighton mechanism produces a (surface) poloidal magnetic component from a (deep) toroidal component. Because the trailing polarity is identical to that of the original underlying toroidal field and is that which accumulates at the pole, the polarity of the dipole moment produced is identical to that of the deep-seated toroidal field. This is conceptually similar to the action of a positive \u03b1-effect in mean-field electrodynamics. In conjunction with the shearing of this poloidal field by differential rotation, a complete dynamo loop can thus be constructed, without invoking the turbulent \u03b1-effect as a source term on the right-hand side of Equation 24. However, here the poloidal and toroidal source terms are spatially segregated, with the Babcock-Leighton mechanism operating in the surface layers, whereas toroidal field amplification and magnetic flux rope formation and storage are presumably taking place at or immediately beneath the base of the convection zone. These two source regions need to be coupled to close the dynamo loop. The first Babcock-Leighton solar cycle models (Babcock 1961, Leighton 1969) assumed the sunspot-generating toroidal magnetic field to reside in the subphotospheric layers, so this coupling issue was not deemed problematic. With the formation and storage site of magnetic flux ropes now pushed down to the tachocline, an efficient coupling mechanism becomes essential. Following Wang et al. (1989) and Wang & Sheeley (1991), large-scale meridional flows have taken up this role (see, e.g., Wang et al. 1991, Choudhuri et al. 1995, Durney 1995, Dikpati & Charbonneau 1999).",
+    "citations": [
+      [
+        "Babcock",
+        "1961"
+      ],
+      [
+        "Dikpati",
+        "Charbonneau",
+        "1999"
+      ],
+      [
+        "Charbonneau",
+        "1999"
+      ],
+      [
+        "Durney",
+        "1995"
+      ],
+      [
+        "Leighton",
+        "1969"
+      ],
+      [
+        "Wang",
+        "1989"
+      ],
+      [
+        "Wang",
+        "Sheeley",
+        "1991"
+      ],
+      [
+        "Wang",
+        "1991"
+      ],
+      [
+        "Choudhuri",
+        "1995"
+      ],
+      [
+        "Following",
+        "Wang",
+        "1989"
+      ],
+      [
+        "Sheeley",
+        "1991"
       ]
     ],
     "arxiv": []
@@ -15225,6 +16500,129 @@
       "1702.01769"
     ]
   },
+  "Six_1": {
+    "title": "Six Decades of Spiral Density Wave Theory",
+    "question": " What is the historical development of our understanding of spiral galaxies and their rotation curves?",
+    "text": "Spiral galaxies have played a prominent role in astronomical thought since the discovery by Lord Rosse in 1845 of the spiral structure of the whirlpool \u201cnebula\u201d M51 (\nFigure 1\n). Through the work of Kapteyn, Shapley, Curtis, and especially Hubble, by the late 1920s, it became known, and not just speculated, that such spirals were disk-like stellar systems coequal to our own Milky Way system. From the optical study of the kinematics of stars in the solar neighborhood, Bertil Lindblad (1927) and Jan Oort (1927) deduced that the flattening of the galactic disk is due to rotation, and that this rotation occurred differentially, with the stars near the galactic center taking less time to go once around the center than the material farther out. It was natural to ask whether the same held true for external disk galaxies, and in the late 1950s to early 1970s, optical and radio astronomers discovered that, instead of being in a state of uniform rotation, \u03a9(\u03d6)= constant, the outer rotation curves of normal and barred spiral galaxies were roughly flat; that is, \u03d6\u03a9(\u03d6)= constant, where \u03d6 is the radial distance from the rotation axis in the plane of the disk and \u03a9(\u03d6) is the angular speed of rotation (Van de Hulst et al. 1957, Burbidge et al. 1960, Rubin et al. 1964, H\u00f6glund & Roberts 1965, Rubin & Ford 1970, Roberts & Rots 1973).\n",
+    "citations": [
+      [
+        "Burbidge",
+        "1960"
+      ],
+      [
+        "Roberts",
+        "Rots",
+        "1973"
+      ],
+      [
+        "Oort",
+        "1927"
+      ],
+      [
+        "Rubin",
+        "Ford",
+        "1970"
+      ],
+      [
+        "Roberts",
+        "1965"
+      ],
+      [
+        "Hulst",
+        "1957"
+      ],
+      [
+        "Ford",
+        "1970"
+      ],
+      [
+        "Rots",
+        "1973"
+      ],
+      [
+        "Lindblad",
+        "1927"
+      ],
+      [
+        "Rubin",
+        "1964"
+      ]
+    ],
+    "arxiv": []
+  },
+  "Six_2": {
+    "title": "Six Decades of Spiral Density Wave Theory",
+    "question": " How do interacting galaxies like M51 challenge simple models of spiral structure, and what evidence suggests coexistence of multiple spiral pattern mechanisms?",
+    "text": "Not all galaxies are as well behaved as M81. In particular, M51 is a famous interacting system that Toomre & Toomre (1972) claimed is an example where the outer spiral structure may have arisen by tidal interaction, although the inner spiral structure may still require a classical density wave approach. Bertin & Lin (1996) have long maintained the possibility of spiral structures that follow a modal description coexisting with those that arise by response to external forcing. Shu et al. (2000) bolstered this possibility by proving a reciprocity theorem: Spiral galaxies that can swing-amplify disturbances that start from the outside and propagate inward automatically have amplification mechanisms that lead to growing normal modes via feedback from the central regions.",
+    "citations": [
+      [
+        "Lin",
+        "1996"
+      ],
+      [
+        "Toomre",
+        "1972"
+      ],
+      [
+        "Shu",
+        "2000"
+      ],
+      [
+        "Toomre",
+        "Toomre",
+        "1972"
+      ],
+      [
+        "Bertin",
+        "Lin",
+        "1996"
+      ]
+    ],
+    "arxiv": []
+  },
+  "Six_3": {
+    "title": "Six Decades of Spiral Density Wave Theory",
+    "question": " What novel sources of resonant excitation have been discovered in Saturn's rings, and how do they provide insight into planetary interiors?",
+    "text": "\nHedman et al. (2010) have characterized the gaps and edges in the Cassini division in great detail. They suggest that most of the structures arise in response to disturbances in the massive outer edge of the B ring that librate relative to the 2:1 forcing by Mimas. An equally novel source of resonant gravitational excitation of spiral density waves, not in the Cassini division but in Saturn's C ring, is low-order normal-mode oscillations of Saturn, as predicted by Marley (1991) and Marley & Porco (1993). Using stellar occultation measurements from the Cassini spacecraft, Hedman & Nicholson (2013) find six sets of density waves with m=2 and m=4 in the C ring that have pattern speeds too large to be associated with any satellite resonance. Assuming that the planetary oscillations are excited stochastically, the authors use the behavior of the waves to constrain, in a preliminary fashion, the damping constant of the planetary oscillations. Coupled with better calculations of the density wave amplitude in the density waves in the C ring, the method promises to give an exciting new way to extract information about Saturn's interior. Finally, to add variety as to possible mechanisms, Hedman & Showalter (2015) argue that a transient bending wave in Saturn's D ring may have occurred by a ring impact.",
+    "citations": [
+      [
+        "Showalter",
+        "2015"
+      ],
+      [
+        "Hedman",
+        "2010"
+      ],
+      [
+        "Marley",
+        "Porco",
+        "1993"
+      ],
+      [
+        "Hedman",
+        "Showalter",
+        "2015"
+      ],
+      [
+        "Hedman",
+        "Nicholson",
+        "2013"
+      ],
+      [
+        "Marley",
+        "1991"
+      ],
+      [
+        "Nicholson",
+        "2013"
+      ],
+      [
+        "Porco",
+        "1993"
+      ]
+    ],
+    "arxiv": []
+  },
   "1706.01629_1": {
     "title": "Markov Chain Monte Carlo Methods for Bayesian Data Analysis in Astronomy",
     "question": " What is the historical development and significance of Bayesian statistics in scientific fields?",
@@ -15359,6 +16757,221 @@
       "1303.1957",
       "1603.05661",
       "1109.4723"
+    ]
+  },
+  "Red_1": {
+    "title": "Red Clump Stars",
+    "question": " How do the observed numbers of red clump stars in open clusters compare to theoretical predictions for clusters of different ages and masses?",
+    "text": "Due to their modest present masses, open clusters in the MW typically present just a handful of RC stars, like the 7 RC members in M67 (with 3.5 Gyr; Sandquist 2004), the 4 in Berkeley 32 (\u223c6 Gyr; D'Orazi et al. 2006), and the 3 stars \u201clikely forming a RC\u201d in NGC 188 (\u223c7 Gyr; Sarajedini et al. 1999). A few other examples are presented by Mermilliod et al. (2008) and Mermilliod & Mayor (1990). These small numbers are perfectly in line with those expected from the theoretical isochrones for \u223c104 M\u2299 clusters following a Kroupa (2002) IMF (see \nFigure 5a\n\n). Some more distant and massive clusters such as NGC 2477, NGC 2506, and NGC 6819 present a few tens of candidate RC stars in their CMDs (see Grocholski & Sarajedini 2002, Percival & Salaris 2003), although with uncertain memberships.",
+    "citations": [
+      [
+        "Grocholski",
+        "Sarajedini",
+        "2002"
+      ],
+      [
+        "Sarajedini",
+        "2002"
+      ],
+      [
+        "NGC",
+        "2477"
+      ],
+      [
+        "Salaris",
+        "2003"
+      ],
+      [
+        "Orazi",
+        "2006"
+      ],
+      [
+        "Mayor",
+        "1990"
+      ],
+      [
+        "Mermilliod",
+        "2008"
+      ],
+      [
+        "Kroupa",
+        "2002"
+      ],
+      [
+        "NGC",
+        "6819"
+      ],
+      [
+        "Sarajedini",
+        "1999"
+      ],
+      [
+        "Sandquist",
+        "2004"
+      ],
+      [
+        "Mermilliod",
+        "Mayor",
+        "1990"
+      ],
+      [
+        "Percival",
+        "Salaris",
+        "2003"
+      ],
+      [
+        "NGC",
+        "2506"
+      ]
+    ],
+    "arxiv": [
+      "0112251",
+      "0301219",
+      "0201098",
+      "0308547"
+    ]
+  },
+  "Red_2": {
+    "title": "Red Clump Stars",
+    "question": " What is the nature and distribution of the double red clump observed in the Galactic bulge?",
+    "text": "The most detailed near-IR CMDs recently indicated a complicated pattern of double RCs along several Bulge lines of sight (McWilliam & Zoccali 2010, Nataf et al. 2010), with separations between the two RCs totalling up to 0.3 mag. VVV reveals that this RC splitting, absent in the Bulge center, becomes more pronounced in high Galactic longitudes in both hemispheres (Saito et al. 2011). The easiest interpretation of such a feature is in terms of populations at different distances, implying that we are seeing the X-shaped structure in the Bulge (Cao et al. 2013, Wegg & Gerhard 2013, Wegg et al. 2015, Nataf et al. 2015; see also Bland-Hawthorn & Gerhard 2016 in this volume). We note that the split RC in the Bulge is not related to the observation of a double RC in the bulge globular cluster Terzan 5 (Ferraro et al. 2009), which is best interpreted in terms of multiple populations formed in a formerly much more massive cluster (Massari et al. 2014).",
+    "citations": [
+      [
+        "Gerhard",
+        "2016"
+      ],
+      [
+        "Ferraro",
+        "2009"
+      ],
+      [
+        "Massari",
+        "2014"
+      ],
+      [
+        "Bland-Hawthorn",
+        "Gerhard",
+        "2016"
+      ],
+      [
+        "Gerhard",
+        "2013"
+      ],
+      [
+        "Cao",
+        "2013"
+      ],
+      [
+        "Saito",
+        "2011"
+      ],
+      [
+        "Nataf",
+        "2010"
+      ],
+      [
+        "McWilliam",
+        "Zoccali",
+        "2010"
+      ],
+      [
+        "Wegg",
+        "2015"
+      ],
+      [
+        "Nataf",
+        "2015"
+      ],
+      [
+        "Zoccali",
+        "2010"
+      ],
+      [
+        "Wegg",
+        "Gerhard",
+        "2013"
+      ]
+    ],
+    "arxiv": [
+      "1602.07702",
+      "0912.0192",
+      "1409.1682",
+      "1308.0593",
+      "1303.6430",
+      "1105.3151",
+      "1107.5360",
+      "1007.5065",
+      "1008.0519",
+      "1504.01401",
+      "1411.7384"
+    ]
+  },
+  "Red_3": {
+    "title": "Red Clump Stars",
+    "question": " How are dual red clumps in intermediate-age Magellanic Cloud clusters related to extended main sequence turnoffs, and what does this imply about cluster formation scenarios?",
+    "text": "As suggested by Girardi et al. (2009) and confirmed by Goudfrooij et al. (2014), dual RCs are actually present in many of the populous intermediate-age Magellanic Cloud clusters, like NGC 1751, NGC 1783, NGC 1806, NGC 1846, NGC 1852, and NGC 1917, all of them having MSTO ages close to the t\nHeF limit in which the dichotomy is expected to appear. Moreover, they all display impressive extended main sequence turnoffs (eMSTOs). It is natural to associate the two phenomena, assuming that the same effect that causes stars to spread along the MSTO also causes the small spread in core mass after the MS, which is necessary to create dual RCs. However, there is no consensus yet on the cause of eMSTOs; the leading interpretations are linked to either an age dispersion inside the clusters (Goudfrooij et al. 2011, 2014, Girardi et al. 2011) or a spread in rotational velocities among coeval stars (Bastian & de Mink 2009, Brandt & Huang 2015).",
+    "citations": [
+      [
+        "Mink",
+        "2009"
+      ],
+      [
+        "Goudfrooij",
+        "2011"
+      ],
+      [
+        "Goudfrooij",
+        "2014"
+      ],
+      [
+        "NGC",
+        "1806"
+      ],
+      [
+        "Girardi",
+        "2009"
+      ],
+      [
+        "NGC",
+        "1751"
+      ],
+      [
+        "Brandt",
+        "Huang",
+        "2015"
+      ],
+      [
+        "NGC",
+        "1846"
+      ],
+      [
+        "NGC",
+        "1852"
+      ],
+      [
+        "Huang",
+        "2015"
+      ],
+      [
+        "Girardi",
+        "2011"
+      ],
+      [
+        "NGC",
+        "1917"
+      ],
+      [
+        "NGC",
+        "1783"
+      ]
+    ],
+    "arxiv": [
+      "1012.5193",
+      "1410.3840",
+      "0901.0773",
+      "1504.00004",
+      "1101.1880",
+      "1105.1337"
     ]
   },
   "2211.03476_1": {
@@ -16411,6 +18024,241 @@
       "1801.08127"
     ]
   },
+  "Magnetohydrodynamic_1": {
+    "title": "Magnetohydrodynamic Waves in the Solar Corona",
+    "question": " What are the key scientific motivations and potential applications for studying MHD waves detected in the solar corona?",
+    "text": "The interest in waves detected and theoretically predicted in the corona is connected with several important problems of modern solar physics and plasma astrophysics. First of all, the corona is a plasma environment allowing for a thorough study of a fully ionized, magnetically dominated plasma. In particular, MHD waves detected in the corona are possibly the longest MHD and, hence, electromagnetic waves in the Universe, resolved simultaneously in time and space. A highly debated topic is a possible role of MHD waves in the enigmatic problems of heating of the solar and stellar coronae and acceleration of the solar and stellar winds. Waves could carry the energy through different layers of the solar atmosphere and deposit it in the corona by some as-yet-unidentified but intensively investigated dissipative processes (see, e.g., Liu & Ofman 2014, Arregui 2015, Klimchuk 2015, Ofman 2016, Cranmer & Winebarger 2019, for recent reviews). The main question is whether the energy carried by observed waves is sufficient to compensate for the energy losses by optically thin radiation and thermal conduction to the chromosphere (e.g., De Moortel & Browning 2015). In addition, MHD waves could trigger impulsive energy release phenomena of flares and coronal mass ejections (e.g., Nakariakov et al. 2006), and, in particular, produce quasi-periodic modulation of the flaring emission (e.g., Van Doorsselaere et al. 2016). Furthermore, the generation of MHD waves acts as an additional sink of the released magnetic energy. The latter issue is rather natural, as an impulsive and spatially localized energy deposition in an elastic and compressible medium such as the corona should result in the excitation of waves propagating outwardly from the epicenter. MHD waves excited by flares can spread the released energy and the associated heating at a certain distance around the energy release site, in particular, across the field. However, the efficiency of this process needs to be assessed; some evidence of this has been found in observations (Huang et al. 2018). In addition, the waves excited by flares could reach another potentially flaring magnetic structure and trigger the energy release there. It may lead to chains of consecutive flares appearing at different spatial locations, known as sympathetic flares (e.g., Moon et al. 2002), or be responsible for the observed progression of elementary energy releases along the magnetic neutral line in major, two-ribbon flares (Nakariakov & Zimovets 2011). Another rapidly developing research direction is the diagnostics of coronal plasmas by MHD waves, i.e., the method of MHD seismology. As properties of MHD waves depend on properties of the plasma environment that supports them, it becomes possible to use the waves for probing macroscopic parameters of the plasma in the vicinity of the wave propagation region.",
+    "citations": [
+      [
+        "Klimchuk",
+        "2015"
+      ],
+      [
+        "Nakariakov",
+        "2006"
+      ],
+      [
+        "Doorsselaere",
+        "2016"
+      ],
+      [
+        "Moon",
+        "2002"
+      ],
+      [
+        "Browning",
+        "2015"
+      ],
+      [
+        "Cranmer",
+        "Winebarger",
+        "2019"
+      ],
+      [
+        "Nakariakov",
+        "Zimovets",
+        "2011"
+      ],
+      [
+        "Moortel",
+        "Browning",
+        "2015"
+      ],
+      [
+        "Ofman",
+        "2014"
+      ],
+      [
+        "Arregui",
+        "2015"
+      ],
+      [
+        "Zimovets",
+        "2011"
+      ],
+      [
+        "Huang",
+        "2018"
+      ],
+      [
+        "Van",
+        "Doorsselaere",
+        "2016"
+      ],
+      [
+        "Liu",
+        "Ofman",
+        "2014"
+      ],
+      [
+        "Ofman",
+        "2016"
+      ],
+      [
+        "Winebarger",
+        "2019"
+      ]
+    ],
+    "arxiv": [
+      "1510.00977",
+      "1801.05983",
+      "1811.00461",
+      "1410.5660",
+      "1404.0670",
+      "1501.06708"
+    ]
+  },
+  "Magnetohydrodynamic_2": {
+    "title": "Magnetohydrodynamic Waves in the Solar Corona",
+    "question": " How does thermal conductivity affect the damping of slow magnetoacoustic waves in the solar corona, and what other mechanisms may contribute to their dissipation?",
+    "text": "Conventionally, the damping of slow modes is associated with the field-aligned thermal conductivity effect (see, e.g., Ofman & Wang 2002, De Moortel & Hood 2003, Owen et al. 2009). It is considered to be sufficient for the interpretation of observed properties of slow waves both qualitatively and quantitatively in certain physical conditions, i.e., for a specific combination of the equilibrium plasma density and temperature. In other physical conditions, though, it was shown to be less successful (e.g., De Moortel 2009). A parameter controlling the efficiency of the thermal conduction is the conduction time \n\n, where the parallel conductivity coefficient in the Spitzer form is \n\n, and C\n\nV\n = (\u03b3 \u2212 1)\u22121\nk\nB/m\np is the specific heat capacity with k\nB being the Boltzmann constant and m\np the proton mass. The time \u03c4cond is highly sensitive to the equilibrium plasma temperature, T\n0, density, \u03c10, and the characteristic spatial scale, \n\n. The dependence of \u03c4cond on the temperature is shown in \nFigure 1a\n\n for various wavelengths. For illustration, consider a fundamental standing slow mode with the wavelength determined as double the loop length L = 116 Mm. The thermal conduction time is sufficiently longer than typical slow oscillation periods in the range of temperatures from \u223c1 to 5 MK (from a few to a few tens of minutes), which makes the effect of the thermal conduction on the slow wave weak in this temperature range. In a hotter plasma, from \u223c5 to 12 MK, \u03c4cond is roughly comparable with the slow oscillation period, indicating high efficiency of the wave damping by thermal conduction. For temperatures above 12 MK, \u03c4cond becomes substantially shorter than the slow oscillation period, implying that the thermal conduction rapidly smooths out any temperature gradient along the field and thus making the slow wave nearly isothermal. In the lower thermal conduction limit, the conductive damping time of slow waves, \n\n, decreases with temperature down to some value, after which the wave dynamics approaches the isothermal regime and therefore becomes independent of the thermal conductivity (e.g., Porter et al. 1994, Krishna Prasad et al. 2019). The existence of the isothermal regime indicates the importance of additional dissipative mechanisms for slow modes in the corona. It could be viscous damping (Owen et al. 2009, Wang et al. 2018), longitudinal nonuniformity (De Moortel & Hood 2004, Konkol et al. 2010), nonlinear damping (e.g., Verwichte et al. 2008, Ruderman 2013), mode coupling (De Moortel et al. 2004), or damping by the misbalance between coronal heating and radiative cooling processes (Nakariakov et al. 2017, Kolotkov et al. 2019). A relative efficiency of these damping mechanisms in specific coronal conditions needs to be revealed.",
+    "citations": [
+      [
+        "Owen",
+        "2009"
+      ],
+      [
+        "Prasad",
+        "2019"
+      ],
+      [
+        "Ruderman",
+        "2013"
+      ],
+      [
+        "Wang",
+        "2002"
+      ],
+      [
+        "Hood",
+        "2004"
+      ],
+      [
+        "Wang",
+        "2018"
+      ],
+      [
+        "Moortel",
+        "Hood",
+        "2004"
+      ],
+      [
+        "Konkol",
+        "2010"
+      ],
+      [
+        "Moortel",
+        "2004"
+      ],
+      [
+        "Porter",
+        "1994"
+      ],
+      [
+        "Kolotkov",
+        "2019"
+      ],
+      [
+        "Nakariakov",
+        "2017"
+      ],
+      [
+        "Krishna",
+        "Prasad",
+        "2019"
+      ],
+      [
+        "Hood",
+        "2003"
+      ],
+      [
+        "Moortel",
+        "Hood",
+        "2003"
+      ],
+      [
+        "Ofman",
+        "Wang",
+        "2002"
+      ],
+      [
+        "Verwichte",
+        "2008"
+      ],
+      [
+        "Moortel",
+        "2009"
+      ],
+      [
+        "De",
+        "Moortel",
+        "2004"
+      ]
+    ],
+    "arxiv": [
+      "1706.04219",
+      "1805.03282",
+      "1907.07051",
+      "1907.08168",
+      "1706.09988"
+    ]
+  },
+  "Magnetohydrodynamic_3": {
+    "title": "Magnetohydrodynamic Waves in the Solar Corona",
+    "question": " What are the typical observational characteristics of propagating slow magnetoacoustic waves in the solar corona, and how are they detected?",
+    "text": "Compressive propagating coronal slow waves are usually associated with quasi-periodic EUV and soft X-ray intensity perturbations that move upward along field-aligned plasma nonuniformities. They are observed, in particular, with the high-resolution imaging telescopes. These propagating quasi-periodic disturbances typically have small amplitudes of a few percent of the background intensity, with periods in the range of 2\u201310 min and propagation speeds of \u223c70\u2013235 km s\u22121, which are comparable with the local sound speed. These waves are observed to decay quickly with height and with the decay length of a few tens of millions of meters. Routine observations demonstrated omnipresence of this phenomenon, occurring in both the plume and interplume regions in polar coronal holes (e.g., Gupta et al. 2010), legs of long fan-like loops in active regions (see \nFigure 4\n and Yuan & Nakariakov 2012), and also in plume-like structures in equatorial coronal holes and quiet Sun regions (e.g., Tian et al. 2011, Krishna Prasad et al. 2012b). These waves could be also detected spectroscopically, as Doppler shift variations and emission enhancements in the blue wing of the emission line (e.g., Verwichte et al. 2010), manifesting the in-phase behavior of the velocity and density perturbations. For comprehensive reviews of earlier observational results on the detection of propagating slow waves in coronal loops and holes, readers are referred to, e.g., De Moortel (2009) and Banerjee et al. (2011). Discussion of an alternative interpretation for the propagating EUV disturbances, in terms of quasi-periodic upflows, and its constructive criticism based on the comparison to the wave-related explanation are given by Wang (2016).\n",
+    "citations": [
+      [
+        "Prasad",
+        "2012"
+      ],
+      [
+        "Nakariakov",
+        "2012"
+      ],
+      [
+        "Tian",
+        "2011"
+      ],
+      [
+        "Yuan",
+        "Nakariakov",
+        "2012"
+      ],
+      [
+        "Krishna",
+        "Prasad",
+        "2012"
+      ],
+      [
+        "Banerjee",
+        "2011"
+      ],
+      [
+        "Verwichte",
+        "2010"
+      ],
+      [
+        "Gupta",
+        "2010"
+      ],
+      [
+        "Wang",
+        "2016"
+      ],
+      [
+        "Moortel",
+        "2009"
+      ]
+    ],
+    "arxiv": [
+      "1009.2980",
+      "1310.2796",
+      "1202.1944",
+      "1105.3119",
+      "1005.3453"
+    ]
+  },
   "1511.05853_1": {
     "title": "The Magellanic Stream: Circumnavigating the Galaxy",
     "question": " What is the history of the discovery and early observations of the Magellanic Stream?",
@@ -16582,6 +18430,188 @@
       "0309272",
       "0210501",
       "0210615"
+    ]
+  },
+  "Evidence_1": {
+    "title": "Evidence for Initial Mass Function Variation in Massive Early-Type Galaxies",
+    "question": " What physical processes have been proposed to explain the shape of the initial mass function (IMF), and how do observations constrain its environmental dependence?",
+    "text": "To date, there is no complete theoretical understanding of the origin of the whole shape of the IMF, including the characteristic mass of the break or turnover. A wide range of physical processes has been invoked as being responsible for shaping the IMF during star formation, including turbulent fragmentation, magnetic fields, and radiative feedback from massive protostars (e.g., Padoan & Nordlund 2002, Bonnell et al. 2006, Krumholz 2006, Hennebelle & Chabrier 2008, Bate 2009, Hopkins 2012). Some of these conjectures favor an IMF that depends on the environment in which star formation proceeds: e.g., those where the characteristic mass scale is set by the Jeans mass (or its equivalent in turbulent models), which in turn depends on the ambient density, temperature, etc. Extensive efforts to measure the IMF in different star-forming regions in the MW have not found compelling evidence for systematic dependence on such properties (e.g., Bastian et al. 2010), although localized deviations from the standard form do seem to be present in a few regions (e.g., Luhman 2004, Lu et al. 2013). Hence much of the theoretical modeling effort cited above was aimed at accounting for the apparent near-universality of the IMF.",
+    "citations": [
+      [
+        "Padoan",
+        "Nordlund",
+        "2002"
+      ],
+      [
+        "Bastian",
+        "2010"
+      ],
+      [
+        "Lu",
+        "2013"
+      ],
+      [
+        "Krumholz",
+        "2006"
+      ],
+      [
+        "Hennebelle",
+        "Chabrier",
+        "2008"
+      ],
+      [
+        "Bate",
+        "2009"
+      ],
+      [
+        "Chabrier",
+        "2008"
+      ],
+      [
+        "Luhman",
+        "2004"
+      ],
+      [
+        "Bonnell",
+        "2006"
+      ],
+      [
+        "Hopkins",
+        "2012"
+      ],
+      [
+        "Nordlund",
+        "2002"
+      ]
+    ],
+    "arxiv": [
+      "0011465",
+      "1001.2965",
+      "1301.0540",
+      "0608471",
+      "0805.0691",
+      "0811.0163",
+      "0411447",
+      "0603444",
+      "1110.4638"
+    ]
+  },
+  "Evidence_2": {
+    "title": "Evidence for Initial Mass Function Variation in Massive Early-Type Galaxies",
+    "question": " How do strong gravitational lensing measurements of low-redshift elliptical galaxies constrain their stellar initial mass functions?",
+    "text": "For many years, the only known low-redshift strong-lens system was Q2237+0305, the Einstein Cross (Huchra et al. 1985). In this case, the lensing galaxy is a barred spiral with \u03c3 \u2248 165 km s\u22121, at z = 0.038, and analysis yields a total Einstein-aperture M/L that is too small to be consistent with a Salpeter or heavier IMF (Ferreras et al. 2010), even assuming no contribution from DM. Smith et al. (2005) discovered the first low-redshift elliptical galaxy known to act as a strong lens. ESO325\u2013G004, at z = 0.034, images a background galaxy into a partial Einstein ring, providing a very robust measurement of the mass projected inside a radius of 1.9 kpc (\u223c0.25 R\neff). With a high velocity dispersion (\u03c3 \u223c300 km s\u22121), absence of any apparent ongoing star formation, negligible rotation, and \u03b1-enhanced abundance pattern, this galaxy is typical of the objects found in other studies to have a (bottom-)heavy IMF. However, Smith & Lucey (2013) showed that the lensing mass implies \u03a8 to be consistent with a MW IMF (\u03b1lens = 1.04 \u00b1 0.15). They assumed a theoretically motivated estimate for the projected DM contribution, but this is a small correction (15%) due to the small projected Einstein radius, and even attributing all mass to the stars yields a sub-Salpeter \u03b1 factor. Three further low-z early-type lens galaxies have since been discovered (Smith et al. 2015, Collier et al. 2018). After corrections for the likely projected DM content, based on cosmological simulations, all of these galaxies have \u03b1 consistent with a MW IMF, on \u223c2-kpc scales. Efforts are underway to enlarge the samples of low-redshift strong lenses (Talbot et al. 2018, Collier et al. 2020). The approach can be augmented with upper limits on \u03b1 from galaxies with close-projected but singly imaged background galaxies, when unambiguous limits on counter-images can be established (Smith et al. 2018).",
+    "citations": [
+      [
+        "Collier",
+        "2018"
+      ],
+      [
+        "Smith",
+        "2018"
+      ],
+      [
+        "However",
+        "Smith",
+        "Lucey",
+        "2013"
+      ],
+      [
+        "Smith",
+        "2015"
+      ],
+      [
+        "Ferreras",
+        "2010"
+      ],
+      [
+        "Smith",
+        "2005"
+      ],
+      [
+        "Lucey",
+        "2013"
+      ],
+      [
+        "Talbot",
+        "2018"
+      ],
+      [
+        "Collier",
+        "2020"
+      ],
+      [
+        "Huchra",
+        "1985"
+      ],
+      [
+        "Smith",
+        "Lucey",
+        "2013"
+      ]
+    ],
+    "arxiv": [
+      "1803.07082",
+      "1808.08235",
+      "1805.05964",
+      "1806.08300",
+      "1509.01253",
+      "1503.02661",
+      "1008.4363",
+      "0504453",
+      "1306.4983",
+      "1803.03604",
+      "2002.07191"
+    ]
+  },
+  "Evidence_3": {
+    "title": "Evidence for Initial Mass Function Variation in Massive Early-Type Galaxies",
+    "question": " How does the two-phase formation scenario for massive early-type galaxies potentially explain observed radial variations in their initial mass functions?",
+    "text": "CONNECTION TO THE TWO-PHASE GALAXY FORMATION SCENARIOEvidence from both observations and simulations seems to support a two-phase scenario for the formation of massive ETGs (Oser et al. 2010). In this picture, an early phase of in situ star formation (Barro et al. 2013) leads to a population of initially compact (1\u20132 kpc) but massive (\u223c1011 M\u2299) quiescent galaxies at z\n\n\n 1.5 (Trujillo et al. 2006), which later grow by accreting stars that formed elsewhere, through minor mergers (Belli et al. 2014). The similarity in size-scale with the radial extent of the IMF variations in massive ETGs (\n\n2 kpc, e.g., van Dokkum et al. 2017, La Barbera et al. 2019) tempts speculation that the IMF signal is linked specifically to the surviving stars from the in situ formation phase, which are thought still to dominate the innermost regions (<0.1 R\neff) of their descendent galaxies at z = 0 (e.g., Rodriguez-Gomez et al. 2016). This picture finds support in some rare relic galaxies at low redshift that are thought to have suffered little accretion after the initial phase, and which indeed seem to exhibit bottom-heavy IMFs at all radii (Ferr\u00e9-Mateu et al. 2017).",
+    "citations": [
+      [
+        "Dokkum",
+        "2017"
+      ],
+      [
+        "Barro",
+        "2013"
+      ],
+      [
+        "Mateu",
+        "2017"
+      ],
+      [
+        "La",
+        "Barbera",
+        "2019"
+      ],
+      [
+        "Oser",
+        "2010"
+      ],
+      [
+        "Rodriguez-Gomez",
+        "2016"
+      ],
+      [
+        "Trujillo",
+        "2006"
+      ],
+      [
+        "Barbera",
+        "2019"
+      ],
+      [
+        "Belli",
+        "2014"
+      ]
+    ],
+    "arxiv": [
+      "1206.5000",
+      "0608657",
+      "1311.3317",
+      "1511.08804",
+      "1010.1381"
     ]
   }
 }
