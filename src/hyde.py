@@ -10,16 +10,24 @@ import yaml
 import json
 import transformers
 from sklearn.metrics.pairwise import cosine_similarity
+import concurrent.futures
 
+# use generate_n = 0, embed_query = True to do basic vector search (no generation)
 class HydeRetrievalSystem(RetrievalSystem):
-    def __init__(self, config_path: str, db_path: str, generation_model: str = "claude-3-5-sonnet-20240620",
-                 embedding_model: str = "text-embedding-3-small", 
+    def __init__(self, config_path: str, db_path: str, generation_model: str = "claude-3-haiku-20240307",
+                 vector_db = None, generation_client = None, embedding_model: str = "text-embedding-3-small", 
                  temperature: float = 0.5, max_doclen: int = 500, generate_n: int = 1, embed_query = True):
         
-        self.db_path = db_path
+        # For building chained retrieval systems -- avoid generating a ton of clients at once
+        if vector_db is not None: self.embeddings = self.vector_db
+        else:
+            self.db_path = db_path
+            self.embeddings = None
+            self.load_embeddings()
+        
         self.embedding_model = embedding_model
         self.generation_model = generation_model
-        self.embeddings = None
+        
         self.document_ids = []
 
         # HYPERPARAMETERS
@@ -33,18 +41,16 @@ class HydeRetrievalSystem(RetrievalSystem):
             self.anthropic_key = config['anthropic_api_key']
             self.openai_key = config['openai_api_key']
         
-        self.client = anthropic.Anthropic(api_key = self.anthropic_key)
+        if generation_client is not None: self.client = generation_client
+        else: self.client = anthropic.Anthropic(api_key = self.anthropic_key)
         
-        self.load_embeddings()
-    
     def load_embeddings(self):
-
         pass
 
     def retrieve(self, query: str, top_k: int = 10):
         docs = self.generate_docs(query)
-        
         doc_embeddings = self.embed_docs(docs)
+        
         if self.embed_query: 
             query_emb = self.embed_docs([query])[0]
             doc_embeddings.append(query_emb)
@@ -56,10 +62,8 @@ class HydeRetrievalSystem(RetrievalSystem):
         
         return [self.document_ids[i] for i in top_indices]
 
-    def generate_docs(self, query: str):
-        docs = []
-        for i in range(self.generate_n):
-            message = self.client.messages.create(
+    def generate_doc(self, query: str):
+        message = self.client.messages.create(
                 model = self.generation_model,
                 max_tokens = self.max_doclen,
                 temperature = self.temperature,
@@ -70,8 +74,20 @@ class HydeRetrievalSystem(RetrievalSystem):
                 messages=[{ "role": "user",
                         "content": [{"type": "text", "text": query,}] }]
             )
-            docs.append(message.content[0].text)
 
+        return message.content[0].text
+    
+    def generate_docs(self, query: str):
+        docs = []
+        with concurrent.futures.ThreadPoolExecutor() as executor:
+            future_to_query = {executor.submit(self.generate_doc, query): query for i in range(self.generate_n)}
+            for future in concurrent.futures.as_completed(future_to_query):
+                query = future_to_query[future]
+                try:
+                    data = future.result()
+                    docs.append(data)
+                except Exception as exc:
+                    print(f'Query {query} generated an exception: {exc}')
         return docs
 
     def embed_docs(self, docs: List[str]):
@@ -81,15 +97,15 @@ class HydeRetrievalSystem(RetrievalSystem):
             "Authorization": "Bearer {}".format(self.openai_key)
         }
 
-        vecs = []
-        for i in range(len(docs)):
-            data = {
-                "input": docs[i],
-                "model": self.embedding_model,
-            }
-            response = requests.post(url, headers=headers, data=json.dumps(data))
-            vecs.append(response.json()['data'][0]['embedding'])
+        data = {
+            "input": docs,
+            "model": self.embedding_model
+        }
+
+        response = requests.post(url, headers=headers, data=json.dumps(data))
+        json_response = response.json()['data']
         
+        vecs = [json_response[i]['embedding'] for i in range(len(docs))]
         return vecs
 
 def main():
