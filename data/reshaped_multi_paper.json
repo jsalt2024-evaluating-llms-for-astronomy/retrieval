@@ -1,0 +1,239 @@
+{
+    "1403.0007": {
+        "question_conclusion": " How does the specific star formation rate of galaxies evolve with redshift and stellar mass, and what are the implications for galaxy growth and the cosmic star formation history?"
+    },
+    "1709.09180": {
+        "question_conclusion": " How do theoretical models attempt to explain the physical conditions and stability of multiphase gas in galactic halos, and what challenges do they face?"
+    },
+    "1602.07702": {
+        "question_conclusion": " Is the Milky Way's disk maximal, and how does this depend on the disk scale length?"
+    },
+    "1707.04256": {
+        "question_conclusion": " How can baryonic feedback processes in hydrodynamic simulations alter the central density profiles of dark matter halos, and what are the key predictions regarding core formation in different mass regimes?"
+    },
+    "1911.09678": {
+        "question_conclusion": " What are the key methods and challenges in dynamically modeling supermassive black holes, particularly for stellar-dynamical and gas-dynamical techniques?"
+    },
+    "1812.06025": {
+        "question_conclusion": " What have radio and \u03b3-ray correlation studies revealed about the locations of emission regions in AGN jets, and how do these findings impact our understanding of jet structure?"
+    },
+    "1401.0586": {
+        "question_conclusion": " What is the observational evidence for a connection between hot accretion flows and jets/outflows in low-luminosity AGNs and black hole binaries?"
+    },
+    "1703.00068": {
+        "question_conclusion": " What are the unique characteristics of radio pulsations detected from magnetars, and how do they differ from typical radio pulsars?"
+    },
+    "1910.09730": {
+        "question_conclusion": " How has our understanding of the mass-metallicity relation and its evolution with redshift developed, and what factors affect this relationship?"
+    },
+    "1403.4620": {
+        "question_conclusion": " How has the M-\u03c3 relation for black hole mass estimation been refined in recent years, and how applicable is it to SDSS data?"
+    },
+    "1901.05465": {
+        "question_conclusion": " Why are ultra-faint dwarf galaxies important for astrophysics, particularly in relation to dark matter and galaxy evolution?"
+    },
+    "2212.06907": {
+        "question_conclusion": " How do the black hole masses and host galaxy dynamical masses of high-redshift quasars compare to the local M-\u03c3 relation, and what does this imply about their co-evolution?"
+    },
+    "1603.02698": {
+        "question_conclusion": " How have improvements in pulsar detection technology and survey techniques led to an increase in millisecond pulsar discoveries in recent years?"
+    },
+    "1911.05791": {
+        "question_conclusion": " What is the range of predicted LISA event rates for merging massive black holes at high redshifts, and how could LISA observations help distinguish between different black hole seeding models?"
+    },
+    "2110.13160": {
+        "question_conclusion": " How has spectroscopic confirmation of high-redshift galaxies progressed, particularly for redshifts z > 7?"
+    },
+    "2301.10253": {
+        "question_conclusion": " What mechanisms can cause gas fragmentation to small scales in the CGM, and what are the characteristic properties of the resulting cloudlets?"
+    },
+    "2303.12500": {
+        "question_conclusion": " What can the elemental abundances of extremely metal-poor stars tell us about the mass range and explosion mechanisms of Population III stars?"
+    },
+    "2001.05007": {
+        "question_conclusion": " What are the key observational characteristics of transition disks with rings and cavities, and what do they reveal about particle traps and disk structure?"
+    },
+    "1505.00811": {
+        "question_conclusion": " What are the different methods used to estimate the covering factor of AGN tori, and why do they sometimes produce inconsistent results?"
+    },
+    "1612.06891": {
+        "question_conclusion": " How does the spatial distribution of supernovae affect their impact on the interstellar medium and galactic outflows?"
+    },
+    "2309.17075": {
+        "question_conclusion": " What are some important physical processes currently neglected in most state-of-the-art cosmological simulations of galaxy formation?"
+    },
+    "2104.14580": {
+        "question_conclusion": " How has the availability of pre-peak light curve data for TDEs impacted our understanding of their rise times and correlations with black hole mass and luminosity?"
+    },
+    "1812.01615": {
+        "question_conclusion": " What does the age distribution of stars in the Orion Nebula Cluster reveal about the timescale and dynamics of star formation in clusters?"
+    },
+    "1801.06117": {
+        "question_conclusion": " What are the key mechanisms and timescales of secular interactions that can excite giant planet eccentricities?"
+    },
+    "2002.04340": {
+        "question_conclusion": " How do cosmological simulations compare to and inform our understanding of the Milky Way's stellar halo and merger history?"
+    },
+    "1402.1237": {
+        "question_conclusion": " What evidence exists for pre-supernova outbursts in massive stars, and what do they reveal about late-stage stellar evolution?"
+    },
+    "1806.04680": {
+        "question_conclusion": " What recent observational evidence challenges the standard model of a compact, axisymmetric obscuring torus in AGN, and what alternative geometries have been proposed?"
+    },
+    "1410.4199": {
+        "question_conclusion": " What are the upcoming ground-based and space-based transit surveys, and what are their specific goals and capabilities?"
+    },
+    "1403.2783": {
+        "question_conclusion": " How did the advent of deep Hubble Space Telescope imaging campaigns revolutionize the study of galaxy morphologies at high redshifts?"
+    },
+    "2309.05685": {
+        "question_conclusion": " What methods are used to model non-LTE line excitation and retrieve molecular abundances from disk observations?"
+    },
+    "2202.00690": {
+        "question_conclusion": " How have cold gas surveys of representative galaxy samples in the past decade advanced our understanding of gas content across the galaxy population?"
+    },
+    "1311.2603": {
+        "question_conclusion": " What can be inferred about the kick velocities of short GRB progenitors based on their offsets from host galaxies?"
+    },
+    "1312.0628": {
+        "question_conclusion": " How can measurements of the Type Ia supernova rate in galaxy clusters be used to constrain the delay time distribution, and what are the current limitations of this approach?"
+    },
+    "1602.04267": {
+        "question_conclusion": " How do galaxies form and evolve differently in low-density versus high-density regions of the universe, particularly with regards to disk galaxies and their observed properties at high redshift?"
+    },
+    "2011.01935": {
+        "question_conclusion": " How does the net accretion rate of gas into the condensed phase compare to the baryonic accretion rate onto halos as a function of redshift?"
+    },
+    "1904.03190": {
+        "question_conclusion": " How have atmospheric retrieval techniques for exoplanets evolved over the past decade, and what are the current capabilities?"
+    },
+    "2010.10171": {
+        "question_conclusion": " How are the mass outflow rates and energetics of galactic winds in high-redshift star-forming galaxies estimated using broad H-alpha emission, and what do the results imply about the driving mechanisms?"
+    },
+    "2202.05867": {
+        "question_conclusion": " What is CO-dark molecular gas, and how does its fraction vary with galactic conditions?"
+    },
+    "1501.05317": {
+        "question_conclusion": " What are the characteristics and variations of ice features observed in the central parsec of the Galaxy, and what do they reveal about local conditions?"
+    },
+    "1503.05206": {
+        "question_conclusion": " What evidence do recent infrared observations provide for large-scale molecular outflows in nearby quasars, and how do these compare to theoretical predictions for AGN feedback?"
+    },
+    "2103.02127": {
+        "question_conclusion": " What are the limitations of current approaches to modeling the intrinsic multiplicity distribution of planetary systems?"
+    },
+    "2209.08940": {
+        "question_conclusion": " How are Gaussian processes used to study the population-level properties and variability of active galactic nuclei?"
+    },
+    "2001.03181": {
+        "question_conclusion": " How do theoretical models explain the observed IRX-\u03b2 relation in galaxies, and what factors contribute to scatter in this relation?"
+    },
+    "2011.08948": {
+        "question_conclusion": " How do the spin distributions of black holes observed through electromagnetic methods compare to those detected via gravitational waves, and what implications does this have?"
+    },
+    "1711.07434": {
+        "question_conclusion": " How does the photoelectric heating efficiency vary in galaxies, and what factors influence it?"
+    },
+    "1703.10728": {
+        "question_conclusion": " How do supercritical accretion models interpret the two-component spectra observed in brighter ultraluminous X-ray sources?"
+    },
+    "1603.01280": {
+        "question_conclusion": " What types of objects are most likely to form from gravitational instability-induced disk fragmentation, and why are planets disfavored compared to brown dwarfs and stellar companions?"
+    },
+    "2006.07071": {
+        "question_conclusion": " What chemical differentiation has been observed within the Orion KL region, and how has this improved our understanding of COM formation and distribution?"
+    },
+    "2307.08464": {
+        "question_conclusion": " How do HI supershells influence the structure and cooling of interstellar gas, particularly in forming cold neutral medium (CNM) and molecular gas?"
+    },
+    "1501.06921": {
+        "question_conclusion": " How do carbon and oxygen abundances in the most metal-poor stars constrain theories of early star formation and cooling mechanisms?"
+    },
+    "1906.05878": {
+        "question_conclusion": " How do magnetar models explain the features of repeating FRB 121102 and its associated persistent radio source?"
+    },
+    "2211.00028": {
+        "question_conclusion": " What observational techniques can be used to detect and characterize compact massive black hole binaries at subparsec separations?"
+    },
+    "2012.07960": {
+        "question_conclusion": " What do recent spectroscopic observations reveal about the ionization state of Lyman-alpha emitters compared to other galaxy populations?"
+    },
+    "2011.08751": {
+        "question_conclusion": " How does the spectral and photometric evolution of a nova eruption proceed during its early phases, and what does this reveal about the structure of the ejecta?"
+    },
+    "2109.08164": {
+        "question_conclusion": " What are the characteristics of classical Wolf-Rayet star winds, and how do they differ from optically thin CAK theory?"
+    },
+    "2110.05615": {
+        "question_conclusion": " How do spiral arms correlate with star formation rates and efficiencies in galaxies, and how does this vary across different spiral types?"
+    },
+    "1802.04313": {
+        "question_conclusion": " How does the spatial distribution of gas compare to that of dust in debris disk systems, and what implications does this have for the origin of the gas?"
+    },
+    "1406.2207": {
+        "question_conclusion": " What evidence exists for tidal circularization in binary star systems, and how well do theoretical models explain the observed circularization timescales?"
+    },
+    "1809.07779": {
+        "question_conclusion": " What have asteroseismic studies revealed about differential rotation in the envelopes of low-mass main-sequence stars, and how do these findings compare to theoretical predictions?"
+    },
+    "2303.00453": {
+        "question_conclusion": " How has the GRAVITY instrument enabled the detection of general relativistic effects around the Galactic center black hole?"
+    },
+    "1710.03235": {
+        "question_conclusion": " How do intrinsic alignments impact weak lensing measurements and what approaches are used to mitigate this systematic?"
+    },
+    "2012.04810": {
+        "question_conclusion": " What constraints do electromagnetic observations of GW170817 place on the nature and lifetime of the merger remnant?"
+    },
+    "1512.00086": {
+        "question_conclusion": " What is the potential of 21-cm observations for mapping the structure of reionization, and what current and planned efforts are underway to detect this signal?"
+    },
+    "1911.06925": {
+        "question_conclusion": " What is the typical radial gradient in oxygen abundance observed in star-forming galaxies, and how does it depend on galaxy properties like mass and morphology?"
+    },
+    "2202.01413": {
+        "question_conclusion": " How do measurements of the ionizing photon production efficiency (\u03beion) vary across different types of high-redshift galaxies and selection methods?"
+    },
+    "1807.06647": {
+        "question_conclusion": " What specific conditions are required for Saturn's obliquity to be excited by capture in the p6=s8 spin-orbit resonance during late planetary migration?"
+    },
+    "1812.01428": {
+        "question_conclusion": " What are the typical physical parameters derived from magnetar models when applied to fit the light curves of SLSNe-I?"
+    },
+    "2206.13633": {
+        "question_conclusion": " How can the impact of spectroscopic incompleteness on photometric redshift calibration be mitigated using multi-band photometric information?"
+    },
+    "2101.08839": {
+        "question_conclusion": " How does the response to tilt differ between thin and thick accretion disks, and what evidence is there for the Bardeen-Petterson effect in simulations?"
+    },
+    "1805.01142": {
+        "question_conclusion": " What efforts have been made to search for the earliest metal-poor stars in the Galactic bulge, and what have these searches revealed about the bulge's metal-poor population?"
+    },
+    "1410.6512": {
+        "question_conclusion": " How is the atmospheric abundance of CO modeled in substellar atmospheres, considering vertical mixing and chemical equilibrium timescales?"
+    },
+    "1811.08041": {
+        "question_conclusion": " What are the challenges in using C/N ratios to determine stellar masses and ages, and how have empirical relations from asteroseismic data sets helped overcome these challenges for Galactic studies?"
+    },
+    "1706.01629": {
+        "question_conclusion": " How are solar-like oscillations in stars characterized and what can they reveal about stellar properties and Galactic evolution?"
+    },
+    "2211.03476": {
+        "question_conclusion": " How can observations of synchrotron emission and Faraday rotation be used to detect and characterize magnetic helicity in galactic magnetic fields?"
+    },
+    "1811.00461": {
+        "question_conclusion": " What is the WSA model and how does it explain the relationship between solar wind speed and coronal magnetic field topology?"
+    },
+    "1911.05597": {
+        "question_conclusion": " What are the potential mechanisms for carbon cycling and atmospheric regulation on waterworlds, and how might this affect their habitability?"
+    },
+    "2011.13472": {
+        "question_conclusion": " What are the challenges in identifying the primary dust precursor candidates in stellar winds, and what recent findings have emerged regarding Al2O3 and TiO2?"
+    },
+    "2101.11735": {
+        "question_conclusion": " How does the wave nature of axion dark matter impact experimental detection strategies?"
+    },
+    "1511.05853": {
+        "question_conclusion": " How have observations of different tracers improved our knowledge of the LMC's internal kinematics over the past two decades?"
+    }
+}

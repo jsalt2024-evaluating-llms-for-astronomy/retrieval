@@ -1,322 +1,752 @@
 {
-    "1006.1889": {
-        "question_intro": "How do convective instabilities in core collapse supernovae contribute to the modulation of neutrino emission and what potential implications could the detection of such variations have on our understanding of supernova mechanisms?",
-        "question_conclusion": "How do the time-varying neutrino signals from a galactic supernova depend on the direction of viewing the supernova and the distance from the observer?"
+    "1307.4377": {
+        "question_abstract": "How does the turbulent behavior of solar Active Regions change during different stages of a flare event?"
     },
-    "1009.2001": {
-        "question_intro": "What is the evidence for magnetic activity in evolved M giants and how does it compare to other late-type stars in terms of magnetic field measurements?",
-        "question_conclusion": "What mechanisms could potentially drive dynamo operation in M giant stars and how can we differentiate between different types of dynamos based on observational data?"
+    "1002.3867": {
+        "question_conclusion": "How can statefinder parameters be used to distinguish between different modified gravity models and dark energy models in cosmology?"
     },
-    "1010.3635": {
-        "question_intro": "How do magnetic fields influence the formation and shaping of protostellar systems in both low-mass and high-mass star-forming regions?",
-        "question_conclusion": "How does the alignment between magnetic fields and outflows in high-mass disk-outflow systems impact our understanding of magnetic field structures and dynamics in star-forming regions?"
+    "1502.06663": {
+        "question_abstract": "How can finite-source effects in microlensing events be used to measure the Einstein radius of a lens system?"
     },
-    "1011.2004": {
-        "question_intro": "How does the presence of an extended circumstellar disc around a Be star impact the production of gamma rays through inverse Compton scattering in X-ray pulsar binary systems?",
-        "question_conclusion": "How does the presence of an infrared excess from a circumstellar disc affect the inverse Compton gamma-ray spectrum in gamma-ray binary systems?"
+    "1209.3938": {
+        "question_conclusion": "What impact does the presence of a large-scale magnetic field have on the formation and efficiency of non-relativistic shocks in astrophysical plasma collisions?"
     },
-    "1002.2272": {
-        "question_intro": "How do different acceleration mechanisms in supernova remnants contribute to the production of high-energy gamma rays and impact the overall nonthermal radiative properties of the remnant?",
-        "question_conclusion": "How do different shock structures in supernova remnants impact the acceleration and interaction of particles with surrounding molecular clouds, leading to the observed nonthermal emission properties in various bands of the electromagnetic spectrum?"
+    "2011.10807": {
+        "question_abstract": "How does the spectral index of a radio galaxy's non-thermal emission relate to the density of its surrounding environment?"
     },
-    "1010.5591": {
-        "question_intro": "What physical mechanism might be responsible for radio emission in radio-quiet active galactic nuclei (AGNs)?",
-        "question_conclusion": "What factors contribute to the observed variability in radio-loudness among different classes of active galactic nuclei (AGNs) and what implications does this variability have for our understanding of the underlying physical mechanisms responsible for radio emission in these objects?"
+    "1409.2739": {
+        "question_conclusion": "What is the relationship between the decline rate of a supernova's optical light curve and its estimated ejecta mass?"
     },
-    "1004.3287": {
-        "question_intro": "How can gigapixel CCD mosaic imagers efficiently exploit data obtained over long arcs to search for faint sources in the Solar System?",
-        "question_conclusion": "How can pencil-beam surveys improve their sensitivity to detecting rare objects with high inclination and distant orbits, especially in cases where orbital inclination and heliocentric distance remain degenerate?"
+    "1008.2383": {
+        "question_abstract": "What is the primary mechanism of stellar feedback that dominates the inner regions of large HII regions?"
     },
-    "1002.3335": {
-        "question_intro": "How do shear flow instabilities and turbulence impact the evolution of massive luminous stars, particularly in terms of rotational mixing and changes in photospheric abundance ratios?",
-        "question_conclusion": "How do inhomogeneous magnetic fields impact the stability of shear flows in stratified astrophysical systems, and how does this relate to the behavior of magnetic fields in different regions of stars such as the solar tachocline?"
+    "1805.07407": {
+        "question_conclusion": "How effective are structural selection methods in identifying dwarf galaxies beyond the Local Group, and to what distances can these methods be reliably applied?"
     },
-    "1010.5129": {
-        "question_intro": "How can the high-ionization emission lines such as [\\ion{Ne}{5}], [\\ion{O}{4}], and [\\ion{Ne}{3}] be used as indicators of active galactic nuclei (AGNs) and what potential sources of confusion or contamination should be considered when interpreting these lines in galaxies?",
-        "question_conclusion": "How do the high-ionization and intermediate ionization emission lines in mid-IR spectra of different types of galaxies, such as AGNs and star forming galaxies, vary and what implications does this have for our understanding of their physical properties and processes?"
+    "2108.05212": {
+        "question_abstract": "How does the relative brightness change between lensed quasar images over time inform estimates of accretion disk size?"
     },
-    "1003.4519": {
-        "question_intro": "What is the relationship between the symmetry of the large-scale magnetic field components across the Galactic plane and the possible origins of the Galactic magnetic field based on observations and theoretical models?",
-        "question_conclusion": "What is the relationship between the observed rotation measure pattern towards the Galactic caps and the potential influence of different local and global astrophysical phenomena in shaping the distribution of magnetic fields in the Milky Way?"
+    "1306.5619": {
+        "question_conclusion": "What factors might explain a surprisingly steep gamma-ray spectrum observed from a supernova remnant?"
     },
-    "1002.2505": {
-        "question_intro": "What factors contribute to the diversity observed in the properties of different subclasses of supernovae, and how can this diversity be explained within different physical scenarios?",
-        "question_conclusion": "What theoretical framework underpins the correlation between peak luminosity and decline rate of light curves in certain types of supernovae, and why is it important in the field of supernova cosmology?"
+    "1405.2837": {
+        "question_abstract": "How does the process of convective collapse contribute to the intensification of magnetic fields in solar photospheric flux tubes?"
     },
-    "1009.4498": {
-        "question_intro": "What impact does the formation of a magnetar immediately after a supernova explosion have on the dynamics and aging of the resulting remnant?",
-        "question_conclusion": "What factors beyond progenitor mass play a significant role in distinguishing between events producing pulsars and magnetars?"
+    "2304.02142": {
+        "question_conclusion": "What velocity width parameters are most appropriate for estimating black hole masses using different ultraviolet emission lines in quasar spectra?"
     },
-    "1006.1954": {
-        "question_intro": "How do interactions between galaxies affect the star formation processes and stellar populations within the galaxies involved?",
-        "question_conclusion": "What factors influence the distribution and formation of single-aged stellar associations in interacting spiral systems?"
+    "1105.6362": {
+        "question_abstract": "How do quasi-exponential inflation models compare to observational data from cosmic microwave background radiation surveys?"
     },
-    "1004.4626": {
-        "question_intro": "What is the relationship between the circular velocity within the optical part of a galaxy and the circular velocity at the virial radius of the dark matter halo, and how does this relationship provide insights into the distribution of mass within galaxies and the relative contributions of baryonic matter and dark matter in galaxy formation?",
-        "question_conclusion": "What is the relationship between the optical circular velocity and the virial circular velocity of galaxies of different types at a redshift near zero, and how does this relationship vary with stellar mass?"
+    "1612.07963": {
+        "question_conclusion": "How does the geometric configuration of matter in different accretion disk models affect the location and properties of acoustic horizons around black holes?"
     },
-    "1003.2637": {
-        "question_intro": "What are the implications of magnetic reconnection occurring at a speed comparable to the rms velocity of turbulence in astrophysical plasmas for dynamo activity and particle acceleration in the universe?",
-        "question_conclusion": "How does the first order Fermi acceleration mechanism in reconnection layers contribute to the generation of anomalous cosmic rays in astrophysical environments?"
+    "2010.15005": {
+        "question_abstract": "How does the degree of linear polarization in the solar corona vary with distance from the Sun's surface?"
     },
-    "1001.1068": {
-        "question_intro": "How can the use of pulsars as natural beacons contribute to the development of an autonomous relativistic positioning and navigation system for space exploration beyond the Earth?",
-        "question_conclusion": "What impact does the variability of emission from pulsar sources have on the accuracy and reliability of determining positions in space using their signals?"
+    "1407.4168": {
+        "question_conclusion": "How does the mass function of isolated galaxy clusters respond to different levels of primordial non-Gaussianity compared to the mass function of all clusters?"
     },
-    "1002.0693": {
-        "question_intro": "How can intrinsic-shear systematics in cosmic shear studies be effectively controlled, particularly in the context of three-point lensing statistics?",
-        "question_conclusion": "How can we improve methods for reducing intrinsic-shear alignment systematic in three-point cosmic shear statistics while minimizing information loss?"
+    "1307.3452": {
+        "question_abstract": "How can a vertically-oriented laser system be used to calibrate and monitor the sensitivity of multiple telescopes in a large-scale astroparticle detector array?"
     },
-    "1007.0212": {
-        "question_intro": "What are the potential astrophysical sites where light elements, including boron isotopes, are produced, and how do neutrinos play a role in the nucleosynthesis processes in these sites?",
-        "question_conclusion": "How do the physical properties of different types of supernovae affect the production of light elements, particularly in relation to the $\\nu$-process and spallation reactions?"
+    "1706.06179": {
+        "question_conclusion": "What is the optimal averaging scale for cosmological simulations that can produce super-Einstein-de Sitter expansion without invoking dark energy?"
     },
-    "1005.2170": {
-        "question_intro": "What is the significance of considering white dwarfs as cosmic clocks for inferring the ages of various stellar populations, and how does the incorporation of up-to-date physical inputs in evolutionary sequences contribute to this role?",
-        "question_conclusion": "How does the metallicity of a white dwarf progenitor impact the accuracy of age determination for white dwarfs in different stellar systems?"
+    "1103.3250": {
+        "question_abstract": "How does the presence or absence of non-thermal particles in Be X-ray binary systems relate to their detectability at very high energies?"
     },
-    "1008.1823": {
-        "question_intro": "What are the statistical properties of waves in the solar corona and how do they correlate with the different coronal structures present?",
-        "question_conclusion": "What factors may contribute to the dissipation or reflection of torsional Alfv\u00e9n mode and fast kink mode waves below the solar corona, especially considering their slow rate of dissipation and incompressibility?"
+    "1001.5088": {
+        "question_conclusion": "How can future cosmic microwave background experiments potentially constrain or detect neutrino masses and asymmetries?"
     },
-    "1503.05581": {
-        "question_intro": "What techniques have been developed or improved for detecting and characterizing exoplanet atmospheres, including overcoming challenges such as contamination from telluric lines and hazes?",
-        "question_conclusion": "What are the implications of detecting a positive temperature gradient in the upper atmosphere of an exoplanet using high-resolution transit spectroscopy?"
+    "1302.2562": {
+        "question_abstract": "How does the fraction of passive galaxies in high-redshift galaxy groups compare to that in the field, and what does this imply about environmental quenching efficiency?"
     },
-    "1504.01844": {
-        "question_intro": "How does the H\u03b2 lag vary with increasing accretion rate for a given luminosity in active galactic nuclei?",
-        "question_conclusion": "How does the radius-mass saturation parameter in high-accretion super-Eddington accretion black holes contribute to our understanding of the transition from thin to slim disk systems in the context of astrophysical observations and theoretical models?"
+    "2111.01402": {
+        "question_conclusion": "How do the spatial emission patterns differ between galaxy bubbles dominated by hadronic versus leptonic cosmic rays?"
     },
-    "1512.02768": {
-        "question_intro": "How does dust impact the detection of infrared emission from galaxies, and what role does image stacking analysis play in overcoming this challenge?",
-        "question_conclusion": "How does the angular clustering of galaxies at different redshifts affect their far-infrared luminosities and the overall understanding of their nature?"
+    "astro-ph0603184_arXiv.txt": {
+        "question_abstract": "What geometric configurations of high-velocity material in Type Ia supernova ejecta can explain the observed diversity in early spectral features?"
     },
-    "1501.01630": {
-        "question_intro": "How does the strength of the photodissociating radiation field impact the final mass of primordial stars forming in a collapsing cloud?",
-        "question_conclusion": "What factors influence the final fates of primordial stars, and how do uncertainties in stellar mass estimation impact our understanding of early cosmic chemical evolution?"
+    "astro-ph9607083_arXiv.txt": {
+        "question_conclusion": "What effect does the initial mass function slope have on the survival probability of globular clusters following residual gas expulsion?"
     },
-    "1507.01938": {
-        "question_intro": "What is the significance of eccentric and inclined orbits of giant planets found close to their host stars in terms of the formation and evolution of planetary systems?",
-        "question_conclusion": "What impact do close, undetected stellar companions have on the derivation of stellar and planetary properties in exoplanet hosting systems?"
+    "1211.2860": {
+        "question_abstract": "How does the presence of a magnetic field affect the relationship between column density variance and three-dimensional density variance in turbulent interstellar media?"
     },
-    "1503.04901": {
-        "question_intro": "What role does magnetic diffusion play in the formation and evolution of circumstellar discs around protostars in a magnetized molecular cloud core?",
-        "question_conclusion": "How does the strength of the magnetic field influence the formation of circumstellar discs around protostars?"
+    "1110.4634": {
+        "question_conclusion": "How does radiation feedback affect the accretion rate and luminosity of intermediate-mass black holes in different ambient gas environments?"
     },
-    "1501.04106": {
-        "question_intro": "What are the key astrophysical processes that impact the 21cm signal during the Cosmic Dawn and Epoch of Reionization, and how can these processes be studied using upcoming instruments like the SKA-LOW?",
-        "question_conclusion": "What information can the timing and duration of the initial rise and fall of the 21cm power provide about star-formation inside the very first, molecularly-cooled galaxies?"
+    "2211.01729": {
+        "question_abstract": "How can introducing dark radiation components affect cosmological constraints on neutrino masses while maintaining the effective number of neutrino species?"
     },
-    "1505.01154": {
-        "question_intro": "How do gravitational instabilities in protoplanetary disks contribute to the formation of gas giants and other massive planets in solar systems, including our own?",
-        "question_conclusion": "What are the critical factors influencing the formation and evolution of massive self-gravitating clumps in protoplanetary disks, and how does the resolution level affect the resulting structures in simulations?"
+    "0706.3578": {
+        "question_conclusion": "How does the one-dimensional motion of electrons in a superstrong magnetic field affect the formation and temperature of a magnetar's atmosphere?"
     },
-    "1511.04075": {
-        "question_intro": "What is the potential complementarity between cluster and void abundances as cosmological probes, and how can they be used to break each other's parameter degeneracies in testing cosmological models?",
-        "question_conclusion": "What role do large-scale structures such as galaxy clusters and voids play in constraining cosmological parameters and theories beyond the standard concordance model?"
+    "2306.13142": {
+        "question_abstract": "How does the large frequency separation in delta Scuti stars compare to predictions from solar scaling relations?"
     },
-    "1504.06033": {
-        "question_intro": "What factors need to be considered when identifying potential sites for astronomical observations in different wavelengths based on satellite images of Earth's atmosphere?",
-        "question_conclusion": "How does the methodology described in the paper quantify the contribution of different atmospheric layers to the clear sky fraction above a specific astronomical observatory site?"
+    "1501.04635": {
+        "question_conclusion": "How does the cooling efficiency of stellar debris affect the structure and evolution of accretion disks formed during tidal disruption events?"
     },
-    "1502.07513": {
-        "question_intro": "What are the potential outcomes of the tidal disruption of planets around white dwarfs, based on their composition and initial size?",
-        "question_conclusion": "What are the potential outcomes of the tidal destruction of gas giant planets by evolved stars and how do they differ from the outcomes of the tidal destruction of Earth-like planets or icy cores?"
+    "astro-ph0406312_arXiv.txt": {
+        "question_abstract": "How does the metal abundance of the cool gas component in galaxy clusters compare to that of the hot gas component, and what might explain any observed differences?"
     },
-    "1509.00858.txt": {
-        "question_intro": "What impact does the presence of dust in the ejecta of core-collapse supernovae have on the asymmetry of line profiles emitted from these objects?",
-        "question_conclusion": "What characteristics of supernova line profiles suggest the presence of dust, and how do these characteristics evolve over time?"
+    "astro-ph9803209_arXiv.txt": {
+        "question_conclusion": "What effect does intense X-ray irradiation from an active galactic nucleus have on the atmospheric structure and mass loss rates of nearby low-gravity stars?"
     },
-    "1504.02154": {
-        "question_intro": "How do different experimental approaches provide valuable insights into the nature and behavior of solar neutrinos emitted by fusion reactions in the Sun?",
-        "question_conclusion": "How can precision measurements of solar neutrinos contribute to our understanding of nuclear astrophysics and stellar evolution?"
+    "2203.16584": {
+        "question_abstract": "How can interferometric observations of neutral hydrogen in galaxies be used to differentiate between cold and warm phases of the interstellar medium?"
     },
-    "1502.01465": {
-        "question_intro": "What evidence can be used to determine whether a pulsar is in orbit with another celestial object based on its timing analysis and positional proximity to other stars or sources?",
-        "question_conclusion": "What constraints can be placed on a binary system when estimating the companion star's mass based on spectral type and how recent advancements in mass estimation techniques using spectrometry and parallax data affect these constraints?"
+    "gr-qc0606020_arXiv.txt": {
+        "question_conclusion": "How does the evolution of averaged 3-Ricci curvature in inhomogeneous cosmological models relate to the potential for explaining cosmic acceleration without dark energy?"
     },
-    "1506.02684": {
-        "question_intro": "What are the potential effects of stability breakdown and asymmetry in imploding gases on observational diagnostics in astrophysical phenomena?",
-        "question_conclusion": "What effects do vorticity fluctuations and entropy fluctuations have on the stability of imploding ideal gases in astrophysical contexts?"
+    "astro-ph0406262_arXiv.txt": {
+        "question_abstract": "What shock velocities are typically required to produce the observed [Fe II] and [C I] emission lines in Herbig-Haro objects?"
     },
-    "1508.06800": {
-        "question_intro": "What characteristics of the orbital dynamics of high-mass X-ray binaries with TeV emission can influence the variability of their emission on the timescale of one orbital period?",
-        "question_conclusion": "What evidence would unambiguously distinguish between a microquasar scenario and a pulsar binary scenario for the compact object in \\lsi{} based on the observed emission properties?"
+    "0705.4457": {
+        "question_conclusion": "What role does mass fueling onto the inner accretion disk play in establishing the relationship between supermassive black hole mass and host galaxy properties?"
     },
-    "1510.04718": {
-        "question_intro": "How can the evolution of coronal hole boundaries be systematically studied and tracked over medium time periods using image processing techniques and detection algorithms?",
-        "question_conclusion": "What advanced detection algorithms might improve the accuracy and detail of coronal hole evolution studies in solar images?"
+    "2112.08956": {
+        "question_abstract": "How can combining low-resolution and high-resolution spectroscopy techniques improve our understanding of exoplanetary atmospheres?"
     },
-    "1502.06617": {
-        "question_intro": "How does the growth of a supermassive black hole in a galaxy during a gas-rich merger compare to the evolution of star formation in terms of relative timescales and feedback mechanisms?",
-        "question_conclusion": "What is the relationship between black hole growth and host galaxy evolution during gas-rich mergers in terms of how quickly black holes grow compared to their host galaxies?"
+    "2205.01677": {
+        "question_conclusion": "How does the use of single-band light curve embeddings affect the classification accuracy of variable stars compared to traditional methods?"
     },
-    "1503.05463": {
-        "question_intro": "How do the different opacity sources at various temperatures impact the radiative transfer processes in super-luminous Type IIn supernovae?",
-        "question_conclusion": "What are the key factors influencing the evolution of the light curve of super-luminous SNe IIn, particularly in terms of the interaction dynamics between explosively-produced inner shells and wind-produced outer shells?"
+    "1605.04089": {
+        "question_abstract": "How does the radial density distribution in a disc affect the geometry and acceleration of thermal winds emanating from it?"
     },
-    "1510.01177": {
-        "question_intro": "What are the implications of the mass carried away by disk winds in low-mass X-ray binaries for binary evolution models and the spin evolution of compact objects?",
-        "question_conclusion": "How can the detection and characterization of re-emission from disk winds in stellar-mass black holes aid in understanding the connection between such winds and the broad-line region in active galactic nuclei?"
+    "astro-ph0308348_arXiv.txt": {
+        "question_conclusion": "What is the relationship between the inner density slope of dwarf dark matter halos and their mass concentration?"
+    },
+    "2206.00882": {
+        "question_abstract": "What is the effect of non-stationary, narrow-band disturbances on the detection of continuous gravitational waves from rotating neutron stars?"
+    },
+    "1208.2033": {
+        "question_conclusion": "How do pulsars compare to active galactic nuclei as probes for testing Lorentz invariance violation in high-energy astrophysics?"
+    },
+    "0811.4480": {
+        "question_abstract": "How do the ages of low surface brightness galaxies in dense cluster environments relate to their spectral types?"
+    },
+    "astro-ph0504002_arXiv.txt": {
+        "question_conclusion": "How does the presence of a corotation radius within a differentially rotating star influence the development of one-armed spiral and bar mode instabilities?"
+    },
+    "2304.00222": {
+        "question_abstract": "What molecular tracers are most effective for identifying dense gas structures within molecular clouds?"
+    },
+    "astro-ph0507299_arXiv.txt": {
+        "question_conclusion": "What is the maximum faintness of guide stars that can be effectively used for Lucky Imaging in I-band astronomy?"
+    },
+    "1807.03371": {
+        "question_abstract": "How does the survival of specific Trans-Neptunian populations constrain the number of primordial protoplanets in the early solar system?"
+    },
+    "1411.6910": {
+        "question_conclusion": "How can fiber optic interferometry be used to enhance precision measurements in space-based astronomical instruments?"
+    },
+    "1409.5150": {
+        "question_abstract": "How does a star cluster's half-mass radius respond to changes in the gravitational potential when it is accreted from a dwarf galaxy into a larger galaxy like the Milky Way?"
+    },
+    "1209.3470": {
+        "question_conclusion": "What strategies can be implemented to ensure that a PhD in astronomy provides valuable skills and experience applicable to careers both within and outside of academic research?"
+    },
+    "1610.08149": {
+        "question_abstract": "What insights can UV spectral observations provide about the dynamics of solar jets that are not visible in EUV imaging?"
+    },
+    "0902.4573": {
+        "question_conclusion": "What role do Population III.2 stars potentially play in the chemical enrichment of the early universe?"
+    },
+    "1103.4214": {
+        "question_abstract": "How do the structural and dynamical properties of massive galaxies at high redshifts relate to the concept of fundamental planes in galaxy formation?"
+    },
+    "1803.02381": {
+        "question_conclusion": "How does the spatial distribution of first-generation and second-generation stars in globular clusters affect the evolution of their respective mass functions?"
+    },
+    "1104.1565": {
+        "question_abstract": "How do observational constraints from cosmic microwave background data and measurements of large-scale structure affect the viability of different k-inflation models in cosmology?"
+    },
+    "1009.3934": {
+        "question_conclusion": "What is the expected range of spin-independent cross-sections for neutralino dark matter interactions with nucleons, and how does this inform the prospects for direct detection experiments?"
     },
     "2003.09231": {
-        "question_intro": "What role does tidal heating play in the potential habitability of exomoons compared to planets, and how does it contribute to maintaining subsurface environments that could support life?",
-        "question_conclusion": "How do subsurface oceans on icy moons contribute to the potential habitability of exomoons in different planetary systems?"
+        "question_abstract": "How does tidal heating influence the potential for subsurface oceans on icy moons beyond the traditional habitable zone?"
     },
-    "2012.14046": {
-        "question_intro": "What role do neutrino flavor oscillations play in the astrophysical sources known as short- and long-duration gamma-ray bursts (GRBs)?",
-        "question_conclusion": "How do neutrino oscillations impact the cooling processes and accretion rates in different systems within the context of astrophysical phenomena such as GRBs and accretion onto black holes?"
+    "1803.01424": {
+        "question_conclusion": "What is the estimated space density of high-redshift quasars at absolute magnitude M\u2081\u2084\u2085\u2080 \u2248 -27?"
     },
-    "2010.01348": {
-        "question_intro": "What factors contribute to the existence or absence of steady chemical oscillations in models of interstellar cloud chemistry?",
-        "question_conclusion": "What role do oscillatory solutions of chemical abundances play in the formation and dynamics of interstellar clouds and their influence on star formation processes?"
+    "1009.3254": {
+        "question_abstract": "How does the broadening of the Lyman-alpha line due to collisions between hydrogen atoms and molecules affect the spectra of cool white dwarf stars?"
     },
-    "2012.05772": {
-        "question_intro": "What are the implications of the diverse D/H ratios observed in different Jupiter family comets for our understanding of their formation processes and evolution within the solar system?",
-        "question_conclusion": "How do solar wind fluxes and galactic cosmic rays contribute differently to the energy deposition within cometary nuclei at varying depths?"
+    "2201.08545": {
+        "question_conclusion": "What mechanisms could explain the presence of metal-enriched cool gas in the outskirts of galaxy clusters?"
     },
-    "2009.00017": {
-        "question_intro": "What impact does the consideration of a time-dependent background have on the quantum tunneling rates in cosmological scenarios such as during cosmic inflation or late-time dark energy?",
-        "question_conclusion": "How can different methods for calculating tunneling rates in quantum field theory be compared and brought into better quantitative agreement?"
+    "2112.11268": {
+        "question_abstract": "How does the geometry of an AGN corona affect its X-ray polarization signal?"
     },
-    "2004.08331": {
-        "question_intro": "What is the physical origin of the quasi-biennial oscillations (QBOs) observed in solar magnetic activity at high latitudes and how do they differ from those observed at low latitudes?",
-        "question_conclusion": "How does the phase relationship between solar Quasi-Biennial Oscillations (QBOs) and the hemispheric polar faculae vary between different solar cycles at high latitudes?"
+    "1909.05111": {
+        "question_conclusion": "What impact does a slightly anisotropic large-scale spatial geometry of the universe have on the quadrupole amplitude in cosmic microwave background observations?"
     },
-    "2010.11206": {
-        "question_intro": "How can redshift-space distortions in clustering statistics be utilized to indirectly measure the properties of the matter peculiar velocity field in the Universe, particularly through the parameterization of the linear growth rate of cosmic structures?",
-        "question_conclusion": "How can the clustering of galaxy clusters be utilized as a cosmological probe to extract key information about the cosmic growth rate and test gravitational theories on cosmological scales?"
+    "1103.3272": {
+        "question_abstract": "What observational constraints beyond abundance and correlation functions could improve our understanding of the relationship between galaxy stellar mass and host subhalo mass?"
     },
-    "2009.05797": {
-        "question_intro": "How can the geometry of pulsars, specifically the inclination angle of the magnetic axis to the rotation axis and the angle between the observer's line-of-sight and the magnetic axis, be determined through observations of their radio and gamma-ray emissions, and how does this relate to their spin-down energy loss rates?",
-        "question_conclusion": "How does the linear polarisation fraction of a pulsar's radio profile relate to the potential emission of gamma rays?"
+    "0801.1672": {
+        "question_conclusion": "How does the strength of meridional circulation in rapidly rotating stars compare to that in slower rotating stars like the Sun, and what implications might this have for stellar dynamo models?"
     },
-    "2009.08990": {
-        "question_intro": "How can numerical simulations be optimized to model the merger of binary neutron stars, the launch of short gamma-ray bursts, kilonovae, and the subsequent radiation using a reference-metric formulation and suitable curvilinear coordinates to account for various physical processes and phenomena involved in these astrophysical events?",
-        "question_conclusion": "How can the presence of curvilinear coordinates impact numerical implementations in simulations of radiation transport in astrophysical scenarios?"
+    "1208.4946": {
+        "question_abstract": "How can the hierarchical relationship between the Galaxy and its stars be leveraged to improve our understanding of stellar properties and interstellar extinction?"
     },
-    "2008.03438": {
-        "question_intro": "How does the inclusion of encounter desorption of hydrogen atoms on grain surfaces impact the overall grain surface chemistry in cold interstellar environments?",
-        "question_conclusion": "How does the inclusion of encounter desorption mechanisms for hydrogen atoms on dust grains impact the abundance and interplay of different surface species in astrochemical models of dense cores?"
+    "1802.00642": {
+        "question_conclusion": "How many gravitational wave events are needed to effectively constrain the preferred direction of cosmic anisotropy?"
     },
-    "2012.09308": {
-        "question_intro": "What impact does a slight spatial drift have on the detection and analysis of faint galaxies in astronomical observations?",
-        "question_conclusion": "What specific factors contribute to spatial drift in spectroscopic data obtained with infrared instruments?"
+    "1209.2936": {
+        "question_abstract": "How does relativistic turbulence in hot plasma affect the intermittency of astrophysical flows compared to classical turbulence models?"
     },
-    "2006.03582": {
-        "question_intro": "What role do eclipsing binaries, particularly those involving brown dwarfs, play in improving our understanding of stellar evolution and planet-forming processes?",
-        "question_conclusion": "What observational techniques could be employed to confirm the presence of a sub-stellar companion in an eclipsing brown dwarf system with high eccentricity and long period?"
+    "astro-ph0009264_arXiv.txt": {
+        "question_conclusion": "What effect does radiation-driven warping have on the stability and behavior of accretion discs in X-ray binary systems with long orbital periods?"
     },
-    "2001.10011": {
-        "question_intro": "How can the observation of higher harmonics in the gravitational waveforms from high-mass black hole binaries help improve measurements of various parameters such as mass ratio, inclination, and effective spin, and potentially break existing degeneracies in parameter estimation?",
-        "question_conclusion": "How can the detection and localization of high-mass binary black holes in the universe contribute to our understanding of astrophysical environments and the potential for observing higher modes of the ringdown?"
+    "2301.07044": {
+        "question_abstract": "What is the impact of the \"uber gravity\" theory on the Hubble tension when compared to standard cosmological models?"
     },
-    "2001.01106": {
-        "question_intro": "What mechanisms could lead to the formation and stability of mean-motion resonances among the moons of a planet like Jupiter over long timescales?",
-        "question_conclusion": "What are the potential consequences of the resonant encounter involving Callisto and Ganymede on the long-term orbital dynamics and stability of the Galilean satellites?"
+    "1908.05375": {
+        "question_conclusion": "How does interstellar medium absorption affect the measurement and interpretation of exoplanet atmospheres using transit spectroscopy?"
     },
-    "2001.06904": {
-        "question_intro": "What is the relationship between the evolution of the UV luminosity function and the star-forming activity in galaxies across different redshifts?",
-        "question_conclusion": "How does the evolution of the luminosity densities at different rest wavelengths vary with redshift in galaxies spanning $0 < z \\lesssim 3$?"
+    "astro-ph0312276_arXiv.txt": {
+        "question_abstract": "How does the size of dust grains in circumstellar envelopes affect the ability to determine their properties from infrared spectral energy distributions?"
     },
-    "2001.07021": {
-        "question_intro": "What are the key challenges associated with distinguishing between dark energy and modified gravity theories based on observations of the large scale structure formation in the universe?",
-        "question_conclusion": "What physical implications and cosmological consequences arise from the reconstruction and modification of $f(\\mg)$ gravity models to address numerical divergences in cosmological studies?"
+    "2206.04068": {
+        "question_conclusion": "What spectral properties distinguish the two classes of Kuiper Belt Objects observed in optical-near infrared color space?"
     },
-    "2010.02957": {
-        "question_intro": "How does the relationship between a host halo's dark matter mass and the accretion of mass onto a supermassive black hole at the center of a galaxy remain relatively constant across different redshifts, despite the known evolution of dark matter halo mass for galaxies and the variations in galaxy properties like stellar mass and star formation rate?",
-        "question_conclusion": "How does the distribution of dark matter halo masses relate to the triggering of AGN activity in galaxies?"
+    "1907.13564": {
+        "question_abstract": "How does the coupling between the inflaton and spectator fields during inflation affect the initial conditions for cosmic microwave background evolution?"
     },
-    "2006.06155": {
-        "question_intro": "What is the potential significance of the NGC (next generation coronagraph) in advancing our understanding of the plasma structure, solar wind dynamics, and coronal mass ejection kinematics within the solar corona?",
-        "question_conclusion": "What impact can light scattering from prominences have on temperature measurements of the solar corona using filter ratios?"
+    "1109.2740": {
+        "question_conclusion": "How does the braking index of a pulsar relate to its potential evolution into a magnetar?"
     },
-    "2006.05731": {
-        "question_intro": "What is the nature of the $\\gamma$-ray emission observed in middle-aged supernova remnants interacting with nearby dense molecular clouds, and how does it help distinguish between hadronic and leptonic scenarios for particle acceleration mechanisms in these systems?",
-        "question_conclusion": "How does the morphological analysis of gamma-ray emissions in a specific astronomical system provide insights into the nature and origin of the emissions across different energy ranges?"
+    "1105.3365": {
+        "question_abstract": "How do the observed colors of globular clusters in the SDSS ugriz filter system compare to predictions from stellar population synthesis models?"
     },
-    "2007.07956": {
-        "question_intro": "How does weak gravitational lensing affect the distribution of magnitude residuals of standard candles in cosmological observations?",
-        "question_conclusion": "How does the inclusion of additional moments in the analysis impact the uncertainty in measuring $\\sigma_8$ in weak lensing studies using supernovae samples?"
+    "gr-qc0207062_arXiv.txt": {
+        "question_conclusion": "How does the precession of binary systems affect the detection rate of gravitational wave signals from inspiraling compact objects?"
     },
-    "2303.15267": {
-        "question_intro": "How does the variation in the luminosity of Type Ia supernovae with their host galaxy properties impact our understanding of the accelerating universe and the measurement of dark energy properties?",
-        "question_conclusion": "What impact does the inclusion of age uncertainties in analyses of type Ia supernovae have on the understanding of their standardized peak luminosity as a standard candle and its potential implications for cosmology?"
+    "2210.07170": {
+        "question_abstract": "What is the composition of the quiescent corona in RS CVn-type binary systems, particularly regarding the abundance of high and low first ionization potential elements?"
     },
-    "2306.04057": {
-        "question_intro": "How does the hard X-ray polarization magnitude and angle in Cygnus X-1 provide insights into the relative contributions of the coronal and jet emission components to its overall emission mechanism?",
-        "question_conclusion": "What are the implications of high polarization levels in the intermediate hard state of black hole sources for understanding the connection between accretion disk dynamics and jet formation?"
+    "2105.13101": {
+        "question_conclusion": "How does the migration of the water snow line in protoplanetary disks differ between magnetically accreting laminar disks and conventional viscous disk models?"
     },
-    "2304.07040": {
-        "question_intro": "What theoretical advancements have been made in understanding the stochastic gravitational wave background correlations and how do they contribute to the search for this phenomenon using pulsar timing arrays?",
-        "question_conclusion": "What impact does theoretical uncertainty, such as cosmic variance, have on the detectability of stochastic gravitational wave background correlations in noisy data?"
+    "0906.5516": {
+        "question_abstract": "What numerical method can prevent instabilities when simulating magnetohydrodynamic processes in accretion disks?"
     },
-    "2306.17405": {
-        "question_intro": "What is the predominant mechanism for the formation of relativistic jets in blazars, and how does it relate to the accretion process onto the black hole or accretion disk?",
-        "question_conclusion": "What correlations can be observed between jet power and various physical parameters in blazars, and how do these correlations vary between different types of blazars such as FSRQs and BL Lacs?"
+    "1701.01121": {
+        "question_conclusion": "What role does the gas fraction play in determining the evolutionary stage of massive submillimeter galaxies at high redshifts?"
     },
-    "2303.12108": {
-        "question_intro": "What is the significance of molecular gas and cloud evolution in large spiral galaxies compared to smaller dwarf galaxies in relation to star formation and galaxy growth?",
-        "question_conclusion": "What is the relationship between the spatial distribution of molecular gas properties and the formation mechanisms of large-scale molecular structures in barred spiral galaxies?"
+    "1610.01963": {
+        "question_abstract": "How does the AdS/CFT correspondence potentially influence the spectrum of primordial gravitational waves during cosmic inflation?"
     },
-    "2306.02675": {
-        "question_intro": "What are the implications of the upper bound imposed by unitarity on the particle mass of thermal relic dark matter for indirect dark matter searches in dwarf spheroidal galaxies?",
-        "question_conclusion": "How do the upper limits on the velocity-averaged annihilation cross section for dark matter particles differ between individual dSphs and when all 18 dSphs are stacked together in the analysis?\n"
+    "astro-ph0702007_arXiv.txt": {
+        "question_conclusion": "How do stellar rotation rates affect the acceleration and mass loss characteristics of line-driven winds in massive stars?"
     },
-    "2304.14669": {
-        "question_intro": "What role does the intense wind blowing from a white dwarf play in shaping the structure and dynamics of surrounding nebulae in astronomical events involving double white dwarf mergers?",
-        "question_conclusion": "What mechanism triggers the onset of the intense wind observed in the remnant system studied, and how does this relate to the evolution of the central white dwarf and the surrounding environment?"
+    "0606.330": {
+        "question_abstract": "How does the spatial clustering of K-selected galaxies at high redshifts relate to their color properties?"
+    },
+    "astro-ph0601561_arXiv.txt": {
+        "question_conclusion": "How do the star formation histories of dwarf galaxies observed at different redshifts compare in terms of their color evolution and burst patterns?"
+    },
+    "1412.3764": {
+        "question_abstract": "What is the relationship between the energy scale of cosmic inflation and the scale of supersymmetric gauge coupling unification?"
+    },
+    "1412.4466": {
+        "question_conclusion": "How does mutual coupling between antenna elements affect polarization measurements in low-frequency radio astronomy arrays?"
+    },
+    "1910.09038": {
+        "question_abstract": "What effect does the suppression of convective blueshift have on the detection of low-mass exoplanets using stellar radial velocity measurements?"
+    },
+    "astro-ph0001095_arXiv.txt": {
+        "question_conclusion": "How does the coherence function in the Fourier spectra of black hole candidates evolve during the rising phase of an outburst, and what might this indicate about the nature of the Comptonizing region?"
+    },
+    "1601.02608": {
+        "question_abstract": "How does the transition from atomic to molecular hydrogen in interstellar gas clouds depend on the intensity of the far-ultraviolet radiation field and the metallicity of the gas?"
+    },
+    "1307.1117": {
+        "question_conclusion": "How does the Stokes V line ratio of different spectral line pairs vary between disk center and solar limb, and what does this reveal about the intrinsic strengths of quiet Sun magnetic fields?"
+    },
+    "1806.05663": {
+        "question_abstract": "How does the cascade annihilation process of vector dark matter in a hidden sector contribute to the observed gamma-ray excess from the Galactic center?"
+    },
+    "astro-ph0605550_arXiv.txt": {
+        "question_conclusion": "What equation of state is most suitable for accurately simulating relativistic astrophysical flows that involve transitions between relativistic bulk speeds and relativistic temperatures?"
+    },
+    "2110.06944": {
+        "question_abstract": "What is the expected neutrino detection rate from a Type IIn superluminous supernova by current observatories?"
+    },
+    "1211.0399": {
+        "question_conclusion": "What is the typical spatial distribution of low-mass X-ray binaries in the outer regions of early-type galaxies compared to the distribution of stellar light?"
+    },
+    "1211.6055": {
+        "question_abstract": "How does the incorporation of rapid rotation in stellar models affect the estimated age and mass of bright, nearby stars?"
+    },
+    "1409.2963": {
+        "question_conclusion": "How does the peak frequency of a blazar's spectral energy distribution relate to its spectral curvature?"
+    },
+    "1711.03322": {
+        "question_abstract": "What physical properties of protoplanetary disks can be constrained by simultaneously analyzing scattered light images and spectral energy distributions?"
+    },
+    "astro-ph0607136_arXiv.txt": {
+        "question_conclusion": "What is the significance of spectral line asymmetry in distinguishing between planetary companions and non-radial pulsations in giant stars?"
+    },
+    "1702.05519": {
+        "question_abstract": "How do astronomers distinguish between plasma lensing and other potential causes of symmetric U-shaped features in radio light curves of extragalactic sources?"
+    },
+    "astro-ph0506644_arXiv.txt": {
+        "question_conclusion": "What observational evidence suggests the presence of large dust grains in protoplanetary disks around young stars?"
+    },
+    "1801.06409": {
+        "question_abstract": "What is the significance of accurately determining a star's radial velocity in calculating its potential past association with other celestial objects?"
+    },
+    "0807.5052": {
+        "question_conclusion": "How might particle aggregation models be adapted to study dust sublimation and condensation processes in planetary atmospheres?"
+    },
+    "1301.3555": {
+        "question_abstract": "How do tidal effects influence the accuracy of gravitational wave predictions for binary neutron star mergers in their final inspiral stages?"
+    },
+    "physics0303022_arXiv.txt": {
+        "question_conclusion": "How does the number of particles in an N-body simulation affect the distinction between regular and chaotic orbits in gravitational systems?"
+    },
+    "2002.12195": {
+        "question_abstract": "How does the shape of the axion potential near its minimum affect the abundance of axion dark matter?"
+    },
+    "2001.01372": {
+        "question_conclusion": "How do the characteristics of optical filters affect the accuracy of photometric redshift estimation for galaxies?"
+    },
+    "astro-ph0408342_arXiv.txt": {
+        "question_abstract": "How does the metallicity-luminosity relationship differ between H II galaxies and dwarf irregular galaxies?"
+    },
+    "1202.1182": {
+        "question_conclusion": "How does the superposition of different wavelength structures in relativistic jets contribute to the observed misalignment between parsec and kiloparsec scale helical patterns?"
+    },
+    "1009.5157": {
+        "question_abstract": "How has the composition of the faint trans-Neptunian object population changed as more objects have been discovered and classified?"
+    },
+    "1809.08305": {
+        "question_conclusion": "What is the relationship between thermal conduction and temperature profiles in wind-blown bubbles around evolved stars?"
+    },
+    "0909.4668": {
+        "question_abstract": "How does the radiation emitted by a collapsing object that halts before forming an event horizon differ from that of an object that fully collapses into a black hole?"
+    },
+    "1605.03971": {
+        "question_conclusion": "What contribution do low-luminosity CO emitters make to the overall CO power spectrum at high redshifts?"
+    },
+    "1709.08116": {
+        "question_abstract": "How does the Compressed Sensing technique improve the reconstruction of X-ray images from solar flares?"
+    },
+    "2201.02546": {
+        "question_conclusion": "How does the helium content of extreme population stars in globular clusters relate to their observed light element abundance patterns?"
+    },
+    "1804.10170": {
+        "question_abstract": "How does the presence of undetected stellar companions affect the observed distribution of exoplanet radii?"
+    },
+    "astro-ph0406265_arXiv.txt": {
+        "question_conclusion": "What effect does undetected stellar duplicity have on the perceived chemical abundances of stars when analyzed using standard spectroscopic techniques?"
+    },
+    "1304.0770": {
+        "question_abstract": "What is the relationship between radio-loud active galactic nuclei and the presence of high-redshift galaxy clusters in their surrounding environments?"
+    },
+    "astro-ph0312658_arXiv.txt": {
+        "question_conclusion": "How does the interplay between active galactic nuclei (AGN) outbursts and the intracluster medium (ICM) contribute to the structural stability of cooling flows in galaxy clusters?"
+    },
+    "1503.08508": {
+        "question_abstract": "What is the relationship between a satellite galaxy's luminosity and the depth of its subhalo's potential well?"
+    },
+    "1104.1430": {
+        "question_conclusion": "What is the expected difference in gamma-ray annihilation rates between Z^1 and B^1 dark matter particles, and how might this affect their detectability in astronomical observations?"
+    },
+    "0807.3204": {
+        "question_abstract": "How does coherent integration in optical interferometry improve the precision of stellar diameter measurements?"
+    },
+    "2005.08161": {
+        "question_conclusion": "What role does the Doppler factor of jet sub-components play in determining the color behavior of blazar variability?"
+    },
+    "1307.4754": {
+        "question_abstract": "What is the minimum Mach number required for a shock to accelerate particles in a low plasma beta environment with a perpendicular magnetic field configuration?"
     },
     "2306.02382": {
-        "question_intro": "What are the implications of varying kick sizes on the evolution of mode amplitudes in binary systems with highly eccentric orbits that circularize over time due to tides?",
-        "question_conclusion": "What factors contribute to the mode amplitude growth in binary orbits with dynamical tide effects, and how do these factors impact the long-term evolution of the system?"
+        "question_conclusion": "How does the long-term evolution of a binary orbit change when considering the effects of dynamical tides on the planetary f-mode?"
     },
-    "2302.05473": {
-        "question_intro": "What mechanisms are responsible for energy dissipation in weakly collisional space plasmas, particularly at kinetic scales, and how do these mechanisms impact the understanding of energy transport in plasma turbulence?",
-        "question_conclusion": "What is the role of ion Bernstein waves and kinetic Alfven waves in energy dissipation mechanisms in the solar wind turbulence?"
+    "2109.11155": {
+        "question_abstract": "What type of variable stars are most commonly detected in short-period astronomical surveys focusing on uninterrupted observations?"
     },
-    "2301.07418": {
-        "question_intro": "How do the properties and behavior of exocomets in a young planetary system contribute to our understanding of small body dynamics and evolution within such systems?",
-        "question_conclusion": "What is the connection between the presence of exocomets and the observable variations in the light curves of young stars like HD\\,172555?"
+    "2111.00958": {
+        "question_conclusion": "What is the threshold mass for prompt black hole formation in binary quark star mergers, and how does it compare to the threshold for binary neutron star mergers?"
     },
-    "2307.03227": {
-        "question_intro": "What is the correlation between the measured primary mass of binary black holes and the inferred mass of star clusters in the context of dynamical formation scenarios within dense star clusters?",
-        "question_conclusion": "How does the cluster mass correlate with the primary mass distribution of binary black holes, and what implications does this correlation have for the production of hierarchical mergers within star clusters?"
+    "2007.08135": {
+        "question_abstract": "How does the muon content in air showers provide insight into the mass composition of ultra-high-energy cosmic rays?"
     },
-    "2301.08260": {
-        "question_intro": "How does the presence of elastic scattering between dark matter and baryons impact the tension between measurements of the Hubble parameter $H_0$ and the amplitude of density fluctuations quantified by $S_8$ at different points in cosmic history?",
-        "question_conclusion": "What are the implications of considering interacting dark matter scenarios with a non-zero interaction cross section for different cosmological data sets and how do they influence the concordance between large-scale structure and cosmic microwave background observations?"
+    "1007.1989": {
+        "question_conclusion": "How does the size of dust particles in protoplanetary disks affect their potential for outward transport to comet-forming regions?"
     },
-    "2305.17548": {
-        "question_intro": "What are the key factors and challenges involved in designing a trajectory for an extended tour of multiple moons around a giant planet, considering fuel consumption, gravitational assists, and orbit insertion dynamics?",
-        "question_conclusion": "What are the key factors that enable a spacecraft to achieve orbit around the inner moons of Saturn with a high propellant mass fraction using low-thrust trajectories and gravity assists?"
+    "2111.13435": {
+        "question_abstract": "How does the inclination of the magnetic field affect the propagation of Alfv\u00e9n waves from the lower to the upper atmosphere in stellar environments?"
     },
-    "2307.02963": {
-        "question_intro": "What are the implications of considering a Palatini formulation of gravity, where the Levi-Civita connection is independent from the metric, on the generation of primordial inhomogeneities that seed the large-scale structure of the universe?",
-        "question_conclusion": "What novel possibilities could arise from exploring single-field inflation within $F(R_X)$ Palatini gravity, especially in terms of addressing issues present in traditional Palatini $F(R)$ models and achieving flat inflaton potentials?"
+    "1909.03337": {
+        "question_conclusion": "How does the intensity of precursor wave emissions in astrophysical objects relate to the efficiency of particle acceleration in those environments?"
     },
-    "2304.03017": {
-        "question_intro": "How does the redundant observing strategy of a survey optimize the extraction of information about each discovered outer Solar System object, compared to surveys specifically designed for object discovery?",
-        "question_conclusion": "How does the level of variability in different dynamical classes of Trans-Neptunian Objects (TNOs) correlate with their intrinsic physical properties and how does it impact our understanding of their origin and evolution?"
+    "1204.6580": {
+        "question_abstract": "How does the shape and density distribution of a self-gravitating torus in orbit around a central mass differ from a simple circular cross-section?"
     },
-    "2306.12134": {
-        "question_intro": "What is the significance of VHE TeV sources that do not have apparent counterparts at other wavelengths in understanding the origins of supernova remnants and pulsar wind nebulae in our Galaxy?",
-        "question_conclusion": "What is the significance of considering a composite scenario involving a Pulsar Wind Nebula (PWN) and a Supernova Remnant (SNR) in explaining the observed GeV and TeV gamma-ray emissions in a complex Galactic region?"
+    "2007.01312": {
+        "question_conclusion": "How can the combination of ultraviolet and optical survey data be used to identify white dwarfs with metal-polluted atmospheres across a broader temperature range?"
     },
-    "2304.01188": {
-        "question_intro": "How does the precise timing system in gravitational wave detectors contribute to the overall performance and reliability of astrophysical data analysis and multi-messenger follow-up networks?",
-        "question_conclusion": "How does the timing precision of a gravitational wave observatory impact the ability to accurately detect and study gravitational wave events in astrophysics?"
+    "1508.04827": {
+        "question_abstract": "How do phenomenological models of eclipsing binary and exoplanet transit light curves compare in accuracy and utility to more complex physical models?"
     },
-    "2303.08952": {
-        "question_intro": "How does AGN feedback impact the properties of galaxies with stellar masses smaller than $\\sim$ 3 $\\times$ 10$^{11}$ $M_\\odot compared to galaxies with stellar masses above this threshold?",
-        "question_conclusion": "What is the impact of quasar radiation and outflows on star formation rates within a host galaxy, and how do they interact with the surrounding interstellar and circumgalactic medium?"
+    "astro-ph9802163_arXiv.txt": {
+        "question_conclusion": "How does the relative importance of AGN contribution to UV light in radio galaxies change across different redshifts?"
     },
-    "2302.13648": {
-        "question_intro": "How does the adiabatic speed of sound in neutron stars relate to the stiffness of the Equation of State and the ability of the stars to balance gravitational forces?",
-        "question_conclusion": "What evidence suggests the possibility of non-monotonic matter properties inside neutron stars?"
+    "2210.07284": {
+        "question_abstract": "What is the relationship between the turbulent dissipation flux in galaxy clusters and the power of their radio halos?"
     },
-    "2305.10414": {
-        "question_intro": "How can thermal emission measurements during secondary eclipse observations help in determining the presence and characteristics of atmospheres on rocky exoplanets?",
-        "question_conclusion": "What are the implications of secondary eclipse observations for determining the presence and composition of atmospheres on rocky planets around M dwarfs?"
+    "1812.08243": {
+        "question_conclusion": "What impact does local non-Gaussianity in ultra-slow-roll inflation have on the abundance of primordial black holes?"
+    },
+    "1008.1492": {
+        "question_abstract": "How does the use of unstructured Delaunay lattices in radiative transfer modeling affect the resolution of different scales in simulated molecular gas structures?"
+    },
+    "1207.5639": {
+        "question_conclusion": "What factors determine whether a hot Jupiter's atmospheric circulation is dominated by zonal jets or day-to-night flow, and how does this affect the Doppler signature observed during transit?"
+    },
+    "1110.6174": {
+        "question_abstract": "How does the clustering amplitude of galaxies at large scales vary with their luminosity-weighted stellar age?"
+    },
+    "2007.03597": {
+        "question_conclusion": "What effect does the balance between the density of intelligent civilizations and their average lifespan have on the probability of interstellar communication in our galaxy?"
+    },
+    "astro-ph0504625_arXiv.txt": {
+        "question_abstract": "What characteristics of high-mass X-ray binary systems might explain the presence of highly absorbed hard X-ray sources observed by gamma-ray observatories?"
+    },
+    "0712.0370": {
+        "question_conclusion": "What observational evidence could distinguish between a large-scale cosmic void model and the standard Lambda-CDM model for explaining the accelerating expansion of the universe?"
+    },
+    "0805.1681": {
+        "question_abstract": "How does disk turbulence affect the likelihood of extrasolar planetary systems maintaining mean motion resonances?"
+    },
+    "2007.12755": {
+        "question_conclusion": "How does the Rossby number of a star evolve as it transitions from the main sequence to the subgiant phase, and what implications does this have for its magnetic activity?"
+    },
+    "2101.01278": {
+        "question_abstract": "How do elastic neutrino-nucleon collisions affect the propagation of fast neutrino oscillations over long distances in supernovae?"
+    },
+    "astro-ph9806271_arXiv.txt": {
+        "question_conclusion": "What is the relationship between the distribution of dust emission and molecular gas tracers like CO and CI in edge-on spiral galaxies?"
+    },
+    "1005.4618": {
+        "question_abstract": "How does the sensitivity of the (K-8) color index compare to other infrared color indices for detecting circumstellar dust around red giant stars?"
+    },
+    "1402.4730": {
+        "question_conclusion": "What is the significance of power-law distributions in solar flare energy release, and how do they relate to coronal heating mechanisms?"
+    },
+    "astro-ph0701683_arXiv.txt": {
+        "question_abstract": "How might directional systematics in high redshift supernova data affect our understanding of cosmic acceleration and dark energy?"
+    },
+    "1202.5322": {
+        "question_conclusion": "What is the significance of optical precursor luminosity limits in understanding gamma-ray burst mechanisms?"
+    },
+    "1004.4318": {
+        "question_abstract": "How does the metallicity of high-redshift star-forming galaxies compare to typical galaxies at similar redshifts?"
+    },
+    "0901.0592": {
+        "question_conclusion": "How can pulsar timing arrays be used to detect and study gravitational waves from various cosmic sources?"
+    },
+    "astro-ph0204401_arXiv.txt": {
+        "question_abstract": "How does the location of dust clouds in the photospheres of brown dwarfs affect their observable characteristics across different spectral types?"
+    },
+    "astro-ph0702367_arXiv.txt": {
+        "question_conclusion": "What is the significance of analyzing the velocity shifts of different ionized elements in the accretion column of a polar-type cataclysmic variable star?"
+    },
+    "1004.5065": {
+        "question_abstract": "How does the spatial distribution of star formation in barred spiral galaxies relate to their different spectral emissions across various wavelengths?"
+    },
+    "1704.04668": {
+        "question_conclusion": "In seismic data processing for planetary exploration, why might predictive deconvolution be more effective for multiple attenuation in the slant stack domain compared to the time-offset domain?"
+    },
+    "0202.159": {
+        "question_abstract": "What theories have been proposed to explain the origin of the 'knee' feature observed in cosmic ray energy spectra?"
+    },
+    "0802.2290": {
+        "question_conclusion": "How does the sound speed of primordial perturbations during inflation affect the validity of perturbative calculations in inflationary models?"
+    },
+    "astro-ph0001369_arXiv.txt": {
+        "question_abstract": "How do different galaxy types contribute to potential errors when inferring star formation history from luminosity density measurements?"
+    },
+    "1311.3509": {
+        "question_conclusion": "How does the use of polarization data in cosmic microwave background observations affect the detectability of small-scale cosmic topology?"
+    },
+    "astro-ph0304326_arXiv.txt": {
+        "question_abstract": "How does beam deconvolution affect the recovery of cosmic microwave background angular power spectra in small-scale experiments?"
+    },
+    "2009.03344": {
+        "question_conclusion": "How does the evolution of turbulence in galaxy clusters relate to the activity cycles of their central supermassive black holes?"
+    },
+    "1708.01992": {
+        "question_abstract": "How does variance imaging in radio astronomy compare to conventional methods for detecting millisecond pulsars and pulsars in relativistic binary systems?"
+    },
+    "astro-ph9811181_arXiv.txt": {
+        "question_conclusion": "How does the resonant spin-flavor precession of neutrinos in supernova magnetic fields affect the potential for successful r-process nucleosynthesis?"
+    },
+    "1109.4315": {
+        "question_abstract": "How can long-scale gravitational waves potentially explain cosmic acceleration without invoking exotic forms of matter?"
+    },
+    "2102.04650": {
+        "question_conclusion": "What is the relationship between AGN feedback and radiative cooling in galaxy clusters?"
+    },
+    "1911.03865": {
+        "question_abstract": "How does the correlation between magnetic flux cancellation at the equator and magnetic flux transport to the poles influence the prediction of future solar cycle strengths?"
+    },
+    "1011.3386": {
+        "question_conclusion": "What factors might influence the detectability of extended infrared emission around Cepheid variable stars?"
+    },
+    "astro-ph0205332_arXiv.txt": {
+        "question_abstract": "What unusual spectral features in the ultraviolet spectrum of an X-ray pulsar might suggest its companion is the remnant core of a white dwarf?"
+    },
+    "hep-ph0412135_arXiv.txt": {
+        "question_conclusion": "How does an external magnetic field affect the temperature at which symmetry restoration occurs in cosmological phase transitions?"
+    },
+    "2201.04169": {
+        "question_abstract": "How does the cyclotron line energy in an X-ray binary system respond to sudden changes in the source's luminosity?"
+    },
+    "1503.01115": {
+        "question_conclusion": "What is the significance of M dwarf stars in the search for potentially habitable exoplanets?"
+    },
+    "1206.0928": {
+        "question_abstract": "What is the relationship between a galaxy's nitrogen abundance and its star formation history?"
+    },
+    "0805.3580": {
+        "question_conclusion": "How does the clustering of highly biased tracers of large-scale structure constrain primordial non-Gaussianity?"
+    },
+    "0708.2873": {
+        "question_abstract": "How does the pattern speed of lopsided modes in galactic discs compare to the local free precession rate?"
+    },
+    "1109.6774": {
+        "question_conclusion": "How does the spectral slope of high-energy emissions from certain astronomical objects change in relation to their overall flux state?"
+    },
+    "astro-ph0602052_arXiv.txt": {
+        "question_abstract": "What heating model for coronal loops best reproduces the observed high-temperature emission in active regions?"
+    },
+    "2006.00874": {
+        "question_conclusion": "How does the average mass of metal-rich white dwarfs compare to that of their non-metal-rich counterparts, and what might this imply about planetary formation processes?"
+    },
+    "astro-ph0505575_arXiv.txt": {
+        "question_abstract": "How does plasma beta affect the efficiency of cosmic ray scattering in interstellar turbulence?"
+    },
+    "1402.6906": {
+        "question_conclusion": "What is the typical field of view achievable with advanced adaptive optics systems in ground-based astronomical observations?"
+    },
+    "astro-ph9804303_arXiv.txt": {
+        "question_abstract": "What is the expected relative abundance of lithium hydride compared to molecular hydrogen in interstellar gas clouds?"
+    },
+    "0708.2631": {
+        "question_conclusion": "How does the intrinsic shape distribution of early-type galaxies vary with luminosity?"
+    },
+    "2305.19328": {
+        "question_abstract": "How does variability in the power output of active galactic nucleus (AGN) jets affect the morphology and dynamics of their surrounding cocoons?"
+    },
+    "astro-ph0311324_arXiv.txt": {
+        "question_conclusion": "How are blue horizontal branch stars identified and separated from potential contaminants in large-scale astronomical surveys?"
+    },
+    "2008.02694": {
+        "question_abstract": "What implications does the observed polarization behavior at higher frequencies have for our understanding of the magnetic field structure in galaxy cluster environments?"
+    },
+    "1704.01713": {
+        "question_conclusion": "How does the polarization of polycyclic aromatic hydrocarbon (PAH) emission vary with the degree of external alignment in different interstellar environments?"
+    },
+    "1112.0360": {
+        "question_abstract": "How does the choice of time parameter affect the predicted evolution of a universe with a cosmological constant in quantum cosmology models?"
+    },
+    "0808.0010": {
+        "question_conclusion": "How does the ultraviolet excess in early-type galaxies evolve with redshift?"
+    },
+    "1404.5806": {
+        "question_abstract": "What factors can cause deviations from the expected period ratio between the fundamental mode and first harmonic mode in solar coronal oscillations?"
+    },
+    "1205.5349": {
+        "question_conclusion": "How does the mixing of radioactive nickel in supernova ejecta affect the visibility of helium spectral lines in Type Ib and Ic supernovae?"
+    },
+    "2108.02142": {
+        "question_abstract": "What characteristics distinguish a young, compact symmetric object from a blazar-type core-jet source in high-redshift active galactic nuclei?"
+    },
+    "1010.3208": {
+        "question_conclusion": "How does the density of the plasma in supernova remnants affect the relationship between ion charge states and particle acceleration efficiency?"
+    },
+    "astro-ph0610255_arXiv.txt": {
+        "question_abstract": "What implications does the absence of a detectable optical afterglow or supernova component have for theories about the progenitors of short gamma-ray bursts?"
+    },
+    "1506.01712": {
+        "question_conclusion": "How does the spatial distribution of ultra-diffuse galaxies near a cluster's core inform our understanding of their dark matter content?"
+    },
+    "2202.04934": {
+        "question_abstract": "What are the key advantages of aplanatic two-mirror telescope designs for wide-field observations in space astronomy?"
+    },
+    "astro-ph0212328_arXiv.txt": {
+        "question_conclusion": "How does relativistic shock acceleration affect the energy spectrum and angular distribution of particles in astrophysical environments?"
+    },
+    "1111.1858": {
+        "question_abstract": "How does the architecture of a planetary system influence the scattering of small bodies from outer regions to inner regions of the system?"
+    },
+    "astro-ph0510510_arXiv.txt": {
+        "question_conclusion": "What is the significance of C\u2082H\u2082 abundance relative to HCN and CH in the spectra of evolved carbon stars in low-metallicity environments?"
+    },
+    "2305.03313": {
+        "question_abstract": "How might the decay of ultra-massive dark matter particles contribute to the observed flux of high-energy cosmic rays and neutrinos?"
+    },
+    "1001.0888": {
+        "question_conclusion": "What improvements are needed in solar chromosphere simulations to accurately model the appearance of fibrils in spectral line observations?"
+    },
+    "1905.11410": {
+        "question_abstract": "How does the habitable volume in cool brown dwarf atmospheres compare to that of Earth-like planets?"
+    },
+    "0809.2786": {
+        "question_conclusion": "At what temperature range and gas densities does HD molecule cooling become dominant in primordial gas environments?"
+    },
+    "1106.3327": {
+        "question_abstract": "How sensitive is the Cosmic Mach Number to the growth of structure at different cosmic scales, and what implications does this have for distinguishing between cosmological models?"
+    },
+    "0807.4393": {
+        "question_conclusion": "What is the difference in binary star frequency between classical T Tauri stars and weak-line T Tauri stars in young stellar associations?"
+    },
+    "0803.3215": {
+        "question_abstract": "What evidence suggests the presence of a reverse shock in the early stages of a gamma-ray burst afterglow?"
+    },
+    "2012.04978": {
+        "question_conclusion": "What impact does the choice of mass ratio priors have on the interpretation of potential neutron star-black hole merger signals in gravitational wave astronomy?"
+    },
+    "2203.06479": {
+        "question_abstract": "How does the slope of the secondary-to-primary B/C ratio in cosmic rays differ from the diffusion coefficient slope, and what implications does this have for our understanding of cosmic ray propagation?"
+    },
+    "2108.10720": {
+        "question_conclusion": "How does the spatial distribution approach in radio astronomy imaging algorithms impact the efficiency of processing large-scale visibility data?"
+    },
+    "2002.07437": {
+        "question_abstract": "How do three-dimensional models of astrospheres compare to two-dimensional observational data in terms of various electromagnetic emissions and measurements?"
+    },
+    "astro-ph0602577_arXiv.txt": {
+        "question_conclusion": "What effect does the simultaneous variation of the fine structure constant and electron mass have on cosmic microwave background constraints?"
+    },
+    "1902.05959": {
+        "question_abstract": "How does the presence or absence of dark matter in ultra diffuse galaxies affect the long-term orbital evolution of their globular cluster populations?"
+    },
+    "1603.03168": {
+        "question_conclusion": "What effect does the surface energy of silicate grains have on their ability to coagulate and form larger structures in different astrophysical environments?"
+    },
+    "1109.0424": {
+        "question_abstract": "How do quantum interferences between magnetic sublevels of different fine-structure J-levels affect the linear polarization patterns observed in stellar spectral lines?"
+    },
+    "astro-ph9711016_arXiv.txt": {
+        "question_conclusion": "What relationship exists between the radio morphology of active galactic nuclei and their infrared color temperatures?"
+    },
+    "1606.07431": {
+        "question_abstract": "How does the duration of the embedded phase in a young stellar cluster affect the truncation of protoplanetary discs?"
+    },
+    "astro-ph0602141_arXiv.txt": {
+        "question_conclusion": "How does the diffusion approximation help overcome computational challenges in modeling radiative transfer in astrophysical simulations?"
+    },
+    "2110.15086": {
+        "question_abstract": "What is the significance of tilted and inclined disks around eclipsing companions in determining the orbital eccentricity of stellar systems?"
+    },
+    "2011.02419": {
+        "question_conclusion": "What neutron densities are typically required in i-process models to explain the observed heavy element abundances in CEMP-r/s stars?"
+    },
+    "0807.1143": {
+        "question_abstract": "What parameters can be derived from modeling the cyclotron emission features in polar systems?"
+    },
+    "1108.4930": {
+        "question_conclusion": "How does the size distribution of dust grains in the interstellar medium affect the extinction curves observed in gamma-ray burst afterglows?"
+    },
+    "0801.0006": {
+        "question_abstract": "What is the significance of the spatial two-point cross-correlation function in cosmic microwave background analysis for non-simply connected universe models?"
+    },
+    "astro-ph9905344_arXiv.txt": {
+        "question_conclusion": "What is the typical variability range observed in the persistent radio emission of high-mass X-ray binaries over daily timescales?"
+    },
+    "1609.09422": {
+        "question_abstract": "How does the relative magnetic field strength between adjacent solar magnetic loops influence the inclination of resulting jet-like structures in the solar atmosphere?"
+    },
+    "2001.07738": {
+        "question_conclusion": "How precisely can future cosmic microwave background and galaxy surveys jointly constrain the primordial power spectrum of curvature perturbations across a range of scales?"
+    },
+    "0812.1559": {
+        "question_abstract": "How do transit surveys estimate the number and types of exoplanets they expect to detect within a given timeframe?"
+    },
+    "astro-ph0308365_arXiv.txt": {
+        "question_conclusion": "What is the expected impact of next-generation ultra-high-energy cosmic ray detectors on resolving the controversy surrounding the GZK cutoff?"
+    },
+    "1104.2700": {
+        "question_abstract": "How does the performance of Advanced Vector eXtensions (AVX) compare to previous SIMD instruction sets in simulating gravitational interactions between celestial bodies?"
+    },
+    "2007.13392": {
+        "question_conclusion": "How does the frequency of tidal forces affect the efficiency of tidal dissipation in convective regions of stars and planets?"
+    },
+    "1705.10322": {
+        "question_abstract": "How does combining X-ray and gravitational lensing data in galaxy cluster analysis improve our understanding of dark matter distribution?"
+    },
+    "1505.01551": {
+        "question_conclusion": "How does the presence of infalling gas clouds in compact radio sources relate to the triggering of AGN activity in merging galaxy systems?"
+    },
+    "1406.3356": {
+        "question_abstract": "What is the relationship between the velocity profiles of Mg II and Lyman \u03b1 emission in star-forming galaxies at high redshifts?"
+    },
+    "1904.11173": {
+        "question_conclusion": "What is the significance of plasmoid formation in accelerating magnetic reconnection rates in solar flares?"
+    },
+    "1702.05585": {
+        "question_abstract": "What strategy is employed by modern sky surveys to efficiently detect and study low-redshift type Ia supernovae?"
+    },
+    "1201.1902": {
+        "question_conclusion": "How does the inclusion of individual model atmospheres for different surface regions affect the reconstruction of magnetic field configurations in Ap stars?"
+    },
+    "0707.2018": {
+        "question_abstract": "What evidence suggests the presence of a precessing accretion disk in a low-mass X-ray binary system?"
+    },
+    "astro-ph9908070_arXiv.txt": {
+        "question_conclusion": "What effect does the exclusion of eclipse data have on the Gaussianity of cosmic microwave background observations?"
+    },
+    "0808.2053": {
+        "question_abstract": "What are the challenges in identifying Infrared Dark Clouds in regions of the Galaxy with low mid-infrared background emission?"
+    },
+    "astro-ph0212220_arXiv.txt": {
+        "question_conclusion": "How can variations in spectral line indices be used to infer changes in effective temperature and surface gravity of pulsating subdwarf B stars?"
+    },
+    "1905.02399": {
+        "question_abstract": "What role do outflows play in regulating the stability of accretion discs around white dwarfs in symbiotic star systems?"
+    },
+    "astro-ph0412400_arXiv.txt": {
+        "question_conclusion": "What is the observed relationship between orbital period and mass for hot Jupiters and very hot Jupiters discovered through transit surveys?"
+    },
+    "1805.11097": {
+        "question_abstract": "What is the preferred luminosity function and spatial distribution model for gamma-ray millisecond pulsars in the Milky Way?"
+    },
+    "1105.3241": {
+        "question_conclusion": "What evidence exists for or against the idea that solar hemispheric asymmetry drives the semiannual variation in geomagnetic activity?"
+    },
+    "astro-ph0407090_arXiv.txt": {
+        "question_abstract": "How can weak signals from galaxy clusters be effectively isolated and amplified in all-sky cosmic microwave background maps that contain various foreground contaminations?"
+    },
+    "1407.0909": {
+        "question_conclusion": "What factors could explain the lower ratio of visual extinction to silicate absorption optical depth observed in active galactic nuclei compared to the interstellar medium of the Milky Way?"
+    },
+    "0806.1953": {
+        "question_abstract": "How does the gradual reduction in the number of fields during multi-field inflation affect the scalar spectral index and running of cosmological perturbations?"
+    },
+    "1701.06835": {
+        "question_conclusion": "What challenges are involved in accurately measuring the radial velocity of a faint secondary component in a low-mass eclipsing binary system?"
+    },
+    "1405.6710": {
+        "question_abstract": "How does the luminosity function of galaxies evolve with redshift in optical wavelengths?"
+    },
+    "2212.10028": {
+        "question_conclusion": "How does the convergence behavior of quasi-normal mode observables compare to that of photon ring observables in the vicinity of a black hole?"
+    },
+    "2304.12335": {
+        "question_abstract": "How does the presence of large-scale magnetic field reversals in galactic turbulence affect the energy-dependent confinement of cosmic rays?"
+    },
+    "2009.07626": {
+        "question_conclusion": "How can gas dynamics affect the apparent mass of binary black hole systems detected by gravitational wave observatories?"
     }
 }

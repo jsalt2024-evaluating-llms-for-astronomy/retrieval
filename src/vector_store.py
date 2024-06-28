@@ -42,7 +42,7 @@ class DocumentLoader:
         return documents
 
 class VectorStore:
-    def __init__(self, embeddings_path: str, document_loader: DocumentLoader, embedding_client: EmbeddingClient, data_dir: str = "../data"):
+    def __init__(self, embeddings_path: str, document_loader: DocumentLoader, embedding_client: EmbeddingClient, data_dir: str = "../data/vector_store"):
         self.embedding_client = embedding_client
         self.data_dir = data_dir
         self.documents_path = os.path.join(data_dir, "documents.pkl")
@@ -95,19 +95,21 @@ class VectorStore:
         current_index = 0
         total_nans = 0
 
-        # config = yaml.safe_load(open('../config.yaml', 'r'))
+        config = yaml.safe_load(open('../config.yaml', 'r'))
 
-        # document_loader = DocumentLoader("charlieoneill/jsalt-astroph-dataset")
-        # embedding_client = EmbeddingClient(OpenAI(api_key=config['openai_api_key']))
+        document_loader = DocumentLoader("charlieoneill/jsalt-astroph-dataset")
+        embedding_client = EmbeddingClient(OpenAI(api_key=config['openai_api_key']))
 
         for doc_id, doc_embeddings in tqdm(embeddings_dict.items(), desc="Processing embeddings"):
             if 'abstract' in doc_embeddings:
                 if doc_embeddings['abstract'] is not None:
                     embeddings.append(list(doc_embeddings['abstract']))
                 else:
-                    # embedding = embedding_client.embed(self.document_index[doc_id].abstract)
-                    # embeddings.append(embedding)
-                    embeddings.append(np.zeros(1536))
+                    print(f"NaN embedding for document {doc_id}")
+                    print(self.document_index[doc_id].abstract)
+                    embedding = embedding_client.embed(self.document_index[doc_id].abstract)
+                    embeddings.append(embedding)
+                    #embeddings.append(np.zeros(1536))
                     total_nans += 1
                 index_mapping[doc_id] = {'abstract': current_index}
                 current_index += 1
@@ -115,7 +117,11 @@ class VectorStore:
                 if doc_embeddings['conclusions'] is not None:
                     embeddings.append(list(doc_embeddings['conclusions']))
                 else:
-                    embeddings.append(np.zeros(1536))
+                    print(f"NaN embedding for document {doc_id}")
+                    print(self.document_index[doc_id].conclusions)
+                    embedding = embedding_client.embed(self.document_index[doc_id].conclusions)
+                    embeddings.append(embedding)
+                    #embeddings.append(np.zeros(1536))
                     total_nans += 1
                 index_mapping[doc_id]['conclusions'] = current_index
                 current_index += 1

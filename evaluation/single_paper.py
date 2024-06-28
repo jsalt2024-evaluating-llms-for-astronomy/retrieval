@@ -11,11 +11,19 @@ from tqdm.auto import tqdm
 dataset_path = "charlieoneill/jsalt-astroph-dataset"
 dataset = load_dataset(dataset_path, split="train")
 
-# Create the prompt
-prompt = """
-You are an expert astronomer and astrophysicist. Given the following part of the paper, determine a specific question that relates to a specific piece of information in the question i.e. a question that could only be answered by reading this specific part of the paper.
+# Create the prompts
+abstract_prompt = """
+You are an expert astronomer and astrophysicist. Given the following abstract of a paper, determine a specific question that relates to a specific piece of information in the abstract i.e. a question that could only be answered by reading this specific part of the paper.
 
-Here's the paper section: {introduction}
+Here's the paper abstract: {abstract}
+
+Based on this, determine one specific astronomy question. Try and make the question specific, but general/abstract enough that you're not just rehashing it word-for-word from the paper i.e. don't overly quantify, and keep it one part (don't split it into a first part AND a second part). Do not refer specifically to the paper - frame it as a general astronomy question. Do not return anything other than the question.
+"""
+
+conclusion_prompt = """
+You are an expert astronomer and astrophysicist. Given the following conclusion of a paper, determine a specific question that relates to a specific piece of information in the conclusion i.e. a question that could only be answered by reading this specific part of the paper.
+
+Here's the paper conclusion: {conclusion}
 
 Based on this, determine one specific astronomy question. Try and make the question specific, but general/abstract enough that you're not just rehashing it word-for-word from the paper i.e. don't overly quantify, and keep it one part (don't split it into a first part AND a second part). Do not refer specifically to the paper - frame it as a general astronomy question. Do not return anything other than the question.
 """
@@ -24,7 +32,7 @@ Based on this, determine one specific astronomy question. Try and make the quest
 config = yaml.safe_load(open('../config.yaml', 'r'))
 anthropic_api_key = config['anthropic_api_key']
 openai_api_key = config['openai_api_key']
-NUM_QUESTIONS = 100
+NUM_QUESTIONS = 250
 question_answer_dict = {}
 MAX_RETRIES = 5
 RETRY_DELAY = 20  # seconds
@@ -54,14 +62,14 @@ def get_claude_response(prompt, api_key):
             {"role": "user", "content": prompt}
         ]
     )
-    return message['completion']
+    return message.content[0].text
 
 @retry_on_failure(MAX_RETRIES)
 def get_gpt4_response(prompt, api_key):
     openai.api_key = api_key
     client = openai.OpenAI(api_key=api_key)
     response = client.chat.completions.create(
-        model="gpt-3.5-turbo-0125", #"gpt-4o",
+        model="gpt-3.5-turbo-0125", #"gpt-4",
         messages=[
             {"role": "system", "content": "You are a helpful assistant."},
             {"role": "user", "content": prompt}
@@ -70,59 +78,56 @@ def get_gpt4_response(prompt, api_key):
     return response.choices[0].message.content
 
 def generate_questions(model):
-    # Filter function to remove papers without sufficient introduction or conclusion
+    # Filter function to remove papers without sufficient abstract or conclusions
     def filter_papers(example):
-        return len(example.get('introduction', '')) > 0 and len(example.get('conclusions', '')) > 0
+        return len(example.get('abstract', '')) > 100 and len(example.get('conclusions', '')) > 100
 
-    for year in [10, 15, 20, 23]:
-        print(f"Year: {year}")  
-        dataset_year = dataset.filter(lambda x: x['year'] == year)
-        dataset_year = dataset_year.filter(filter_papers)
-        shuffled_dataset = dataset_year.shuffle(seed=41)
+    # Filter and shuffle the dataset
+    filtered_dataset = dataset.filter(filter_papers)
+    shuffled_dataset = filtered_dataset.shuffle(seed=42)
 
-        num_questions_year = int(NUM_QUESTIONS / 5)
+    # Generate questions
+    for i in tqdm(range(NUM_QUESTIONS)):
+        paper = shuffled_dataset[i % len(shuffled_dataset)]
+        abstract = paper['abstract']
+        conclusion = paper['conclusions']
+        folder_file = paper['arxiv_id'] #f"{paper['subfolder']}/{paper['filename']}"
 
-        # Generate questions
-        shuffled_dataset_iterator = iter(shuffled_dataset)
-        for i in tqdm(range(num_questions_year)):
+        # Alternate between abstract and conclusion
+        if i % 2 == 0:
+            formatted_prompt = abstract_prompt.format(abstract=abstract)
+            question_type = 'abstract'
+        else:
+            formatted_prompt = conclusion_prompt.format(conclusion=conclusion)
+            question_type = 'conclusion'
 
-            paper = next(shuffled_dataset_iterator)
-            introduction = paper['introduction']
-            conclusion = paper['conclusions']
-            folder_file = f"{paper['subfolder']}/{paper['filename']}"
+        if model == 'claude':
+            question = get_claude_response(formatted_prompt, anthropic_api_key)
+        elif model == 'gpt-4':
+            question = get_gpt4_response(formatted_prompt, openai_api_key)
+        else:
+            raise ValueError("Invalid model selected. Choose either 'claude' or 'gpt-4'.")
 
-            # Format prompts
-            formatted_prompt_intro = prompt.format(introduction=introduction)
-            formatted_prompt_conclusion = prompt.format(introduction=conclusion)
+        if folder_file not in question_answer_dict:
+            question_answer_dict[folder_file] = {}
+        question_answer_dict[folder_file][f'question_{question_type}'] = question
 
-            if model == 'claude':
-                question_intro = get_claude_response(formatted_prompt_intro, anthropic_api_key)
-                question_conclusion = get_claude_response(formatted_prompt_conclusion, anthropic_api_key)
-            elif model == 'gpt-4':
-                question_intro = get_gpt4_response(formatted_prompt_intro, openai_api_key)
-                question_conclusion = get_gpt4_response(formatted_prompt_conclusion, openai_api_key)
-            else:
-                raise ValueError("Invalid model selected. Choose either 'claude' or 'gpt-4'.")
-
-            question_answer_dict[folder_file] = {'question_intro': question_intro, 'question_conclusion': question_conclusion}
-
-            # Print everything
-            print(folder_file)
-            print('-' * 100)
-            print(question_intro)
-            print('\n\n\n')
-            print(question_conclusion)
-            print('-' * 100)
-            print('\n\n\n')
+        # Print everything
+        print(folder_file)
+        print('-' * 100)
+        print(f"Question from {question_type}:")
+        print(question)
+        print('-' * 100)
+        print('\n')
 
 # Save the dictionary as a JSON
 def save_results():
-    with open('../data/single_paper.json', 'w') as f:
+    with open('../data/abstract_conclusion_questions.json', 'w') as f:
         json.dump(question_answer_dict, f, indent=4)
-    print("Questions generated and saved to '../data/single_paper.json'")
+    print("Questions generated and saved to '../data/abstract_conclusion_questions.json'")
 
 # Set the model to use ('claude' or 'gpt-4')
-model_to_use = 'gpt-4'  # Change to 'claude' to use Claude model
+model_to_use = 'claude'
 
 generate_questions(model_to_use)
 save_results()

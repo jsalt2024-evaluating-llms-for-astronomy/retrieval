@@ -45,26 +45,27 @@ class Evaluator:
         ground_truth = self._load_ground_truth(ground_truth_file)
         results = defaultdict(list)
         
-        total_queries = len(ground_truth) * 2
+        total_queries = sum(len(data) for data in ground_truth.values())
         with tqdm(total=total_queries, desc="Single-doc progress") as pbar:
             for arxiv_id, data in ground_truth.items():
-                for question_type in ['conclusion']: #['intro', 'conclusion']:
-                    query = data[f'question_{question_type}']
-                    retrieved_docs = self.retrieval_system.retrieve(query, arxiv_id, top_k=top_k)
-                    print(f"Query: {query}")
-                    print(f"Retrieved docs: {retrieved_docs}")
-                    print(f"Arxiv ID: {arxiv_id}")
-                    # Print rank of correct document
-                    try:
-                        print(f"Rank: {retrieved_docs.index(arxiv_id) + 1}")
-                    except ValueError:
-                        print("Rank: Not found")
-                    
-                    results['success_rate'].append(int(arxiv_id in retrieved_docs))
-                    results['reciprocal_rank'].append(self._calculate_reciprocal_rank(retrieved_docs, arxiv_id))
-                    results['avg_precision'].append(self._calculate_avg_precision(retrieved_docs, arxiv_id))
+                for question_type in ['question_abstract', 'question_conclusion']:
+                    if question_type in data:
+                        query = data[question_type]
+                        retrieved_docs = self.retrieval_system.retrieve(query, arxiv_id, top_k=top_k)
+                        print(f"Query: {query}")
+                        print(f"Retrieved docs: {retrieved_docs}")
+                        print(f"Arxiv ID: {arxiv_id}")
+                        # Print rank of correct document
+                        try:
+                            print(f"Rank: {retrieved_docs.index(arxiv_id) + 1}")
+                        except ValueError:
+                            print("Rank: Not found")
+                        
+                        results['success_rate'].append(int(arxiv_id in retrieved_docs))
+                        results['reciprocal_rank'].append(self._calculate_reciprocal_rank(retrieved_docs, arxiv_id))
+                        results['avg_precision'].append(self._calculate_avg_precision(retrieved_docs, arxiv_id))
 
-                    pbar.update(1)
+                        pbar.update(1)
         
         return {metric: sum(values) / len(values) for metric, values in results.items()}
 
@@ -73,9 +74,16 @@ class Evaluator:
         results = defaultdict(list)
         
         for arxiv_id, item in tqdm(ground_truth.items(), desc="Multi-doc progress"):
+            arxiv_id_clean = arxiv_id.split('_')[0]
             query = item['question']
-            retrieved_docs = self.retrieval_system.retrieve(query, arxiv_id, top_k=top_k)
+            retrieved_docs = self.retrieval_system.retrieve(query, arxiv_id_clean, top_k=top_k)
             relevant_docs = item['arxiv']
+
+            # Print
+            print(f"Arxiv ID: {arxiv_id}")
+            print(f"Query: {query}")
+            print(f"Retrieved docs: {retrieved_docs}")
+            print(f"Relevant docs: {relevant_docs}")
 
             results['map'].append(self._calculate_map(retrieved_docs, relevant_docs))
             results['ndcg'].append(self._calculate_ndcg(retrieved_docs, relevant_docs))
