@@ -19,14 +19,14 @@ local_path = "/Users/charlesoneill/retrieval/data/embeddings/embeddings_final.pk
 repo_name = "JSALT2024-Astro-LLMs/jsalt-astro-embeddings"
 
 # Create the repository if it doesn't exist
-try:
-    create_repo(repo_name, token=hf_token, private=True)
-    print(f"Repository '{repo_name}' created successfully")
-except Exception as e:
-    if "already exists" in str(e):
-        print(f"Repository '{repo_name}' already exists")
-    else:
-        raise e
+# try:
+#     create_repo(repo_name, token=hf_token, private=True)
+#     print(f"Repository '{repo_name}' created successfully")
+# except Exception as e:
+#     if "already exists" in str(e):
+#         print(f"Repository '{repo_name}' already exists")
+#     else:
+#         raise e
 
 # Upload the file
 api.upload_file(

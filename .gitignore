@@ -3,3 +3,5 @@ config.yaml
 *.pkl
 # Any pycache
 __pycache__
+# Any npy files
+*.npy
