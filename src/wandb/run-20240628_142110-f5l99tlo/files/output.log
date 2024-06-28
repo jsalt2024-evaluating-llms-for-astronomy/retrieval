@@ -1,0 +1,61 @@
+
+Single-doc progress:   2%|█▊                                                                                              | 3/160 [00:01<01:11,  2.19it/s]
+Query: How do the time-varying neutrino signals from a galactic supernova depend on the direction of viewing the supernova and the distance from the observer?
+Retrieved docs: ['0710.5082', '0710.4400', '0710.3685', '0710.2360', '0710.2683', '0710.0686', '0710.2226', '0710.0015', '0710.3400', '0710.1405']
+Arxiv ID: 1006.1889
+Rank: Not found
+Query: What mechanisms could potentially drive dynamo operation in M giant stars and how can we differentiate between different types of dynamos based on observational data?
+Retrieved docs: ['0710.5082', '0710.4400', '0710.3685', '0710.2360', '0710.2683', '0710.0686', '0710.2226', '0710.0015', '0710.3400', '0710.1405']
+Arxiv ID: 1009.2001
+Rank: Not found
+Query: How does the alignment between magnetic fields and outflows in high-mass disk-outflow systems impact our understanding of magnetic field structures and dynamics in star-forming regions?
+Retrieved docs: ['0710.5082', '0710.4400', '0710.3685', '0710.2360', '0710.2683', '0710.0686', '0710.2226', '0710.0015', '0710.3400', '0710.1405']
+Arxiv ID: 1010.3635
+Rank: Not found
+Query: How does the presence of an infrared excess from a circumstellar disc affect the inverse Compton gamma-ray spectrum in gamma-ray binary systems?
+Retrieved docs: ['0710.5082', '0710.4400', '0710.3685', '0710.2360', '0710.2683', '0710.0686', '0710.2226', '0710.0015', '0710.3400', '0710.1405']
+Arxiv ID: 1011.2004
+
+Single-doc progress:   4%|████▏                                                                                           | 7/160 [00:03<01:05,  2.32it/s]
+Query: How do different shock structures in supernova remnants impact the acceleration and interaction of particles with surrounding molecular clouds, leading to the observed nonthermal emission properties in various bands of the electromagnetic spectrum?
+Retrieved docs: ['0710.5082', '0710.4400', '0710.3685', '0710.2360', '0710.2683', '0710.0686', '0710.2226', '0710.0015', '0710.3400', '0710.1405']
+Arxiv ID: 1002.2272
+Rank: Not found
+Query: What factors contribute to the observed variability in radio-loudness among different classes of active galactic nuclei (AGNs) and what implications does this variability have for our understanding of the underlying physical mechanisms responsible for radio emission in these objects?
+Retrieved docs: ['0710.5082', '0710.4400', '0710.3685', '0710.2360', '0710.2683', '0710.0686', '0710.2226', '0710.0015', '0710.3400', '0710.1405']
+Arxiv ID: 1010.5591
+Rank: Not found
+Query: How can pencil-beam surveys improve their sensitivity to detecting rare objects with high inclination and distant orbits, especially in cases where orbital inclination and heliocentric distance remain degenerate?
+Retrieved docs: ['0710.5082', '0710.4400', '0710.3685', '0710.2360', '0710.2683', '0710.0686', '0710.2226', '0710.0015', '0710.3400', '0710.1405']
+Arxiv ID: 1004.3287
+Rank: Not found
+Query: How do inhomogeneous magnetic fields impact the stability of shear flows in stratified astrophysical systems, and how does this relate to the behavior of magnetic fields in different regions of stars such as the solar tachocline?
+Retrieved docs: ['0710.5082', '0710.4400', '0710.3685', '0710.2360', '0710.2683', '0710.0686', '0710.2226', '0710.0015', '0710.3400', '0710.1405']
+Arxiv ID: 1002.3335
+Single-doc progress:   6%|█████▉                                                                                         | 10/160 [00:05<01:16,  1.96it/s]
+Traceback (most recent call last):
+  File "/Users/charlesoneill/retrieval/src/semantic_search.py", line 157, in <module>
+    main()
+  File "/Users/charlesoneill/retrieval/src/semantic_search.py", line 113, in main
+    evaluate_main(retrieval_system, "BaseSemanticSearch")
+  File "/Users/charlesoneill/retrieval/src/../evaluation/evaluate.py", line 132, in main
+    results = evaluator.evaluate('../data/single_paper.json', '../data/multi_paper.json', top_k=10)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/charlesoneill/retrieval/src/../evaluation/evaluate.py", line 26, in evaluate
+    single_results = self._evaluate_single_document(single_doc_file, top_k)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/charlesoneill/retrieval/src/../evaluation/evaluate.py", line 53, in _evaluate_single_document
+    retrieved_docs = self.retrieval_system.retrieve(query, arxiv_id, top_k=top_k)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/charlesoneill/retrieval/src/semantic_search.py", line 72, in retrieve
+    similarities = np.dot(self.embeddings, query_embedding) #cosine_similarity([query_embedding], self.embeddings)[0]
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+KeyboardInterrupt
+Query: How do the high-ionization and intermediate ionization emission lines in mid-IR spectra of different types of galaxies, such as AGNs and star forming galaxies, vary and what implications does this have for our understanding of their physical properties and processes?
+Retrieved docs: ['0710.5082', '0710.4400', '0710.3685', '0710.2360', '0710.2683', '0710.0686', '0710.2226', '0710.0015', '0710.3400', '0710.1405']
+Arxiv ID: 1010.5129
+Rank: Not found
+Query: What is the relationship between the observed rotation measure pattern towards the Galactic caps and the potential influence of different local and global astrophysical phenomena in shaping the distribution of magnetic fields in the Milky Way?
+Retrieved docs: ['0710.5082', '0710.4400', '0710.3685', '0710.2360', '0710.2683', '0710.0686', '0710.2226', '0710.0015', '0710.3400', '0710.1405']
+Arxiv ID: 1003.4519
+Rank: Not found

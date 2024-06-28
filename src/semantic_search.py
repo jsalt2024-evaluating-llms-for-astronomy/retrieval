@@ -69,7 +69,7 @@ class EmbeddingRetrievalSystem(RetrievalSystem):
         query_embedding = self.get_query_embedding(query)
         
         # Calculate similarities
-        similarities = cosine_similarity([query_embedding], self.embeddings)[0]
+        similarities = np.dot(self.embeddings, query_embedding)  #cosine_similarity([query_embedding], self.embeddings)[0]
         
         # Filter and rank results
         filtered_results = []
@@ -85,6 +85,9 @@ class EmbeddingRetrievalSystem(RetrievalSystem):
         
         # Sort and get top-k results
         top_results = sorted(filtered_results, key=lambda x: x[2], reverse=True)[:top_k]
+
+        # Only keep the document IDs
+        top_results = [doc_id for doc_id, _, _ in top_results]
         
         return top_results
 
@@ -108,28 +111,48 @@ class EmbeddingRetrievalSystem(RetrievalSystem):
 
 def main():
     retrieval_system = EmbeddingRetrievalSystem("charlieoneill/jsalt-astroph-dataset")
-    query = "What is the stellar mass of the Milky Way?"
-    arxiv_id = "2301.00001"
-    
-    # Retrieve
-    retrieved_docs = retrieval_system.retrieve(query, arxiv_id)
-    print("Retrieved documents:")
-    for doc_id, match_type, similarity in retrieved_docs:
-        print(f"Document ID: {doc_id}, Matched on: {match_type}, Similarity: {similarity:.4f}")
-    print()
+    evaluate_main(retrieval_system, "BaseSemanticSearch")
+    # # Load the single_paper.json
+    # with open('../data/single_paper.json', 'r') as f:
+    #     single_paper = json.load(f)
 
-    # Get document texts
-    document_texts = retrieval_system.get_document_texts([doc_id for doc_id, _, _ in retrieved_docs])
+    # # Get a random key from the single_paper dictionary
+    # #idx = np.random.randint(len(single_paper))
+    # key = "1010.5591" #list(single_paper.keys())[idx]
+    # doc_id = key
+    # query = single_paper[key]['question_conclusion']
+    # correct = key
+    # print(f"Query: {query}")
+    # print(f"Arxiv ID: {correct}")
+
+    # #query = "What mechanisms could potentially drive dynamo operation in M giant stars and how can we differentiate between different types of dynamos based on observational data?"
+    # arxiv_id = key #"2301.00001" #"1006.1889" #"2301.00001"
     
-    # Go through and print the texts
-    for doc, (_, match_type, _) in zip(document_texts, retrieved_docs):
-        print(f"Document ID: {doc['id']}")
-        print(f"Matched on: {match_type}")
-        if match_type == 'abstract':
-            print(f"Abstract: {doc['abstract'][:500]}...")
-        else:
-            print(f"Conclusion: {doc['conclusions'][:500]}...")
-        print()
+    # # Retrieve
+    # retrieved_docs = retrieval_system.retrieve(query, arxiv_id, top_k=10000)
+    # # print("Retrieved documents:")
+    # # for doc_id, match_type, similarity in retrieved_docs:
+    # #     print(f"Document ID: {doc_id}, Matched on: {match_type}, Similarity: {similarity:.4f}")
+    # # print()
+
+    # # Get document texts
+    # #document_texts = retrieval_system.get_document_texts([doc_id for doc_id, _, _ in retrieved_docs])
+    
+    # # Go through and print the texts
+    # # for doc, (_, match_type, _) in zip(document_texts, retrieved_docs):
+    # #     print(f"Document ID: {doc['id']}")
+    # #     print(f"Matched on: {match_type}")
+    # #     if match_type == 'abstract':
+    # #         print(f"Abstract: {doc['abstract'][:500]}...")
+    # #     else:
+    # #         print(f"Conclusion: {doc['conclusions'][:500]}...")
+    # #     print()
+
+    # # Print the rank of the arxiv_id in the retrieved documents, if not present print 'Not Found'
+    # #correct = "1010.3635" #"1006.1889"
+    # arxiv_ids = retrieved_docs #[doc_id for doc_id, _, _ in retrieved_docs]
+    # rank = arxiv_ids.index(correct) + 1 if correct in arxiv_ids else "Not Found"
+    # print(f"Rank of correct document: {rank}")
 
 if __name__ == "__main__":
     main()
