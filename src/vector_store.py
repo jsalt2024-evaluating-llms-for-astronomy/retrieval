@@ -164,14 +164,15 @@ class VectorStore:
 
         return results
 
-# # Initialize everything
+# Initialize everything
 # config = yaml.safe_load(open('../config.yaml', 'r'))
 
 # document_loader = DocumentLoader("charlieoneill/jsalt-astroph-dataset")
 # embedding_client = EmbeddingClient(OpenAI(api_key=config['openai_api_key']))
 # vector_store = VectorStore("../data/embeddings/embeddings_final.pkl", document_loader, embedding_client)
 
-# results = vector_store.search("Why do older galaxies tend to have higher metallicities?", k=10)
+# query = "What mechanisms could potentially drive dynamo operation in M giant stars and how can we differentiate between different types of dynamos based on observational data?"
+# results = vector_store.search(query, k=10)
 # for result in results:
 #     print(f"Document ID: {result['id']}")
 #     print(f"Similarity: {result['similarity']}")

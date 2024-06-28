@@ -48,9 +48,17 @@ class Evaluator:
         total_queries = len(ground_truth) * 2
         with tqdm(total=total_queries, desc="Single-doc progress") as pbar:
             for arxiv_id, data in ground_truth.items():
-                for question_type in ['intro', 'conclusion']:
+                for question_type in ['conclusion']: #['intro', 'conclusion']:
                     query = data[f'question_{question_type}']
                     retrieved_docs = self.retrieval_system.retrieve(query, arxiv_id, top_k=top_k)
+                    print(f"Query: {query}")
+                    print(f"Retrieved docs: {retrieved_docs}")
+                    print(f"Arxiv ID: {arxiv_id}")
+                    # Print rank of correct document
+                    try:
+                        print(f"Rank: {retrieved_docs.index(arxiv_id) + 1}")
+                    except ValueError:
+                        print("Rank: Not found")
                     
                     results['success_rate'].append(int(arxiv_id in retrieved_docs))
                     results['reciprocal_rank'].append(self._calculate_reciprocal_rank(retrieved_docs, arxiv_id))

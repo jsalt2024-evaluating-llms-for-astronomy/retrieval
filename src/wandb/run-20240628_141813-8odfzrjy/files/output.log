@@ -1,0 +1,66 @@
+
+Single-doc progress:   2%|█▊                                                                                              | 3/160 [00:01<01:22,  1.89it/s]
+Query: How do convective instabilities in core collapse supernovae contribute to the modulation of neutrino emission and what potential implications could the detection of such variations have on our understanding of supernova mechanisms?
+Retrieved docs: [('0705.3835', 'abstract', np.float64(0.6839748024842738)), ('0905.2797', 'abstract', np.float64(0.6733066477939184)), ('0906.3180', 'abstract', np.float64(0.6728485998131442)), ('0805.2717', 'abstract', np.float64(0.668768991199838)), ('0708.3372', 'abstract', np.float64(0.6677010988428436)), ('0810.1959', 'conclusions', np.float64(0.6665737552408499)), ('0706.3886', 'conclusions', np.float64(0.6620274505244645)), ('0911.3222', 'abstract', np.float64(0.660656109187107)), ('0705.4350', 'conclusions', np.float64(0.6561184241162785)), ('1004.0291', 'conclusions', np.float64(0.652849404286313))]
+Arxiv ID: 1006.1889
+Rank: Not found
+Query: How do the time-varying neutrino signals from a galactic supernova depend on the direction of viewing the supernova and the distance from the observer?
+Retrieved docs: [('0705.3835', 'abstract', np.float64(0.6493486420416819)), ('0805.2717', 'conclusions', np.float64(0.6432970179438431)), ('0802.4154', 'abstract', np.float64(0.6301243862200674)), ('0901.4877', 'abstract', np.float64(0.6264353675598722)), ('1001.3678', 'abstract', np.float64(0.6200339920153921)), ('1006.3792', 'abstract', np.float64(0.6123453322628052)), ('0909.2196', 'abstract', np.float64(0.6099075366935445)), ('1005.2681', 'conclusions', np.float64(0.6077238689592653)), ('0808.4136', 'conclusions', np.float64(0.6058699290835345)), ('0809.2940', 'conclusions', np.float64(0.605018264007419))]
+Arxiv ID: 1006.1889
+Rank: Not found
+Query: What is the evidence for magnetic activity in evolved M giants and how does it compare to other late-type stars in terms of magnetic field measurements?
+Retrieved docs: [('0901.1537', 'abstract', np.float64(0.7108402538926684)), ('1009.4067', 'abstract', np.float64(0.6855809239510129)), ('0904.1938', 'abstract', np.float64(0.6621936851017192)), ('1006.5891', 'conclusions', np.float64(0.6600033042137177)), ('0610.365', 'abstract', np.float64(0.6544734210769851)), ('0901.1719', 'abstract', np.float64(0.6544557715285115)), ('0704.1502', 'conclusions', np.float64(0.6489506883504302)), ('0907.1423', 'conclusions', np.float64(0.6309644784904012)), ('0812.1223', 'abstract', np.float64(0.6227351593146608)), ('0807.1932', 'abstract', np.float64(0.6214126148596574))]
+Arxiv ID: 1009.2001
+Rank: Not found
+Query: What mechanisms could potentially drive dynamo operation in M giant stars and how can we differentiate between different types of dynamos based on observational data?
+Retrieved docs: [('1009.2589', 'conclusions', np.float64(0.6734249791925064)), ('0410.716', 'abstract', np.float64(0.6673010858884195)), ('0906.2407', 'conclusions', np.float64(0.6544318242562175)), ('0812.4018', 'conclusions', np.float64(0.6505210181110593)), ('0809.0269', 'abstract', np.float64(0.6492811744162685)), ('0707.3792', 'abstract', np.float64(0.6453359780672572)), ('0901.4929', 'conclusions', np.float64(0.6441247214788544)), ('0806.3933', 'abstract', np.float64(0.6382291868471965)), ('0711.1498', 'abstract', np.float64(0.6347962737262426)), ('0902.2966', 'conclusions', np.float64(0.6309535585573348))]
+Arxiv ID: 1009.2001
+
+Single-doc progress:   4%|████▏                                                                                           | 7/160 [00:03<01:14,  2.05it/s]
+Query: How do magnetic fields influence the formation and shaping of protostellar systems in both low-mass and high-mass star-forming regions?
+Retrieved docs: [('1008.1883', 'abstract', np.float64(0.756716392213944)), ('0910.1615', 'abstract', np.float64(0.7559636213944803)), ('0307.455', 'abstract', np.float64(0.7523907428728602)), ('0904.4071', 'abstract', np.float64(0.7372941975683401)), ('0801.3293', 'abstract', np.float64(0.7316785601044837)), ('1008.0409', 'abstract', np.float64(0.7251018873973399)), ('0804.0683', 'abstract', np.float64(0.7242024303974477)), ('0904.1938', 'abstract', np.float64(0.7239941607578859)), ('0705.1096', 'abstract', np.float64(0.7125443156175103)), ('1009.4445', 'abstract', np.float64(0.709973685872001))]
+Arxiv ID: 1010.3635
+Rank: Not found
+Query: How does the alignment between magnetic fields and outflows in high-mass disk-outflow systems impact our understanding of magnetic field structures and dynamics in star-forming regions?
+Retrieved docs: [('0910.1615', 'abstract', np.float64(0.7155876968130349)), ('1010.3635', 'abstract', np.float64(0.6949322687538215)), ('0810.1341', 'conclusions', np.float64(0.6851423299324599)), ('1009.0453', 'abstract', np.float64(0.6848013779852565)), ('0810.4154', 'abstract', np.float64(0.6776332622945188)), ('0201.195', 'abstract', np.float64(0.6762551238080416)), ('0907.3260', 'conclusions', np.float64(0.6707193803592386)), ('0907.3265', 'abstract', np.float64(0.6692898106663772)), ('0307.455', 'abstract', np.float64(0.6639676732672855)), ('1010.5905', 'conclusions', np.float64(0.6587172847054321))]
+Arxiv ID: 1010.3635
+Rank: Not found
+Query: How does the presence of an extended circumstellar disc around a Be star impact the production of gamma rays through inverse Compton scattering in X-ray pulsar binary systems?
+Retrieved docs: [('1011.2004', 'abstract', np.float64(0.7295359531242355)), ('1009.1980', 'conclusions', np.float64(0.6853683944523513)), ('1004.0511', 'abstract', np.float64(0.6692349858219198)), ('0809.5197', 'abstract', np.float64(0.6643310594593437)), ('0807.1226', 'conclusions', np.float64(0.6612024869699406)), ('0710.0968', 'conclusions', np.float64(0.6551573661339725)), ('0905.3341', 'abstract', np.float64(0.6535373720558943)), ('0801.3516', 'conclusions', np.float64(0.6534537927144691)), ('0910.2049', 'conclusions', np.float64(0.6499766664650908)), ('0706.1320', 'conclusions', np.float64(0.6484075525414272))]
+Arxiv ID: 1011.2004
+Rank: Not found
+Query: How does the presence of an infrared excess from a circumstellar disc affect the inverse Compton gamma-ray spectrum in gamma-ray binary systems?
+Retrieved docs: [('1011.2004', 'conclusions', np.float64(0.6623019301816028)), ('1003.1227', 'abstract', np.float64(0.6377485136427701)), ('1003.5876', 'conclusions', np.float64(0.6111464411147022)), ('0710.0968', 'abstract', np.float64(0.6053534764082831)), ('0707.1689', 'conclusions', np.float64(0.6024304691716135)), ('0904.4228', 'conclusions', np.float64(0.5995867731548536)), ('0902.3385', 'conclusions', np.float64(0.5932872386782947)), ('0901.1297', 'abstract', np.float64(0.5929753844334689)), ('0612.235', 'abstract', np.float64(0.5922105492047907)), ('0804.0370', 'conclusions', np.float64(0.5921325674593834))]
+Arxiv ID: 1011.2004
+
+Single-doc progress:   7%|██████▌                                                                                        | 11/160 [00:05<01:14,  2.00it/s]
+Query: How do different acceleration mechanisms in supernova remnants contribute to the production of high-energy gamma rays and impact the overall nonthermal radiative properties of the remnant?
+Retrieved docs: [('0811.3566', 'abstract', np.float64(0.7485463623049782)), ('0811.0836', 'abstract', np.float64(0.7113573152752833)), ('0802.0372', 'abstract', np.float64(0.7089879436059012)), ('0704.2015', 'abstract', np.float64(0.6915329200398199)), ('0808.1722', 'abstract', np.float64(0.6904443931435544)), ('0707.4647', 'abstract', np.float64(0.6902995920802334)), ('0903.4565', 'abstract', np.float64(0.6896411780203129)), ('0911.4217', 'conclusions', np.float64(0.6883008412404814)), ('0705.3011', 'abstract', np.float64(0.6874746049004784)), ('0809.0738', 'abstract', np.float64(0.680980296753568))]
+Arxiv ID: 1002.2272
+Rank: Not found
+Query: How do different shock structures in supernova remnants impact the acceleration and interaction of particles with surrounding molecular clouds, leading to the observed nonthermal emission properties in various bands of the electromagnetic spectrum?
+Retrieved docs: [('0811.3566', 'abstract', np.float64(0.7807374209122678)), ('0110.060', 'abstract', np.float64(0.7162256201578714)), ('0911.4457', 'abstract', np.float64(0.7149937863551853)), ('0903.3392', 'abstract', np.float64(0.7104695152137793)), ('0912.4886', 'abstract', np.float64(0.7102728716025035)), ('1001.2240', 'abstract', np.float64(0.7015965015558975)), ('0909.2285', 'abstract', np.float64(0.6924250672445234)), ('0909.3349', 'abstract', np.float64(0.6917329772128173)), ('0911.3417', 'conclusions', np.float64(0.6889240234576766)), ('0907.2521', 'abstract', np.float64(0.6868245211751358))]
+Arxiv ID: 1002.2272
+Rank: Not found
+Query: What physical mechanism might be responsible for radio emission in radio-quiet active galactic nuclei (AGNs)?
+Retrieved docs: [('1010.5591', 'abstract', np.float64(0.76224929306584)), ('0905.2989', 'abstract', np.float64(0.687758364065385)), ('0802.2302', 'abstract', np.float64(0.6729738216625829)), ('0802.2116', 'abstract', np.float64(0.6718458935851541)), ('0707.3142', 'conclusions', np.float64(0.668540034336459)), ('0706.1869', 'abstract', np.float64(0.6551610561638948)), ('1008.2774', 'conclusions', np.float64(0.6525759388838809)), ('0808.0637', 'conclusions', np.float64(0.6523443947822489)), ('0708.2929', 'conclusions', np.float64(0.6520515549384808)), ('0702.660', 'conclusions', np.float64(0.6518616588985128))]
+Arxiv ID: 1010.5591
+Single-doc progress:   7%|██████▌                                                                                        | 11/160 [00:05<01:21,  1.84it/s]
+Traceback (most recent call last):
+  File "/Users/charlesoneill/retrieval/src/semantic_search.py", line 155, in <module>
+    main()
+  File "/Users/charlesoneill/retrieval/src/semantic_search.py", line 111, in main
+    evaluate_main(retrieval_system, "BaseSemanticSearch")
+  File "/Users/charlesoneill/retrieval/src/../evaluation/evaluate.py", line 132, in main
+    results = evaluator.evaluate('../data/single_paper.json', '../data/multi_paper.json', top_k=10)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/charlesoneill/retrieval/src/../evaluation/evaluate.py", line 26, in evaluate
+    single_results = self._evaluate_single_document(single_doc_file, top_k)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/charlesoneill/retrieval/src/../evaluation/evaluate.py", line 53, in _evaluate_single_document
+    retrieved_docs = self.retrieval_system.retrieve(query, arxiv_id, top_k=top_k)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/charlesoneill/retrieval/src/semantic_search.py", line 78, in retrieve
+    if doc_date <= query_date:
+       ^^^^^^^^^^^^^^^^^^^^^^
+KeyboardInterrupt
