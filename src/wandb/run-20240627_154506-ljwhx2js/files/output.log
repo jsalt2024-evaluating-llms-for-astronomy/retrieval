@@ -1,0 +1,73 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Single-doc progress: 100%|██████████████████████████████████████████████████████████████████████████████████████████████| 160/160 [01:31<00:00,  1.76it/s]
+
+
+
+
+
+Multi-doc progress:  24%|███████████████████████▎                                                                         | 19/79 [00:11<00:36,  1.65it/s]
+Traceback (most recent call last):
+  File "/Users/charlesoneill/retrieval/src/bag_of_words.py", line 114, in <module>
+    main()
+  File "/Users/charlesoneill/retrieval/src/bag_of_words.py", line 111, in main
+    evaluate_main(retrieval_system, "BagOfWordsDateFiltered")
+  File "/Users/charlesoneill/retrieval/src/../evaluation/evaluate.py", line 123, in main
+    results = evaluator.evaluate('../data/single_paper.json', '../data/multi_paper.json', top_k=10)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/charlesoneill/retrieval/src/../evaluation/evaluate.py", line 29, in evaluate
+    multi_results = self._evaluate_multi_document(multi_doc_file, top_k)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/charlesoneill/retrieval/src/../evaluation/evaluate.py", line 68, in _evaluate_multi_document
+    retrieved_docs = self.retrieval_system.retrieve(query, arxiv_id, top_k=top_k)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/charlesoneill/retrieval/src/bag_of_words.py", line 96, in retrieve
+    query_date = self.parse_date(arxiv_id)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/charlesoneill/retrieval/src/bag_of_words.py", line 44, in parse_date
+    month = int(arxiv_id[2:4])
+            ^^^^^^^^^^^^^^^^^^
+ValueError: invalid literal for int() with base 10: ''

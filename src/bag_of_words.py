@@ -96,8 +96,8 @@ class BagOfWordsRetrievalSystem(RetrievalSystem):
         else:
             self.build_index()
 
-    def retrieve(self, query: str, top_k: int = 10) -> List[str]:
-        query_date = self.parse_date(query.split()[0])  # Assuming the first word of the query is the arXiv ID
+    def retrieve(self, query: str, arxiv_id: str, top_k: int = 10) -> List[str]:
+        query_date = self.parse_date(arxiv_id)
         processed_query = self.preprocess_text(query)
         query_vector = self.vectorizer.transform([processed_query])
 
