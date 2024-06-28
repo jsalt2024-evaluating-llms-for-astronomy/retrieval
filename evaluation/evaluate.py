@@ -1,6 +1,6 @@
 import json
 from abc import ABC, abstractmethod
-from typing import List, Dict, Any
+from typing import List, Dict, Any, Tuple
 from collections import defaultdict
 import wandb
 import numpy as np
@@ -8,21 +8,11 @@ from tqdm import tqdm
 
 class RetrievalSystem(ABC):
     @abstractmethod
-    def retrieve(self, query: str, top_k: int = 10) -> List[str]:
-        """
-        Retrieve relevant documents based on the given query.
-        
-        Args:
-            query (str): The input query.
-            top_k (int): Number of top documents to retrieve.
-        
-        Returns:
-            List[str]: List of document IDs (folder_file) of the retrieved documents.
-        """
+    def retrieve(self, query: str, arxiv_id: str, top_k: int = 10) -> List[str]:
         pass
 
 class Evaluator:
-    def __init__(self, retrieval_system: RetrievalSystem, system_name: str, wandb_log: bool = False):
+    def __init__(self, retrieval_system: RetrievalSystem, system_name: str, wandb_log: bool = True):
         self.retrieval_system = retrieval_system
         self.system_name = system_name
         self.wandb_log = wandb_log
@@ -35,6 +25,7 @@ class Evaluator:
         
         single_results = self._evaluate_single_document(single_doc_file, top_k)
         results['single_doc'] = single_results
+        print(single_results)
 
         multi_results = self._evaluate_multi_document(multi_doc_file, top_k)
         results['multi_doc'] = multi_results
@@ -56,69 +47,41 @@ class Evaluator:
         
         total_queries = len(ground_truth) * 2
         with tqdm(total=total_queries, desc="Single-doc progress") as pbar:
-            for doc_id, data in ground_truth.items():
+            for arxiv_id, data in ground_truth.items():
                 for question_type in ['intro', 'conclusion']:
                     query = data[f'question_{question_type}']
-                    retrieved_docs = self.retrieval_system.retrieve(query, top_k=top_k)
+                    retrieved_docs = self.retrieval_system.retrieve(query, arxiv_id, top_k=top_k)
                     
-                    results['success_rate'].append(int(doc_id in retrieved_docs))
-                    results['reciprocal_rank'].append(self._calculate_reciprocal_rank(retrieved_docs, doc_id))
-                    results['avg_precision'].append(self._calculate_avg_precision(retrieved_docs, doc_id))
+                    results['success_rate'].append(int(arxiv_id in retrieved_docs))
+                    results['reciprocal_rank'].append(self._calculate_reciprocal_rank(retrieved_docs, arxiv_id))
+                    results['avg_precision'].append(self._calculate_avg_precision(retrieved_docs, arxiv_id))
 
                     pbar.update(1)
         
         return {metric: sum(values) / len(values) for metric, values in results.items()}
 
-    def _evaluate_multi_document(self, ground_truth_file: str, top_k: int = 25) -> Dict[str, float]:
+    def _evaluate_multi_document(self, ground_truth_file: str, top_k: int = 50) -> Dict[str, float]:
         ground_truth = self._load_ground_truth(ground_truth_file)
         results = defaultdict(list)
         
-        for k, item in tqdm(ground_truth.items(), desc="Multi-doc progress"):
+        for arxiv_id, item in tqdm(ground_truth.items(), desc="Multi-doc progress"):
             query = item['question']
-            retrieved_docs = self.retrieval_system.retrieve(query, top_k=top_k)
-            relevant_docs = item['arxiv'] #self._map_arxiv_to_filenames(item['arxiv'])
+            retrieved_docs = self.retrieval_system.retrieve(query, arxiv_id, top_k=top_k)
+            relevant_docs = item['arxiv']
 
-            # Remove 'astro-ph' prefix from arxiv IDs
-            retrieved_docs = [doc.replace('astro-ph', '') for doc in retrieved_docs]
-
-            # Print both the retrieved and relevant documents
-            print(f"\nQuery: {query}")
-            print("Retrieved Documents:")
-            for doc in retrieved_docs:
-                print(f"  {doc}")
-            print("Relevant Documents:")
-            for doc in relevant_docs:
-                print(f"  {doc}")
-            
             results['map'].append(self._calculate_map(retrieved_docs, relevant_docs))
             results['ndcg'].append(self._calculate_ndcg(retrieved_docs, relevant_docs))
             results['recall@k'].append(self._calculate_recall_at_k(retrieved_docs, relevant_docs, top_k))
             results['precision@k'].append(self._calculate_precision_at_k(retrieved_docs, relevant_docs, top_k))
             results['f1@k'].append(self._calculate_f1_at_k(retrieved_docs, relevant_docs, top_k))
-            print(results)
         
         return {metric: np.mean(values) for metric, values in results.items()}
 
     @staticmethod
-    def _load_ground_truth(file_path: str) -> List[Dict[str, Any]]:
+    def _load_ground_truth(file_path: str) -> Dict[str, Any]:
         with open(file_path, 'r') as f:
             return json.load(f)
 
-    def _map_arxiv_to_filenames(self, arxiv_ids: List[str]) -> List[str]:
-        #self.document_ids.append(f"{paper['subfolder']}/{paper['filename']}")
-        ids_list = []
-        for arxiv_id in arxiv_ids:
-            if '.' in arxiv_id:
-                print(arxiv_id)
-                year_month = arxiv_id.split('.')[0]
-                identifier = arxiv_id.split('.')[1].split('_')[0]
-                ids_list.append(f"{year_month}/{year_month}.{identifier}_arXiv.txt")
-            else:
-                year_month = arxiv_id[:4]
-                identifier = arxiv_id[4:]
-                ids_list.append(f"{year_month}/{year_month}.{identifier}_arXiv")
-        return ids_list
-    
     @staticmethod
     def _calculate_reciprocal_rank(retrieved_docs: List[str], relevant_doc: str) -> float:
         try:
