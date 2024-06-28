@@ -18,9 +18,9 @@ from evaluate import RetrievalSystem, main as evaluate_main
 from vector_store import EmbeddingClient, Document, DocumentLoader
 
 class EmbeddingRetrievalSystem(RetrievalSystem):
-    def __init__(self, dataset_path: str, embeddings_path: str = "../data/embeddings_matrix.npy", 
-                 documents_path: str = "../data/documents.pkl", 
-                 index_mapping_path: str = "../data/index_mapping.pkl"):
+    def __init__(self, dataset_path: str, embeddings_path: str = "../data/vector_store/embeddings_matrix.npy", 
+                 documents_path: str = "../data/vector_store/documents.pkl", 
+                 index_mapping_path: str = "../data/vector_store/index_mapping.pkl"):
         self.dataset_path = dataset_path
         self.embeddings_path = embeddings_path
         self.documents_path = documents_path
@@ -111,48 +111,12 @@ class EmbeddingRetrievalSystem(RetrievalSystem):
 
 def main():
     retrieval_system = EmbeddingRetrievalSystem("charlieoneill/jsalt-astroph-dataset")
-    evaluate_main(retrieval_system, "BaseSemanticSearch")
-    # # Load the single_paper.json
-    # with open('../data/single_paper.json', 'r') as f:
-    #     single_paper = json.load(f)
-
-    # # Get a random key from the single_paper dictionary
-    # #idx = np.random.randint(len(single_paper))
-    # key = "1010.5591" #list(single_paper.keys())[idx]
-    # doc_id = key
-    # query = single_paper[key]['question_conclusion']
-    # correct = key
-    # print(f"Query: {query}")
-    # print(f"Arxiv ID: {correct}")
-
-    # #query = "What mechanisms could potentially drive dynamo operation in M giant stars and how can we differentiate between different types of dynamos based on observational data?"
-    # arxiv_id = key #"2301.00001" #"1006.1889" #"2301.00001"
-    
-    # # Retrieve
-    # retrieved_docs = retrieval_system.retrieve(query, arxiv_id, top_k=10000)
-    # # print("Retrieved documents:")
-    # # for doc_id, match_type, similarity in retrieved_docs:
-    # #     print(f"Document ID: {doc_id}, Matched on: {match_type}, Similarity: {similarity:.4f}")
-    # # print()
-
-    # # Get document texts
-    # #document_texts = retrieval_system.get_document_texts([doc_id for doc_id, _, _ in retrieved_docs])
-    
-    # # Go through and print the texts
-    # # for doc, (_, match_type, _) in zip(document_texts, retrieved_docs):
-    # #     print(f"Document ID: {doc['id']}")
-    # #     print(f"Matched on: {match_type}")
-    # #     if match_type == 'abstract':
-    # #         print(f"Abstract: {doc['abstract'][:500]}...")
-    # #     else:
-    # #         print(f"Conclusion: {doc['conclusions'][:500]}...")
-    # #     print()
-
-    # # Print the rank of the arxiv_id in the retrieved documents, if not present print 'Not Found'
-    # #correct = "1010.3635" #"1006.1889"
-    # arxiv_ids = retrieved_docs #[doc_id for doc_id, _, _ in retrieved_docs]
-    # rank = arxiv_ids.index(correct) + 1 if correct in arxiv_ids else "Not Found"
-    # print(f"Rank of correct document: {rank}")
+    #evaluate_main(retrieval_system, "BaseSemanticSearch")
+    query = "What is the stellar mass of the Milky Way?"
+    arxiv_id = "2301.00001"
+    top_k = 10
+    results = retrieval_system.retrieve(query, arxiv_id, top_k)
+    print(f"Retrieved documents: {results}")
 
 if __name__ == "__main__":
     main()
