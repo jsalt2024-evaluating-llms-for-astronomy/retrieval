@@ -18,6 +18,9 @@ class HydeRetrievalSystem(RetrievalSystem):
                  vector_db = None, generation_client = None, embedding_model: str = "text-embedding-3-small", 
                  temperature: float = 0.5, max_doclen: int = 500, generate_n: int = 1, embed_query = True):
         
+        if max_doclen * generate_n > 8191:
+            raise ValueError("Too many tokens. Please reduce max_doclen or generate_n.")
+        
         # For building chained retrieval systems -- avoid generating a ton of clients at once
         if vector_db is not None: self.embeddings = self.vector_db
         else:
@@ -50,7 +53,7 @@ class HydeRetrievalSystem(RetrievalSystem):
     def retrieve(self, query: str, top_k: int = 10):
         docs = self.generate_docs(query)
         doc_embeddings = self.embed_docs(docs)
-        
+
         if self.embed_query: 
             query_emb = self.embed_docs([query])[0]
             doc_embeddings.append(query_emb)
