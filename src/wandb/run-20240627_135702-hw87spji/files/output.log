@@ -1,0 +1,1968 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Single-doc progress: 100%|██████████████████████████████████████████████████████████████████████████████████████████████| 160/160 [03:00<00:00,  1.13s/it]
+
+Multi-doc progress:   3%|██▍                                                                                               | 2/79 [00:02<01:25,  1.11s/it]
+Query:  How does the specific star formation rate of galaxies evolve with redshift and stellar mass, and what are the implications for galaxy growth and the cosmic star formation history?
+Retrieved Documents:
+  1308.2030
+  0409394_arXiv.txt
+  0808.2642
+  0803.1489
+  1002.0386
+  0101135_arXiv.txt
+  0803.0414
+  1011.0724
+  1609.03956
+  1306.2424
+Relevant Documents:
+  0311.060
+  0701.924
+  1202.0290
+  9910.104
+  0411.775
+  0705.2831
+  0312.474
+  1011.6370
+  1108.0933
+  0703.653
+  0005.120
+defaultdict(<class 'list'>, {'map': [0.0], 'ndcg': [np.float64(0.0)], 'recall@k': [0.0], 'precision@k': [0.0], 'f1@k': [0]})
+Query:  How do theoretical models attempt to explain the physical conditions and stability of multiphase gas in galactic halos, and what challenges do they face?
+Retrieved Documents:
+  0604542_arXiv.txt
+  1609.04405
+  9710010_arXiv.txt
+  1709.06564
+  9903171_arXiv.txt
+  2212.08880
+  1912.04923
+  1808.05231
+  9804290_arXiv.txt
+  1610.02108
+Relevant Documents:
+  0802.0496
+  0106.018
+  1310.2253
+  0406.632
+  1606.06734
+  1403.0947
+  1111.3980
+  0902.4525
+  1511.05144
+
+Multi-doc progress:   4%|███▋                                                                                              | 3/79 [00:03<01:24,  1.11s/it]
+Query:  Is the Milky Way's disk maximal, and how does this depend on the disk scale length?
+Retrieved Documents:
+  9608164_arXiv.txt
+  1305.4663
+  0906.5348
+  0307302_arXiv.txt
+  0206026_arXiv.txt
+  1908.03487
+  0007013_arXiv.txt
+  0506429_arXiv.txt
+  1507.00724
+  1102.1879
+Relevant Documents:
+  1301.3168
+  1309.0809
+  1301.5318
+  0203.375
+  1504.01401
+  1308.0336
+  1209.0256
+  0110.368
+  1511.06047
+defaultdict(<class 'list'>, {'map': [0.0, 0.0, 0.0], 'ndcg': [np.float64(0.0), np.float64(0.0), np.float64(0.0)], 'recall@k': [0.0, 0.0, 0.0], 'precision@k': [0.0, 0.0, 0.0], 'f1@k': [0, 0, 0]})
+Query:  How can baryonic feedback processes in hydrodynamic simulations alter the central density profiles of dark matter halos, and what are the key predictions regarding core formation in different mass regimes?
+Retrieved Documents:
+  1507.02282
+  2111.13708
+  9801116_arXiv.txt
+  2103.05076
+  0811.3214
+  0608634_arXiv.txt
+  1409.8617
+  1211.2648
+  1502.02036
+  2212.05927
+Relevant Documents:
+  1508.04143
+  1405.2577
+  1106.0499
+  0711.4803
+  1202.0554
+  0108.108
+
+Multi-doc progress:   6%|██████▏                                                                                           | 5/79 [00:05<01:21,  1.10s/it]
+Query:  What are the key methods and challenges in dynamically modeling supermassive black holes, particularly for stellar-dynamical and gas-dynamical techniques?
+Retrieved Documents:
+  1304.7273
+  1810.05238
+  2206.09043
+  0705.2129
+  1008.0005
+  9911514_arXiv.txt
+  0908.2764
+  9902223_arXiv.txt
+  2204.02361
+  2210.05322
+Relevant Documents:
+  1307.6556
+  0906.1492
+  1304.7762
+  0209.483
+  1304.7273
+defaultdict(<class 'list'>, {'map': [0.0, 0.0, 0.0, 0.0, 0.2], 'ndcg': [np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.3391602052736161)], 'recall@k': [0.0, 0.0, 0.0, 0.0, 0.2], 'precision@k': [0.0, 0.0, 0.0, 0.0, 0.1], 'f1@k': [0, 0, 0, 0, 0.13333333333333333]})
+Query:  What have radio and γ-ray correlation studies revealed about the locations of emission regions in AGN jets, and how do these findings impact our understanding of jet structure?
+Retrieved Documents:
+  2206.05803
+  1201.4178
+  2101.06962
+  1205.2403
+  1208.1614
+  1110.4852
+  0009124_arXiv.txt
+  1705.10556
+  0812.3401
+  1610.01167
+Relevant Documents:
+  1805.04723
+  1408.6264
+  1011.3111
+  1405.7694
+  0101.570
+  1101.0179
+
+Multi-doc progress:   9%|████████▋                                                                                         | 7/79 [00:07<01:19,  1.11s/it]
+Query:  What is the observational evidence for a connection between hot accretion flows and jets/outflows in low-luminosity AGNs and black hole binaries?
+Retrieved Documents:
+  0605157_arXiv.txt
+  9905012_arXiv.txt
+  0202361_arXiv.txt
+  1411.2327
+  2205.07737
+  0305095_arXiv.txt
+  0406415_arXiv.txt
+  1304.7175
+  0403243_arXiv.txt
+  2101.08839
+Relevant Documents:
+  0102.186
+  0005.383
+  0409.360
+  0003.460
+  0110.440
+  0008.447
+  0006.105
+  1205.6468
+
+Multi-doc progress:  11%|███████████▏                                                                                      | 9/79 [00:09<01:17,  1.10s/it]
+Query:  What are the unique characteristics of radio pulsations detected from magnetars, and how do they differ from typical radio pulsars?
+Retrieved Documents:
+  1109.5116
+  1705.09767
+  1903.03257
+  1804.01933
+  1505.00836
+  1902.10712
+  1208.1297
+  2301.05509
+  0405131_arXiv.txt
+  1603.02170
+Relevant Documents:
+  1007.1052
+  1603.02170
+  1109.5116
+  1204.2045
+  1204.2605
+  1602.02188
+  0605.429
+  1305.3036
+  1308.3147
+defaultdict(<class 'list'>, {'map': [0.0, 0.0, 0.0, 0.0, 0.2, 0.0, 0.0, 0.13333333333333333], 'ndcg': [np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.3391602052736161), np.float64(0.0), np.float64(0.0), np.float64(0.3029889503327761)], 'recall@k': [0.0, 0.0, 0.0, 0.0, 0.2, 0.0, 0.0, 0.2222222222222222], 'precision@k': [0.0, 0.0, 0.0, 0.0, 0.1, 0.0, 0.0, 0.2], 'f1@k': [0, 0, 0, 0, 0.13333333333333333, 0, 0, 0.2105263157894737]})
+Query:  How has our understanding of the mass-metallicity relation and its evolution with redshift developed, and what factors affect this relationship?
+Retrieved Documents:
+  0806.2410
+  1607.00014
+  1112.3704
+  0811.2053
+  1411.6331
+  2008.09127
+  1503.05559
+  1302.3614
+  1904.09987
+  1707.01840
+Relevant Documents:
+  1211.3418
+  1311.4576
+  1107.3145
+  1211.6423
+  1005.0006
+  1602.01098
+  1309.4458
+  1405.6590
+  1605.03586
+  1411.7391
+  0508.407
+  1406.6069
+  1303.5059
+  0607.074
+  1307.7712
+  1404.7526
+  0602.473
+  1006.4877
+  1504.02097
+  1310.0816
+  0405.187
+  1207.4791
+  0511.255
+
+Multi-doc progress:  14%|█████████████▌                                                                                   | 11/79 [00:12<01:15,  1.10s/it]
+Query:  How has the M-σ relation for black hole mass estimation been refined in recent years, and how applicable is it to SDSS data?
+Retrieved Documents:
+  0505316_arXiv.txt
+  1502.06617
+  0405099_arXiv.txt
+  0207249_arXiv.txt
+  1810.05261
+  1403.7171
+  gr-qc0001022_arXiv.txt
+  0002350_arXiv.txt
+  0904.3348
+  2205.01693
+Relevant Documents:
+  0203.082
+  1305.2447
+  1303.1742
+  1304.7762
+  1211.3199
+  1211.2816
+  1305.2946
+  1210.6653
+  0203.468
+defaultdict(<class 'list'>, {'map': [0.0, 0.0, 0.0, 0.0, 0.2, 0.0, 0.0, 0.13333333333333333, 0.0, 0.0], 'ndcg': [np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.3391602052736161), np.float64(0.0), np.float64(0.0), np.float64(0.3029889503327761), np.float64(0.0), np.float64(0.0)], 'recall@k': [0.0, 0.0, 0.0, 0.0, 0.2, 0.0, 0.0, 0.2222222222222222, 0.0, 0.0], 'precision@k': [0.0, 0.0, 0.0, 0.0, 0.1, 0.0, 0.0, 0.2, 0.0, 0.0], 'f1@k': [0, 0, 0, 0, 0.13333333333333333, 0, 0, 0.2105263157894737, 0, 0]})
+Query:  Why are ultra-faint dwarf galaxies important for astrophysics, particularly in relation to dark matter and galaxy evolution?
+Retrieved Documents:
+  0902.2395
+  2111.01158
+  1909.04039
+  1708.02290
+  2101.02688
+  0706.0516
+  1408.0002
+  1909.04664
+  1808.03654
+  0907.4758
+Relevant Documents:
+  1612.07834
+  1603.07321
+  0706.0516
+  1712.03967
+  1712.01439
+  1711.06267
+  1805.00484
+  0806.4381
+  1803.05424
+  0806.2340
+  1209.5394
+  0808.3772
+
+Multi-doc progress:  15%|██████████████▋                                                                                  | 12/79 [00:13<01:14,  1.11s/it]
+Query:  How do the black hole masses and host galaxy dynamical masses of high-redshift quasars compare to the local M-σ relation, and what does this imply about their co-evolution?
+Retrieved Documents:
+  1710.02212
+  1501.07538
+  1912.03428
+  0812.3950
+  1910.08124
+  2207.05113
+  1502.06617
+  1907.00981
+  1610.04907
+  1302.1587
+Relevant Documents:
+  2108.04257
+  1107.1946
+  1801.04951
+  1802.05742
+  1809.01662
+  1710.02212
+  1606.09634
+  2102.05679
+  1002.1561
+  1801.02641
+defaultdict(<class 'list'>, {'map': [0.0, 0.0, 0.0, 0.0, 0.2, 0.0, 0.0, 0.13333333333333333, 0.0, 0.0, 0.013888888888888888, 0.1], 'ndcg': [np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.3391602052736161), np.float64(0.0), np.float64(0.0), np.float64(0.3029889503327761), np.float64(0.0), np.float64(0.0), np.float64(0.07839826897867533), np.float64(0.22009176629808017)], 'recall@k': [0.0, 0.0, 0.0, 0.0, 0.2, 0.0, 0.0, 0.2222222222222222, 0.0, 0.0, 0.08333333333333333, 0.1], 'precision@k': [0.0, 0.0, 0.0, 0.0, 0.1, 0.0, 0.0, 0.2, 0.0, 0.0, 0.1, 0.1], 'f1@k': [0, 0, 0, 0, 0.13333333333333333, 0, 0, 0.2105263157894737, 0, 0, 0.0909090909090909, 0.10000000000000002]})
+Query:  How have improvements in pulsar detection technology and survey techniques led to an increase in millisecond pulsar discoveries in recent years?
+Retrieved Documents:
+  1509.08982
+  1708.09192
+  0403076_arXiv.txt
+  1702.05280
+  2010.07457
+  1201.2637
+  1506.07498
+  0510011_arXiv.txt
+  2104.10018
+  0811.0762
+Relevant Documents:
+  1406.5214
+  1006.5744
+  1307.8142
+  1308.0378
+  1209.4293
+  0106.522
+  0509.732
+  1209.4296
+
+Multi-doc progress:  18%|█████████████████▏                                                                               | 14/79 [00:15<01:12,  1.11s/it]
+Query:  What is the range of predicted LISA event rates for merging massive black holes at high redshifts, and how could LISA observations help distinguish between different black hole seeding models?
+Retrieved Documents:
+  1004.1921
+  1903.08924
+  2206.12439
+  1009.6172
+  1011.2062
+  0903.2059
+  2211.13759
+  0610683_arXiv.txt
+  1902.01538
+  2005.03610
+Relevant Documents:
+  0908.3002
+  1606.07147
+  1809.01177
+  1304.7787
+  1511.05581
+  0701.556
+  0904.1383
+  0807.4702
+  1811.08911
+  1011.5893
+defaultdict(<class 'list'>, {'map': [0.0, 0.0, 0.0, 0.0, 0.2, 0.0, 0.0, 0.13333333333333333, 0.0, 0.0, 0.013888888888888888, 0.1, 0.0, 0.0], 'ndcg': [np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.3391602052736161), np.float64(0.0), np.float64(0.0), np.float64(0.3029889503327761), np.float64(0.0), np.float64(0.0), np.float64(0.07839826897867533), np.float64(0.22009176629808017), np.float64(0.0), np.float64(0.0)], 'recall@k': [0.0, 0.0, 0.0, 0.0, 0.2, 0.0, 0.0, 0.2222222222222222, 0.0, 0.0, 0.08333333333333333, 0.1, 0.0, 0.0], 'precision@k': [0.0, 0.0, 0.0, 0.0, 0.1, 0.0, 0.0, 0.2, 0.0, 0.0, 0.1, 0.1, 0.0, 0.0], 'f1@k': [0, 0, 0, 0, 0.13333333333333333, 0, 0, 0.2105263157894737, 0, 0, 0.0909090909090909, 0.10000000000000002, 0, 0]})
+Query:  How has spectroscopic confirmation of high-redshift galaxies progressed, particularly for redshifts z > 7?
+Retrieved Documents:
+  1408.2527
+  1207.3347
+  9604113_arXiv.txt
+  2201.05258
+  1206.0735
+  2212.06575
+  1312.5643
+  0909.2437
+  2211.10035
+  1603.05275
+Relevant Documents:
+  1611.07125
+  1704.02970
+  1708.05173
+  1310.6031
+  1606.01304
+  1710.10184
+  1605.06519
+  1901.05967
+  2009.10092
+  1506.00854
+  1507.08313
+  1803.07373
+  1905.08812
+  1703.09052
+  2107.06295
+  2001.00873
+  1502.05399
+  1712.05807
+
+Multi-doc progress:  20%|███████████████████▋                                                                             | 16/79 [00:17<01:11,  1.13s/it]
+Query:  What mechanisms can cause gas fragmentation to small scales in the CGM, and what are the characteristic properties of the resulting cloudlets?
+Retrieved Documents:
+  2211.09755
+  2211.00020
+  2005.08580
+  1806.10688
+  1910.01123
+  2206.09925
+  1908.00021
+  1811.11753
+  2209.01228
+  2004.07846
+Relevant Documents:
+  1710.00822
+  2009.11317
+  1808.04369
+  1806.10688
+  1610.01164
+  0209.601
+  2107.03395
+  1807.07971
+  0907.4004
+
+Multi-doc progress:  23%|██████████████████████                                                                           | 18/79 [00:20<01:08,  1.12s/it]
+Query:  What can the elemental abundances of extremely metal-poor stars tell us about the mass range and explosion mechanisms of Population III stars?
+Retrieved Documents:
+  1509.01252
+  2203.11505
+  2210.09185
+  1705.09233
+  2010.10532
+  1704.05695
+  1711.04410
+  1910.06340
+  1409.7952
+  1903.11615
+Relevant Documents:
+  1906.00994
+  1211.3157
+  1402.1517
+  0503.021
+  0810.5142
+  1405.7369
+  0602.388
+  2105.04573
+  1403.0007
+  1811.08911
+  1706.07054
+  0505.524
+  0804.1370
+  1504.05963
+  1402.6995
+  2010.10532
+defaultdict(<class 'list'>, {'map': [0.0, 0.0, 0.0, 0.0, 0.2, 0.0, 0.0, 0.13333333333333333, 0.0, 0.0, 0.013888888888888888, 0.1, 0.0, 0.0, 0.0, 0.027777777777777776, 0.0125], 'ndcg': [np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.3391602052736161), np.float64(0.0), np.float64(0.0), np.float64(0.3029889503327761), np.float64(0.0), np.float64(0.0), np.float64(0.07839826897867533), np.float64(0.22009176629808017), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.10122860821230018), np.float64(0.08514311764162098)], 'recall@k': [0.0, 0.0, 0.0, 0.0, 0.2, 0.0, 0.0, 0.2222222222222222, 0.0, 0.0, 0.08333333333333333, 0.1, 0.0, 0.0, 0.0, 0.1111111111111111, 0.0625], 'precision@k': [0.0, 0.0, 0.0, 0.0, 0.1, 0.0, 0.0, 0.2, 0.0, 0.0, 0.1, 0.1, 0.0, 0.0, 0.0, 0.1, 0.1], 'f1@k': [0, 0, 0, 0, 0.13333333333333333, 0, 0, 0.2105263157894737, 0, 0, 0.0909090909090909, 0.10000000000000002, 0, 0, 0, 0.10526315789473685, 0.07692307692307693]})
+Query:  What are the key observational characteristics of transition disks with rings and cavities, and what do they reveal about particle traps and disk structure?
+Retrieved Documents:
+  2210.05539
+  1801.06154
+  1103.0284
+  2204.08225
+  1901.03680
+  1610.03487
+  1206.5802
+  2207.05760
+  1906.10809
+  1006.0633
+Relevant Documents:
+  1205.5042
+  1902.04612
+  1103.0284
+  1402.7103
+  1209.3772
+  0710.2892
+  1211.3284
+  0201.425
+  1011.3826
+  0906.0730
+
+Multi-doc progress:  25%|████████████████████████▌                                                                        | 20/79 [00:22<01:06,  1.12s/it]
+Query:  What are the different methods used to estimate the covering factor of AGN tori, and why do they sometimes produce inconsistent results?
+Retrieved Documents:
+  1903.05970
+  2203.13481
+  1601.04439
+  1710.11360
+  2204.03901
+  1801.07894
+  2003.05700
+  0407642_arXiv.txt
+  1808.07400
+  0706.4483
+Relevant Documents:
+  1205.4543
+  0610.939
+  1309.0814
+  0308.140
+  1203.1045
+  1306.4316
+  1207.4882
+  0808.0260
+defaultdict(<class 'list'>, {'map': [0.0, 0.0, 0.0, 0.0, 0.2, 0.0, 0.0, 0.13333333333333333, 0.0, 0.0, 0.013888888888888888, 0.1, 0.0, 0.0, 0.0, 0.027777777777777776, 0.0125, 0.03333333333333333, 0.0], 'ndcg': [np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.3391602052736161), np.float64(0.0), np.float64(0.0), np.float64(0.3029889503327761), np.float64(0.0), np.float64(0.0), np.float64(0.07839826897867533), np.float64(0.22009176629808017), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.10122860821230018), np.float64(0.08514311764162098), np.float64(0.11004588314904008), np.float64(0.0)], 'recall@k': [0.0, 0.0, 0.0, 0.0, 0.2, 0.0, 0.0, 0.2222222222222222, 0.0, 0.0, 0.08333333333333333, 0.1, 0.0, 0.0, 0.0, 0.1111111111111111, 0.0625, 0.1, 0.0], 'precision@k': [0.0, 0.0, 0.0, 0.0, 0.1, 0.0, 0.0, 0.2, 0.0, 0.0, 0.1, 0.1, 0.0, 0.0, 0.0, 0.1, 0.1, 0.1, 0.0], 'f1@k': [0, 0, 0, 0, 0.13333333333333333, 0, 0, 0.2105263157894737, 0, 0, 0.0909090909090909, 0.10000000000000002, 0, 0, 0, 0.10526315789473685, 0.07692307692307693, 0.10000000000000002, 0]})
+Query:  How does the two-phase formation scenario for massive early-type galaxies potentially explain observed radial variations in their initial mass functions?
+Retrieved Documents:
+  0704.2272
+  0903.3415
+  0903.4857
+  1211.2113
+  0601036_arXiv.txt
+  1703.04975
+  0009112_arXiv.txt
+  1211.3973
+  0710.1311
+  0303394_arXiv.txt
+Relevant Documents:
+  1206.5000
+  0608.657
+  1311.3317
+  1511.08804
+  1010.1381
+
+Multi-doc progress:  27%|█████████████████████████▊                                                                       | 21/79 [00:23<01:04,  1.12s/it]
+Query:  How does the spatial distribution of supernovae affect their impact on the interstellar medium and galactic outflows?
+Retrieved Documents:
+  1806.03311
+  1811.01253
+  0606423_arXiv.txt
+  1002.4881
+  1201.3237
+  0410727_arXiv.txt
+  2109.09764
+  2002.09328
+  2101.11645
+  1303.1400
+Relevant Documents:
+  1610.08971
+  0712.3285
+  0502.327
+  1202.0552
+  1402.6695
+  0411.383
+  1010.3651
+defaultdict(<class 'list'>, {'map': [0.0, 0.0, 0.0, 0.0, 0.2, 0.0, 0.0, 0.13333333333333333, 0.0, 0.0, 0.013888888888888888, 0.1, 0.0, 0.0, 0.0, 0.027777777777777776, 0.0125, 0.03333333333333333, 0.0, 0.0, 0.0], 'ndcg': [np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.3391602052736161), np.float64(0.0), np.float64(0.0), np.float64(0.3029889503327761), np.float64(0.0), np.float64(0.0), np.float64(0.07839826897867533), np.float64(0.22009176629808017), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.10122860821230018), np.float64(0.08514311764162098), np.float64(0.11004588314904008), np.float64(0.0), np.float64(0.0), np.float64(0.0)], 'recall@k': [0.0, 0.0, 0.0, 0.0, 0.2, 0.0, 0.0, 0.2222222222222222, 0.0, 0.0, 0.08333333333333333, 0.1, 0.0, 0.0, 0.0, 0.1111111111111111, 0.0625, 0.1, 0.0, 0.0, 0.0], 'precision@k': [0.0, 0.0, 0.0, 0.0, 0.1, 0.0, 0.0, 0.2, 0.0, 0.0, 0.1, 0.1, 0.0, 0.0, 0.0, 0.1, 0.1, 0.1, 0.0, 0.0, 0.0], 'f1@k': [0, 0, 0, 0, 0.13333333333333333, 0, 0, 0.2105263157894737, 0, 0, 0.0909090909090909, 0.10000000000000002, 0, 0, 0, 0.10526315789473685, 0.07692307692307693, 0.10000000000000002, 0, 0, 0]})
+Query:  What are some important physical processes currently neglected in most state-of-the-art cosmological simulations of galaxy formation?
+Retrieved Documents:
+  0206393_arXiv.txt
+  1412.2712
+  2101.08549
+  2011.01966
+  0412254_arXiv.txt
+  9809136_arXiv.txt
+  1812.05613
+  0206395_arXiv.txt
+  1210.5522
+  1908.00552
+Relevant Documents:
+  0808.2477
+  1707.05327
+  1401.4719
+  2005.13585
+  1009.1026
+  1905.11414
+  1203.1038
+  1705.00941
+  0110.655
+  1707.03397
+
+Multi-doc progress:  29%|████████████████████████████▏                                                                    | 23/79 [00:25<01:02,  1.11s/it]
+Query:  How has the availability of pre-peak light curve data for TDEs impacted our understanding of their rise times and correlations with black hole mass and luminosity?
+Retrieved Documents:
+  1802.06798
+  1906.08235
+  1601.06787
+  2001.01409
+  2104.06203
+  2108.02449
+  1706.08965
+  2107.12268
+  2107.03666
+  1912.04372
+Relevant Documents:
+  1506.03453
+  1609.02927
+  1703.01299
+  1405.1415
+  1703.00965
+  1903.12203
+  1810.00011
+  1309.3009
+  1903.03120
+  1410.7772
+  1604.02056
+  1205.0252
+defaultdict(<class 'list'>, {'map': [0.0, 0.0, 0.0, 0.0, 0.2, 0.0, 0.0, 0.13333333333333333, 0.0, 0.0, 0.013888888888888888, 0.1, 0.0, 0.0, 0.0, 0.027777777777777776, 0.0125, 0.03333333333333333, 0.0, 0.0, 0.0, 0.0, 0.0], 'ndcg': [np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.3391602052736161), np.float64(0.0), np.float64(0.0), np.float64(0.3029889503327761), np.float64(0.0), np.float64(0.0), np.float64(0.07839826897867533), np.float64(0.22009176629808017), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.10122860821230018), np.float64(0.08514311764162098), np.float64(0.11004588314904008), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.0)], 'recall@k': [0.0, 0.0, 0.0, 0.0, 0.2, 0.0, 0.0, 0.2222222222222222, 0.0, 0.0, 0.08333333333333333, 0.1, 0.0, 0.0, 0.0, 0.1111111111111111, 0.0625, 0.1, 0.0, 0.0, 0.0, 0.0, 0.0], 'precision@k': [0.0, 0.0, 0.0, 0.0, 0.1, 0.0, 0.0, 0.2, 0.0, 0.0, 0.1, 0.1, 0.0, 0.0, 0.0, 0.1, 0.1, 0.1, 0.0, 0.0, 0.0, 0.0, 0.0], 'f1@k': [0, 0, 0, 0, 0.13333333333333333, 0, 0, 0.2105263157894737, 0, 0, 0.0909090909090909, 0.10000000000000002, 0, 0, 0, 0.10526315789473685, 0.07692307692307693, 0.10000000000000002, 0, 0, 0, 0, 0]})
+Query:  What does the age distribution of stars in the Orion Nebula Cluster reveal about the timescale and dynamics of star formation in clusters?
+Retrieved Documents:
+  0809.4006
+  1403.2742
+  1511.01202
+  2212.01405
+  2007.09160
+  2011.02485
+  1804.05077
+  0609171_arXiv.txt
+  1209.3787
+  2207.00337
+Relevant Documents:
+  1705.09496
+  1804.05075
+  1108.1015
+  0603.278
+  1507.02966
+  1711.07512
+  1710.09415
+  1812.04134
+
+Multi-doc progress:  32%|██████████████████████████████▋                                                                  | 25/79 [00:27<00:59,  1.11s/it]
+Query:  What are the key mechanisms and timescales of secular interactions that can excite giant planet eccentricities?
+Retrieved Documents:
+  0307094_arXiv.txt
+  1302.1620
+  0606346_arXiv.txt
+  1108.5149
+  1901.05006
+  0909.1886
+  2105.14976
+  9907016_arXiv.txt
+  1103.5485
+  1012.3475
+Relevant Documents:
+  0303.010
+  1510.08918
+  1206.3529
+  1602.04751
+  1409.8296
+  1606.07438
+  1011.2501
+  1601.07175
+  1310.6044
+  0705.4285
+  1012.3475
+  1310.5048
+  1601.05814
+  1102.3131
+  1405.0494
+  1106.3340
+  1407.2249
+
+Multi-doc progress:  34%|█████████████████████████████████▏                                                               | 27/79 [00:30<00:57,  1.11s/it]
+Query:  How do cosmological simulations compare to and inform our understanding of the Milky Way's stellar halo and merger history?
+Retrieved Documents:
+  1407.3811
+  0706.0004
+  0812.3154
+  2209.05493
+  1509.01255
+  1210.5522
+  1807.05180
+  1209.2142
+  2208.02266
+  2204.08425
+Relevant Documents:
+  1902.05553
+  0910.3211
+  1812.05609
+  1908.07080
+  1311.2073
+  1610.01159
+  1407.7855
+  1301.1301
+  1810.07779
+  1804.00659
+  1407.7040
+  1707.03401
+defaultdict(<class 'list'>, {'map': [0.0, 0.0, 0.0, 0.0, 0.2, 0.0, 0.0, 0.13333333333333333, 0.0, 0.0, 0.013888888888888888, 0.1, 0.0, 0.0, 0.0, 0.027777777777777776, 0.0125, 0.03333333333333333, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0058823529411764705, 0.0], 'ndcg': [np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.3391602052736161), np.float64(0.0), np.float64(0.0), np.float64(0.3029889503327761), np.float64(0.0), np.float64(0.0), np.float64(0.07839826897867533), np.float64(0.22009176629808017), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.10122860821230018), np.float64(0.08514311764162098), np.float64(0.11004588314904008), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.06362078819895171), np.float64(0.0)], 'recall@k': [0.0, 0.0, 0.0, 0.0, 0.2, 0.0, 0.0, 0.2222222222222222, 0.0, 0.0, 0.08333333333333333, 0.1, 0.0, 0.0, 0.0, 0.1111111111111111, 0.0625, 0.1, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.058823529411764705, 0.0], 'precision@k': [0.0, 0.0, 0.0, 0.0, 0.1, 0.0, 0.0, 0.2, 0.0, 0.0, 0.1, 0.1, 0.0, 0.0, 0.0, 0.1, 0.1, 0.1, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.1, 0.0], 'f1@k': [0, 0, 0, 0, 0.13333333333333333, 0, 0, 0.2105263157894737, 0, 0, 0.0909090909090909, 0.10000000000000002, 0, 0, 0, 0.10526315789473685, 0.07692307692307693, 0.10000000000000002, 0, 0, 0, 0, 0, 0, 0.07407407407407408, 0]})
+Query:  What evidence exists for pre-supernova outbursts in massive stars, and what do they reveal about late-stage stellar evolution?
+Retrieved Documents:
+  2005.03124
+  1912.09771
+  2205.09881
+  1801.04328
+  1406.2327
+  0406552_arXiv.txt
+  1608.02852
+  1311.6546
+  1710.03243
+  1308.5498
+Relevant Documents:
+  1307.5035
+  1010.3719
+  1101.5646
+  1006.3899
+  1308.5978
+  1202.5036
+
+Multi-doc progress:  37%|███████████████████████████████████▌                                                             | 29/79 [00:32<00:55,  1.11s/it]
+Query:  What recent observational evidence challenges the standard model of a compact, axisymmetric obscuring torus in AGN, and what alternative geometries have been proposed?
+Retrieved Documents:
+  1204.6580
+  1704.06739
+  0707.0162
+  2011.03851
+  2102.12130
+  1904.01365
+  0203359_arXiv.txt
+  1705.03975
+  1302.5019
+  2201.01767
+Relevant Documents:
+  1409.7404
+  1312.4534
+  0905.3188
+  1012.3345
+  1705.10680
+  1308.4129
+  1411.0670
+  0603.625
+  1603.02710
+defaultdict(<class 'list'>, {'map': [0.0, 0.0, 0.0, 0.0, 0.2, 0.0, 0.0, 0.13333333333333333, 0.0, 0.0, 0.013888888888888888, 0.1, 0.0, 0.0, 0.0, 0.027777777777777776, 0.0125, 0.03333333333333333, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0058823529411764705, 0.0, 0.0, 0.0], 'ndcg': [np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.3391602052736161), np.float64(0.0), np.float64(0.0), np.float64(0.3029889503327761), np.float64(0.0), np.float64(0.0), np.float64(0.07839826897867533), np.float64(0.22009176629808017), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.10122860821230018), np.float64(0.08514311764162098), np.float64(0.11004588314904008), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.06362078819895171), np.float64(0.0), np.float64(0.0), np.float64(0.0)], 'recall@k': [0.0, 0.0, 0.0, 0.0, 0.2, 0.0, 0.0, 0.2222222222222222, 0.0, 0.0, 0.08333333333333333, 0.1, 0.0, 0.0, 0.0, 0.1111111111111111, 0.0625, 0.1, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.058823529411764705, 0.0, 0.0, 0.0], 'precision@k': [0.0, 0.0, 0.0, 0.0, 0.1, 0.0, 0.0, 0.2, 0.0, 0.0, 0.1, 0.1, 0.0, 0.0, 0.0, 0.1, 0.1, 0.1, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.1, 0.0, 0.0, 0.0], 'f1@k': [0, 0, 0, 0, 0.13333333333333333, 0, 0, 0.2105263157894737, 0, 0, 0.0909090909090909, 0.10000000000000002, 0, 0, 0, 0.10526315789473685, 0.07692307692307693, 0.10000000000000002, 0, 0, 0, 0, 0, 0, 0.07407407407407408, 0, 0, 0]})
+Query:  What are the upcoming ground-based and space-based transit surveys, and what are their specific goals and capabilities?
+Retrieved Documents:
+  0907.5193
+  2110.14344
+  0608597_arXiv.txt
+  2104.14233
+  0702749_arXiv.txt
+  1904.11972
+  0502301_arXiv.txt
+  1903.05563
+  1007.3501
+  2206.06030
+Relevant Documents:
+  1310.0696
+  1305.2270
+  1304.0481
+  1402.5163
+  0709.2879
+  1302.6592
+  1206.1391
+  1206.1729
+
+Multi-doc progress:  39%|██████████████████████████████████████                                                           | 31/79 [00:34<00:53,  1.10s/it]
+Query:  How did the advent of deep Hubble Space Telescope imaging campaigns revolutionize the study of galaxy morphologies at high redshifts?
+Retrieved Documents:
+  2210.01110
+  0906.2805
+  1106.1641
+  1612.05405
+  1305.2204
+  1907.10190
+  0902.4759
+  1403.2783
+  1411.7667
+  1903.07625
+Relevant Documents:
+  0607.632
+  0607.355
+defaultdict(<class 'list'>, {'map': [0.0, 0.0, 0.0, 0.0, 0.2, 0.0, 0.0, 0.13333333333333333, 0.0, 0.0, 0.013888888888888888, 0.1, 0.0, 0.0, 0.0, 0.027777777777777776, 0.0125, 0.03333333333333333, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0058823529411764705, 0.0, 0.0, 0.0, 0.0, 0.0], 'ndcg': [np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.3391602052736161), np.float64(0.0), np.float64(0.0), np.float64(0.3029889503327761), np.float64(0.0), np.float64(0.0), np.float64(0.07839826897867533), np.float64(0.22009176629808017), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.10122860821230018), np.float64(0.08514311764162098), np.float64(0.11004588314904008), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.06362078819895171), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.0)], 'recall@k': [0.0, 0.0, 0.0, 0.0, 0.2, 0.0, 0.0, 0.2222222222222222, 0.0, 0.0, 0.08333333333333333, 0.1, 0.0, 0.0, 0.0, 0.1111111111111111, 0.0625, 0.1, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.058823529411764705, 0.0, 0.0, 0.0, 0.0, 0.0], 'precision@k': [0.0, 0.0, 0.0, 0.0, 0.1, 0.0, 0.0, 0.2, 0.0, 0.0, 0.1, 0.1, 0.0, 0.0, 0.0, 0.1, 0.1, 0.1, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.1, 0.0, 0.0, 0.0, 0.0, 0.0], 'f1@k': [0, 0, 0, 0, 0.13333333333333333, 0, 0, 0.2105263157894737, 0, 0, 0.0909090909090909, 0.10000000000000002, 0, 0, 0, 0.10526315789473685, 0.07692307692307693, 0.10000000000000002, 0, 0, 0, 0, 0, 0, 0.07407407407407408, 0, 0, 0, 0, 0]})
+Query:  What methods are used to model non-LTE line excitation and retrieve molecular abundances from disk observations?
+Retrieved Documents:
+  2203.02347
+  1511.01155
+  1403.3088
+  0902.4472
+  2111.10552
+  1504.07593
+  0805.3249
+  0507375_arXiv.txt
+  2210.08880
+  2205.05819
+Relevant Documents:
+  1107.5061
+  1909.04477
+  0908.2997
+  1711.07249
+  0909.0975
+  1807.05784
+  1201.4860
+  1402.3503
+  1808.10682
+  1802.02590
+  1111.2697
+  1812.02741
+  1701.08040
+  1008.1492
+  0911.1949
+  1811.08663
+  1506.03510
+
+Multi-doc progress:  41%|███████████████████████████████████████▎                                                         | 32/79 [00:35<00:51,  1.10s/it]
+Query:  How have cold gas surveys of representative galaxy samples in the past decade advanced our understanding of gas content across the galaxy population?
+Retrieved Documents:
+  1201.3826
+  2210.05683
+  1409.1574
+  1509.04720
+  0812.0007
+  1304.3492
+  1506.08785
+  1407.5639
+  1903.06840
+  0707.4147
+Relevant Documents:
+  1409.4764
+  1610.06932
+  0006.396
+  1001.5136
+  1705.05851
+  0411.302
+  1006.5447
+  0912.1610
+defaultdict(<class 'list'>, {'map': [0.0, 0.0, 0.0, 0.0, 0.2, 0.0, 0.0, 0.13333333333333333, 0.0, 0.0, 0.013888888888888888, 0.1, 0.0, 0.0, 0.0, 0.027777777777777776, 0.0125, 0.03333333333333333, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0058823529411764705, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0], 'ndcg': [np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.3391602052736161), np.float64(0.0), np.float64(0.0), np.float64(0.3029889503327761), np.float64(0.0), np.float64(0.0), np.float64(0.07839826897867533), np.float64(0.22009176629808017), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.10122860821230018), np.float64(0.08514311764162098), np.float64(0.11004588314904008), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.06362078819895171), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.0)], 'recall@k': [0.0, 0.0, 0.0, 0.0, 0.2, 0.0, 0.0, 0.2222222222222222, 0.0, 0.0, 0.08333333333333333, 0.1, 0.0, 0.0, 0.0, 0.1111111111111111, 0.0625, 0.1, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.058823529411764705, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0], 'precision@k': [0.0, 0.0, 0.0, 0.0, 0.1, 0.0, 0.0, 0.2, 0.0, 0.0, 0.1, 0.1, 0.0, 0.0, 0.0, 0.1, 0.1, 0.1, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.1, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0], 'f1@k': [0, 0, 0, 0, 0.13333333333333333, 0, 0, 0.2105263157894737, 0, 0, 0.0909090909090909, 0.10000000000000002, 0, 0, 0, 0.10526315789473685, 0.07692307692307693, 0.10000000000000002, 0, 0, 0, 0, 0, 0, 0.07407407407407408, 0, 0, 0, 0, 0, 0, 0]})
+Query:  What can be inferred about the kick velocities of short GRB progenitors based on their offsets from host galaxies?
+Retrieved Documents:
+  0909.1804
+  0601622_arXiv.txt
+  2208.02407
+  0805.0306
+  2206.14873
+  1404.0881
+  2209.02175
+  1606.01983
+  1001.2476
+  1904.05935
+Relevant Documents:
+  0801.1232
+  0607.223
+  1008.2397
+  1209.4097
+  0509.484
+  1302.3221
+  1307.0819
+  0506.102
+  1209.5423
+  1210.7238
+  1306.3960
+
+Multi-doc progress:  43%|█████████████████████████████████████████▋                                                       | 34/79 [00:37<00:49,  1.10s/it]
+Query:  How can measurements of the Type Ia supernova rate in galaxy clusters be used to constrain the delay time distribution, and what are the current limitations of this approach?
+Retrieved Documents:
+  0710.3120
+  0805.3983
+  0901.4338
+  1003.2491
+  0904.3108
+  2202.10477
+  0909.3652
+  0507456_arXiv.txt
+  0807.2354
+  9908005_arXiv.txt
+Relevant Documents:
+  0309.797
+  0801.2898
+  0109.089
+  1103.0265
+  0610.724
+  1010.5786
+  0711.0808
+  0801.4968
+  1006.3576
+  0710.1094
+  0610.228
+  0709.2519
+  0908.3928
+defaultdict(<class 'list'>, {'map': [0.0, 0.0, 0.0, 0.0, 0.2, 0.0, 0.0, 0.13333333333333333, 0.0, 0.0, 0.013888888888888888, 0.1, 0.0, 0.0, 0.0, 0.027777777777777776, 0.0125, 0.03333333333333333, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0058823529411764705, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0], 'ndcg': [np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.3391602052736161), np.float64(0.0), np.float64(0.0), np.float64(0.3029889503327761), np.float64(0.0), np.float64(0.0), np.float64(0.07839826897867533), np.float64(0.22009176629808017), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.10122860821230018), np.float64(0.08514311764162098), np.float64(0.11004588314904008), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.06362078819895171), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.0)], 'recall@k': [0.0, 0.0, 0.0, 0.0, 0.2, 0.0, 0.0, 0.2222222222222222, 0.0, 0.0, 0.08333333333333333, 0.1, 0.0, 0.0, 0.0, 0.1111111111111111, 0.0625, 0.1, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.058823529411764705, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0], 'precision@k': [0.0, 0.0, 0.0, 0.0, 0.1, 0.0, 0.0, 0.2, 0.0, 0.0, 0.1, 0.1, 0.0, 0.0, 0.0, 0.1, 0.1, 0.1, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.1, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0], 'f1@k': [0, 0, 0, 0, 0.13333333333333333, 0, 0, 0.2105263157894737, 0, 0, 0.0909090909090909, 0.10000000000000002, 0, 0, 0, 0.10526315789473685, 0.07692307692307693, 0.10000000000000002, 0, 0, 0, 0, 0, 0, 0.07407407407407408, 0, 0, 0, 0, 0, 0, 0, 0, 0]})
+Query:  How do galaxies form and evolve differently in low-density versus high-density regions of the universe, particularly with regards to disk galaxies and their observed properties at high redshift?
+Retrieved Documents:
+  0604063_arXiv.txt
+  1805.08214
+  1907.03895
+  0207504_arXiv.txt
+  1112.2260
+  1603.01773
+  0904.4433
+  0911.4386
+  1207.7070
+  2210.10761
+Relevant Documents:
+  0802.0496
+  1207.7072
+  0311.060
+  1004.2120
+  1310.2956
+  1002.2149
+  0603.559
+  1011.5360
+  1107.3137
+  0608.344
+  0701.121
+  0911.2776
+  0704.3611
+  1601.03400
+  0901.2458
+  0905.4669
+  0708.0306
+
+Multi-doc progress:  46%|████████████████████████████████████████████▏                                                    | 36/79 [00:39<00:47,  1.10s/it]
+Query:  How does the net accretion rate of gas into the condensed phase compare to the baryonic accretion rate onto halos as a function of redshift?
+Retrieved Documents:
+  1006.1302
+  1104.4496
+  2211.05131
+  1102.3912
+  1103.0001
+  1106.4814
+  0608202_arXiv.txt
+  1707.05548
+  1201.0816
+  2210.03157
+Relevant Documents:
+  1307.0602
+  0509.481
+  0811.2003
+  1303.3009
+  0909.3840
+  1502.07357
+defaultdict(<class 'list'>, {'map': [0.0, 0.0, 0.0, 0.0, 0.2, 0.0, 0.0, 0.13333333333333333, 0.0, 0.0, 0.013888888888888888, 0.1, 0.0, 0.0, 0.0, 0.027777777777777776, 0.0125, 0.03333333333333333, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0058823529411764705, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0], 'ndcg': [np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.3391602052736161), np.float64(0.0), np.float64(0.0), np.float64(0.3029889503327761), np.float64(0.0), np.float64(0.0), np.float64(0.07839826897867533), np.float64(0.22009176629808017), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.10122860821230018), np.float64(0.08514311764162098), np.float64(0.11004588314904008), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.06362078819895171), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.0)], 'recall@k': [0.0, 0.0, 0.0, 0.0, 0.2, 0.0, 0.0, 0.2222222222222222, 0.0, 0.0, 0.08333333333333333, 0.1, 0.0, 0.0, 0.0, 0.1111111111111111, 0.0625, 0.1, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.058823529411764705, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0], 'precision@k': [0.0, 0.0, 0.0, 0.0, 0.1, 0.0, 0.0, 0.2, 0.0, 0.0, 0.1, 0.1, 0.0, 0.0, 0.0, 0.1, 0.1, 0.1, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.1, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0], 'f1@k': [0, 0, 0, 0, 0.13333333333333333, 0, 0, 0.2105263157894737, 0, 0, 0.0909090909090909, 0.10000000000000002, 0, 0, 0, 0.10526315789473685, 0.07692307692307693, 0.10000000000000002, 0, 0, 0, 0, 0, 0, 0.07407407407407408, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]})
+Query:  How have atmospheric retrieval techniques for exoplanets evolved over the past decade, and what are the current capabilities?
+Retrieved Documents:
+  2006.12821
+  1203.4018
+  1806.02906
+  2103.08600
+  1409.2312
+  1912.07759
+  2203.00482
+  2003.14311
+  2003.02430
+  1610.03216
+Relevant Documents:
+  1705.08893
+  1309.6016
+  1605.08810
+  1306.6325
+  1610.01841
+  1610.02848
+  1504.00217
+  1511.08339
+  1808.03645
+  1611.03083
+  1511.05528
+  1803.06678
+  0910.1347
+  1511.09443
+  1511.08901
+  0903.4880
+  1706.02302
+  1612.06409
+  1705.03305
+
+Multi-doc progress:  48%|██████████████████████████████████████████████▋                                                  | 38/79 [00:42<00:45,  1.11s/it]
+Query:  How are the mass outflow rates and energetics of galactic winds in high-redshift star-forming galaxies estimated using broad H-alpha emission, and what do the results imply about the driving mechanisms?
+Retrieved Documents:
+  2001.04384
+  1507.00346
+  2103.06291
+  1205.4222
+  1811.00558
+  1503.02076
+  0902.4704
+  1603.05275
+  2204.05006
+  2209.10580
+Relevant Documents:
+  1104.0248
+  1808.10700
+  1807.04738
+  1011.5360
+  0504.435
+  1903.05148
+  1205.0812
+  0804.4686
+
+Multi-doc progress:  51%|█████████████████████████████████████████████████                                                | 40/79 [00:44<00:44,  1.15s/it]
+Query:  What is CO-dark molecular gas, and how does its fraction vary with galactic conditions?
+Retrieved Documents:
+  1607.08253
+  1403.1589
+  2205.13533
+  1906.01015
+  1911.03280
+  1312.3320
+  2009.00649
+  1810.12315
+  2006.10154
+  1401.0563
+Relevant Documents:
+  1304.7770
+  1312.3320
+  2004.14630
+  2009.00649
+  1403.1589
+  1409.0537
+  1004.5401
+  1603.02300
+  2103.03889
+  1205.3384
+defaultdict(<class 'list'>, {'map': [0.0, 0.0, 0.0, 0.0, 0.2, 0.0, 0.0, 0.13333333333333333, 0.0, 0.0, 0.013888888888888888, 0.1, 0.0, 0.0, 0.0, 0.027777777777777776, 0.0125, 0.03333333333333333, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0058823529411764705, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.1261904761904762], 'ndcg': [np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.3391602052736161), np.float64(0.0), np.float64(0.0), np.float64(0.3029889503327761), np.float64(0.0), np.float64(0.0), np.float64(0.07839826897867533), np.float64(0.22009176629808017), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.10122860821230018), np.float64(0.08514311764162098), np.float64(0.11004588314904008), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.06362078819895171), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.2906246349515899)], 'recall@k': [0.0, 0.0, 0.0, 0.0, 0.2, 0.0, 0.0, 0.2222222222222222, 0.0, 0.0, 0.08333333333333333, 0.1, 0.0, 0.0, 0.0, 0.1111111111111111, 0.0625, 0.1, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.058823529411764705, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.3], 'precision@k': [0.0, 0.0, 0.0, 0.0, 0.1, 0.0, 0.0, 0.2, 0.0, 0.0, 0.1, 0.1, 0.0, 0.0, 0.0, 0.1, 0.1, 0.1, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.1, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.3], 'f1@k': [0, 0, 0, 0, 0.13333333333333333, 0, 0, 0.2105263157894737, 0, 0, 0.0909090909090909, 0.10000000000000002, 0, 0, 0, 0.10526315789473685, 0.07692307692307693, 0.10000000000000002, 0, 0, 0, 0, 0, 0, 0.07407407407407408, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0.3]})
+Query:  What are the characteristics and variations of ice features observed in the central parsec of the Galaxy, and what do they reveal about local conditions?
+Retrieved Documents:
+  2208.12739
+  1701.02385
+  1908.07354
+  1107.5825
+  0301569_arXiv.txt
+  2210.15768
+  1804.05324
+  1107.5826
+  1108.6055
+  1606.07266
+Relevant Documents:
+  0012.292
+  0507.161
+  0906.5507
+  0002.421
+
+Multi-doc progress:  52%|██████████████████████████████████████████████████▎                                              | 41/79 [00:45<00:43,  1.13s/it]
+Query:  What evidence do recent infrared observations provide for large-scale molecular outflows in nearby quasars, and how do these compare to theoretical predictions for AGN feedback?
+Retrieved Documents:
+  2207.09484
+  2209.10580
+  1002.4667
+  1712.02794
+  1311.2595
+  2009.11175
+  0905.3560
+  1703.10255
+  1608.01370
+  2106.14907
+Relevant Documents:
+  0304.335
+  1006.1655
+defaultdict(<class 'list'>, {'map': [0.0, 0.0, 0.0, 0.0, 0.2, 0.0, 0.0, 0.13333333333333333, 0.0, 0.0, 0.013888888888888888, 0.1, 0.0, 0.0, 0.0, 0.027777777777777776, 0.0125, 0.03333333333333333, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0058823529411764705, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.1261904761904762, 0.0, 0.0], 'ndcg': [np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.3391602052736161), np.float64(0.0), np.float64(0.0), np.float64(0.3029889503327761), np.float64(0.0), np.float64(0.0), np.float64(0.07839826897867533), np.float64(0.22009176629808017), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.10122860821230018), np.float64(0.08514311764162098), np.float64(0.11004588314904008), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.06362078819895171), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.2906246349515899), np.float64(0.0), np.float64(0.0)], 'recall@k': [0.0, 0.0, 0.0, 0.0, 0.2, 0.0, 0.0, 0.2222222222222222, 0.0, 0.0, 0.08333333333333333, 0.1, 0.0, 0.0, 0.0, 0.1111111111111111, 0.0625, 0.1, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.058823529411764705, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.3, 0.0, 0.0], 'precision@k': [0.0, 0.0, 0.0, 0.0, 0.1, 0.0, 0.0, 0.2, 0.0, 0.0, 0.1, 0.1, 0.0, 0.0, 0.0, 0.1, 0.1, 0.1, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.1, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.3, 0.0, 0.0], 'f1@k': [0, 0, 0, 0, 0.13333333333333333, 0, 0, 0.2105263157894737, 0, 0, 0.0909090909090909, 0.10000000000000002, 0, 0, 0, 0.10526315789473685, 0.07692307692307693, 0.10000000000000002, 0, 0, 0, 0, 0, 0, 0.07407407407407408, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0.3, 0, 0]})
+Query:  What are the limitations of current approaches to modeling the intrinsic multiplicity distribution of planetary systems?
+Retrieved Documents:
+  1301.2394
+  1810.06590
+  1303.3028
+  2208.02844
+  1505.07837
+  1207.5250
+  0902.0555
+  1701.05865
+  2003.05366
+  1908.07747
+Relevant Documents:
+  1805.08211
+  1803.00777
+  1410.4192
+  1907.08148
+  1102.0543
+  1901.00196
+  1802.09526
+  1102.0547
+  1101.1097
+  1106.5403
+  1504.01160
+  1907.07773
+  1102.0544
+
+Multi-doc progress:  54%|████████████████████████████████████████████████████▊                                            | 43/79 [00:47<00:40,  1.12s/it]
+Query:  How are Gaussian processes used to study the population-level properties and variability of active galactic nuclei?
+Retrieved Documents:
+  2207.04123
+  2211.02121
+  2211.09008
+  2203.03651
+  1201.0289
+  1710.06397
+  2211.00702
+  2010.05624
+  2202.00701
+  1209.0524
+Relevant Documents:
+  2211.10007
+  2201.08943
+  1402.5978
+  1607.04299
+  1004.0276
+  1811.00154
+  2201.02762
+
+Multi-doc progress:  57%|███████████████████████████████████████████████████████▎                                         | 45/79 [00:50<00:40,  1.20s/it]
+Query:  How do theoretical models explain the observed IRX-β relation in galaxies, and what factors contribute to scatter in this relation?
+Retrieved Documents:
+  1008.4158
+  1710.06440
+  1908.11149
+  1407.1767
+  1010.0249
+  1005.1289
+  0903.4897
+  1804.04663
+  1203.0558
+  2004.09433
+Relevant Documents:
+  1406.3894
+  1607.01824
+  0001.308
+  0910.0774
+  1701.07869
+  1604.07402
+  1811.03094
+  1903.06715
+  1607.04285
+  1812.05606
+defaultdict(<class 'list'>, {'map': [0.0, 0.0, 0.0, 0.0, 0.2, 0.0, 0.0, 0.13333333333333333, 0.0, 0.0, 0.013888888888888888, 0.1, 0.0, 0.0, 0.0, 0.027777777777777776, 0.0125, 0.03333333333333333, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0058823529411764705, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.1261904761904762, 0.0, 0.0, 0.0, 0.0, 0.0], 'ndcg': [np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.3391602052736161), np.float64(0.0), np.float64(0.0), np.float64(0.3029889503327761), np.float64(0.0), np.float64(0.0), np.float64(0.07839826897867533), np.float64(0.22009176629808017), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.10122860821230018), np.float64(0.08514311764162098), np.float64(0.11004588314904008), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.06362078819895171), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.2906246349515899), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.0)], 'recall@k': [0.0, 0.0, 0.0, 0.0, 0.2, 0.0, 0.0, 0.2222222222222222, 0.0, 0.0, 0.08333333333333333, 0.1, 0.0, 0.0, 0.0, 0.1111111111111111, 0.0625, 0.1, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.058823529411764705, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.3, 0.0, 0.0, 0.0, 0.0, 0.0], 'precision@k': [0.0, 0.0, 0.0, 0.0, 0.1, 0.0, 0.0, 0.2, 0.0, 0.0, 0.1, 0.1, 0.0, 0.0, 0.0, 0.1, 0.1, 0.1, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.1, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.3, 0.0, 0.0, 0.0, 0.0, 0.0], 'f1@k': [0, 0, 0, 0, 0.13333333333333333, 0, 0, 0.2105263157894737, 0, 0, 0.0909090909090909, 0.10000000000000002, 0, 0, 0, 0.10526315789473685, 0.07692307692307693, 0.10000000000000002, 0, 0, 0, 0, 0, 0, 0.07407407407407408, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0.3, 0, 0, 0, 0, 0]})
+Query:  How do the spin distributions of black holes observed through electromagnetic methods compare to those detected via gravitational waves, and what implications does this have?
+Retrieved Documents:
+  1303.5641
+  2011.08948
+  1402.0251
+  2004.07246
+  gr-qc9506086_arXiv.txt
+  2010.13811
+  2106.05552
+  1101.0811
+  1901.00025
+  1408.4145
+Relevant Documents:
+  2007.04324
+  1806.10610
+  1811.12907
+  2004.09288
+  1706.01385
+  2001.06051
+  1809.01401
+
+Multi-doc progress:  59%|█████████████████████████████████████████████████████████▋                                       | 47/79 [00:52<00:36,  1.15s/it]
+Query:  How does the photoelectric heating efficiency vary in galaxies, and what factors influence it?
+Retrieved Documents:
+  9907251_arXiv.txt
+  0302365_arXiv.txt
+  0810.5614
+  0601296_arXiv.txt
+  2101.01182
+  1604.03664
+  0104150_arXiv.txt
+  9811249_arXiv.txt
+  1709.07982
+  1705.06292
+Relevant Documents:
+  1611.01521
+  1201.1016
+  1705.06292
+  1702.07377
+  0812.2396
+  1502.03131
+  0008.146
+defaultdict(<class 'list'>, {'map': [0.0, 0.0, 0.0, 0.0, 0.2, 0.0, 0.0, 0.13333333333333333, 0.0, 0.0, 0.013888888888888888, 0.1, 0.0, 0.0, 0.0, 0.027777777777777776, 0.0125, 0.03333333333333333, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0058823529411764705, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.1261904761904762, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.014285714285714287], 'ndcg': [np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.3391602052736161), np.float64(0.0), np.float64(0.0), np.float64(0.3029889503327761), np.float64(0.0), np.float64(0.0), np.float64(0.07839826897867533), np.float64(0.22009176629808017), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.10122860821230018), np.float64(0.08514311764162098), np.float64(0.11004588314904008), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.06362078819895171), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.2906246349515899), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.07945707943276742)], 'recall@k': [0.0, 0.0, 0.0, 0.0, 0.2, 0.0, 0.0, 0.2222222222222222, 0.0, 0.0, 0.08333333333333333, 0.1, 0.0, 0.0, 0.0, 0.1111111111111111, 0.0625, 0.1, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.058823529411764705, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.3, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.14285714285714285], 'precision@k': [0.0, 0.0, 0.0, 0.0, 0.1, 0.0, 0.0, 0.2, 0.0, 0.0, 0.1, 0.1, 0.0, 0.0, 0.0, 0.1, 0.1, 0.1, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.1, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.3, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.1], 'f1@k': [0, 0, 0, 0, 0.13333333333333333, 0, 0, 0.2105263157894737, 0, 0, 0.0909090909090909, 0.10000000000000002, 0, 0, 0, 0.10526315789473685, 0.07692307692307693, 0.10000000000000002, 0, 0, 0, 0, 0, 0, 0.07407407407407408, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0.3, 0, 0, 0, 0, 0, 0, 0.11764705882352941]})
+Query:  How do supercritical accretion models interpret the two-component spectra observed in brighter ultraluminous X-ray sources?
+Retrieved Documents:
+  0709.3372
+  0710.2941
+  0809.0917
+  1712.02068
+  0703103_arXiv.txt
+  1302.5630
+  9711109_arXiv.txt
+  0504196_arXiv.txt
+  1311.4077
+  1007.4535
+Relevant Documents:
+  0707.2055
+  0703.598
+  0609.274
+  0305.541
+  0705.1978
+  0906.1485
+  1202.1102
+
+Multi-doc progress:  61%|██████████████████████████████████████████████████████████▉                                      | 48/79 [00:53<00:35,  1.14s/it]
+Query:  What types of objects are most likely to form from gravitational instability-induced disk fragmentation, and why are planets disfavored compared to brown dwarfs and stellar companions?
+Retrieved Documents:
+  0412.356
+  0206365_arXiv.txt
+  1208.5800
+  0610814_arXiv.txt
+  0806.4174
+  0512436_arXiv.txt
+  1909.08791
+  0103219_arXiv.txt
+  0909.4454
+  0606009_arXiv.txt
+Relevant Documents:
+  1007.4159
+  0704.2532
+  0609.692
+  0603.179
+  1304.4978
+  1010.3702
+defaultdict(<class 'list'>, {'map': [0.0, 0.0, 0.0, 0.0, 0.2, 0.0, 0.0, 0.13333333333333333, 0.0, 0.0, 0.013888888888888888, 0.1, 0.0, 0.0, 0.0, 0.027777777777777776, 0.0125, 0.03333333333333333, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0058823529411764705, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.1261904761904762, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.014285714285714287, 0.0, 0.0], 'ndcg': [np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.3391602052736161), np.float64(0.0), np.float64(0.0), np.float64(0.3029889503327761), np.float64(0.0), np.float64(0.0), np.float64(0.07839826897867533), np.float64(0.22009176629808017), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.10122860821230018), np.float64(0.08514311764162098), np.float64(0.11004588314904008), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.06362078819895171), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.2906246349515899), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.07945707943276742), np.float64(0.0), np.float64(0.0)], 'recall@k': [0.0, 0.0, 0.0, 0.0, 0.2, 0.0, 0.0, 0.2222222222222222, 0.0, 0.0, 0.08333333333333333, 0.1, 0.0, 0.0, 0.0, 0.1111111111111111, 0.0625, 0.1, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.058823529411764705, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.3, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.14285714285714285, 0.0, 0.0], 'precision@k': [0.0, 0.0, 0.0, 0.0, 0.1, 0.0, 0.0, 0.2, 0.0, 0.0, 0.1, 0.1, 0.0, 0.0, 0.0, 0.1, 0.1, 0.1, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.1, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.3, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.1, 0.0, 0.0], 'f1@k': [0, 0, 0, 0, 0.13333333333333333, 0, 0, 0.2105263157894737, 0, 0, 0.0909090909090909, 0.10000000000000002, 0, 0, 0, 0.10526315789473685, 0.07692307692307693, 0.10000000000000002, 0, 0, 0, 0, 0, 0, 0.07407407407407408, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0.3, 0, 0, 0, 0, 0, 0, 0.11764705882352941, 0, 0]})
+Query:  What chemical differentiation has been observed within the Orion KL region, and how has this improved our understanding of COM formation and distribution?
+Retrieved Documents:
+  2110.13929
+  1407.8370
+  1009.1426
+  2005.03677
+  1109.5175
+  1509.01280
+  1803.08199
+  2101.07801
+  1412.0790
+  2209.11811
+Relevant Documents:
+  1304.4793
+  1212.4531
+  1808.08753
+  1506.03875
+  1811.08765
+  1707.01741
+  0709.3232
+  1504.08012
+
+Multi-doc progress:  63%|█████████████████████████████████████████████████████████████▍                                   | 50/79 [00:55<00:32,  1.12s/it]
+Query:  How do HI supershells influence the structure and cooling of interstellar gas, particularly in forming cold neutral medium (CNM) and molecular gas?
+Retrieved Documents:
+  2301.08265
+  0206087_arXiv.txt
+  0008251_arXiv.txt
+  2011.12296
+  1512.06346
+  0505106_arXiv.txt
+  1712.00466
+  1307.7869
+  0207105_arXiv.txt
+  0003345_arXiv.txt
+Relevant Documents:
+  1012.5363
+  1309.4104
+  9912.509
+  0211.298
+  1110.4638
+defaultdict(<class 'list'>, {'map': [0.0, 0.0, 0.0, 0.0, 0.2, 0.0, 0.0, 0.13333333333333333, 0.0, 0.0, 0.013888888888888888, 0.1, 0.0, 0.0, 0.0, 0.027777777777777776, 0.0125, 0.03333333333333333, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0058823529411764705, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.1261904761904762, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.014285714285714287, 0.0, 0.0, 0.0, 0.0], 'ndcg': [np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.3391602052736161), np.float64(0.0), np.float64(0.0), np.float64(0.3029889503327761), np.float64(0.0), np.float64(0.0), np.float64(0.07839826897867533), np.float64(0.22009176629808017), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.10122860821230018), np.float64(0.08514311764162098), np.float64(0.11004588314904008), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.06362078819895171), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.2906246349515899), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.07945707943276742), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.0)], 'recall@k': [0.0, 0.0, 0.0, 0.0, 0.2, 0.0, 0.0, 0.2222222222222222, 0.0, 0.0, 0.08333333333333333, 0.1, 0.0, 0.0, 0.0, 0.1111111111111111, 0.0625, 0.1, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.058823529411764705, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.3, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.14285714285714285, 0.0, 0.0, 0.0, 0.0], 'precision@k': [0.0, 0.0, 0.0, 0.0, 0.1, 0.0, 0.0, 0.2, 0.0, 0.0, 0.1, 0.1, 0.0, 0.0, 0.0, 0.1, 0.1, 0.1, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.1, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.3, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.1, 0.0, 0.0, 0.0, 0.0], 'f1@k': [0, 0, 0, 0, 0.13333333333333333, 0, 0, 0.2105263157894737, 0, 0, 0.0909090909090909, 0.10000000000000002, 0, 0, 0, 0.10526315789473685, 0.07692307692307693, 0.10000000000000002, 0, 0, 0, 0, 0, 0, 0.07407407407407408, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0.3, 0, 0, 0, 0, 0, 0, 0.11764705882352941, 0, 0, 0, 0]})
+Query:  How do carbon and oxygen abundances in the most metal-poor stars constrain theories of early star formation and cooling mechanisms?
+Retrieved Documents:
+  1307.2239
+  1111.4843
+  0605244_arXiv.txt
+  0001426_arXiv.txt
+  1705.09233
+  1801.07370
+  1204.5754
+  1611.03283
+  2205.03726
+  9811303_arXiv.txt
+Relevant Documents:
+  0212.400
+
+Multi-doc progress:  66%|███████████████████████████████████████████████████████████████▊                                 | 52/79 [00:58<00:29,  1.11s/it]
+Query:  How do magnetar models explain the features of repeating FRB 121102 and its associated persistent radio source?
+Retrieved Documents:
+  2001.10761
+  1908.03507
+  2004.12516
+  1906.11305
+  1801.05436
+  2001.03595
+  1811.10755
+  1703.09232
+  1604.08676
+  1702.05831
+Relevant Documents:
+  1511.09137
+  1701.04815
+  1806.05690
+  1512.03442
+  1603.08875
+  1401.6674
+  1607.01293
+  1307.1628
+  1808.08964
+  1501.00753
+  1501.01341
+  1808.09969
+defaultdict(<class 'list'>, {'map': [0.0, 0.0, 0.0, 0.0, 0.2, 0.0, 0.0, 0.13333333333333333, 0.0, 0.0, 0.013888888888888888, 0.1, 0.0, 0.0, 0.0, 0.027777777777777776, 0.0125, 0.03333333333333333, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0058823529411764705, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.1261904761904762, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.014285714285714287, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0], 'ndcg': [np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.3391602052736161), np.float64(0.0), np.float64(0.0), np.float64(0.3029889503327761), np.float64(0.0), np.float64(0.0), np.float64(0.07839826897867533), np.float64(0.22009176629808017), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.10122860821230018), np.float64(0.08514311764162098), np.float64(0.11004588314904008), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.06362078819895171), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.2906246349515899), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.07945707943276742), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.0)], 'recall@k': [0.0, 0.0, 0.0, 0.0, 0.2, 0.0, 0.0, 0.2222222222222222, 0.0, 0.0, 0.08333333333333333, 0.1, 0.0, 0.0, 0.0, 0.1111111111111111, 0.0625, 0.1, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.058823529411764705, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.3, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.14285714285714285, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0], 'precision@k': [0.0, 0.0, 0.0, 0.0, 0.1, 0.0, 0.0, 0.2, 0.0, 0.0, 0.1, 0.1, 0.0, 0.0, 0.0, 0.1, 0.1, 0.1, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.1, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.3, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.1, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0], 'f1@k': [0, 0, 0, 0, 0.13333333333333333, 0, 0, 0.2105263157894737, 0, 0, 0.0909090909090909, 0.10000000000000002, 0, 0, 0, 0.10526315789473685, 0.07692307692307693, 0.10000000000000002, 0, 0, 0, 0, 0, 0, 0.07407407407407408, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0.3, 0, 0, 0, 0, 0, 0, 0.11764705882352941, 0, 0, 0, 0, 0, 0]})
+Query:  What observational techniques can be used to detect and characterize compact massive black hole binaries at subparsec separations?
+Retrieved Documents:
+  1809.04050
+  2205.01693
+  1206.6167
+  0110016_arXiv.txt
+  0505316_arXiv.txt
+  1407.3102
+  0405099_arXiv.txt
+  1502.06617
+  1002.4245
+  1001.3612
+Relevant Documents:
+  2110.07465
+  1711.00075
+  2110.14661
+  1604.01020
+  1501.01375
+  1910.05348
+  0604.042
+  1902.07734
+  1609.09503
+  1708.03491
+  1801.02266
+
+Multi-doc progress:  67%|█████████████████████████████████████████████████████████████████                                | 53/79 [00:59<00:28,  1.10s/it]
+Query:  What do recent spectroscopic observations reveal about the ionization state of Lyman-alpha emitters compared to other galaxy populations?
+Retrieved Documents:
+  1903.10142
+  1301.5711
+  2011.01299
+  0906.2312
+  0403345_arXiv.txt
+  0701279_arXiv.txt
+  1909.01692
+  1311.0057
+  1710.06171
+  0410203_arXiv.txt
+Relevant Documents:
+  1404.6066
+  1403.0732
+  1711.03735
+  1704.07455
+  1409.5632
+  1408.1420
+  1208.3260
+  1206.2316
+  1306.3572
+  1309.0207
+  1404.4632
+  1712.03985
+
+Multi-doc progress:  70%|███████████████████████████████████████████████████████████████████▌                             | 55/79 [01:01<00:26,  1.11s/it]
+Query:  How does the spectral and photometric evolution of a nova eruption proceed during its early phases, and what does this reveal about the structure of the ejecta?
+Retrieved Documents:
+  1906.04369
+  2007.15702
+  1710.03716
+  2108.03241
+  1707.04115
+  1803.00181
+  2007.07885
+  2110.04315
+  2006.14336
+  2201.04179
+Relevant Documents:
+  1807.07178
+defaultdict(<class 'list'>, {'map': [0.0, 0.0, 0.0, 0.0, 0.2, 0.0, 0.0, 0.13333333333333333, 0.0, 0.0, 0.013888888888888888, 0.1, 0.0, 0.0, 0.0, 0.027777777777777776, 0.0125, 0.03333333333333333, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0058823529411764705, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.1261904761904762, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.014285714285714287, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0], 'ndcg': [np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.3391602052736161), np.float64(0.0), np.float64(0.0), np.float64(0.3029889503327761), np.float64(0.0), np.float64(0.0), np.float64(0.07839826897867533), np.float64(0.22009176629808017), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.10122860821230018), np.float64(0.08514311764162098), np.float64(0.11004588314904008), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.06362078819895171), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.2906246349515899), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.07945707943276742), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.0)], 'recall@k': [0.0, 0.0, 0.0, 0.0, 0.2, 0.0, 0.0, 0.2222222222222222, 0.0, 0.0, 0.08333333333333333, 0.1, 0.0, 0.0, 0.0, 0.1111111111111111, 0.0625, 0.1, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.058823529411764705, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.3, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.14285714285714285, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0], 'precision@k': [0.0, 0.0, 0.0, 0.0, 0.1, 0.0, 0.0, 0.2, 0.0, 0.0, 0.1, 0.1, 0.0, 0.0, 0.0, 0.1, 0.1, 0.1, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.1, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.3, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.1, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0], 'f1@k': [0, 0, 0, 0, 0.13333333333333333, 0, 0, 0.2105263157894737, 0, 0, 0.0909090909090909, 0.10000000000000002, 0, 0, 0, 0.10526315789473685, 0.07692307692307693, 0.10000000000000002, 0, 0, 0, 0, 0, 0, 0.07407407407407408, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0.3, 0, 0, 0, 0, 0, 0, 0.11764705882352941, 0, 0, 0, 0, 0, 0, 0, 0, 0]})
+Query:  What are the characteristics of classical Wolf-Rayet star winds, and how do they differ from optically thin CAK theory?
+Retrieved Documents:
+  0709.1883
+  2002.05168
+  1202.5910
+  2012.05238
+  0810.1901
+  0703148_arXiv.txt
+  2101.10375
+  0002339_arXiv.txt
+  2108.09273
+  0805.1073
+Relevant Documents:
+  0610.356
+  1904.04687
+  1401.5474
+  1807.04293
+  1903.01762
+
+Multi-doc progress:  72%|█████████████████████████████████████████████████████████████████████▉                           | 57/79 [01:03<00:24,  1.12s/it]
+Query:  How do spiral arms correlate with star formation rates and efficiencies in galaxies, and how does this vary across different spiral types?
+Retrieved Documents:
+  1407.5062
+  1805.05643
+  1505.04327
+  1305.5847
+  2110.06071
+  2007.14830
+  1604.06879
+  2105.04590
+  1006.1228
+  1903.07958
+Relevant Documents:
+  2006.16315
+  2106.09715
+  2103.03888
+  1010.0678
+defaultdict(<class 'list'>, {'map': [0.0, 0.0, 0.0, 0.0, 0.2, 0.0, 0.0, 0.13333333333333333, 0.0, 0.0, 0.013888888888888888, 0.1, 0.0, 0.0, 0.0, 0.027777777777777776, 0.0125, 0.03333333333333333, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0058823529411764705, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.1261904761904762, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.014285714285714287, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0], 'ndcg': [np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.3391602052736161), np.float64(0.0), np.float64(0.0), np.float64(0.3029889503327761), np.float64(0.0), np.float64(0.0), np.float64(0.07839826897867533), np.float64(0.22009176629808017), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.10122860821230018), np.float64(0.08514311764162098), np.float64(0.11004588314904008), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.06362078819895171), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.2906246349515899), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.07945707943276742), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.0)], 'recall@k': [0.0, 0.0, 0.0, 0.0, 0.2, 0.0, 0.0, 0.2222222222222222, 0.0, 0.0, 0.08333333333333333, 0.1, 0.0, 0.0, 0.0, 0.1111111111111111, 0.0625, 0.1, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.058823529411764705, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.3, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.14285714285714285, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0], 'precision@k': [0.0, 0.0, 0.0, 0.0, 0.1, 0.0, 0.0, 0.2, 0.0, 0.0, 0.1, 0.1, 0.0, 0.0, 0.0, 0.1, 0.1, 0.1, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.1, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.3, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.1, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0], 'f1@k': [0, 0, 0, 0, 0.13333333333333333, 0, 0, 0.2105263157894737, 0, 0, 0.0909090909090909, 0.10000000000000002, 0, 0, 0, 0.10526315789473685, 0.07692307692307693, 0.10000000000000002, 0, 0, 0, 0, 0, 0, 0.07407407407407408, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0.3, 0, 0, 0, 0, 0, 0, 0.11764705882352941, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]})
+Query:  How does the spatial distribution of gas compare to that of dust in debris disk systems, and what implications does this have for the origin of the gas?
+Retrieved Documents:
+  0909.4225
+  1510.03618
+  1603.06645
+  1806.10687
+  1804.08636
+  2210.12275
+  1704.01972
+  0810.1003
+  1401.0743
+  1606.07068
+Relevant Documents:
+  1709.10129
+  1606.00442
+  1703.09388
+  1404.1380
+  1704.01972
+  1705.05867
+  1606.07068
+  1605.05331
+  1705.05868
+
+Multi-doc progress:  75%|████████████████████████████████████████████████████████████████████████▍                        | 59/79 [01:05<00:22,  1.12s/it]
+Query:  What have asteroseismic studies revealed about differential rotation in the envelopes of low-mass main-sequence stars, and how do these findings compare to theoretical predictions?
+Retrieved Documents:
+  1705.10517
+  0509.399
+  2206.05411
+  1009.4541
+  1601.01412
+  1910.00719
+  1508.02164
+  1504.07992
+  2207.11051
+  1507.01827
+Relevant Documents:
+  1501.07217
+  1705.10517
+  1507.01140
+  0812.0363
+  1702.06598
+  1809.07938
+  1410.7093
+defaultdict(<class 'list'>, {'map': [0.0, 0.0, 0.0, 0.0, 0.2, 0.0, 0.0, 0.13333333333333333, 0.0, 0.0, 0.013888888888888888, 0.1, 0.0, 0.0, 0.0, 0.027777777777777776, 0.0125, 0.03333333333333333, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0058823529411764705, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.1261904761904762, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.014285714285714287, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0380952380952381, 0.14285714285714285], 'ndcg': [np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.3391602052736161), np.float64(0.0), np.float64(0.0), np.float64(0.3029889503327761), np.float64(0.0), np.float64(0.0), np.float64(0.07839826897867533), np.float64(0.22009176629808017), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.10122860821230018), np.float64(0.08514311764162098), np.float64(0.11004588314904008), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.06362078819895171), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.2906246349515899), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.07945707943276742), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.14629191738978584), np.float64(0.27487633291429087)], 'recall@k': [0.0, 0.0, 0.0, 0.0, 0.2, 0.0, 0.0, 0.2222222222222222, 0.0, 0.0, 0.08333333333333333, 0.1, 0.0, 0.0, 0.0, 0.1111111111111111, 0.0625, 0.1, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.058823529411764705, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.3, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.14285714285714285, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.2222222222222222, 0.14285714285714285], 'precision@k': [0.0, 0.0, 0.0, 0.0, 0.1, 0.0, 0.0, 0.2, 0.0, 0.0, 0.1, 0.1, 0.0, 0.0, 0.0, 0.1, 0.1, 0.1, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.1, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.3, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.1, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.2, 0.1], 'f1@k': [0, 0, 0, 0, 0.13333333333333333, 0, 0, 0.2105263157894737, 0, 0, 0.0909090909090909, 0.10000000000000002, 0, 0, 0, 0.10526315789473685, 0.07692307692307693, 0.10000000000000002, 0, 0, 0, 0, 0, 0, 0.07407407407407408, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0.3, 0, 0, 0, 0, 0, 0, 0.11764705882352941, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0.2105263157894737, 0.11764705882352941]})
+Query:  How has the GRAVITY instrument enabled the detection of general relativistic effects around the Galactic center black hole?
+Retrieved Documents:
+  1305.2619
+  0505316_arXiv.txt
+  0405099_arXiv.txt
+  0706.0288
+  1002.4245
+  1609.08298
+  1403.7171
+  2103.03160
+  1011.4020
+  2301.00113
+Relevant Documents:
+  0506.608
+  1907.10731
+  1902.04193
+  0808.0063
+
+Multi-doc progress:  77%|██████████████████████████████████████████████████████████████████████████▉                      | 61/79 [01:08<00:20,  1.12s/it]
+Query:  How do intrinsic alignments impact weak lensing measurements and what approaches are used to mitigate this systematic?
+Retrieved Documents:
+  0911.5347
+  0310495_arXiv.txt
+  1908.11665
+  1507.03906
+  1805.00159
+  1109.6020
+  1504.05465
+  1109.4535
+  0706.3941
+  1302.2607
+Relevant Documents:
+  1512.01570
+  1509.06762
+  1707.01072
+  0208.220
+  0208.256
+  0406.275
+  1707.06627
+  1510.06752
+  0403.255
+  1510.07024
+  0206.182
+  1706.05004
+  1509.00020
+defaultdict(<class 'list'>, {'map': [0.0, 0.0, 0.0, 0.0, 0.2, 0.0, 0.0, 0.13333333333333333, 0.0, 0.0, 0.013888888888888888, 0.1, 0.0, 0.0, 0.0, 0.027777777777777776, 0.0125, 0.03333333333333333, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0058823529411764705, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.1261904761904762, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.014285714285714287, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0380952380952381, 0.14285714285714285, 0.0, 0.0], 'ndcg': [np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.3391602052736161), np.float64(0.0), np.float64(0.0), np.float64(0.3029889503327761), np.float64(0.0), np.float64(0.0), np.float64(0.07839826897867533), np.float64(0.22009176629808017), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.10122860821230018), np.float64(0.08514311764162098), np.float64(0.11004588314904008), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.06362078819895171), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.2906246349515899), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.07945707943276742), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.14629191738978584), np.float64(0.27487633291429087), np.float64(0.0), np.float64(0.0)], 'recall@k': [0.0, 0.0, 0.0, 0.0, 0.2, 0.0, 0.0, 0.2222222222222222, 0.0, 0.0, 0.08333333333333333, 0.1, 0.0, 0.0, 0.0, 0.1111111111111111, 0.0625, 0.1, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.058823529411764705, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.3, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.14285714285714285, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.2222222222222222, 0.14285714285714285, 0.0, 0.0], 'precision@k': [0.0, 0.0, 0.0, 0.0, 0.1, 0.0, 0.0, 0.2, 0.0, 0.0, 0.1, 0.1, 0.0, 0.0, 0.0, 0.1, 0.1, 0.1, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.1, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.3, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.1, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.2, 0.1, 0.0, 0.0], 'f1@k': [0, 0, 0, 0, 0.13333333333333333, 0, 0, 0.2105263157894737, 0, 0, 0.0909090909090909, 0.10000000000000002, 0, 0, 0, 0.10526315789473685, 0.07692307692307693, 0.10000000000000002, 0, 0, 0, 0, 0, 0, 0.07407407407407408, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0.3, 0, 0, 0, 0, 0, 0, 0.11764705882352941, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0.2105263157894737, 0.11764705882352941, 0, 0]})
+Query:  What constraints do electromagnetic observations of GW170817 place on the nature and lifetime of the merger remnant?
+Retrieved Documents:
+  1806.03136
+  1911.07332
+  1909.06393
+  1712.09760
+  2004.06419
+  1801.03531
+  1710.06843
+  1905.02665
+  1807.06437
+  2006.01940
+Relevant Documents:
+  1707.04263
+  2007.12245
+  1302.6530
+  1712.03240
+  1710.05938
+  1710.06407
+  1711.00314
+  2006.01150
+  1909.06393
+  1710.07579
+  2001.10241
+  1803.00549
+  1909.11691
+  1710.05463
+  1801.04286
+  1311.1519
+  1810.04664
+
+Multi-doc progress:  78%|████████████████████████████████████████████████████████████████████████████▏                    | 62/79 [01:09<00:19,  1.12s/it]
+Query:  What is the potential of 21-cm observations for mapping the structure of reionization, and what current and planned efforts are underway to detect this signal?
+Retrieved Documents:
+  0603518_arXiv.txt
+  0708.2424
+  1605.04357
+  1607.03891
+  1608.01324
+  1606.06006
+  1209.5727
+  0806.2333
+  1102.2378
+  1501.04203
+Relevant Documents:
+  0512.263
+  0910.3010
+  1106.5194
+  0311.514
+  1503.00045
+  1205.3449
+  1506.01026
+  1301.5906
+  1502.06016
+  0608.032
+  1109.6012
+  1505.07568
+  0303.249
+  0403.697
+  1209.1117
+  1404.0887
+
+Multi-doc progress:  81%|██████████████████████████████████████████████████████████████████████████████▌                  | 64/79 [01:11<00:16,  1.12s/it]
+Query:  What are the key characteristics of the star formation main sequence (SFMS) for galaxies, how does it evolve with redshift, and what is the distribution of retired galaxies and AGN hosts relative to the SFMS?
+Retrieved Documents:
+  1809.09111
+  2008.13379
+  2211.16527
+  2102.13342
+  1602.02770
+  2003.02464
+  1409.0009
+  2001.06614
+  2003.02146
+  1502.03444
+Relevant Documents:
+  1405.2041
+  1402.4814
+  0711.4823
+  0308.272
+  1208.2284
+  1502.01027
+  0701.924
+  1505.07836
+  0311.060
+  0703.653
+  0705.2831
+  0506.044
+defaultdict(<class 'list'>, {'map': [0.0, 0.0, 0.0, 0.0, 0.2, 0.0, 0.0, 0.13333333333333333, 0.0, 0.0, 0.013888888888888888, 0.1, 0.0, 0.0, 0.0, 0.027777777777777776, 0.0125, 0.03333333333333333, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0058823529411764705, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.1261904761904762, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.014285714285714287, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0380952380952381, 0.14285714285714285, 0.0, 0.0, 0.0196078431372549, 0.0, 0.0], 'ndcg': [np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.3391602052736161), np.float64(0.0), np.float64(0.0), np.float64(0.3029889503327761), np.float64(0.0), np.float64(0.0), np.float64(0.07839826897867533), np.float64(0.22009176629808017), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.10122860821230018), np.float64(0.08514311764162098), np.float64(0.11004588314904008), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.06362078819895171), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.2906246349515899), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.07945707943276742), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.14629191738978584), np.float64(0.27487633291429087), np.float64(0.0), np.float64(0.0), np.float64(0.11004588314904008), np.float64(0.0), np.float64(0.0)], 'recall@k': [0.0, 0.0, 0.0, 0.0, 0.2, 0.0, 0.0, 0.2222222222222222, 0.0, 0.0, 0.08333333333333333, 0.1, 0.0, 0.0, 0.0, 0.1111111111111111, 0.0625, 0.1, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.058823529411764705, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.3, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.14285714285714285, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.2222222222222222, 0.14285714285714285, 0.0, 0.0, 0.058823529411764705, 0.0, 0.0], 'precision@k': [0.0, 0.0, 0.0, 0.0, 0.1, 0.0, 0.0, 0.2, 0.0, 0.0, 0.1, 0.1, 0.0, 0.0, 0.0, 0.1, 0.1, 0.1, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.1, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.3, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.1, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.2, 0.1, 0.0, 0.0, 0.1, 0.0, 0.0], 'f1@k': [0, 0, 0, 0, 0.13333333333333333, 0, 0, 0.2105263157894737, 0, 0, 0.0909090909090909, 0.10000000000000002, 0, 0, 0, 0.10526315789473685, 0.07692307692307693, 0.10000000000000002, 0, 0, 0, 0, 0, 0, 0.07407407407407408, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0.3, 0, 0, 0, 0, 0, 0, 0.11764705882352941, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0.2105263157894737, 0.11764705882352941, 0, 0, 0.07407407407407408, 0, 0]})
+Query:  How do measurements of the ionizing photon production efficiency (ξion) vary across different types of high-redshift galaxies and selection methods?
+Retrieved Documents:
+  2105.06900
+  0811.1042
+  1601.07559
+  1606.00053
+  9810469_arXiv.txt
+  1505.01846
+  1904.10459
+  1912.06152
+  1206.6930
+  1902.02792
+Relevant Documents:
+  1909.03076
+  1606.01304
+  1808.03059
+  1805.11621
+  1907.13130
+  1803.02340
+  1511.08504
+  2001.02693
+  1711.03735
+  1606.00053
+  1905.04314
+  2002.11117
+  1806.01741
+  1803.03655
+  1905.06434
+  2005.02402
+  1912.06152
+  1809.09637
+  2010.07545
+  1103.4124
+  1902.02786
+  2007.11977
+  1608.08222
+  1711.00013
+
+Multi-doc progress:  84%|█████████████████████████████████████████████████████████████████████████████████                | 66/79 [01:13<00:14,  1.11s/it]
+Query:  How do Jupiter Trojans relate to Kuiper Belt Objects in terms of their origins, physical properties, and scientific importance?
+Retrieved Documents:
+  1606.03013
+  1804.09913
+  2211.13877
+  2107.07138
+  1904.02980
+  1910.01507
+  0906.1786
+  1811.00352
+  1408.2485
+  0502276_arXiv.txt
+Relevant Documents:
+  1311.3250
+  1402.7336
+  1401.2157
+defaultdict(<class 'list'>, {'map': [0.0, 0.0, 0.0, 0.0, 0.2, 0.0, 0.0, 0.13333333333333333, 0.0, 0.0, 0.013888888888888888, 0.1, 0.0, 0.0, 0.0, 0.027777777777777776, 0.0125, 0.03333333333333333, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0058823529411764705, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.1261904761904762, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.014285714285714287, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0380952380952381, 0.14285714285714285, 0.0, 0.0, 0.0196078431372549, 0.0, 0.0, 0.020833333333333332, 0.0], 'ndcg': [np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.3391602052736161), np.float64(0.0), np.float64(0.0), np.float64(0.3029889503327761), np.float64(0.0), np.float64(0.0), np.float64(0.07839826897867533), np.float64(0.22009176629808017), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.10122860821230018), np.float64(0.08514311764162098), np.float64(0.11004588314904008), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.06362078819895171), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.2906246349515899), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.07945707943276742), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.14629191738978584), np.float64(0.27487633291429087), np.float64(0.0), np.float64(0.0), np.float64(0.11004588314904008), np.float64(0.0), np.float64(0.0), np.float64(0.16421958630632802), np.float64(0.0)], 'recall@k': [0.0, 0.0, 0.0, 0.0, 0.2, 0.0, 0.0, 0.2222222222222222, 0.0, 0.0, 0.08333333333333333, 0.1, 0.0, 0.0, 0.0, 0.1111111111111111, 0.0625, 0.1, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.058823529411764705, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.3, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.14285714285714285, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.2222222222222222, 0.14285714285714285, 0.0, 0.0, 0.058823529411764705, 0.0, 0.0, 0.08333333333333333, 0.0], 'precision@k': [0.0, 0.0, 0.0, 0.0, 0.1, 0.0, 0.0, 0.2, 0.0, 0.0, 0.1, 0.1, 0.0, 0.0, 0.0, 0.1, 0.1, 0.1, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.1, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.3, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.1, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.2, 0.1, 0.0, 0.0, 0.1, 0.0, 0.0, 0.2, 0.0], 'f1@k': [0, 0, 0, 0, 0.13333333333333333, 0, 0, 0.2105263157894737, 0, 0, 0.0909090909090909, 0.10000000000000002, 0, 0, 0, 0.10526315789473685, 0.07692307692307693, 0.10000000000000002, 0, 0, 0, 0, 0, 0, 0.07407407407407408, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0.3, 0, 0, 0, 0, 0, 0, 0.11764705882352941, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0.2105263157894737, 0.11764705882352941, 0, 0, 0.07407407407407408, 0, 0, 0.11764705882352941, 0]})
+Query:  What are the typical physical parameters derived from magnetar models when applied to fit the light curves of SLSNe-I?
+Retrieved Documents:
+  2009.13808
+  2103.09971
+  1711.03787
+  1704.05865
+  1708.01623
+  1712.04535
+  1805.07372
+  1812.04071
+  2006.16443
+  1802.07820
+Relevant Documents:
+  1304.3320
+  0911.0698
+  1612.07321
+  1701.00941
+  0705.2713
+  0911.0680
+
+Multi-doc progress:  86%|███████████████████████████████████████████████████████████████████████████████████▍             | 68/79 [01:15<00:12,  1.11s/it]
+Query:  How can the impact of spectroscopic incompleteness on photometric redshift calibration be mitigated using multi-band photometric information?
+Retrieved Documents:
+  2207.08657
+  0910.2704
+  1207.3347
+  1510.07049
+  0910.3683
+  0603.217
+  2003.10454
+  1804.03805
+  0903.3121
+  1601.01739
+Relevant Documents:
+  1901.05005
+  2012.08566
+  2106.11367
+  1509.03318
+  2007.01846
+  1909.09632
+  1906.09262
+
+Multi-doc progress:  89%|█████████████████████████████████████████████████████████████████████████████████████▉           | 70/79 [01:18<00:10,  1.11s/it]
+Query:  How does the response to tilt differ between thin and thick accretion disks, and what evidence is there for the Bardeen-Petterson effect in simulations?
+Retrieved Documents:
+  0507309_arXiv.txt
+  1406.5514
+  1501.01687
+  1406.5515
+  0510276_arXiv.txt
+  0608.398
+  2001.01932
+  2009.12373
+  0803.2323
+  1412.1355
+Relevant Documents:
+  1905.01165
+  1406.5515
+  9909.486
+  1510.02525
+  1904.03243
+defaultdict(<class 'list'>, {'map': [0.0, 0.0, 0.0, 0.0, 0.2, 0.0, 0.0, 0.13333333333333333, 0.0, 0.0, 0.013888888888888888, 0.1, 0.0, 0.0, 0.0, 0.027777777777777776, 0.0125, 0.03333333333333333, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0058823529411764705, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.1261904761904762, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.014285714285714287, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0380952380952381, 0.14285714285714285, 0.0, 0.0, 0.0196078431372549, 0.0, 0.0, 0.020833333333333332, 0.0, 0.0, 0.0, 0.05], 'ndcg': [np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.3391602052736161), np.float64(0.0), np.float64(0.0), np.float64(0.3029889503327761), np.float64(0.0), np.float64(0.0), np.float64(0.07839826897867533), np.float64(0.22009176629808017), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.10122860821230018), np.float64(0.08514311764162098), np.float64(0.11004588314904008), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.06362078819895171), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.2906246349515899), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.07945707943276742), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.14629191738978584), np.float64(0.27487633291429087), np.float64(0.0), np.float64(0.0), np.float64(0.11004588314904008), np.float64(0.0), np.float64(0.0), np.float64(0.16421958630632802), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.14606834984270645)], 'recall@k': [0.0, 0.0, 0.0, 0.0, 0.2, 0.0, 0.0, 0.2222222222222222, 0.0, 0.0, 0.08333333333333333, 0.1, 0.0, 0.0, 0.0, 0.1111111111111111, 0.0625, 0.1, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.058823529411764705, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.3, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.14285714285714285, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.2222222222222222, 0.14285714285714285, 0.0, 0.0, 0.058823529411764705, 0.0, 0.0, 0.08333333333333333, 0.0, 0.0, 0.0, 0.2], 'precision@k': [0.0, 0.0, 0.0, 0.0, 0.1, 0.0, 0.0, 0.2, 0.0, 0.0, 0.1, 0.1, 0.0, 0.0, 0.0, 0.1, 0.1, 0.1, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.1, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.3, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.1, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.2, 0.1, 0.0, 0.0, 0.1, 0.0, 0.0, 0.2, 0.0, 0.0, 0.0, 0.1], 'f1@k': [0, 0, 0, 0, 0.13333333333333333, 0, 0, 0.2105263157894737, 0, 0, 0.0909090909090909, 0.10000000000000002, 0, 0, 0, 0.10526315789473685, 0.07692307692307693, 0.10000000000000002, 0, 0, 0, 0, 0, 0, 0.07407407407407408, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0.3, 0, 0, 0, 0, 0, 0, 0.11764705882352941, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0.2105263157894737, 0.11764705882352941, 0, 0, 0.07407407407407408, 0, 0, 0.11764705882352941, 0, 0, 0, 0.13333333333333333]})
+Query:  What efforts have been made to search for the earliest metal-poor stars in the Galactic bulge, and what have these searches revealed about the bulge's metal-poor population?
+Retrieved Documents:
+  2009.03886
+  1409.7952
+  2007.12728
+  1509.01252
+  1704.05695
+  1511.01490
+  2107.02793
+  1604.07834
+  1903.11615
+  2203.11505
+Relevant Documents:
+  1704.03325
+  1604.07834
+  1511.01490
+  1611.08612
+  1603.06578
+  1409.4775
+  1610.09174
+  1509.01252
+  1212.1540
+  1408.4558
+  1611.02712
+
+Multi-doc progress:  91%|████████████████████████████████████████████████████████████████████████████████████████▍        | 72/79 [01:20<00:07,  1.10s/it]
+Query:  How is the atmospheric abundance of CO modeled in substellar atmospheres, considering vertical mixing and chemical equilibrium timescales?
+Retrieved Documents:
+  0812.1714
+  1210.6627
+  1904.09676
+  0607010_arXiv.txt
+  0901.2134
+  1903.10997
+  2208.14317
+  1311.0201
+  1808.00501
+  2208.07836
+Relevant Documents:
+  0003.353
+  0705.3922
+  0607.211
+  1403.6412
+  1401.1499
+  1403.2438
+  1408.6283
+defaultdict(<class 'list'>, {'map': [0.0, 0.0, 0.0, 0.0, 0.2, 0.0, 0.0, 0.13333333333333333, 0.0, 0.0, 0.013888888888888888, 0.1, 0.0, 0.0, 0.0, 0.027777777777777776, 0.0125, 0.03333333333333333, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0058823529411764705, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.1261904761904762, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.014285714285714287, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0380952380952381, 0.14285714285714285, 0.0, 0.0, 0.0196078431372549, 0.0, 0.0, 0.020833333333333332, 0.0, 0.0, 0.0, 0.05, 0.08712121212121211, 0.0], 'ndcg': [np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.3391602052736161), np.float64(0.0), np.float64(0.0), np.float64(0.3029889503327761), np.float64(0.0), np.float64(0.0), np.float64(0.07839826897867533), np.float64(0.22009176629808017), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.10122860821230018), np.float64(0.08514311764162098), np.float64(0.11004588314904008), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.06362078819895171), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.2906246349515899), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.07945707943276742), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.14629191738978584), np.float64(0.27487633291429087), np.float64(0.0), np.float64(0.0), np.float64(0.11004588314904008), np.float64(0.0), np.float64(0.0), np.float64(0.16421958630632802), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.14606834984270645), np.float64(0.2426178552850034), np.float64(0.0)], 'recall@k': [0.0, 0.0, 0.0, 0.0, 0.2, 0.0, 0.0, 0.2222222222222222, 0.0, 0.0, 0.08333333333333333, 0.1, 0.0, 0.0, 0.0, 0.1111111111111111, 0.0625, 0.1, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.058823529411764705, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.3, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.14285714285714285, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.2222222222222222, 0.14285714285714285, 0.0, 0.0, 0.058823529411764705, 0.0, 0.0, 0.08333333333333333, 0.0, 0.0, 0.0, 0.2, 0.2727272727272727, 0.0], 'precision@k': [0.0, 0.0, 0.0, 0.0, 0.1, 0.0, 0.0, 0.2, 0.0, 0.0, 0.1, 0.1, 0.0, 0.0, 0.0, 0.1, 0.1, 0.1, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.1, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.3, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.1, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.2, 0.1, 0.0, 0.0, 0.1, 0.0, 0.0, 0.2, 0.0, 0.0, 0.0, 0.1, 0.3, 0.0], 'f1@k': [0, 0, 0, 0, 0.13333333333333333, 0, 0, 0.2105263157894737, 0, 0, 0.0909090909090909, 0.10000000000000002, 0, 0, 0, 0.10526315789473685, 0.07692307692307693, 0.10000000000000002, 0, 0, 0, 0, 0, 0, 0.07407407407407408, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0.3, 0, 0, 0, 0, 0, 0, 0.11764705882352941, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0.2105263157894737, 0.11764705882352941, 0, 0, 0.07407407407407408, 0, 0, 0.11764705882352941, 0, 0, 0, 0.13333333333333333, 0.28571428571428564, 0]})
+Query:  What are the challenges in using C/N ratios to determine stellar masses and ages, and how have empirical relations from asteroseismic data sets helped overcome these challenges for Galactic studies?
+Retrieved Documents:
+  1504.07992
+  1601.01412
+  1803.11225
+  1804.09983
+  1907.07350
+  0706.0005
+  1910.00719
+  1810.12471
+  1503.00537
+  2105.03728
+Relevant Documents:
+  1503.00537
+  1601.05413
+  1603.03040
+  1509.06904
+  1804.09596
+  1507.03604
+  1511.08203
+  1610.03286
+  1511.08204
+  1702.01769
+
+Multi-doc progress:  92%|█████████████████████████████████████████████████████████████████████████████████████████▋       | 73/79 [01:21<00:06,  1.12s/it]
+Query:  How are solar-like oscillations in stars characterized and what can they reveal about stellar properties and Galactic evolution?
+Retrieved Documents:
+  2008.06299
+  0911.2612
+  0706.0803
+  2007.02170
+  0906.5002
+  1608.01138
+  2012.07878
+  1001.0229
+  0505184_arXiv.txt
+  0803.2261
+Relevant Documents:
+  1302.0858
+  1303.1957
+  1603.05661
+  1109.4723
+defaultdict(<class 'list'>, {'map': [0.0, 0.0, 0.0, 0.0, 0.2, 0.0, 0.0, 0.13333333333333333, 0.0, 0.0, 0.013888888888888888, 0.1, 0.0, 0.0, 0.0, 0.027777777777777776, 0.0125, 0.03333333333333333, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0058823529411764705, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.1261904761904762, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.014285714285714287, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0380952380952381, 0.14285714285714285, 0.0, 0.0, 0.0196078431372549, 0.0, 0.0, 0.020833333333333332, 0.0, 0.0, 0.0, 0.05, 0.08712121212121211, 0.0, 0.01111111111111111, 0.0], 'ndcg': [np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.3391602052736161), np.float64(0.0), np.float64(0.0), np.float64(0.3029889503327761), np.float64(0.0), np.float64(0.0), np.float64(0.07839826897867533), np.float64(0.22009176629808017), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.10122860821230018), np.float64(0.08514311764162098), np.float64(0.11004588314904008), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.06362078819895171), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.2906246349515899), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.07945707943276742), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.14629191738978584), np.float64(0.27487633291429087), np.float64(0.0), np.float64(0.0), np.float64(0.11004588314904008), np.float64(0.0), np.float64(0.0), np.float64(0.16421958630632802), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.14606834984270645), np.float64(0.2426178552850034), np.float64(0.0), np.float64(0.06625422345438903), np.float64(0.0)], 'recall@k': [0.0, 0.0, 0.0, 0.0, 0.2, 0.0, 0.0, 0.2222222222222222, 0.0, 0.0, 0.08333333333333333, 0.1, 0.0, 0.0, 0.0, 0.1111111111111111, 0.0625, 0.1, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.058823529411764705, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.3, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.14285714285714285, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.2222222222222222, 0.14285714285714285, 0.0, 0.0, 0.058823529411764705, 0.0, 0.0, 0.08333333333333333, 0.0, 0.0, 0.0, 0.2, 0.2727272727272727, 0.0, 0.1, 0.0], 'precision@k': [0.0, 0.0, 0.0, 0.0, 0.1, 0.0, 0.0, 0.2, 0.0, 0.0, 0.1, 0.1, 0.0, 0.0, 0.0, 0.1, 0.1, 0.1, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.1, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.3, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.1, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.2, 0.1, 0.0, 0.0, 0.1, 0.0, 0.0, 0.2, 0.0, 0.0, 0.0, 0.1, 0.3, 0.0, 0.1, 0.0], 'f1@k': [0, 0, 0, 0, 0.13333333333333333, 0, 0, 0.2105263157894737, 0, 0, 0.0909090909090909, 0.10000000000000002, 0, 0, 0, 0.10526315789473685, 0.07692307692307693, 0.10000000000000002, 0, 0, 0, 0, 0, 0, 0.07407407407407408, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0.3, 0, 0, 0, 0, 0, 0, 0.11764705882352941, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0.2105263157894737, 0.11764705882352941, 0, 0, 0.07407407407407408, 0, 0, 0.11764705882352941, 0, 0, 0, 0.13333333333333333, 0.28571428571428564, 0, 0.10000000000000002, 0]})
+Query:  How can observations of synchrotron emission and Faraday rotation be used to detect and characterize magnetic helicity in galactic magnetic fields?
+Retrieved Documents:
+  2010.00105
+  1706.09540
+  1910.06896
+  1008.1243
+  1008.1246
+  1506.09013
+  1712.09219
+  1409.4223
+  1501.04856
+  0305069_arXiv.txt
+Relevant Documents:
+  2010.00105
+  1501.00385
+  1401.4102
+  1401.4152
+  1001.2857
+
+Multi-doc progress:  95%|████████████████████████████████████████████████████████████████████████████████████████████     | 75/79 [01:23<00:04,  1.11s/it]
+Query:  How do acoustic fluctuations and magnetic fields contribute to heating the solar chromosphere and corona?
+Retrieved Documents:
+  1906.01746
+  1508.07234
+  2008.02688
+  2102.08678
+  2107.12050
+  1012.4655
+  1809.04077
+  2104.13546
+  0407266_arXiv.txt
+  1605.04794
+Relevant Documents:
+  1206.1759
+  0709.3462
+  1503.01769
+  0703.333
+defaultdict(<class 'list'>, {'map': [0.0, 0.0, 0.0, 0.0, 0.2, 0.0, 0.0, 0.13333333333333333, 0.0, 0.0, 0.013888888888888888, 0.1, 0.0, 0.0, 0.0, 0.027777777777777776, 0.0125, 0.03333333333333333, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0058823529411764705, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.1261904761904762, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.014285714285714287, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0380952380952381, 0.14285714285714285, 0.0, 0.0, 0.0196078431372549, 0.0, 0.0, 0.020833333333333332, 0.0, 0.0, 0.0, 0.05, 0.08712121212121211, 0.0, 0.01111111111111111, 0.0, 0.2, 0.0], 'ndcg': [np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.3391602052736161), np.float64(0.0), np.float64(0.0), np.float64(0.3029889503327761), np.float64(0.0), np.float64(0.0), np.float64(0.07839826897867533), np.float64(0.22009176629808017), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.10122860821230018), np.float64(0.08514311764162098), np.float64(0.11004588314904008), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.06362078819895171), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.2906246349515899), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.07945707943276742), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.14629191738978584), np.float64(0.27487633291429087), np.float64(0.0), np.float64(0.0), np.float64(0.11004588314904008), np.float64(0.0), np.float64(0.0), np.float64(0.16421958630632802), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.14606834984270645), np.float64(0.2426178552850034), np.float64(0.0), np.float64(0.06625422345438903), np.float64(0.0), np.float64(0.3391602052736161), np.float64(0.0)], 'recall@k': [0.0, 0.0, 0.0, 0.0, 0.2, 0.0, 0.0, 0.2222222222222222, 0.0, 0.0, 0.08333333333333333, 0.1, 0.0, 0.0, 0.0, 0.1111111111111111, 0.0625, 0.1, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.058823529411764705, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.3, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.14285714285714285, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.2222222222222222, 0.14285714285714285, 0.0, 0.0, 0.058823529411764705, 0.0, 0.0, 0.08333333333333333, 0.0, 0.0, 0.0, 0.2, 0.2727272727272727, 0.0, 0.1, 0.0, 0.2, 0.0], 'precision@k': [0.0, 0.0, 0.0, 0.0, 0.1, 0.0, 0.0, 0.2, 0.0, 0.0, 0.1, 0.1, 0.0, 0.0, 0.0, 0.1, 0.1, 0.1, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.1, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.3, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.1, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.2, 0.1, 0.0, 0.0, 0.1, 0.0, 0.0, 0.2, 0.0, 0.0, 0.0, 0.1, 0.3, 0.0, 0.1, 0.0, 0.1, 0.0], 'f1@k': [0, 0, 0, 0, 0.13333333333333333, 0, 0, 0.2105263157894737, 0, 0, 0.0909090909090909, 0.10000000000000002, 0, 0, 0, 0.10526315789473685, 0.07692307692307693, 0.10000000000000002, 0, 0, 0, 0, 0, 0, 0.07407407407407408, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0.3, 0, 0, 0, 0, 0, 0, 0.11764705882352941, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0.2105263157894737, 0.11764705882352941, 0, 0, 0.07407407407407408, 0, 0, 0.11764705882352941, 0, 0, 0, 0.13333333333333333, 0.28571428571428564, 0, 0.10000000000000002, 0, 0.13333333333333333, 0]})
+Query:  What are the potential mechanisms for carbon cycling and atmospheric regulation on waterworlds, and how might this affect their habitability?
+Retrieved Documents:
+  1801.00748
+  1904.10458
+  1909.01742
+  1911.04441
+  2104.06391
+  2104.14668
+  1604.01722
+  1906.10561
+  1908.05935
+  1710.03033
+Relevant Documents:
+  1209.4098
+  1212.2638
+  1609.08185
+  1208.1760
+  1507.01727
+  1204.3539
+  1205.5034
+  1501.07607
+  1304.5058
+  0912.3288
+  1307.0416
+  1606.03030
+  0902.1640
+  1304.4215
+  1306.2889
+  1005.4037
+  1001.2890
+  1306.2890
+  0704.3454
+
+Multi-doc progress:  97%|██████████████████████████████████████████████████████████████████████████████████████████████▌  | 77/79 [01:25<00:02,  1.11s/it]
+Query:  What are the challenges in identifying the primary dust precursor candidates in stellar winds, and what recent findings have emerged regarding Al2O3 and TiO2?
+Retrieved Documents:
+  2010.06485
+  1605.09730
+  1509.01909
+  1310.1924
+  1404.0507
+  1610.01141
+  1301.4344
+  1503.04765
+  0609392_arXiv.txt
+  1410.6610
+Relevant Documents:
+  1204.2640
+  1908.09633
+  1605.05504
+defaultdict(<class 'list'>, {'map': [0.0, 0.0, 0.0, 0.0, 0.2, 0.0, 0.0, 0.13333333333333333, 0.0, 0.0, 0.013888888888888888, 0.1, 0.0, 0.0, 0.0, 0.027777777777777776, 0.0125, 0.03333333333333333, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0058823529411764705, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.1261904761904762, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.014285714285714287, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0380952380952381, 0.14285714285714285, 0.0, 0.0, 0.0196078431372549, 0.0, 0.0, 0.020833333333333332, 0.0, 0.0, 0.0, 0.05, 0.08712121212121211, 0.0, 0.01111111111111111, 0.0, 0.2, 0.0, 0.0, 0.0], 'ndcg': [np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.3391602052736161), np.float64(0.0), np.float64(0.0), np.float64(0.3029889503327761), np.float64(0.0), np.float64(0.0), np.float64(0.07839826897867533), np.float64(0.22009176629808017), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.10122860821230018), np.float64(0.08514311764162098), np.float64(0.11004588314904008), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.06362078819895171), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.2906246349515899), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.07945707943276742), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.14629191738978584), np.float64(0.27487633291429087), np.float64(0.0), np.float64(0.0), np.float64(0.11004588314904008), np.float64(0.0), np.float64(0.0), np.float64(0.16421958630632802), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.14606834984270645), np.float64(0.2426178552850034), np.float64(0.0), np.float64(0.06625422345438903), np.float64(0.0), np.float64(0.3391602052736161), np.float64(0.0), np.float64(0.0), np.float64(0.0)], 'recall@k': [0.0, 0.0, 0.0, 0.0, 0.2, 0.0, 0.0, 0.2222222222222222, 0.0, 0.0, 0.08333333333333333, 0.1, 0.0, 0.0, 0.0, 0.1111111111111111, 0.0625, 0.1, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.058823529411764705, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.3, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.14285714285714285, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.2222222222222222, 0.14285714285714285, 0.0, 0.0, 0.058823529411764705, 0.0, 0.0, 0.08333333333333333, 0.0, 0.0, 0.0, 0.2, 0.2727272727272727, 0.0, 0.1, 0.0, 0.2, 0.0, 0.0, 0.0], 'precision@k': [0.0, 0.0, 0.0, 0.0, 0.1, 0.0, 0.0, 0.2, 0.0, 0.0, 0.1, 0.1, 0.0, 0.0, 0.0, 0.1, 0.1, 0.1, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.1, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.3, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.1, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.2, 0.1, 0.0, 0.0, 0.1, 0.0, 0.0, 0.2, 0.0, 0.0, 0.0, 0.1, 0.3, 0.0, 0.1, 0.0, 0.1, 0.0, 0.0, 0.0], 'f1@k': [0, 0, 0, 0, 0.13333333333333333, 0, 0, 0.2105263157894737, 0, 0, 0.0909090909090909, 0.10000000000000002, 0, 0, 0, 0.10526315789473685, 0.07692307692307693, 0.10000000000000002, 0, 0, 0, 0, 0, 0, 0.07407407407407408, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0.3, 0, 0, 0, 0, 0, 0, 0.11764705882352941, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0.2105263157894737, 0.11764705882352941, 0, 0, 0.07407407407407408, 0, 0, 0.11764705882352941, 0, 0, 0, 0.13333333333333333, 0.28571428571428564, 0, 0.10000000000000002, 0, 0.13333333333333333, 0, 0, 0]})
+Query:  How does the wave nature of axion dark matter impact experimental detection strategies?
+Retrieved Documents:
+  1101.2691
+  2105.01406
+  2109.01222
+  1909.11470
+  1710.09198
+  1709.10516
+  2002.12195
+  2008.02279
+  2206.01462
+  1612.00438
+Relevant Documents:
+  2009.14201
+  1902.07192
+  1306.6088
+  1602.00039
+  1704.06844
+  1711.10489
+  2011.13141
+  1905.13650
+  2011.11416
+  2011.07870
+  2004.01188
+  1801.08127
+
+Multi-doc progress: 100%|█████████████████████████████████████████████████████████████████████████████████████████████████| 79/79 [01:28<00:00,  1.12s/it]
+Query:  How have observations of different tracers improved our knowledge of the LMC's internal kinematics over the past two decades?
+Retrieved Documents:
+  1101.5674
+  1209.3856
+  0701500_arXiv.txt
+  0207077_arXiv.txt
+  1612.03072
+  1507.07935
+  0709.1990
+  0908.1422
+  0406443_arXiv.txt
+  2201.04648
+Relevant Documents:
+  0701.500
+  0607.052
+  1106.0044
+  0309.272
+  0210.501
+  0210.615
+defaultdict(<class 'list'>, {'map': [0.0, 0.0, 0.0, 0.0, 0.2, 0.0, 0.0, 0.13333333333333333, 0.0, 0.0, 0.013888888888888888, 0.1, 0.0, 0.0, 0.0, 0.027777777777777776, 0.0125, 0.03333333333333333, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0058823529411764705, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.1261904761904762, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.014285714285714287, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0380952380952381, 0.14285714285714285, 0.0, 0.0, 0.0196078431372549, 0.0, 0.0, 0.020833333333333332, 0.0, 0.0, 0.0, 0.05, 0.08712121212121211, 0.0, 0.01111111111111111, 0.0, 0.2, 0.0, 0.0, 0.0, 0.0, 0.0], 'ndcg': [np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.3391602052736161), np.float64(0.0), np.float64(0.0), np.float64(0.3029889503327761), np.float64(0.0), np.float64(0.0), np.float64(0.07839826897867533), np.float64(0.22009176629808017), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.10122860821230018), np.float64(0.08514311764162098), np.float64(0.11004588314904008), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.06362078819895171), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.2906246349515899), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.07945707943276742), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.14629191738978584), np.float64(0.27487633291429087), np.float64(0.0), np.float64(0.0), np.float64(0.11004588314904008), np.float64(0.0), np.float64(0.0), np.float64(0.16421958630632802), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.14606834984270645), np.float64(0.2426178552850034), np.float64(0.0), np.float64(0.06625422345438903), np.float64(0.0), np.float64(0.3391602052736161), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.0)], 'recall@k': [0.0, 0.0, 0.0, 0.0, 0.2, 0.0, 0.0, 0.2222222222222222, 0.0, 0.0, 0.08333333333333333, 0.1, 0.0, 0.0, 0.0, 0.1111111111111111, 0.0625, 0.1, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.058823529411764705, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.3, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.14285714285714285, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.2222222222222222, 0.14285714285714285, 0.0, 0.0, 0.058823529411764705, 0.0, 0.0, 0.08333333333333333, 0.0, 0.0, 0.0, 0.2, 0.2727272727272727, 0.0, 0.1, 0.0, 0.2, 0.0, 0.0, 0.0, 0.0, 0.0], 'precision@k': [0.0, 0.0, 0.0, 0.0, 0.1, 0.0, 0.0, 0.2, 0.0, 0.0, 0.1, 0.1, 0.0, 0.0, 0.0, 0.1, 0.1, 0.1, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.1, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.3, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.1, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.2, 0.1, 0.0, 0.0, 0.1, 0.0, 0.0, 0.2, 0.0, 0.0, 0.0, 0.1, 0.3, 0.0, 0.1, 0.0, 0.1, 0.0, 0.0, 0.0, 0.0, 0.0], 'f1@k': [0, 0, 0, 0, 0.13333333333333333, 0, 0, 0.2105263157894737, 0, 0, 0.0909090909090909, 0.10000000000000002, 0, 0, 0, 0.10526315789473685, 0.07692307692307693, 0.10000000000000002, 0, 0, 0, 0, 0, 0, 0.07407407407407408, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0.3, 0, 0, 0, 0, 0, 0, 0.11764705882352941, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0.2105263157894737, 0.11764705882352941, 0, 0, 0.07407407407407408, 0, 0, 0.11764705882352941, 0, 0, 0, 0.13333333333333333, 0.28571428571428564, 0, 0.10000000000000002, 0, 0.13333333333333333, 0, 0, 0, 0, 0]})

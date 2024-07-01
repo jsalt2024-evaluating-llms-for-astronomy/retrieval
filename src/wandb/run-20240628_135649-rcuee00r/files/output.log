@@ -1,0 +1,200 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Single-doc progress: 100%|██████████████████████████████████████████████████████████████████████████████████████████████| 160/160 [06:14<00:00,  2.34s/it]
+Multi-doc progress:   0%|                                                                                                          | 0/79 [00:00<?, ?it/s]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Multi-doc progress:  24%|███████████████████████▎                                                                         | 19/79 [00:45<02:24,  2.41s/it]
+Traceback (most recent call last):
+  File "/Users/charlesoneill/retrieval/src/semantic_search.py", line 136, in <module>
+    main()
+  File "/Users/charlesoneill/retrieval/src/semantic_search.py", line 111, in main
+    evaluate_main(retrieval_system, "BaseSemanticSearch")
+  File "/Users/charlesoneill/retrieval/src/../evaluation/evaluate.py", line 124, in main
+    results = evaluator.evaluate('../data/single_paper.json', '../data/multi_paper.json', top_k=10)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/charlesoneill/retrieval/src/../evaluation/evaluate.py", line 30, in evaluate
+    multi_results = self._evaluate_multi_document(multi_doc_file, top_k)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/charlesoneill/retrieval/src/../evaluation/evaluate.py", line 69, in _evaluate_multi_document
+    retrieved_docs = self.retrieval_system.retrieve(query, arxiv_id, top_k=top_k)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/charlesoneill/retrieval/src/semantic_search.py", line 78, in retrieve
+    if doc_date <= query_date:
+       ^^^^^^^^^^^^^^^^^^^^^^
+KeyboardInterrupt
