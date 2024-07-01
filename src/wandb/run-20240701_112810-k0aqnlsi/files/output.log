@@ -1,0 +1,594 @@
+
+
+Single-doc progress:   0%|▏                                                     | 1/250 [00:05<21:39,  5.22s/it]
+Query: How does the turbulent behavior of solar Active Regions change during different stages of a flare event?
+Retrieved docs: ['1007.3702', '1307.4377', '1012.1586', '0809.1428', '0803.3158', '1006.4117', '1209.6131', '1102.2352', '1110.0705', '1102.3664']
+Arxiv ID: 1307.4377
+Rank: 2
+Query: How can statefinder parameters be used to distinguish between different modified gravity models and dark energy models in cosmology?
+Retrieved docs: ['0911.2838', '0704.3670', '0712.1177', '0809.2502', '0711.4854', '0705.4145', '1002.3867', '0711.2319', '0803.4039', '0710.0373']
+Arxiv ID: 1002.3867
+
+Single-doc progress:   1%|▍                                                     | 2/250 [00:08<16:09,  3.91s/it]
+Query: How can finite-source effects in microlensing events be used to measure the Einstein radius of a lens system?
+Retrieved docs: ['1005.3021', '1207.3720', '0903.5304', '0712.2217', '1304.5414', '0708.1066', '0907.0068', '0712.1052', '0805.4626', '0811.0441']
+Arxiv ID: 1502.06663
+
+
+Single-doc progress:   2%|▊                                                     | 4/250 [00:15<15:14,  3.72s/it]
+Query: What impact does the presence of a large-scale magnetic field have on the formation and efficiency of non-relativistic shocks in astrophysical plasma collisions?
+Retrieved docs: ['0802.3217', '1105.0130', '1009.5461', '0912.0101', '0804.2884', '0801.4486', '0802.2185', '1112.6373', '1010.1146', '0807.1321']
+Arxiv ID: 1209.3938
+Rank: Not found
+Query: How does the spectral index of a radio galaxy's non-thermal emission relate to the density of its surrounding environment?
+Retrieved docs: ['1001.5419', '1811.01822', '1212.4836', '1503.02420', '2011.10807', '1311.3038', '1411.5031', '1906.08877', '0904.0190', '2003.06153']
+Arxiv ID: 2011.10807
+
+
+Single-doc progress:   2%|█▎                                                    | 6/250 [00:23<15:30,  3.81s/it]
+Query: What is the relationship between the decline rate of a supernova's optical light curve and its estimated ejecta mass?
+Retrieved docs: ['1307.2644', '1401.4893', '1403.7091', '1402.6842', '1309.4088', '1401.4449', '1304.4967', '1403.4406', '0812.2007', '0910.1590']
+Arxiv ID: 1409.2739
+Rank: Not found
+Query: What is the primary mechanism of stellar feedback that dominates the inner regions of large HII regions?
+Retrieved docs: ['0906.4343', '0710.1666', '1008.2383', '1001.2470', '0711.4047', '0712.3285', '0902.0004', '0905.3192', '0803.4215', '0810.3311']
+Arxiv ID: 1008.2383
+
+
+Single-doc progress:   3%|█▋                                                    | 8/250 [00:33<18:54,  4.69s/it]
+Query: How effective are structural selection methods in identifying dwarf galaxies beyond the Local Group, and to what distances can these methods be reliably applied?
+Retrieved docs: ['1805.07407', '1701.03681', '1204.1562', '1301.5320', '1110.1086', '1407.0307', '1310.7928', '1511.04446', '1408.0002', '1511.01484']
+Arxiv ID: 1805.07407
+Rank: 1
+Query: How does the relative brightness change between lensed quasar images over time inform estimates of accretion disk size?
+Retrieved docs: ['1509.05375', '0810.0011', '1207.2042', '1112.0005', '1501.07533', '2108.05212', '1810.07265', '0709.2828', '1905.04182', '0812.1132']
+Arxiv ID: 2108.05212
+
+
+Single-doc progress:   4%|██                                                   | 10/250 [00:41<17:11,  4.30s/it]
+Query: What factors might explain a surprisingly steep gamma-ray spectrum observed from a supernova remnant?
+Retrieved docs: ['1206.1360', '1112.3194', '1011.6527', '1302.0193', '0810.0988', '1210.0085', '1209.1197', '0704.2015', '0707.4647', '1303.2326']
+Arxiv ID: 1306.5619
+
+Single-doc progress:   4%|██▎                                                  | 11/250 [00:45<16:33,  4.16s/it]
+Query: How does the process of convective collapse contribute to the intensification of magnetic fields in solar photospheric flux tubes?
+Retrieved docs: ['0804.1238', '0906.2308', '1210.0949', '1401.1826', '0706.4463', '1111.1679', '1101.1574', '1211.6253', '1103.3685', '1405.2837']
+Arxiv ID: 1405.2837
+Rank: 10
+Query: What velocity width parameters are most appropriate for estimating black hole masses using different ultraviolet emission lines in quasar spectra?
+Retrieved docs: ['1903.10015', 'astro-ph0204473_arXiv.txt', '1203.0601', '1105.4391', '1104.1828', '2205.07034', '1305.1096', '0807.1155', '2304.02142', '1108.5102']
+Arxiv ID: 2304.02142
+
+
+Single-doc progress:   5%|██▊                                                  | 13/250 [00:55<17:37,  4.46s/it]
+Query: How do quasi-exponential inflation models compare to observational data from cosmic microwave background radiation surveys?
+Retrieved docs: ['1105.6362', '0810.3022', '1007.2396', '0912.0522', '0902.1529', '0707.4671', '1008.5258', '1105.4685', '0706.1982', '1012.4811']
+Arxiv ID: 1105.6362
+
+Single-doc progress:   6%|██▉                                                  | 14/250 [00:59<16:32,  4.20s/it]
+Query: How does the geometric configuration of matter in different accretion disk models affect the location and properties of acoustic horizons around black holes?
+Retrieved docs: ['1612.07963', '1204.1347', '0805.2950', '0907.1449', '1104.5499', '0705.2244', '1006.4309', '1010.5592', '0901.3926', '1203.6851']
+Arxiv ID: 1612.07963
+Rank: 1
+Query: How does the degree of linear polarization in the solar corona vary with distance from the Sun's surface?
+Retrieved docs: ['1208.4929', '0812.3494', '1203.4438', '1704.03228', '1207.5894', '1207.0415', '2004.03679', '1901.03441', '2009.04820', '1606.08493']
+Arxiv ID: 2010.15005
+
+
+Single-doc progress:   6%|███▍                                                 | 16/250 [01:07<16:02,  4.11s/it]
+Query: How does the mass function of isolated galaxy clusters respond to different levels of primordial non-Gaussianity compared to the mass function of all clusters?
+Retrieved docs: ['1304.1216', '0710.4560', '1003.2416', '1407.8192', '1304.4275', '0806.1046', '1109.3196', '1105.3476', '0909.4714', '0707.2516']
+Arxiv ID: 1407.4168
+Rank: Not found
+Query: How can a vertically-oriented laser system be used to calibrate and monitor the sensitivity of multiple telescopes in a large-scale astroparticle detector array?
+Retrieved docs: ['1307.3452', '1111.2882', '1209.4935', '1201.2596', '1304.0086', '1301.0633', '1101.5214', '0810.1835', '1211.2232', '1105.4016']
+Arxiv ID: 1307.3452
+
+Single-doc progress:   7%|███▌                                                 | 17/250 [01:11<15:25,  3.97s/it]
+Query: What is the optimal averaging scale for cosmological simulations that can produce super-Einstein-de Sitter expansion without invoking dark energy?
+Retrieved docs: ['1102.2045', '1607.08797', '1503.05796', '0805.1132', '0811.2364', '0802.1808', '1706.09309', '1312.5680', '0912.4750', '0809.3404']
+Arxiv ID: 1706.06179
+
+Single-doc progress:   7%|███▊                                                 | 18/250 [01:15<15:20,  3.97s/it]
+Query: How does the presence or absence of non-thermal particles in Be X-ray binary systems relate to their detectability at very high energies?
+Retrieved docs: ['1101.5036', '1001.4473', '1103.3250', '0410.074', '1102.4591', '0709.4220', '0802.1729', '0907.4990', '1006.2381', '0805.0008']
+Arxiv ID: 1103.3250
+
+
+Single-doc progress:   8%|████▏                                                | 20/250 [01:21<13:57,  3.64s/it]
+Query: How can future cosmic microwave background experiments potentially constrain or detect neutrino masses and asymmetries?
+Retrieved docs: ['1001.5088', '0805.1920', '0704.3271', '0907.1917', '0901.0916', '0803.3887', '0710.5525', '0907.2887', '0901.1529', '0901.0245']
+Arxiv ID: 1001.5088
+
+Single-doc progress:   8%|████▍                                                | 21/250 [01:25<13:42,  3.59s/it]
+Query: How does the fraction of passive galaxies in high-redshift galaxy groups compare to that in the field, and what does this imply about environmental quenching efficiency?
+Retrieved docs: ['1208.1762', '1302.2562', '1012.2388', '0909.1951', '1007.2642', '1111.1729', '1302.6620', '1104.1426', '1211.6115', '0905.3401']
+Arxiv ID: 1302.2562
+
+Single-doc progress:   9%|████▋                                                | 22/250 [01:30<14:56,  3.93s/it]
+Query: How do the spatial emission patterns differ between galaxy bubbles dominated by hadronic versus leptonic cosmic rays?
+Retrieved docs: ['2111.01402', '2111.00204', '1808.00330', '1607.08862', '1304.6972', '1307.3551', '1402.0403', '1311.6159', '1706.05025', '1802.03890']
+Arxiv ID: 2111.01402
+
+Single-doc progress:   9%|████▉                                                | 23/250 [01:36<17:04,  4.51s/it]
+Query: What geometric configurations of high-velocity material in Type Ia supernova ejecta can explain the observed diversity in early spectral features?
+Retrieved docs: ['astro-ph0301312_arXiv.txt', 'astro-ph0603184_arXiv.txt', '0712.2823', '1206.4697', '1410.0091', 'astro-ph0502531_arXiv.txt', '1911.09261', '2011.07240', '1508.02042', 'astro-ph0302260_arXiv.txt']
+Arxiv ID: astro-ph0603184_arXiv.txt
+
+Single-doc progress:  10%|█████                                                | 24/250 [01:42<19:05,  5.07s/it]
+Query: What effect does the initial mass function slope have on the survival probability of globular clusters following residual gas expulsion?
+Retrieved docs: ['2012.09195', '2012.07095', '2009.02333', '1509.07119', '2101.02217', '1202.4755', '1310.5546', '1409.2613', '1101.1073', '1203.1221']
+Arxiv ID: astro-ph9607083_arXiv.txt
+
+Single-doc progress:  10%|█████▎                                               | 25/250 [01:45<17:07,  4.57s/it]
+Query: How does the presence of a magnetic field affect the relationship between column density variance and three-dimensional density variance in turbulent interstellar media?
+Retrieved docs: ['1211.2860', '0811.0822', '1010.3754', '1001.1046', '0707.3847', '1003.3718', '0910.1117', '0705.2464', '0909.4226', '0910.1835']
+Arxiv ID: 1211.2860
+Rank: 1
+Query: How does radiation feedback affect the accretion rate and luminosity of intermediate-mass black holes in different ambient gas environments?
+Retrieved docs: ['1006.1302', '0906.3739', '1110.4634', '0901.1089', '1006.3312', '1106.1405', '1108.0110', '0809.2404', '1002.4896', '0812.2516']
+Arxiv ID: 1110.4634
+
+Single-doc progress:  10%|█████▌                                               | 26/250 [01:49<15:34,  4.17s/it]
+Query: How can introducing dark radiation components affect cosmological constraints on neutrino masses while maintaining the effective number of neutrino species?
+Retrieved docs: ['1307.0637', '1612.07126', '2001.10852', '1706.00730', '1608.01219', '1109.2767', '1409.6309', '1303.0143', '1212.6007', '1702.04189']
+Arxiv ID: 2211.01729
+
+Single-doc progress:  11%|█████▋                                               | 27/250 [01:54<16:33,  4.46s/it]
+Query: How does the one-dimensional motion of electrons in a superstrong magnetic field affect the formation and temperature of a magnetar's atmosphere?
+Retrieved docs: ['0706.3578', '0606.674', '0208.444', '0704.3832', '0705.0592', '0609.047', '0705.3982', '0005.072', '0705.0525', '0201.195']
+Arxiv ID: 0706.3578
+
+Single-doc progress:  11%|█████▉                                               | 28/250 [01:56<14:05,  3.81s/it]
+Query: How does the large frequency separation in delta Scuti stars compare to predictions from solar scaling relations?
+Retrieved docs: ['2306.13142', '1603.09161', '1105.1045', 'astro-ph0208573_arXiv.txt', '0804.2402', '1509.01111', '1706.04782', '1109.3460', '1402.0723', '1607.03768']
+Arxiv ID: 2306.13142
+
+Single-doc progress:  12%|██████▏                                              | 29/250 [02:02<16:53,  4.59s/it]
+Query: How does the cooling efficiency of stellar debris affect the structure and evolution of accretion disks formed during tidal disruption events?
+Retrieved docs: ['1501.05207', '1410.0366', '1305.5570', '1501.02015', '1210.1333', '1501.04635', '1210.3374', '1501.05306', '1206.2350', '1211.6109']
+Arxiv ID: 1501.04635
+
+Single-doc progress:  12%|██████▎                                              | 30/250 [02:06<16:17,  4.44s/it]
+Query: How does the metal abundance of the cool gas component in galaxy clusters compare to that of the hot gas component, and what might explain any observed differences?
+Retrieved docs: ['1101.2807', '1701.08164', '1803.06297', '1706.01476', '1801.05425', '0705.1921', 'astro-ph0402216_arXiv.txt', '1608.06289', 'astro-ph0603270_arXiv.txt', '1006.3255']
+Arxiv ID: astro-ph0406312_arXiv.txt
+
+
+Single-doc progress:  13%|██████▊                                              | 32/250 [02:19<19:20,  5.33s/it]
+Query: What effect does intense X-ray irradiation from an active galactic nucleus have on the atmospheric structure and mass loss rates of nearby low-gravity stars?
+Retrieved docs: ['astro-ph9803209_arXiv.txt', 'astro-ph0209142_arXiv.txt', '1902.07950', '0812.3621', '1405.7971', '1410.6659', '2203.00929', '1206.5022', '0901.0223', '0705.2809']
+Arxiv ID: astro-ph9803209_arXiv.txt
+Rank: 1
+Query: How can interferometric observations of neutral hydrogen in galaxies be used to differentiate between cold and warm phases of the interstellar medium?
+Retrieved docs: ['1911.10211', '1008.5206', '1208.0983', '2203.16584', '1807.01475', '2203.13405', '1207.5041', '1607.03965', '1211.6808', '1007.3936']
+Arxiv ID: 2203.16584
+
+Single-doc progress:  13%|██████▉                                              | 33/250 [02:24<19:27,  5.38s/it]
+Query: How does the evolution of averaged 3-Ricci curvature in inhomogeneous cosmological models relate to the potential for explaining cosmic acceleration without dark energy?
+Retrieved docs: ['0803.1401', '1707.00111', '1303.6193', '2108.00992', '1312.5680', '0809.2107', '1611.01885', '0808.1161', '1512.07835', '0806.3497']
+Arxiv ID: gr-qc0606020_arXiv.txt
+
+Single-doc progress:  14%|███████▏                                             | 34/250 [02:31<20:11,  5.61s/it]
+Query: What shock velocities are typically required to produce the observed [Fe II] and [C I] emission lines in Herbig-Haro objects?
+Retrieved docs: ['0801.1633', 'astro-ph0402395_arXiv.txt', 'astro-ph0406262_arXiv.txt', '1703.02700', '1409.4658', 'astro-ph0607375_arXiv.txt', 'astro-ph0603167_arXiv.txt', '1510.06880', 'astro-ph0304258_arXiv.txt', '2111.14089']
+Arxiv ID: astro-ph0406262_arXiv.txt
+
+
+Single-doc progress:  14%|███████▋                                             | 36/250 [02:40<17:33,  4.92s/it]
+Query: What role does mass fueling onto the inner accretion disk play in establishing the relationship between supermassive black hole mass and host galaxy properties?
+Retrieved docs: ['0705.4457', '0705.1686', '0505.463', '0704.1218', '0705.2269', '0705.2238', '0504.202', '0704.2288', '0508.640', '0704.2418']
+Arxiv ID: 0705.4457
+Rank: 1
+Query: How can combining low-resolution and high-resolution spectroscopy techniques improve our understanding of exoplanetary atmospheres?
+Retrieved docs: ['1312.2009', '1301.0217', '1304.5561', '1904.03190', '1910.14042', '1609.05089', '2109.11659', '1711.08433', '1409.7320', '1912.10939']
+Arxiv ID: 2112.08956
+
+
+Single-doc progress:  15%|████████                                             | 38/250 [02:49<17:27,  4.94s/it]
+Query: How does the use of single-band light curve embeddings affect the classification accuracy of variable stars compared to traditional methods?
+Retrieved docs: ['1602.08977', '1810.09440', '2002.00994', '2006.07614', '2205.01677', '1911.05821', '1101.1959', '2003.08618', '1601.03769', '1907.08189']
+Arxiv ID: 2205.01677
+
+Single-doc progress:  16%|████████▎                                            | 39/250 [02:54<16:45,  4.77s/it]
+Query: How does the radial density distribution in a disc affect the geometry and acceleration of thermal winds emanating from it?
+Retrieved docs: ['1006.0299', '0806.0118', '0608.605', '0909.2396', '1210.0470', '1207.7348', '1510.04289', '1204.1133', '1206.4173', '1508.00904']
+Arxiv ID: 1605.04089
+
+Single-doc progress:  16%|████████▍                                            | 40/250 [03:00<18:00,  5.15s/it]
+Query: What is the relationship between the inner density slope of dwarf dark matter halos and their mass concentration?
+Retrieved docs: ['astro-ph9909478_arXiv.txt', '1404.5959', '0706.0856', '0801.1851', '2011.13121', '1406.1174', '1012.4322', '1911.05836', '1203.3377', '1405.4854']
+Arxiv ID: astro-ph0308348_arXiv.txt
+Rank: Not found
+Query: What is the effect of non-stationary, narrow-band disturbances on the detection of continuous gravitational waves from rotating neutron stars?
+Retrieved docs: ['1501.06648', '1607.08751', '2010.12612', '2005.06534', '1409.7888', '1908.05644', '1606.03583', '1703.03493', '1201.3176', '1403.1484']
+Arxiv ID: 2206.00882
+
+Single-doc progress:  16%|████████▋                                            | 41/250 [03:05<17:59,  5.17s/it]
+Query: How do pulsars compare to active galactic nuclei as probes for testing Lorentz invariance violation in high-energy astrophysics?
+Retrieved docs: ['1208.2033', '0706.1542', '1111.1178', '0810.1318', '1007.4954', '0901.2932', '0711.4278', '1007.3545', '1101.0837', '1106.4813']
+Arxiv ID: 1208.2033
+
+Single-doc progress:  17%|████████▉                                            | 42/250 [03:09<16:34,  4.78s/it]
+Query: How do the ages of low surface brightness galaxies in dense cluster environments relate to their spectral types?
+Retrieved docs: ['0502.311', '0712.0515', '0810.4334', '0801.3665', '0603.688', '0807.1098', '0809.3099', '0707.1523', '0712.0274', '0707.0492']
+Arxiv ID: 0811.4480
+
+
+Single-doc progress:  18%|█████████▎                                           | 44/250 [03:18<16:07,  4.70s/it]
+Query: How does the presence of a corotation radius within a differentially rotating star influence the development of one-armed spiral and bar mode instabilities?
+Retrieved docs: ['astro-ph0504002_arXiv.txt', '1611.09974', 'astro-ph0604146_arXiv.txt', 'astro-ph0505543_arXiv.txt', 'astro-ph0604099_arXiv.txt', '1608.01211', '1511.05832', 'astro-ph0606013_arXiv.txt', '0906.4392', 'astro-ph0010201_arXiv.txt']
+Arxiv ID: astro-ph0504002_arXiv.txt
+Rank: 1
+Query: What molecular tracers are most effective for identifying dense gas structures within molecular clouds?
+Retrieved docs: ['astro-ph0702121_arXiv.txt', '1511.04689', '1710.07288', '1810.12315', '1209.0459', '1809.00489', '0911.0413', '1305.2328', '2004.06631', '1410.0156']
+Arxiv ID: 2304.00222
+
+Single-doc progress:  18%|█████████▌                                           | 45/250 [03:24<17:41,  5.18s/it]
+Query: What is the maximum faintness of guide stars that can be effectively used for Lucky Imaging in I-band astronomy?
+Retrieved docs: ['1405.1930', 'astro-ph0507299_arXiv.txt', '0805.1921', '1009.5670', 'astro-ph9909059_arXiv.txt', '1603.00729', '1404.5907', '2012.05480', '1401.2194', '2207.05090']
+Arxiv ID: astro-ph0507299_arXiv.txt
+
+Single-doc progress:  18%|█████████▊                                           | 46/250 [03:30<18:12,  5.36s/it]
+Query: How does the survival of specific Trans-Neptunian populations constrain the number of primordial protoplanets in the early solar system?
+Retrieved docs: ['1605.06575', '1807.03371', '1201.4395', '1701.07041', '1802.00460', '1807.02960', '0804.3392', '1805.11740', '1511.02895', '1610.04992']
+Arxiv ID: 1807.03371
+
+
+Single-doc progress:  19%|██████████▏                                          | 48/250 [03:38<15:29,  4.60s/it]
+Query: How can fiber optic interferometry be used to enhance precision measurements in space-based astronomical instruments?
+Retrieved docs: ['1209.2704', '1201.2963', '1403.6841', '0905.2135', '1012.1146', '0901.2165', '1312.3835', '1204.4363', '1104.2899', '1203.5075']
+Arxiv ID: 1411.6910
+
+Single-doc progress:  20%|██████████▍                                          | 49/250 [03:42<14:38,  4.37s/it]
+Query: How does a star cluster's half-mass radius respond to changes in the gravitational potential when it is accreted from a dwarf galaxy into a larger galaxy like the Milky Way?
+Retrieved docs: ['1409.5150', '1208.0340', '1009.0283', '1309.7352', '0909.5696', '0706.3149', '1008.4991', '1110.5362', '0905.1593', '0707.1533']
+Arxiv ID: 1409.5150
+
+Single-doc progress:  20%|██████████▌                                          | 50/250 [03:46<14:07,  4.24s/it]
+Query: What strategies can be implemented to ensure that a PhD in astronomy provides valuable skills and experience applicable to careers both within and outside of academic research?
+Retrieved docs: ['0712.2820', '1006.4421', '1209.3470', '1204.5632', '1009.6027', '1006.5451', '0802.0262', '1004.4148', '0810.2811', '0904.2571']
+Arxiv ID: 1209.3470
+
+Single-doc progress:  20%|██████████▊                                          | 51/250 [03:50<14:05,  4.25s/it]
+Query: What insights can UV spectral observations provide about the dynamics of solar jets that are not visible in EUV imaging?
+Retrieved docs: ['1602.00151', '1610.08149', '1607.02108', '0906.4407', '1008.3983', '1310.8106', '1501.04829', '1207.1281', '1310.7853', '1305.0902']
+Arxiv ID: 1610.08149
+Rank: 2
+Query: What role do Population III.2 stars potentially play in the chemical enrichment of the early universe?
+Retrieved docs: ['0807.4634', '0707.1433', '0901.0711', '0902.4573', '0808.0524', '0806.2663', '0708.3848', '0801.3698', '0809.2827', '0801.2124']
+Arxiv ID: 0902.4573
+
+
+Single-doc progress:  21%|███████████▏                                         | 53/250 [03:56<11:46,  3.59s/it]
+Query: How do the structural and dynamical properties of massive galaxies at high redshifts relate to the concept of fundamental planes in galaxy formation?
+Retrieved docs: ['1103.4214', '1010.4177', '0808.2642', '1005.5645', '0910.4007', '0906.4786', '0906.0373', '0803.4003', '0905.2586', '0912.4579']
+Arxiv ID: 1103.4214
+
+Single-doc progress:  22%|███████████▍                                         | 54/250 [04:00<12:09,  3.72s/it]
+Query: How does the spatial distribution of first-generation and second-generation stars in globular clusters affect the evolution of their respective mass functions?
+Retrieved docs: ['0807.4233', '0810.5345', '1212.2651', '1003.5921', '1007.1668', '0809.1438', '1504.06509', '1803.02381', '1302.0329', '1012.0477']
+Arxiv ID: 1803.02381
+
+Single-doc progress:  22%|███████████▋                                         | 55/250 [04:03<12:04,  3.72s/it]
+Query: How do observational constraints from cosmic microwave background data and measurements of large-scale structure affect the viability of different k-inflation models in cosmology?
+Retrieved docs: ['1007.2396', '0902.1529', '0912.0522', '0810.3022', '0712.1815', '0706.1982', '1104.1565', '0706.3887', '0910.2167', '0807.3037']
+Arxiv ID: 1104.1565
+Rank: 7
+Query: What is the expected range of spin-independent cross-sections for neutralino dark matter interactions with nucleons, and how does this inform the prospects for direct detection experiments?
+Retrieved docs: ['1009.3934', '0105.233', '0712.3151', '1009.0008', '0808.3384', '0807.1634', '1007.4812', '0903.3300', '0903.4320', '0405.414']
+Arxiv ID: 1009.3934
+
+
+Single-doc progress:  23%|████████████                                         | 57/250 [04:12<12:44,  3.96s/it]
+Query: How does tidal heating influence the potential for subsurface oceans on icy moons beyond the traditional habitable zone?
+Retrieved docs: ['2003.09231', '1502.07090', '1703.02447', '1706.04682', '1806.06822', '0912.1907', '1601.00789', '1804.07727', '1509.07452', '1711.09908']
+Arxiv ID: 2003.09231
+
+Single-doc progress:  23%|████████████▎                                        | 58/250 [04:16<13:01,  4.07s/it]
+Query: What is the estimated space density of high-redshift quasars at absolute magnitude M₁₄₅₀ ≈ -27?
+Retrieved docs: ['1207.2154', '1207.1515', '1212.4493', '1107.1254', '1610.01619', '1107.1946', '1006.1342', '0910.1843', '1607.04415', '1107.2598']
+Arxiv ID: 1803.01424
+Rank: Not found
+Query: How does the broadening of the Lyman-alpha line due to collisions between hydrogen atoms and molecules affect the spectra of cool white dwarf stars?
+Retrieved docs: ['1009.3254', '0904.0983', '0708.3795', '0902.4182', '0707.4138', '0707.3649', '0908.2919', '0705.2619', '1009.4697', '0810.5556']
+Arxiv ID: 1009.3254
+
+
+Single-doc progress:  24%|████████████▋                                        | 60/250 [04:24<13:20,  4.21s/it]
+Query: What mechanisms could explain the presence of metal-enriched cool gas in the outskirts of galaxy clusters?
+Retrieved docs: ['1801.05425', '0907.3800', '1701.08164', '1407.5729', '0705.1921', '0802.0975', '1904.02318', '0802.2224', '1809.09104', '2111.04755']
+Arxiv ID: 2201.08545
+Rank: Not found
+Query: How does the geometry of an AGN corona affect its X-ray polarization signal?
+Retrieved docs: ['2112.11268', '1710.00247', '0912.0907', '1807.11439', '1411.4806', '1804.08874', '1604.07562', '1709.03304', '1204.0940', '2003.12831']
+Arxiv ID: 2112.11268
+
+Single-doc progress:  24%|████████████▉                                        | 61/250 [04:29<13:56,  4.42s/it]
+Query: What impact does a slightly anisotropic large-scale spatial geometry of the universe have on the quadrupole amplitude in cosmic microwave background observations?
+Retrieved docs: ['1103.2658', '0912.1913', '0706.3802', '1401.5627', '1909.05111', '1108.3643', '1307.4542', '0708.1881', '1505.00794', '1603.04291']
+Arxiv ID: 1909.05111
+
+
+Single-doc progress:  25%|█████████████▎                                       | 63/250 [04:36<12:06,  3.88s/it]
+Query: What observational constraints beyond abundance and correlation functions could improve our understanding of the relationship between galaxy stellar mass and host subhalo mass?
+Retrieved docs: ['1103.3272', '1103.2077', '1003.2755', '0909.4305', '1012.1317', '0706.4371', '1103.1635', '0911.1864', '1005.3022', '0711.4587']
+Arxiv ID: 1103.3272
+
+Single-doc progress:  26%|█████████████▌                                       | 64/250 [04:40<11:48,  3.81s/it]
+Query: How does the strength of meridional circulation in rapidly rotating stars compare to that in slower rotating stars like the Sun, and what implications might this have for stellar dynamo models?
+Retrieved docs: ['0801.1684', '0801.1672', '0712.1603', '0707.3943', '0711.3474', '0704.1275', '0406.418', '0303.631', '0712.2780', '0704.1502']
+Arxiv ID: 0801.1672
+Rank: 2
+Query: How can the hierarchical relationship between the Galaxy and its stars be leveraged to improve our understanding of stellar properties and interstellar extinction?
+Retrieved docs: ['1208.4946', '0604.427', '0804.2465', '1111.1724', '1010.2239', '1009.5997', '0909.3019', '1001.1424', '0910.4403', '0807.1109']
+Arxiv ID: 1208.4946
+
+
+Single-doc progress:  26%|█████████████▉                                       | 66/250 [04:47<11:45,  3.83s/it]
+Query: How many gravitational wave events are needed to effectively constrain the preferred direction of cosmic anisotropy?
+Retrieved docs: ['1802.00642', '1712.00952', '1608.08008', '1108.1317', '1511.05146', '1602.03883', '1604.00332', '1508.02393', '1711.11345', '1710.04825']
+Arxiv ID: 1802.00642
+Rank: 1
+Query: How does relativistic turbulence in hot plasma affect the intermittency of astrophysical flows compared to classical turbulence models?
+Retrieved docs: ['1108.1991', '1209.2936', '1109.6294', '1011.6350', '1005.4485', '1003.3697', '1012.5125', '1004.2714', '0910.1117', '0912.1340']
+Arxiv ID: 1209.2936
+
+Single-doc progress:  27%|██████████████▏                                      | 67/250 [04:51<11:38,  3.82s/it]
+Query: What effect does radiation-driven warping have on the stability and behavior of accretion discs in X-ray binary systems with long orbital periods?
+Retrieved docs: ['astro-ph0009264_arXiv.txt', '1001.1520', 'astro-ph9811056_arXiv.txt', 'astro-ph0601126_arXiv.txt', 'astro-ph9803238_arXiv.txt', 'astro-ph9612110_arXiv.txt', 'astro-ph9612111_arXiv.txt', '1410.8128', '2211.03863', 'astro-ph9708147_arXiv.txt']
+
+Single-doc progress:  27%|██████████████▍                                      | 68/250 [04:57<13:36,  4.49s/it]
+Rank: 1
+Query: What is the impact of the "uber gravity" theory on the Hubble tension when compared to standard cosmological models?
+Retrieved docs: ['2301.10861', '2301.09382', '2011.13853', '2103.01183', '2010.04158', '2301.07044', '2209.02426', '2205.05422', '2107.13286', '2110.04226']
+Arxiv ID: 2301.07044
+
+Single-doc progress:  28%|██████████████▋                                      | 69/250 [05:03<14:42,  4.88s/it]
+Query: How does interstellar medium absorption affect the measurement and interpretation of exoplanet atmospheres using transit spectroscopy?
+Retrieved docs: ['1711.01278', '1701.05564', '1804.07357', '1803.08708', '1504.05223', '1810.04175', '1407.2066', '1908.05375', '1808.10017', '1705.00625']
+Arxiv ID: 1908.05375
+
+
+Single-doc progress:  28%|███████████████                                      | 71/250 [05:14<15:37,  5.24s/it]
+Query: How does the size of dust grains in circumstellar envelopes affect the ability to determine their properties from infrared spectral energy distributions?
+Retrieved docs: ['astro-ph0312276_arXiv.txt', '1909.05015', 'astro-ph0209281_arXiv.txt', '2008.07919', '1010.2769', 'astro-ph0109048_arXiv.txt', 'astro-ph0306479_arXiv.txt', '2205.07591', '1802.07517', '1308.4284']
+Arxiv ID: astro-ph0312276_arXiv.txt
+Rank: 1
+Query: What spectral properties distinguish the two classes of Kuiper Belt Objects observed in optical-near infrared color space?
+Retrieved docs: ['1202.0827', '1702.02615', '1502.04145', '2104.00028', '2206.04068', '1308.0014', '1109.0298', '0808.3025', '1112.2764', '1004.3059']
+Arxiv ID: 2206.04068
+
+Single-doc progress:  29%|███████████████▎                                     | 72/250 [05:18<15:02,  5.07s/it]
+Query: How does the coupling between the inflaton and spectator fields during inflation affect the initial conditions for cosmic microwave background evolution?
+Retrieved docs: ['1907.13564', '1903.09599', '1411.7237', '1406.0249', '1010.3021', '1310.8285', '1812.03340', '1304.0363', '0809.5142', '1301.2630']
+Arxiv ID: 1907.13564
+
+
+Single-doc progress:  30%|███████████████▋                                     | 74/250 [05:26<12:52,  4.39s/it]
+Query: How does the braking index of a pulsar relate to its potential evolution into a magnetar?
+Retrieved docs: ['1109.2740', '1105.5019', '1001.2483', '1003.0808', '0709.2549', '1008.3693', '0704.2141', '0910.2701', '1104.0526', '0706.2573']
+Arxiv ID: 1109.2740
+
+Single-doc progress:  30%|███████████████▉                                     | 75/250 [05:32<13:47,  4.73s/it]
+Query: How do the observed colors of globular clusters in the SDSS ugriz filter system compare to predictions from stellar population synthesis models?
+Retrieved docs: ['1105.3365', '1001.2624', '0911.0791', '0904.0002', '0807.1862', '0801.2375', '0911.3156', '0905.0810', '0905.3743', '0709.1073']
+Arxiv ID: 1105.3365
+Rank: 1
+Query: How does the precession of binary systems affect the detection rate of gravitational wave signals from inspiraling compact objects?
+Retrieved docs: ['gr-qc0207062_arXiv.txt', '1203.6060', '2006.16153', '1304.3332', '1712.02992', 'gr-qc0312084_arXiv.txt', 'gr-qc0608062_arXiv.txt', '2211.07528', '2206.11932', '2207.14645']
+Arxiv ID: gr-qc0207062_arXiv.txt
+
+Single-doc progress:  30%|████████████████                                     | 76/250 [05:37<14:28,  4.99s/it]
+Query: What is the composition of the quiescent corona in RS CVn-type binary systems, particularly regarding the abundance of high and low first ionization potential elements?
+Retrieved docs: ['1012.0343', '1502.04259', '1212.0214', '1504.08325', '0907.2151', '1807.04408', '0712.0482', '1512.04447', '0802.0326', '1005.3281']
+Arxiv ID: 2210.07170
+
+Single-doc progress:  31%|████████████████▎                                    | 77/250 [05:43<14:41,  5.10s/it]
+Query: How does the migration of the water snow line in protoplanetary disks differ between magnetically accreting laminar disks and conventional viscous disk models?
+Retrieved docs: ['2105.13101', '1106.2682', '1903.06746', '1511.06762', '1505.03516', '1906.07708', '1207.4284', '1903.02488', '1610.06463', '1908.02513']
+Arxiv ID: 2105.13101
+
+
+Single-doc progress:  32%|████████████████▋                                    | 79/250 [05:50<12:16,  4.31s/it]
+Query: What numerical method can prevent instabilities when simulating magnetohydrodynamic processes in accretion disks?
+Retrieved docs: ['0804.0402', '0903.3274', '0109.497', '0705.2283', '0812.3748', '0710.0424', '0705.3621', '0705.4090', '0704.3206', '0905.2960']
+Arxiv ID: 0906.5516
+
+Single-doc progress:  32%|████████████████▉                                    | 80/250 [05:54<12:07,  4.28s/it]
+Query: What role does the gas fraction play in determining the evolutionary stage of massive submillimeter galaxies at high redshifts?
+Retrieved docs: ['1202.2096', '1311.3670', '1201.3826', '1205.1511', '1309.3281', '1101.4022', '0503.055', '1405.3664', '1008.0389', '1209.3665']
+Arxiv ID: 1701.01121
+Rank: Not found
+Query: How does the AdS/CFT correspondence potentially influence the spectrum of primordial gravitational waves during cosmic inflation?
+Retrieved docs: ['1610.01963', '1001.2007', '0904.0554', '1404.6672', '1309.7344', '1307.3010', '1410.0016', '0902.0145', '1503.05560', '1112.0084']
+Arxiv ID: 1610.01963
+
+Single-doc progress:  32%|█████████████████▏                                   | 81/250 [05:59<12:14,  4.34s/it]
+Query: How do stellar rotation rates affect the acceleration and mass loss characteristics of line-driven winds in massive stars?
+Retrieved docs: ['1610.02248', '1503.07494', 'astro-ph0611430_arXiv.txt', '1904.05089', '1402.5929', 'astro-ph0006405_arXiv.txt', '1109.6171', 'astro-ph0006404_arXiv.txt', '1407.0946', '1207.0822']
+Arxiv ID: astro-ph0702007_arXiv.txt
+
+Single-doc progress:  33%|█████████████████▍                                   | 82/250 [06:05<13:39,  4.88s/it]
+Query: How does the spatial clustering of K-selected galaxies at high redshifts relate to their color properties?
+Retrieved docs: ['0606.330', '0209.445', '0603.688', '0402.401', '0412.004', '0502.539', '0509.564', '0508.195', '0601.717', '0510.371']
+Arxiv ID: 0606.330
+
+Single-doc progress:  33%|█████████████████▌                                   | 83/250 [06:25<26:23,  9.48s/it]
+Query: How do the star formation histories of dwarf galaxies observed at different redshifts compare in terms of their color evolution and burst patterns?
+Retrieved docs: ['1101.1093', '2211.16527', '1408.5788', 'astro-ph0208141_arXiv.txt', '1403.6198', 'astro-ph0505123_arXiv.txt', '1210.0543', 'astro-ph0001398_arXiv.txt', '0808.2642', 'astro-ph0401500_arXiv.txt']
+Arxiv ID: astro-ph0601561_arXiv.txt
+
+
+Single-doc progress:  34%|██████████████████                                   | 85/250 [06:35<19:05,  6.94s/it]
+Query: What is the relationship between the energy scale of cosmic inflation and the scale of supersymmetric gauge coupling unification?
+Retrieved docs: ['1412.3764', '1407.6010', '1108.0070', '1408.3966', '1008.5157', '1008.5258', '1408.4864', '1410.8845', '0707.3350', '1102.2898']
+Arxiv ID: 1412.3764
+
+Single-doc progress:  34%|██████████████████▏                                  | 86/250 [06:39<16:37,  6.08s/it]
+Query: How does mutual coupling between antenna elements affect polarization measurements in low-frequency radio astronomy arrays?
+Retrieved docs: ['1009.5653', '1412.4466', '1208.1247', '0802.4151', '1102.5274', '1005.1926', '1401.4152', '0901.4720', '0806.3096', '1003.2497']
+Arxiv ID: 1412.4466
+Rank: 2
+Query: What effect does the suppression of convective blueshift have on the detection of low-mass exoplanets using stellar radial velocity measurements?
+Retrieved docs: ['1910.09038', '1708.03458', '0909.0470', '1904.03200', '1904.01437', '1707.07983', '1205.5812', '1005.4764', '1711.02331', '1711.01318']
+Arxiv ID: 1910.09038
+
+Single-doc progress:  35%|██████████████████▍                                  | 87/250 [06:43<15:21,  5.65s/it]
+Query: How does the coherence function in the Fourier spectra of black hole candidates evolve during the rising phase of an outburst, and what might this indicate about the nature of the Comptonizing region?
+Retrieved docs: ['astro-ph9610257_arXiv.txt', '1611.04401', 'astro-ph9703113_arXiv.txt', 'astro-ph0001095_arXiv.txt', 'astro-ph0301053_arXiv.txt', '1703.04322', '1710.04810', '2206.14410', 'astro-ph0002415_arXiv.txt', 'astro-ph0312445_arXiv.txt']
+Arxiv ID: astro-ph0001095_arXiv.txt
+
+Single-doc progress:  35%|██████████████████▋                                  | 88/250 [06:49<15:37,  5.79s/it]
+Query: How does the transition from atomic to molecular hydrogen in interstellar gas clouds depend on the intensity of the far-ultraviolet radiation field and the metallicity of the gas?
+Retrieved docs: ['1512.05523', '0811.0004', '1404.5042', '0810.4148', '1409.6724', '1101.1296', '1011.4065', '1212.4433', '1011.3054', '1305.7365']
+Arxiv ID: 1601.02608
+
+Single-doc progress:  36%|██████████████████▊                                  | 89/250 [06:53<14:01,  5.22s/it]
+Query: How does the Stokes V line ratio of different spectral line pairs vary between disk center and solar limb, and what does this reveal about the intrinsic strengths of quiet Sun magnetic fields?
+Retrieved docs: ['1202.4040', '0710.1099', '1202.0593', '1202.5436', '0711.0408', '1212.2190', '0908.2731', '1212.0788', '1307.1117', '1209.6225']
+Arxiv ID: 1307.1117
+
+Single-doc progress:  36%|███████████████████                                  | 90/250 [06:57<12:32,  4.70s/it]
+Query: How does the cascade annihilation process of vector dark matter in a hidden sector contribute to the observed gamma-ray excess from the Galactic center?
+Retrieved docs: ['1709.07002', '1405.5204', '1409.3227', '1403.5027', '1503.01773', '1404.4977', '1404.3716', '1404.0022', '1110.0006', '1605.05327']
+Arxiv ID: 1806.05663
+
+Single-doc progress:  36%|███████████████████▎                                 | 91/250 [07:01<11:45,  4.44s/it]
+Query: What equation of state is most suitable for accurately simulating relativistic astrophysical flows that involve transitions between relativistic bulk speeds and relativistic temperatures?
+Retrieved docs: ['0704.1679', '1009.3774', 'astro-ph0605550_arXiv.txt', '1102.3223', '1506.01562', '1103.3330', 'astro-ph0407100_arXiv.txt', '1407.2130', '1301.6052', '1504.04370']
+Arxiv ID: astro-ph0605550_arXiv.txt
+
+
+Single-doc progress:  37%|███████████████████▋                                 | 93/250 [07:12<13:02,  4.99s/it]
+Query: What is the expected neutrino detection rate from a Type IIn superluminous supernova by current observatories?
+Retrieved docs: ['1705.06752', '1006.0490', '1605.01408', '1705.04750', '1812.01428', '1706.08410', '1704.00456', '1910.12971', '2003.03982', '1904.09996']
+Arxiv ID: 2110.06944
+Rank: Not found
+Query: What is the typical spatial distribution of low-mass X-ray binaries in the outer regions of early-type galaxies compared to the distribution of stellar light?
+Retrieved docs: ['1211.0399', '0906.5364', '1202.2331', '1102.4358', '1103.4486', '0805.0259', '0710.5126', '0806.0626', '1105.2561', '1105.4610']
+Arxiv ID: 1211.0399
+
+
+Single-doc progress:  38%|████████████████████▏                                | 95/250 [07:18<10:38,  4.12s/it]
+Query: How does the incorporation of rapid rotation in stellar models affect the estimated age and mass of bright, nearby stars?
+Retrieved docs: ['1109.0993', '1203.5109', '0906.1590', '1211.3742', '1109.6171', '1110.5049', '1203.1618', '1012.1707', '0704.1275', '0711.2209']
+Arxiv ID: 1211.6055
+
+Single-doc progress:  38%|████████████████████▎                                | 96/250 [07:22<10:13,  3.99s/it]
+Query: How does the peak frequency of a blazar's spectral energy distribution relate to its spectral curvature?
+Retrieved docs: ['1405.1140', '1107.0597', '0912.3766', '1204.5552', '0803.0654', '1107.1879', '0802.1918', '0810.0145', '1409.2963', '1110.2904']
+Arxiv ID: 1409.2963
+Single-doc progress:  38%|████████████████████▎                                | 96/250 [07:25<11:53,  4.64s/it]
+Traceback (most recent call last):
+  File "/Users/christineye/retrieval/src/hyde.py", line 122, in <module>
+    main()
+  File "/Users/christineye/retrieval/src/hyde.py", line 114, in main
+    evaluate_main(retrieval_system, "BaseHyDE")
+  File "/Users/christineye/retrieval/src/../evaluation/evaluate.py", line 140, in main
+    results = evaluator.evaluate('../data/single_paper.json', '../data/multi_paper.json', top_k=10)
+  File "/Users/christineye/retrieval/src/../evaluation/evaluate.py", line 26, in evaluate
+    single_results = self._evaluate_single_document(single_doc_file, top_k)
+  File "/Users/christineye/retrieval/src/../evaluation/evaluate.py", line 54, in _evaluate_single_document
+    retrieved_docs = self.retrieval_system.retrieve(query, arxiv_id, top_k=top_k)
+  File "/Users/christineye/retrieval/src/hyde.py", line 49, in retrieve
+    doc_embeddings = self.embed_docs(docs)
+  File "/Users/christineye/retrieval/src/hyde.py", line 105, in embed_docs
+    vecs = self.client.embed_batch(docs)
+  File "/Users/christineye/retrieval/src/vector_store.py", line 22, in embed_batch
+    embeddings = self.client.embeddings.create(input=texts, model=self.model).data
+  File "/Users/christineye/anaconda3/envs/jsalt-retrieval/lib/python3.10/site-packages/openai/resources/embeddings.py", line 114, in create
+    return self._post(
+  File "/Users/christineye/anaconda3/envs/jsalt-retrieval/lib/python3.10/site-packages/openai/_base_client.py", line 1250, in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+  File "/Users/christineye/anaconda3/envs/jsalt-retrieval/lib/python3.10/site-packages/openai/_base_client.py", line 931, in request
+    return self._request(
+  File "/Users/christineye/anaconda3/envs/jsalt-retrieval/lib/python3.10/site-packages/openai/_base_client.py", line 962, in _request
+    response = self._client.send(
+  File "/Users/christineye/anaconda3/envs/jsalt-retrieval/lib/python3.10/site-packages/httpx/_client.py", line 914, in send
+    response = self._send_handling_auth(
+  File "/Users/christineye/anaconda3/envs/jsalt-retrieval/lib/python3.10/site-packages/httpx/_client.py", line 942, in _send_handling_auth
+    response = self._send_handling_redirects(
+  File "/Users/christineye/anaconda3/envs/jsalt-retrieval/lib/python3.10/site-packages/httpx/_client.py", line 979, in _send_handling_redirects
+    response = self._send_single_request(request)
+  File "/Users/christineye/anaconda3/envs/jsalt-retrieval/lib/python3.10/site-packages/httpx/_client.py", line 1015, in _send_single_request
+    response = transport.handle_request(request)
+  File "/Users/christineye/anaconda3/envs/jsalt-retrieval/lib/python3.10/site-packages/httpx/_transports/default.py", line 233, in handle_request
+    resp = self._pool.handle_request(req)
+  File "/Users/christineye/anaconda3/envs/jsalt-retrieval/lib/python3.10/site-packages/httpcore/_sync/connection_pool.py", line 216, in handle_request
+    raise exc from None
+  File "/Users/christineye/anaconda3/envs/jsalt-retrieval/lib/python3.10/site-packages/httpcore/_sync/connection_pool.py", line 196, in handle_request
+    response = connection.handle_request(
+  File "/Users/christineye/anaconda3/envs/jsalt-retrieval/lib/python3.10/site-packages/httpcore/_sync/connection.py", line 101, in handle_request
+    return self._connection.handle_request(request)
+  File "/Users/christineye/anaconda3/envs/jsalt-retrieval/lib/python3.10/site-packages/httpcore/_sync/http11.py", line 143, in handle_request
+    raise exc
+  File "/Users/christineye/anaconda3/envs/jsalt-retrieval/lib/python3.10/site-packages/httpcore/_sync/http11.py", line 113, in handle_request
+    ) = self._receive_response_headers(**kwargs)
+  File "/Users/christineye/anaconda3/envs/jsalt-retrieval/lib/python3.10/site-packages/httpcore/_sync/http11.py", line 186, in _receive_response_headers
+    event = self._receive_event(timeout=timeout)
+  File "/Users/christineye/anaconda3/envs/jsalt-retrieval/lib/python3.10/site-packages/httpcore/_sync/http11.py", line 224, in _receive_event
+    data = self._network_stream.read(
+  File "/Users/christineye/anaconda3/envs/jsalt-retrieval/lib/python3.10/site-packages/httpcore/_backends/sync.py", line 126, in read
+    return self._sock.recv(max_bytes)
+  File "/Users/christineye/anaconda3/envs/jsalt-retrieval/lib/python3.10/ssl.py", line 1258, in recv
+    return self.read(buflen)
+  File "/Users/christineye/anaconda3/envs/jsalt-retrieval/lib/python3.10/ssl.py", line 1131, in read
+    return self._sslobj.read(len)
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "/Users/christineye/retrieval/src/hyde.py", line 122, in <module>
+    main()
+  File "/Users/christineye/retrieval/src/hyde.py", line 114, in main
+    evaluate_main(retrieval_system, "BaseHyDE")
+  File "/Users/christineye/retrieval/src/../evaluation/evaluate.py", line 140, in main
+    results = evaluator.evaluate('../data/single_paper.json', '../data/multi_paper.json', top_k=10)
+  File "/Users/christineye/retrieval/src/../evaluation/evaluate.py", line 26, in evaluate
+    single_results = self._evaluate_single_document(single_doc_file, top_k)
+  File "/Users/christineye/retrieval/src/../evaluation/evaluate.py", line 54, in _evaluate_single_document
+    retrieved_docs = self.retrieval_system.retrieve(query, arxiv_id, top_k=top_k)
+  File "/Users/christineye/retrieval/src/hyde.py", line 49, in retrieve
+    doc_embeddings = self.embed_docs(docs)
+  File "/Users/christineye/retrieval/src/hyde.py", line 105, in embed_docs
+    vecs = self.client.embed_batch(docs)
+  File "/Users/christineye/retrieval/src/vector_store.py", line 22, in embed_batch
+    embeddings = self.client.embeddings.create(input=texts, model=self.model).data
+  File "/Users/christineye/anaconda3/envs/jsalt-retrieval/lib/python3.10/site-packages/openai/resources/embeddings.py", line 114, in create
+    return self._post(
+  File "/Users/christineye/anaconda3/envs/jsalt-retrieval/lib/python3.10/site-packages/openai/_base_client.py", line 1250, in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+  File "/Users/christineye/anaconda3/envs/jsalt-retrieval/lib/python3.10/site-packages/openai/_base_client.py", line 931, in request
+    return self._request(
+  File "/Users/christineye/anaconda3/envs/jsalt-retrieval/lib/python3.10/site-packages/openai/_base_client.py", line 962, in _request
+    response = self._client.send(
+  File "/Users/christineye/anaconda3/envs/jsalt-retrieval/lib/python3.10/site-packages/httpx/_client.py", line 914, in send
+    response = self._send_handling_auth(
+  File "/Users/christineye/anaconda3/envs/jsalt-retrieval/lib/python3.10/site-packages/httpx/_client.py", line 942, in _send_handling_auth
+    response = self._send_handling_redirects(
+  File "/Users/christineye/anaconda3/envs/jsalt-retrieval/lib/python3.10/site-packages/httpx/_client.py", line 979, in _send_handling_redirects
+    response = self._send_single_request(request)
+  File "/Users/christineye/anaconda3/envs/jsalt-retrieval/lib/python3.10/site-packages/httpx/_client.py", line 1015, in _send_single_request
+    response = transport.handle_request(request)
+  File "/Users/christineye/anaconda3/envs/jsalt-retrieval/lib/python3.10/site-packages/httpx/_transports/default.py", line 233, in handle_request
+    resp = self._pool.handle_request(req)
+  File "/Users/christineye/anaconda3/envs/jsalt-retrieval/lib/python3.10/site-packages/httpcore/_sync/connection_pool.py", line 216, in handle_request
+    raise exc from None
+  File "/Users/christineye/anaconda3/envs/jsalt-retrieval/lib/python3.10/site-packages/httpcore/_sync/connection_pool.py", line 196, in handle_request
+    response = connection.handle_request(
+  File "/Users/christineye/anaconda3/envs/jsalt-retrieval/lib/python3.10/site-packages/httpcore/_sync/connection.py", line 101, in handle_request
+    return self._connection.handle_request(request)
+  File "/Users/christineye/anaconda3/envs/jsalt-retrieval/lib/python3.10/site-packages/httpcore/_sync/http11.py", line 143, in handle_request
+    raise exc
+  File "/Users/christineye/anaconda3/envs/jsalt-retrieval/lib/python3.10/site-packages/httpcore/_sync/http11.py", line 113, in handle_request
+    ) = self._receive_response_headers(**kwargs)
+  File "/Users/christineye/anaconda3/envs/jsalt-retrieval/lib/python3.10/site-packages/httpcore/_sync/http11.py", line 186, in _receive_response_headers
+    event = self._receive_event(timeout=timeout)
+  File "/Users/christineye/anaconda3/envs/jsalt-retrieval/lib/python3.10/site-packages/httpcore/_sync/http11.py", line 224, in _receive_event
+    data = self._network_stream.read(
+  File "/Users/christineye/anaconda3/envs/jsalt-retrieval/lib/python3.10/site-packages/httpcore/_backends/sync.py", line 126, in read
+    return self._sock.recv(max_bytes)
+  File "/Users/christineye/anaconda3/envs/jsalt-retrieval/lib/python3.10/ssl.py", line 1258, in recv
+    return self.read(buflen)
+  File "/Users/christineye/anaconda3/envs/jsalt-retrieval/lib/python3.10/ssl.py", line 1131, in read
+    return self._sslobj.read(len)
+KeyboardInterrupt
