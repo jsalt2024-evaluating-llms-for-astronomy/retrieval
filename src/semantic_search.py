@@ -62,18 +62,18 @@ class EmbeddingRetrievalSystem(RetrievalSystem):
         
         print("Data loaded successfully.")
 
-    def retrieve(self, query: str, arxiv_id: str, top_k: int = 10) -> List[Tuple[str, str, float]]:
+    def retrieve(self, query: str, arxiv_id: str, top_k: int = 10, return_scores = False) -> List[Tuple[str, str, float]]:
         query_date = self.parse_date(arxiv_id)
         
         # Get the query embedding
         query_embedding = self.get_query_embedding(query)
         
         query_date = self.parse_date(arxiv_id)
-        top_results = self.rank_and_filter(query_embedding, query_date, top_k)
+        top_results = self.rank_and_filter(query_embedding, query_date, top_k, return_scores = return_scores)
         
         return top_results
     
-    def rank_and_filter(self, query_embedding: np.ndarray, query_date, top_k: int = 10) -> List[Tuple[str, str, float]]:
+    def rank_and_filter(self, query_embedding: np.ndarray, query_date, top_k: int = 10, return_scores = False) -> List[Tuple[str, str, float]]:
         # Calculate similarities
         similarities = np.dot(self.embeddings, query_embedding)  #cosine_similarity([query_embedding], self.embeddings)[0]
         
@@ -91,10 +91,12 @@ class EmbeddingRetrievalSystem(RetrievalSystem):
         
         # Sort and get top-k results
         top_results = sorted(filtered_results, key=lambda x: x[2], reverse=True)[:top_k]
+        
+        if return_scores:
+            return {doc_id: score for doc_id, _, score in top_results}
 
         # Only keep the document IDs
         top_results = [doc_id for doc_id, _, _ in top_results]
-
         return top_results
 
     def get_query_embedding(self, query: str) -> np.ndarray:
