@@ -90,11 +90,12 @@ class HydeRetrievalSystem(EmbeddingRetrievalSystem):
         return vecs
 
 def main():
+    path = "../data/vector_store/"
     retrieval_system = HydeRetrievalSystem(dataset_path = "charlieoneill/jsalt-astroph-dataset",
-                         embeddings_path = "/users/christineye/retrieval/data/vector_store/embeddings_matrix.npy",
-                         documents_path = "/users/christineye/retrieval/data/vector_store/documents.pkl",
-                         index_mapping_path = "/users/christineye/retrieval/data/vector_store/index_mapping.pkl", config_path = "/users/christineye/retrieval/config.yaml", 
-                                     generate_n = 1, embed_query = False, max_doclen = 300)
+                         embeddings_path = f"{path}embeddings_matrix.npy",
+                         documents_path = f"{path}documents.pkl",
+                         index_mapping_path = f"{path}index_mapping.pkl", 
+                         config_path = "../config.yaml", generate_n = 1, embed_query = False, max_doclen = 300)
     evaluate_main(retrieval_system, "BaseHyDE")
 
 if __name__ == "__main__":
