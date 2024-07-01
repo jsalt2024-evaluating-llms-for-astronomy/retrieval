@@ -14,3 +14,4 @@ beautifulsoup4
 matplotlib
 requests
 transformers
+openai
