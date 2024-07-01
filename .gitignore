@@ -1,4 +1,5 @@
 config.yaml
+*.ipynb_checkpoints
 # Anything ending in pkl
 *.pkl
 # Any pycache

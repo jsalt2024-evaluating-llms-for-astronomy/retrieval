@@ -1,0 +1,45 @@
+{
+    "os": "macOS-10.16-x86_64-i386-64bit",
+    "python": "3.10.0",
+    "heartbeatAt": "2024-07-01T15:28:10.951258",
+    "startedAt": "2024-07-01T15:28:10.329076",
+    "docker": null,
+    "cuda": null,
+    "args": [],
+    "state": "running",
+    "program": "/Users/christineye/retrieval/src/hyde.py",
+    "codePathLocal": "hyde.py",
+    "codePath": "src/hyde.py",
+    "git": {
+        "remote": "https://github.com/jsalt2024-evaluating-llms-for-astronomy/retrieval.git",
+        "commit": "72e14baf384a8561fd15d4e260796ee46009c778"
+    },
+    "email": "christineye88@outlook.com",
+    "root": "/Users/christineye/retrieval",
+    "host": "Christines-MacBook-Pro-6.local",
+    "username": "christineye",
+    "executable": "/Users/christineye/anaconda3/envs/jsalt-retrieval/bin/python",
+    "cpu_count": 10,
+    "cpu_count_logical": 10,
+    "cpu_freq": {
+        "current": 2400,
+        "min": 2400,
+        "max": 2400
+    },
+    "cpu_freq_per_core": [
+        {
+            "current": 2400,
+            "min": 2400,
+            "max": 2400
+        }
+    ],
+    "disk": {
+        "/": {
+            "total": 926.3517189025879,
+            "used": 21.808856964111328
+        }
+    },
+    "memory": {
+        "total": 64.0
+    }
+}

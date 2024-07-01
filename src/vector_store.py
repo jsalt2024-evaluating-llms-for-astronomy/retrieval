@@ -18,6 +18,10 @@ class EmbeddingClient:
         embedding = self.client.embeddings.create(input=[text], model=self.model).data[0].embedding
         return np.array(embedding, dtype=np.float32)
 
+    def embed_batch(self, texts: List[str]) -> List[np.ndarray]:
+        embeddings = self.client.embeddings.create(input=texts, model=self.model).data
+        return [np.array(embedding.embedding, dtype=np.float32) for embedding in embeddings]
+
 @dataclass
 class Document:
     id: str
