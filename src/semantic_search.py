@@ -68,6 +68,12 @@ class EmbeddingRetrievalSystem(RetrievalSystem):
         # Get the query embedding
         query_embedding = self.get_query_embedding(query)
         
+        query_date = self.parse_date(arxiv_id)
+        top_results = self.rank_and_filter(query_embedding, query_date, top_k)
+        
+        return top_results
+    
+    def rank_and_filter(self, query_embedding: np.ndarray, query_date, top_k: int = 10) -> List[Tuple[str, str, float]]:
         # Calculate similarities
         similarities = np.dot(self.embeddings, query_embedding)  #cosine_similarity([query_embedding], self.embeddings)[0]
         
@@ -88,7 +94,7 @@ class EmbeddingRetrievalSystem(RetrievalSystem):
 
         # Only keep the document IDs
         top_results = [doc_id for doc_id, _, _ in top_results]
-        
+
         return top_results
 
     def get_query_embedding(self, query: str) -> np.ndarray:

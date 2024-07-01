@@ -1,0 +1,49 @@
+2024-07-01 11:39:22,256 INFO    StreamThr :4907 [internal.py:wandb_internal():85] W&B internal server running at pid: 4907, started at: 2024-07-01 11:39:22.254985
+2024-07-01 11:39:22,257 DEBUG   HandlerThread:4907 [handler.py:handle_request():158] handle_request: status
+2024-07-01 11:39:22,260 INFO    WriterThread:4907 [datastore.py:open_for_write():87] open: /Users/christineye/retrieval/src/wandb/run-20240701_113922-a7k43ljo/run-a7k43ljo.wandb
+2024-07-01 11:39:22,260 DEBUG   SenderThread:4907 [sender.py:send():379] send: header
+2024-07-01 11:39:22,300 DEBUG   SenderThread:4907 [sender.py:send():379] send: run
+2024-07-01 11:39:22,442 ERROR   SenderThread:4907 [internal_api.py:execute():344] 403 response executing GraphQL.
+2024-07-01 11:39:22,443 ERROR   SenderThread:4907 [internal_api.py:execute():345] {"errors":[{"message":"permission denied","path":["upsertBucket"],"extensions":{"code":"PERMISSION_ERROR"}}],"data":{"upsertBucket":null}}
+2024-07-01 11:39:22,443 ERROR   SenderThread:4907 [sender.py:send_run():1009] It appears that you do not have permission to access the requested resource. Please reach out to the project owner to grant you access. If you have the correct permissions, verify that there are no issues with your networking setup.(Error 403: Forbidden)
+Traceback (most recent call last):
+  File "/Users/christineye/anaconda3/envs/jsalt-retrieval/lib/python3.10/site-packages/wandb/sdk/lib/retry.py", line 131, in __call__
+    result = self._call_fn(*args, **kwargs)
+  File "/Users/christineye/anaconda3/envs/jsalt-retrieval/lib/python3.10/site-packages/wandb/sdk/internal/internal_api.py", line 340, in execute
+    return self.client.execute(*args, **kwargs)  # type: ignore
+  File "/Users/christineye/anaconda3/envs/jsalt-retrieval/lib/python3.10/site-packages/wandb/vendor/gql-0.2.0/wandb_gql/client.py", line 52, in execute
+    result = self._get_result(document, *args, **kwargs)
+  File "/Users/christineye/anaconda3/envs/jsalt-retrieval/lib/python3.10/site-packages/wandb/vendor/gql-0.2.0/wandb_gql/client.py", line 60, in _get_result
+    return self.transport.execute(document, *args, **kwargs)
+  File "/Users/christineye/anaconda3/envs/jsalt-retrieval/lib/python3.10/site-packages/wandb/sdk/lib/gql_request.py", line 59, in execute
+    request.raise_for_status()
+  File "/Users/christineye/anaconda3/envs/jsalt-retrieval/lib/python3.10/site-packages/requests/models.py", line 1024, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 403 Client Error: Forbidden for url: https://api.wandb.ai/graphql
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/christineye/anaconda3/envs/jsalt-retrieval/lib/python3.10/site-packages/wandb/sdk/internal/sender.py", line 1007, in send_run
+    server_run = self._init_run(run, config_value_dict)
+  File "/Users/christineye/anaconda3/envs/jsalt-retrieval/lib/python3.10/site-packages/wandb/sdk/internal/sender.py", line 1079, in _init_run
+    server_run, inserted, server_messages = self._api.upsert_run(
+  File "/Users/christineye/anaconda3/envs/jsalt-retrieval/lib/python3.10/site-packages/wandb/apis/normalize.py", line 73, in wrapper
+    raise err
+  File "/Users/christineye/anaconda3/envs/jsalt-retrieval/lib/python3.10/site-packages/wandb/apis/normalize.py", line 41, in wrapper
+    return func(*args, **kwargs)
+  File "/Users/christineye/anaconda3/envs/jsalt-retrieval/lib/python3.10/site-packages/wandb/sdk/internal/internal_api.py", line 2190, in upsert_run
+    response = self.gql(
+  File "/Users/christineye/anaconda3/envs/jsalt-retrieval/lib/python3.10/site-packages/wandb/sdk/internal/internal_api.py", line 312, in gql
+    ret = self._retry_gql(
+  File "/Users/christineye/anaconda3/envs/jsalt-retrieval/lib/python3.10/site-packages/wandb/sdk/lib/retry.py", line 147, in __call__
+    retry_timedelta_triggered = check_retry_fn(e)
+  File "/Users/christineye/anaconda3/envs/jsalt-retrieval/lib/python3.10/site-packages/wandb/util.py", line 968, in check_retry_fn
+    return fallback_retry_fn(e)
+  File "/Users/christineye/anaconda3/envs/jsalt-retrieval/lib/python3.10/site-packages/wandb/util.py", line 910, in no_retry_auth
+    raise CommError(
+wandb.errors.CommError: It appears that you do not have permission to access the requested resource. Please reach out to the project owner to grant you access. If you have the correct permissions, verify that there are no issues with your networking setup.(Error 403: Forbidden)
+2024-07-01 11:39:22,588 DEBUG   HandlerThread:4907 [handler.py:handle_request():158] handle_request: shutdown
+2024-07-01 11:39:22,588 INFO    HandlerThread:4907 [handler.py:finish():882] shutting down handler
+2024-07-01 11:39:23,309 INFO    WriterThread:4907 [datastore.py:close():296] close: /Users/christineye/retrieval/src/wandb/run-20240701_113922-a7k43ljo/run-a7k43ljo.wandb
+2024-07-01 11:39:23,458 INFO    SenderThread:4907 [sender.py:finish():1608] shutting down sender

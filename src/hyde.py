@@ -17,9 +17,8 @@ import concurrent.futures
 # use generate_n = 0, embed_query = True to do basic vector search (no generation)
 class HydeRetrievalSystem(EmbeddingRetrievalSystem):
     def __init__(self, config_path: str, dataset_path: str, embeddings_path: str = "../data/vector_store/embeddings_matrix.npy", 
-                 documents_path: str = "../data/vector_store/documents.pkl", 
-                 index_mapping_path: str = "../data/vector_store/index_mapping.pkl", generation_model: str = "claude-3-haiku-20240307",
-                generation_client = None, embedding_model: str = "text-embedding-3-small", 
+                 documents_path: str = "../data/vector_store/documents.pkl", index_mapping_path: str = "../data/vector_store/index_mapping.pkl", 
+                 generation_model: str = "claude-3-haiku-20240307", embedding_model: str = "text-embedding-3-small", 
                  temperature: float = 0.5, max_doclen: int = 500, generate_n: int = 1, embed_query = True):
         
         super().__init__(dataset_path = dataset_path, embeddings_path = embeddings_path, documents_path = documents_path, index_mapping_path = index_mapping_path)
@@ -41,8 +40,7 @@ class HydeRetrievalSystem(EmbeddingRetrievalSystem):
             self.anthropic_key = config['anthropic_api_key']
             # self.openai_key = config['openai_api_key']
         
-        if generation_client is not None: self.generation_client = generation_client
-        else: self.generation_client = anthropic.Anthropic(api_key = self.anthropic_key)
+        self.generation_client = anthropic.Anthropic(api_key = self.anthropic_key)
 
     def retrieve(self, query: str, arxiv_id: str, top_k: int = 10) -> List[Tuple[str, str, float]]:
         docs = self.generate_docs(query)
@@ -52,24 +50,10 @@ class HydeRetrievalSystem(EmbeddingRetrievalSystem):
             query_emb = self.embed_docs([query])[0]
             doc_embeddings.append(query_emb)
         
-        embedding = np.mean(np.array(doc_embeddings), axis = 0).reshape(1, -1).reshape(-1, 1)
-        
+        embedding = np.mean(np.array(doc_embeddings), axis = 0)
         query_date = self.parse_date(arxiv_id)
-        similarities = np.dot(self.embeddings, embedding) 
-        
-        filtered_results = []
-        for doc_id, mappings in self.index_mapping.items():
-            doc_date = self.document_dates[doc_id]
-            if doc_date <= query_date:
-                abstract_sim = similarities[mappings['abstract']] if 'abstract' in mappings else -np.inf
-                conclusions_sim = similarities[mappings['conclusions']] if 'conclusions' in mappings else -np.inf
-                if abstract_sim > conclusions_sim:
-                    filtered_results.append((doc_id, 'abstract', abstract_sim))
-                else:
-                    filtered_results.append((doc_id, 'conclusions', conclusions_sim))
-        
-        top_results = sorted(filtered_results, key=lambda x: x[2], reverse=True)[:top_k]
-        top_results = [doc_id for doc_id, _, _ in top_results]
+
+        top_results = self.rank_and_filter(embedding, query_date = query_date, top_k = top_k)
         
         return top_results
 
@@ -110,13 +94,8 @@ def main():
                          embeddings_path = "/users/christineye/retrieval/data/vector_store/embeddings_matrix.npy",
                          documents_path = "/users/christineye/retrieval/data/vector_store/documents.pkl",
                          index_mapping_path = "/users/christineye/retrieval/data/vector_store/index_mapping.pkl", config_path = "/users/christineye/retrieval/config.yaml", 
-                                     generate_n = 3, embed_query = True, max_doclen = 100)
-    evaluate_main(retrieval_system)
-    # query = "What is the stellar mass of the Milky Way?"
-    # arxiv_id = "2301.00001"
-    # top_k = 10
-    # results = retrieval_system.retrieve(query, arxiv_id, top_k)
-    # print(f"Retrieved documents: {results}")
+                                     generate_n = 1, embed_query = False, max_doclen = 300)
+    evaluate_main(retrieval_system, "BaseHyDE")
 
 if __name__ == "__main__":
     main()
