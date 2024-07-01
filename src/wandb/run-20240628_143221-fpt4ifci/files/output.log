@@ -1,0 +1,366 @@
+
+Single-doc progress:   1%|▌                                                                                               | 1/160 [00:01<02:41,  1.02s/it]
+Query: How do the time-varying neutrino signals from a galactic supernova depend on the direction of viewing the supernova and the distance from the observer?
+Retrieved docs: ['0705.3835', '0805.2717', '0802.4154', '0901.4877', '1001.3678', '1006.3792', '0909.2196', '1005.2681', '0808.4136', '0809.2940']
+Arxiv ID: 1006.1889
+Rank: Not found
+Query: What mechanisms could potentially drive dynamo operation in M giant stars and how can we differentiate between different types of dynamos based on observational data?
+Retrieved docs: ['1009.2589', '0410.716', '0906.2407', '0812.4018', '0809.0269', '0707.3792', '0901.4929', '0806.3933', '0711.1498', '0902.2966']
+Arxiv ID: 1009.2001
+Rank: Not found
+Query: How does the alignment between magnetic fields and outflows in high-mass disk-outflow systems impact our understanding of magnetic field structures and dynamics in star-forming regions?
+Retrieved docs: ['0910.1615', '1010.3635', '0810.1341', '1009.0453', '0810.4154', '0201.195', '0907.3260', '0907.3265', '0307.455', '1010.5905']
+Arxiv ID: 1010.3635
+
+Single-doc progress:   4%|███▌                                                                                            | 6/160 [00:03<01:13,  2.10it/s]
+Query: How does the presence of an infrared excess from a circumstellar disc affect the inverse Compton gamma-ray spectrum in gamma-ray binary systems?
+Retrieved docs: ['1011.2004', '1003.1227', '1003.5876', '0710.0968', '0707.1689', '0904.4228', '0902.3385', '0901.1297', '0612.235', '0804.0370']
+Arxiv ID: 1011.2004
+Rank: 1
+Query: How do different shock structures in supernova remnants impact the acceleration and interaction of particles with surrounding molecular clouds, leading to the observed nonthermal emission properties in various bands of the electromagnetic spectrum?
+Retrieved docs: ['0811.3566', '0110.060', '0911.4457', '0903.3392', '0912.4886', '1001.2240', '0909.2285', '0909.3349', '0911.3417', '0907.2521']
+Arxiv ID: 1002.2272
+Rank: Not found
+Query: What factors contribute to the observed variability in radio-loudness among different classes of active galactic nuclei (AGNs) and what implications does this variability have for our understanding of the underlying physical mechanisms responsible for radio emission in these objects?
+Retrieved docs: ['1010.5591', '0809.2076', '1005.0901', '0910.3667', '1001.5419', '0809.3977', '0905.2989', '0904.0190', '0704.3431', '0704.3294']
+Arxiv ID: 1010.5591
+Rank: 1
+Query: How can pencil-beam surveys improve their sensitivity to detecting rare objects with high inclination and distant orbits, especially in cases where orbital inclination and heliocentric distance remain degenerate?
+Retrieved docs: ['1004.3287', '1004.3288', '0711.2288', '0805.4608', '0707.4260', '1002.3168', '0902.3457', '0712.0358', '0903.1329', '0909.0006']
+Arxiv ID: 1004.3287
+Rank: 1
+Query: How do inhomogeneous magnetic fields impact the stability of shear flows in stratified astrophysical systems, and how does this relate to the behavior of magnetic fields in different regions of stars such as the solar tachocline?
+Retrieved docs: ['1002.3335', '0901.0767', '0901.2388', '0908.1841', '0907.5068', '0802.2415', '0810.4227', '0909.0324', '0712.2119', '0809.0361']
+Arxiv ID: 1002.3335
+
+Single-doc progress:   6%|█████▉                                                                                         | 10/160 [00:05<01:14,  2.02it/s]
+Query: How do the high-ionization and intermediate ionization emission lines in mid-IR spectra of different types of galaxies, such as AGNs and star forming galaxies, vary and what implications does this have for our understanding of their physical properties and processes?
+Retrieved docs: ['1010.2323', '0808.4154', '1010.5129', '0911.3348', '1008.0626', '0101.457', '0904.2208', '1004.1647', '1001.5039', '0912.1376']
+Arxiv ID: 1010.5129
+Rank: 3
+Query: What is the relationship between the observed rotation measure pattern towards the Galactic caps and the potential influence of different local and global astrophysical phenomena in shaping the distribution of magnetic fields in the Milky Way?
+Retrieved docs: ['0901.1165', '0911.2430', '1003.4519', '0803.0677', '0705.4175', '0907.3994', '0802.4044', '0909.4753', '0704.0458', '0712.4175']
+Arxiv ID: 1003.4519
+Rank: 3
+Query: What theoretical framework underpins the correlation between peak luminosity and decline rate of light curves in certain types of supernovae, and why is it important in the field of supernova cosmology?
+Retrieved docs: ['0812.2007', '1002.2505', '0301.334', '0802.4154', '0806.0496', '0907.4495', '0812.0370', '0912.2231', '0711.1560', '0908.4276']
+Arxiv ID: 1002.2505
+Rank: 2
+Query: What factors beyond progenitor mass play a significant role in distinguishing between events producing pulsars and magnetars?
+Retrieved docs: ['1009.4498', '0807.2106', '0902.3111', '0708.0002', '0606.674', '0910.2701', '0706.3179', '0911.0680', '0803.2691', '1005.3911']
+Arxiv ID: 1009.4498
+
+Single-doc progress:   9%|████████▎                                                                                      | 14/160 [00:07<01:09,  2.10it/s]
+Query: What factors influence the distribution and formation of single-aged stellar associations in interacting spiral systems?
+Retrieved docs: ['1006.1954', '0811.3428', '0812.1417', '0707.4127', '0901.4135', '0903.3403', '0908.1648', '1002.1262', '0801.4758', '0712.0536']
+Arxiv ID: 1006.1954
+Rank: 1
+Query: What is the relationship between the optical circular velocity and the virial circular velocity of galaxies of different types at a redshift near zero, and how does this relationship vary with stellar mass?
+Retrieved docs: ['1004.4626', '0806.1090', '0804.4228', '0909.1386', '0808.2642', '0903.0271', '0911.2236', '0909.4903', '0712.1316', '1002.2085']
+Arxiv ID: 1004.4626
+Rank: 1
+Query: How does the first order Fermi acceleration mechanism in reconnection layers contribute to the generation of anomalous cosmic rays in astrophysical environments?
+Retrieved docs: ['1003.2637', '0905.1120', '0801.1339', '0807.3459', '0904.2657', '0811.3573', '0911.3098', '0912.2154', '0301.384', '0801.0923']
+Arxiv ID: 1003.2637
+Rank: 1
+Query: What impact does the variability of emission from pulsar sources have on the accuracy and reliability of determining positions in space using their signals?
+Retrieved docs: ['0901.1436', '1001.1483', '0911.0943', '0909.1054', '0807.5013', '0408.366', '0910.2249', '0801.1142', '0906.3897', '1001.1068']
+Arxiv ID: 1001.1068
+
+Single-doc progress:  12%|███████████▎                                                                                   | 19/160 [00:09<01:06,  2.13it/s]
+Query: How can we improve methods for reducing intrinsic-shear alignment systematic in three-point cosmic shear statistics while minimizing information loss?
+Retrieved docs: ['1002.0693', '1001.3787', '0804.2292', '0911.2454', '0705.0166', '1002.3615', '0905.0393', '0505.284', '0801.3270', '0905.3726']
+Arxiv ID: 1002.0693
+Rank: 1
+Query: How do the physical properties of different types of supernovae affect the production of light elements, particularly in relation to the $\nu$-process and spallation reactions?
+Retrieved docs: ['1007.0212', '1001.0145', '0710.0251', '0810.3999', '1004.4487', '0801.0110', '0804.2147', '0908.0247', '0910.1590', '1006.0490']
+Arxiv ID: 1007.0212
+Rank: 1
+Query: How does the metallicity of a white dwarf progenitor impact the accuracy of age determination for white dwarfs in different stellar systems?
+Retrieved docs: ['0808.2810', '0710.2397', '0705.0977', '0710.1542', '0902.4259', '0909.2253', '0804.3034', '0706.3894', '0708.3795', '1005.2170']
+Arxiv ID: 1005.2170
+Rank: 10
+Query: What factors may contribute to the dissipation or reflection of torsional Alfvén mode and fast kink mode waves below the solar corona, especially considering their slow rate of dissipation and incompressibility?
+Retrieved docs: ['0902.0572', '1004.4468', '1007.1080', '0907.3025', '0912.4136', '0909.3599', '0805.0630', '0804.1734', '0712.1792', '0803.2600']
+Arxiv ID: 1008.1823
+
+Single-doc progress:  14%|█████████████                                                                                  | 22/160 [00:11<01:10,  1.97it/s]
+Query: What are the implications of detecting a positive temperature gradient in the upper atmosphere of an exoplanet using high-resolution transit spectroscopy?
+Retrieved docs: ['1104.4763', '1503.05581', '1004.1396', '1305.4166', '1312.3745', '1409.1250', '0912.2350', '1407.3265', '1307.0416', '1102.0867']
+Arxiv ID: 1503.05581
+Rank: 2
+Query: How does the radius-mass saturation parameter in high-accretion super-Eddington accretion black holes contribute to our understanding of the transition from thin to slim disk systems in the context of astrophysical observations and theoretical models?
+Retrieved docs: ['1004.1797', '0705.1374', '1006.4309', '0710.2941', '1504.01844', '1205.0363', '1205.1387', '1007.4279', '0707.1914', '0909.1267']
+Arxiv ID: 1504.01844
+Rank: 5
+Query: How does the angular clustering of galaxies at different redshifts affect their far-infrared luminosities and the overall understanding of their nature?
+Retrieved docs: ['0910.1248', '1411.3677', '1403.3334', '0901.1543', '1106.1657', '0712.0965', '1504.04516', '1303.6396', '1005.3816', '0712.1819']
+Arxiv ID: 1512.02768
+Rank: Not found
+Query: What factors influence the final fates of primordial stars, and how do uncertainties in stellar mass estimation impact our understanding of early cosmic chemical evolution?
+Retrieved docs: ['1501.01630', '1108.4626', '1312.5968', '1405.0062', '0705.4404', '1308.4456', '1210.3035', '1006.5863', '1109.1564', '0808.3918']
+Arxiv ID: 1501.01630
+
+Single-doc progress:  16%|███████████████▍                                                                               | 26/160 [00:13<01:05,  2.04it/s]
+Query: What impact do close, undetected stellar companions have on the derivation of stellar and planetary properties in exoplanet hosting systems?
+Retrieved docs: ['0907.0864', '1507.01938', '1503.03516', '1310.7427', '1101.0432', '1501.00013', '1202.4586', '1006.3070', '0807.1105', '1407.1848']
+Arxiv ID: 1507.01938
+Rank: 2
+Query: How does the strength of the magnetic field influence the formation of circumstellar discs around protostars?
+Retrieved docs: ['1201.5640', '1403.3732', '1301.5648', '0705.1096', '1008.1883', '0910.1615', '1009.4445', '1106.4179', '0307.455', '1408.5901']
+Arxiv ID: 1503.04901
+Rank: Not found
+Query: What information can the timing and duration of the initial rise and fall of the 21cm power provide about star-formation inside the very first, molecularly-cooled galaxies?
+Retrieved docs: ['1410.3482', '0803.2237', '1401.7935', '0808.1647', '1501.04106', '1105.1128', '1212.0513', '1403.6125', '0811.1381', '1403.0007']
+Arxiv ID: 1501.04106
+Rank: 5
+Query: What are the critical factors influencing the formation and evolution of massive self-gravitating clumps in protoplanetary disks, and how does the resolution level affect the resulting structures in simulations?
+Retrieved docs: ['1505.01154', '1111.6943', '1409.4218', '1306.4924', '1307.6910', '1310.1108', '1208.3713', '1404.7271', '1305.3413', '1011.1496']
+Arxiv ID: 1505.01154
+
+Single-doc progress:  19%|█████████████████▊                                                                             | 30/160 [00:15<01:12,  1.78it/s]
+Query: What role do large-scale structures such as galaxy clusters and voids play in constraining cosmological parameters and theories beyond the standard concordance model?
+Retrieved docs: ['1008.3392', '1511.04075', '1102.1015', '1507.04363', '1212.2216', '1009.0273', '0908.2903', '1308.4099', '0909.1479', '1208.4534']
+Arxiv ID: 1511.04075
+Rank: 2
+Query: How does the methodology described in the paper quantify the contribution of different atmospheric layers to the clear sky fraction above a specific astronomical observatory site?
+Retrieved docs: ['1504.06033', '1011.4815', '0406.610', '1501.02156', '0811.2448', '1402.4739', '1204.0975', '1009.5261', '1402.0638', '1205.2003']
+Arxiv ID: 1504.06033
+Rank: 1
+Query: What are the potential outcomes of the tidal destruction of gas giant planets by evolved stars and how do they differ from the outcomes of the tidal destruction of Earth-like planets or icy cores?
+Retrieved docs: ['1502.07513', '1410.6815', '1009.4221', '1410.5320', '1211.1971', '1206.5857', '1210.0328', '1411.1025', '0709.0945', '1306.0567']
+Arxiv ID: 1502.07513
+
+Single-doc progress:  21%|████████████████████▏                                                                          | 34/160 [00:17<01:01,  2.05it/s]
+Query: What characteristics of supernova line profiles suggest the presence of dust, and how do these characteristics evolve over time?
+Retrieved docs: ['1509.00858', '1209.3520', '1203.0006', '1406.5531', '1308.0406', '1312.4086', '1204.1610', '1412.5522', '1110.3166', '1202.3075']
+Arxiv ID: 1509.00858.txt
+Rank: Not found
+Query: How can precision measurements of solar neutrinos contribute to our understanding of nuclear astrophysics and stellar evolution?
+Retrieved docs: ['1208.5723', '1201.1637', '1504.02154', '1009.0852', '1411.6807', '1302.2791', '1201.6311', '0710.2295', '1309.7571', '1311.2575']
+Arxiv ID: 1504.02154
+Rank: 3
+Query: What constraints can be placed on a binary system when estimating the companion star's mass based on spectral type and how recent advancements in mass estimation techniques using spectrometry and parallax data affect these constraints?
+Retrieved docs: ['1103.5747', '1307.5786', '1309.6932', '1312.1365', '1202.2855', '1205.0998', '1502.04736', '1408.5411', '1201.3280', '1112.3666']
+Arxiv ID: 1502.01465
+Rank: Not found
+Query: What effects do vorticity fluctuations and entropy fluctuations have on the stability of imploding ideal gases in astrophysical contexts?
+Retrieved docs: ['1003.3468', '1506.02684', '1411.4267', '0401.449', '1111.2935', '1403.6721', '0711.1729', '1210.2335', '1202.4498', '1410.1323']
+Arxiv ID: 1506.02684
+Rank: 2
+Query: What evidence would unambiguously distinguish between a microquasar scenario and a pulsar binary scenario for the compact object in \lsi{} based on the observed emission properties?
+Retrieved docs: ['1206.0543', '1508.06800', '0807.1226', '1106.5550', '1103.5166', '0908.2600', '0811.0978', '1206.3769', '0810.4494', '0910.5520']
+Arxiv ID: 1508.06800
+
+Single-doc progress:  24%|██████████████████████▌                                                                        | 38/160 [00:19<00:58,  2.10it/s]
+Query: What advanced detection algorithms might improve the accuracy and detail of coronal hole evolution studies in solar images?
+Retrieved docs: ['1506.06623', '0905.1814', '0802.1971', '1510.04718', '1109.0473', '1502.06038', '1009.2980', '0906.2556', '1002.1675', '1002.3107']
+Arxiv ID: 1510.04718
+Rank: 4
+Query: What is the relationship between black hole growth and host galaxy evolution during gas-rich mergers in terms of how quickly black holes grow compared to their host galaxies?
+Retrieved docs: ['1309.5963', '0910.2232', '0805.3154', '1502.06617', '1002.3156', '0909.2872', '1401.3513', '1006.3312', '1412.3819', '1409.0004']
+Arxiv ID: 1502.06617
+Rank: 4
+Query: What are the key factors influencing the evolution of the light curve of super-luminous SNe IIn, particularly in terms of the interaction dynamics between explosively-produced inner shells and wind-produced outer shells?
+Retrieved docs: ['1004.2791', '1205.3455', '1503.05463', '1503.03310', '0708.3478', '1303.6958', '1203.1451', '0804.0428', '1009.4353', '1207.3630']
+Arxiv ID: 1503.05463
+Rank: 3
+Query: How can the detection and characterization of re-emission from disk winds in stellar-mass black holes aid in understanding the connection between such winds and the broad-line region in active galactic nuclei?
+Retrieved docs: ['1510.01177', '0908.0926', '1208.4514', '1202.2151', '1306.2835', '1010.6201', '1402.1849', '1210.3029', '1006.3449', '1510.03853']
+Arxiv ID: 1510.01177
+
+Single-doc progress:  26%|████████████████████████▉                                                                      | 42/160 [00:21<00:59,  1.97it/s]
+Query: How do subsurface oceans on icy moons contribute to the potential habitability of exomoons in different planetary systems?
+Retrieved docs: ['2003.09231', '1806.06822', '1502.07090', '1606.01846', '1601.00789', '1711.09908', '1507.01727', '1810.02712', '1304.4377', '1603.00174']
+Arxiv ID: 2003.09231
+Rank: 1
+Query: How do neutrino oscillations impact the cooling processes and accretion rates in different systems within the context of astrophysical phenomena such as GRBs and accretion onto black holes?
+Retrieved docs: ['2012.14046', '1011.5515', '1712.07210', '1209.1163', '2002.10575', '1909.01841', '1105.6371', '1304.3384', '1009.6029', '1512.08028']
+Arxiv ID: 2012.14046
+Rank: 1
+Query: What role do oscillatory solutions of chemical abundances play in the formation and dynamics of interstellar clouds and their influence on star formation processes?
+Retrieved docs: ['2010.01348', '0809.1642', '1712.06696', '1402.3558', '1111.6809', '1610.09023', '0901.1746', '1605.07000', '2007.00572', '0706.0754']
+Arxiv ID: 2010.01348
+Rank: 1
+Query: How do solar wind fluxes and galactic cosmic rays contribute differently to the energy deposition within cometary nuclei at varying depths?
+Retrieved docs: ['2012.05772', '1805.05587', '1805.03376', '1805.03459', '0704.1648', '1805.05590', '1805.06159', '1806.01942', '1911.07530', '2006.12836']
+Arxiv ID: 2012.05772
+
+Single-doc progress:  28%|██████████████████████████▋                                                                    | 45/160 [00:23<01:00,  1.89it/s]
+Query: How can different methods for calculating tunneling rates in quantum field theory be compared and brought into better quantitative agreement?
+Retrieved docs: ['2009.00017', '1907.04865', '1306.2207', '2009.04303', '1110.2380', '0707.3500', '0812.5081', '1411.6094', '1412.3160', '1312.0709']
+Arxiv ID: 2009.00017
+Rank: 1
+Query: How does the phase relationship between solar Quasi-Biennial Oscillations (QBOs) and the hemispheric polar faculae vary between different solar cycles at high latitudes?
+Retrieved docs: ['2004.08331', '1910.02891', '1111.2492', '1808.10255', '1509.00625', '1201.2773', '1804.01513', '1001.3186', '1605.08230', '1801.01716']
+Arxiv ID: 2004.08331
+Rank: 1
+Query: How can the clustering of galaxy clusters be utilized as a cosmological probe to extract key information about the cosmic growth rate and test gravitational theories on cosmological scales?
+Retrieved docs: ['2010.11206', '1303.0287', '1205.5556', '1103.0202', '1103.4829', '1302.4754', '1602.00611', '1903.00976', '1611.06886', '1806.09633']
+Arxiv ID: 2010.11206
+
+Single-doc progress:  31%|█████████████████████████████                                                                  | 49/160 [00:25<01:02,  1.79it/s]
+Query: How does the linear polarisation fraction of a pulsar's radio profile relate to the potential emission of gamma rays?
+Retrieved docs: ['2009.05797', '1501.00066', '1604.06240', '1811.03572', '1609.00021', '1503.04722', '1511.03056', '1608.00770', '0901.0962', '0901.3255']
+Arxiv ID: 2009.05797
+Rank: 1
+Query: How can the presence of curvilinear coordinates impact numerical implementations in simulations of radiation transport in astrophysical scenarios?
+Retrieved docs: ['1308.3066', '2009.08990', '1911.07950', '1907.09487', '1011.3325', '0810.5349', '1802.09625', '2006.12939', '0503.514', '1509.01158']
+Arxiv ID: 2009.08990
+Rank: 2
+Query: How does the inclusion of encounter desorption mechanisms for hydrogen atoms on dust grains impact the abundance and interplay of different surface species in astrochemical models of dense cores?
+Retrieved docs: ['2008.03438', '1410.7375', '0802.3319', '1609.01471', '1511.02461', '0708.1647', '1207.2689', '1304.4031', '0704.2704', '1504.06453']
+Arxiv ID: 2008.03438
+Rank: 1
+Query: What specific factors contribute to spatial drift in spectroscopic data obtained with infrared instruments?
+Retrieved docs: ['1003.3540', '2012.09308', '0711.1950', '1706.09202', '1903.09718', '0909.0002', '1205.4047', '1207.2472', '1311.3934', '1202.0300']
+Arxiv ID: 2012.09308
+
+Single-doc progress:  33%|███████████████████████████████▍                                                               | 53/160 [00:27<00:58,  1.83it/s]
+Query: What observational techniques could be employed to confirm the presence of a sub-stellar companion in an eclipsing brown dwarf system with high eccentricity and long period?
+Retrieved docs: ['1712.03823', '1011.0336', '1911.10569', '1511.08397', '1110.1384', '1711.03749', '2006.03582', '1210.8146', '1312.1303', '0810.1723']
+Arxiv ID: 2006.03582
+Rank: 7
+Query: How can the detection and localization of high-mass binary black holes in the universe contribute to our understanding of astrophysical environments and the potential for observing higher modes of the ringdown?
+Retrieved docs: ['1112.3077', '0707.1202', '1807.00075', '1801.02699', '2001.10011', '1805.05335', '1305.5380', '1609.00083', '1404.7149', '0708.2555']
+Arxiv ID: 2001.10011
+
+Single-doc progress:  35%|█████████████████████████████████▎                                                             | 56/160 [00:29<01:00,  1.73it/s]
+Query: What are the potential consequences of the resonant encounter involving Callisto and Ganymede on the long-term orbital dynamics and stability of the Galilean satellites?
+Retrieved docs: ['2001.01106', '1405.1880', '0805.3733', '1410.2648', '1712.05688', '1205.0301', '1909.00285', '1807.02516', '1511.01867', '1306.4293']
+Arxiv ID: 2001.01106
+Rank: 1
+Query: How does the evolution of the luminosity densities at different rest wavelengths vary with redshift in galaxies spanning $0 < z \lesssim 3$?
+Retrieved docs: ['0212.147', '0806.4388', '0505.297', '1201.2954', '1111.0166', '0606.536', '0809.1661', '0710.2737', '0801.1675', '0904.0349']
+Arxiv ID: 2001.06904
+Rank: Not found
+Query: What physical implications and cosmological consequences arise from the reconstruction and modification of $f(\mg)$ gravity models to address numerical divergences in cosmological studies?
+Retrieved docs: ['2001.07021', '0705.3795', '0810.5712', '1411.6128', '1307.2660', '0908.2669', '1507.06123', '1202.0892', '1108.3038', '1003.0409']
+Arxiv ID: 2001.07021
+Rank: 1
+Query: How does the distribution of dark matter halo masses relate to the triggering of AGN activity in galaxies?
+Retrieved docs: ['1812.04025', '1410.5817', '1602.01856', '2010.02957', '1212.5076', '1711.05201', '1006.5717', '2004.03817', '1807.06395', '1203.5117']
+Arxiv ID: 2010.02957
+Rank: 4
+Query: What impact can light scattering from prominences have on temperature measurements of the solar corona using filter ratios?
+Retrieved docs: ['1712.03042', '1603.07047', '0808.3980', '1409.7866', '1601.07681', '1207.5894', '0904.0878', '1807.00155', '1901.11328', '2006.06155']
+Arxiv ID: 2006.06155
+
+Single-doc progress:  37%|███████████████████████████████████                                                            | 59/160 [00:31<00:55,  1.82it/s]
+Query: How does the morphological analysis of gamma-ray emissions in a specific astronomical system provide insights into the nature and origin of the emissions across different energy ranges?
+Retrieved docs: ['1304.3732', '1202.4242', '1307.4198', '1710.03543', '1111.6992', '1307.7083', '1712.01568', '1608.06380', '1301.4405', '1002.3888']
+Arxiv ID: 2006.05731
+Rank: Not found
+Query: How does the inclusion of additional moments in the analysis impact the uncertainty in measuring $\sigma_8$ in weak lensing studies using supernovae samples?
+Retrieved docs: ['1307.1155', '1403.0293', '1607.03966', '2007.07956', '1412.3703', '1511.08695', '1307.2566', '1503.06214', '1905.00746', '1905.07803']
+Arxiv ID: 2007.07956
+Rank: 4
+Query: What impact does the inclusion of age uncertainties in analyses of type Ia supernovae have on the understanding of their standardized peak luminosity as a standard candle and its potential implications for cosmology?
+Retrieved docs: ['2303.15267', '1612.01915', '1002.2505', '1806.10900', '1710.07018', '2002.12382', 'astro-ph0701904_arXiv.txt', 'astro-ph0701912_arXiv.txt', '2109.02456', 'astro-ph9905047_arXiv.txt']
+Arxiv ID: 2303.15267
+
+Single-doc progress:  39%|█████████████████████████████████████▍                                                         | 63/160 [00:33<00:51,  1.88it/s]
+Query: What are the implications of high polarization levels in the intermediate hard state of black hole sources for understanding the connection between accretion disk dynamics and jet formation?
+Retrieved docs: ['2306.04057', '0902.3982', '2103.00267', '2110.11136', '2302.11674', '1007.4279', '2012.06504', '1102.4247', '2205.11650', '2210.12162']
+Arxiv ID: 2306.04057
+Rank: 1
+Query: What impact does theoretical uncertainty, such as cosmic variance, have on the detectability of stochastic gravitational wave background correlations in noisy data?
+Retrieved docs: ['2304.07040', 'gr-qc0510067_arXiv.txt', '1808.03716', '1101.2762', '1406.2367', '1303.2613', '2207.01836', 'gr-qc0210032_arXiv.txt', '1402.6231', '2209.14834']
+Arxiv ID: 2304.07040
+Rank: 1
+Query: What correlations can be observed between jet power and various physical parameters in blazars, and how do these correlations vary between different types of blazars such as FSRQs and BL Lacs?
+Retrieved docs: ['1404.3556', 'astro-ph0205252_arXiv.txt', '2306.17405', 'astro-ph0107565_arXiv.txt', '1508.00567', '1104.4946', '1609.05697', '2111.02082', '0803.3409', '0909.0932']
+Arxiv ID: 2306.17405
+Rank: 3
+Query: What is the relationship between the spatial distribution of molecular gas properties and the formation mechanisms of large-scale molecular structures in barred spiral galaxies?
+Retrieved docs: ['0711.2101', '0705.2678', 'astro-ph0505393_arXiv.txt', '2208.14950', 'astro-ph0202270_arXiv.txt', '0709.0091', '2303.12108', '0907.2602', 'astro-ph0208018_arXiv.txt', '1505.07111']
+Arxiv ID: 2303.12108
+
+Single-doc progress:  42%|███████████████████████████████████████▊                                                       | 67/160 [00:35<00:49,  1.88it/s]
+Query: How do the upper limits on the velocity-averaged annihilation cross section for dark matter particles differ between individual dSphs and when all 18 dSphs are stacked together in the analysis?
+Retrieved docs: ['1702.00408', 'astro-ph0611925_arXiv.txt', '1601.02181', '2103.11646', '1909.13197', '1711.04696', '1508.04470', '1102.5701', '2105.03438', '2304.10301']
+Arxiv ID: 2306.02675
+Rank: Not found
+Query: What mechanism triggers the onset of the intense wind observed in the remnant system studied, and how does this relate to the evolution of the central white dwarf and the surrounding environment?
+Retrieved docs: ['astro-ph9902304_arXiv.txt', '2003.02094', '2304.14669', 'astro-ph0302485_arXiv.txt', 'astro-ph0406263_arXiv.txt', 'astro-ph0106356_arXiv.txt', '1004.0696', '1804.01275', '1203.2918', '1512.01164']
+Arxiv ID: 2304.14669
+Rank: 3
+Query: What factors contribute to the mode amplitude growth in binary orbits with dynamical tide effects, and how do these factors impact the long-term evolution of the system?
+Retrieved docs: ['1708.09392', '1107.0946', 'astro-ph0309031_arXiv.txt', 'astro-ph9909073_arXiv.txt', '2306.02382', '2009.00204', 'astro-ph0511324_arXiv.txt', 'astro-ph9704132_arXiv.txt', '2003.02373', '0712.1156']
+Arxiv ID: 2306.02382
+Rank: 5
+Query: What is the role of ion Bernstein waves and kinetic Alfven waves in energy dissipation mechanisms in the solar wind turbulence?
+Retrieved docs: ['1505.02328', '1201.2784', '2302.05473', '1307.2615', '1707.08429', 'astro-ph0702383_arXiv.txt', '1511.01256', '1306.5336', '1812.01323', '1904.09334']
+Arxiv ID: 2302.05473
+
+Single-doc progress:  44%|█████████████████████████████████████████▌                                                     | 70/160 [00:37<00:46,  1.93it/s]
+Query: What is the connection between the presence of exocomets and the observable variations in the light curves of young stars like HD\,172555?
+Retrieved docs: ['2301.07418', '1401.1365', '1712.02386', '2003.11084', '1806.01284', '1903.06910', '1709.01732', '2007.09155', 'astro-ph9807229_arXiv.txt', '1505.07119']
+Arxiv ID: 2301.07418
+Rank: 1
+Query: How does the cluster mass correlate with the primary mass distribution of binary black holes, and what implications does this correlation have for the production of hierarchical mergers within star clusters?
+Retrieved docs: ['2208.01081', '2307.03227', '1809.01164', '1602.02444', '2202.08924', '2209.05766', '2008.10823', '1906.10260', '2007.15022', '2103.05016']
+Arxiv ID: 2307.03227
+Rank: 2
+Query: What are the implications of considering interacting dark matter scenarios with a non-zero interaction cross section for different cosmological data sets and how do they influence the concordance between large-scale structure and cosmic microwave background observations?
+Retrieved docs: ['0910.5236', '2301.08260', '2209.12583', '1907.07540', '2001.03120', '0906.0677', '2110.04024', '0801.4517', '2102.12367', '2102.04232']
+Arxiv ID: 2301.08260
+
+Single-doc progress:  46%|███████████████████████████████████████████▉                                                   | 74/160 [00:39<00:52,  1.63it/s]
+Query: What are the key factors that enable a spacecraft to achieve orbit around the inner moons of Saturn with a high propellant mass fraction using low-thrust trajectories and gravity assists?
+Retrieved docs: ['2305.17548', '2001.04357', '2002.01672', '2009.12621', '2004.04708', '2007.10745', '1903.03603', '1802.02418', '1306.5333', '1809.00472']
+Arxiv ID: 2305.17548
+Rank: 1
+Query: What novel possibilities could arise from exploring single-field inflation within $F(R_X)$ Palatini gravity, especially in terms of addressing issues present in traditional Palatini $F(R)$ models and achieving flat inflaton potentials?
+Retrieved docs: ['2307.02963', '1810.05536', '2302.06524', '2303.14148', '2112.12149', '2212.11869', '1812.00847', '2001.10135', '2210.00837', '1810.10418']
+Arxiv ID: 2307.02963
+Rank: 1
+Query: How does the level of variability in different dynamical classes of Trans-Neptunian Objects (TNOs) correlate with their intrinsic physical properties and how does it impact our understanding of their origin and evolution?
+Retrieved docs: ['2302.01221', '2202.02374', '2304.03017', '2206.04096', '1009.5157', '2205.12297', '1802.00460', '1812.04304', '1207.2044', '1004.4841']
+Arxiv ID: 2304.03017
+Single-doc progress:  46%|███████████████████████████████████████████▉                                                   | 74/160 [00:39<00:52,  1.63it/s][34m[1mwandb[39m[22m: 429 encountered (Filestream rate limit exceeded, retrying in 2.4 seconds.), retrying request
+Single-doc progress:  48%|█████████████████████████████████████████████▋                                                 | 77/160 [00:41<00:45,  1.81it/s]
+Query: What is the significance of considering a composite scenario involving a Pulsar Wind Nebula (PWN) and a Supernova Remnant (SNR) in explaining the observed GeV and TeV gamma-ray emissions in a complex Galactic region?
+Retrieved docs: ['0709.4570', '1005.3386', '0712.2964', '1010.2185', '1506.03069', '1201.0481', '1805.11168', '1707.06352', '1310.6956', 'astro-ph9711212_arXiv.txt']
+Arxiv ID: 2306.12134
+Rank: Not found
+Query: How does the timing precision of a gravitational wave observatory impact the ability to accurately detect and study gravitational wave events in astrophysics?
+Retrieved docs: ['2304.01188', '0908.2356', '2105.07629', '1101.3990', '0908.0244', '2203.12760', '1103.0518', '2205.07962', '0710.5026', '1304.0767']
+Arxiv ID: 2304.01188
+Rank: 1
+Query: What is the impact of quasar radiation and outflows on star formation rates within a host galaxy, and how do they interact with the surrounding interstellar and circumgalactic medium?
+Retrieved docs: ['astro-ph0401087_arXiv.txt', '1709.08638', '1302.0999', '1510.06404', '1112.3071', '2107.05638', '1606.06281', '1706.00194', '2110.00019', '0907.1566']
+Arxiv ID: 2303.08952
+Rank: Not found
+Query: What evidence suggests the possibility of non-monotonic matter properties inside neutron stars?
+Retrieved docs: ['1904.05471', '1512.07820', 'astro-ph0008376_arXiv.txt', '1312.0029', '2005.10543', 'astro-ph0608345_arXiv.txt', 'astro-ph0012424_arXiv.txt', 'astro-ph9905177_arXiv.txt', '0904.0435', 'astro-ph9910371_arXiv.txt']
+Arxiv ID: 2302.13648
+Single-doc progress:  50%|███████████████████████████████████████████████▌                                               | 80/160 [00:43<00:43,  1.85it/s]
+Multi-doc progress:   1%|█▏                                                                                                | 1/79 [00:00<00:45,  1.70it/s]
+Query: What are the implications of secondary eclipse observations for determining the presence and composition of atmospheres on rocky planets around M dwarfs?
+Retrieved docs: ['1102.0867', '2305.10414', '1309.6663', '1907.13150', '1501.05393', '2003.13348', '1312.3988', '1508.00902', '1907.13138', '1310.7585']
+Arxiv ID: 2305.10414
+Rank: 2
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Multi-doc progress: 100%|█████████████████████████████████████████████████████████████████████████████████████████████████| 79/79 [00:43<00:00,  1.84it/s]

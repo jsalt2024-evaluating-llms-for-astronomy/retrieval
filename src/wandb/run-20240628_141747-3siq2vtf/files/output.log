@@ -1,0 +1,19 @@
+Single-doc progress:   0%|                                                                                                        | 0/160 [00:00<?, ?it/s]
+Traceback (most recent call last):
+  File "/Users/charlesoneill/retrieval/src/semantic_search.py", line 155, in <module>
+    main()
+  File "/Users/charlesoneill/retrieval/src/semantic_search.py", line 111, in main
+    evaluate_main(retrieval_system, "BaseSemanticSearch")
+  File "/Users/charlesoneill/retrieval/src/../evaluation/evaluate.py", line 129, in main
+    results = evaluator.evaluate('../data/single_paper.json', '../data/multi_paper.json', top_k=10)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/charlesoneill/retrieval/src/../evaluation/evaluate.py", line 26, in evaluate
+    single_results = self._evaluate_single_document(single_doc_file, top_k)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/charlesoneill/retrieval/src/../evaluation/evaluate.py", line 58, in _evaluate_single_document
+    print(f"Rank: {retrieved_docs.index(arxiv_id) + 1}")
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: '1006.1889' is not in list
+Query: How do convective instabilities in core collapse supernovae contribute to the modulation of neutrino emission and what potential implications could the detection of such variations have on our understanding of supernova mechanisms?
+Retrieved docs: [('0705.3835', 'abstract', np.float64(0.6839748024842738)), ('0905.2797', 'abstract', np.float64(0.6733066477939184)), ('0906.3180', 'abstract', np.float64(0.6728485998131442)), ('0805.2717', 'abstract', np.float64(0.668768991199838)), ('0708.3372', 'abstract', np.float64(0.6677010988428436)), ('0810.1959', 'conclusions', np.float64(0.6665737552408499)), ('0706.3886', 'conclusions', np.float64(0.6620274505244645)), ('0911.3222', 'abstract', np.float64(0.660656109187107)), ('0705.4350', 'conclusions', np.float64(0.6561184241162785)), ('1004.0291', 'conclusions', np.float64(0.652849404286313))]
+Arxiv ID: 1006.1889

@@ -1,0 +1,1 @@
+{"query_success": 1, "query_reciprocal_rank": 0.5, "query_avg_precision": 0.5, "question_type": "conclusion", "_timestamp": 1719424009.845381, "_runtime": 152.1725001335144, "_step": 160, "success_rate": 0.4875, "reciprocal_rank": 0.3057167658730159, "avg_precision": 0.3057167658730159, "_wandb": {"runtime": 151}}

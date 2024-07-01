@@ -1,0 +1,1 @@
+{"single_doc_success_rate": 0.4875, "single_doc_reciprocal_rank": 0.3057167658730159, "single_doc_avg_precision": 0.3057167658730159, "multi_doc_map": 0.0, "multi_doc_ndcg": 0.0, "multi_doc_recall@k": 0.0, "multi_doc_precision@k": 0.0, "multi_doc_f1@k": 0.0, "_timestamp": 1719501531.931665, "_runtime": 370.65703201293945, "_step": 0, "_wandb": {"runtime": 370}}

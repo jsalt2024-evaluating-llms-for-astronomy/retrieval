@@ -1,0 +1,36 @@
+Traceback (most recent call last):
+  File "/Users/charlesoneill/retrieval/src/bag_of_words.py", line 116, in <module>
+    main()
+  File "/Users/charlesoneill/retrieval/src/bag_of_words.py", line 113, in main
+    evaluate_main(retrieval_system, "BagOfWordsCapitals")
+  File "/Users/charlesoneill/retrieval/src/../evaluation/evaluate.py", line 93, in main
+    single_results = evaluator.evaluate_single_document('../data/single_paper.json', top_k=10)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/charlesoneill/retrieval/src/../evaluation/evaluate.py", line 47, in evaluate_single_document
+    retrieved_docs = self.retrieval_system.retrieve(query, top_k=top_k)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/charlesoneill/retrieval/src/bag_of_words.py", line 102, in retrieve
+    similarities = cosine_similarity(query_vector, self.tfidf_matrix).flatten()
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/charlesoneill/miniconda3/envs/jsalt/lib/python3.12/site-packages/sklearn/utils/_param_validation.py", line 213, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/charlesoneill/miniconda3/envs/jsalt/lib/python3.12/site-packages/sklearn/metrics/pairwise.py", line 1674, in cosine_similarity
+    Y_normalized = normalize(Y, copy=True)
+                   ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/charlesoneill/miniconda3/envs/jsalt/lib/python3.12/site-packages/sklearn/utils/_param_validation.py", line 186, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/charlesoneill/miniconda3/envs/jsalt/lib/python3.12/site-packages/sklearn/preprocessing/_data.py", line 1925, in normalize
+    X = check_array(
+        ^^^^^^^^^^^^
+  File "/Users/charlesoneill/miniconda3/envs/jsalt/lib/python3.12/site-packages/sklearn/utils/validation.py", line 966, in check_array
+    array = _ensure_sparse_format(
+            ^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/charlesoneill/miniconda3/envs/jsalt/lib/python3.12/site-packages/sklearn/utils/validation.py", line 625, in _ensure_sparse_format
+    sparse_container = sparse_container.copy()
+                       ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/charlesoneill/miniconda3/envs/jsalt/lib/python3.12/site-packages/scipy/sparse/_data.py", line 96, in copy
+    return self._with_data(self.data.copy(), copy=True)
+                           ^^^^^^^^^^^^^^^^
+KeyboardInterrupt

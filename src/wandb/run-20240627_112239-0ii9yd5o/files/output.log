@@ -1,0 +1,224 @@
+
+Multi-doc progress:   0%|                                                                                                         | 0/221 [00:00<?, ?it/s]
+Query:  How has the UV luminosity function of galaxies evolved from z~4 to z~8 according to analyses of deep HST data?
+Retrieved Documents:
+  1404/1404.5299_arXiv.txt
+  2202/2202.04142_arXiv.txt
+  1301/1301.6162_arXiv.txt
+  1405/1405.1040_arXiv.txt
+  1704/1704.05996_arXiv.txt
+  1710/1710.11131_arXiv.txt
+  1806/1806.05187_arXiv.txt
+  2211/2211.10035_arXiv.txt
+  9605/astro-ph9605170_arXiv.txt
+  1005/1005.0386_arXiv.txt
+Relevant Documents:
+  1201/1201..0755_arXiv.txt
+  1212/1212..4819_arXiv.txt
+  1208/1208..3529_arXiv.txt
+  0309/0309.070_arXiv.txt
+  0302/0302.212_arXiv.txt
+  1207/1207..2727_arXiv.txt
+  1212/1212..0860_arXiv.txt
+  1211/1211..6804_arXiv.txt
+  1212/1212..5222_arXiv.txt
+  1301/1301..1228_arXiv.txt
+  0707/0707..2080_arXiv.txt
+  1211/1211..3663_arXiv.txt
+  1210/1210..8417_arXiv.txt
+  1008/1008..3901_arXiv.txt
+defaultdict(<class 'list'>, {'map': [0.0], 'ndcg': [np.float64(0.0)], 'recall@k': [0.0], 'precision@k': [0.0], 'f1@k': [0]})
+Query:  What are the key observational measurements of the UV luminosity density from z=0 to z=8 that are used to constrain the cosmic star formation history?
+Retrieved Documents:
+  1405/1405.1040_arXiv.txt
+  2202/2202.04142_arXiv.txt
+  1404/1404.5299_arXiv.txt
+  1708/1708.03373_arXiv.txt
+  1301/1301.6162_arXiv.txt
+  1006/1006.1903_arXiv.txt
+  9910/astro-ph9910104_arXiv.txt
+  2211/2211.10035_arXiv.txt
+  1710/1710.11131_arXiv.txt
+  1211/1211.2825_arXiv.txt
+Relevant Documents:
+  0810/0810..2788_arXiv.txt
+  0411/0411.364_arXiv.txt
+  1106/1106..1994_arXiv.txt
+  1212/1212..4819_arXiv.txt
+  1208/1208..3529_arXiv.txt
+  0411/0411.391_arXiv.txt
+  0411/0411.424_arXiv.txt
+  1109/1109..1005_arXiv.txt
+  0609/0609.016_arXiv.txt
+  1201/1201..0755_arXiv.txt
+
+Multi-doc progress:   1%|▉                                                                                                | 2/221 [00:02<04:57,  1.36s/it]
+Query:  How does the specific star formation rate of galaxies evolve with redshift and stellar mass, and what are the implications for galaxy growth and the cosmic star formation history?
+Retrieved Documents:
+  1308/1308.2030_arXiv.txt
+  0409/astro-ph0409394_arXiv.txt
+  0808/0808.2642_arXiv.txt
+  0803/0803.1489_arXiv.txt
+  1002/1002.0386.txt
+  0101/astro-ph0101135_arXiv.txt
+  0803/0803.0414_arXiv.txt
+  1011/1011.0724_arXiv.txt
+  1609/1609.03956_arXiv.txt
+  1306/1306.2424_arXiv.txt
+Relevant Documents:
+  0311/0311.060_arXiv.txt
+  0701/0701.924_arXiv.txt
+  1202/1202..0290_arXiv.txt
+  9910/9910.104_arXiv.txt
+  0411/0411.775_arXiv.txt
+  0705/0705..2831_arXiv.txt
+  0312/0312.474_arXiv.txt
+  1011/1011..6370_arXiv.txt
+  1108/1108..0933_arXiv.txt
+  0703/0703.653_arXiv.txt
+  0005/0005.120_arXiv.txt
+defaultdict(<class 'list'>, {'map': [0.0, 0.0, 0.0], 'ndcg': [np.float64(0.0), np.float64(0.0), np.float64(0.0)], 'recall@k': [0.0, 0.0, 0.0], 'precision@k': [0.0, 0.0, 0.0], 'f1@k': [0, 0, 0]})
+Query:  What are the main types of physical models and simulations used to study the circumgalactic medium, and what are their key features and limitations?
+Retrieved Documents:
+  1310/1310.4514_arXiv.txt
+  2109/2109.06200_arXiv.txt
+  1810/1810.06566_arXiv.txt
+  2012/2012.00770_arXiv.txt
+  1809/1809.09113_arXiv.txt
+  1803/1803.03269_arXiv.txt
+  1607/1607.05442_arXiv.txt
+  1205/1205.0249_arXiv.txt
+  2004/2004.14394_arXiv.txt
+  2111/2111.05343_arXiv.txt
+Relevant Documents:
+  1602/1602..06956_arXiv.txt
+  1405/1405..2921_arXiv.txt
+  1607/1607..08616_arXiv.txt
+  0904/0904..1995_arXiv.txt
+  1412/1412..2712_arXiv.txt
+  1503/1503..00755_arXiv.txt
+  1407/1407..7040_arXiv.txt
+  1410/1410..8214_arXiv.txt
+  1606/1606..09252_arXiv.txt
+  1309/1309..5951_arXiv.txt
+  1603/1603..05984_arXiv.txt
+  1206/1206..1859_arXiv.txt
+  1508/1508..00007_arXiv.txt
+  1511/1511..00687_arXiv.txt
+  1212/1212..2965_arXiv.txt
+
+Multi-doc progress:   2%|██▏                                                                                              | 5/221 [00:05<03:42,  1.03s/it]
+Query:  What observational evidence supports the existence of a multiphase circumgalactic medium containing both hot and cool gas components?
+Retrieved Documents:
+  2012/2012.00770_arXiv.txt
+  2307/2307.06411_arXiv.txt
+  2109/2109.06200_arXiv.txt
+  2002/2002.10468_arXiv.txt
+  0708/0708.0313_arXiv.txt
+  2107/2107.13012_arXiv.txt
+  1810/1810.11771_arXiv.txt
+  1310/1310.4514_arXiv.txt
+  1810/1810.06566_arXiv.txt
+  0306/astro-ph0306326_arXiv.txt
+Relevant Documents:
+  0812/0812..4231_arXiv.txt
+  1112/1112..1698_arXiv.txt
+  1205/1205..5037_arXiv.txt
+  1211/1211..5140_arXiv.txt
+  0504/0504.558_arXiv.txt
+  1003/1003..3273_arXiv.txt
+  0604/0604.091_arXiv.txt
+  1205/1205..0270_arXiv.txt
+  0207/0207.562_arXiv.txt
+  1206/1206..1859_arXiv.txt
+  1202/1202..5973_arXiv.txt
+  1511/1511..00687_arXiv.txt
+defaultdict(<class 'list'>, {'map': [0.0, 0.0, 0.0, 0.0, 0.0], 'ndcg': [np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.0), np.float64(0.0)], 'recall@k': [0.0, 0.0, 0.0, 0.0, 0.0], 'precision@k': [0.0, 0.0, 0.0, 0.0, 0.0], 'f1@k': [0, 0, 0, 0, 0]})
+Query:  How do theoretical models attempt to explain the physical conditions and stability of multiphase gas in galactic halos, and what challenges do they face?
+Retrieved Documents:
+  2307/2307.06411_arXiv.txt
+  0604/astro-ph0604542_arXiv.txt
+  1609/1609.04405_arXiv.txt
+  9710/astro-ph9710010_arXiv.txt
+  2302/2302.09380_arXiv.txt
+  1709/1709.06564_arXiv.txt
+  9903/astro-ph9903171_arXiv.txt
+  2212/2212.08880_arXiv.txt
+  1912/1912.04923_arXiv.txt
+  1808/1808.05231_arXiv.txt
+Relevant Documents:
+  0802/0802..0496_arXiv.txt
+  0106/0106.018_arXiv.txt
+  1310/1310..2253_arXiv.txt
+  0406/0406.632_arXiv.txt
+  1606/1606..06734_arXiv.txt
+  1403/1403..0947_arXiv.txt
+  1111/1111..3980_arXiv.txt
+  0902/0902..4525_arXiv.txt
+  1511/1511..05144_arXiv.txt
+
+Multi-doc progress:   3%|███                                                                                              | 7/221 [00:07<03:31,  1.01it/s]
+Query:  What are the key structural parameters of the Milky Way's box/peanut bulge, including its orientation angle, axis ratios, and density distribution?
+Retrieved Documents:
+  1808/1808.07494_arXiv.txt
+  1101/1101.2714_arXiv.txt
+  1805/1805.01142_arXiv.txt
+  1401/1401.0541_arXiv.txt
+  1612/1612.02319_arXiv.txt
+  1707/1707.06660_arXiv.txt
+  1107/1107.5496_arXiv.txt
+  1503/1503.07252_arXiv.txt
+  1103/1103.6104_arXiv.txt
+  1502/1502.00633_arXiv.txt
+Relevant Documents:
+  1302/1302..1613_arXiv.txt
+  1308/1308..0593_arXiv.txt
+  1303/1303..6430_arXiv.txt
+  0110/0110.368_arXiv.txt
+  0203/0203.375_arXiv.txt
+  0704/0704..1614_arXiv.txt
+Multi-doc progress:   3%|███                                                                                              | 7/221 [00:08<04:18,  1.21s/it]
+Traceback (most recent call last):
+  File "/Users/charlesoneill/retrieval/src/bag_of_words.py", line 117, in <module>
+    main()
+  File "/Users/charlesoneill/retrieval/src/bag_of_words.py", line 114, in main
+    evaluate_main(retrieval_system, "BagOfWordsAll")
+  File "/Users/charlesoneill/retrieval/src/../evaluation/evaluate.py", line 145, in main
+    results = evaluator.evaluate('../data/single_paper.json', '../data/multi_paper.json', top_k=10)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/charlesoneill/retrieval/src/../evaluation/evaluate.py", line 37, in evaluate
+    multi_results = self._evaluate_multi_document(multi_doc_file, top_k)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/charlesoneill/retrieval/src/../evaluation/evaluate.py", line 76, in _evaluate_multi_document
+    retrieved_docs = self.retrieval_system.retrieve(query, top_k=top_k)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/charlesoneill/retrieval/src/bag_of_words.py", line 103, in retrieve
+    similarities = cosine_similarity(query_vector, self.tfidf_matrix).flatten()
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/charlesoneill/miniconda3/envs/jsalt/lib/python3.12/site-packages/sklearn/utils/_param_validation.py", line 213, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/charlesoneill/miniconda3/envs/jsalt/lib/python3.12/site-packages/sklearn/metrics/pairwise.py", line 1676, in cosine_similarity
+    K = safe_sparse_dot(X_normalized, Y_normalized.T, dense_output=dense_output)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/charlesoneill/miniconda3/envs/jsalt/lib/python3.12/site-packages/sklearn/utils/extmath.py", line 208, in safe_sparse_dot
+    ret = a @ b
+          ~~^~~
+  File "/Users/charlesoneill/miniconda3/envs/jsalt/lib/python3.12/site-packages/scipy/sparse/_base.py", line 669, in __matmul__
+    return self._matmul_dispatch(other)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/charlesoneill/miniconda3/envs/jsalt/lib/python3.12/site-packages/scipy/sparse/_base.py", line 580, in _matmul_dispatch
+    return self._matmul_sparse(other)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/charlesoneill/miniconda3/envs/jsalt/lib/python3.12/site-packages/scipy/sparse/_compressed.py", line 529, in _matmul_sparse
+    other = self.__class__(other)  # convert to this format
+            ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/charlesoneill/miniconda3/envs/jsalt/lib/python3.12/site-packages/scipy/sparse/_compressed.py", line 35, in __init__
+    arg1 = arg1.asformat(self.format)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/charlesoneill/miniconda3/envs/jsalt/lib/python3.12/site-packages/scipy/sparse/_base.py", line 409, in asformat
+    return convert_method(copy=copy)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/charlesoneill/miniconda3/envs/jsalt/lib/python3.12/site-packages/scipy/sparse/_csc.py", line 52, in tocsr
+    csc_tocsr(M, N,
+KeyboardInterrupt
