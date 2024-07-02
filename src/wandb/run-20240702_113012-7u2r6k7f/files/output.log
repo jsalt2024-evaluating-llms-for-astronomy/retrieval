@@ -1,0 +1,116 @@
+
+
+
+
+
+
+
+Single-doc progress:  11%|██████████▋                                                                                    | 28/250 [00:14<01:58,  1.87it/s]
+Traceback (most recent call last):
+  File "/Users/charlesoneill/retrieval/src/bag_of_words.py", line 118, in <module>
+    main()
+  File "/Users/charlesoneill/retrieval/src/bag_of_words.py", line 115, in main
+    evaluate_main(retrieval_system, "BagOfWordsDateFiltered")
+  File "/Users/charlesoneill/retrieval/src/../evaluation/evaluate.py", line 289, in main
+    results = evaluator.evaluate('../data/single_paper.json', '../data/multi_paper_sentences.json', k_values=[10, 50, 100])
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/charlesoneill/retrieval/src/../evaluation/evaluate.py", line 192, in evaluate
+    single_results = self._evaluate_single_document(single_doc_file, 10)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/charlesoneill/retrieval/src/../evaluation/evaluate.py", line 226, in _evaluate_single_document
+    retrieved_docs = self.retrieval_system.retrieve(query, arxiv_id, top_k=top_k)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/charlesoneill/retrieval/src/bag_of_words.py", line 108, in retrieve
+    similarities = cosine_similarity(query_vector, filtered_tfidf_matrix).flatten()
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/charlesoneill/miniconda3/envs/jsalt/lib/python3.12/site-packages/sklearn/utils/_param_validation.py", line 213, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/charlesoneill/miniconda3/envs/jsalt/lib/python3.12/site-packages/sklearn/metrics/pairwise.py", line 1676, in cosine_similarity
+    K = safe_sparse_dot(X_normalized, Y_normalized.T, dense_output=dense_output)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/charlesoneill/miniconda3/envs/jsalt/lib/python3.12/site-packages/sklearn/utils/extmath.py", line 208, in safe_sparse_dot
+    ret = a @ b
+          ~~^~~
+  File "/Users/charlesoneill/miniconda3/envs/jsalt/lib/python3.12/site-packages/scipy/sparse/_base.py", line 669, in __matmul__
+    return self._matmul_dispatch(other)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/charlesoneill/miniconda3/envs/jsalt/lib/python3.12/site-packages/scipy/sparse/_base.py", line 580, in _matmul_dispatch
+    return self._matmul_sparse(other)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/charlesoneill/miniconda3/envs/jsalt/lib/python3.12/site-packages/scipy/sparse/_compressed.py", line 529, in _matmul_sparse
+    other = self.__class__(other)  # convert to this format
+            ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/charlesoneill/miniconda3/envs/jsalt/lib/python3.12/site-packages/scipy/sparse/_compressed.py", line 35, in __init__
+    arg1 = arg1.asformat(self.format)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+Error in sys.excepthook:
+Traceback (most recent call last):
+  File "/Users/charlesoneill/miniconda3/envs/jsalt/lib/python3.12/site-packages/wandb/sdk/lib/exit_hooks.py", line 52, in exc_handler
+    traceback.print_exception(exc_type, exc, tb)
+  File "/Users/charlesoneill/miniconda3/envs/jsalt/lib/python3.12/traceback.py", line 125, in print_exception
+    te.print(file=file, chain=chain)
+  File "/Users/charlesoneill/miniconda3/envs/jsalt/lib/python3.12/traceback.py", line 1050, in print
+    print(line, file=file, end="")
+  File "/Users/charlesoneill/miniconda3/envs/jsalt/lib/python3.12/site-packages/wandb/sdk/lib/redirect.py", line 648, in write
+    cb(data)
+  File "/Users/charlesoneill/miniconda3/envs/jsalt/lib/python3.12/site-packages/wandb/sdk/wandb_run.py", line 2310, in <lambda>
+    lambda data: self._console_raw_callback("stderr", data),
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/charlesoneill/miniconda3/envs/jsalt/lib/python3.12/site-packages/wandb/sdk/wandb_run.py", line 400, in wrapper_fn
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/charlesoneill/miniconda3/envs/jsalt/lib/python3.12/site-packages/wandb/sdk/wandb_run.py", line 1539, in _console_raw_callback
+    self._backend.interface.publish_output_raw(name, data)
+  File "/Users/charlesoneill/miniconda3/envs/jsalt/lib/python3.12/site-packages/wandb/sdk/interface/interface.py", line 684, in publish_output_raw
+    otype = pb.OutputRawRecord.OutputType.STDERR
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/charlesoneill/miniconda3/envs/jsalt/lib/python3.12/site-packages/google/protobuf/internal/enum_type_wrapper.py", line 97, in __getattr__
+    self).__getattribute__('_enum_type').values_by_name[name].number
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+KeyboardInterrupt
+Original exception was:
+Traceback (most recent call last):
+  File "/Users/charlesoneill/retrieval/src/bag_of_words.py", line 118, in <module>
+    main()
+  File "/Users/charlesoneill/retrieval/src/bag_of_words.py", line 115, in main
+    evaluate_main(retrieval_system, "BagOfWordsDateFiltered")
+  File "/Users/charlesoneill/retrieval/src/../evaluation/evaluate.py", line 289, in main
+    results = evaluator.evaluate('../data/single_paper.json', '../data/multi_paper_sentences.json', k_values=[10, 50, 100])
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/charlesoneill/retrieval/src/../evaluation/evaluate.py", line 192, in evaluate
+    single_results = self._evaluate_single_document(single_doc_file, 10)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/charlesoneill/retrieval/src/../evaluation/evaluate.py", line 226, in _evaluate_single_document
+    retrieved_docs = self.retrieval_system.retrieve(query, arxiv_id, top_k=top_k)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/charlesoneill/retrieval/src/bag_of_words.py", line 108, in retrieve
+    similarities = cosine_similarity(query_vector, filtered_tfidf_matrix).flatten()
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/charlesoneill/miniconda3/envs/jsalt/lib/python3.12/site-packages/sklearn/utils/_param_validation.py", line 213, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/charlesoneill/miniconda3/envs/jsalt/lib/python3.12/site-packages/sklearn/metrics/pairwise.py", line 1676, in cosine_similarity
+    K = safe_sparse_dot(X_normalized, Y_normalized.T, dense_output=dense_output)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/charlesoneill/miniconda3/envs/jsalt/lib/python3.12/site-packages/sklearn/utils/extmath.py", line 208, in safe_sparse_dot
+    ret = a @ b
+          ~~^~~
+  File "/Users/charlesoneill/miniconda3/envs/jsalt/lib/python3.12/site-packages/scipy/sparse/_base.py", line 669, in __matmul__
+    return self._matmul_dispatch(other)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/charlesoneill/miniconda3/envs/jsalt/lib/python3.12/site-packages/scipy/sparse/_base.py", line 580, in _matmul_dispatch
+    return self._matmul_sparse(other)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/charlesoneill/miniconda3/envs/jsalt/lib/python3.12/site-packages/scipy/sparse/_compressed.py", line 529, in _matmul_sparse
+    other = self.__class__(other)  # convert to this format
+            ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/charlesoneill/miniconda3/envs/jsalt/lib/python3.12/site-packages/scipy/sparse/_compressed.py", line 35, in __init__
+    arg1 = arg1.asformat(self.format)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/charlesoneill/miniconda3/envs/jsalt/lib/python3.12/site-packages/scipy/sparse/_base.py", line 409, in asformat
+    return convert_method(copy=copy)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/charlesoneill/miniconda3/envs/jsalt/lib/python3.12/site-packages/scipy/sparse/_csc.py", line 52, in tocsr
+    csc_tocsr(M, N,
+KeyboardInterrupt

@@ -1,0 +1,92 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Single-doc progress: 100%|██████████████████████████████████████████████████████████████████████████████████████████████| 250/250 [02:22<00:00,  1.76it/s]
+Multi-doc progress:   0%|                                                                                                         | 0/248 [00:00<?, ?it/s]
+
+Multi-doc progress:   4%|███▌                                                                                             | 9/248 [00:03<01:41,  2.36it/s]
+Traceback (most recent call last):
+  File "/Users/charlesoneill/retrieval/src/bag_of_words.py", line 118, in <module>
+    main()
+  File "/Users/charlesoneill/retrieval/src/bag_of_words.py", line 115, in main
+    evaluate_main(retrieval_system, "BagOfWordsDateFiltered")
+  File "/Users/charlesoneill/retrieval/src/../evaluation/evaluate.py", line 145, in main
+    results = evaluator.evaluate('../data/single_paper.json', '../data/multi_paper.json', '../data/multi_paper_sentences.json', k_values=[10, 50, 100])
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/charlesoneill/retrieval/src/../evaluation/evaluate.py", line 30, in evaluate
+    multi_results = self._evaluate_multi_document(multi_doc_file, k_values)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/charlesoneill/retrieval/src/../evaluation/evaluate.py", line 86, in _evaluate_multi_document
+    results[k]['map'].append(self._calculate_map(retrieved_docs[:k], relevant_docs))
+                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/charlesoneill/retrieval/src/../evaluation/evaluate.py", line 132, in _calculate_map
+    return sum(p * r for p, r in zip(precisions, relevance)) / len(relevant_docs)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~
+ZeroDivisionError: float division by zero
