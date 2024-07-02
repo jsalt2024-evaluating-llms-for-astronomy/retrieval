@@ -1,0 +1,1035 @@
+2024-07-02 11:31:06,084 INFO    StreamThr :60979 [internal.py:wandb_internal():85] W&B internal server running at pid: 60979, started at: 2024-07-02 11:31:06.083299
+2024-07-02 11:31:06,085 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: status
+2024-07-02 11:31:06,087 INFO    WriterThread:60979 [datastore.py:open_for_write():87] open: /Users/charlesoneill/retrieval/src/wandb/run-20240702_113106-gjgpux6h/run-gjgpux6h.wandb
+2024-07-02 11:31:06,088 DEBUG   SenderThread:60979 [sender.py:send():379] send: header
+2024-07-02 11:31:06,098 DEBUG   SenderThread:60979 [sender.py:send():379] send: run
+2024-07-02 11:31:06,322 INFO    SenderThread:60979 [dir_watcher.py:__init__():211] watching files in: /Users/charlesoneill/retrieval/src/wandb/run-20240702_113106-gjgpux6h/files
+2024-07-02 11:31:06,322 INFO    SenderThread:60979 [sender.py:_start_run_threads():1188] run started: gjgpux6h with start time 1719934266.084323
+2024-07-02 11:31:06,329 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: check_version
+2024-07-02 11:31:06,330 DEBUG   SenderThread:60979 [sender.py:send_request():406] send_request: check_version
+2024-07-02 11:31:06,393 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: run_start
+2024-07-02 11:31:06,401 DEBUG   HandlerThread:60979 [system_info.py:__init__():26] System info init
+2024-07-02 11:31:06,402 DEBUG   HandlerThread:60979 [system_info.py:__init__():41] System info init done
+2024-07-02 11:31:06,402 INFO    HandlerThread:60979 [system_monitor.py:start():194] Starting system monitor
+2024-07-02 11:31:06,402 INFO    SystemMonitor:60979 [system_monitor.py:_start():158] Starting system asset monitoring threads
+2024-07-02 11:31:06,402 INFO    HandlerThread:60979 [system_monitor.py:probe():214] Collecting system info
+2024-07-02 11:31:06,402 INFO    SystemMonitor:60979 [interfaces.py:start():188] Started cpu monitoring
+2024-07-02 11:31:06,407 INFO    SystemMonitor:60979 [interfaces.py:start():188] Started disk monitoring
+2024-07-02 11:31:06,407 INFO    SystemMonitor:60979 [interfaces.py:start():188] Started gpuapple monitoring
+2024-07-02 11:31:06,409 INFO    SystemMonitor:60979 [interfaces.py:start():188] Started memory monitoring
+2024-07-02 11:31:06,410 INFO    SystemMonitor:60979 [interfaces.py:start():188] Started network monitoring
+2024-07-02 11:31:06,732 DEBUG   HandlerThread:60979 [system_info.py:probe():152] Probing system
+2024-07-02 11:31:06,735 DEBUG   HandlerThread:60979 [system_info.py:_probe_git():137] Probing git
+2024-07-02 11:31:06,745 DEBUG   HandlerThread:60979 [system_info.py:_probe_git():145] Probing git done
+2024-07-02 11:31:06,746 DEBUG   HandlerThread:60979 [system_info.py:probe():200] Probing system done
+2024-07-02 11:31:06,746 DEBUG   HandlerThread:60979 [system_monitor.py:probe():223] {'os': 'macOS-14.3-arm64-arm-64bit', 'python': '3.12.4', 'heartbeatAt': '2024-07-02T15:31:06.732843', 'startedAt': '2024-07-02T15:31:06.075687', 'docker': None, 'cuda': None, 'args': (), 'state': 'running', 'program': '/Users/charlesoneill/retrieval/src/bag_of_words.py', 'codePathLocal': 'bag_of_words.py', 'codePath': 'src/bag_of_words.py', 'git': {'remote': 'https://github.com/jsalt2024-evaluating-llms-for-astronomy/retrieval.git', 'commit': 'e6e14227857fc02123ecd82713d82c9a348d9d6d'}, 'email': 'cponeill00@gmail.com', 'root': '/Users/charlesoneill/retrieval', 'host': 'Charless-MacBook-Pro-2.local', 'username': 'charlesoneill', 'executable': '/Users/charlesoneill/miniconda3/envs/jsalt/bin/python', 'cpu_count': 12, 'cpu_count_logical': 12, 'disk': {'/': {'total': 926.3517189025879, 'used': 441.6200370788574}}, 'gpuapple': {'type': 'Apple M2 Max', 'vendor': 'sppci_vendor_Apple'}, 'memory': {'total': 32.0}}
+2024-07-02 11:31:06,746 INFO    HandlerThread:60979 [system_monitor.py:probe():224] Finished collecting system info
+2024-07-02 11:31:06,746 INFO    HandlerThread:60979 [system_monitor.py:probe():227] Publishing system info
+2024-07-02 11:31:06,746 DEBUG   HandlerThread:60979 [system_info.py:_save_conda():209] Saving list of conda packages installed into the current environment
+2024-07-02 11:31:07,327 INFO    Thread-12 :60979 [dir_watcher.py:_on_file_created():271] file/dir created: /Users/charlesoneill/retrieval/src/wandb/run-20240702_113106-gjgpux6h/files/conda-environment.yaml
+2024-07-02 11:31:08,076 DEBUG   HandlerThread:60979 [system_info.py:_save_conda():224] Saving conda packages done
+2024-07-02 11:31:08,077 INFO    HandlerThread:60979 [system_monitor.py:probe():229] Finished publishing system info
+2024-07-02 11:31:08,079 DEBUG   SenderThread:60979 [sender.py:send():379] send: files
+2024-07-02 11:31:08,079 INFO    SenderThread:60979 [sender.py:_save_file():1454] saving file wandb-metadata.json with policy now
+2024-07-02 11:31:08,133 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: python_packages
+2024-07-02 11:31:08,134 DEBUG   SenderThread:60979 [sender.py:send_request():406] send_request: python_packages
+2024-07-02 11:31:08,134 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 11:31:08,134 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: stop_status
+2024-07-02 11:31:08,134 DEBUG   SenderThread:60979 [sender.py:send_request():406] send_request: stop_status
+2024-07-02 11:31:08,332 INFO    Thread-12 :60979 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/charlesoneill/retrieval/src/wandb/run-20240702_113106-gjgpux6h/files/conda-environment.yaml
+2024-07-02 11:31:08,332 INFO    Thread-12 :60979 [dir_watcher.py:_on_file_created():271] file/dir created: /Users/charlesoneill/retrieval/src/wandb/run-20240702_113106-gjgpux6h/files/requirements.txt
+2024-07-02 11:31:08,332 INFO    Thread-12 :60979 [dir_watcher.py:_on_file_created():271] file/dir created: /Users/charlesoneill/retrieval/src/wandb/run-20240702_113106-gjgpux6h/files/wandb-metadata.json
+2024-07-02 11:31:08,459 DEBUG   SenderThread:60979 [sender.py:send():379] send: telemetry
+2024-07-02 11:31:08,833 INFO    wandb-upload_0:60979 [upload_job.py:push():130] Uploaded file /var/folders/wg/cdt_cw_5265_z_gwnxlf0tv80000gn/T/tmp6v4duss9wandb/iofju7be-wandb-metadata.json
+2024-07-02 11:31:09,139 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 11:31:09,337 INFO    Thread-12 :60979 [dir_watcher.py:_on_file_created():271] file/dir created: /Users/charlesoneill/retrieval/src/wandb/run-20240702_113106-gjgpux6h/files/output.log
+2024-07-02 11:31:10,144 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 11:31:11,149 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 11:31:11,342 INFO    Thread-12 :60979 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/charlesoneill/retrieval/src/wandb/run-20240702_113106-gjgpux6h/files/output.log
+2024-07-02 11:31:11,826 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: status_report
+2024-07-02 11:31:12,152 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 11:31:13,157 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 11:31:13,353 INFO    Thread-12 :60979 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/charlesoneill/retrieval/src/wandb/run-20240702_113106-gjgpux6h/files/output.log
+2024-07-02 11:31:14,163 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 11:31:15,175 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 11:31:15,363 INFO    Thread-12 :60979 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/charlesoneill/retrieval/src/wandb/run-20240702_113106-gjgpux6h/files/output.log
+2024-07-02 11:31:16,180 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 11:31:17,020 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: status_report
+2024-07-02 11:31:17,181 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 11:31:17,373 INFO    Thread-12 :60979 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/charlesoneill/retrieval/src/wandb/run-20240702_113106-gjgpux6h/files/output.log
+2024-07-02 11:31:18,182 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 11:31:19,188 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 11:31:19,380 INFO    Thread-12 :60979 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/charlesoneill/retrieval/src/wandb/run-20240702_113106-gjgpux6h/files/output.log
+2024-07-02 11:31:20,287 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 11:31:21,288 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 11:31:21,389 INFO    Thread-12 :60979 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/charlesoneill/retrieval/src/wandb/run-20240702_113106-gjgpux6h/files/output.log
+2024-07-02 11:31:22,203 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: status_report
+2024-07-02 11:31:22,293 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 11:31:23,139 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: stop_status
+2024-07-02 11:31:23,139 DEBUG   SenderThread:60979 [sender.py:send_request():406] send_request: stop_status
+2024-07-02 11:31:23,298 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 11:31:23,399 INFO    Thread-12 :60979 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/charlesoneill/retrieval/src/wandb/run-20240702_113106-gjgpux6h/files/output.log
+2024-07-02 11:31:24,436 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 11:31:25,408 INFO    Thread-12 :60979 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/charlesoneill/retrieval/src/wandb/run-20240702_113106-gjgpux6h/files/output.log
+2024-07-02 11:31:25,441 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 11:31:26,443 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 11:31:27,419 INFO    Thread-12 :60979 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/charlesoneill/retrieval/src/wandb/run-20240702_113106-gjgpux6h/files/output.log
+2024-07-02 11:31:27,585 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 11:31:28,143 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: status_report
+2024-07-02 11:31:28,712 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 11:31:29,429 INFO    Thread-12 :60979 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/charlesoneill/retrieval/src/wandb/run-20240702_113106-gjgpux6h/files/output.log
+2024-07-02 11:31:29,716 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 11:31:30,721 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 11:31:31,439 INFO    Thread-12 :60979 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/charlesoneill/retrieval/src/wandb/run-20240702_113106-gjgpux6h/files/output.log
+2024-07-02 11:31:31,854 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 11:31:32,907 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 11:31:33,159 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: status_report
+2024-07-02 11:31:33,446 INFO    Thread-12 :60979 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/charlesoneill/retrieval/src/wandb/run-20240702_113106-gjgpux6h/files/output.log
+2024-07-02 11:31:33,912 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 11:31:34,915 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 11:31:35,453 INFO    Thread-12 :60979 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/charlesoneill/retrieval/src/wandb/run-20240702_113106-gjgpux6h/files/output.log
+2024-07-02 11:31:35,920 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 11:31:36,925 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 11:31:37,459 INFO    Thread-12 :60979 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/charlesoneill/retrieval/src/wandb/run-20240702_113106-gjgpux6h/files/output.log
+2024-07-02 11:31:37,936 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 11:31:38,144 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: stop_status
+2024-07-02 11:31:38,144 DEBUG   SenderThread:60979 [sender.py:send_request():406] send_request: stop_status
+2024-07-02 11:31:38,232 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: status_report
+2024-07-02 11:31:38,463 INFO    Thread-12 :60979 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/charlesoneill/retrieval/src/wandb/run-20240702_113106-gjgpux6h/files/config.yaml
+2024-07-02 11:31:39,004 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 11:31:39,468 INFO    Thread-12 :60979 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/charlesoneill/retrieval/src/wandb/run-20240702_113106-gjgpux6h/files/output.log
+2024-07-02 11:31:40,029 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 11:31:41,034 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 11:31:41,478 INFO    Thread-12 :60979 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/charlesoneill/retrieval/src/wandb/run-20240702_113106-gjgpux6h/files/output.log
+2024-07-02 11:31:42,132 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 11:31:43,136 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 11:31:43,485 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: status_report
+2024-07-02 11:31:43,489 INFO    Thread-12 :60979 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/charlesoneill/retrieval/src/wandb/run-20240702_113106-gjgpux6h/files/output.log
+2024-07-02 11:31:44,145 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 11:31:45,150 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 11:31:45,499 INFO    Thread-12 :60979 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/charlesoneill/retrieval/src/wandb/run-20240702_113106-gjgpux6h/files/output.log
+2024-07-02 11:31:46,155 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 11:31:47,160 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 11:31:47,509 INFO    Thread-12 :60979 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/charlesoneill/retrieval/src/wandb/run-20240702_113106-gjgpux6h/files/output.log
+2024-07-02 11:31:48,165 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 11:31:49,170 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 11:31:49,179 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: status_report
+2024-07-02 11:31:49,516 INFO    Thread-12 :60979 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/charlesoneill/retrieval/src/wandb/run-20240702_113106-gjgpux6h/files/output.log
+2024-07-02 11:31:50,179 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 11:31:51,184 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 11:31:51,522 INFO    Thread-12 :60979 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/charlesoneill/retrieval/src/wandb/run-20240702_113106-gjgpux6h/files/output.log
+2024-07-02 11:31:52,189 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 11:31:53,149 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: stop_status
+2024-07-02 11:31:53,150 DEBUG   SenderThread:60979 [sender.py:send_request():406] send_request: stop_status
+2024-07-02 11:31:53,194 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 11:31:53,530 INFO    Thread-12 :60979 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/charlesoneill/retrieval/src/wandb/run-20240702_113106-gjgpux6h/files/output.log
+2024-07-02 11:31:54,199 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 11:31:54,556 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: status_report
+2024-07-02 11:31:55,204 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 11:31:55,541 INFO    Thread-12 :60979 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/charlesoneill/retrieval/src/wandb/run-20240702_113106-gjgpux6h/files/output.log
+2024-07-02 11:31:56,209 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 11:31:57,223 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 11:31:57,551 INFO    Thread-12 :60979 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/charlesoneill/retrieval/src/wandb/run-20240702_113106-gjgpux6h/files/output.log
+2024-07-02 11:31:58,228 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 11:31:59,233 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 11:31:59,562 INFO    Thread-12 :60979 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/charlesoneill/retrieval/src/wandb/run-20240702_113106-gjgpux6h/files/output.log
+2024-07-02 11:31:59,703 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: status_report
+2024-07-02 11:32:00,238 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 11:32:01,243 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 11:32:01,572 INFO    Thread-12 :60979 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/charlesoneill/retrieval/src/wandb/run-20240702_113106-gjgpux6h/files/output.log
+2024-07-02 11:32:02,248 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 11:32:03,271 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 11:32:03,583 INFO    Thread-12 :60979 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/charlesoneill/retrieval/src/wandb/run-20240702_113106-gjgpux6h/files/output.log
+2024-07-02 11:32:04,276 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 11:32:05,173 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: status_report
+2024-07-02 11:32:05,281 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 11:32:05,594 INFO    Thread-12 :60979 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/charlesoneill/retrieval/src/wandb/run-20240702_113106-gjgpux6h/files/output.log
+2024-07-02 11:32:06,299 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 11:32:06,415 DEBUG   SystemMonitor:60979 [system_monitor.py:_start():172] Starting system metrics aggregation loop
+2024-07-02 11:32:06,416 DEBUG   SenderThread:60979 [sender.py:send():379] send: telemetry
+2024-07-02 11:32:06,416 DEBUG   SenderThread:60979 [sender.py:send():379] send: stats
+2024-07-02 11:32:07,304 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 11:32:07,600 INFO    Thread-12 :60979 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/charlesoneill/retrieval/src/wandb/run-20240702_113106-gjgpux6h/files/output.log
+2024-07-02 11:32:08,210 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: stop_status
+2024-07-02 11:32:08,210 DEBUG   SenderThread:60979 [sender.py:send_request():406] send_request: stop_status
+2024-07-02 11:32:08,309 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 11:32:09,313 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 11:32:09,611 INFO    Thread-12 :60979 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/charlesoneill/retrieval/src/wandb/run-20240702_113106-gjgpux6h/files/output.log
+2024-07-02 11:32:10,319 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 11:32:11,117 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: status_report
+2024-07-02 11:32:11,324 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 11:32:11,621 INFO    Thread-12 :60979 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/charlesoneill/retrieval/src/wandb/run-20240702_113106-gjgpux6h/files/output.log
+2024-07-02 11:32:11,621 INFO    Thread-12 :60979 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/charlesoneill/retrieval/src/wandb/run-20240702_113106-gjgpux6h/files/config.yaml
+2024-07-02 11:32:12,336 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 11:32:13,339 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 11:32:13,628 INFO    Thread-12 :60979 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/charlesoneill/retrieval/src/wandb/run-20240702_113106-gjgpux6h/files/output.log
+2024-07-02 11:32:14,344 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 11:32:15,354 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 11:32:15,638 INFO    Thread-12 :60979 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/charlesoneill/retrieval/src/wandb/run-20240702_113106-gjgpux6h/files/output.log
+2024-07-02 11:32:16,401 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 11:32:16,644 INFO    Thread-12 :60979 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/charlesoneill/retrieval/src/wandb/run-20240702_113106-gjgpux6h/files/output.log
+2024-07-02 11:32:16,948 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: status_report
+2024-07-02 11:32:17,406 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 11:32:18,411 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 11:32:18,654 INFO    Thread-12 :60979 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/charlesoneill/retrieval/src/wandb/run-20240702_113106-gjgpux6h/files/output.log
+2024-07-02 11:32:19,416 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 11:32:20,421 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 11:32:20,665 INFO    Thread-12 :60979 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/charlesoneill/retrieval/src/wandb/run-20240702_113106-gjgpux6h/files/output.log
+2024-07-02 11:32:21,426 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 11:32:22,144 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: status_report
+2024-07-02 11:32:22,428 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 11:32:22,675 INFO    Thread-12 :60979 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/charlesoneill/retrieval/src/wandb/run-20240702_113106-gjgpux6h/files/output.log
+2024-07-02 11:32:23,215 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: stop_status
+2024-07-02 11:32:23,216 DEBUG   SenderThread:60979 [sender.py:send_request():406] send_request: stop_status
+2024-07-02 11:32:23,433 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 11:32:24,434 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 11:32:24,685 INFO    Thread-12 :60979 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/charlesoneill/retrieval/src/wandb/run-20240702_113106-gjgpux6h/files/output.log
+2024-07-02 11:32:25,462 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 11:32:26,526 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 11:32:26,696 INFO    Thread-12 :60979 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/charlesoneill/retrieval/src/wandb/run-20240702_113106-gjgpux6h/files/output.log
+2024-07-02 11:32:27,531 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 11:32:27,546 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: status_report
+2024-07-02 11:32:28,536 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 11:32:28,705 INFO    Thread-12 :60979 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/charlesoneill/retrieval/src/wandb/run-20240702_113106-gjgpux6h/files/output.log
+2024-07-02 11:32:29,541 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 11:32:30,550 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 11:32:30,713 INFO    Thread-12 :60979 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/charlesoneill/retrieval/src/wandb/run-20240702_113106-gjgpux6h/files/output.log
+2024-07-02 11:32:31,555 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 11:32:32,560 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 11:32:32,589 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: status_report
+2024-07-02 11:32:32,724 INFO    Thread-12 :60979 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/charlesoneill/retrieval/src/wandb/run-20240702_113106-gjgpux6h/files/output.log
+2024-07-02 11:32:33,565 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 11:32:34,570 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 11:32:34,734 INFO    Thread-12 :60979 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/charlesoneill/retrieval/src/wandb/run-20240702_113106-gjgpux6h/files/output.log
+2024-07-02 11:32:35,575 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 11:32:36,421 DEBUG   SenderThread:60979 [sender.py:send():379] send: stats
+2024-07-02 11:32:36,587 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 11:32:36,742 INFO    Thread-12 :60979 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/charlesoneill/retrieval/src/wandb/run-20240702_113106-gjgpux6h/files/output.log
+2024-07-02 11:32:37,790 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 11:32:38,145 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: status_report
+2024-07-02 11:32:38,220 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: stop_status
+2024-07-02 11:32:38,220 DEBUG   SenderThread:60979 [sender.py:send_request():406] send_request: stop_status
+2024-07-02 11:32:38,752 INFO    Thread-12 :60979 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/charlesoneill/retrieval/src/wandb/run-20240702_113106-gjgpux6h/files/output.log
+2024-07-02 11:32:38,795 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 11:32:39,800 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 11:32:40,759 INFO    Thread-12 :60979 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/charlesoneill/retrieval/src/wandb/run-20240702_113106-gjgpux6h/files/output.log
+2024-07-02 11:32:40,805 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 11:32:41,810 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 11:32:42,770 INFO    Thread-12 :60979 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/charlesoneill/retrieval/src/wandb/run-20240702_113106-gjgpux6h/files/output.log
+2024-07-02 11:32:42,815 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 11:32:43,172 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: status_report
+2024-07-02 11:32:43,824 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 11:32:44,780 INFO    Thread-12 :60979 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/charlesoneill/retrieval/src/wandb/run-20240702_113106-gjgpux6h/files/output.log
+2024-07-02 11:32:44,829 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 11:32:45,834 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 11:32:46,791 INFO    Thread-12 :60979 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/charlesoneill/retrieval/src/wandb/run-20240702_113106-gjgpux6h/files/output.log
+2024-07-02 11:32:46,838 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 11:32:47,843 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 11:32:48,422 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: status_report
+2024-07-02 11:32:48,797 INFO    Thread-12 :60979 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/charlesoneill/retrieval/src/wandb/run-20240702_113106-gjgpux6h/files/output.log
+2024-07-02 11:32:48,847 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 11:32:49,852 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 11:32:50,807 INFO    Thread-12 :60979 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/charlesoneill/retrieval/src/wandb/run-20240702_113106-gjgpux6h/files/output.log
+2024-07-02 11:32:50,862 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 11:32:51,862 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 11:32:52,817 INFO    Thread-12 :60979 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/charlesoneill/retrieval/src/wandb/run-20240702_113106-gjgpux6h/files/output.log
+2024-07-02 11:32:52,867 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 11:32:53,225 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: stop_status
+2024-07-02 11:32:53,226 DEBUG   SenderThread:60979 [sender.py:send_request():406] send_request: stop_status
+2024-07-02 11:32:53,427 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: status_report
+2024-07-02 11:32:54,018 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 11:32:54,828 INFO    Thread-12 :60979 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/charlesoneill/retrieval/src/wandb/run-20240702_113106-gjgpux6h/files/output.log
+2024-07-02 11:32:55,023 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 11:32:56,026 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 11:32:56,838 INFO    Thread-12 :60979 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/charlesoneill/retrieval/src/wandb/run-20240702_113106-gjgpux6h/files/output.log
+2024-07-02 11:32:57,031 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 11:32:58,036 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 11:32:58,428 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: status_report
+2024-07-02 11:32:58,849 INFO    Thread-12 :60979 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/charlesoneill/retrieval/src/wandb/run-20240702_113106-gjgpux6h/files/output.log
+2024-07-02 11:32:59,042 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 11:33:00,048 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 11:33:00,859 INFO    Thread-12 :60979 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/charlesoneill/retrieval/src/wandb/run-20240702_113106-gjgpux6h/files/output.log
+2024-07-02 11:33:01,053 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 11:33:02,058 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 11:33:02,869 INFO    Thread-12 :60979 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/charlesoneill/retrieval/src/wandb/run-20240702_113106-gjgpux6h/files/output.log
+2024-07-02 11:33:03,062 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 11:33:03,433 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: status_report
+2024-07-02 11:33:04,067 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 11:33:04,876 INFO    Thread-12 :60979 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/charlesoneill/retrieval/src/wandb/run-20240702_113106-gjgpux6h/files/output.log
+2024-07-02 11:33:05,072 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 11:33:06,077 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 11:33:06,427 DEBUG   SenderThread:60979 [sender.py:send():379] send: stats
+2024-07-02 11:33:06,886 INFO    Thread-12 :60979 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/charlesoneill/retrieval/src/wandb/run-20240702_113106-gjgpux6h/files/output.log
+2024-07-02 11:33:07,082 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 11:33:08,102 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 11:33:08,230 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: stop_status
+2024-07-02 11:33:08,231 DEBUG   SenderThread:60979 [sender.py:send_request():406] send_request: stop_status
+2024-07-02 11:33:08,438 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: status_report
+2024-07-02 11:33:08,897 INFO    Thread-12 :60979 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/charlesoneill/retrieval/src/wandb/run-20240702_113106-gjgpux6h/files/output.log
+2024-07-02 11:33:09,106 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 11:33:10,112 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 11:33:10,906 INFO    Thread-12 :60979 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/charlesoneill/retrieval/src/wandb/run-20240702_113106-gjgpux6h/files/output.log
+2024-07-02 11:33:11,117 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 11:33:12,146 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 11:33:12,916 INFO    Thread-12 :60979 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/charlesoneill/retrieval/src/wandb/run-20240702_113106-gjgpux6h/files/output.log
+2024-07-02 11:33:13,230 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 11:33:13,443 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: status_report
+2024-07-02 11:33:14,234 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 11:33:14,923 INFO    Thread-12 :60979 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/charlesoneill/retrieval/src/wandb/run-20240702_113106-gjgpux6h/files/output.log
+2024-07-02 11:33:15,239 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 11:33:16,254 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 11:33:16,930 INFO    Thread-12 :60979 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/charlesoneill/retrieval/src/wandb/run-20240702_113106-gjgpux6h/files/output.log
+2024-07-02 11:33:17,252 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 11:33:18,255 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 11:33:18,448 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: status_report
+2024-07-02 11:33:18,940 INFO    Thread-12 :60979 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/charlesoneill/retrieval/src/wandb/run-20240702_113106-gjgpux6h/files/output.log
+2024-07-02 11:33:19,261 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 11:33:20,335 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 11:33:20,951 INFO    Thread-12 :60979 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/charlesoneill/retrieval/src/wandb/run-20240702_113106-gjgpux6h/files/output.log
+2024-07-02 11:33:21,340 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 11:33:22,345 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 11:33:22,961 INFO    Thread-12 :60979 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/charlesoneill/retrieval/src/wandb/run-20240702_113106-gjgpux6h/files/output.log
+2024-07-02 11:33:23,235 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: stop_status
+2024-07-02 11:33:23,236 DEBUG   SenderThread:60979 [sender.py:send_request():406] send_request: stop_status
+2024-07-02 11:33:23,350 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 11:33:23,453 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: status_report
+2024-07-02 11:33:24,360 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 11:33:24,972 INFO    Thread-12 :60979 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/charlesoneill/retrieval/src/wandb/run-20240702_113106-gjgpux6h/files/output.log
+2024-07-02 11:33:25,365 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 11:33:26,370 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 11:33:26,982 INFO    Thread-12 :60979 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/charlesoneill/retrieval/src/wandb/run-20240702_113106-gjgpux6h/files/output.log
+2024-07-02 11:33:27,376 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 11:33:28,381 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 11:33:28,458 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: status_report
+2024-07-02 11:33:28,993 INFO    Thread-12 :60979 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/charlesoneill/retrieval/src/wandb/run-20240702_113106-gjgpux6h/files/output.log
+2024-07-02 11:33:29,386 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 11:33:30,391 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 11:33:31,003 INFO    Thread-12 :60979 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/charlesoneill/retrieval/src/wandb/run-20240702_113106-gjgpux6h/files/output.log
+2024-07-02 11:33:31,394 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 11:33:32,406 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 11:33:33,012 INFO    Thread-12 :60979 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/charlesoneill/retrieval/src/wandb/run-20240702_113106-gjgpux6h/files/output.log
+2024-07-02 11:33:33,411 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 11:33:33,463 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: status_report
+2024-07-02 11:33:34,017 INFO    Thread-12 :60979 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/charlesoneill/retrieval/src/wandb/run-20240702_113106-gjgpux6h/files/output.log
+2024-07-02 11:33:34,416 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 11:33:35,019 INFO    Thread-12 :60979 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/charlesoneill/retrieval/src/wandb/run-20240702_113106-gjgpux6h/files/output.log
+2024-07-02 11:33:35,417 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 11:33:36,422 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 11:33:36,432 DEBUG   SenderThread:60979 [sender.py:send():379] send: stats
+2024-07-02 11:33:37,026 INFO    Thread-12 :60979 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/charlesoneill/retrieval/src/wandb/run-20240702_113106-gjgpux6h/files/output.log
+2024-07-02 11:33:37,427 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 11:33:38,241 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: stop_status
+2024-07-02 11:33:38,241 DEBUG   SenderThread:60979 [sender.py:send_request():406] send_request: stop_status
+2024-07-02 11:33:38,432 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 11:33:38,468 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: status_report
+2024-07-02 11:33:39,036 INFO    Thread-12 :60979 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/charlesoneill/retrieval/src/wandb/run-20240702_113106-gjgpux6h/files/output.log
+2024-07-02 11:33:39,470 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 11:33:40,475 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 11:33:41,047 INFO    Thread-12 :60979 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/charlesoneill/retrieval/src/wandb/run-20240702_113106-gjgpux6h/files/output.log
+2024-07-02 11:33:41,480 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 11:33:42,532 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 11:33:43,054 INFO    Thread-12 :60979 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/charlesoneill/retrieval/src/wandb/run-20240702_113106-gjgpux6h/files/output.log
+2024-07-02 11:33:43,473 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: status_report
+2024-07-02 11:33:43,532 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 11:33:44,543 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 11:33:45,065 INFO    Thread-12 :60979 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/charlesoneill/retrieval/src/wandb/run-20240702_113106-gjgpux6h/files/output.log
+2024-07-02 11:33:45,548 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 11:33:46,570 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 11:33:47,074 INFO    Thread-12 :60979 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/charlesoneill/retrieval/src/wandb/run-20240702_113106-gjgpux6h/files/output.log
+2024-07-02 11:33:47,572 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 11:33:48,478 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: status_report
+2024-07-02 11:33:48,579 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 11:33:49,085 INFO    Thread-12 :60979 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/charlesoneill/retrieval/src/wandb/run-20240702_113106-gjgpux6h/files/output.log
+2024-07-02 11:33:49,584 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 11:33:50,589 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 11:33:51,095 INFO    Thread-12 :60979 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/charlesoneill/retrieval/src/wandb/run-20240702_113106-gjgpux6h/files/output.log
+2024-07-02 11:33:51,603 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 11:33:52,608 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 11:33:53,106 INFO    Thread-12 :60979 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/charlesoneill/retrieval/src/wandb/run-20240702_113106-gjgpux6h/files/output.log
+2024-07-02 11:33:53,246 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: stop_status
+2024-07-02 11:33:53,246 DEBUG   SenderThread:60979 [sender.py:send_request():406] send_request: stop_status
+2024-07-02 11:33:53,483 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: status_report
+2024-07-02 11:33:53,613 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 11:33:54,618 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 11:33:55,116 INFO    Thread-12 :60979 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/charlesoneill/retrieval/src/wandb/run-20240702_113106-gjgpux6h/files/output.log
+2024-07-02 11:33:55,623 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 11:33:56,628 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 11:33:57,126 INFO    Thread-12 :60979 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/charlesoneill/retrieval/src/wandb/run-20240702_113106-gjgpux6h/files/output.log
+2024-07-02 11:33:57,633 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 11:33:58,488 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: status_report
+2024-07-02 11:33:58,639 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 11:33:59,137 INFO    Thread-12 :60979 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/charlesoneill/retrieval/src/wandb/run-20240702_113106-gjgpux6h/files/output.log
+2024-07-02 11:33:59,643 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 11:34:00,648 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 11:34:01,147 INFO    Thread-12 :60979 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/charlesoneill/retrieval/src/wandb/run-20240702_113106-gjgpux6h/files/output.log
+2024-07-02 11:34:01,654 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 11:34:02,659 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 11:34:03,151 INFO    Thread-12 :60979 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/charlesoneill/retrieval/src/wandb/run-20240702_113106-gjgpux6h/files/output.log
+2024-07-02 11:34:03,493 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: status_report
+2024-07-02 11:34:03,664 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 11:34:04,669 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 11:34:05,162 INFO    Thread-12 :60979 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/charlesoneill/retrieval/src/wandb/run-20240702_113106-gjgpux6h/files/output.log
+2024-07-02 11:34:05,692 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 11:34:06,438 DEBUG   SenderThread:60979 [sender.py:send():379] send: stats
+2024-07-02 11:34:06,686 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 11:34:07,172 INFO    Thread-12 :60979 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/charlesoneill/retrieval/src/wandb/run-20240702_113106-gjgpux6h/files/output.log
+2024-07-02 11:34:07,724 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 11:34:08,318 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: stop_status
+2024-07-02 11:34:08,318 DEBUG   SenderThread:60979 [sender.py:send_request():406] send_request: stop_status
+2024-07-02 11:34:08,498 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: status_report
+2024-07-02 11:34:08,729 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 11:34:09,183 INFO    Thread-12 :60979 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/charlesoneill/retrieval/src/wandb/run-20240702_113106-gjgpux6h/files/output.log
+2024-07-02 11:34:09,734 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 11:34:10,739 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 11:34:11,193 INFO    Thread-12 :60979 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/charlesoneill/retrieval/src/wandb/run-20240702_113106-gjgpux6h/files/output.log
+2024-07-02 11:34:11,834 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 11:34:12,838 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 11:34:13,201 INFO    Thread-12 :60979 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/charlesoneill/retrieval/src/wandb/run-20240702_113106-gjgpux6h/files/output.log
+2024-07-02 11:34:13,503 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: status_report
+2024-07-02 11:34:13,843 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 11:34:14,868 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 11:34:15,212 INFO    Thread-12 :60979 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/charlesoneill/retrieval/src/wandb/run-20240702_113106-gjgpux6h/files/output.log
+2024-07-02 11:34:15,870 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 11:34:16,889 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 11:34:17,218 INFO    Thread-12 :60979 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/charlesoneill/retrieval/src/wandb/run-20240702_113106-gjgpux6h/files/output.log
+2024-07-02 11:34:17,894 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 11:34:18,518 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: status_report
+2024-07-02 11:34:18,899 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 11:34:19,224 INFO    Thread-12 :60979 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/charlesoneill/retrieval/src/wandb/run-20240702_113106-gjgpux6h/files/output.log
+2024-07-02 11:34:19,904 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 11:34:20,959 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 11:34:21,230 INFO    Thread-12 :60979 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/charlesoneill/retrieval/src/wandb/run-20240702_113106-gjgpux6h/files/output.log
+2024-07-02 11:34:22,053 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 11:34:23,212 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 11:34:23,240 INFO    Thread-12 :60979 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/charlesoneill/retrieval/src/wandb/run-20240702_113106-gjgpux6h/files/output.log
+2024-07-02 11:34:23,323 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: stop_status
+2024-07-02 11:34:23,323 DEBUG   SenderThread:60979 [sender.py:send_request():406] send_request: stop_status
+2024-07-02 11:34:23,523 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: status_report
+2024-07-02 11:34:24,325 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 11:34:25,246 INFO    Thread-12 :60979 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/charlesoneill/retrieval/src/wandb/run-20240702_113106-gjgpux6h/files/output.log
+2024-07-02 11:34:25,448 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 11:34:26,453 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 11:34:27,256 INFO    Thread-12 :60979 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/charlesoneill/retrieval/src/wandb/run-20240702_113106-gjgpux6h/files/output.log
+2024-07-02 11:34:27,458 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 11:34:28,479 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 11:34:28,540 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: status_report
+2024-07-02 11:34:29,267 INFO    Thread-12 :60979 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/charlesoneill/retrieval/src/wandb/run-20240702_113106-gjgpux6h/files/output.log
+2024-07-02 11:34:29,484 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 11:34:30,489 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 11:34:31,277 INFO    Thread-12 :60979 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/charlesoneill/retrieval/src/wandb/run-20240702_113106-gjgpux6h/files/output.log
+2024-07-02 11:34:31,494 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 11:34:32,499 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 11:34:33,288 INFO    Thread-12 :60979 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/charlesoneill/retrieval/src/wandb/run-20240702_113106-gjgpux6h/files/output.log
+2024-07-02 11:34:33,504 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 11:34:34,045 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: status_report
+2024-07-02 11:34:34,509 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 11:34:35,298 INFO    Thread-12 :60979 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/charlesoneill/retrieval/src/wandb/run-20240702_113106-gjgpux6h/files/output.log
+2024-07-02 11:34:35,611 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 11:34:36,443 DEBUG   SenderThread:60979 [sender.py:send():379] send: stats
+2024-07-02 11:34:36,616 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 11:34:37,308 INFO    Thread-12 :60979 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/charlesoneill/retrieval/src/wandb/run-20240702_113106-gjgpux6h/files/output.log
+2024-07-02 11:34:37,621 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 11:34:38,362 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: stop_status
+2024-07-02 11:34:38,362 DEBUG   SenderThread:60979 [sender.py:send_request():406] send_request: stop_status
+2024-07-02 11:34:38,626 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 11:34:39,301 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: status_report
+2024-07-02 11:34:39,324 INFO    Thread-12 :60979 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/charlesoneill/retrieval/src/wandb/run-20240702_113106-gjgpux6h/files/output.log
+2024-07-02 11:34:39,631 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 11:34:40,636 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 11:34:41,330 INFO    Thread-12 :60979 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/charlesoneill/retrieval/src/wandb/run-20240702_113106-gjgpux6h/files/output.log
+2024-07-02 11:34:41,641 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 11:34:42,646 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 11:34:43,341 INFO    Thread-12 :60979 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/charlesoneill/retrieval/src/wandb/run-20240702_113106-gjgpux6h/files/output.log
+2024-07-02 11:34:43,651 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 11:34:44,412 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: status_report
+2024-07-02 11:34:44,656 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 11:34:45,351 INFO    Thread-12 :60979 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/charlesoneill/retrieval/src/wandb/run-20240702_113106-gjgpux6h/files/output.log
+2024-07-02 11:34:45,717 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 11:34:46,721 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 11:34:47,360 INFO    Thread-12 :60979 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/charlesoneill/retrieval/src/wandb/run-20240702_113106-gjgpux6h/files/output.log
+2024-07-02 11:34:47,726 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 11:34:48,731 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 11:34:49,369 INFO    Thread-12 :60979 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/charlesoneill/retrieval/src/wandb/run-20240702_113106-gjgpux6h/files/output.log
+2024-07-02 11:34:49,737 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 11:34:49,846 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: status_report
+2024-07-02 11:34:50,742 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 11:34:51,379 INFO    Thread-12 :60979 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/charlesoneill/retrieval/src/wandb/run-20240702_113106-gjgpux6h/files/output.log
+2024-07-02 11:34:51,747 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 11:34:52,818 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 11:34:53,367 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: stop_status
+2024-07-02 11:34:53,367 DEBUG   SenderThread:60979 [sender.py:send_request():406] send_request: stop_status
+2024-07-02 11:34:53,388 INFO    Thread-12 :60979 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/charlesoneill/retrieval/src/wandb/run-20240702_113106-gjgpux6h/files/output.log
+2024-07-02 11:34:53,822 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 11:34:54,825 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 11:34:55,192 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: status_report
+2024-07-02 11:34:55,398 INFO    Thread-12 :60979 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/charlesoneill/retrieval/src/wandb/run-20240702_113106-gjgpux6h/files/output.log
+2024-07-02 11:34:55,830 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 11:34:56,835 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 11:34:57,407 INFO    Thread-12 :60979 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/charlesoneill/retrieval/src/wandb/run-20240702_113106-gjgpux6h/files/output.log
+2024-07-02 11:34:57,838 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 11:34:58,843 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 11:34:59,417 INFO    Thread-12 :60979 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/charlesoneill/retrieval/src/wandb/run-20240702_113106-gjgpux6h/files/output.log
+2024-07-02 11:34:59,847 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 11:35:00,252 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: status_report
+2024-07-02 11:35:00,849 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 11:35:01,428 INFO    Thread-12 :60979 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/charlesoneill/retrieval/src/wandb/run-20240702_113106-gjgpux6h/files/output.log
+2024-07-02 11:35:01,850 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 11:35:02,851 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 11:35:03,431 INFO    Thread-12 :60979 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/charlesoneill/retrieval/src/wandb/run-20240702_113106-gjgpux6h/files/output.log
+2024-07-02 11:35:03,852 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 11:35:04,856 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 11:35:05,317 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: status_report
+2024-07-02 11:35:05,441 INFO    Thread-12 :60979 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/charlesoneill/retrieval/src/wandb/run-20240702_113106-gjgpux6h/files/output.log
+2024-07-02 11:35:05,861 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 11:35:06,447 DEBUG   SenderThread:60979 [sender.py:send():379] send: stats
+2024-07-02 11:35:06,863 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 11:35:07,450 INFO    Thread-12 :60979 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/charlesoneill/retrieval/src/wandb/run-20240702_113106-gjgpux6h/files/output.log
+2024-07-02 11:35:07,864 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 11:35:08,367 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: stop_status
+2024-07-02 11:35:08,368 DEBUG   SenderThread:60979 [sender.py:send_request():406] send_request: stop_status
+2024-07-02 11:35:08,870 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 11:35:09,461 INFO    Thread-12 :60979 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/charlesoneill/retrieval/src/wandb/run-20240702_113106-gjgpux6h/files/output.log
+2024-07-02 11:35:09,875 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 11:35:10,755 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: status_report
+2024-07-02 11:35:10,880 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 11:35:11,471 INFO    Thread-12 :60979 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/charlesoneill/retrieval/src/wandb/run-20240702_113106-gjgpux6h/files/output.log
+2024-07-02 11:35:11,885 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 11:35:12,899 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 11:35:13,478 INFO    Thread-12 :60979 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/charlesoneill/retrieval/src/wandb/run-20240702_113106-gjgpux6h/files/output.log
+2024-07-02 11:35:13,898 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 11:35:14,911 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 11:35:15,485 INFO    Thread-12 :60979 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/charlesoneill/retrieval/src/wandb/run-20240702_113106-gjgpux6h/files/output.log
+2024-07-02 11:35:15,907 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: status_report
+2024-07-02 11:35:15,918 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 11:35:16,923 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 11:35:17,494 INFO    Thread-12 :60979 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/charlesoneill/retrieval/src/wandb/run-20240702_113106-gjgpux6h/files/output.log
+2024-07-02 11:35:17,969 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 11:35:18,974 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 11:35:19,505 INFO    Thread-12 :60979 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/charlesoneill/retrieval/src/wandb/run-20240702_113106-gjgpux6h/files/output.log
+2024-07-02 11:35:19,979 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 11:35:20,981 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 11:35:21,046 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: status_report
+2024-07-02 11:35:21,515 INFO    Thread-12 :60979 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/charlesoneill/retrieval/src/wandb/run-20240702_113106-gjgpux6h/files/output.log
+2024-07-02 11:35:21,987 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 11:35:22,993 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 11:35:23,372 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: stop_status
+2024-07-02 11:35:23,373 DEBUG   SenderThread:60979 [sender.py:send_request():406] send_request: stop_status
+2024-07-02 11:35:23,521 INFO    Thread-12 :60979 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/charlesoneill/retrieval/src/wandb/run-20240702_113106-gjgpux6h/files/output.log
+2024-07-02 11:35:23,998 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 11:35:25,003 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 11:35:25,528 INFO    Thread-12 :60979 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/charlesoneill/retrieval/src/wandb/run-20240702_113106-gjgpux6h/files/output.log
+2024-07-02 11:35:26,026 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 11:35:26,077 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: status_report
+2024-07-02 11:35:27,027 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 11:35:27,538 INFO    Thread-12 :60979 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/charlesoneill/retrieval/src/wandb/run-20240702_113106-gjgpux6h/files/output.log
+2024-07-02 11:35:28,031 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 11:35:29,036 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 11:35:29,544 INFO    Thread-12 :60979 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/charlesoneill/retrieval/src/wandb/run-20240702_113106-gjgpux6h/files/output.log
+2024-07-02 11:35:30,041 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 11:35:31,043 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 11:35:31,544 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: status_report
+2024-07-02 11:35:31,553 INFO    Thread-12 :60979 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/charlesoneill/retrieval/src/wandb/run-20240702_113106-gjgpux6h/files/output.log
+2024-07-02 11:35:32,123 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 11:35:33,226 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 11:35:33,563 INFO    Thread-12 :60979 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/charlesoneill/retrieval/src/wandb/run-20240702_113106-gjgpux6h/files/output.log
+2024-07-02 11:35:34,323 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 11:35:35,424 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 11:35:35,571 INFO    Thread-12 :60979 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/charlesoneill/retrieval/src/wandb/run-20240702_113106-gjgpux6h/files/output.log
+2024-07-02 11:35:36,429 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 11:35:36,452 DEBUG   SenderThread:60979 [sender.py:send():379] send: stats
+2024-07-02 11:35:36,877 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: status_report
+2024-07-02 11:35:37,431 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 11:35:37,581 INFO    Thread-12 :60979 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/charlesoneill/retrieval/src/wandb/run-20240702_113106-gjgpux6h/files/output.log
+2024-07-02 11:35:38,377 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: stop_status
+2024-07-02 11:35:38,378 DEBUG   SenderThread:60979 [sender.py:send_request():406] send_request: stop_status
+2024-07-02 11:35:38,446 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 11:35:39,450 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 11:35:39,591 INFO    Thread-12 :60979 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/charlesoneill/retrieval/src/wandb/run-20240702_113106-gjgpux6h/files/output.log
+2024-07-02 11:35:40,455 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 11:35:41,495 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 11:35:41,600 INFO    Thread-12 :60979 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/charlesoneill/retrieval/src/wandb/run-20240702_113106-gjgpux6h/files/output.log
+2024-07-02 11:35:41,927 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: status_report
+2024-07-02 11:35:42,500 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 11:35:43,505 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 11:35:43,605 INFO    Thread-12 :60979 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/charlesoneill/retrieval/src/wandb/run-20240702_113106-gjgpux6h/files/output.log
+2024-07-02 11:35:44,510 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 11:35:45,515 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 11:35:45,614 INFO    Thread-12 :60979 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/charlesoneill/retrieval/src/wandb/run-20240702_113106-gjgpux6h/files/output.log
+2024-07-02 11:35:46,520 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 11:35:47,525 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 11:35:47,624 INFO    Thread-12 :60979 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/charlesoneill/retrieval/src/wandb/run-20240702_113106-gjgpux6h/files/output.log
+2024-07-02 11:35:47,652 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: status_report
+2024-07-02 11:35:48,530 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 11:35:49,535 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 11:35:49,634 INFO    Thread-12 :60979 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/charlesoneill/retrieval/src/wandb/run-20240702_113106-gjgpux6h/files/output.log
+2024-07-02 11:35:50,566 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 11:35:51,571 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 11:35:51,642 INFO    Thread-12 :60979 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/charlesoneill/retrieval/src/wandb/run-20240702_113106-gjgpux6h/files/output.log
+2024-07-02 11:35:52,576 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 11:35:53,100 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: status_report
+2024-07-02 11:35:53,382 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: stop_status
+2024-07-02 11:35:53,383 DEBUG   SenderThread:60979 [sender.py:send_request():406] send_request: stop_status
+2024-07-02 11:35:53,581 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 11:35:53,650 INFO    Thread-12 :60979 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/charlesoneill/retrieval/src/wandb/run-20240702_113106-gjgpux6h/files/output.log
+2024-07-02 11:35:54,587 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 11:35:55,588 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 11:35:55,659 INFO    Thread-12 :60979 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/charlesoneill/retrieval/src/wandb/run-20240702_113106-gjgpux6h/files/output.log
+2024-07-02 11:35:56,593 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 11:35:57,598 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 11:35:57,669 INFO    Thread-12 :60979 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/charlesoneill/retrieval/src/wandb/run-20240702_113106-gjgpux6h/files/output.log
+2024-07-02 11:35:58,502 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: status_report
+2024-07-02 11:35:58,603 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 11:35:59,608 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 11:35:59,680 INFO    Thread-12 :60979 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/charlesoneill/retrieval/src/wandb/run-20240702_113106-gjgpux6h/files/output.log
+2024-07-02 11:36:00,613 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 11:36:01,634 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 11:36:01,686 INFO    Thread-12 :60979 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/charlesoneill/retrieval/src/wandb/run-20240702_113106-gjgpux6h/files/output.log
+2024-07-02 11:36:02,639 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 11:36:03,644 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 11:36:03,695 INFO    Thread-12 :60979 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/charlesoneill/retrieval/src/wandb/run-20240702_113106-gjgpux6h/files/output.log
+2024-07-02 11:36:03,764 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: status_report
+2024-07-02 11:36:04,645 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 11:36:05,703 INFO    Thread-12 :60979 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/charlesoneill/retrieval/src/wandb/run-20240702_113106-gjgpux6h/files/output.log
+2024-07-02 11:36:05,742 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 11:36:06,458 DEBUG   SenderThread:60979 [sender.py:send():379] send: stats
+2024-07-02 11:36:06,747 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 11:36:07,713 INFO    Thread-12 :60979 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/charlesoneill/retrieval/src/wandb/run-20240702_113106-gjgpux6h/files/output.log
+2024-07-02 11:36:07,752 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 11:36:08,387 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: stop_status
+2024-07-02 11:36:08,388 DEBUG   SenderThread:60979 [sender.py:send_request():406] send_request: stop_status
+2024-07-02 11:36:08,800 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 11:36:08,893 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: status_report
+2024-07-02 11:36:09,725 INFO    Thread-12 :60979 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/charlesoneill/retrieval/src/wandb/run-20240702_113106-gjgpux6h/files/output.log
+2024-07-02 11:36:09,805 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 11:36:10,810 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 11:36:11,735 INFO    Thread-12 :60979 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/charlesoneill/retrieval/src/wandb/run-20240702_113106-gjgpux6h/files/output.log
+2024-07-02 11:36:11,815 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 11:36:12,816 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 11:36:13,745 INFO    Thread-12 :60979 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/charlesoneill/retrieval/src/wandb/run-20240702_113106-gjgpux6h/files/output.log
+2024-07-02 11:36:13,896 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 11:36:13,897 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: status_report
+2024-07-02 11:36:14,899 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 11:36:15,756 INFO    Thread-12 :60979 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/charlesoneill/retrieval/src/wandb/run-20240702_113106-gjgpux6h/files/output.log
+2024-07-02 11:36:15,904 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 11:36:16,944 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 11:36:17,766 INFO    Thread-12 :60979 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/charlesoneill/retrieval/src/wandb/run-20240702_113106-gjgpux6h/files/output.log
+2024-07-02 11:36:17,949 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 11:36:18,903 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: status_report
+2024-07-02 11:36:18,954 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 11:36:19,774 INFO    Thread-12 :60979 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/charlesoneill/retrieval/src/wandb/run-20240702_113106-gjgpux6h/files/output.log
+2024-07-02 11:36:19,959 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 11:36:20,964 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 11:36:21,782 INFO    Thread-12 :60979 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/charlesoneill/retrieval/src/wandb/run-20240702_113106-gjgpux6h/files/output.log
+2024-07-02 11:36:21,969 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 11:36:22,974 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 11:36:23,393 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: stop_status
+2024-07-02 11:36:23,393 DEBUG   SenderThread:60979 [sender.py:send_request():406] send_request: stop_status
+2024-07-02 11:36:23,792 INFO    Thread-12 :60979 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/charlesoneill/retrieval/src/wandb/run-20240702_113106-gjgpux6h/files/output.log
+2024-07-02 11:36:23,908 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: status_report
+2024-07-02 11:36:23,979 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 11:36:24,983 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 11:36:25,803 INFO    Thread-12 :60979 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/charlesoneill/retrieval/src/wandb/run-20240702_113106-gjgpux6h/files/output.log
+2024-07-02 11:36:25,988 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 11:36:26,993 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 11:36:27,814 INFO    Thread-12 :60979 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/charlesoneill/retrieval/src/wandb/run-20240702_113106-gjgpux6h/files/output.log
+2024-07-02 11:36:27,999 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 11:36:28,915 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: status_report
+2024-07-02 11:36:29,005 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 11:36:29,826 INFO    Thread-12 :60979 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/charlesoneill/retrieval/src/wandb/run-20240702_113106-gjgpux6h/files/output.log
+2024-07-02 11:36:30,008 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 11:36:31,013 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 11:36:31,835 INFO    Thread-12 :60979 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/charlesoneill/retrieval/src/wandb/run-20240702_113106-gjgpux6h/files/output.log
+2024-07-02 11:36:32,066 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 11:36:33,196 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 11:36:33,847 INFO    Thread-12 :60979 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/charlesoneill/retrieval/src/wandb/run-20240702_113106-gjgpux6h/files/output.log
+2024-07-02 11:36:33,924 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: status_report
+2024-07-02 11:36:34,362 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 11:36:35,495 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 11:36:35,859 INFO    Thread-12 :60979 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/charlesoneill/retrieval/src/wandb/run-20240702_113106-gjgpux6h/files/output.log
+2024-07-02 11:36:36,472 DEBUG   SenderThread:60979 [sender.py:send():379] send: stats
+2024-07-02 11:36:36,595 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 11:36:37,762 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 11:36:37,871 INFO    Thread-12 :60979 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/charlesoneill/retrieval/src/wandb/run-20240702_113106-gjgpux6h/files/output.log
+2024-07-02 11:36:38,421 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: stop_status
+2024-07-02 11:36:38,421 DEBUG   SenderThread:60979 [sender.py:send_request():406] send_request: stop_status
+2024-07-02 11:36:38,781 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 11:36:38,933 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: status_report
+2024-07-02 11:36:39,775 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 11:36:39,883 INFO    Thread-12 :60979 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/charlesoneill/retrieval/src/wandb/run-20240702_113106-gjgpux6h/files/output.log
+2024-07-02 11:36:40,781 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 11:36:41,786 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 11:36:41,894 INFO    Thread-12 :60979 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/charlesoneill/retrieval/src/wandb/run-20240702_113106-gjgpux6h/files/output.log
+2024-07-02 11:36:42,792 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 11:36:43,902 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 11:36:43,906 INFO    Thread-12 :60979 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/charlesoneill/retrieval/src/wandb/run-20240702_113106-gjgpux6h/files/output.log
+2024-07-02 11:36:43,940 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: status_report
+2024-07-02 11:36:44,907 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 11:36:45,913 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 11:36:45,918 INFO    Thread-12 :60979 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/charlesoneill/retrieval/src/wandb/run-20240702_113106-gjgpux6h/files/output.log
+2024-07-02 11:36:46,914 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 11:36:47,919 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 11:36:47,929 INFO    Thread-12 :60979 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/charlesoneill/retrieval/src/wandb/run-20240702_113106-gjgpux6h/files/output.log
+2024-07-02 11:36:48,925 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 11:36:49,056 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: status_report
+2024-07-02 11:36:49,926 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 11:36:49,937 INFO    Thread-12 :60979 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/charlesoneill/retrieval/src/wandb/run-20240702_113106-gjgpux6h/files/output.log
+2024-07-02 11:36:50,932 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 11:36:51,937 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 11:36:51,948 INFO    Thread-12 :60979 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/charlesoneill/retrieval/src/wandb/run-20240702_113106-gjgpux6h/files/output.log
+2024-07-02 11:36:52,942 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 11:36:53,422 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: stop_status
+2024-07-02 11:36:53,422 DEBUG   SenderThread:60979 [sender.py:send_request():406] send_request: stop_status
+2024-07-02 11:36:53,948 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 11:36:53,959 INFO    Thread-12 :60979 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/charlesoneill/retrieval/src/wandb/run-20240702_113106-gjgpux6h/files/output.log
+2024-07-02 11:36:54,063 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: status_report
+2024-07-02 11:36:54,952 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 11:36:55,961 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 11:36:55,970 INFO    Thread-12 :60979 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/charlesoneill/retrieval/src/wandb/run-20240702_113106-gjgpux6h/files/output.log
+2024-07-02 11:36:56,966 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 11:36:57,968 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 11:36:57,980 INFO    Thread-12 :60979 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/charlesoneill/retrieval/src/wandb/run-20240702_113106-gjgpux6h/files/output.log
+2024-07-02 11:36:58,973 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 11:36:59,069 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: status_report
+2024-07-02 11:36:59,978 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 11:36:59,987 INFO    Thread-12 :60979 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/charlesoneill/retrieval/src/wandb/run-20240702_113106-gjgpux6h/files/output.log
+2024-07-02 11:37:00,983 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 11:37:01,985 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 11:37:01,997 INFO    Thread-12 :60979 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/charlesoneill/retrieval/src/wandb/run-20240702_113106-gjgpux6h/files/output.log
+2024-07-02 11:37:03,016 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 11:37:04,008 INFO    Thread-12 :60979 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/charlesoneill/retrieval/src/wandb/run-20240702_113106-gjgpux6h/files/output.log
+2024-07-02 11:37:04,021 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 11:37:04,075 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: status_report
+2024-07-02 11:37:05,026 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 11:37:06,019 INFO    Thread-12 :60979 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/charlesoneill/retrieval/src/wandb/run-20240702_113106-gjgpux6h/files/output.log
+2024-07-02 11:37:06,031 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 11:37:06,486 DEBUG   SenderThread:60979 [sender.py:send():379] send: stats
+2024-07-02 11:37:07,037 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 11:37:08,029 INFO    Thread-12 :60979 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/charlesoneill/retrieval/src/wandb/run-20240702_113106-gjgpux6h/files/output.log
+2024-07-02 11:37:08,042 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 11:37:08,426 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: stop_status
+2024-07-02 11:37:08,426 DEBUG   SenderThread:60979 [sender.py:send_request():406] send_request: stop_status
+2024-07-02 11:37:09,047 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 11:37:09,080 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: status_report
+2024-07-02 11:37:10,040 INFO    Thread-12 :60979 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/charlesoneill/retrieval/src/wandb/run-20240702_113106-gjgpux6h/files/output.log
+2024-07-02 11:37:10,116 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 11:37:11,121 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 11:37:12,050 INFO    Thread-12 :60979 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/charlesoneill/retrieval/src/wandb/run-20240702_113106-gjgpux6h/files/output.log
+2024-07-02 11:37:12,126 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 11:37:13,131 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 11:37:14,061 INFO    Thread-12 :60979 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/charlesoneill/retrieval/src/wandb/run-20240702_113106-gjgpux6h/files/output.log
+2024-07-02 11:37:14,086 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: status_report
+2024-07-02 11:37:14,136 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 11:37:15,141 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 11:37:16,072 INFO    Thread-12 :60979 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/charlesoneill/retrieval/src/wandb/run-20240702_113106-gjgpux6h/files/output.log
+2024-07-02 11:37:16,146 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 11:37:17,166 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 11:37:18,082 INFO    Thread-12 :60979 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/charlesoneill/retrieval/src/wandb/run-20240702_113106-gjgpux6h/files/output.log
+2024-07-02 11:37:18,203 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 11:37:19,149 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: status_report
+2024-07-02 11:37:19,208 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 11:37:20,089 INFO    Thread-12 :60979 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/charlesoneill/retrieval/src/wandb/run-20240702_113106-gjgpux6h/files/output.log
+2024-07-02 11:37:20,262 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 11:37:21,267 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 11:37:22,097 INFO    Thread-12 :60979 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/charlesoneill/retrieval/src/wandb/run-20240702_113106-gjgpux6h/files/output.log
+2024-07-02 11:37:22,272 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 11:37:23,293 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 11:37:23,432 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: stop_status
+2024-07-02 11:37:23,432 DEBUG   SenderThread:60979 [sender.py:send_request():406] send_request: stop_status
+2024-07-02 11:37:24,103 INFO    Thread-12 :60979 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/charlesoneill/retrieval/src/wandb/run-20240702_113106-gjgpux6h/files/output.log
+2024-07-02 11:37:24,154 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: status_report
+2024-07-02 11:37:24,292 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 11:37:25,297 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 11:37:26,113 INFO    Thread-12 :60979 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/charlesoneill/retrieval/src/wandb/run-20240702_113106-gjgpux6h/files/output.log
+2024-07-02 11:37:26,302 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 11:37:27,307 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 11:37:28,124 INFO    Thread-12 :60979 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/charlesoneill/retrieval/src/wandb/run-20240702_113106-gjgpux6h/files/output.log
+2024-07-02 11:37:28,313 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 11:37:29,215 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: status_report
+2024-07-02 11:37:29,318 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 11:37:30,131 INFO    Thread-12 :60979 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/charlesoneill/retrieval/src/wandb/run-20240702_113106-gjgpux6h/files/output.log
+2024-07-02 11:37:30,407 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 11:37:31,415 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 11:37:32,137 INFO    Thread-12 :60979 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/charlesoneill/retrieval/src/wandb/run-20240702_113106-gjgpux6h/files/output.log
+2024-07-02 11:37:32,420 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 11:37:33,425 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 11:37:34,147 INFO    Thread-12 :60979 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/charlesoneill/retrieval/src/wandb/run-20240702_113106-gjgpux6h/files/output.log
+2024-07-02 11:37:34,220 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: status_report
+2024-07-02 11:37:34,532 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 11:37:35,545 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 11:37:36,157 INFO    Thread-12 :60979 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/charlesoneill/retrieval/src/wandb/run-20240702_113106-gjgpux6h/files/output.log
+2024-07-02 11:37:36,493 DEBUG   SenderThread:60979 [sender.py:send():379] send: stats
+2024-07-02 11:37:36,547 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 11:37:37,629 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 11:37:38,168 INFO    Thread-12 :60979 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/charlesoneill/retrieval/src/wandb/run-20240702_113106-gjgpux6h/files/output.log
+2024-07-02 11:37:38,437 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: stop_status
+2024-07-02 11:37:38,438 DEBUG   SenderThread:60979 [sender.py:send_request():406] send_request: stop_status
+2024-07-02 11:37:38,633 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 11:37:39,225 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: status_report
+2024-07-02 11:37:39,639 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 11:37:40,174 INFO    Thread-12 :60979 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/charlesoneill/retrieval/src/wandb/run-20240702_113106-gjgpux6h/files/output.log
+2024-07-02 11:37:40,639 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 11:37:41,644 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 11:37:42,184 INFO    Thread-12 :60979 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/charlesoneill/retrieval/src/wandb/run-20240702_113106-gjgpux6h/files/output.log
+2024-07-02 11:37:42,649 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 11:37:43,654 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 11:37:44,193 INFO    Thread-12 :60979 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/charlesoneill/retrieval/src/wandb/run-20240702_113106-gjgpux6h/files/output.log
+2024-07-02 11:37:44,231 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: status_report
+2024-07-02 11:37:44,659 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 11:37:45,661 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 11:37:46,203 INFO    Thread-12 :60979 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/charlesoneill/retrieval/src/wandb/run-20240702_113106-gjgpux6h/files/output.log
+2024-07-02 11:37:46,663 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 11:37:47,728 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 11:37:48,214 INFO    Thread-12 :60979 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/charlesoneill/retrieval/src/wandb/run-20240702_113106-gjgpux6h/files/output.log
+2024-07-02 11:37:48,733 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 11:37:49,234 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: status_report
+2024-07-02 11:37:49,738 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 11:37:50,223 INFO    Thread-12 :60979 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/charlesoneill/retrieval/src/wandb/run-20240702_113106-gjgpux6h/files/output.log
+2024-07-02 11:37:50,743 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 11:37:51,785 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 11:37:52,233 INFO    Thread-12 :60979 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/charlesoneill/retrieval/src/wandb/run-20240702_113106-gjgpux6h/files/output.log
+2024-07-02 11:37:52,787 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 11:37:53,443 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: stop_status
+2024-07-02 11:37:53,443 DEBUG   SenderThread:60979 [sender.py:send_request():406] send_request: stop_status
+2024-07-02 11:37:53,790 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 11:37:54,243 INFO    Thread-12 :60979 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/charlesoneill/retrieval/src/wandb/run-20240702_113106-gjgpux6h/files/output.log
+2024-07-02 11:37:54,322 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: status_report
+2024-07-02 11:37:54,795 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 11:37:55,800 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 11:37:56,250 INFO    Thread-12 :60979 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/charlesoneill/retrieval/src/wandb/run-20240702_113106-gjgpux6h/files/output.log
+2024-07-02 11:37:56,805 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 11:37:57,898 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 11:37:58,261 INFO    Thread-12 :60979 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/charlesoneill/retrieval/src/wandb/run-20240702_113106-gjgpux6h/files/output.log
+2024-07-02 11:37:58,902 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 11:37:59,378 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: status_report
+2024-07-02 11:37:59,906 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 11:38:00,272 INFO    Thread-12 :60979 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/charlesoneill/retrieval/src/wandb/run-20240702_113106-gjgpux6h/files/output.log
+2024-07-02 11:38:00,911 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 11:38:01,916 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 11:38:02,282 INFO    Thread-12 :60979 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/charlesoneill/retrieval/src/wandb/run-20240702_113106-gjgpux6h/files/output.log
+2024-07-02 11:38:02,922 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 11:38:03,927 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 11:38:04,290 INFO    Thread-12 :60979 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/charlesoneill/retrieval/src/wandb/run-20240702_113106-gjgpux6h/files/output.log
+2024-07-02 11:38:04,383 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: status_report
+2024-07-02 11:38:04,932 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 11:38:05,937 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 11:38:06,299 INFO    Thread-12 :60979 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/charlesoneill/retrieval/src/wandb/run-20240702_113106-gjgpux6h/files/output.log
+2024-07-02 11:38:06,499 DEBUG   SenderThread:60979 [sender.py:send():379] send: stats
+2024-07-02 11:38:06,973 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 11:38:07,977 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 11:38:08,309 INFO    Thread-12 :60979 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/charlesoneill/retrieval/src/wandb/run-20240702_113106-gjgpux6h/files/output.log
+2024-07-02 11:38:08,448 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: stop_status
+2024-07-02 11:38:08,449 DEBUG   SenderThread:60979 [sender.py:send_request():406] send_request: stop_status
+2024-07-02 11:38:08,982 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 11:38:09,482 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: status_report
+2024-07-02 11:38:09,987 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 11:38:10,320 INFO    Thread-12 :60979 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/charlesoneill/retrieval/src/wandb/run-20240702_113106-gjgpux6h/files/output.log
+2024-07-02 11:38:11,031 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 11:38:12,065 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 11:38:12,329 INFO    Thread-12 :60979 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/charlesoneill/retrieval/src/wandb/run-20240702_113106-gjgpux6h/files/output.log
+2024-07-02 11:38:13,154 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 11:38:14,265 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 11:38:14,337 INFO    Thread-12 :60979 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/charlesoneill/retrieval/src/wandb/run-20240702_113106-gjgpux6h/files/output.log
+2024-07-02 11:38:14,485 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: status_report
+2024-07-02 11:38:15,386 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 11:38:16,348 INFO    Thread-12 :60979 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/charlesoneill/retrieval/src/wandb/run-20240702_113106-gjgpux6h/files/output.log
+2024-07-02 11:38:16,487 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 11:38:17,574 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 11:38:18,353 INFO    Thread-12 :60979 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/charlesoneill/retrieval/src/wandb/run-20240702_113106-gjgpux6h/files/output.log
+2024-07-02 11:38:18,659 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 11:38:19,490 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: status_report
+2024-07-02 11:38:19,776 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 11:38:20,364 INFO    Thread-12 :60979 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/charlesoneill/retrieval/src/wandb/run-20240702_113106-gjgpux6h/files/output.log
+2024-07-02 11:38:20,917 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 11:38:22,077 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 11:38:22,374 INFO    Thread-12 :60979 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/charlesoneill/retrieval/src/wandb/run-20240702_113106-gjgpux6h/files/output.log
+2024-07-02 11:38:23,079 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 11:38:23,454 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: stop_status
+2024-07-02 11:38:23,454 DEBUG   SenderThread:60979 [sender.py:send_request():406] send_request: stop_status
+2024-07-02 11:38:24,098 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 11:38:24,385 INFO    Thread-12 :60979 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/charlesoneill/retrieval/src/wandb/run-20240702_113106-gjgpux6h/files/output.log
+2024-07-02 11:38:24,495 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: status_report
+2024-07-02 11:38:25,089 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 11:38:26,097 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 11:38:26,395 INFO    Thread-12 :60979 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/charlesoneill/retrieval/src/wandb/run-20240702_113106-gjgpux6h/files/output.log
+2024-07-02 11:38:27,102 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 11:38:28,107 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 11:38:28,403 INFO    Thread-12 :60979 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/charlesoneill/retrieval/src/wandb/run-20240702_113106-gjgpux6h/files/output.log
+2024-07-02 11:38:29,112 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 11:38:29,500 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: status_report
+2024-07-02 11:38:30,122 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 11:38:30,410 INFO    Thread-12 :60979 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/charlesoneill/retrieval/src/wandb/run-20240702_113106-gjgpux6h/files/output.log
+2024-07-02 11:38:31,154 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 11:38:32,159 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 11:38:32,419 INFO    Thread-12 :60979 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/charlesoneill/retrieval/src/wandb/run-20240702_113106-gjgpux6h/files/output.log
+2024-07-02 11:38:33,164 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 11:38:34,171 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 11:38:34,430 INFO    Thread-12 :60979 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/charlesoneill/retrieval/src/wandb/run-20240702_113106-gjgpux6h/files/output.log
+2024-07-02 11:38:34,505 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: status_report
+2024-07-02 11:38:35,292 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 11:38:36,297 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 11:38:36,440 INFO    Thread-12 :60979 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/charlesoneill/retrieval/src/wandb/run-20240702_113106-gjgpux6h/files/output.log
+2024-07-02 11:38:36,504 DEBUG   SenderThread:60979 [sender.py:send():379] send: stats
+2024-07-02 11:38:37,299 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 11:38:38,303 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 11:38:38,447 INFO    Thread-12 :60979 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/charlesoneill/retrieval/src/wandb/run-20240702_113106-gjgpux6h/files/output.log
+2024-07-02 11:38:38,459 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: stop_status
+2024-07-02 11:38:38,459 DEBUG   SenderThread:60979 [sender.py:send_request():406] send_request: stop_status
+2024-07-02 11:38:39,309 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 11:38:39,509 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: status_report
+2024-07-02 11:38:40,314 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 11:38:40,458 INFO    Thread-12 :60979 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/charlesoneill/retrieval/src/wandb/run-20240702_113106-gjgpux6h/files/output.log
+2024-07-02 11:38:41,316 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 11:38:42,348 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 11:38:42,466 INFO    Thread-12 :60979 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/charlesoneill/retrieval/src/wandb/run-20240702_113106-gjgpux6h/files/output.log
+2024-07-02 11:38:43,353 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 11:38:44,358 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 11:38:44,476 INFO    Thread-12 :60979 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/charlesoneill/retrieval/src/wandb/run-20240702_113106-gjgpux6h/files/output.log
+2024-07-02 11:38:44,514 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: status_report
+2024-07-02 11:38:45,363 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 11:38:46,404 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 11:38:46,487 INFO    Thread-12 :60979 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/charlesoneill/retrieval/src/wandb/run-20240702_113106-gjgpux6h/files/output.log
+2024-07-02 11:38:47,491 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 11:38:48,493 INFO    Thread-12 :60979 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/charlesoneill/retrieval/src/wandb/run-20240702_113106-gjgpux6h/files/output.log
+2024-07-02 11:38:48,596 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 11:38:49,240 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-02 11:38:49,241 DEBUG   SenderThread:60979 [sender.py:send():379] send: history
+2024-07-02 11:38:49,241 DEBUG   SenderThread:60979 [sender.py:send_request():406] send_request: summary_record
+2024-07-02 11:38:49,241 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: server_info
+2024-07-02 11:38:49,241 INFO    SenderThread:60979 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-07-02 11:38:49,241 DEBUG   SenderThread:60979 [sender.py:send():379] send: telemetry
+2024-07-02 11:38:49,241 DEBUG   SenderThread:60979 [sender.py:send_request():406] send_request: server_info
+2024-07-02 11:38:49,298 DEBUG   SenderThread:60979 [sender.py:send():379] send: exit
+2024-07-02 11:38:49,298 INFO    SenderThread:60979 [sender.py:send_exit():586] handling exit code: 0
+2024-07-02 11:38:49,299 INFO    SenderThread:60979 [sender.py:send_exit():588] handling runtime: 462
+2024-07-02 11:38:49,299 INFO    SenderThread:60979 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-07-02 11:38:49,299 INFO    SenderThread:60979 [sender.py:send_exit():594] send defer
+2024-07-02 11:38:49,299 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: defer
+2024-07-02 11:38:49,299 INFO    HandlerThread:60979 [handler.py:handle_request_defer():184] handle defer: 0
+2024-07-02 11:38:49,299 DEBUG   SenderThread:60979 [sender.py:send_request():406] send_request: defer
+2024-07-02 11:38:49,299 INFO    SenderThread:60979 [sender.py:send_request_defer():610] handle sender defer: 0
+2024-07-02 11:38:49,299 INFO    SenderThread:60979 [sender.py:transition_state():614] send defer: 1
+2024-07-02 11:38:49,299 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: defer
+2024-07-02 11:38:49,299 INFO    HandlerThread:60979 [handler.py:handle_request_defer():184] handle defer: 1
+2024-07-02 11:38:49,299 DEBUG   SenderThread:60979 [sender.py:send_request():406] send_request: defer
+2024-07-02 11:38:49,299 INFO    SenderThread:60979 [sender.py:send_request_defer():610] handle sender defer: 1
+2024-07-02 11:38:49,299 INFO    SenderThread:60979 [sender.py:transition_state():614] send defer: 2
+2024-07-02 11:38:49,299 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: defer
+2024-07-02 11:38:49,299 INFO    HandlerThread:60979 [handler.py:handle_request_defer():184] handle defer: 2
+2024-07-02 11:38:49,299 INFO    HandlerThread:60979 [system_monitor.py:finish():203] Stopping system monitor
+2024-07-02 11:38:49,300 INFO    HandlerThread:60979 [interfaces.py:finish():200] Joined cpu monitor
+2024-07-02 11:38:49,300 INFO    HandlerThread:60979 [interfaces.py:finish():200] Joined disk monitor
+2024-07-02 11:38:49,300 DEBUG   SystemMonitor:60979 [system_monitor.py:_start():179] Finished system metrics aggregation loop
+2024-07-02 11:38:49,300 INFO    HandlerThread:60979 [interfaces.py:finish():200] Joined gpuapple monitor
+2024-07-02 11:38:49,300 DEBUG   SystemMonitor:60979 [system_monitor.py:_start():183] Publishing last batch of metrics
+2024-07-02 11:38:49,300 INFO    HandlerThread:60979 [interfaces.py:finish():200] Joined memory monitor
+2024-07-02 11:38:49,300 INFO    HandlerThread:60979 [interfaces.py:finish():200] Joined network monitor
+2024-07-02 11:38:49,300 DEBUG   SenderThread:60979 [sender.py:send_request():406] send_request: defer
+2024-07-02 11:38:49,300 INFO    SenderThread:60979 [sender.py:send_request_defer():610] handle sender defer: 2
+2024-07-02 11:38:49,300 INFO    SenderThread:60979 [sender.py:transition_state():614] send defer: 3
+2024-07-02 11:38:49,300 DEBUG   SenderThread:60979 [sender.py:send():379] send: stats
+2024-07-02 11:38:49,301 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: defer
+2024-07-02 11:38:49,301 INFO    HandlerThread:60979 [handler.py:handle_request_defer():184] handle defer: 3
+2024-07-02 11:38:49,301 DEBUG   SenderThread:60979 [sender.py:send_request():406] send_request: defer
+2024-07-02 11:38:49,301 INFO    SenderThread:60979 [sender.py:send_request_defer():610] handle sender defer: 3
+2024-07-02 11:38:49,301 INFO    SenderThread:60979 [sender.py:transition_state():614] send defer: 4
+2024-07-02 11:38:49,301 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: defer
+2024-07-02 11:38:49,301 INFO    HandlerThread:60979 [handler.py:handle_request_defer():184] handle defer: 4
+2024-07-02 11:38:49,301 DEBUG   SenderThread:60979 [sender.py:send_request():406] send_request: defer
+2024-07-02 11:38:49,301 INFO    SenderThread:60979 [sender.py:send_request_defer():610] handle sender defer: 4
+2024-07-02 11:38:49,301 INFO    SenderThread:60979 [sender.py:transition_state():614] send defer: 5
+2024-07-02 11:38:49,301 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: defer
+2024-07-02 11:38:49,301 INFO    HandlerThread:60979 [handler.py:handle_request_defer():184] handle defer: 5
+2024-07-02 11:38:49,301 DEBUG   SenderThread:60979 [sender.py:send():379] send: summary
+2024-07-02 11:38:49,301 INFO    SenderThread:60979 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-07-02 11:38:49,301 DEBUG   SenderThread:60979 [sender.py:send_request():406] send_request: defer
+2024-07-02 11:38:49,301 INFO    SenderThread:60979 [sender.py:send_request_defer():610] handle sender defer: 5
+2024-07-02 11:38:49,301 INFO    SenderThread:60979 [sender.py:transition_state():614] send defer: 6
+2024-07-02 11:38:49,301 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: defer
+2024-07-02 11:38:49,301 INFO    HandlerThread:60979 [handler.py:handle_request_defer():184] handle defer: 6
+2024-07-02 11:38:49,301 DEBUG   SenderThread:60979 [sender.py:send_request():406] send_request: defer
+2024-07-02 11:38:49,301 INFO    SenderThread:60979 [sender.py:send_request_defer():610] handle sender defer: 6
+2024-07-02 11:38:49,303 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: status_report
+2024-07-02 11:38:49,379 INFO    SenderThread:60979 [sender.py:transition_state():614] send defer: 7
+2024-07-02 11:38:49,379 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: defer
+2024-07-02 11:38:49,379 INFO    HandlerThread:60979 [handler.py:handle_request_defer():184] handle defer: 7
+2024-07-02 11:38:49,379 DEBUG   SenderThread:60979 [sender.py:send_request():406] send_request: defer
+2024-07-02 11:38:49,380 INFO    SenderThread:60979 [sender.py:send_request_defer():610] handle sender defer: 7
+2024-07-02 11:38:49,495 INFO    Thread-12 :60979 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/charlesoneill/retrieval/src/wandb/run-20240702_113106-gjgpux6h/files/config.yaml
+2024-07-02 11:38:49,496 INFO    Thread-12 :60979 [dir_watcher.py:_on_file_created():271] file/dir created: /Users/charlesoneill/retrieval/src/wandb/run-20240702_113106-gjgpux6h/files/wandb-summary.json
+2024-07-02 11:38:50,242 INFO    SenderThread:60979 [sender.py:transition_state():614] send defer: 8
+2024-07-02 11:38:50,242 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: defer
+2024-07-02 11:38:50,242 INFO    HandlerThread:60979 [handler.py:handle_request_defer():184] handle defer: 8
+2024-07-02 11:38:50,242 DEBUG   SenderThread:60979 [sender.py:send_request():406] send_request: defer
+2024-07-02 11:38:50,242 INFO    SenderThread:60979 [sender.py:send_request_defer():610] handle sender defer: 8
+2024-07-02 11:38:50,243 INFO    SenderThread:60979 [job_builder.py:build():440] Attempting to build job artifact
+2024-07-02 11:38:50,244 INFO    SenderThread:60979 [job_builder.py:_get_source_type():569] is repo sourced job
+2024-07-02 11:38:50,271 INFO    SenderThread:60979 [job_builder.py:build():545] adding wandb-job metadata file
+2024-07-02 11:38:50,274 INFO    SenderThread:60979 [sender.py:transition_state():614] send defer: 9
+2024-07-02 11:38:50,274 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: defer
+2024-07-02 11:38:50,274 INFO    HandlerThread:60979 [handler.py:handle_request_defer():184] handle defer: 9
+2024-07-02 11:38:50,274 DEBUG   SenderThread:60979 [sender.py:send():379] send: artifact
+2024-07-02 11:38:50,300 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: poll_exit
+2024-07-02 11:38:50,501 INFO    Thread-12 :60979 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/charlesoneill/retrieval/src/wandb/run-20240702_113106-gjgpux6h/files/output.log
+2024-07-02 11:38:50,718 INFO    wandb-upload_0:60979 [upload_job.py:push():85] Skipped uploading /Users/charlesoneill/Library/Application Support/wandb/artifacts/staging/tmpi9lp8j_g
+2024-07-02 11:38:50,885 INFO    wandb-upload_1:60979 [upload_job.py:push():88] Uploaded file /var/folders/wg/cdt_cw_5265_z_gwnxlf0tv80000gn/T/tmpmmcpe3cv/wandb-job.json
+2024-07-02 11:38:51,615 INFO    SenderThread:60979 [sender.py:send_artifact():1530] sent artifact job-https___github.com_jsalt2024-evaluating-llms-for-astronomy_retrieval.git_src_bag_of_words.py - {'id': 'QXJ0aWZhY3Q6OTM2NTY5NzQ2', 'state': 'PENDING', 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjIzNjMwNzg3MQ==', 'latestArtifact': {'id': 'QXJ0aWZhY3Q6OTM2NTU5Mzg4', 'versionIndex': 13}}}
+2024-07-02 11:38:51,616 DEBUG   SenderThread:60979 [sender.py:send_request():406] send_request: defer
+2024-07-02 11:38:51,616 INFO    SenderThread:60979 [sender.py:send_request_defer():610] handle sender defer: 9
+2024-07-02 11:38:51,616 INFO    SenderThread:60979 [dir_watcher.py:finish():358] shutting down directory watcher
+2024-07-02 11:38:52,509 INFO    SenderThread:60979 [dir_watcher.py:finish():388] scan: /Users/charlesoneill/retrieval/src/wandb/run-20240702_113106-gjgpux6h/files
+2024-07-02 11:38:52,510 INFO    SenderThread:60979 [dir_watcher.py:finish():402] scan save: /Users/charlesoneill/retrieval/src/wandb/run-20240702_113106-gjgpux6h/files/requirements.txt requirements.txt
+2024-07-02 11:38:52,510 INFO    SenderThread:60979 [dir_watcher.py:finish():402] scan save: /Users/charlesoneill/retrieval/src/wandb/run-20240702_113106-gjgpux6h/files/output.log output.log
+2024-07-02 11:38:52,513 INFO    SenderThread:60979 [dir_watcher.py:finish():402] scan save: /Users/charlesoneill/retrieval/src/wandb/run-20240702_113106-gjgpux6h/files/config.yaml config.yaml
+2024-07-02 11:38:52,514 INFO    SenderThread:60979 [dir_watcher.py:finish():402] scan save: /Users/charlesoneill/retrieval/src/wandb/run-20240702_113106-gjgpux6h/files/wandb-summary.json wandb-summary.json
+2024-07-02 11:38:52,517 INFO    SenderThread:60979 [dir_watcher.py:finish():402] scan save: /Users/charlesoneill/retrieval/src/wandb/run-20240702_113106-gjgpux6h/files/conda-environment.yaml conda-environment.yaml
+2024-07-02 11:38:52,519 INFO    SenderThread:60979 [dir_watcher.py:finish():402] scan save: /Users/charlesoneill/retrieval/src/wandb/run-20240702_113106-gjgpux6h/files/wandb-metadata.json wandb-metadata.json
+2024-07-02 11:38:52,521 INFO    SenderThread:60979 [sender.py:transition_state():614] send defer: 10
+2024-07-02 11:38:52,521 DEBUG   SenderThread:60979 [sender.py:send_request():406] send_request: poll_exit
+2024-07-02 11:38:52,521 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: defer
+2024-07-02 11:38:52,521 INFO    HandlerThread:60979 [handler.py:handle_request_defer():184] handle defer: 10
+2024-07-02 11:38:52,521 DEBUG   SenderThread:60979 [sender.py:send_request():406] send_request: defer
+2024-07-02 11:38:52,522 INFO    SenderThread:60979 [sender.py:send_request_defer():610] handle sender defer: 10
+2024-07-02 11:38:52,522 INFO    SenderThread:60979 [file_pusher.py:finish():169] shutting down file pusher
+2024-07-02 11:38:52,723 INFO    wandb-upload_1:60979 [upload_job.py:push():130] Uploaded file /Users/charlesoneill/retrieval/src/wandb/run-20240702_113106-gjgpux6h/files/output.log
+2024-07-02 11:38:52,777 INFO    wandb-upload_0:60979 [upload_job.py:push():130] Uploaded file /Users/charlesoneill/retrieval/src/wandb/run-20240702_113106-gjgpux6h/files/requirements.txt
+2024-07-02 11:38:52,821 INFO    wandb-upload_2:60979 [upload_job.py:push():130] Uploaded file /Users/charlesoneill/retrieval/src/wandb/run-20240702_113106-gjgpux6h/files/config.yaml
+2024-07-02 11:38:52,880 INFO    wandb-upload_3:60979 [upload_job.py:push():130] Uploaded file /Users/charlesoneill/retrieval/src/wandb/run-20240702_113106-gjgpux6h/files/wandb-summary.json
+2024-07-02 11:38:52,880 INFO    wandb-upload_4:60979 [upload_job.py:push():130] Uploaded file /Users/charlesoneill/retrieval/src/wandb/run-20240702_113106-gjgpux6h/files/conda-environment.yaml
+2024-07-02 11:38:53,085 INFO    Thread-11 (_thread_body):60979 [sender.py:transition_state():614] send defer: 11
+2024-07-02 11:38:53,085 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: defer
+2024-07-02 11:38:53,086 INFO    HandlerThread:60979 [handler.py:handle_request_defer():184] handle defer: 11
+2024-07-02 11:38:53,086 DEBUG   SenderThread:60979 [sender.py:send_request():406] send_request: defer
+2024-07-02 11:38:53,086 INFO    SenderThread:60979 [sender.py:send_request_defer():610] handle sender defer: 11
+2024-07-02 11:38:53,086 INFO    SenderThread:60979 [file_pusher.py:join():175] waiting for file pusher
+2024-07-02 11:38:53,088 INFO    SenderThread:60979 [sender.py:transition_state():614] send defer: 12
+2024-07-02 11:38:53,088 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: defer
+2024-07-02 11:38:53,088 INFO    HandlerThread:60979 [handler.py:handle_request_defer():184] handle defer: 12
+2024-07-02 11:38:53,088 DEBUG   SenderThread:60979 [sender.py:send_request():406] send_request: defer
+2024-07-02 11:38:53,088 INFO    SenderThread:60979 [sender.py:send_request_defer():610] handle sender defer: 12
+2024-07-02 11:38:53,088 INFO    SenderThread:60979 [file_stream.py:finish():601] file stream finish called
+2024-07-02 11:38:53,304 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: poll_exit
+2024-07-02 11:38:53,477 INFO    SenderThread:60979 [file_stream.py:finish():605] file stream finish is done
+2024-07-02 11:38:53,478 INFO    SenderThread:60979 [sender.py:transition_state():614] send defer: 13
+2024-07-02 11:38:53,479 DEBUG   SenderThread:60979 [sender.py:send_request():406] send_request: poll_exit
+2024-07-02 11:38:53,479 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: defer
+2024-07-02 11:38:53,480 INFO    HandlerThread:60979 [handler.py:handle_request_defer():184] handle defer: 13
+2024-07-02 11:38:53,480 DEBUG   SenderThread:60979 [sender.py:send_request():406] send_request: defer
+2024-07-02 11:38:53,480 INFO    SenderThread:60979 [sender.py:send_request_defer():610] handle sender defer: 13
+2024-07-02 11:38:53,481 INFO    SenderThread:60979 [sender.py:transition_state():614] send defer: 14
+2024-07-02 11:38:53,483 DEBUG   SenderThread:60979 [sender.py:send():379] send: final
+2024-07-02 11:38:53,484 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: defer
+2024-07-02 11:38:53,484 DEBUG   SenderThread:60979 [sender.py:send():379] send: footer
+2024-07-02 11:38:53,484 INFO    HandlerThread:60979 [handler.py:handle_request_defer():184] handle defer: 14
+2024-07-02 11:38:53,484 DEBUG   SenderThread:60979 [sender.py:send_request():406] send_request: defer
+2024-07-02 11:38:53,484 INFO    SenderThread:60979 [sender.py:send_request_defer():610] handle sender defer: 14
+2024-07-02 11:38:53,486 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: poll_exit
+2024-07-02 11:38:53,486 DEBUG   SenderThread:60979 [sender.py:send_request():406] send_request: poll_exit
+2024-07-02 11:38:53,487 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 11:38:53,487 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: get_summary
+2024-07-02 11:38:53,488 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: sampled_history
+2024-07-02 11:38:53,489 DEBUG   HandlerThread:60979 [handler.py:handle_request():158] handle_request: shutdown
+2024-07-02 11:38:53,489 INFO    HandlerThread:60979 [handler.py:finish():882] shutting down handler
+2024-07-02 11:38:54,491 INFO    WriterThread:60979 [datastore.py:close():296] close: /Users/charlesoneill/retrieval/src/wandb/run-20240702_113106-gjgpux6h/run-gjgpux6h.wandb
+2024-07-02 11:38:54,491 INFO    SenderThread:60979 [sender.py:finish():1608] shutting down sender
+2024-07-02 11:38:54,492 INFO    SenderThread:60979 [file_pusher.py:finish():169] shutting down file pusher
+2024-07-02 11:38:54,492 INFO    SenderThread:60979 [file_pusher.py:join():175] waiting for file pusher
