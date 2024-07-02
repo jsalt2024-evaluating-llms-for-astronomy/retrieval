@@ -8,29 +8,35 @@ from sklearn.metrics.pairwise import cosine_similarity
 import pickle
 import os
 from tqdm import tqdm
-from nltk.corpus import stopwords
-import nltk
 from datetime import datetime
-
 import sys
 sys.path.append('../evaluation')
-
 from evaluate import RetrievalSystem, main as evaluate_main
 
+import spacy
+from collections import Counter
+from string import punctuation
+from nltk.corpus import stopwords
+import nltk
+nltk.download('stopwords', quiet=True)
+stopwords = set(stopwords.words('english')) 
+nlp = spacy.load("en_core_web_sm")
+spacy.cli.download('en_core_web_sm')
+nlp.add_pipe("textrank")
+
+
 class KeywordRetrievalSystem(RetrievalSystem):
-    def __init__(self, dataset_path: str, index_path: str = "../data/bow_index.pkl", remove_capitals: bool = True):
-        self.dataset_path = dataset_path
+    def __init__(self, index_path: str = "../data/vector_store/keyword_index.json", metadata_path: str = "../data/vector_store/metadata.json",
+                 remove_capitals: bool = True):
+        
         self.index_path = index_path
+        self.metadata_path = metadata_path
         self.remove_capitals = remove_capitals
-        self.documents = []
-        self.document_ids = []
-        self.document_dates = []
-        self.tfidf_matrix = None
-        self.vectorizer = None
         
         nltk.download('stopwords', quiet=True)
-        self.stopwords = set(stopwords.words('english'))
-        
+        self.stopwords = set(stopwords.words('english')) 
+
+        self.load_or_build_index()
 
     def preprocess_text(self, text: str) -> str:
         text = ''.join(char for char in text if char.isalnum() or char.isspace())
@@ -39,45 +45,25 @@ class KeywordRetrievalSystem(RetrievalSystem):
         return ' '.join(word for word in text.split() if word.lower() not in self.stopwords)
 
     def build_index(self):
-        print("Building new index...")
-        dataset = load_dataset(self.dataset_path, split="train")
+        self.index = {}
+        with open(self.metadata_path, 'r') as f:
+            self.metadata = json.load(f)
 
-        for paper in tqdm(dataset, desc="Processing documents", unit="doc"):
-            if paper['introduction'] and paper['conclusions']:
-                combined_text = self.preprocess_text(paper['introduction'] + ' ' + paper['conclusions'])
-                self.documents.append(combined_text)
-                self.document_ids.append(paper['arxiv_id'])
-                self.document_dates.append(self.parse_date(paper['arxiv_id']))
 
-        print("Creating TF-IDF matrix...")
-        self.vectorizer = TfidfVectorizer(
-            lowercase=self.remove_capitals,
-            token_pattern=r'\b\w+\b',
-            stop_words=None,
-            max_df=0.95,
-            min_df=2
-        )
-        self.tfidf_matrix = self.vectorizer.fit_transform(self.documents)
-
-        print("Saving index...")
-        with open(self.index_path, 'wb') as f:
-            pickle.dump({
-                'document_ids': self.document_ids,
-                'document_dates': self.document_dates,
-                'tfidf_matrix': self.tfidf_matrix,
-                'vectorizer': self.vectorizer,
-                'remove_capitals': self.remove_capitals
-            }, f)
-        print("Index built and saved successfully.")
+        for i, index in tqdm(enumerate(self.metadata)):
+            paper = self.metadata[index]
+            for keyword in paper['keyword_search']:
+                term = ' '.join(word for word in keyword.lower().split() if word.lower() not in stopwords)
+                if term not in self.index:
+                    self.index[term] = []
+                
+                self.index[term].append(paper['arxiv_id'])
 
     def load_index(self):
         print("Loading existing index...")
         with open(self.index_path, 'rb') as f:
-            index_data = pickle.load(f)
-            self.document_ids = index_data['document_ids']
-            self.document_dates = index_data['document_dates']
-            self.tfidf_matrix = index_data['tfidf_matrix']
-            self.vectorizer = index_data['vectorizer']
+            self.index = json.load(f)
+        
         print("Index loaded successfully.")
 
     def load_or_build_index(self):
@@ -86,26 +72,20 @@ class KeywordRetrievalSystem(RetrievalSystem):
         else:
             self.build_index()
 
+    def segment_keywords(self):
+        pass
+
     def retrieve(self, query: str, arxiv_id: str, top_k: int = 10, return_scores = False):
         query_date = self.parse_date(arxiv_id)
         processed_query = self.preprocess_text(query)
-        query_vector = self.vectorizer.transform([processed_query])
 
-        # Filter documents by date
-        valid_indices = [i for i, date in enumerate(self.document_dates) if date <= query_date]
-        filtered_tfidf_matrix = self.tfidf_matrix[valid_indices]
-
-        similarities = cosine_similarity(query_vector, filtered_tfidf_matrix).flatten()
-        top_indices = similarities.argsort()[-top_k:][::-1]
+        keyword = "dark matter"
         
-        if return_scores:
-            return {self.document_ids[valid_indices[i]]: similarities[i] for i in top_indices}
-        
-        return [self.document_ids[valid_indices[i]] for i in top_indices]
+        return self.index[keyword]
 
 def main():
-    retrieval_system = BagOfWordsRetrievalSystem("charlieoneill/jsalt-astroph-dataset", remove_capitals=True)
-    evaluate_main(retrieval_system, "BagOfWordsDateFiltered")
+    retrieval_system = KeywordRetrievalSystem(remove_capitals = True)
+    evaluate_main(retrieval_system, "ADSKeywords")
 
 if __name__ == "__main__":
     main()
