@@ -38,15 +38,6 @@ class EmbeddingRetrievalSystem(RetrievalSystem):
         config = yaml.safe_load(open('../config.yaml', 'r'))
         self.client = EmbeddingClient(OpenAI(api_key=config['openai_api_key']))
 
-    def parse_date(self, arxiv_id: str) -> datetime:
-        try:
-            year = int("20" + arxiv_id[:2])
-            month = int(arxiv_id[2:4])
-        except:
-            year = 2023
-            month = 1
-        return datetime(year, month, 1)
-
     def load_data(self):
         print("Loading embeddings...")
         self.embeddings = np.load(self.embeddings_path)
@@ -61,9 +52,6 @@ class EmbeddingRetrievalSystem(RetrievalSystem):
         
         print("Processing document dates...")
         self.document_dates = {doc.id: self.parse_date(doc.arxiv_id) for doc in self.documents}
-        
-        print("Loading metadata...")
-        self.metadata = load_dataset(self.metadata_path, split = "train")
 
         print("Data loaded successfully.")
 
