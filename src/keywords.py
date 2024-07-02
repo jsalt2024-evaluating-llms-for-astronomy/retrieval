@@ -18,10 +18,10 @@ from collections import Counter
 from string import punctuation
 from nltk.corpus import stopwords
 import nltk
-nltk.download('stopwords', quiet=True)
-stopwords = set(stopwords.words('english')) 
+import pytextrank
+nltk.download('stopwords', quiet=True) 
 nlp = spacy.load("en_core_web_sm")
-spacy.cli.download('en_core_web_sm')
+#spacy.cli.download('en_core_web_sm')
 nlp.add_pipe("textrank")
 
 
@@ -49,7 +49,6 @@ class KeywordRetrievalSystem(RetrievalSystem):
         with open(self.metadata_path, 'r') as f:
             self.metadata = json.load(f)
 
-
         for i, index in tqdm(enumerate(self.metadata)):
             paper = self.metadata[index]
             for keyword in paper['keyword_search']:
@@ -72,16 +71,70 @@ class KeywordRetrievalSystem(RetrievalSystem):
         else:
             self.build_index()
 
-    def segment_keywords(self):
-        pass
-
-    def retrieve(self, query: str, arxiv_id: str, top_k: int = 10, return_scores = False):
-        query_date = self.parse_date(arxiv_id)
-        processed_query = self.preprocess_text(query)
-
-        keyword = "dark matter"
+    def parse_doc(self, text, nret = 10):
+        #text = ' '.join(word for word in text.split() if word.lower() not in self.stopwords)
+        local_kws = []
+        doc = nlp(text)
+        # examine the top-ranked phrases in the document
+        for phrase in doc._.phrases[:nret]:
+            # print(phrase.text)
+            local_kws.append(phrase.text.lower())
         
-        return self.index[keyword]
+        return [self.preprocess_text(word) for word in local_kws]
+
+    def get_propn(self, text):
+        result = []
+        doc = nlp(text) 
+
+        working_str = ''
+        for token in doc:
+            if(token.text in nlp.Defaults.stop_words or token.text in punctuation):
+                if working_str != '':
+                    result.append(working_str.strip())
+                    working_str = ''
+
+            if(token.pos_ == "PROPN"):
+                working_str += token.text
+                working_str += ' '
+
+        if working_str != '': result.append(working_str.strip())
+        
+        return [self.preprocess_text(word) for word in result]
+
+    def keyword_filter(self, query: str, verbose = False, ne_only = True):
+        query_keywords = self.parse_doc(query)
+        nouns = self.get_propn(query)
+        if verbose: print('keywords:', query_keywords)
+        if verbose: print('proper nouns:', nouns)
+
+        filtered = set()
+        if len(query_keywords) > 0 and not ne_only:
+            for keyword in query_keywords:
+                if keyword != '' and keyword in self.index.keys(): filtered |= set(self.index[keyword])
+        
+        if len(nouns) > 0:
+            ne_results = set()
+            for noun in nouns:
+                if noun in self.index.keys(): ne_results |= set(self.index[noun])
+            if ne_only: return ne_results
+            
+            filtered &= ne_results
+        return filtered
+    
+    def date_filter(self, results, arxiv_id):
+        query_date = self.parse_date(arxiv_id)
+        filtered = set()
+        for doc in results:
+            if self.parse_date(doc) >= query_date:
+                filtered.add(doc)
+        
+        return filtered
+
+
+    def retrieve(self, query: str, arxiv_id: str, top_k: int = 10, verbose = True, ne_only = False) -> List[str]:
+        filtered = self.date_filter(self.keyword_filter(query, verbose, ne_only = ne_only), arxiv_id)
+        if verbose: print('Retrieved documents:', len(filtered))
+        return list(filtered)[:top_k]
 
 def main():
     retrieval_system = KeywordRetrievalSystem(remove_capitals = True)
