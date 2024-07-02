@@ -27,7 +27,7 @@ class WeightedRetrievalSystem():
                          documents_path = "/users/christineye/retrieval/data/vector_store/documents.pkl",
                          index_mapping_path = "/users/christineye/retrieval/data/vector_store/index_mapping.pkl"):
         
-        self.embed = EmbeddingRetrievalSystem(dataset_path = dataset_path, embeddings_path = embeddings_path, 
+        self.embed = EmbeddingRetrievalSystem(embeddings_path = embeddings_path, 
                                          documents_path = documents_path, index_mapping_path = index_mapping_path)
         
         
