@@ -76,19 +76,10 @@
     "arxiv": [
       "0803.4506",
       "1210.4957",
-      "0407095",
-      "9509107",
-      "0209183",
-      "0206393",
-      "0911.2237",
       "1103.6030",
       "1108.5384",
-      "9605182",
       "1110.4638",
-      "1105.2376",
-      "0007281",
-      "9802268",
-      "0001003"
+      "1105.2376"
     ]
   },
   "1403.0007_2": {
@@ -131,12 +122,9 @@
     ],
     "arxiv": [
       "1205.4270",
-      "0608512",
       "1304.4227",
       "0805.1335",
-      "0309655",
-      "0908.3191",
-      "0701841"
+      "0908.3191"
     ]
   },
   "1403.0007_3": {
@@ -180,7 +168,6 @@
     ],
     "arxiv": [
       "0810.2788",
-      "0709.1354",
       "0907.5416",
       "0907.0133",
       "0705.2438",
@@ -225,11 +212,8 @@
       ]
     ],
     "arxiv": [
-      "0502199",
-      "0504097",
       "1002.3660",
       "0805.1244",
-      "9907411",
       "0808.2981"
     ]
   },
@@ -265,7 +249,6 @@
     ],
     "arxiv": [
       "1010.1164",
-      "0605060",
       "1211.6804",
       "1212.4819",
       "1208.3529",
@@ -305,11 +288,7 @@
       ]
     ],
     "arxiv": [
-      "0401289",
-      "1005.2187",
-      "0002234",
-      "0511691",
-      "9706022"
+      "1005.2187"
     ]
   },
   "1709.09180_1": {
@@ -375,7 +354,6 @@
       "1002.1309",
       "1006.3811",
       "0811.1774",
-      "0205556",
       "1202.5973",
       "0805.0204"
     ]
@@ -433,13 +411,7 @@
       "1212.0558",
       "1212.5658",
       "1410.8214",
-      "1201.3919",
-      "1403.7542",
       "1401.1811",
-      "0505299",
-      "0210314",
-      "0403513",
-      "0407549",
       "1008.2797"
     ]
   },
@@ -533,10 +505,7 @@
     ],
     "arxiv": [
       "0905.1042",
-      "0411277",
-      "1111.3982",
       "1008.3192",
-      "1111.1697",
       "1506.01028",
       "1202.5973",
       "1605.08700",
@@ -578,12 +547,10 @@
       ]
     ],
     "arxiv": [
-      "0411302",
       "1505.05149",
       "1205.0812",
       "1110.0837",
       "1003.0679",
-      "1504.01392",
       "1507.05622",
       "1106.0616"
     ]
@@ -627,11 +594,8 @@
       "1506.01028",
       "1505.07167",
       "1503.02084",
-      "1604.02168",
       "1609.00012",
       "1008.3192",
-      "1111.1697",
-      "1111.3982",
       "1310.6267",
       "1309.6317",
       "1201.0939"
@@ -670,7 +634,6 @@
     ],
     "arxiv": [
       "1410.8214",
-      "0402085",
       "1304.7734",
       "1310.2253",
       "1403.0947",
@@ -709,7 +672,6 @@
       ]
     ],
     "arxiv": [
-      "1111.3980",
       "1310.6267",
       "1309.6317",
       "1406.2314",
@@ -789,10 +751,7 @@
       ]
     ],
     "arxiv": [
-      "0407095",
-      "0210454",
       "0905.2186",
-      "0412300",
       "1301.6753",
       "1103.4388"
     ]
@@ -838,59 +797,7 @@
     ],
     "arxiv": [
       "1303.6430",
-      "9707340",
-      "0504608",
-      "0110368",
-      "9609066",
       "0704.1614"
-    ]
-  },
-  "1602.07702_2": {
-    "title": "The Galaxy in Context: Structural, Kinematic, and Integrated Properties",
-    "question": "Research question: What are the key infrared sky surveys and instruments that have contributed to our understanding of the Galactic structure in the anticenter direction?",
-    "text": "These include the Space Shuttle experiment (the Deep Near-Infrared Survey of the Southern Sky (DENIS ) in the anticenter direction, COBE/FIRAS (Far Infrared Absolute Spectrophotometer , 2MASS ( and GLIMPSE .",
-    "citations": [
-      [
-        "Drimmel",
-        "Spergel",
-        "2001"
-      ],
-      [
-        "Freudenreich",
-        "1998"
-      ],
-      [
-        "L\u00f3pez-Corredoira",
-        "2002"
-      ],
-      [
-        "Reyl\u00e9",
-        "2009"
-      ],
-      [
-        "Benjamin",
-        "2005"
-      ],
-      [
-        "Cabrera-Lavers",
-        "2005"
-      ],
-      [
-        "Ruphy",
-        "1996"
-      ],
-      [
-        "Kent",
-        "1991"
-      ]
-    ],
-    "arxiv": [
-      "9707340",
-      "0101259",
-      "0208236",
-      "0812.3739",
-      "0508325",
-      "0504608"
     ]
   },
   "1602.07702_3": {
@@ -932,52 +839,8 @@
       ]
     ],
     "arxiv": [
-      "0004157",
       "1507.08066",
-      "0210628",
-      "0008075",
-      "1503.02110",
-      "0211551"
-    ]
-  },
-  "1602.07702_4": {
-    "title": "The Galaxy in Context: Structural, Kinematic, and Integrated Properties",
-    "question": "Research question: What is the consensus range for the scale height of young stellar populations in the Galactic disk based on various observational methods?",
-    "text": "The following estimates are based on either OB stars, open clusters, or optical star counts for a range of stellar populations, and they are broadly consistent: z\n0=24\u00b13 pc (z\n0=28\u00b15 pc (z\n0=21\u00b14 pc (z\n0=27\u00b13 pc (Mendez & van z\n0=28\u00b16 pc (z\n0=27\u00b14 pc (and z\n0=24\u00b12 pc .",
-    "citations": [
-      [
-        "Chen",
-        "1999"
-      ],
-      [
-        "Pandey",
-        "1988"
-      ],
-      [
-        "Chen",
-        "2001"
-      ],
-      [
-        "Humphreys",
-        "Larsen",
-        "1995"
-      ],
-      [
-        "Altena",
-        "1998"
-      ],
-      [
-        "Stothers",
-        "Frogel",
-        "1974"
-      ],
-      [
-        "Ma\u00edz-Apell\u00e1niz",
-        "2001"
-      ]
-    ],
-    "arxiv": [
-      "0108472"
+      "1503.02110"
     ]
   },
   "1602.07702_5": {
@@ -1015,13 +878,10 @@
       ]
     ],
     "arxiv": [
-      "0506659",
-      "0606211",
       "0809.2362",
       "1206.3578",
       "1502.04767",
-      "0902.1781",
-      "0405198"
+      "0902.1781"
     ]
   },
   "1602.07702_6": {
@@ -1055,11 +915,9 @@
       ]
     ],
     "arxiv": [
-      "0301029",
       "1411.1763",
       "1202.6367",
       "1002.0266",
-      "0701790",
       "1301.7069",
       "1210.4929"
     ]
@@ -1098,9 +956,6 @@
     ],
     "arxiv": [
       "0804.3850",
-      "0510520",
-      "9505087",
-      "0110368",
       "1309.0809",
       "1301.3168",
       "1301.5318"
@@ -1138,14 +993,11 @@
       ]
     ],
     "arxiv": [
-      "9902247",
-      "9608164",
       "1309.0809",
       "1301.3168",
       "1301.5318",
       "1308.0336",
-      "1511.06047",
-      "9810208"
+      "1511.06047"
     ]
   },
   "1707.04256_1": {
@@ -1206,12 +1058,8 @@
     ],
     "arxiv": [
       "0907.4758",
-      "1606.07790",
       "1003.0904",
-      "1104.2836",
-      "1211.7090",
       "1306.0913",
-      "1210.0544",
       "1209.5745",
       "1204.1562",
       "1207.2468",
@@ -1271,44 +1119,6 @@
       "1212.6651",
       "1410.3825"
     ]
-  },
-  "1707.04256_3": {
-    "title": "Small-Scale Challenges to the \u039bCDM Paradigm",
-    "question": "Research question: How did rotation curve measurements in the 1970s contribute to the widespread acceptance of dark matter in astronomy?",
-    "text": "Although the idea of \u201cdark\u201d matter had been around since at least it was not until rotation curve measurements of galaxies in the 1970s revealed the need for significant amounts of nonluminous matter ( , 1980) that DM was taken seriously by the broader astronomical community (and shortly thereafter, it was recognized that dwarf galaxies might serve as sensitive probes of DM  ).",
-    "citations": [
-      [
-        "Aaronson",
-        "1983"
-      ],
-      [
-        "Bosma",
-        "1978"
-      ],
-      [
-        "Freeman",
-        "1970"
-      ],
-      [
-        "Lin",
-        "Faber",
-        "1983"
-      ],
-      [
-        "Faber",
-        "Lin",
-        "1983"
-      ],
-      [
-        "Rubin",
-        "1978"
-      ],
-      [
-        "Zwicky",
-        "1933"
-      ]
-    ],
-    "arxiv": []
   },
   "1707.04256_4": {
     "title": "Small-Scale Challenges to the \u039bCDM Paradigm",
@@ -1390,9 +1200,7 @@
     ],
     "arxiv": [
       "1511.01098",
-      "0108217",
-      "0806.2340",
-      "0002214"
+      "0806.2340"
     ]
   },
   "1707.04256_6": {
@@ -1427,10 +1235,7 @@
       ]
     ],
     "arxiv": [
-      "0202075",
-      "1108.2404",
-      "0412035",
-      "0107326"
+      "1108.2404"
     ]
   },
   "1707.04256_7": {
@@ -1537,68 +1342,9 @@
       "1401.5331",
       "1605.00742",
       "0801.3663",
-      "0502109",
       "1504.06190",
       "1011.3283",
       "0704.1458"
-    ]
-  },
-  "1911.09678_2": {
-    "title": "Intermediate-Mass Black Holes",
-    "question": "Research question: What are the primary theoretical mechanisms proposed for the formation of non-stellar-mass black holes in the early universe?",
-    "text": "Quickly thereafter, the community developed theoretical ideas about how one might form non-stellar-mass black holes the famous diagram from ) includes all the formation mechanisms we consider today, including gravitational runaway ( , the collapse of Population III (Pop III) stars ( and the idea of a direct collapse into a black hole ( , ).",
-    "citations": [
-      [
-        "Lee",
-        "1993"
-      ],
-      [
-        "Rees",
-        "1978"
-      ],
-      [
-        "Madau",
-        "Rees",
-        "2001"
-      ],
-      [
-        "Quinlan",
-        "Shapiro",
-        "1990"
-      ],
-      [
-        "Loeb",
-        "Rasio",
-        "1994"
-      ],
-      [
-        "Bond",
-        "1984"
-      ],
-      [
-        "Bahcall",
-        "Ostriker",
-        "1975"
-      ],
-      [
-        "Begelman",
-        "Rees",
-        "1978"
-      ],
-      [
-        "Koushiappas",
-        "2004"
-      ],
-      [
-        "Haehnelt",
-        "Rees",
-        "1993"
-      ]
-    ],
-    "arxiv": [
-      "0101223",
-      "9401026",
-      "0311487"
     ]
   },
   "1911.09678_3": {
@@ -1637,12 +1383,9 @@
       ]
     ],
     "arxiv": [
-      "1304.7762",
       "1603.01276",
       "1808.09452",
-      "1805.10874",
       "1710.07568",
-      "1703.08553",
       "1902.01401"
     ]
   },
@@ -1683,10 +1426,6 @@
     ],
     "arxiv": [
       "1008.5147",
-      "0307171",
-      "0111341",
-      "9407018",
-      "0207276",
       "1102.0327",
       "1303.3929"
     ]
@@ -1728,11 +1467,9 @@
     ],
     "arxiv": [
       "1209.5265",
-      "9903430",
       "1009.5382",
       "0706.1050",
-      "1003.3015",
-      "9806270"
+      "1003.3015"
     ]
   },
   "1911.09678_6": {
@@ -1771,7 +1508,6 @@
       ]
     ],
     "arxiv": [
-      "1304.7762",
       "1902.10175",
       "1711.04314",
       "1601.00974",
@@ -1853,11 +1589,8 @@
       ]
     ],
     "arxiv": [
-      "0806.2387",
       "1003.4604",
-      "0502035",
-      "1210.0901",
-      "0411109"
+      "1210.0901"
     ]
   },
   "1911.09678_9": {
@@ -1936,368 +1669,7 @@
       "1211.0347",
       "1806.09693",
       "0909.1531",
-      "1810.01892",
-      "9902062"
-    ]
-  },
-  "1401.0586_1": {
-    "title": "Hot Accretion Flows Around Black Holes",
-    "question": "Research question: How has the ADAF model been applied to explain observations of various types of low-luminosity active galactic nuclei (LLAGNs) beyond Sgr A*?",
-    "text": "Following the initial application of the ADAF model to Sgr A\\* (various authors used similar ideas to explain a variety of observations of other LLAGNs: nearby elliptical galaxies (  , 2001   LINERs (a , b   BL Lac objects (FR I sources ( , c, X-ray bright, optically normal galaxies (and even Seyferts (, ).",
-    "citations": [
-      [
-        "Ho",
-        "2003"
-      ],
-      [
-        "Fabbiano",
-        "2003"
-      ],
-      [
-        "Yuan",
-        "Narayan",
-        "2004"
-      ],
-      [
-        "Wu",
-        "2007"
-      ],
-      [
-        "Nemmen",
-        "2006"
-      ],
-      [
-        "Quataert",
-        "1999"
-      ],
-      [
-        "Nemmen",
-        "2014"
-      ],
-      [
-        "Yuan",
-        "Zdziarski",
-        "2004"
-      ],
-      [
-        "Loewenstein",
-        "2001"
-      ],
-      [
-        "Yuan",
-        "2009"
-      ],
-      [
-        "Reynolds",
-        "1996"
-      ],
-      [
-        "Yuan",
-        "2002"
-      ],
-      [
-        "Ptak",
-        "2004"
-      ],
-      [
-        "Begelman",
-        "Celotti",
-        "2004"
-      ],
-      [
-        "Narayan",
-        "1995"
-      ],
-      [
-        "Di Matteo",
-        "2000"
-      ],
-      [
-        "Yu",
-        "2011"
-      ],
-      [
-        "Gammie",
-        "1999"
-      ],
-      [
-        "Pellegrini",
-        "2003"
-      ],
-      [
-        "Liu",
-        "Wu",
-        "2013"
-      ],
-      [
-        "Maraschi",
-        "Tavecchio",
-        "2003"
-      ],
-      [
-        "Lasota",
-        "1996"
-      ],
-      [
-        "Fabian",
-        "Rees",
-        "1995"
-      ],
-      [
-        "Chiang",
-        "Blaes",
-        "2003"
-      ],
-      [
-        "Xu",
-        "Cao",
-        "2009"
-      ]
-    ],
-    "arxiv": [
-      "0303060",
-      "0301297",
-      "0106326",
-      "0406607",
-      "9502015",
-      "9905053",
-      "9808036",
-      "9607021",
-      "9509096",
-      "0211460"
-    ]
-  },
-  "1401.0586_2": {
-    "title": "Hot Accretion Flows Around Black Holes",
-    "question": "Research question: How do the Blandford-Znajek and Blandford-Payne models contribute to our understanding of relativistic jet formation in active galactic nuclei?",
-    "text": "Especially influential in this field are the Blandford-Znajek (BZ) model ( see also     a) and the Blandford-Payne (BP) model ( see also   , ).",
-    "citations": [
-      [
-        "Ruffini",
-        "Wilson",
-        "1975"
-      ],
-      [
-        "MacDonald",
-        "Thorne",
-        "1982"
-      ],
-      [
-        "Ostriker",
-        "1997"
-      ],
-      [
-        "Pudritz",
-        "Norman",
-        "1983"
-      ],
-      [
-        "Blandford",
-        "Znajek",
-        "1977"
-      ],
-      [
-        "Punsly",
-        "Coroniti",
-        "1989"
-      ],
-      [
-        "Penna",
-        "2013"
-      ],
-      [
-        "Phinney",
-        "1983"
-      ],
-      [
-        "Thorne",
-        "1986"
-      ],
-      [
-        "Li",
-        "1992"
-      ],
-      [
-        "Komissarov",
-        "McKinney",
-        "2007"
-      ],
-      [
-        "Heyvaerts",
-        "Norman",
-        "1989"
-      ],
-      [
-        "Tchekhovskoy",
-        "2011"
-      ],
-      [
-        "Vlahakis",
-        "Konigl",
-        "2003"
-      ],
-      [
-        "Lovelace",
-        "1976"
-      ],
-      [
-        "Contopoulos",
-        "Lovelace",
-        "1994"
-      ],
-      [
-        "Blandford",
-        "Payne",
-        "1982"
-      ]
-    ],
-    "arxiv": [
-      "9706281",
-      "0702269"
-    ]
-  },
-  "1401.0586_3": {
-    "title": "Hot Accretion Flows Around Black Holes",
-    "question": "Research question: How have magnetohydrodynamic (MHD) simulations contributed to our understanding of jet formation in hot accretion flows?",
-    "text": "Many MHD simulations of hot accretion flows have been performed to study jet formation (,  , 2000     a,b  , 2006      a).",
-    "citations": [
-      [
-        "Hawley",
-        "Balbus",
-        "2002"
-      ],
-      [
-        "Hawley",
-        "Krolik",
-        "2006"
-      ],
-      [
-        "De Villiers",
-        "2005"
-      ],
-      [
-        "Kato",
-        "2004"
-      ],
-      [
-        "Sadowski",
-        "2013"
-      ],
-      [
-        "Koide",
-        "1999"
-      ],
-      [
-        "McKinney",
-        "2012"
-      ],
-      [
-        "Komissarov",
-        "2007"
-      ],
-      [
-        "Koide",
-        "2003"
-      ],
-      [
-        "McKinney",
-        "2005"
-      ],
-      [
-        "Kudoh",
-        "1998"
-      ],
-      [
-        "Tchekhovskoy",
-        "2011"
-      ],
-      [
-        "McKinney",
-        "Gammie",
-        "2004"
-      ],
-      [
-        "McKinney",
-        "Blandford",
-        "2009"
-      ],
-      [
-        "Kuwabara",
-        "2000"
-      ]
-    ],
-    "arxiv": [
-      "0203309",
-      "0512227",
-      "0407092",
-      "0703146",
-      "0702269",
-      "0310886",
-      "0011165"
-    ]
-  },
-  "1401.0586_4": {
-    "title": "Hot Accretion Flows Around Black Holes",
-    "question": "Research Question: How do the scaling relations for hydro simulations compare to those for magnetohydrodynamic (MHD) simulations in terms of their \u03b2 and \u03b1 parameters?",
-    "text": "These statements apply to hydro simulations ( b, a) as well as MHD simulations (   b a).\n",
-    "citations": [
-      [
-        "Machida",
-        "2001"
-      ],
-      [
-        "Stone",
-        "Pringle",
-        "2001"
-      ],
-      [
-        "Hawley",
-        "Balbus",
-        "2002"
-      ],
-      [
-        "Kato",
-        "2004"
-      ],
-      [
-        "Stone",
-        "1999"
-      ],
-      [
-        "Yuan",
-        "2012"
-      ],
-      [
-        "Yuan",
-        "Bu",
-        "2010"
-      ],
-      [
-        "Pen",
-        "2003"
-      ],
-      [
-        "Igumenshchev",
-        "2003"
-      ],
-      [
-        "Pang",
-        "2011"
-      ],
-      [
-        "Hawley",
-        "2001"
-      ],
-      [
-        "Li",
-        "2013"
-      ]
-    ],
-    "arxiv": [
-      "0203309",
-      "0301402",
-      "0103522",
-      "0006456"
+      "1810.01892"
     ]
   },
   "1401.0586_5": {
@@ -2356,135 +1728,10 @@
       ]
     ],
     "arxiv": [
-      "0703254",
-      "0611269",
       "0906.4395",
-      "0411627",
       "0909.5572",
       "1204.4454",
       "1005.4062"
-    ]
-  },
-  "1401.0586_6": {
-    "title": "Hot Accretion Flows Around Black Holes",
-    "question": "Research question: What are the primary theoretical models proposed to explain the observed characteristics of protoplanetary disks?",
-    "text": "Some combination of the following models is likely responsible: the evaporation model ( , 2011 , 2007    ) the turbulent diffusion model ( ) and the large viscosity model (, ).",
-    "citations": [
-      [
-        "Mayer",
-        "Pringle",
-        "2007"
-      ],
-      [
-        "Spruit",
-        "Deufel",
-        "2002"
-      ],
-      [
-        "Liu",
-        "1999"
-      ],
-      [
-        "Manmoto",
-        "2000"
-      ],
-      [
-        "Meyer",
-        "2000"
-      ],
-      [
-        "R\u00f3\u017ca\u0144ska",
-        "Czerny",
-        "2000"
-      ],
-      [
-        "Meyer",
-        "Meyer-Hofmeister",
-        "1994"
-      ],
-      [
-        "Manmoto",
-        "Kato",
-        "2000"
-      ],
-      [
-        "Lu",
-        "2004"
-      ],
-      [
-        "Honma",
-        "1996"
-      ],
-      [
-        "Taam",
-        "2012"
-      ],
-      [
-        "Gu",
-        "Lu",
-        "2000"
-      ]
-    ],
-    "arxiv": [
-      "9911051"
-    ]
-  },
-  "1401.0586_7": {
-    "title": "Hot Accretion Flows Around Black Holes",
-    "question": "Research question: How does the spectral energy distribution of Low-Luminosity Active Galactic Nuclei (LLAGNs) differ from that of luminous AGNs, particularly in terms of their accretion disk structure and the presence of a \"big red bump\"?",
-    "text": "These observations strongly suggest that LLAGNs do not have a thin disk in their inner regions however, a disk may be present at larger radii, as indicated by a \u201cbig red bump\u201d in their spectra (a , b   ). [Given that LLAGNs lie on the low-luminosity extrapolation of the well-known relation between \u03b1ox and luminosity, ) argued that LLAGNs do not differ appreciably from luminous AGNs and, hence, that LLAGN accretion disks are similar to disks in luminous AGNs.",
-    "citations": [
-      [
-        "Yu",
-        "2011"
-      ],
-      [
-        "Yuan",
-        "Narayan",
-        "2004"
-      ],
-      [
-        "Maoz",
-        "2007"
-      ],
-      [
-        "Yuan",
-        "2002"
-      ],
-      [
-        "Gammie",
-        "1999"
-      ],
-      [
-        "Ptak",
-        "2004"
-      ],
-      [
-        "Wu",
-        "2007"
-      ],
-      [
-        "Lasota",
-        "1996"
-      ],
-      [
-        "Nemmen",
-        "2006"
-      ],
-      [
-        "Chiang",
-        "Blaes",
-        "2003"
-      ],
-      [
-        "Quataert",
-        "1999"
-      ]
-    ],
-    "arxiv": [
-      "9808036",
-      "9607021",
-      "0211460"
     ]
   },
   "1401.0586_8": {
@@ -2534,58 +1781,7 @@
     "arxiv": [
       "1201.0837",
       "0911.4560",
-      "9704208",
       "0908.4078"
-    ]
-  },
-  "1401.0586_9": {
-    "title": "Hot Accretion Flows Around Black Holes",
-    "question": "Research question: How do key spectral characteristics and radiative cooling rates in astronomical objects vary with different physical parameters according to recent literature?",
-    "text": "The radiative cooling rate, the shape of the spectrum, the different components in the spectrum, and how all these scale with parameters are described in various papers (, b   b, b, ).",
-    "citations": [
-      [
-        "Narayan",
-        "Yi",
-        "1995"
-      ],
-      [
-        "Manmoto",
-        "1997"
-      ],
-      [
-        "Quataert",
-        "Narayan",
-        "1999"
-      ],
-      [
-        "Esin",
-        "1997"
-      ],
-      [
-        "Narayan",
-        "1996"
-      ],
-      [
-        "Mahadevan",
-        "1997"
-      ],
-      [
-        "Narayan",
-        "1998"
-      ],
-      [
-        "Nakamura",
-        "1997"
-      ],
-      [
-        "Yuan",
-        "2003"
-      ]
-    ],
-    "arxiv": [
-      "9502015",
-      "9705237",
-      "9711167"
     ]
   },
   "1401.0586_10": {
@@ -2634,57 +1830,7 @@
     ],
     "arxiv": [
       "0809.4489",
-      "9703095",
-      "9705237",
-      "0512211",
-      "9711167",
-      "0012452",
       "0903.1105"
-    ]
-  },
-  "1703.00068_1": {
-    "title": "Magnetars",
-    "question": "What are the dates and uncertainties of three significant gamma-ray burst events observed in the late 20th and early 21st centuries?",
-    "text": "These events occurred on March 5, 1979 (\u221266 August 27, 1998 (+14 and December 27, 2004 (\u221220 , b, ).",
-    "citations": [
-      [
-        "SGR",
-        "0526"
-      ],
-      [
-        "Evans",
-        "1980"
-      ],
-      [
-        "SGR",
-        "1806"
-      ],
-      [
-        "Mereghetti",
-        "2005"
-      ],
-      [
-        "Hurley",
-        "2005"
-      ],
-      [
-        "SGR",
-        "1900"
-      ],
-      [
-        "Boggs",
-        "2007"
-      ],
-      [
-        "Hurley",
-        "1999"
-      ]
-    ],
-    "arxiv": [
-      "0502329",
-      "0611318",
-      "9811443",
-      "9809140"
     ]
   },
   "1703.00068_2": {
@@ -2719,8 +1865,6 @@
     ],
     "arxiv": [
       "0903.1974",
-      "0505039",
-      "0301577",
       "1406.3377",
       "0907.4616",
       "1103.3024"
@@ -2778,54 +1922,8 @@
       "1406.6069",
       "1307.5316",
       "1304.2158",
-      "1405.6590",
       "1211.3418"
     ]
-  },
-  "1910.09730_2": {
-    "title": "Understanding Galaxy Evolution Through Emission Lines",
-    "question": "Here are focused research questions based on the key topics mentioned in that sentence:\n\n1. How do chemical evolution models incorporate changing star formation histories to predict galactic abundances?\n\n2. What are the latest developments in calculating heavy element yields from massive star evolution and nucleosynthesis?\n\n3. How do nebular emission and internal extinction affect our ability to measure galactic chemical evolution?\n\n4. What role does stellar mass loss play in modifying the chemical enrichment of galaxies over time?",
-    "text": "Major advances include chemical evolution calculations and massive star evolution (, stellar and gas-phase abundances (heavy element yields (changing star-formation histories (secondary nucleosynthesis (nebular emission and internal extinction (and stellar mass loss .",
-    "citations": [
-      [
-        "Truran",
-        "Cameron",
-        "1971"
-      ],
-      [
-        "Guiderdoni",
-        "Rocca-Volmerange",
-        "1987"
-      ],
-      [
-        "Tinsley",
-        "1973"
-      ],
-      [
-        "Larson",
-        "Tinsley",
-        "1978"
-      ],
-      [
-        "Talbot",
-        "Arnett",
-        "1971"
-      ],
-      [
-        "Tinsley",
-        "1972"
-      ],
-      [
-        "Alongi",
-        "1993"
-      ],
-      [
-        "Arimoto",
-        "Yoshii",
-        "1986"
-      ]
-    ],
-    "arxiv": []
   },
   "1910.09730_3": {
     "title": "Understanding Galaxy Evolution Through Emission Lines",
@@ -2866,13 +1964,8 @@
       ]
     ],
     "arxiv": [
-      "0511255",
       "1006.4877",
-      "0602473",
       "1602.01098",
-      "0607074",
-      "0508407",
-      "0405187",
       "1211.6423"
     ]
   },
@@ -2952,10 +2045,7 @@
       ]
     ],
     "arxiv": [
-      "1007.1244",
-      "1608.00005",
-      "0210646",
-      "1003.1539"
+      "1608.00005"
     ]
   },
   "1910.09730_6": {
@@ -2996,12 +2086,9 @@
       ]
     ],
     "arxiv": [
-      "0101097",
-      "0206495",
       "1803.04425",
       "1606.01146",
       "1012.2471",
-      "0408128",
       "1104.5460"
     ]
   },
@@ -3042,82 +2129,8 @@
       ]
     ],
     "arxiv": [
-      "0101097",
       "0707.2691",
-      "0806.2410",
-      "0603580",
-      "0606724",
-      "0606724"
-    ]
-  },
-  "1910.09730_8": {
-    "title": "Understanding Galaxy Evolution Through Emission Lines",
-    "question": "Here are two focused research questions based on the given sentence:\n\n1. How do recent observations of giant branch luminosity functions and UV spectra of stars impact our understanding of stellar evolution models?\n\n2. What role do horizontal branch, asymptotic giant branch, and post-asymptotic giant branch stars play in improving near-IR stellar spectra and stellar atmosphere opacity calculations?",
-    "text": "New observational data sets have also been incorporated, including giant branch luminosity functions  the UV spectra of stars (, ) stars in the horizontal, asymptotic giant, and post-asymptotic giant branches (pAGBs ) near-IR stellar spectra  and stellar atmosphere opacities .",
-    "citations": [
-      [
-        "Bruzual",
-        "1983"
-      ],
-      [
-        "Bruzual",
-        "Charlot",
-        "1993"
-      ],
-      [
-        "Bressan",
-        "1993"
-      ],
-      [
-        "Buzzoni",
-        "1989"
-      ],
-      [
-        "Tinsley",
-        "Gunn",
-        "1976"
-      ],
-      [
-        "Rocca-Volmerange",
-        "1981"
-      ]
-    ],
-    "arxiv": []
-  },
-  "1910.09730_9": {
-    "title": "Understanding Galaxy Evolution Through Emission Lines",
-    "question": "Research question: How do the density gradients of ultracompact HII regions compare to those of larger HII regions, and what implications does this have for their structure and evolution?",
-    "text": "Ultracompact Hii regions typically have steep density gradients (de   whereas larger Hii regions have more shallow or flat density gradients .",
-    "citations": [
-      [
-        "Kurtz",
-        "2002"
-      ],
-      [
-        "Phillips",
-        "2008"
-      ],
-      [
-        "Franco",
-        "2000"
-      ],
-      [
-        "Phillips",
-        "2007"
-      ],
-      [
-        "Pree",
-        "1995"
-      ],
-      [
-        "Johnson",
-        "Kobulnicky",
-        "2003"
-      ]
-    ],
-    "arxiv": [
-      "0611295",
-      "0308303"
+      "0806.2410"
     ]
   },
   "1910.09730_10": {
@@ -3151,8 +2164,6 @@
       ]
     ],
     "arxiv": [
-      "1003.4296",
-      "0508064",
       "1005.1071",
       "1105.3924",
       "1411.1294"
@@ -3225,7 +2236,6 @@
       "1007.3265",
       "1012.1855",
       "0901.4121",
-      "0608381",
       "1109.2588",
       "1211.6436",
       "1401.5477"
@@ -3322,17 +2332,8 @@
       ]
     ],
     "arxiv": [
-      "0508046",
-      "0502199",
-      "0411108",
       "1003.0578",
-      "0511338",
-      "1204.4114",
-      "1209.1480",
-      "0601463",
-      "0506398",
-      "0812.1562",
-      "0907.1608"
+      "1204.4114"
     ]
   },
   "1403.4620_4": {
@@ -3410,8 +2411,6 @@
       ]
     ],
     "arxiv": [
-      "0612018",
-      "0612019",
       "1201.2397"
     ]
   },
@@ -3451,7 +2450,6 @@
       "1111.1973",
       "1104.0951",
       "1108.2711",
-      "0701192",
       "1212.4836"
     ]
   },
@@ -3487,7 +2485,6 @@
     ],
     "arxiv": [
       "0901.2458",
-      "1303.5059",
       "0912.1858",
       "1205.0547",
       "1105.2537"
@@ -3526,9 +2523,7 @@
     ],
     "arxiv": [
       "1007.2566",
-      "1310.3838",
       "0808.0016",
-      "0407343",
       "0901.2458"
     ]
   },
@@ -3582,10 +2577,7 @@
     "arxiv": [
       "0807.2831",
       "0706.2687",
-      "1503.02584",
-      "1508.03622",
       "1505.04948",
-      "1503.06216",
       "1609.04346"
     ]
   },
@@ -3636,13 +2628,9 @@
       "1111.6608",
       "0910.3946",
       "0906.3669",
-      "0605025",
       "1302.6594",
-      "1503.03896",
       "1702.07430",
-      "1703.02978",
-      "1710.05432",
-      "1610.05301"
+      "1703.02978"
     ]
   },
   "1901.05465_3": {
@@ -3690,7 +2678,6 @@
       "1007.4198",
       "1703.02978",
       "1008.4585",
-      "1804.07762",
       "1708.02290",
       "0902.2395",
       "1001.3137"
@@ -3732,9 +2719,6 @@
     ],
     "arxiv": [
       "1710.05858",
-      "1710.05443",
-      "1710.05432",
-      "1710.05436",
       "1710.05454",
       "1710.05840",
       "1710.05841"
@@ -3774,8 +2758,6 @@
     ],
     "arxiv": [
       "1805.05883",
-      "9810070",
-      "1707.04256",
       "1501.06921",
       "1204.1562",
       "0904.4505"
@@ -3852,9 +2834,7 @@
     ],
     "arxiv": [
       "1706.04184",
-      "0109450",
-      "1001.1160",
-      "9510152"
+      "1001.1160"
     ]
   },
   "1901.05465_8": {
@@ -3890,7 +2870,6 @@
     "arxiv": [
       "1703.02978",
       "0908.3489",
-      "0809.0700",
       "1510.03856",
       "1506.01021",
       "1612.04866"
@@ -3928,10 +2907,7 @@
       ]
     ],
     "arxiv": [
-      "9810070",
       "0706.0516",
-      "0507154",
-      "0606271",
       "0704.1318",
       "0705.4622"
     ]
@@ -3969,13 +2945,10 @@
     "arxiv": [
       "1011.4937",
       "0906.3669",
-      "0701154",
       "0803.2489",
       "1007.3499",
-      "0608448",
       "1403.6116",
-      "1007.4198",
-      "1410.2223"
+      "1007.4198"
     ]
   },
   "2212.06907_1": {
@@ -4019,11 +2992,8 @@
       "1506.03396",
       "1106.6089",
       "1703.02539",
-      "0006376",
-      "1803.08932",
       "1807.04229",
-      "2008.04911",
-      "0703306"
+      "2008.04911"
     ]
   },
   "2212.06907_2": {
@@ -4066,13 +3036,8 @@
       "2006.10744",
       "2109.06295",
       "2006.04814",
-      "1606.00441",
-      "1803.08932",
       "1807.04229",
-      "1505.06880",
-      "1106.6088",
-      "1201.3919",
-      "1212.0548"
+      "1505.06880"
     ]
   },
   "2212.06907_3": {
@@ -4108,9 +3073,7 @@
     "arxiv": [
       "1809.05584",
       "1311.3260",
-      "0308005",
-      "2109.13942",
-      "0408517"
+      "2109.13942"
     ]
   },
   "2212.06907_4": {
@@ -4183,11 +3146,8 @@
     ],
     "arxiv": [
       "2004.10877",
-      "0608006",
       "1807.04229",
-      "1802.08177",
-      "0112075",
-      "0607633"
+      "1802.08177"
     ]
   },
   "1603.02698_1": {
@@ -4232,8 +3192,6 @@
       "1406.5214",
       "1209.4293",
       "1209.4296",
-      "1006.5744",
-      "0509732",
       "1308.0378",
       "1307.8142"
     ]
@@ -4270,7 +3228,6 @@
       ]
     ],
     "arxiv": [
-      "0804.0594",
       "1001.5029",
       "1410.0679",
       "1109.3402",
@@ -4310,83 +3267,10 @@
       ]
     ],
     "arxiv": [
-      "0506563",
       "1007.2415",
       "0708.3816",
       "1603.01630"
     ]
-  },
-  "1603.02698_4": {
-    "title": "Masses, Radii, and the Equation of State of Neutron Stars",
-    "question": "Research question: How do Bose-Einstein condensates of mesons, specifically pion and kaon condensates, manifest in high-density astrophysical environments?",
-    "text": "In addition, Bose-Einstein condensates of mesons, such as pion ( ) or kaon condensates ( ) can enter at higher densities.",
-    "citations": [
-      [
-        "Brown",
-        "1992"
-      ],
-      [
-        "Mukherjee",
-        "2009"
-      ],
-      [
-        "Glendenning",
-        "Schaffner-Bielich",
-        "1999"
-      ],
-      [
-        "Pandharipande",
-        "1995"
-      ],
-      [
-        "Kaplan",
-        "Nelson",
-        "1986"
-      ],
-      [
-        "Akmal",
-        "1998"
-      ]
-    ],
-    "arxiv": [
-      "9810290"
-    ]
-  },
-  "1603.02698_5": {
-    "title": "Masses, Radii, and the Equation of State of Neutron Stars",
-    "question": "Research question: How do hybrid stars containing free quarks or color superconducting phases differ from conventional neutron stars in terms of their internal structure and observable properties?",
-    "text": "Some of the possibilities considered to date include the presence of hyperons ( hybrid stars containing free quarks (or color superconducting phases (, ).",
-    "citations": [
-      [
-        "Collins",
-        "Perry",
-        "1975"
-      ],
-      [
-        "Alford",
-        "Reddy",
-        "2003"
-      ],
-      [
-        "Alford",
-        "2005"
-      ],
-      [
-        "Ambartsumyan",
-        "Saakyan",
-        "1960"
-      ],
-      [
-        "Schulze",
-        "1995"
-      ],
-      [
-        "Glendenning",
-        "Moszkowski",
-        "1991"
-      ]
-    ],
-    "arxiv": []
   },
   "1911.05791_1": {
     "title": "The Assembly of the First Massive Black Holes",
@@ -4458,16 +3342,12 @@
       "1407.4039",
       "1106.3523",
       "1609.02142",
-      "0011446",
       "0906.4773",
-      "0108071",
       "1409.3572",
-      "0212400",
       "1202.5380",
       "1205.6464",
       "1601.00557",
       "1605.07391",
-      "1510.02788",
       "1803.04527",
       "1804.06477"
     ]
@@ -4525,7 +3405,6 @@
     ],
     "arxiv": [
       "1702.06123",
-      "0403104",
       "1703.03808",
       "1605.07391",
       "1203.6075",
@@ -4533,8 +3412,7 @@
       "1810.12310",
       "1209.2243",
       "1001.5451",
-      "1003.4404",
-      "1601.05473"
+      "1003.4404"
     ]
   },
   "1911.05791_3": {
@@ -4586,12 +3464,10 @@
     "arxiv": [
       "1311.3666",
       "1812.02481",
-      "0604426",
       "1810.11925",
       "1803.01424",
       "1503.04214",
       "1502.01927",
-      "1106.6088",
       "1502.07748"
     ]
   },
@@ -4642,13 +3518,8 @@
     ],
     "arxiv": [
       "1310.0859",
-      "0011446",
-      "0108071",
-      "0301645",
-      "0212400",
       "1411.2590",
       "1504.00676",
-      "1709.09863",
       "1704.06130",
       "1901.07563",
       "1401.5803"
@@ -4791,12 +3662,7 @@
     "arxiv": [
       "1409.3572",
       "1410.3482",
-      "9811308",
-      "1102.4638",
-      "0102503",
-      "0606106",
-      "0112088",
-      "0201095"
+      "1102.4638"
     ]
   },
   "1911.05791_8": {
@@ -4837,11 +3703,8 @@
     ],
     "arxiv": [
       "1310.0859",
-      "9608130",
-      "0301645",
       "1110.2111",
-      "1901.07563",
-      "0007198"
+      "1901.07563"
     ]
   },
   "1911.05791_9": {
@@ -4922,7 +3785,6 @@
     ],
     "arxiv": [
       "0710.1678",
-      "0212400",
       "1304.1369",
       "0906.4773",
       "0810.2802",
@@ -5044,54 +3906,9 @@
       "1703.09052",
       "1611.07125",
       "1606.01304",
-      "1704.02970",
       "1712.05807",
       "1506.00854"
     ]
-  },
-  "2110.13160_3": {
-    "title": "Galaxy Formation and Reionization: Key Unknowns and Expected Breakthroughs by the James Webb Space Telescope",
-    "question": "What are some key observational programs designed to study cosmic reionization using the James Webb Space Telescope?",
-    "text": "Additional programs related to cosmic reionization include the Interdisciplinary Scientist GTO Programs (,  , CANUCS: the CAnadian NIRISS Unbiased Cluster Survey (NIRISS,  athe Cosmic Re-ionization, Metal Enrichment, and Host Galaxies from Quasar Spectroscopy (NIRSpec,  band the NIRSpec WIDE survey (\u20131215 b,c,d,e).",
-    "citations": [
-      [
-        "Lilly",
-        "2017"
-      ],
-      [
-        "Ferruit",
-        "2017"
-      ],
-      [
-        "GTO",
-        "1211"
-      ],
-      [
-        "GTO",
-        "1176"
-      ],
-      [
-        "Windhorst",
-        "2017"
-      ],
-      [
-        "GTO",
-        "1208"
-      ],
-      [
-        "Willott",
-        "2017"
-      ],
-      [
-        "GTO",
-        "1222"
-      ],
-      [
-        "GTO",
-        "1243"
-      ]
-    ],
-    "arxiv": []
   },
   "2110.13160_4": {
     "title": "Galaxy Formation and Reionization: Key Unknowns and Expected Breakthroughs by the James Webb Space Telescope",
@@ -5182,7 +3999,6 @@
       "1606.00443",
       "1603.02309",
       "1806.01741",
-      "1602.00688",
       "1506.08201",
       "1502.06978"
     ]
@@ -5268,10 +4084,8 @@
       "1204.3641",
       "1907.05512",
       "1402.4129",
-      "1809.07604",
       "1512.05363",
-      "2002.06209",
-      "2010.15637"
+      "2002.06209"
     ]
   },
   "2110.13160_8": {
@@ -5346,7 +4160,6 @@
     "arxiv": [
       "2004.10877",
       "1811.11915",
-      "2012.06936",
       "1802.06066",
       "2006.13452",
       "1810.11926",
@@ -5486,12 +4299,8 @@
     "arxiv": [
       "1301.6753",
       "1909.07402",
-      "0407095",
-      "0412300",
-      "0302161",
       "1103.0001",
-      "1103.0001",
-      "9802268"
+      "1103.0001"
     ]
   },
   "2301.10253_3": {
@@ -5543,8 +4352,6 @@
       "2008.04915",
       "2003.08390",
       "1909.07402",
-      "1205.0012",
-      "1106.6326",
       "1710.00822"
     ]
   },
@@ -5583,9 +4390,7 @@
     "arxiv": [
       "1503.06800",
       "0907.4004",
-      "1607.01788",
-      "0506342",
-      "0209601"
+      "1607.01788"
     ]
   },
   "2301.10253_5": {
@@ -5728,7 +4533,6 @@
       "2111.10089",
       "1603.09475",
       "2002.00012",
-      "1103.1231",
       "2202.09803",
       "1203.6842",
       "1912.06377",
@@ -5736,7 +4540,6 @@
       "1708.00594",
       "1304.6794",
       "1303.3622",
-      "0907.2919",
       "1211.1889",
       "1209.1439",
       "1308.4456",
@@ -5818,15 +4621,11 @@
       "0804.1370",
       "2105.04573",
       "1906.00994",
-      "2103.09834",
       "2106.11592",
       "2010.10532",
       "1706.07054",
       "1811.08911",
-      "1402.1517",
       "1211.3157",
-      "0503021",
-      "0505524",
       "0810.5142",
       "1405.7369",
       "1504.05963"
@@ -5972,17 +4771,12 @@
       ]
     ],
     "arxiv": [
-      "2105.02339",
       "1502.03448",
       "2007.14402",
       "1704.06130",
       "1201.3761",
       "2104.01451",
       "1801.05891",
-      "9910061",
-      "0409255",
-      "0810.1057",
-      "1106.5943",
       "1406.2325",
       "1811.03640"
     ]
@@ -6050,11 +4844,8 @@
       "1506.05234",
       "2207.09621",
       "2110.10846",
-      "9910061",
-      "1603.05655",
       "1606.06294",
-      "1612.01524",
-      "0402622"
+      "1612.01524"
     ]
   },
   "2303.12500_6": {
@@ -6113,7 +4904,6 @@
       "2107.14239",
       "2012.09876",
       "1912.04474",
-      "1603.05655",
       "1606.06294",
       "2008.01890",
       "1612.01524"
@@ -6172,7 +4962,6 @@
       "2202.01220",
       "2206.00223",
       "2208.01673",
-      "1604.03586",
       "1705.08059",
       "1206.5824"
     ]
@@ -6272,7 +5061,6 @@
       ]
     ],
     "arxiv": [
-      "1103.1231",
       "1011.3999",
       "1011.4512",
       "2111.10089",
@@ -6324,7 +5112,6 @@
       "1011.4512",
       "2206.00223",
       "1110.2111",
-      "1201.1005",
       "2202.01220",
       "2208.01673",
       "1112.5207"
@@ -6384,7 +5171,6 @@
       "1812.04045",
       "1302.3029",
       "1603.09352",
-      "1610.05139",
       "1803.10882",
       "1804.02360",
       "1609.04027",
@@ -6427,7 +5213,6 @@
     ],
     "arxiv": [
       "1808.02220",
-      "9706204",
       "1612.01538",
       "1705.07671",
       "1410.2093",
@@ -6519,7 +5304,6 @@
     ],
     "arxiv": [
       "1601.04983",
-      "1211.3284",
       "1202.6139",
       "1901.02467",
       "1102.4408",
@@ -6642,8 +5426,7 @@
       "1203.1612",
       "1205.5042",
       "1902.04612",
-      "0906.0730",
-      "1211.3284"
+      "0906.0730"
     ]
   },
   "2001.05007_8": {
@@ -6764,7 +5547,6 @@
       "1806.11568",
       "1809.09185",
       "1906.06302",
-      "1906.01486",
       "1902.00036",
       "1907.02538"
     ]
@@ -6837,12 +5619,9 @@
       "0709.0431",
       "0906.5444",
       "0912.4677",
-      "0605686",
       "0809.3397",
       "0709.3772",
-      "0702396",
-      "1208.5272",
-      "0504105"
+      "1208.5272"
     ]
   },
   "1505.00811_2": {
@@ -6935,9 +5714,7 @@
       ]
     ],
     "arxiv": [
-      "0511428",
       "1003.0920",
-      "9704035",
       "1109.1286"
     ]
   },
@@ -6985,7 +5762,6 @@
       "1109.4873",
       "0908.0036",
       "1003.0920",
-      "0402082",
       "1311.1305",
       "1212.5368",
       "1305.2225"
@@ -7031,8 +5807,6 @@
     ],
     "arxiv": [
       "0709.0431",
-      "0702396",
-      "0605686",
       "1208.5272",
       "1010.6201"
     ]
@@ -7071,8 +5845,6 @@
     ],
     "arxiv": [
       "1201.5397",
-      "0208496",
-      "0210262",
       "1004.2077",
       "1311.1305"
     ]
@@ -7112,9 +5884,7 @@
       ]
     ],
     "arxiv": [
-      "0605686",
-      "0907.3752",
-      "0001514"
+      "0907.3752"
     ]
   },
   "1505.00811_8": {
@@ -7216,14 +5986,10 @@
     "arxiv": [
       "1308.3248",
       "1403.4088",
-      "0502504",
       "1507.05967",
       "1109.3288",
-      "0409008",
-      "0406106",
       "1401.3744",
-      "1409.4897",
-      "0208137"
+      "1409.4897"
     ]
   },
   "Accretion_2": {
@@ -7267,10 +6033,7 @@
     "arxiv": [
       "1109.5693",
       "1310.1936",
-      "0409008",
       "1501.06210",
-      "0609032",
-      "0602618",
       "1303.4804"
     ]
   },
@@ -7311,11 +6074,7 @@
       ]
     ],
     "arxiv": [
-      "0008203",
-      "0409008",
-      "1109.3288",
-      "0406106",
-      "0003313"
+      "1109.3288"
     ]
   },
   "Accretion_4": {
@@ -7356,7 +6115,6 @@
     "arxiv": [
       "1401.6545",
       "1507.05967",
-      "0409008",
       "1209.5799",
       "1109.3288",
       "0901.3684"
@@ -7398,49 +6156,13 @@
       ]
     ],
     "arxiv": [
-      "0304078",
       "0801.3525",
       "1410.0181",
-      "0409008",
       "0907.2380",
       "1310.2069",
       "1406.5630",
       "1505.04046"
     ]
-  },
-  "Accretion_6": {
-    "title": "Accretion onto Pre-Main-Sequence Stars",
-    "question": "Research question: How were accretion luminosities initially quantified in young stellar objects using spectroscopic techniques?\n\nThis question is expert-level as it focuses on specific spectroscopic methods used to measure accretion luminosities, namely the excess Balmer continuum emission, Balmer jump, and veiling of photospheric emission. It's focused on the historical context of these measurements and relevant to the given sentence, which describes the initial direct measurements of accretion luminosities using these techniques.",
-    "text": "Accretion luminosities were first measured directly from excess Balmer continuum emission and the Balmer jump in blue spectra (,    , 2000) and from the veiling of photospheric emission ( , 1995).",
-    "citations": [
-      [
-        "Gullbring",
-        "1998"
-      ],
-      [
-        "Valenti",
-        "1993"
-      ],
-      [
-        "Basri",
-        "Bertout",
-        "1989"
-      ],
-      [
-        "Basri",
-        "Batalha",
-        "1990"
-      ],
-      [
-        "Bertout",
-        "1988"
-      ],
-      [
-        "Hartigan",
-        "1991"
-      ]
-    ],
-    "arxiv": []
   },
   "Accretion_7": {
     "title": "Accretion onto Pre-Main-Sequence Stars",
@@ -7511,9 +6233,7 @@
       ]
     ],
     "arxiv": [
-      "0010229",
       "1508.00904",
-      "9810468",
       "0801.0974",
       "1402.4133"
     ]
@@ -7656,11 +6376,9 @@
     ],
     "arxiv": [
       "0708.0922",
-      "0603581",
       "1205.5567",
       "0810.2541",
       "0810.2556",
-      "0112204",
       "0810.4148",
       "1109.0484",
       "1204.3552",
@@ -7730,12 +6448,9 @@
       ]
     ],
     "arxiv": [
-      "0204055",
       "1202.0552",
       "1506.07180",
-      "0601005",
       "1405.7819",
-      "0001395",
       "1412.2749",
       "1410.0011"
     ]
@@ -7794,17 +6509,9 @@
       ]
     ],
     "arxiv": [
-      "0512234",
-      "0207019",
       "0903.4682",
-      "1406.5068",
-      "0402500",
-      "0601577",
       "1304.5557",
-      "0109001",
-      "0106293",
-      "1001.0015",
-      "0308519"
+      "1001.0015"
     ]
   },
   "1612.06891_5": {
@@ -7857,14 +6564,7 @@
       ]
     ],
     "arxiv": [
-      "0810.0137",
-      "0009132",
-      "0003248",
-      "9908129",
-      "0411645",
-      "0110179",
-      "0403307",
-      "9806106"
+      "0810.0137"
     ]
   },
   "1612.06891_6": {
@@ -7914,7 +6614,6 @@
     ],
     "arxiv": [
       "0705.1921",
-      "0303240",
       "0807.3748",
       "0712.3285",
       "0901.4554",
@@ -7922,9 +6621,7 @@
       "1305.2195",
       "1301.6753",
       "1305.2913",
-      "1105.2039",
-      "0605651",
-      "0505440"
+      "1105.2039"
     ]
   },
   "1612.06891_7": {
@@ -8029,12 +6726,9 @@
       ]
     ],
     "arxiv": [
-      "1507.05636",
       "1304.7778",
-      "0709.1354",
       "1303.4409",
       "1301.1688",
-      "0901.0706",
       "1109.0994",
       "1408.2527"
     ]
@@ -8082,10 +6776,8 @@
     "arxiv": [
       "1409.0307",
       "0911.2230",
-      "0009379",
       "1205.5556",
       "0904.0448",
-      "0507092",
       "0805.2320",
       "1409.6965"
     ]
@@ -8132,44 +6824,8 @@
       "1107.5060",
       "1307.1476",
       "1003.0679",
-      "0102456",
-      "1304.6405",
-      "0504435"
+      "1304.6405"
     ]
-  },
-  "Carrington_1": {
-    "title": "Carrington Events",
-    "question": "Research question: How did the CSHKP model evolve to explain the behavior of eruptive solar flares?\n\nThis question is expert-level as it requires knowledge of solar flare models and their historical development. It's focused on the specific CSHKP picture mentioned in the sentence and relevant to the gradual theoretical progress described. The question is concise while capturing the essence of the sentence's content.",
-    "text": "By fits and starts, theorists began to concentrate on this behavior of eruptive flares, leading to the CSHKP picture ( , )\n4\n as summarized by ) and for example.",
-    "citations": [
-      [
-        "Sturrock",
-        "1966"
-      ],
-      [
-        "Moore",
-        "2001"
-      ],
-      [
-        "Carmichael",
-        "1964"
-      ],
-      [
-        "Hirayama",
-        "1974"
-      ],
-      [
-        "Kopp",
-        "Pneuman",
-        "1976"
-      ],
-      [
-        "Shibata",
-        "Magara",
-        "2011"
-      ]
-    ],
-    "arxiv": []
   },
   "2309.17075_1": {
     "title": "Hydrodynamical Simulations of the Galaxy Population: Enduring Successes and Outstanding Challenges",
@@ -8237,14 +6893,12 @@
       "1504.00362",
       "1405.3749",
       "1405.2921",
-      "1607.02151",
       "1504.06619",
       "1707.05327",
       "1707.03397",
       "1804.05064",
       "1901.10203",
       "1308.0333",
-      "1501.01311",
       "1503.04807",
       "1503.05553",
       "1407.7040",
@@ -8300,7 +6954,6 @@
       "1711.05261",
       "1701.07838",
       "1901.10203",
-      "1501.01311",
       "1503.04807",
       "1503.05553",
       "1407.7040",
@@ -8355,12 +7008,9 @@
       ]
     ],
     "arxiv": [
-      "0206393",
       "1203.5667",
       "0707.3376",
-      "1405.2625",
-      "0602350",
-      "0210560"
+      "1405.2625"
     ]
   },
   "2309.17075_4": {
@@ -8401,9 +7051,7 @@
     "arxiv": [
       "1206.5006",
       "1911.13093",
-      "0610051",
       "1707.03824",
-      "0005357",
       "0709.2772"
     ]
   },
@@ -8445,7 +7093,6 @@
     ],
     "arxiv": [
       "0805.2499",
-      "0507073",
       "1901.10203",
       "1108.0110",
       "0705.2238",
@@ -8486,8 +7133,6 @@
     "arxiv": [
       "2002.07226",
       "1810.12158",
-      "1806.02341",
-      "1604.06803",
       "1911.02041",
       "1511.04909",
       "1510.05645",
@@ -8583,7 +7228,6 @@
       "0810.1288",
       "1206.2922",
       "1206.2350",
-      "9812389",
       "2003.02863",
       "2007.10996",
       "1601.06787"
@@ -8624,8 +7268,6 @@
       ]
     ],
     "arxiv": [
-      "9902032",
-      "0305493",
       "1108.2270",
       "1506.03453",
       "1410.7772"
@@ -8668,8 +7310,7 @@
       "1601.03331",
       "1510.06348",
       "1804.00006",
-      "1903.05637",
-      "1809.07446"
+      "1903.05637"
     ]
   },
   "1812.01615_1": {
@@ -8722,8 +7363,7 @@
       "1309.7352",
       "1301.7221",
       "1403.4946",
-      "1102.1013",
-      "0608069"
+      "1102.1013"
     ]
   },
   "1812.01615_2": {
@@ -8820,9 +7460,7 @@
       ]
     ],
     "arxiv": [
-      "0505177",
       "1209.2856",
-      "1202.2594",
       "1208.3758",
       "0907.0248",
       "1206.5006",
@@ -8876,7 +7514,6 @@
     "arxiv": [
       "1511.03269",
       "1710.09415",
-      "0007383",
       "1106.3072",
       "1203.2926",
       "1507.06512",
@@ -9051,9 +7688,7 @@
     ],
     "arxiv": [
       "1405.5115",
-      "0302579",
       "1405.1427",
-      "0305133",
       "0812.2906",
       "1804.10244"
     ]
@@ -9148,8 +7783,6 @@
     "arxiv": [
       "1103.4859",
       "1511.05570",
-      "1004.4551",
-      "1310.4503",
       "1006.2851",
       "0909.1752",
       "1707.07521",
@@ -9195,7 +7828,6 @@
     "arxiv": [
       "0705.4285",
       "1206.3529",
-      "0303010",
       "1310.5048",
       "1106.3340",
       "1011.2501",
@@ -9242,7 +7874,6 @@
     ],
     "arxiv": [
       "1002.3650",
-      "0202234",
       "1704.05440",
       "1008.0645",
       "1304.4121",
@@ -9288,8 +7919,6 @@
       "1108.5279",
       "1412.4634",
       "1612.01616",
-      "0105216",
-      "1011.0143",
       "1005.3084",
       "1006.4161"
     ]
@@ -9330,7 +7959,6 @@
       "1510.04276",
       "1512.04951",
       "1510.08855",
-      "1011.0143",
       "1005.3084",
       "1511.09157",
       "1602.03895",
@@ -9370,14 +7998,11 @@
     ],
     "arxiv": [
       "1510.08918",
-      "0703166",
       "1011.2501",
       "1310.5048",
       "0705.4285",
-      "1310.6044",
       "1405.0494",
-      "1509.07750",
-      "1407.2249"
+      "1509.07750"
     ]
   },
   "2002.04340_1": {
@@ -9428,7 +8053,6 @@
       "1902.09544",
       "1901.07566",
       "1903.08141",
-      "1812.08192",
       "1811.03631",
       "1304.4646"
     ]
@@ -9477,7 +8101,6 @@
       "1805.01408",
       "1806.09635",
       "1103.4494",
-      "1604.06885",
       "1304.4646"
     ]
   },
@@ -9515,12 +8138,10 @@
       ]
     ],
     "arxiv": [
-      "1602.07702",
       "0804.0019",
       "0803.2323",
       "0711.1105",
       "1507.08662",
-      "0208106",
       "1501.06921",
       "1307.0041",
       "1210.4929"
@@ -9559,64 +8180,9 @@
     "arxiv": [
       "0910.3211",
       "1311.2073",
-      "1610.01159",
       "1407.7855",
       "1301.1301",
       "1804.00659"
-    ]
-  },
-  "1402.1237_1": {
-    "title": "Mass Loss: Its Effect on the Evolution and Fate of High-Mass Stars",
-    "question": "Research question: How do the multi-scale inhomogeneities in hot-star winds manifest, and what are their primary causes?\n\nThis question is expert-level as it addresses complex phenomena in stellar astrophysics, focused on the specific topic of hot-star wind structures, and directly relevant to the various scales and types of inhomogeneities mentioned in the sentence.",
-    "text": "In fact, it has long been known that hot-star winds are probably clumpy on small scales ( ) and inhomogeneous on larger scales large scales include such complexities as the time-variable discrete absorption components ( , ) or axisymmetric winds due to rapid rotation (and a wide array of magnetically induced inhomogeneities (, ud-).",
-    "citations": [
-      [
-        "Owocki",
-        "1996"
-      ],
-      [
-        "Cranmer",
-        "Owocki",
-        "1996"
-      ],
-      [
-        "Howarth",
-        "1995"
-      ],
-      [
-        "Hillier",
-        "1991"
-      ],
-      [
-        "Massa",
-        "1995"
-      ],
-      [
-        "Moffat",
-        "Robert",
-        "1994"
-      ],
-      [
-        "Doula",
-        "Owocki",
-        "2002"
-      ],
-      [
-        "Drew",
-        "1994"
-      ],
-      [
-        "Townsend",
-        "2005"
-      ],
-      [
-        "Fullerton",
-        "1997"
-      ]
-    ],
-    "arxiv": [
-      "9508004",
-      "0503668"
     ]
   },
   "1402.1237_2": {
@@ -9671,9 +8237,7 @@
     "arxiv": [
       "0707.2847",
       "0905.1592",
-      "0606405",
-      "1203.2156",
-      "1205.5238"
+      "1203.2156"
     ]
   },
   "1402.1237_3": {
@@ -9727,11 +8291,9 @@
       "1006.3899",
       "1010.3719",
       "1202.5036",
-      "0611315",
       "1308.5978",
       "0910.3655",
-      "0802.0167",
-      "1307.5035"
+      "0802.0167"
     ]
   },
   "1402.1237_4": {
@@ -9775,8 +8337,6 @@
     ],
     "arxiv": [
       "1102.5160",
-      "0504242",
-      "1207.6397",
       "0805.1913",
       "0711.3079",
       "0908.1386",
@@ -9819,7 +8379,6 @@
       ]
     ],
     "arxiv": [
-      "1307.5035",
       "1308.0112",
       "1210.3347",
       "1306.0038"
@@ -9860,82 +8419,7 @@
       ]
     ],
     "arxiv": [
-      "0503514",
       "1210.1861"
-    ]
-  },
-  "1402.1237_7": {
-    "title": "Mass Loss: Its Effect on the Evolution and Fate of High-Mass Stars",
-    "question": "Research question: How do modern non-LTE analyses of the Milky Way, Large Magellanic Cloud, and Small Magellanic Cloud affect the determination of the clumping factor and oxygen abundance in these galaxies?",
-    "text": "For the Milky Way, Large Magellanic Cloud (LMCand Small Magellanic Cloud (SMCvarious studies using modern non-LTE analysis find f\ncl\u224310 (  , corresponding to \n\n reductions by a factor of \u223c3 with typical uncertainties of \u223c30%.",
-    "citations": [
-      [
-        "Crowther",
-        "2002"
-      ],
-      [
-        "Figer",
-        "2002"
-      ],
-      [
-        "Puls",
-        "2006"
-      ],
-      [
-        "Hillier",
-        "2003"
-      ],
-      [
-        "Massa",
-        "2003"
-      ],
-      [
-        "Evans",
-        "2004"
-      ]
-    ],
-    "arxiv": [
-      "0206257",
-      "0208145",
-      "0604372",
-      "0211518",
-      "0404231"
-    ]
-  },
-  "1402.1237_8": {
-    "title": "Mass Loss: Its Effect on the Evolution and Fate of High-Mass Stars",
-    "question": "Research question: How did the classification of Luminous Blue Variables (LBVs) evolve to encompass diverse irregular variable phenomena across different galaxies?",
-    "text": ") recognized that many different classes of hot, irregular variable stars in the Milky Way and Magellanic Clouds were probably related to the Hubble-Sandage variables and to \u03b7 Car and P Cygni, so he grouped them together as \u201cLBVs.\u201d The LBVs are a rather diverse class, consisting of a wide range of irregular variable phenomena ( van  , 2011d  ).",
-    "citations": [
-      [
-        "Van Dyk",
-        "Matheson",
-        "2012"
-      ],
-      [
-        "Smith",
-        "2004"
-      ],
-      [
-        "Conti",
-        "1984"
-      ],
-      [
-        "Clark",
-        "2005"
-      ],
-      [
-        "Genderen",
-        "2001"
-      ],
-      [
-        "Humphreys",
-        "Davidson",
-        "1994"
-      ]
-    ],
-    "arxiv": [
-      "0407202"
     ]
   },
   "1806.04680_1": {
@@ -9980,7 +8464,6 @@
       "1403.4620",
       "1501.01982",
       "1707.07134",
-      "1112.1949",
       "1505.00811",
       "0803.2268",
       "1709.00019"
@@ -10024,9 +8507,7 @@
       ]
     ],
     "arxiv": [
-      "1304.7762",
       "1306.1227",
-      "0304154",
       "1407.1975",
       "1501.02937",
       "1211.2816"
@@ -10065,10 +8546,8 @@
     "arxiv": [
       "1309.0814",
       "1705.04323",
-      "0702136",
       "0704.1559",
-      "0801.3849",
-      "0503500"
+      "0801.3849"
     ]
   },
   "1806.04680_4": {
@@ -10107,7 +8586,6 @@
       "1507.07558",
       "1105.0965",
       "0902.0608",
-      "0610939",
       "1511.04184",
       "1209.5398",
       "1402.1836"
@@ -10148,10 +8626,8 @@
       ]
     ],
     "arxiv": [
-      "0609506",
       "1008.2353",
       "1108.4493",
-      "0806.0719",
       "0902.3461"
     ]
   },
@@ -10227,10 +8703,8 @@
       ]
     ],
     "arxiv": [
-      "1006.3314",
       "1305.7264",
       "0705.4290",
-      "1011.4918",
       "0909.4531",
       "1309.1462"
     ]
@@ -10271,91 +8745,7 @@
       "1105.4696",
       "1001.4774",
       "0901.3144",
-      "1006.4244",
-      "0205043"
-    ]
-  },
-  "1403.2783_1": {
-    "title": "The Evolution of Galaxy Structure Over Cosmic Time",
-    "question": "Research question: How do the concentration, asymmetry, and clumpiness parameters in the CAS system quantify galaxy structure in a nonparametric manner?",
-    "text": "At present, the most common methods for measuring galaxy structure in a nonparametric way is through the concentration (Casymmetry (Aclumpiness (S) (CAS) system (,  Sections 2.3.1\u20132.3.3) and through similar parameters ( , 2005    , ).",
-    "citations": [
-      [
-        "Lotz",
-        "2004"
-      ],
-      [
-        "Papovich",
-        "2003"
-      ],
-      [
-        "Scarlata",
-        "2007"
-      ],
-      [
-        "Abraham",
-        "2003"
-      ],
-      [
-        "Freeman",
-        "2013"
-      ],
-      [
-        "Takamiya",
-        "1999"
-      ],
-      [
-        "Conselice",
-        "2003"
-      ],
-      [
-        "Law",
-        "2007"
-      ]
-    ],
-    "arxiv": [
-      "0301239",
-      "0308197",
-      "0303065"
-    ]
-  },
-  "1403.2783_2": {
-    "title": "The Evolution of Galaxy Structure Over Cosmic Time",
-    "question": "Research question: How have deep-field imaging campaigns using the Hubble Space Telescope advanced our understanding of galaxy formation and morphology?",
-    "text": "The HDFs, and later significant campaigns to obtain very deep Hubble imaging, such as the Hubble Deep Field South (the Great Observatories Origins Deep Survey (GOODS) (the Hubble Ultra Deep Field (UDF) (the COSMOS field (the Extended Groth Strip survey (EGS) (and most recently the CANDELS survey (, have revolutionized the field of galaxy-formation studies and in particular the study of morphologies.",
-    "citations": [
-      [
-        "Scoville",
-        "2007"
-      ],
-      [
-        "Grogin",
-        "2011"
-      ],
-      [
-        "Koekemoer",
-        "2011"
-      ],
-      [
-        "Beckwith",
-        "2006"
-      ],
-      [
-        "Giavalisco",
-        "2004"
-      ],
-      [
-        "Davis",
-        "2007"
-      ],
-      [
-        "Williams",
-        "2000"
-      ]
-    ],
-    "arxiv": [
-      "0607632",
-      "0607355"
+      "1006.4244"
     ]
   },
   "1403.2783_3": {
@@ -10395,79 +8785,7 @@
     "arxiv": [
       "1206.5000",
       "0807.4141",
-      "0503102",
       "0708.1040"
-    ]
-  },
-  "1403.2783_4": {
-    "title": "The Evolution of Galaxy Structure Over Cosmic Time",
-    "question": "Research question: How did the advent of deep Hubble Space Telescope imaging influence the development of quantitative methods for analyzing galactic light structures across different redshift ranges?",
-    "text": "The development of methods to measure the light structures of galaxies began in earnest when the first deep images of distant galaxies were obtained with HST (, although their use for low-redshift measurements was also noted at about the same time, but in terms of a physical property rather than a descriptive quantity (,    a,b).",
-    "citations": [
-      [
-        "Rix",
-        "Zaritsky",
-        "1995"
-      ],
-      [
-        "Schade",
-        "1995"
-      ],
-      [
-        "Abraham",
-        "1996"
-      ],
-      [
-        "Bershady",
-        "2000"
-      ],
-      [
-        "Conselice",
-        "1997"
-      ],
-      [
-        "Conselice",
-        "2000"
-      ]
-    ],
-    "arxiv": [
-      "9710234",
-      "0002262"
-    ]
-  },
-  "1403.2783_5": {
-    "title": "The Evolution of Galaxy Structure Over Cosmic Time",
-    "question": "Research question: How do galaxy morphologies differ when observed in rest-frame UV versus rest-frame optical wavelengths, and what are the exceptions to these differences?",
-    "text": "It turns out that the qualitative and quantitative morphologies and structures of galaxies can vary significantly between rest-frame UV and rest-frame optical images (  though these morphologies are not significantly different for starbursting galaxies with little dust at both low and high redshift (c, ).",
-    "citations": [
-      [
-        "Meurer",
-        "1995"
-      ],
-      [
-        "Taylor-Mager",
-        "2007"
-      ],
-      [
-        "Dickinson",
-        "2000"
-      ],
-      [
-        "Windhorst",
-        "2002"
-      ],
-      [
-        "Conselice",
-        "2000"
-      ],
-      [
-        "Hibbard",
-        "Vacca",
-        "1997"
-      ]
-    ],
-    "arxiv": [
-      "0002262"
     ]
   },
   "1403.2783_6": {
@@ -10579,8 +8897,7 @@
       "1905.12639",
       "0810.4610",
       "1011.4420",
-      "1406.3507",
-      "2002.04651"
+      "1406.3507"
     ]
   },
   "2309.05685_2": {
@@ -10720,7 +9037,6 @@
     "arxiv": [
       "0911.1949",
       "1909.04477",
-      "0701425",
       "1811.08663",
       "1812.02741",
       "1402.3503"
@@ -10850,9 +9166,7 @@
       ]
     ],
     "arxiv": [
-      "1611.09800",
-      "0209428",
-      "0411367"
+      "1611.09800"
     ]
   },
   "2309.05685_8": {
@@ -10931,7 +9245,6 @@
     "arxiv": [
       "1206.3413",
       "1308.1772",
-      "1110.4600",
       "1408.2026",
       "2207.10744"
     ]
@@ -11030,11 +9343,7 @@
       "1104.2326",
       "1102.4633",
       "1108.2130",
-      "0703557",
-      "0703212",
-      "9906454",
-      "1005.5642",
-      "0306140"
+      "1005.5642"
     ]
   },
   "2202.00690_2": {
@@ -11070,10 +9379,8 @@
     ],
     "arxiv": [
       "1104.3156",
-      "0808.0553",
       "0905.4669",
-      "0912.1858",
-      "1303.5059"
+      "0912.1858"
     ]
   },
   "2202.00690_3": {
@@ -11108,8 +9415,6 @@
     ],
     "arxiv": [
       "1111.4241",
-      "0108223",
-      "0606261",
       "0909.0568"
     ]
   },
@@ -11145,146 +9450,11 @@
     ],
     "arxiv": [
       "1707.01999",
-      "0009232",
       "1605.04927",
       "1510.07785",
       "1802.04043",
       "1805.00934",
       "2107.02809"
-    ]
-  },
-  "1311.2603_1": {
-    "title": "Short-Duration Gamma-Ray Bursts",
-    "question": "Research question: How did observational evidence support the connection between long gamma-ray bursts and the collapsar model for massive star deaths?",
-    "text": "Two key observations helped to establish the connection between long GRBs and the deaths of massive stars (the collapsar model ): (a) the association of long GRBs with Type Ic core-collapse SNe ( , ) and (b) the exclusive locations of long GRBs in star-forming galaxies (  Christensen,  Wainwright, as well as their spatial offsets relative to their hosts' overall light distribution and their coincidence with bright star-forming regions within their hosts (Bloom,  ).",
-    "citations": [
-      [
-        "MacFadyen",
-        "Woosley",
-        "1999"
-      ],
-      [
-        "Fruchter",
-        "2006"
-      ],
-      [
-        "Djorgovski",
-        "1998"
-      ],
-      [
-        "Hjorth",
-        "Gorosabel",
-        "2004"
-      ],
-      [
-        "Hjorth",
-        "2003"
-      ],
-      [
-        "Kulkarni",
-        "Djorgovski",
-        "2002"
-      ],
-      [
-        "Galama",
-        "1998"
-      ],
-      [
-        "Woosley",
-        "Bloom",
-        "2006"
-      ],
-      [
-        "Berger",
-        "Penprase",
-        "2007"
-      ],
-      [
-        "Stanek",
-        "2003"
-      ],
-      [
-        "Bloom",
-        "1998"
-      ]
-    ],
-    "arxiv": [
-      "9810274",
-      "0603537",
-      "9807315",
-      "9808188",
-      "0407066",
-      "0306347",
-      "0010176",
-      "9806175",
-      "0609142",
-      "0508061",
-      "0304173"
-    ]
-  },
-  "1311.2603_2": {
-    "title": "Short-Duration Gamma-Ray Bursts",
-    "question": "Research question: What key properties of gamma-ray burst afterglows were revealed through observational evidence, and how do these properties inform our understanding of the burst energetics and progenitor environments?",
-    "text": "The afterglow emission also provided observational evidence for relativistic expansion (Waxman,  jet collimation with typical opening angles of \u223c3\u201310\u00b0 ( a beaming-corrected energy scale of \u223c1051 erg (Bloom,   Berger, and a typical circumburst density of \u223c1\u201310 cm\u22123 with evidence for mass loss from the massive progenitor stars in some cases ( ).",
-    "citations": [
-      [
-        "Panaitescu",
-        "Kumar",
-        "2002"
-      ],
-      [
-        "Frail",
-        "Sari",
-        "2001"
-      ],
-      [
-        "Kulkarni",
-        "Frail",
-        "1998"
-      ],
-      [
-        "Chevalier",
-        "Li",
-        "2000"
-      ],
-      [
-        "Frail",
-        "2001"
-      ],
-      [
-        "Kulkarni",
-        "Frail",
-        "2003"
-      ],
-      [
-        "Yost",
-        "2003"
-      ],
-      [
-        "Harrison",
-        "1999"
-      ],
-      [
-        "Taylor",
-        "2004"
-      ],
-      [
-        "Stanek",
-        "1999"
-      ]
-    ],
-    "arxiv": [
-      "0102371",
-      "0102282",
-      "9807315",
-      "9808188",
-      "9709199",
-      "9908272",
-      "0301268",
-      "0307056",
-      "9905306",
-      "0405300",
-      "9905304"
     ]
   },
   "1311.2603_3": {
@@ -11339,18 +9509,14 @@
       ]
     ],
     "arxiv": [
-      "0508138",
       "1210.0068",
       "1204.6242",
       "1204.6240",
       "1302.6530",
       "1212.0905",
       "1306.3742",
-      "0005550",
-      "9811367",
       "0712.2460",
-      "1305.6309",
-      "0106229"
+      "1305.6309"
     ]
   },
   "1311.2603_4": {
@@ -11401,16 +9567,9 @@
       ]
     ],
     "arxiv": [
-      "0405503",
-      "0111170",
-      "1009.2338",
       "1106.3073",
       "1012.4009",
       "1107.1740",
-      "0701748",
-      "0703192",
-      "0701874",
-      "0609142",
       "0909.1531"
     ]
   },
@@ -11458,11 +9617,7 @@
     ],
     "arxiv": [
       "0807.1348",
-      "0603537",
-      "0509888",
-      "0510190",
-      "0805.2880",
-      "0510110"
+      "0805.2880"
     ]
   },
   "1311.2603_6": {
@@ -11508,65 +9663,11 @@
       ]
     ],
     "arxiv": [
-      "0511579",
-      "0505630",
       "1012.4009",
-      "0505480",
-      "0608313",
-      "0510022",
-      "0609142",
-      "0510110",
-      "1306.3960",
       "1307.0819",
       "1302.3221",
-      "0812.2470",
       "0909.1804",
       "1009.1147"
-    ]
-  },
-  "1311.2603_7": {
-    "title": "Short-Duration Gamma-Ray Bursts",
-    "question": "Research question: How do the spatial distribution and fluence characteristics of both GRB classes support their cosmological origin?",
-    "text": "For both GRB classes, the uniform projected distribution of the bursts on the sky and the fluence distribution (the so-called logN\u2212logS or \n\n distributions) pointed to a cosmological origin (, van den    Schmidt,     ).",
-    "citations": [
-      [
-        "Guetta",
-        "Piran",
-        "2005"
-      ],
-      [
-        "Paczynski",
-        "1986"
-      ],
-      [
-        "Schmidt",
-        "2001"
-      ],
-      [
-        "Bergh",
-        "1983"
-      ],
-      [
-        "Higdon",
-        "Hueter",
-        "1988"
-      ],
-      [
-        "Goodman",
-        "1986"
-      ],
-      [
-        "Meegan",
-        "1992"
-      ],
-      [
-        "Piran",
-        "1992"
-      ]
-    ],
-    "arxiv": [
-      "0311488",
-      "9204001"
     ]
   },
   "1311.2603_8": {
@@ -11608,10 +9709,7 @@
       ]
     ],
     "arxiv": [
-      "1111.7314",
-      "9806175",
       "0711.1163",
-      "0509891",
       "0712.3585",
       "0907.2462"
     ]
@@ -11656,12 +9754,9 @@
       ]
     ],
     "arxiv": [
-      "1306.3960",
       "1302.3221",
-      "0405233",
       "1306.2028",
-      "1301.0629",
-      "1306.4971"
+      "1301.0629"
     ]
   },
   "1311.2603_10": {
@@ -11705,18 +9800,9 @@
       ]
     ],
     "arxiv": [
-      "0510110",
-      "0608313",
       "1012.4009",
       "1302.3221",
-      "0508061",
-      "0505480",
-      "0010176",
-      "0603537",
-      "1307.0819",
-      "0510022",
-      "1306.3960",
-      "0609142"
+      "1307.0819"
     ]
   },
   "1312.0628_1": {
@@ -11777,15 +9863,11 @@
       ]
     ],
     "arxiv": [
-      "0610228",
       "1010.5786",
       "0711.0808",
-      "0309797",
       "0710.1094",
       "0710.1094",
       "0801.2898",
-      "0908.3928",
-      "0109089",
       "0709.2519",
       "0801.4968",
       "1006.3576"
@@ -11845,10 +9927,7 @@
     "arxiv": [
       "0811.1054",
       "0711.2570",
-      "0804.2030",
-      "0101342",
-      "9407097",
-      "0610431"
+      "0804.2030"
     ]
   },
   "1312.0628_3": {
@@ -11900,9 +9979,6 @@
     ],
     "arxiv": [
       "0910.2138",
-      "1105.4970",
-      "9907359",
-      "1302.6420",
       "1209.0645",
       "1204.4358",
       "1105.2860",
@@ -11956,7 +10032,6 @@
       "1007.4256",
       "0911.0680",
       "1004.2496",
-      "1108.5548",
       "0909.2643",
       "1002.3414",
       "0909.1357"
@@ -11997,7 +10072,6 @@
       ]
     ],
     "arxiv": [
-      "0005213",
       "1303.1228",
       "1108.4923",
       "1005.4687",
@@ -12049,9 +10123,7 @@
       "0910.2138",
       "1303.1228",
       "1106.3115",
-      "1205.5028",
-      "0010177",
-      "9908116"
+      "1205.5028"
     ]
   },
   "1312.0628_7": {
@@ -12090,9 +10162,7 @@
     ],
     "arxiv": [
       "0809.0601",
-      "0810.5106",
       "0906.0982",
-      "0410673",
       "0706.3259"
     ]
   },
@@ -12214,7 +10284,6 @@
       ]
     ],
     "arxiv": [
-      "0006305",
       "1306.6007",
       "1305.2356",
       "1210.3032"
@@ -12282,16 +10351,9 @@
       ]
     ],
     "arxiv": [
-      "1304.7762",
-      "9801013",
       "1403.4620",
       "1212.2288",
-      "0603177",
-      "0508046",
       "0905.4669",
-      "0511338",
-      "0506398",
-      "0307202",
       "1204.4114",
       "1403.4850",
       "1209.0476",
@@ -12350,15 +10412,7 @@
     ],
     "arxiv": [
       "0811.4425",
-      "0703668",
-      "0403455",
-      "0501224",
-      "0005171",
-      "0303267",
-      "0603177",
-      "0805.1145",
-      "9707232",
-      "9708037"
+      "0805.1145"
     ]
   },
   "1602.04267_3": {
@@ -12409,12 +10463,8 @@
       ]
     ],
     "arxiv": [
-      "0502493",
       "1112.1078",
-      "0201430",
-      "0202155",
-      "1306.1124",
-      "9702126"
+      "1306.1124"
     ]
   },
   "1602.04267_4": {
@@ -12468,61 +10518,11 @@
       "1010.1533",
       "1401.1501",
       "0803.3626",
-      "0308518",
       "1101.1957",
       "0906.0018",
       "1110.0833",
       "0711.1775",
       "1303.2688"
-    ]
-  },
-  "1602.04267_5": {
-    "title": "Structure and Kinematics of Early-Type Galaxies from Integral Field Spectroscopy",
-    "question": "Here are focused research questions for each point in the sentence about giant elliptical galaxies:\n\na) What is the typical S\u00e9rsic index range for the outer profiles of giant elliptical galaxies?\n\nb) How do the nuclear profiles of giant ellipticals differ from their outer profiles?\n\nc) What is the characteristic rotational velocity of giant elliptical galaxies compared to other galaxy types?\n\nd) How does the anisotropy and triaxiality of giant ellipticals impact their observed properties?\n\ne) What factors contribute to the generally rounder shape of giant elliptical galaxies?\n\nf) What causes the boxy isophotes sometimes observed in giant elliptical galaxies?\n\ng) What is the origin and temperature of the X-ray emitting gas in giant ellipticals?\n\nh) How do the age and \u03b1-element enhancement of stellar populations in giant ellipticals inform their formation history?",
-    "text": "\nGiant ellipticals (\nMV\n\n\n\u2272\n\u221221.5): (a) have S\u00e9rsic function outer profiles with n\u22734 ((b) have cores in their nuclear profiles (, (c) rotate slowly ((d) are anisotropic and triaxial ((e) tend to be rounder ((f) can have boxy isophotes ((g) contain X-ray emitting gas (and (h) have old and \u03b1-element enhanced stellar populations .",
-    "citations": [
-      [
-        "Binney",
-        "1978"
-      ],
-      [
-        "Thomas",
-        "2005"
-      ],
-      [
-        "Illingworth",
-        "1977"
-      ],
-      [
-        "Ferrarese",
-        "1994"
-      ],
-      [
-        "Caon",
-        "1993"
-      ],
-      [
-        "Bender",
-        "1989"
-      ],
-      [
-        "Bender",
-        "1988"
-      ],
-      [
-        "Lauer",
-        "1995"
-      ],
-      [
-        "Tremblay",
-        "Merritt",
-        "1996"
-      ]
-    ],
-    "arxiv": [
-      "0410209",
-      "9309013",
-      "9601038"
     ]
   },
   "1602.04267_6": {
@@ -12571,16 +10571,11 @@
       ]
     ],
     "arxiv": [
-      "0505209",
-      "0312201",
-      "0404034",
       "1205.5496",
       "1109.0543",
-      "0309134",
       "0704.0941",
       "1301.7095",
-      "1306.2316",
-      "0412481"
+      "1306.2316"
     ]
   },
   "1602.04267_7": {
@@ -12626,17 +10621,11 @@
       ]
     ],
     "arxiv": [
-      "1011.5360",
-      "0603559",
       "0708.0306",
-      "0701121",
       "1207.7072",
       "0911.2776",
       "1004.2120",
-      "1601.03400",
-      "1002.2149",
-      "1207.4196",
-      "0608344"
+      "1601.03400"
     ]
   },
   "1602.04267_8": {
@@ -12684,44 +10673,6 @@
       "1502.03449"
     ]
   },
-  "1602.04267_9": {
-    "title": "Structure and Kinematics of Early-Type Galaxies from Integral Field Spectroscopy",
-    "question": "Research question: What are the main categories of rotational behavior observed in nonregular rotators, and how do they differ from regular rotators in galaxies?",
-    "text": "Nonregular rotators were found to (a) either not rotate at all, (b) show clear but not bisymmetric or irregular rotation, (c) present kinematically decoupled cores (KDCs these features were previously described by  , or (d) have two counter-rotating disks (such as the prototypical S0  discovered by , ).",
-    "citations": [
-      [
-        "Franx",
-        "Illingworth",
-        "1988"
-      ],
-      [
-        "Franx",
-        "1989"
-      ],
-      [
-        "NGC",
-        "4550"
-      ],
-      [
-        "Rix",
-        "1992"
-      ],
-      [
-        "Rubin",
-        "1992"
-      ],
-      [
-        "Jedrzejewski",
-        "Schechter",
-        "1988"
-      ],
-      [
-        "Bender",
-        "1988"
-      ]
-    ],
-    "arxiv": []
-  },
   "1602.04267_10": {
     "title": "Structure and Kinematics of Early-Type Galaxies from Integral Field Spectroscopy",
     "question": "Research question: How does the presence of a break in the M_bulge-M_BH and \u03c3-M_BH relationships affect their relative predictive power for black hole masses?",
@@ -12760,10 +10711,7 @@
       ]
     ],
     "arxiv": [
-      "0304274",
-      "1203.2531",
-      "0006053",
-      "0402376"
+      "1203.2531"
     ]
   },
   "2011.01935_1": {
@@ -12896,13 +10844,10 @@
       ]
     ],
     "arxiv": [
-      "9808017",
       "1710.06628",
       "1808.01754",
-      "0406095",
       "1612.00461",
-      "1112.2706",
-      "0703509"
+      "1112.2706"
     ]
   },
   "2011.01935_4": {
@@ -12936,8 +10881,6 @@
       ]
     ],
     "arxiv": [
-      "1712.04512",
-      "1711.00917",
       "1706.01476",
       "1603.04858",
       "1502.07357"
@@ -12995,13 +10938,10 @@
       ]
     ],
     "arxiv": [
-      "1011.1569",
-      "0601236",
       "1311.1328",
       "1504.02938",
       "1401.4852",
-      "1302.1720",
-      "0512363"
+      "1302.1720"
     ]
   },
   "1904.03190_2": {
@@ -13060,7 +11000,6 @@
       "1711.08463",
       "1801.01045",
       "1803.00226",
-      "1602.06733",
       "1706.00466"
     ]
   },
@@ -13101,9 +11040,7 @@
     "arxiv": [
       "1808.10790",
       "1811.05978",
-      "1006.4364",
       "1710.05276",
-      "1206.6109",
       "1808.03645",
       "1307.1133"
     ]
@@ -13145,9 +11082,6 @@
     "arxiv": [
       "1103.3895",
       "1503.03539",
-      "1508.03084",
-      "1303.3280",
-      "0811.2606",
       "1804.07774"
     ]
   },
@@ -13189,7 +11123,6 @@
       ]
     ],
     "arxiv": [
-      "1607.04260",
       "0809.2089",
       "1402.4833",
       "1109.2270",
@@ -13232,10 +11165,7 @@
       ]
     ],
     "arxiv": [
-      "1911.05597",
-      "0702706",
-      "1705.10362",
-      "0610460"
+      "1705.10362"
     ]
   },
   "1904.03190_7": {
@@ -13275,7 +11205,6 @@
       "1610.01841",
       "1511.05528",
       "1511.09443",
-      "1605.08810",
       "1504.00217",
       "1706.02302"
     ]
@@ -13312,9 +11241,7 @@
     ],
     "arxiv": [
       "1811.05978",
-      "1006.4364",
       "1710.05276",
-      "1206.6109",
       "1808.03645",
       "1307.1133"
     ]
@@ -13352,8 +11279,6 @@
     "arxiv": [
       "1310.4183",
       "1503.03539",
-      "1508.03084",
-      "1303.3280",
       "1504.00217",
       "1704.02987"
     ]
@@ -13391,7 +11316,6 @@
       ]
     ],
     "arxiv": [
-      "1511.01424",
       "1309.7894",
       "1602.03088",
       "1504.05962",
@@ -13437,11 +11361,8 @@
     "arxiv": [
       "1504.01751",
       "1509.05429",
-      "0311352",
-      "1709.05834",
       "1401.2455",
-      "1610.03070",
-      "0303065"
+      "1610.03070"
     ]
   },
   "2010.10171_2": {
@@ -13481,7 +11402,6 @@
     "arxiv": [
       "1305.6931",
       "1008.4127",
-      "1706.07030",
       "1411.0667",
       "1509.04345"
     ]
@@ -13523,7 +11443,6 @@
       "1403.0007",
       "1104.0248",
       "1107.5060",
-      "2003.06245",
       "1305.2469"
     ]
   },
@@ -13560,7 +11479,6 @@
     "arxiv": [
       "0906.4628",
       "1706.08531",
-      "1003.4747",
       "1405.2041",
       "1510.06072",
       "1108.0938"
@@ -13599,7 +11517,6 @@
     "arxiv": [
       "1904.10992",
       "1705.05404",
-      "1504.04021",
       "1203.2611",
       "1208.4363"
     ]
@@ -13675,7 +11592,6 @@
     ],
     "arxiv": [
       "1407.7129",
-      "1510.03262",
       "1205.5807",
       "0901.2458",
       "1503.07660"
@@ -13714,8 +11630,6 @@
     "arxiv": [
       "1104.0248",
       "1909.11096",
-      "1807.04738",
-      "1011.5360",
       "1903.05148"
     ]
   },
@@ -13783,16 +11697,12 @@
       ]
     ],
     "arxiv": [
-      "0405244",
-      "0002469",
       "0911.1949",
       "1905.03161",
       "2004.12938",
       "2005.03917",
-      "2104.04568",
       "2108.10768",
       "1110.4667",
-      "0202060",
       "2010.03529",
       "1003.2323"
     ]
@@ -13861,15 +11771,12 @@
       ]
     ],
     "arxiv": [
-      "0506306",
-      "0610360",
       "1010.0826",
       "1603.00801",
       "1702.07377",
       "1209.0591",
       "1111.2198",
       "1005.1263",
-      "1711.07995",
       "0805.4625",
       "1301.1955"
     ]
@@ -13940,9 +11847,7 @@
       "1401.1630",
       "1407.1823",
       "1403.4912",
-      "1211.3562",
-      "1211.3546",
-      "0506535"
+      "1211.3546"
     ]
   },
   "2202.05867_4": {
@@ -14002,17 +11907,10 @@
     ],
     "arxiv": [
       "1607.00375",
-      "0602150",
-      "0208535",
       "1709.01373",
       "0807.1988",
       "1407.4473",
-      "0506514",
-      "0501485",
-      "9907255",
       "1202.0374",
-      "0607428",
-      "0601682",
       "1302.4485"
     ]
   },
@@ -14080,7 +11978,6 @@
       "1403.7902",
       "0807.0940",
       "1211.0367",
-      "1908.04829",
       "1004.2627",
       "2010.02258"
     ]
@@ -14201,12 +12098,10 @@
     ],
     "arxiv": [
       "1905.02232",
-      "0403092",
       "2001.05770",
       "1403.3530",
       "1703.05764",
       "1401.5072",
-      "9912261",
       "2001.01734",
       "1812.04653"
     ]
@@ -14254,15 +12149,9 @@
       ]
     ],
     "arxiv": [
-      "2004.06118",
       "2001.01853",
       "1609.01719",
-      "1606.08464",
-      "1708.04936",
-      "1905.13230",
-      "1908.07536",
       "1902.06760",
-      "1905.08254",
       "1305.2202",
       "1711.00798",
       "1612.01786",
@@ -14527,15 +12416,11 @@
       ]
     ],
     "arxiv": [
-      "0002421",
       "1403.4663",
-      "0307097",
-      "0302568",
       "1108.6055",
       "0801.1167",
       "0801.1223",
-      "0711.4616",
-      "0212230"
+      "0711.4616"
     ]
   },
   "1501.05317_2": {
@@ -14602,73 +12487,6 @@
       "0711.4616"
     ]
   },
-  "1501.05317_3": {
-    "title": "Observations of the icy universe.",
-    "question": "Research question: How do seismic observations of ice sheet modes demonstrate the relationship between ice thermal history and its mechanical properties?",
-    "text": "These observations do show unequivocally the sensitivity of the modes to the thermal history of the ice (  , ).",
-    "citations": [
-      [
-        "Dartois",
-        "1998"
-      ],
-      [
-        "Demyk",
-        "2000"
-      ],
-      [
-        "Sylvester",
-        "1999"
-      ],
-      [
-        "Omont",
-        "1990"
-      ],
-      [
-        "Chiang",
-        "2001"
-      ],
-      [
-        "Malfait",
-        "1999"
-      ]
-    ],
-    "arxiv": [
-      "9910368",
-      "0009428"
-    ]
-  },
-  "1501.05317_4": {
-    "title": "Observations of the icy universe.",
-    "question": "Research question: How do the lattice modes of crystalline H2O in protoplanetary disks differ between Herbig Ae stars and other young stellar objects as observed by ISO spectrometers?",
-    "text": "The ISO spectrometers detected more of the lattice modes, mostly from crystalline H2O, in bright disks around intermediate-mass stars: the isolated Herbig Ae stars 46  and 27  and the Herbig Ae star 96, but not AB Aur (van den ).",
-    "citations": [
-      [
-        "Malfait",
-        "1998"
-      ],
-      [
-        "HD",
-        "1425"
-      ],
-      [
-        "HD",
-        "1632"
-      ],
-      [
-        "HD",
-        "1005"
-      ],
-      [
-        "Malfait",
-        "1999"
-      ],
-      [
-        "Ancker",
-        "2000"
-      ]
-    ],
-    "arxiv": []
-  },
   "1501.05317_5": {
     "title": "Observations of the icy universe.",
     "question": "For the first sentence:\nWhat is the CO abundance in the Large and Small Magellanic Clouds according to the study?\n\nFor the second sentence:\nHow does the CO2 abundance compare between the SMC and LMC based on the reported measurements?",
@@ -14706,40 +12524,6 @@
       "0911.0532",
       "1004.0049"
     ]
-  },
-  "1503.05206_1": {
-    "title": "Powerful Outflows and Feedback from Active Galactic Nuclei",
-    "question": "Given the limited context provided in this sentence fragment, it's challenging to formulate a precise research question. However, based on the structure and content, a potential research question could be:\n\nHow do the observational results presented in this study compare to the theoretical predictions outlined in tables 1 and 2 of reference 'a'?\n\nThis question assumes the sentence is referring to a comparison between observational data and theoretical predictions in astronomy, which is a common practice in the field. However, without more context about the specific topic or phenomena being discussed, it's difficult to be more specific or accurate.",
-    "text": "   a,b  see also a, their tables 1 and 2, for a detailed comparison with the theoretical predictions).",
-    "citations": [
-      [
-        "Tacconi",
-        "2002"
-      ],
-      [
-        "Sturm",
-        "2011"
-      ],
-      [
-        "Veilleux",
-        "2009"
-      ],
-      [
-        "Lonsdale",
-        "2003"
-      ],
-      [
-        "Riffel",
-        "Storchi-Bergmann",
-        "2011"
-      ],
-      [
-        "Zubovas",
-        "King",
-        "2012"
-      ]
-    ],
-    "arxiv": []
   },
   "2103.02127_1": {
     "title": "Exoplanet Statistics and Theoretical Implications",
@@ -14796,8 +12580,6 @@
       "1303.1957",
       "1508.06391",
       "1810.02753",
-      "1703.10375",
-      "1703.10400",
       "1505.02814"
     ]
   },
@@ -14849,12 +12631,10 @@
     "arxiv": [
       "1001.0572",
       "1508.04434",
-      "0107482",
       "1212.4853",
       "1612.03939",
       "1105.1782",
       "1103.2541",
-      "1205.2273",
       "1506.04175",
       "1507.05097",
       "0803.3357"
@@ -14894,7 +12674,6 @@
     ],
     "arxiv": [
       "1001.0572",
-      "0107482",
       "1212.4853",
       "1105.1782",
       "1506.04175",
@@ -14939,7 +12718,6 @@
       "1901.01974",
       "1605.04310",
       "1806.08799",
-      "1712.04042",
       "1809.00353",
       "1510.01964",
       "1605.08556",
@@ -15034,47 +12812,9 @@
       ]
     ],
     "arxiv": [
-      "1503.01057",
-      "1511.01870",
       "2202.08398",
-      "1809.11165",
-      "2111.06672",
-      "1610.08733"
+      "2111.06672"
     ]
-  },
-  "2209.08940_3": {
-    "title": "Gaussian Process Regression for Astronomical Time Series",
-    "question": "Research question: How did the early applications of Gaussian Processes in astronomical data modeling evolve from initial limited attention to widespread use in simulations across various subfields?",
-    "text": "GPs were used in simulations in a wide range of astronomical subfields (see,  , but early mentions of GPs for modeling astronomical data sets (see,  von der , ) received limited attention.",
-    "citations": [
-      [
-        "Constable",
-        "Parker",
-        "1988"
-      ],
-      [
-        "Dvorak",
-        "Edelman",
-        "1976"
-      ],
-      [
-        "Heide",
-        "1978"
-      ],
-      [
-        "Jekeli",
-        "1991"
-      ],
-      [
-        "Barnes",
-        "1980"
-      ],
-      [
-        "Peebles",
-        "1997"
-      ]
-    ],
-    "arxiv": []
   },
   "2209.08940_4": {
     "title": "Gaussian Process Regression for Astronomical Time Series",
@@ -15150,7 +12890,6 @@
       "2006.16951",
       "2101.07886",
       "2201.08943",
-      "1911.09705",
       "1903.08017",
       "2206.06254"
     ]
@@ -15206,11 +12945,8 @@
     ],
     "arxiv": [
       "1108.1971",
-      "9909395",
       "1502.03315",
-      "0003128",
       "1606.02030",
-      "9903078",
       "1705.02331"
     ]
   },
@@ -15303,12 +13039,8 @@
       ]
     ],
     "arxiv": [
-      "9907342",
-      "0409183",
       "1309.0008",
-      "1303.6631",
-      "0503135",
-      "0401630"
+      "1303.6631"
     ]
   },
   "2001.03181_4": {
@@ -15346,7 +13078,6 @@
       ]
     ],
     "arxiv": [
-      "0001308",
       "1701.07869",
       "1607.04285",
       "1607.01824",
@@ -15387,10 +13118,7 @@
       ]
     ],
     "arxiv": [
-      "0409183",
-      "1108.1971",
-      "9705043",
-      "0003128"
+      "1108.1971"
     ]
   },
   "2001.03181_6": {
@@ -15426,10 +13154,8 @@
     ],
     "arxiv": [
       "0810.3918",
-      "0001308",
       "1011.0776",
-      "1206.2732",
-      "1209.2152"
+      "1206.2732"
     ]
   },
   "2001.03181_7": {
@@ -15502,12 +13228,9 @@
       ]
     ],
     "arxiv": [
-      "0612087",
       "0910.0774",
       "0712.3573",
-      "0411343",
-      "1812.05606",
-      "0504434"
+      "1812.05606"
     ]
   },
   "2001.03181_9": {
@@ -15583,7 +13306,6 @@
     "arxiv": [
       "1310.0417",
       "1307.3246",
-      "1607.02866",
       "1601.03090",
       "1309.6334",
       "1711.10256",
@@ -15623,13 +13345,7 @@
       ]
     ],
     "arxiv": [
-      "0202375",
-      "1104.1172",
-      "1302.7002",
-      "0106188",
-      "0110520",
-      "0206095",
-      "0608502"
+      "1104.1172"
     ]
   },
   "1711.07434_1": {
@@ -15699,10 +13415,7 @@
     "arxiv": [
       "1011.0797",
       "1509.05319",
-      "1701.01422",
-      "0603332",
       "1404.2639",
-      "0409340",
       "0805.3028",
       "1501.03223"
     ]
@@ -15785,45 +13498,8 @@
     ],
     "arxiv": [
       "1011.0797",
-      "0002526",
-      "1701.01422",
       "1404.2639",
-      "0409340",
       "0805.3028"
-    ]
-  },
-  "1711.07434_4": {
-    "title": "The Interstellar Dust Properties of Nearby Galaxies",
-    "question": "Research question: How does the disk scale length of infrared emission in galaxies vary with wavelength, particularly in the far-infrared and submillimeter ranges compared to optical wavelengths?",
-    "text": "Far-infrared/submillimeter scale length of dust.\nFrom ISO observations, it quickly became clear that the disk scale length of IR emission increases with the wavelength (with a far-IR (FIR) scale length being greater than an optical scale length (  ).",
-    "citations": [
-      [
-        "Hippelein",
-        "2003"
-      ],
-      [
-        "Haas",
-        "1998"
-      ],
-      [
-        "Davies",
-        "1999"
-      ],
-      [
-        "Alton",
-        "1998"
-      ],
-      [
-        "Tuffs",
-        "1996"
-      ],
-      [
-        "Trewhella",
-        "2000"
-      ]
-    ],
-    "arxiv": [
-      "0306558"
     ]
   },
   "1711.07434_5": {
@@ -15860,8 +13536,7 @@
     ],
     "arxiv": [
       "1503.08852",
-      "1705.02675",
-      "0011173"
+      "1705.02675"
     ]
   },
   "1603.01280_1": {
@@ -15906,10 +13581,6 @@
       ]
     ],
     "arxiv": [
-      "0407037",
-      "0501638",
-      "0609798",
-      "0306121",
       "1010.3702"
     ]
   },
@@ -15946,9 +13617,7 @@
       ]
     ],
     "arxiv": [
-      "0610201",
       "1107.0831",
-      "0312507",
       "0704.2532",
       "1108.1194",
       "0708.0742"
@@ -15988,7 +13657,6 @@
       ]
     ],
     "arxiv": [
-      "0609692",
       "1304.4978",
       "1010.3702"
     ]
@@ -16096,8 +13764,7 @@
       "1405.1416",
       "1310.8481",
       "1611.08416",
-      "1402.1398",
-      "1212.0861"
+      "1402.1398"
     ]
   },
   "2006.07071_3": {
@@ -16266,7 +13933,6 @@
       "1005.1714",
       "1503.01111",
       "0910.2990",
-      "0606242",
       "1205.4100",
       "1107.3616",
       "1010.2290",
@@ -16329,9 +13995,7 @@
       "1011.5512",
       "0908.0317",
       "0709.2939",
-      "0709.0485",
-      "9908028",
-      "9811318"
+      "0709.0485"
     ]
   },
   "Protostellar_3": {
@@ -16369,68 +14033,9 @@
       "1401.5417",
       "1409.0787",
       "1401.2219",
-      "0603592",
       "0806.4769",
       "1402.3553"
     ]
-  },
-  "2307.08464_1": {
-    "title": "Atomic Hydrogen in the Milky Way: A Stepping Stone in the Evolution of Galaxies",
-    "question": "Research question: How does the high optical depth of the Cold Neutral Medium (CNM) affect the detection of 21 cm absorption lines in radio astronomy observations?",
-    "text": "Due to the high optical depth of the CNM, 21 cm absorption signatures have been easy to detect, even with low-sensitivity observations (,     , 1978      a).",
-    "citations": [
-      [
-        "Dickey",
-        "1977"
-      ],
-      [
-        "Radhakrishnan",
-        "Goss",
-        "1972"
-      ],
-      [
-        "Braun",
-        "Walterbos",
-        "1992"
-      ],
-      [
-        "Knapp",
-        "Verschuur",
-        "1972"
-      ],
-      [
-        "Heiles",
-        "Troland",
-        "2003"
-      ],
-      [
-        "Dickey",
-        "Benson",
-        "1982"
-      ],
-      [
-        "Hughes",
-        "1971"
-      ],
-      [
-        "Crovisier",
-        "1978"
-      ],
-      [
-        "Belfort",
-        "Crovisier",
-        "1984"
-      ],
-      [
-        "Lazareff",
-        "1975"
-      ],
-      [
-        "Payne",
-        "1978"
-      ]
-    ],
-    "arxiv": []
   },
   "2307.08464_2": {
     "title": "Atomic Hydrogen in the Milky Way: A Stepping Stone in the Evolution of Galaxies",
@@ -16470,10 +14075,7 @@
     "arxiv": [
       "1401.1215",
       "1305.0951",
-      "0310761",
-      "1407.7778",
-      "9805172",
-      "0111348"
+      "1407.7778"
     ]
   },
   "2307.08464_3": {
@@ -16550,11 +14152,8 @@
     "arxiv": [
       "1308.3231",
       "0704.3851",
-      "0305049",
-      "0310510",
       "1512.03439",
-      "1309.7139",
-      "1307.6990"
+      "1309.7139"
     ]
   },
   "Pulsar_1": {
@@ -16599,51 +14198,9 @@
       "2104.08986",
       "2009.03568",
       "1007.1052",
-      "0702365",
       "1902.04689",
       "1610.07616",
-      "0610929",
       "1308.3147"
-    ]
-  },
-  "Pulsar_2": {
-    "title": "Pulsar Magnetospheres and Their Radiation",
-    "question": "Research Question: What are the main criticisms of the Nemesis hypothesis, and how have proponents responded to these critiques?",
-    "text": "Their approach has been criticized ( although most of the criticism has been rigorously addressed (a , ).",
-    "citations": [
-      [
-        "Larroche",
-        "Pellat",
-        "1987"
-      ],
-      [
-        "Nambu",
-        "1989"
-      ],
-      [
-        "Istomin",
-        "1994"
-      ],
-      [
-        "Nambu",
-        "1996"
-      ],
-      [
-        "Bornatici",
-        "Kravtsov",
-        "2000"
-      ],
-      [
-        "Beskin",
-        "1988"
-      ],
-      [
-        "Machabeli",
-        "1991"
-      ]
-    ],
-    "arxiv": [
-      "9411013"
     ]
   },
   "Pulsar_3": {
@@ -16677,86 +14234,9 @@
       ]
     ],
     "arxiv": [
-      "0808.0244",
-      "0605429",
       "1902.04689",
       "0811.3829",
-      "0306455",
-      "0307111",
       "1504.07241"
-    ]
-  },
-  "1501.06921_1": {
-    "title": "Near-Field Cosmology with Extremely Metal-Poor Stars",
-    "question": "I apologize, but I cannot generate a meaningful research question from the given sentence fragment. The provided text \"Discovery references are and ).\" is incomplete and lacks sufficient context or scientific content to formulate a relevant astronomical research question. To generate an appropriate question, I would need more complete information about the astronomical discovery or concept being discussed in the paper.",
-    "text": "Discovery references are and ).",
-    "citations": [
-      [
-        "McWilliam",
-        "1995"
-      ],
-      [
-        "Baschek",
-        "1959"
-      ],
-      [
-        "Chamberlain",
-        "Aller",
-        "1951"
-      ],
-      [
-        "Aller",
-        "Greenstein",
-        "1960"
-      ],
-      [
-        "Luck",
-        "Bond",
-        "1981"
-      ],
-      [
-        "Ryan",
-        "1996"
-      ],
-      [
-        "Keller",
-        "2014"
-      ],
-      [
-        "Frebel",
-        "2005"
-      ],
-      [
-        "Carney",
-        "Peterson",
-        "1981"
-      ],
-      [
-        "Bidelman",
-        "MacConnell",
-        "1973"
-      ],
-      [
-        "Beers",
-        "1992"
-      ],
-      [
-        "Christlieb",
-        "2002"
-      ],
-      [
-        "Bessell",
-        "Norris",
-        "1984"
-      ],
-      [
-        "Wallerstein",
-        "1963"
-      ]
-    ],
-    "arxiv": [
-      "0211274",
-      "0503021"
     ]
   },
   "1501.06921_2": {
@@ -16825,66 +14305,8 @@
       ]
     ],
     "arxiv": [
-      "0505050",
       "0709.0029",
       "1102.1748"
-    ]
-  },
-  "1501.06921_3": {
-    "title": "Near-Field Cosmology with Extremely Metal-Poor Stars",
-    "question": "Research question: How have computational simulations over the last decade advanced our understanding of Population III stars' characteristics and potential observational challenges?",
-    "text": "Is the apparent absence of Population III stars the result of observational difficulties or is there a physical reason for their absence? Over the past decade, the nature and properties of the first stars have been much debated as simulations of these objects have become more and more detailed (  , 2008        ).",
-    "citations": [
-      [
-        "Greif",
-        "2011"
-      ],
-      [
-        "Susa",
-        "2013"
-      ],
-      [
-        "Stacy",
-        "Bromm",
-        "2014"
-      ],
-      [
-        "Hosokawa",
-        "2011"
-      ],
-      [
-        "Bromm",
-        "2002"
-      ],
-      [
-        "Stacy",
-        "2010"
-      ],
-      [
-        "Abel",
-        "2002"
-      ],
-      [
-        "Turk",
-        "2009"
-      ],
-      [
-        "Clark",
-        "2011"
-      ],
-      [
-        "Turk",
-        "2012"
-      ],
-      [
-        "Yoshida",
-        "2004"
-      ]
-    ],
-    "arxiv": [
-      "1101.5284",
-      "0112088",
-      "0102503"
     ]
   },
   "1501.06921_4": {
@@ -16931,53 +14353,7 @@
     ],
     "arxiv": [
       "1310.1527",
-      "1203.2607",
-      "0311082"
-    ]
-  },
-  "1501.06921_5": {
-    "title": "Near-Field Cosmology with Extremely Metal-Poor Stars",
-    "question": "Research Question: What are the key observational contributions to the study of this astronomical phenomenon as documented in the 2012 publication and its cited references?",
-    "text": "We refer the reader to ) 2012bband as well as to the references therein, for details of some of the observational contributions.",
-    "citations": [
-      [
-        "Mel\u00e9ndez",
-        "2010"
-      ],
-      [
-        "Thorburn",
-        "1994"
-      ],
-      [
-        "Aoki",
-        "2009"
-      ],
-      [
-        "Sbordone",
-        "2010"
-      ],
-      [
-        "Ryan",
-        "1999"
-      ],
-      [
-        "Asplund",
-        "2006"
-      ],
-      [
-        "Charbonnel",
-        "Primas",
-        "2005"
-      ],
-      [
-        "Bonifacio",
-        "2007"
-      ]
-    ],
-    "arxiv": [
-      "0505247",
-      "0610245",
-      "0510636"
+      "1203.2607"
     ]
   },
   "1501.06921_6": {
@@ -17014,7 +14390,6 @@
     "arxiv": [
       "1103.3067",
       "1104.3220",
-      "0706.3005",
       "1104.2513"
     ]
   },
@@ -17167,8 +14542,6 @@
     "arxiv": [
       "1512.03442",
       "1603.08875",
-      "1401.6674",
-      "1307.1628",
       "1501.00753",
       "1501.01341",
       "1511.09137"
@@ -17211,9 +14584,6 @@
     ],
     "arxiv": [
       "1404.2934",
-      "1603.00581",
-      "1511.07746",
-      "1307.1628",
       "1611.00458",
       "1603.08880",
       "1604.03909",
@@ -17257,9 +14627,6 @@
     ],
     "arxiv": [
       "1404.2934",
-      "1603.00581",
-      "1511.07746",
-      "1307.1628",
       "1611.00458",
       "1603.08880",
       "1409.6125"
@@ -17297,10 +14664,8 @@
     ],
     "arxiv": [
       "1804.01584",
-      "1603.00581",
       "1406.1850",
       "1807.03722",
-      "1711.08110",
       "1603.08880",
       "1409.6125"
     ]
@@ -17371,11 +14736,8 @@
     "arxiv": [
       "1805.03202",
       "1808.02204",
-      "9702060",
       "1702.07818",
       "1608.07642",
-      "9910061",
-      "1602.04531",
       "1602.04226",
       "1906.07726",
       "1912.08218",
@@ -17443,10 +14805,7 @@
     "arxiv": [
       "2102.11875",
       "0803.2044",
-      "0101059",
-      "1610.08524",
       "2005.11954",
-      "1301.5921",
       "0704.0307"
     ]
   },
@@ -17492,15 +14851,10 @@
       ]
     ],
     "arxiv": [
-      "0607112",
-      "9810397",
-      "0408525",
       "0909.2644",
       "0709.0966",
-      "0610039",
       "0811.3629",
-      "1010.3702",
-      "0406469"
+      "1010.3702"
     ]
   },
   "2211.00028_4": {
@@ -17541,11 +14895,7 @@
     ],
     "arxiv": [
       "0809.0311",
-      "1110.6086",
-      "0612505",
-      "0103350",
-      "0410343",
-      "0406304"
+      "1110.6086"
     ]
   },
   "2211.00028_5": {
@@ -17588,9 +14938,7 @@
       "0809.0311",
       "1605.01730",
       "1202.6063",
-      "1210.4678",
-      "0406304",
-      "9510149"
+      "1210.4678"
     ]
   },
   "2211.00028_6": {
@@ -17630,11 +14978,8 @@
       ]
     ],
     "arxiv": [
-      "0607467",
       "1507.06998",
-      "0911.2032",
-      "1610.07263",
-      "0204175"
+      "1610.07263"
     ]
   },
   "2211.00028_7": {
@@ -17682,47 +15027,6 @@
       "1911.05506"
     ]
   },
-  "2211.00028_8": {
-    "title": "Circumbinary Accretion: From Binary Stars to Massive Binary Black Holes",
-    "question": "Research question: How can circumbinary accretion dynamics influence the characteristics of the stochastic gravitational wave background produced by massive binary black hole populations?",
-    "text": "In addition to detecting circumbinary accretion \u201cin action\u201d in the form of the photometric variability of individual sources, CBD physics can also leave an imprint in the population of MBHBs responsible for the stochastic GW background (GWB   which is detectable by the method of pulsar timing ( ).",
-    "citations": [
-      [
-        "Zimmerman",
-        "Hellings",
-        "1980"
-      ],
-      [
-        "Sazhin",
-        "1978"
-      ],
-      [
-        "Rajagopal",
-        "Romani",
-        "1995"
-      ],
-      [
-        "Thorne",
-        "1987"
-      ],
-      [
-        "Bertotti",
-        "1983"
-      ],
-      [
-        "Detweiler",
-        "1979"
-      ],
-      [
-        "Phinney",
-        "2001"
-      ]
-    ],
-    "arxiv": [
-      "0108028",
-      "9412038"
-    ]
-  },
   "2211.00028_9": {
     "title": "Circumbinary Accretion: From Binary Stars to Massive Binary Black Holes",
     "question": "Research question: How prevalent are circumbinary disks in different evolutionary stages of young stellar systems, from Class 0 to Class II?",
@@ -17755,8 +15059,7 @@
     ],
     "arxiv": [
       "2001.08147",
-      "2005.11954",
-      "1610.08524"
+      "2005.11954"
     ]
   },
   "2211.00028_10": {
@@ -17794,8 +15097,7 @@
       "1110.4866",
       "1204.1073",
       "1503.05561",
-      "1904.12048",
-      "2103.15707"
+      "1904.12048"
     ]
   },
   "2012.07960_1": {
@@ -17864,13 +15166,11 @@
       "1009.5471",
       "1403.3693",
       "1110.1722",
-      "1405.4869",
       "1107.3159",
       "1808.01847",
       "1308.5985",
       "1901.11045",
       "2003.12083",
-      "1709.00991",
       "1404.4632",
       "1208.6031"
     ]
@@ -17909,10 +15209,7 @@
     "arxiv": [
       "1011.0430",
       "0710.2697",
-      "9801003",
       "1011.0426",
-      "0202204",
-      "0003465",
       "1710.10271",
       "1710.03002"
     ]
@@ -17962,11 +15259,9 @@
       "1004.3698",
       "0912.4426",
       "1005.5166",
-      "1603.00291",
       "1110.6224",
       "1011.5327",
-      "1212.5026",
-      "1009.4740"
+      "1212.5026"
     ]
   },
   "2011.08751_2": {
@@ -18006,10 +15301,7 @@
       ]
     ],
     "arxiv": [
-      "0603351",
-      "1909.07643",
-      "0306080",
-      "0503143"
+      "1909.07643"
     ]
   },
   "2011.08751_3": {
@@ -18046,7 +15338,6 @@
     "arxiv": [
       "1705.03895",
       "1812.01428",
-      "0710.3314",
       "1810.10720",
       "0804.0042",
       "1304.0763"
@@ -18092,7 +15383,6 @@
     ],
     "arxiv": [
       "1604.01022",
-      "0206233",
       "1904.04687",
       "1401.5474",
       "1807.04293",
@@ -18178,7 +15468,6 @@
       "2010.11730",
       "2107.02183",
       "1112.0944",
-      "0503346",
       "2103.12736",
       "0711.1110",
       "0811.0487",
@@ -18227,50 +15516,6 @@
       "1908.04246",
       "1503.03070"
     ]
-  },
-  "1802.04313_1": {
-    "title": "Debris Disks: Structure, Composition, and Variability",
-    "question": "Research question: How prevalent are symmetric versus asymmetric CO emission systems in debris disks, and what observational limitations affect our ability to accurately characterize disk symmetry?",
-    "text": "Apparently symmetric systems in CO emission (69, 58, 35, 13, 7, 49 Cet, 7, 27, 97, and 23) are so far more common than asymmetric systems (, \u03b2 Pic, Fomalhautalthough the current observations limit our ability to distinguish deviations from axisymmetry in most cases to within several tens of percent, and the issue of optical depth also complicates our ability to distinguish subtle contrast within the density distribution.",
-    "citations": [
-      [
-        "HD",
-        "1813"
-      ],
-      [
-        "HD",
-        "1318"
-      ],
-      [
-        "HD",
-        "2199"
-      ],
-      [
-        "HD",
-        "3229"
-      ],
-      [
-        "HD",
-        "1566"
-      ],
-      [
-        "HD",
-        "1468"
-      ],
-      [
-        "HD",
-        "1388"
-      ],
-      [
-        "HD",
-        "1415"
-      ],
-      [
-        "HD",
-        "1100"
-      ]
-    ],
-    "arxiv": []
   },
   "1802.04313_2": {
     "title": "Debris Disks: Structure, Composition, and Variability",
@@ -18405,7 +15650,6 @@
       "1612.00333",
       "1410.7753",
       "1609.05638",
-      "1412.4145",
       "1701.00750",
       "1510.02747"
     ]
@@ -18447,7 +15691,6 @@
       "1211.5148",
       "1002.3469",
       "0807.1134",
-      "0111384",
       "1410.8265"
     ]
   },
@@ -18561,10 +15804,7 @@
       ]
     ],
     "arxiv": [
-      "0711.2536",
-      "9504100",
-      "1407.3279",
-      "9803199"
+      "1407.3279"
     ]
   },
   "Interstellar_2": {
@@ -18604,46 +15844,8 @@
       ]
     ],
     "arxiv": [
-      "1010.2769",
-      "0301488"
+      "1010.2769"
     ]
-  },
-  "1406.2207_1": {
-    "title": "Tidal Dissipation in Stars and Giant Planets",
-    "question": "Research question: How does uniform stellar rotation influence the dynamical tide in radiative zones of both early-type and solar-type stars?",
-    "text": "The effects of uniform rotation on the dynamical tide in radiative regions have been examined for early-type stars by and aand for solar-type stars by ) and ).",
-    "citations": [
-      [
-        "Savonije",
-        "1995"
-      ],
-      [
-        "Witte",
-        "Savonije",
-        "1999"
-      ],
-      [
-        "Savonije",
-        "Witte",
-        "2002"
-      ],
-      [
-        "Savonije",
-        "Papaloizou",
-        "1997"
-      ],
-      [
-        "Papaloizou",
-        "Savonije",
-        "1997"
-      ],
-      [
-        "Ogilvie",
-        "Lin",
-        "2007"
-      ]
-    ],
-    "arxiv": []
   },
   "Asteroseismology_1": {
     "title": "Asteroseismology Across the Hertzsprung-Russell Diagram",
@@ -18681,7 +15883,6 @@
       ]
     ],
     "arxiv": [
-      "2105.04533",
       "1602.04964",
       "1605.03955",
       "1912.12300"
@@ -18726,43 +15927,6 @@
       "1610.06184"
     ]
   },
-  "1809.07779_2": {
-    "title": "Angular Momentum Transport in Stellar Interiors",
-    "question": "Research questions based on this sentence:\n\n1. How do higher-order perturbation theories improve our understanding of stellar oscillations, particularly for p-modes, g-modes, and mixed modes?\n\n2. What are the specific contributions of second-order perturbation theory to the study of p-modes and g-modes in magnetized stars?\n\n3. How does the inclusion of third-order effects enhance our comprehension of p-mode behavior in stellar interiors?",
-    "text": "Perturbation theories up to higher order in \u03c9 have been developed, , second-order p modes  second-order p and g modes including magnetism  second-order g modes  third-order p modes (, ) and second-order p, g, and mixed modes .",
-    "citations": [
-      [
-        "Saio",
-        "1981"
-      ],
-      [
-        "Daszy\u0144ska-Daszkiewicz",
-        "2002"
-      ],
-      [
-        "Su\u00e1rez",
-        "2006"
-      ],
-      [
-        "Soufi",
-        "1998"
-      ],
-      [
-        "Dziembowski",
-        "Goode",
-        "1992"
-      ],
-      [
-        "Lee",
-        "Baraffe",
-        "1995"
-      ]
-    ],
-    "arxiv": [
-      "0206109",
-      "0511602"
-    ]
-  },
   "1809.07779_3": {
     "title": "Angular Momentum Transport in Stellar Interiors",
     "question": "Research question: How do internal gravity waves (IGWs) facilitate angular momentum transport between convective and radiative zones in stellar interiors?",
@@ -18800,8 +15964,7 @@
       "1610.03872",
       "1407.4457",
       "1306.3986",
-      "1705.10101",
-      "0206479"
+      "1705.10101"
     ]
   },
   "2303.00453_1": {
@@ -18847,7 +16010,6 @@
       ]
     ],
     "arxiv": [
-      "1709.10107",
       "1603.06948",
       "2007.00716",
       "2012.05947",
@@ -18893,50 +16055,11 @@
       ]
     ],
     "arxiv": [
-      "0911.1106",
       "1012.0790",
       "2106.00251",
       "1306.0179",
       "1409.6304",
       "2201.04891"
-    ]
-  },
-  "2303.00453_3": {
-    "title": "Advances in Optical/Infrared Interferometry",
-    "question": "Research question: How did early optical interferometry projects in the 1980s and 1990s evolve into more advanced second-generation facilities?",
-    "text": "Many of the projects in the 1980s and 1990s led directly to second-generation facilities: Narrabri Stellar Intensity Interferometer became SUSI (Sydney University Stellar Interferometer McMath heterodyne interferometer became ISI (Infrared Spatial Interferometer I2T (Interf\u00e9rom\u00e8tre a 2 T\u00e9lescopes) became GI2T (Grand Interf\u00e9rom\u00e8tre a 2 T\u00e9lescopes Mark III became NPOI  + PTI (Palomar Testbed Interferometer aperture masking became COAST (Cambridge Optical Aperture Synthesis Telescope and IRMA became IOTA (Infrared Optical Telescope Array ).",
-    "citations": [
-      [
-        "Traub",
-        "2003"
-      ],
-      [
-        "Davis",
-        "1999"
-      ],
-      [
-        "Armstrong",
-        "1998"
-      ],
-      [
-        "Hale",
-        "2000"
-      ],
-      [
-        "Mourard",
-        "1994"
-      ],
-      [
-        "Colavita",
-        "1999"
-      ],
-      [
-        "Baldwin",
-        "1994"
-      ]
-    ],
-    "arxiv": [
-      "9810262"
     ]
   },
   "2303.00453_4": {
@@ -18974,7 +16097,6 @@
       ]
     ],
     "arxiv": [
-      "1208.2431",
       "2201.10551",
       "2101.04232",
       "1505.02715",
@@ -19068,19 +16190,13 @@
       ]
     ],
     "arxiv": [
-      "1702.05301",
       "1704.01054",
-      "0112441",
       "0809.5035",
       "0910.3786",
       "1612.00852",
-      "9712115",
-      "0508296",
-      "0208256",
       "1611.04954",
       "0911.2244",
-      "1707.06640",
-      "0206182"
+      "1707.06640"
     ]
   },
   "1710.03235_2": {
@@ -19122,17 +16238,12 @@
       ]
     ],
     "arxiv": [
-      "0002500",
       "1406.1506",
       "1707.01072",
       "1609.09085",
       "1507.05598",
       "1708.01538",
-      "0003014",
-      "1606.05338",
-      "1510.03962",
-      "0003008",
-      "0101213"
+      "1510.03962"
     ]
   },
   "1710.03235_3": {
@@ -19168,9 +16279,7 @@
     ],
     "arxiv": [
       "1512.01570",
-      "0212216",
       "1509.06762",
-      "1103.5083",
       "1510.06752",
       "1310.6784",
       "1510.07024",
@@ -19209,17 +16318,11 @@
       ]
     ],
     "arxiv": [
-      "0702359",
       "1308.4982",
       "1009.0779",
-      "0609795",
-      "0802.1214",
       "1412.1825",
-      "0506112",
-      "0608643",
       "1407.7676",
-      "1111.6958",
-      "0702140"
+      "1111.6958"
     ]
   },
   "2012.04810_1": {
@@ -19309,30 +16412,23 @@
       ]
     ],
     "arxiv": [
-      "1710.05433",
-      "1710.05452",
       "1710.05850",
       "1710.05854",
       "1710.05863",
       "1710.05840",
       "1710.05455",
-      "1710.05461",
       "1710.05448",
-      "1710.05459",
       "1710.05841",
       "1710.05462",
-      "1710.05843",
       "1710.05858",
       "1710.05856",
       "1710.05437",
-      "1710.05443",
       "1710.05864",
       "1710.05440",
       "1710.05846",
       "1710.05444",
       "1710.05844",
-      "1710.05848",
-      "1710.05432"
+      "1710.05848"
     ]
   },
   "2012.04810_2": {
@@ -19388,10 +16484,8 @@
     "arxiv": [
       "1603.07869",
       "1710.05442",
-      "1306.4971",
       "1901.06269",
       "1503.07761",
-      "1306.3960",
       "1810.04664"
     ]
   },
@@ -19507,11 +16601,8 @@
       ]
     ],
     "arxiv": [
-      "1710.05432",
-      "1710.05443",
       "1710.05444",
       "1710.05455",
-      "1710.05433",
       "1710.05854",
       "1710.05841",
       "1710.05456",
@@ -19681,7 +16772,6 @@
       "1107.1326",
       "1610.05362",
       "1803.07595",
-      "0408291",
       "1505.05538"
     ]
   },
@@ -19725,14 +16815,10 @@
     ],
     "arxiv": [
       "1710.05444",
-      "1710.05461",
       "1710.05455",
-      "1710.05452",
       "1710.05854",
-      "1710.05459",
       "1710.05863",
       "1710.05864",
-      "1710.05843",
       "1710.05856"
     ]
   },
@@ -19784,8 +16870,6 @@
       "1710.06168",
       "1711.07403",
       "1710.05893",
-      "1710.05901",
-      "1712.04731",
       "1710.05877"
     ]
   },
@@ -19824,80 +16908,9 @@
       ]
     ],
     "arxiv": [
-      "1710.05452",
-      "1710.05459",
       "1710.05841",
-      "1710.05843",
       "1710.05858",
       "1710.05840"
-    ]
-  },
-  "1512.00086_1": {
-    "title": "The Evolution of the Intergalactic Medium",
-    "question": "Research question: How did the development of high-resolution spectrographs and cosmological simulations in the 1990s advance our understanding of the Lyman-alpha forest?",
-    "text": "However, it took until the mid-1990s for the study of the Ly\u03b1 forest to reach maturity, following the commissioning of High Resolution Echelle Spectrometer (HIRES) on the Keck telescope (which enabled resolved studies of the Ly\u03b1 forest absorption ( and also following the advent of cosmological hydrodynamics simulations in the emerging cold dark matter model (, ). (See  for more on the history.) Indeed, calculations of mock Ly\u03b1 forest spectra using the first cold dark matter simulations showed a forest of absorption much like that in the actual observations ( , reinforcing this suggestion from earlier analytic models .",
-    "citations": [
-      [
-        "Kirkman",
-        "Tytler",
-        "1997"
-      ],
-      [
-        "Hu",
-        "1995"
-      ],
-      [
-        "Bi",
-        "1992"
-      ],
-      [
-        "Rauch",
-        "1998"
-      ],
-      [
-        "Cen",
-        "Ostriker",
-        "1992"
-      ],
-      [
-        "Zhang",
-        "1995"
-      ],
-      [
-        "Vogt",
-        "1994"
-      ],
-      [
-        "Katz",
-        "1992"
-      ],
-      [
-        "Cen",
-        "1994"
-      ],
-      [
-        "Hernquist",
-        "1996"
-      ],
-      [
-        "Miralda-Escud\u00e9",
-        "1996"
-      ],
-      [
-        "Kim",
-        "1997"
-      ]
-    ],
-    "arxiv": [
-      "9409017",
-      "9701209",
-      "9806286",
-      "9507047",
-      "9511013",
-      "9704184",
-      "9509106",
-      "9509105",
-      "9508133"
     ]
   },
   "1512.00086_2": {
@@ -19956,22 +16969,14 @@
       ]
     ],
     "arxiv": [
-      "0207119",
-      "0011559",
-      "9906413",
       "1308.4411",
-      "0005553",
-      "0302439",
       "1202.3577",
       "1008.2622",
-      "9908288",
-      "0005448",
       "1109.4944",
       "1209.0005",
       "0909.5210",
       "1310.5859",
-      "1404.1083",
-      "9912432"
+      "1404.1083"
     ]
   },
   "1512.00086_3": {
@@ -20033,20 +17038,11 @@
     ],
     "arxiv": [
       "0911.2219",
-      "9603042",
-      "0301293",
-      "0505065",
       "1403.4245",
       "1003.3878",
-      "0612406",
       "0908.1576",
-      "0604177",
       "1501.01980",
-      "1003.3455",
-      "0809.1326",
-      "0603518",
-      "0303249",
-      "0512187"
+      "0809.1326"
     ]
   },
   "1512.00086_4": {
@@ -20090,12 +17086,7 @@
       ]
     ],
     "arxiv": [
-      "0606638",
       "1209.2118",
-      "1406.6361",
-      "0307289",
-      "0407372",
-      "0711.2529",
       "0906.2861",
       "0909.5210"
     ]
@@ -20141,13 +17132,8 @@
       ]
     ],
     "arxiv": [
-      "9806281",
       "0706.1787",
-      "1304.2901",
-      "9804038",
-      "0011552",
-      "0601424",
-      "0010345"
+      "1304.2901"
     ]
   },
   "1512.00086_6": {
@@ -20187,16 +17173,12 @@
       ]
     ],
     "arxiv": [
-      "0005262",
-      "0512263",
       "1103.2135",
       "0904.1210",
       "1007.3849",
       "1102.1891",
-      "0608032",
       "1204.1345",
-      "1112.1820",
-      "0403078"
+      "1112.1820"
     ]
   },
   "1512.00086_7": {
@@ -20232,12 +17214,7 @@
       ]
     ],
     "arxiv": [
-      "0501562",
-      "0604358",
-      "0411072",
-      "1104.0712",
-      "0407372",
-      "0003365"
+      "1104.0712"
     ]
   },
   "1512.00086_8": {
@@ -20275,9 +17252,7 @@
     "arxiv": [
       "1407.6367",
       "0911.5341",
-      "1102.1752",
-      "0607122",
-      "1506.04519"
+      "1102.1752"
     ]
   },
   "1512.00086_9": {
@@ -20312,14 +17287,8 @@
       ]
     ],
     "arxiv": [
-      "9509128",
-      "0511627",
       "1012.4014",
       "1106.4313",
-      "9805119",
-      "1003.3455",
-      "9509106",
-      "9509105",
       "1102.1752",
       "1103.5752"
     ]
@@ -20356,10 +17325,7 @@
     ],
     "arxiv": [
       "1202.0236",
-      "9609136",
-      "0312557",
-      "1103.5752",
-      "9707173"
+      "1103.5752"
     ]
   },
   "Observing_1": {
@@ -20494,7 +17460,6 @@
       "0711.1572",
       "0704.0458",
       "1103.0814",
-      "1012.2938",
       "1204.3662"
     ]
   },
@@ -20534,8 +17499,6 @@
     ],
     "arxiv": [
       "1509.04522",
-      "0508485",
-      "0507367",
       "1001.5230",
       "0905.3995"
     ]
@@ -20733,13 +17696,11 @@
     "arxiv": [
       "1006.1574",
       "1105.4809",
-      "0306219",
       "1511.03499",
       "1906.05298",
       "1307.0562",
       "1006.1698",
       "1006.2382",
-      "0702572",
       "0807.3545",
       "1501.03723",
       "1612.01546"
@@ -20800,9 +17761,7 @@
       "1704.03481",
       "1704.02504",
       "1105.4605",
-      "1003.5180",
       "1003.3889",
-      "0402341",
       "1905.08801",
       "1408.5888"
     ]
@@ -20852,14 +17811,11 @@
     ],
     "arxiv": [
       "1502.01027",
-      "0311060",
       "1505.07836",
-      "0703056",
       "1507.03801",
       "0705.2831",
       "1709.05438",
       "1602.02770",
-      "0703653",
       "1711.00915",
       "1710.01188",
       "1711.10492"
@@ -20906,7 +17862,6 @@
     ],
     "arxiv": [
       "1309.4458",
-      "0602473",
       "1506.03080",
       "0710.4146",
       "0801.1849",
@@ -20956,13 +17911,9 @@
     "arxiv": [
       "1802.10118",
       "0707.3578",
-      "0410209",
-      "0608531",
       "1907.04386",
       "1901.08075",
-      "0709.1354",
       "1811.04856",
-      "9708220",
       "1403.0007",
       "1811.01253"
     ]
@@ -21013,8 +17964,7 @@
       ]
     ],
     "arxiv": [
-      "1805.00714",
-      "9705032"
+      "1805.00714"
     ]
   },
   "1911.06925_9": {
@@ -21053,12 +18003,9 @@
     ],
     "arxiv": [
       "1809.01154",
-      "0403645",
       "1402.4814",
-      "0508046",
       "1709.05438",
       "1711.00915",
-      "0304239",
       "1710.01188",
       "1711.10492"
     ]
@@ -21098,7 +18045,6 @@
       "1711.07844",
       "0912.1643",
       "1311.7052",
-      "0809.1341",
       "1811.01253",
       "1306.2338"
     ]
@@ -21269,111 +18215,7 @@
       "1511.01998",
       "2007.05519",
       "1912.06152",
-      "0008283",
       "1611.05882"
-    ]
-  },
-  "Solar_1": {
-    "title": "Solar Dynamo Theory",
-    "question": "Research question: How has mean-field electrodynamics contributed to the development and refinement of solar dynamo models over the past five decades?",
-    "text": "For nearly half a century, mean-field electrodynamics has served as the workhorse of solar dynamo modeling, and is consequently very well-covered in a number of recent and not-so-recent monographs and review articles (  , a).",
-    "citations": [
-      [
-        "Ossendrijver",
-        "2003"
-      ],
-      [
-        "Krause",
-        "R\u00e4dler",
-        "1980"
-      ],
-      [
-        "Rempel",
-        "2006"
-      ],
-      [
-        "Moffatt",
-        "1978"
-      ],
-      [
-        "Hoyng",
-        "2003"
-      ],
-      [
-        "Parker",
-        "1979"
-      ]
-    ],
-    "arxiv": []
-  },
-  "Solar_2": {
-    "title": "Solar Dynamo Theory",
-    "question": "Given the limited context provided in this sentence fragment, it's challenging to formulate a precise research question. However, based on the mention of \"large-scale meridional flows,\" a potential expert-level research question could be:\n\nHow do large-scale meridional flows contribute to the transport of angular momentum in stellar interiors?\n\nThis question assumes the context is related to stellar dynamics and angular momentum transport, which are common topics when discussing meridional flows in astronomy. However, without more context from the surrounding text, this question may not fully capture the specific focus of the original research.",
-    "text": ") and large-scale meridional flows have taken up this role (see,   ).",
-    "citations": [
-      [
-        "Dikpati",
-        "Charbonneau",
-        "1999"
-      ],
-      [
-        "Durney",
-        "1995"
-      ],
-      [
-        "Following Wang",
-        "1989"
-      ],
-      [
-        "Wang",
-        "Sheeley",
-        "1991"
-      ],
-      [
-        "Wang",
-        "1991"
-      ],
-      [
-        "Choudhuri",
-        "1995"
-      ]
-    ],
-    "arxiv": []
-  },
-  "Solar_3": {
-    "title": "Solar Dynamo Theory",
-    "question": "Research question: How is the Babcock-Leighton mechanism parameterized in axisymmetric solar dynamo models to account for its inherently nonaxisymmetric nature?",
-    "text": "It is typically formulated as an ad hoc parameterization of the Babcock-Leighton mechanism, required here because a fundamentally nonaxisymmetric process must be \u201cforced\u201d into a global axisymmetric model (see,    ).",
-    "citations": [
-      [
-        "Chatterjee",
-        "2004"
-      ],
-      [
-        "Dikpati",
-        "Charbonneau",
-        "1999"
-      ],
-      [
-        "Durney",
-        "1995"
-      ],
-      [
-        "Charbonneau",
-        "2005"
-      ],
-      [
-        "Mu\u00f1oz-Jaramillo",
-        "2010"
-      ],
-      [
-        "Nandy",
-        "Choudhuri",
-        "2001"
-      ]
-    ],
-    "arxiv": [
-      "0405027"
     ]
   },
   "1812.01428_1": {
@@ -21411,9 +18253,6 @@
       ]
     ],
     "arxiv": [
-      "0612617",
-      "1001.1156",
-      "0612408",
       "0709.0302"
     ]
   },
@@ -21601,7 +18440,6 @@
     "arxiv": [
       "0906.2784",
       "1701.04627",
-      "1201.4163",
       "0709.3833"
     ]
   },
@@ -21638,7 +18476,6 @@
       ]
     ],
     "arxiv": [
-      "0510426",
       "1409.5785",
       "0910.0332"
     ]
@@ -21687,93 +18524,9 @@
     ],
     "arxiv": [
       "0807.1463",
-      "1310.4108",
       "1611.08612",
       "1801.06157",
-      "0604592",
-      "0311082",
       "1306.0954"
-    ]
-  },
-  "1805.01142_2": {
-    "title": "Chemodynamical History of the Galactic Bulge",
-    "question": "Based on this sentence, here are two focused research questions that are answered by the text:\n\n1. What is the metallicity range of the Galactic Bulge population as determined by comprehensive studies?\n\n2. What observational techniques and surveys have been employed to study the stellar populations and kinematics of the Galactic Bulge?",
-    "text": "Thorough studies of Bulge populations were carried out by ) and who presented a metallicity distribution function (MDF) in the range of \u22121<[Fe/H]<+1.\n1\n A color-magnitude diagram (CMD) for Bulge field stars was obtained by in parallel to the IR survey by the radial velocity study by the velocity dispersion derivation from integrated spectra by and the multifiber TiO band spectroscopic survey of 300 giants in Baade's Window (BW) by ).",
-    "citations": [
-      [
-        "Whitford",
-        "Rich",
-        "1983"
-      ],
-      [
-        "Frogel",
-        "Whitford",
-        "1987"
-      ],
-      [
-        "Terndrup",
-        "1988"
-      ],
-      [
-        "Rich",
-        "1988"
-      ],
-      [
-        "Sharples",
-        "1990"
-      ],
-      [
-        "Mould",
-        "1983"
-      ],
-      [
-        "Freeman",
-        "1988"
-      ]
-    ],
-    "arxiv": []
-  },
-  "1805.01142_3": {
-    "title": "Chemodynamical History of the Galactic Bulge",
-    "question": "Research question: How did observations and modeling in the 1990s conclusively establish the presence of a bar structure in the Milky Way's central region?",
-    "text": "The existence of the bar was put on firm grounds in the 1990s, from modeling the noncircular gas motions in the Bulge region ( ) near-IR data, in particular from the Cosmic Background Explorer (COBE) satellite ( ) and red clump giant (RCG) star counts .",
-    "citations": [
-      [
-        "Blitz",
-        "Spergel",
-        "1991"
-      ],
-      [
-        "Stanek",
-        "1994"
-      ],
-      [
-        "Weiland",
-        "1994"
-      ],
-      [
-        "Fux",
-        "1999"
-      ],
-      [
-        "Binney",
-        "1991"
-      ],
-      [
-        "Binney",
-        "1997"
-      ],
-      [
-        "Englmaier",
-        "Gerhard",
-        "1999"
-      ]
-    ],
-    "arxiv": [
-      "9609066",
-      "9404026",
-      "9903154",
-      "9810208"
     ]
   },
   "1805.01142_4": {
@@ -21812,9 +18565,7 @@
       ]
     ],
     "arxiv": [
-      "0210660",
       "1309.4570",
-      "0207116",
       "1011.0457",
       "0809.1682"
     ]
@@ -21859,7 +18610,6 @@
     ],
     "arxiv": [
       "1503.07660",
-      "1607.02615",
       "1511.04095",
       "1601.07761",
       "1708.01262",
@@ -21898,7 +18648,6 @@
       ]
     ],
     "arxiv": [
-      "0502316",
       "1706.04193",
       "1608.08354",
       "1608.07954",
@@ -21978,85 +18727,12 @@
       ]
     ],
     "arxiv": [
-      "0412132",
       "1702.02971",
       "1511.01490",
-      "0609087",
       "1611.08612",
       "1607.05299",
       "1311.4549"
     ]
-  },
-  "1410.6512_1": {
-    "title": "On the Cool Side: Modeling the Atmospheres of Brown Dwarfs and Giant Planets",
-    "question": "Research question: How has mixing-length theory been applied and developed in both astrophysical and planetary science contexts to model convective fluxes?",
-    "text": "Mixing-length theory ( ) uses dimensional and scaling arguments to model convective fluxes and has seen successful applications and development in both the astrophysical and planetary science literatures ( , ).",
-    "citations": [
-      [
-        "B\u00f6hm-Vitense",
-        "1958"
-      ],
-      [
-        "Spiegel",
-        "1971"
-      ],
-      [
-        "Vitense",
-        "1953"
-      ],
-      [
-        "Henyey",
-        "1965"
-      ],
-      [
-        "Castelli",
-        "1997"
-      ],
-      [
-        "Prandtl",
-        "1925"
-      ],
-      [
-        "Gierasch",
-        "Goody",
-        "1968"
-      ]
-    ],
-    "arxiv": []
-  },
-  "1410.6512_2": {
-    "title": "On the Cool Side: Modeling the Atmospheres of Brown Dwarfs and Giant Planets",
-    "question": "Research question: How comprehensive and extensive are the available pressure broadening parameters for H2 and H2 + He background gases across different molecular species and wavelength ranges in astronomical spectroscopy?",
-    "text": "Pressure broadening parameters for either H2 or H2 + He as the background gas are available for a limited set of molecules and do not typically span a wide range of wavelengths (  , 1996   ).",
-    "citations": [
-      [
-        "Brown",
-        "Plymate",
-        "1996"
-      ],
-      [
-        "Gamache",
-        "1996"
-      ],
-      [
-        "Gabard",
-        "2013"
-      ],
-      [
-        "Le Moal",
-        "Severin",
-        "1986"
-      ],
-      [
-        "Margolis",
-        "1993"
-      ],
-      [
-        "Bulanin",
-        "1984"
-      ]
-    ],
-    "arxiv": []
   },
   "1410.6512_3": {
     "title": "On the Cool Side: Modeling the Atmospheres of Brown Dwarfs and Giant Planets",
@@ -22091,8 +18767,6 @@
       ]
     ],
     "arxiv": [
-      "1209.1833",
-      "0804.1126",
       "1006.4702",
       "1311.6597",
       "1007.5070"
@@ -22165,7 +18839,6 @@
     "arxiv": [
       "1807.09773",
       "1207.2388",
-      "1808.05863",
       "1409.0568",
       "1609.02914",
       "1507.03604",
@@ -22214,78 +18887,6 @@
       "1601.01599",
       "1407.4132"
     ]
-  },
-  "1811.08041_3": {
-    "title": "Accuracy and Precision of Industrial Stellar Abundances",
-    "question": "Research question: What are the key components and objectives of the chemical pipeline design for analyzing spectral properties in astronomical surveys?",
-    "text": " see also  , de , ) present an overview of the science goals, spectral properties, and the design of the chemical pipeline.",
-    "citations": [
-      [
-        "Christlieb",
-        "2019"
-      ],
-      [
-        "Chiappini",
-        "2019"
-      ],
-      [
-        "Feltzing",
-        "2018"
-      ],
-      [
-        "Jong",
-        "2019"
-      ],
-      [
-        "Helmi",
-        "2019"
-      ],
-      [
-        "Bensby",
-        "2019"
-      ]
-    ],
-    "arxiv": [
-      "1903.02470",
-      "1903.02468",
-      "1903.02467",
-      "1903.02469"
-    ]
-  },
-  "Six_1": {
-    "title": "Six Decades of Spiral Density Wave Theory",
-    "question": "Research question: How do the rotation curves of external disk galaxies differ from the expected uniform rotation model, and what observations led to this discovery?",
-    "text": "It was natural to ask whether the same held true for external disk galaxies, and in the late 1950s to early 1970s, optical and radio astronomers discovered that, instead of being in a state of uniform rotation, \u03a9(\u03d6)= constant, the outer rotation curves of normal and barred spiral galaxies were roughly flat that is, \u03d6\u03a9(\u03d6)= constant, where \u03d6 is the radial distance from the rotation axis in the plane of the disk and \u03a9(\u03d6) is the angular speed of rotation (Van de   , ).\n",
-    "citations": [
-      [
-        "Burbidge",
-        "1960"
-      ],
-      [
-        "Roberts",
-        "Rots",
-        "1973"
-      ],
-      [
-        "Rubin",
-        "Ford",
-        "1970"
-      ],
-      [
-        "H\u00f6glund",
-        "Roberts",
-        "1965"
-      ],
-      [
-        "Hulst",
-        "1957"
-      ],
-      [
-        "Rubin",
-        "1964"
-      ]
-    ],
-    "arxiv": []
   },
   "1706.01629_1": {
     "title": "Markov Chain Monte Carlo Methods for Bayesian Data Analysis in Astronomy",
@@ -22386,16 +18987,9 @@
       ]
     ],
     "arxiv": [
-      "9803167",
-      "9709055",
-      "9806313",
       "1405.7364",
-      "9909475",
-      "9811062",
       "1301.7422",
-      "1405.1028",
-      "9710156",
-      "1502.05050"
+      "1405.1028"
     ]
   },
   "Red_2": {
@@ -22437,7 +19031,6 @@
       ]
     ],
     "arxiv": [
-      "0901.0773",
       "1410.3840"
     ]
   },
@@ -22475,9 +19068,6 @@
     "arxiv": [
       "1208.5178",
       "1409.5836",
-      "0410319",
-      "9606165",
-      "9708080",
       "1007.5065"
     ]
   },
@@ -22545,7 +19135,6 @@
       ]
     ],
     "arxiv": [
-      "0511841",
       "1206.6097"
     ]
   },
@@ -22695,12 +19284,10 @@
     "arxiv": [
       "1401.5323",
       "1701.07513",
-      "1702.08618",
       "1602.05176",
       "1307.0515",
       "1208.5028",
       "1608.02536",
-      "0503520",
       "1403.2713",
       "1302.4566",
       "0710.5294"
@@ -22763,10 +19350,8 @@
       "1007.0008",
       "1312.1585",
       "1206.4344",
-      "0906.2958",
       "1312.2025",
       "1302.5516",
-      "0903.3371",
       "1307.0416"
     ]
   },
@@ -22817,16 +19402,7 @@
       ]
     ],
     "arxiv": [
-      "1312.1328",
-      "0809.3990",
-      "1412.1764",
-      "1212.2638",
-      "1304.5058",
-      "1407.2622",
-      "0510224",
       "0710.5294",
-      "0906.2263",
-      "0903.3371",
       "1301.6674"
     ]
   },
@@ -22879,7 +19455,6 @@
       ]
     ],
     "arxiv": [
-      "1412.1764",
       "0710.5294",
       "1105.0021",
       "1404.1938",
@@ -22935,18 +19510,13 @@
     ],
     "arxiv": [
       "1306.2889",
-      "0902.1640",
-      "1209.4098",
-      "1304.5058",
       "1001.2890",
-      "1212.2638",
       "0710.0699",
       "1208.1760",
       "1205.1058",
       "1306.2890",
       "0912.3288",
       "1304.4215",
-      "1204.3539",
       "1307.0416",
       "1606.03030"
     ]
@@ -23002,12 +19572,8 @@
     ],
     "arxiv": [
       "0805.4263",
-      "0601186",
-      "0907.3909",
-      "0412028",
       "0810.2243",
-      "1509.01615",
-      "0703609"
+      "1509.01615"
     ]
   },
   "1911.05597_7": {
@@ -23060,15 +19626,11 @@
       ]
     ],
     "arxiv": [
-      "1102.1629",
       "1306.3266",
       "1509.07863",
-      "1512.00502",
       "1411.7412",
       "1204.1544",
-      "1602.05584",
       "0710.5294",
-      "1310.2590",
       "0707.1557"
     ]
   },
@@ -23120,61 +19682,10 @@
       ]
     ],
     "arxiv": [
-      "1410.5802",
       "1304.4377",
       "1211.2812",
-      "1307.4760",
-      "0604413",
       "1306.2890",
-      "1408.6164",
       "1306.2889"
-    ]
-  },
-  "1911.05597_9": {
-    "title": "How to Characterize Habitable Worlds and Signs of Life",
-    "question": "Research question: How do Earth's spectral signatures across various geological epochs inform our understanding of potentially habitable exoplanets?",
-    "text": "Earth's spectra at different geological stages (,       , 2014 ) provide additional data points for comparison with potentially habitable exoplanets.",
-    "citations": [
-      [
-        "Segura",
-        "2003"
-      ],
-      [
-        "Pavlov",
-        "2000"
-      ],
-      [
-        "Arney",
-        "2016"
-      ],
-      [
-        "Kaltenegger",
-        "2007"
-      ],
-      [
-        "Schindler",
-        "Kasting",
-        "2000"
-      ],
-      [
-        "Selsis",
-        "2000"
-      ],
-      [
-        "Domagal-Goldman",
-        "2011"
-      ],
-      [
-        "Traub",
-        "Jucks",
-        "2002"
-      ]
-    ],
-    "arxiv": [
-      "0203465",
-      "0205369",
-      "1610.04515",
-      "0609398"
     ]
   },
   "1911.05597_10": {
@@ -23216,12 +19727,7 @@
       ]
     ],
     "arxiv": [
-      "0610460",
-      "1212.2638",
-      "1304.5058",
-      "1407.2622",
-      "1302.5516",
-      "1310.2590"
+      "1302.5516"
     ]
   },
   "2011.13472_1": {
@@ -23287,7 +19793,6 @@
       ]
     ],
     "arxiv": [
-      "1007.0662",
       "1406.7354",
       "1509.07613",
       "1904.10943"
@@ -23346,8 +19851,7 @@
       "1611.06231",
       "1709.04738",
       "1807.07272",
-      "1603.03371",
-      "1210.3030"
+      "1603.03371"
     ]
   },
   "2011.13472_3": {
@@ -23394,9 +19898,7 @@
       ]
     ],
     "arxiv": [
-      "1908.09633",
       "1509.07613",
-      "1810.01957",
       "1411.3400",
       "1410.6610"
     ]
@@ -23487,11 +19989,8 @@
       ]
     ],
     "arxiv": [
-      "0604213",
       "0801.1118",
-      "1504.05704",
-      "0302103",
-      "0107212"
+      "1504.05704"
     ]
   },
   "2011.13472_6": {
@@ -23620,8 +20119,6 @@
       "1103.2050",
       "1607.08621",
       "1106.1256",
-      "9908152",
-      "0002495",
       "1507.01019"
     ]
   },
@@ -23727,57 +20224,6 @@
       "1610.08297"
     ]
   },
-  "2101.11735_3": {
-    "title": "Wave Dark Matter",
-    "question": "Research question: What is the primary theoretical motivation for the quantum chromodynamics (QCD) axion in particle physics?",
-    "text": "Perhaps the most well-motivated example is the quantum chromodynamics (QCD) axion (    , ).",
-    "citations": [
-      [
-        "Abbott",
-        "Sikivie",
-        "1983"
-      ],
-      [
-        "Weinberg",
-        "1978"
-      ],
-      [
-        "Peccei",
-        "Quinn",
-        "1977"
-      ],
-      [
-        "Preskill",
-        "1983"
-      ],
-      [
-        "Zhitnitsky",
-        "1980"
-      ],
-      [
-        "Wilczek",
-        "1978"
-      ],
-      [
-        "Kim",
-        "1979"
-      ],
-      [
-        "Dine",
-        "1981"
-      ],
-      [
-        "Shifman",
-        "1980"
-      ],
-      [
-        "Dine",
-        "Fischler",
-        "1983"
-      ]
-    ],
-    "arxiv": []
-  },
   "2101.11735_4": {
     "title": "Wave Dark Matter",
     "question": "Research question: What are the key developments in analyzing Klein-Gordon equation solutions in Schwarzschild and Kerr spacetimes?",
@@ -23827,12 +20273,9 @@
       ]
     ],
     "arxiv": [
-      "0705.2880",
       "0905.4720",
       "1207.2153",
-      "1004.3558",
-      "1401.5397",
-      "1312.4823"
+      "1004.3558"
     ]
   },
   "2101.11735_5": {
@@ -23880,8 +20323,6 @@
       ]
     ],
     "arxiv": [
-      "0306515",
-      "0608407",
       "1212.5225"
     ]
   },
@@ -23932,7 +20373,6 @@
     ],
     "arxiv": [
       "1004.3558",
-      "0705.2880",
       "0905.4720",
       "1609.06723"
     ]
@@ -23981,8 +20421,6 @@
       ]
     ],
     "arxiv": [
-      "9612232",
-      "0310890",
       "1709.05351",
       "0907.0735",
       "1207.6567",
@@ -24132,7 +20570,6 @@
     "arxiv": [
       "1607.08621",
       "1106.1256",
-      "1102.1551",
       "1004.4692",
       "1909.07346",
       "1307.3547"
@@ -24232,76 +20669,6 @@
       "1404.0670"
     ]
   },
-  "1511.05853_1": {
-    "title": "The Magellanic Stream: Circumnavigating the Galaxy",
-    "question": "Research question: How did early dynamical models characterize the orbital decay of the Magellanic Clouds within the Milky Way's halo?",
-    "text": "Early models assumed that the Clouds' orbits were slowly decaying into the MW halo potential by dynamical friction ( , 1982        , 2006 , 2007 ).",
-    "citations": [
-      [
-        "Gardiner",
-        "Noguchi",
-        "1996"
-      ],
-      [
-        "Bekki",
-        "Chiba",
-        "2005"
-      ],
-      [
-        "Gardiner",
-        "1994"
-      ],
-      [
-        "Heller",
-        "Rohlfs",
-        "1994"
-      ],
-      [
-        "Murai",
-        "Fujimoto",
-        "1980"
-      ],
-      [
-        "Connors",
-        "2004"
-      ],
-      [
-        "Moore",
-        "Davis",
-        "1994"
-      ],
-      [
-        "Davies",
-        "Wright",
-        "1977"
-      ],
-      [
-        "Mastropietro",
-        "2005"
-      ],
-      [
-        "Yoshizawa",
-        "Noguchi",
-        "2003"
-      ],
-      [
-        "Lin",
-        "Lynden-Bell",
-        "1977"
-      ],
-      [
-        "Lin",
-        "1995"
-      ]
-    ],
-    "arxiv": [
-      "0412318",
-      "9503095",
-      "0402187",
-      "9401008",
-      "0411648"
-    ]
-  },
   "1511.05853_2": {
     "title": "The Magellanic Stream: Circumnavigating the Galaxy",
     "question": "Research question: What are the key 21-cm surveys that have mapped the Magellanic Stream, and when were they conducted?",
@@ -24354,10 +20721,7 @@
       ]
     ],
     "arxiv": [
-      "0201039",
       "0901.1159",
-      "0504140",
-      "0411453",
       "0706.1578",
       "0802.1349"
     ]
@@ -24469,12 +20833,7 @@
       ]
     ],
     "arxiv": [
-      "0701500",
-      "0607052",
-      "1106.0044",
-      "0309272",
-      "0210501",
-      "0210615"
+      "1106.0044"
     ]
   },
   "1511.05853_5": {
@@ -24517,7 +20876,6 @@
       ]
     ],
     "arxiv": [
-      "0109211",
       "0805.0820"
     ]
   },
@@ -24558,9 +20916,7 @@
     ],
     "arxiv": [
       "1407.0762",
-      "9808023",
-      "0805.0820",
-      "0109211"
+      "0805.0820"
     ]
   },
   "1511.05853_7": {
@@ -24605,47 +20961,7 @@
       "1501.01972",
       "0711.2429",
       "0706.2009",
-      "1504.04372",
-      "0909.1916"
-    ]
-  },
-  "1511.05853_8": {
-    "title": "The Magellanic Stream: Circumnavigating the Galaxy",
-    "question": "Research question: How does the Stream model explain the mechanism of pure ram-pressure stripping in galaxy interactions?",
-    "text": "A Stream origin of pure ram-pressure stripping has been explored by many authors (  , a).",
-    "citations": [
-      [
-        "Meurer",
-        "1985"
-      ],
-      [
-        "Heller",
-        "Rohlfs",
-        "1994"
-      ],
-      [
-        "Moore",
-        "Davis",
-        "1994"
-      ],
-      [
-        "Mastropietro",
-        "2005"
-      ],
-      [
-        "Diaz",
-        "Bekki",
-        "2011"
-      ],
-      [
-        "Murali",
-        "2000"
-      ]
-    ],
-    "arxiv": [
-      "9912168",
-      "9401008",
-      "0411648"
+      "1504.04372"
     ]
   },
   "1511.05853_9": {
@@ -24682,8 +20998,7 @@
       "0906.3669",
       "0903.0818",
       "0807.2831",
-      "1002.0504",
-      "0608448"
+      "1002.0504"
     ]
   },
   "Evidence_1": {
@@ -24719,11 +21034,8 @@
       ]
     ],
     "arxiv": [
-      "0011465",
       "1110.4638",
-      "0608471",
       "0805.0691",
-      "0603444",
       "0811.0163"
     ]
   },
@@ -24790,220 +21102,12 @@
       ]
     ],
     "arxiv": [
-      "0301177",
       "1107.5427",
-      "0503002",
-      "0502549",
       "1406.4871",
       "1001.5012",
-      "0604179",
       "1006.4181",
-      "0005470",
       "1312.5616",
-      "0305387",
-      "1209.0761",
       "1009.4192"
-    ]
-  },
-  "1510.06042_2": {
-    "title": "The Quest for B Modes from Inflationary Gravitational Waves",
-    "question": "Research question: How do inflationary models account for the origin and characteristics of primordial perturbations in the early Universe?",
-    "text": "The overwhelming majority of those that survive involve inflation (   aa period of accelerated expansion in the very early Universe (within the first fraction of a nanosecond of the Universeand explain primordial perturbations as quantum fluctuations in the spacetime metric during inflation ( , b ).",
-    "citations": [
-      [
-        "Mukhanov",
-        "Chibisov",
-        "1981"
-      ],
-      [
-        "Starobinsky",
-        "1982"
-      ],
-      [
-        "Guth",
-        "1981"
-      ],
-      [
-        "Starobinsky",
-        "1980"
-      ],
-      [
-        "Linde",
-        "1982"
-      ],
-      [
-        "Sato",
-        "1981"
-      ],
-      [
-        "Albrecht",
-        "Steinhardt",
-        "1982"
-      ],
-      [
-        "Brout",
-        "1978"
-      ],
-      [
-        "Bardeen",
-        "1983"
-      ],
-      [
-        "Kazanas",
-        "1980"
-      ],
-      [
-        "Guth",
-        "Pi",
-        "1982"
-      ],
-      [
-        "Hawking",
-        "1982"
-      ]
-    ],
-    "arxiv": []
-  },
-  "1510.06042_3": {
-    "title": "The Quest for B Modes from Inflationary Gravitational Waves",
-    "question": "Research question: How does the stochastic background of gravitational waves predicted by SFSR inflation manifest in the CMB polarization?",
-    "text": "In addition to the predictions for primordial density perturbations discussed above, SFSR inflation also predicts the existence of a stochastic background of gravitational waves (GWs) ( , ) that then induce a specific gradient-free \u201cB-mode\u201d pattern in the polarization of the CMB (a,b   ).",
-    "citations": [
-      [
-        "Seljak",
-        "1997"
-      ],
-      [
-        "Kamionkowski",
-        "1997"
-      ],
-      [
-        "Zaldarriaga",
-        "Seljak",
-        "1997"
-      ],
-      [
-        "Seljak",
-        "Zaldarriaga",
-        "1997"
-      ],
-      [
-        "Starobinsky",
-        "1979"
-      ],
-      [
-        "Abbott",
-        "Wise",
-        "1984"
-      ],
-      [
-        "Rubakov",
-        "1982"
-      ],
-      [
-        "Fabbri",
-        "Pollock",
-        "1983"
-      ]
-    ],
-    "arxiv": [
-      "9609170",
-      "9609169"
-    ]
-  },
-  "1510.06042_4": {
-    "title": "The Quest for B Modes from Inflationary Gravitational Waves",
-    "question": "Research question: How have proposed space-based gravitational wave observatories been designed to detect the inflationary background?",
-    "text": "The idea to seek the inflationary background with GW detectors was considered by a, 2008and and has motivated mission concept studies for space-based GW observatories like the Big Bang Observer (, ) and DECIGO (DECi-hertz Interferometer Gravitational wave Observatory ).",
-    "citations": [
-      [
-        "Smith",
-        "2006"
-      ],
-      [
-        "Caldwell",
-        "1999"
-      ],
-      [
-        "Bar-Kana",
-        "1994"
-      ],
-      [
-        "Liddle",
-        "1994"
-      ],
-      [
-        "Crowder",
-        "Cornish",
-        "2005"
-      ],
-      [
-        "Phinney",
-        "2004"
-      ],
-      [
-        "Turner",
-        "1997"
-      ],
-      [
-        "Seto",
-        "2001"
-      ]
-    ],
-    "arxiv": [
-      "9701138",
-      "9807319",
-      "9401050",
-      "0108011",
-      "9408015"
-    ]
-  },
-  "1510.06042_5": {
-    "title": "The Quest for B Modes from Inflationary Gravitational Waves",
-    "question": "Research question: How can higher-order temperature-polarization correlations be utilized to reconstruct the lensing-induced deflection angle and subsequently reduce the B-mode contamination in CMB observations?",
-    "text": "Measurement of higher-order temperature-polarization correlations induced by lensing can be used to reconstruct the deflection angle, \u03b4\n\u03b8\n(\n\u03b8\n)=\u2207\u03a6(\n\u03b8\nas a function of position on the sky ( , and these may then be used to reduce the lensing-induced curl ( ).",
-    "citations": [
-      [
-        "Hu",
-        "Okamoto",
-        "2002"
-      ],
-      [
-        "Seljak",
-        "Hirata",
-        "2004"
-      ],
-      [
-        "Zaldarriaga",
-        "Seljak",
-        "1999"
-      ],
-      [
-        "Kesden",
-        "2003"
-      ],
-      [
-        "Knox",
-        "Song",
-        "2002"
-      ],
-      [
-        "Seljak",
-        "Zaldarriaga",
-        "1999"
-      ],
-      [
-        "Kesden",
-        "2002"
-      ]
-    ],
-    "arxiv": [
-      "9810257",
-      "0111606",
-      "0302536",
-      "0202434",
-      "0310163",
-      "0202286"
     ]
   },
   "1510.06042_6": {
@@ -25049,47 +21153,7 @@
       "1107.5427",
       "1005.1056",
       "1307.5083",
-      "0210603",
-      "1203.0302",
-      "1209.0761"
-    ]
-  },
-  "1510.06042_7": {
-    "title": "The Quest for B Modes from Inflationary Gravitational Waves",
-    "question": "Research question: What are the key steps in schematically outlining the calculation of gravitational wave emission from compact binary systems?",
-    "text": "Here, we therefore only outline the calculation schematically and refer the reader to one of the many good pedagogical references (   ) for the technical details.",
-    "citations": [
-      [
-        "Liddle",
-        "Lyth",
-        "2000"
-      ],
-      [
-        "Mukhanov",
-        "2005"
-      ],
-      [
-        "Weinberg",
-        "2008"
-      ],
-      [
-        "Lyth",
-        "Riotto",
-        "1999"
-      ],
-      [
-        "Dodelson",
-        "2003"
-      ],
-      [
-        "Baumann",
-        "McAllister",
-        "2015"
-      ]
-    ],
-    "arxiv": [
-      "0301177",
-      "1404.2601"
+      "1203.0302"
     ]
   },
   "1510.06042_8": {
@@ -25161,10 +21225,7 @@
     ],
     "arxiv": [
       "1311.2847",
-      "1310.1554",
       "1105.2044",
-      "0811.3911",
-      "0906.1188",
       "0901.0265"
     ]
   },
@@ -25200,9 +21261,7 @@
     ],
     "arxiv": [
       "1310.3913",
-      "0011033",
-      "0912.4979",
-      "0110693"
+      "0912.4979"
     ]
   },
   "The_2": {
@@ -25316,9 +21375,7 @@
       ]
     ],
     "arxiv": [
-      "1312.4843",
       "1404.2431",
-      "1009.1450",
       "1404.2177",
       "1007.3370"
     ]
@@ -25366,7 +21423,6 @@
       ]
     ],
     "arxiv": [
-      "1101.4645",
       "1301.1173",
       "0705.3244"
     ]
@@ -25406,8 +21462,7 @@
     "arxiv": [
       "0904.1414",
       "0902.0793",
-      "0901.4124",
-      "0208238"
+      "0901.4124"
     ]
   },
   "Transneptunian_1": {
@@ -25445,10 +21500,7 @@
     "arxiv": [
       "1205.7065",
       "1906.00023",
-      "1901.06040",
-      "0703558",
-      "1911.07897",
-      "0712.0553"
+      "1901.06040"
     ]
   },
   "Transneptunian_2": {
@@ -25576,7 +21628,6 @@
     "arxiv": [
       "1308.4181",
       "0802.2945",
-      "0511321",
       "1203.6685",
       "0712.1825"
     ]
@@ -25627,14 +21678,7 @@
       ]
     ],
     "arxiv": [
-      "1006.0064",
-      "0203082",
-      "0006053",
-      "1505.00811",
-      "1304.7762",
-      "0506608",
-      "0006289",
-      "0503672"
+      "1505.00811"
     ]
   },
   "1701.04762_2": {
@@ -25676,12 +21720,8 @@
     ],
     "arxiv": [
       "1305.4634",
-      "0004240",
-      "1112.3264",
       "1304.5280",
-      "1401.2990",
-      "0109237",
-      "0305061"
+      "1401.2990"
     ]
   },
   "1701.04762_3": {
@@ -25721,55 +21761,8 @@
       ]
     ],
     "arxiv": [
-      "1006.0064",
-      "0308402",
       "1501.02937",
-      "0506608",
-      "0703495",
-      "0503672",
       "1003.4404"
-    ]
-  },
-  "1701.04762_4": {
-    "title": "Stellar Dynamics and Stellar Phenomena Near a Massive Black Hole",
-    "question": "Research question: What are the detection prospects for Extreme Mass Ratio Inspirals (EMRIs) involving very low-mass stars and gravitational lensing events near massive black holes in galactic centers?",
-    "text": "Finally, it is possible that EMRIs from very low-mass stars, which are dense enough to withstand the MBH tides, will be detected  and that gravitational lensing of background stars by the MBH and stellar BHs around it will be observed (  ).",
-    "citations": [
-      [
-        "Alexander",
-        "Sternberg",
-        "1999"
-      ],
-      [
-        "Alexander",
-        "Loeb",
-        "2001"
-      ],
-      [
-        "Nusser",
-        "Broadhurst",
-        "2004"
-      ],
-      [
-        "Wardle",
-        "Yusef-Zadeh",
-        "1992"
-      ],
-      [
-        "Alexander",
-        "2001"
-      ],
-      [
-        "Freitag",
-        "2003"
-      ]
-    ],
-    "arxiv": [
-      "0004240",
-      "0407220",
-      "9811038",
-      "0109237",
-      "0009404"
     ]
   },
   "1312.2871_1": {
@@ -25876,7 +21869,6 @@
       ]
     ],
     "arxiv": [
-      "1009.5890",
       "0901.0517",
       "0806.4635",
       "1204.4782",
@@ -25893,7 +21885,6 @@
       "1111.7023",
       "0910.0150",
       "1110.4313",
-      "1208.5265",
       "1304.2041",
       "0909.3773"
     ]
@@ -25978,7 +21969,6 @@
       "0811.0713",
       "0909.3773",
       "1005.1955",
-      "1207.7292",
       "0901.2481",
       "0902.3913",
       "1207.7273"
@@ -26046,242 +22036,12 @@
       ]
     ],
     "arxiv": [
-      "1507.04375",
       "1111.7072",
       "1408.0236",
       "1406.7657",
-      "0312297",
       "1409.5680",
       "1503.07057"
     ]
-  },
-  "Stellar_2": {
-    "title": "Stellar Model Chromospheres and Spectroscopic Diagnostics",
-    "question": "Research question: How have different stellar types been modeled using the Empirical Mode Decomposition (EMD) technique, and which researchers have contributed to these models for specific stars?",
-    "text": ") computed EMD models for G and K dwarfs, and models for M dwarfs were computed by and ). \u03f5 Eri was modeled by b) and \u03b1 Cen A by \u03be Boo A by T Tau by aand hybrid stars by ).",
-    "citations": [
-      [
-        "Pagano",
-        "2000"
-      ],
-      [
-        "Sim",
-        "Jordan",
-        "2005"
-      ],
-      [
-        "Jordan",
-        "1987"
-      ],
-      [
-        "Osten",
-        "2006"
-      ],
-      [
-        "Hartmann",
-        "1985"
-      ],
-      [
-        "Mathioudakis",
-        "1991"
-      ],
-      [
-        "Pagano",
-        "2004"
-      ],
-      [
-        "Jordan",
-        "2001"
-      ],
-      [
-        "Butler",
-        "1987"
-      ],
-      [
-        "Smith",
-        "2002"
-      ],
-      [
-        "Brown",
-        "1984"
-      ]
-    ],
-    "arxiv": [
-      "0310901",
-      "0201143",
-      "0604255",
-      "0506060"
-    ]
-  },
-  "Stellar_3": {
-    "title": "Stellar Model Chromospheres and Spectroscopic Diagnostics",
-    "question": "Research question: How do high-resolution spectra of the Ca II K line vary with stellar activity levels in solar-like stars?",
-    "text": "Surveys of stellar H and K emission lines include those by a) 2000and ). \nFigure 5\n shows simulations of high-resolution spectra of the Caii K line for a solar-like star with different activity levels, as indicated by the strength of their emission cores.",
-    "citations": [
-      [
-        "Linsky",
-        "1979"
-      ],
-      [
-        "Pasquini",
-        "1988"
-      ],
-      [
-        "Houdebine",
-        "2009"
-      ],
-      [
-        "Pace",
-        "Pasquini",
-        "2004"
-      ],
-      [
-        "Wilson",
-        "1978"
-      ],
-      [
-        "Henry",
-        "1996"
-      ],
-      [
-        "Robinson",
-        "1990"
-      ],
-      [
-        "Pasquini",
-        "1992"
-      ],
-      [
-        "Vaughan",
-        "Preston",
-        "1980"
-      ]
-    ],
-    "arxiv": [
-      "0406651"
-    ]
-  },
-  "Stellar_4": {
-    "title": "Stellar Model Chromospheres and Spectroscopic Diagnostics",
-    "question": "Research question: How did the extensive IUE spectral data contribute to our understanding of Mgii emission across various stellar types and evolutionary stages?",
-    "text": "The large number of spectra obtained with IUE allowed surveys of different types of stars including studies of the age dependence of stellar Mgii emission, and emission from RS CVn binaries (W UMa-type binaries (T Tauri stars ( Cepheids (and G\u2013M giants and supergiants (, ).",
-    "citations": [
-      [
-        "Imhoff",
-        "Giampapa",
-        "1980"
-      ],
-      [
-        "Fernandez-Figueroa",
-        "1987"
-      ],
-      [
-        "Robinson",
-        "Carpenter",
-        "1995"
-      ],
-      [
-        "Giampapa",
-        "1981"
-      ],
-      [
-        "Schmidt",
-        "Parsons",
-        "1984"
-      ],
-      [
-        "Carpenter",
-        "1987"
-      ],
-      [
-        "Rucinski",
-        "1985"
-      ],
-      [
-        "Calvet",
-        "1985"
-      ]
-    ],
-    "arxiv": []
-  },
-  "Stellar_5": {
-    "title": "Stellar Model Chromospheres and Spectroscopic Diagnostics",
-    "question": "Given the somewhat fragmented nature of this sentence, it's challenging to formulate a single, coherent research question. However, I'll do my best to create a relevant question based on the information provided:\n\nWhat types of stellar models have been recently developed to encompass a wide range of stellar classes, including K-type dwarfs, M dwarfs, giants, supergiants, and binary systems?",
-    "text": "These new models include the K2 V star \u03f5 Eri (M dwarfs (giants ( , supergiants (and binary stars (, ).",
-    "citations": [
-      [
-        "Ayres",
-        "1986"
-      ],
-      [
-        "McClintock",
-        "1975"
-      ],
-      [
-        "Hartmann",
-        "Avrett",
-        "1984"
-      ],
-      [
-        "Baliunas",
-        "1979"
-      ],
-      [
-        "Carpenter",
-        "1991"
-      ],
-      [
-        "Simon",
-        "1980"
-      ],
-      [
-        "Simon",
-        "Linsky",
-        "1980"
-      ],
-      [
-        "Basri",
-        "1981"
-      ]
-    ],
-    "arxiv": []
-  },
-  "Stellar_6": {
-    "title": "Stellar Model Chromospheres and Spectroscopic Diagnostics",
-    "question": "Research question: How did the availability of Mgii h and k line profiles influence the development of stellar atmosphere models for different spectral types and luminosity classes?",
-    "text": "With the availability of Mgii h and k line profiles, many authors computed models for G, K, and M dwarfs ( , ) and models for giants and supergiants ( , ).",
-    "citations": [
-      [
-        "Kelch",
-        "1978"
-      ],
-      [
-        "Ayres",
-        "Linsky",
-        "1975"
-      ],
-      [
-        "Jasi\u0144ski",
-        "1987"
-      ],
-      [
-        "Basri",
-        "1981"
-      ],
-      [
-        "Doyle",
-        "1994"
-      ],
-      [
-        "Eriksson",
-        "1983"
-      ],
-      [
-        "Ayres",
-        "1974"
-      ]
-    ],
-    "arxiv": []
   },
   "Stellar_7": {
     "title": "Stellar Model Chromospheres and Spectroscopic Diagnostics",
@@ -26318,7 +22078,6 @@
       "1210.6885",
       "1602.09142",
       "1410.2112",
-      "0510224",
       "1604.01032",
       "1604.04776"
     ]
@@ -26392,14 +22151,10 @@
       "1910.09864",
       "1709.08137",
       "2108.06191",
-      "1908.11743",
       "1507.07496",
       "2109.12847",
       "2108.05587",
-      "1512.02237",
       "2007.14648",
-      "1804.01025",
-      "1904.11840",
       "2102.06259",
       "2102.05173",
       "2002.02133"
@@ -26491,112 +22246,6 @@
       "1805.02650"
     ]
   },
-  "2102.11712_2": {
-    "title": "Microarcsecond Astrometry: Science Highlights from Gaia",
-    "question": "Research question: What are the key software tools and packages utilized in modern astronomical data analysis and research?",
-    "text": "This work made use of the following software: Astropy, a community-developed core Python package for Astronomy (Astropy Collab. et al. 2013, 2018 \nhttp://www.astropy.org\nIPython (, \nhttps://ipython.org/\nJupyter (\nhttps://jupyter.org/\nMatplotlib (, \nhttps://matplotlib.org\nSciPy (, \nhttps://www.scipy.org\nNumPy (, \nhttps://numpy.org\nscikit-learn (, \nhttps://scikit-learn.org/stable/\nand TOPCAT (, \nhttp://www.starlink.ac.uk/topcat/\n).",
-    "citations": [
-      [
-        "Virtanen",
-        "2020"
-      ],
-      [
-        "P\u00e9rez",
-        "Granger",
-        "2007"
-      ],
-      [
-        "Pedregosa",
-        "2011"
-      ],
-      [
-        "Harris",
-        "2020"
-      ],
-      [
-        "Hunter",
-        "2007"
-      ],
-      [
-        "Taylor",
-        "2005"
-      ]
-    ],
-    "arxiv": [
-      "2006.10256",
-      "1907.10121",
-      "1201.0490"
-    ]
-  },
-  "1601.02985_1": {
-    "title": "Interstellar Hydrides",
-    "question": "Research question: What molecular species and ions have been detected in cometary comae, particularly focusing on water-related and halogen-bearing compounds?",
-    "text": "The list of detected species includes water vapor (, OH, and the related ions H3O+, H2O+, and OH+ NH3, CH, and CH+, as well as HF and the chlorine bearing species HCl and H2Cl+ (van der  , 2014 , 2013  a,b).",
-    "citations": [
-      [
-        "Gonz\u00e1lez-Alfonso",
-        "2012"
-      ],
-      [
-        "Muller",
-        "2014"
-      ],
-      [
-        "Werf",
-        "2010"
-      ],
-      [
-        "Rangwala",
-        "2011"
-      ],
-      [
-        "Kamenetzky",
-        "2012"
-      ],
-      [
-        "Yang",
-        "2013"
-      ],
-      [
-        "Omont",
-        "2013"
-      ]
-    ],
-    "arxiv": []
-  },
-  "1601.02985_2": {
-    "title": "Interstellar Hydrides",
-    "question": "Research question: What molecular species have been recently detected in dense photodissociation regions (PDRs)?",
-    "text": "Recent detections in dense PDRs include NH3, CH+, SH+, OH+, H2O, OH, HF, CH and H2Cl+ (,     van der , 2013 ).",
-    "citations": [
-      [
-        "Neufeld",
-        "2012"
-      ],
-      [
-        "Tak",
-        "2012"
-      ],
-      [
-        "Nagy",
-        "2013"
-      ],
-      [
-        "Goicoechea",
-        "2011"
-      ],
-      [
-        "Batrla",
-        "Wilson",
-        "2003"
-      ],
-      [
-        "Habart",
-        "2010"
-      ]
-    ],
-    "arxiv": []
-  },
   "1810.00933_1": {
     "title": "Atomic and Ionized Microstructures in the Diffuse Interstellar Medium",
     "question": "Research question: How does magnetized turbulence behave in weakly ionized gases, and what are the key findings from recent studies on this topic?",
@@ -26635,56 +22284,8 @@
       ]
     ],
     "arxiv": [
-      "0301062",
-      "0105235",
       "0801.0486",
       "1412.3452"
-    ]
-  },
-  "1312.2913_1": {
-    "title": "Gamma-Ray Pulsar Revolution",
-    "question": "Research question: Which pulsars, beyond the well-known Crab, Vela, and Geminga, were detected by EGRET during its mission, and how did these detections compare to other contemporary gamma-ray instruments?",
-    "text": "Apart from studying the Crab (Vela (and Geminga (, EGRET, which could count on a significant contemporary pulsar radio monitoring campaign, detected three more pulsars, namely PSR B1706-44 (, 1996PSR B1055-52  and PSR B1951+32 (whereas PSR B1509-58 was only detected at low energy by the Comptel instrument (also on board CGRO .",
-    "citations": [
-      [
-        "Mayer-Hasselwander",
-        "1994"
-      ],
-      [
-        "Kanbach",
-        "1994"
-      ],
-      [
-        "Nolan",
-        "1993"
-      ],
-      [
-        "Kuiper",
-        "1999"
-      ],
-      [
-        "Gehrels",
-        "1994"
-      ],
-      [
-        "Fierro",
-        "1993"
-      ],
-      [
-        "Thompson",
-        "1992"
-      ],
-      [
-        "Mattox",
-        "1992"
-      ],
-      [
-        "Ramanamurthy",
-        "1995"
-      ]
-    ],
-    "arxiv": [
-      "9903474"
     ]
   },
   "1312.2913_2": {
@@ -26720,8 +22321,7 @@
     "arxiv": [
       "1112.1979",
       "1308.6698",
-      "1211.3997",
-      "1105.5028"
+      "1211.3997"
     ]
   },
   "1810.01815_1": {
@@ -26822,12 +22422,10 @@
     ],
     "arxiv": [
       "1602.02856",
-      "0409323",
       "1705.03887",
       "1307.2886",
       "1704.06317",
       "1404.4635",
-      "0811.2606",
       "1511.02526",
       "1311.7664",
       "1707.01413"
@@ -26913,113 +22511,8 @@
       "0904.1661",
       "0704.1652",
       "1208.5879",
-      "1507.03956",
-      "1310.0391"
+      "1507.03956"
     ]
-  },
-  "Astrophysics_2": {
-    "title": "Astrophysics with Extraterrestrial Materials",
-    "question": "Research question: How do the isotopic ratios of silicon and magnesium in certain presolar grains compare to those predicted by nova nucleosynthesis models?",
-    "text": "These ratios are higher than attainable in AGB stars or SNe ( ) but are in the range of nova models Si and Mg isotopes in a few grains further support a nova origin (a ).",
-    "citations": [
-      [
-        "Gyngard",
-        "2010"
-      ],
-      [
-        "Rauscher",
-        "2002"
-      ],
-      [
-        "Leitner",
-        "2012"
-      ],
-      [
-        "Gyngard",
-        "2011"
-      ],
-      [
-        "Nguyen",
-        "Messenger",
-        "2014"
-      ],
-      [
-        "Boothroyd",
-        "Sackmann",
-        "1999"
-      ]
-    ],
-    "arxiv": [
-      "0112478"
-    ]
-  },
-  "Astrophysics_3": {
-    "title": "Astrophysics with Extraterrestrial Materials",
-    "question": "Research question: What short-lived radioactive isotopes, besides 129I, 244Pu, and 26Al, have been discovered in meteorites that provide evidence of nucleosynthesis shortly before or during Solar System formation?",
-    "text": "Since the seminal discoveries yielding evidence of extinct 129I, 244Pu, and 26Al in meteorites ( extensive studies have revealed the presence in the early Solar System of many radioactive isotopes with lifetimes far shorter than the age of the Solar System (see sidebar Radiogenic Isotopes) ( ).",
-    "citations": [
-      [
-        "Lee",
-        "1976"
-      ],
-      [
-        "Davis",
-        "McKeegan",
-        "2014"
-      ],
-      [
-        "Podosek",
-        "1970"
-      ],
-      [
-        "Reynolds",
-        "1960"
-      ],
-      [
-        "Huss",
-        "2009"
-      ],
-      [
-        "Dauphas",
-        "Chaussidon",
-        "2011"
-      ]
-    ],
-    "arxiv": [
-      "1105.5172"
-    ]
-  },
-  "Astrophysics_4": {
-    "title": "Astrophysics with Extraterrestrial Materials",
-    "question": "Research question:\n\nWhat recent technological advancements have enabled the detection and characterization of isotopic anomalies in refractory elements within calcium-aluminum-rich inclusions (CAIs) and bulk meteorites?",
-    "text": "For example, continual technological improvements in recent years have allowed for characterization of an ever-expanding list of isotopic anomalies in various elements (, Ca, Ti, Mo, Ba, Cr, osmium) seen at the scale of CAIs, bulk meteorites, and/or stepwise dissolution of bulk meteorites ( and references therein  , ).",
-    "citations": [
-      [
-        "Carlson",
-        "2007"
-      ],
-      [
-        "Qin",
-        "2010"
-      ],
-      [
-        "Trinquier",
-        "2009"
-      ],
-      [
-        "Chen",
-        "2011"
-      ],
-      [
-        "Dauphas",
-        "2014"
-      ],
-      [
-        "Brennecka",
-        "2013"
-      ]
-    ],
-    "arxiv": []
   },
   "Astrophysics_5": {
     "title": "Astrophysics with Extraterrestrial Materials",
@@ -27056,69 +22549,6 @@
       "1204.4337",
       "1206.5540",
       "1010.1579"
-    ]
-  },
-  "1712.05669_1": {
-    "title": "The Pluto System After New Horizons",
-    "question": "1. What volatile ices were detected on Pluto's surface through spectroscopic analysis?\n\n2. When and how was Pluto's atmosphere first detected spectroscopically?\n\n3. How do the densities of Pluto and Charon compare, and how were they first measured separately?\n\n4. What technique enabled the first direct imaging of Pluto's surface features?\n\n5. What is notable about Charon's light curve amplitude, and when was it first measured?\n\n6. How many of Pluto's small satellites were initially discovered, and when?\n\n7. What changes have been observed in Pluto's atmospheric pressure and structure over time?\n\n8. What evidence exists for temporal changes on Pluto's surface?\n\n9. What compounds containing ammonia have been detected on Charon's surface?",
-    "text": "Those discoveries included the (a) detection of the volatile ices N2 and CO on Pluto's surface ((b) first spectroscopic detections of Pluto's atmosphere ((c) first measurements of the separate (and somewhat different) densities of Pluto and Charon ( , (d) first direct imaging of features on Pluto's surface (a(e) first measurement of Charon's surprisingly low-amplitude (8%) light curve ((f) first discovery of two of Pluto's small satellites (, (g) detection of significantly increasing atmospheric pressure and vertical structure on Pluto (, (h) detection of temporal change on Pluto's surface (, band (i) reports of NH3-bearing compounds on Charon's surface (, ).",
-    "citations": [
-      [
-        "Elliot",
-        "2006"
-      ],
-      [
-        "Buie",
-        "2010"
-      ],
-      [
-        "Stern",
-        "1997"
-      ],
-      [
-        "Buie",
-        "2002"
-      ],
-      [
-        "Weaver",
-        "2006"
-      ],
-      [
-        "Olkin",
-        "2003"
-      ],
-      [
-        "Sicardy",
-        "2006"
-      ],
-      [
-        "Stern",
-        "2006"
-      ],
-      [
-        "Young",
-        "1992"
-      ],
-      [
-        "Null",
-        "1993"
-      ],
-      [
-        "Owen",
-        "1993"
-      ],
-      [
-        "Cook",
-        "2007"
-      ],
-      [
-        "Foust",
-        "1997"
-      ]
-    ],
-    "arxiv": [
-      "0601018",
-      "0512491"
     ]
   },
   "1712.05669_2": {
@@ -27177,139 +22607,8 @@
     "arxiv": [
       "1604.08468",
       "1706.04232",
-      "1706.03389",
-      "1702.03783",
-      "1610.01679",
-      "1608.06955",
-      "1704.01511"
+      "1702.03783"
     ]
-  },
-  "1712.05669_3": {
-    "title": "The Pluto System After New Horizons",
-    "question": "Research question: What are the primary scientific capabilities and instruments aboard the New Horizons spacecraft for studying Pluto and its environment?",
-    "text": "The NH spacecraft carries a payload of seven advanced instruments (   , which include the following key capabilities: medium- and high-resolution panchromatic visible wavelength mapping, medium-resolution visible wavelength color mapping, IR surface composition mapping, stereo-imaging for terrain height mapping, UV spectroscopy for atmospheric composition and vertical structure studies, plasma spectrometry to measure the escape rate and composition of ionized gases escaping from Pluto's atmosphere, as well as the interaction of the atmosphere with the solar wind, radio science to measure the brightness temperature of Pluto's surface to determine the vertical temperature\u2013pressure profile of Pluto's lower atmosphere and make bistatic radar measurements at 4.2-cm wavelengths, and dust impactor searches for particulates in orbit around Pluto.",
-    "citations": [
-      [
-        "Weaver",
-        "2008"
-      ],
-      [
-        "Tyler",
-        "2008"
-      ],
-      [
-        "Hor\u00e1nyi",
-        "2008"
-      ],
-      [
-        "Reuter",
-        "2008"
-      ],
-      [
-        "Stern",
-        "2008"
-      ],
-      [
-        "McNutt",
-        "2008"
-      ],
-      [
-        "Cheng",
-        "2008"
-      ],
-      [
-        "McComas",
-        "2008"
-      ]
-    ],
-    "arxiv": [
-      "0709.4270",
-      "0709.4281",
-      "0711.4697",
-      "0709.4279",
-      "0709.4261",
-      "0709.4428",
-      "0709.4505",
-      "0709.4278"
-    ]
-  },
-  "Faltering_1": {
-    "title": "Faltering Steps Into the Galaxy: The Boundary Regions of the Heliosphere",
-    "question": "Given the limited context provided in this sentence, it's challenging to formulate a highly specific research question. However, based on the information available, a potential research question could be:\n\nWhat are the recent approaches to modeling neutral hydrogen gas in astronomical simulations across different research groups?\n\nThis question addresses the main points of the sentence:\n1. It refers to recent papers\n2. It mentions different research groups\n3. It involves a system (likely a simulation or model)\n4. It concerns the treatment of neutral hydrogen gas\n\nThe question is expert-level as it requires knowledge of current research in astronomical simulations and modeling of neutral gas. It's focused on a specific aspect (neutral H gas treatment) and relevant to the content of the sentence.",
-    "text": "Representative recent papers from different groups that use this system with various treatments of the neutral H gas include aand ).",
-    "citations": [
-      [
-        "Heerikhuisen",
-        "2014"
-      ],
-      [
-        "Izmodenov",
-        "2009"
-      ],
-      [
-        "Zank",
-        "2013"
-      ],
-      [
-        "Grygorczuk",
-        "2011"
-      ],
-      [
-        "Pogorelov",
-        "2009"
-      ],
-      [
-        "Ratkiewicz",
-        "2008"
-      ],
-      [
-        "Opher",
-        "2012"
-      ],
-      [
-        "Washimi",
-        "2011"
-      ]
-    ],
-    "arxiv": []
-  },
-  "Faltering_2": {
-    "title": "Faltering Steps Into the Galaxy: The Boundary Regions of the Heliosphere",
-    "question": "Research question: How has the understanding of the interaction between the solar wind and the local interstellar medium evolved since the early 2000s, particularly regarding the two-shock model and the role of the interstellar magnetic field?",
-    "text": "However, the general earlier consensus (circa 2000) was that the interaction of the SW with the LISM was of a two-shock character (i.e., the HTS and a BS existed owing to the supersonic relative motion of the Sun with respect to the LISM) ( , 1997   b even for an exceptionally strong LISM magnetic field .",
-    "citations": [
-      [
-        "Zank",
-        "1996"
-      ],
-      [
-        "Florinski",
-        "2004"
-      ],
-      [
-        "Pauls",
-        "1995"
-      ],
-      [
-        "Williams",
-        "1997"
-      ],
-      [
-        "Baranov",
-        "1971"
-      ],
-      [
-        "Pauls",
-        "Zank",
-        "1996"
-      ],
-      [
-        "Baranov",
-        "Malama",
-        "1993"
-      ]
-    ],
-    "arxiv": []
   },
   "Faltering_3": {
     "title": "Faltering Steps Into the Galaxy: The Boundary Regions of the Heliosphere",
@@ -27350,39 +22649,6 @@
       "1310.6497"
     ]
   },
-  "Faltering_4": {
-    "title": "Faltering Steps Into the Galaxy: The Boundary Regions of the Heliosphere",
-    "question": "Research question: How did Voyager 2's crossing of the heliospheric termination shock at 84 AU contribute to our understanding of plasma properties in the outer heliosphere?",
-    "text": "V2 crossed the HTS in  at a distance of 84 AU (  providing the first plasma measurements of the termination shock (TS) and heliosheath region.",
-    "citations": [
-      [
-        "Burlaga",
-        "2008"
-      ],
-      [
-        "Stone",
-        "2008"
-      ],
-      [
-        "Richardson",
-        "2008"
-      ],
-      [
-        "Decker",
-        "2008"
-      ],
-      [
-        "Gurnett",
-        "Kurth",
-        "2008"
-      ],
-      [
-        "August",
-        "2007"
-      ]
-    ],
-    "arxiv": []
-  },
   "Faltering_5": {
     "title": "Faltering Steps Into the Galaxy: The Boundary Regions of the Heliosphere",
     "question": "Research question: How have IBEX-Lo observations contributed to our understanding of the Local Interstellar Medium (LISM) properties, and what are the main points of contention in their interpretation?",
@@ -27415,9 +22681,7 @@
       ]
     ],
     "arxiv": [
-      "1202.0485",
-      "1202.0415",
-      "1409.8260"
+      "1202.0415"
     ]
   },
   "Faltering_6": {
@@ -27452,8 +22716,7 @@
       ]
     ],
     "arxiv": [
-      "1003.4826",
-      "1404.2170"
+      "1003.4826"
     ]
   },
   "Grid-Based_1": {
@@ -27498,83 +22761,6 @@
       "1304.7126",
       "1110.1379",
       "1309.7629"
-    ]
-  },
-  "Grid-Based_2": {
-    "title": "Grid-Based Hydrodynamics in Astrophysical Fluid Flows",
-    "question": "Research question: How have ray-tracing techniques been integrated with grid-based hydrodynamic codes in astrophysical simulations?",
-    "text": "Ray-tracing methods, for example, have been coupled successfully with grid-based HD codes, using the so-called long characteristics method ( ) or the popular short characteristics method ( ).",
-    "citations": [
-      [
-        "Abel",
-        "1999"
-      ],
-      [
-        "Whalen",
-        "Norman",
-        "2006"
-      ],
-      [
-        "Cen",
-        "2002"
-      ],
-      [
-        "Nakamoto",
-        "2001"
-      ],
-      [
-        "Susa",
-        "2006"
-      ],
-      [
-        "Mellema",
-        "2006"
-      ]
-    ],
-    "arxiv": [
-      "0110306",
-      "0505213",
-      "9812151",
-      "0508214",
-      "0508416",
-      "0601642"
-    ]
-  },
-  "Grid-Based_3": {
-    "title": "Grid-Based Hydrodynamics in Astrophysical Fluid Flows",
-    "question": "Research question: How has the development of specialized astrophysical simulation codes expanded the range of phenomena that can be modeled in computational astronomy?",
-    "text": "Many other codes have since been developed in the following years with applications ranging from thermonuclear flashes  to MHD simulations (, ) to galaxy formation ( ).",
-    "citations": [
-      [
-        "Nool",
-        "Keppens",
-        "2002"
-      ],
-      [
-        "Ziegler",
-        "1998"
-      ],
-      [
-        "Fryxell",
-        "2000"
-      ],
-      [
-        "Teyssier",
-        "2002"
-      ],
-      [
-        "Knebe",
-        "2001"
-      ],
-      [
-        "Kravtsov",
-        "1997"
-      ]
-    ],
-    "arxiv": [
-      "9701195",
-      "0111367",
-      "0103503"
     ]
   },
   "1403.3334_1": {
@@ -27623,11 +22809,9 @@
       "1107.2924",
       "1009.2194",
       "1104.4115",
-      "1011.1255",
       "1309.0836",
       "1201.2908",
       "1009.5983",
-      "1107.4979",
       "1204.4706",
       "1303.2726"
     ]
@@ -27703,9 +22887,6 @@
     "arxiv": [
       "1310.4090",
       "1107.2924",
-      "1309.3275",
-      "1304.4256",
-      "1107.4979",
       "1303.2726"
     ]
   },
@@ -27809,8 +22990,6 @@
       "1308.5682",
       "1303.1180",
       "1308.2964",
-      "1306.5985",
-      "0211492",
       "0807.2638"
     ]
   },
@@ -27857,9 +23036,7 @@
       "1311.5118",
       "0909.4458",
       "1205.2772",
-      "1101.0811",
-      "0404110",
-      "1001.0567"
+      "1101.0811"
     ]
   },
   "1405.4840_4": {
@@ -27902,11 +23079,7 @@
     ],
     "arxiv": [
       "1311.2603",
-      "9908290",
       "1108.6056",
-      "1306.4971",
-      "1306.3960",
-      "0701874",
       "1204.6242"
     ]
   },
@@ -27947,7 +23120,6 @@
       "1109.4170",
       "1210.0443",
       "1307.3554",
-      "1003.2480",
       "0807.2638"
     ]
   },
@@ -28025,10 +23197,6 @@
     ],
     "arxiv": [
       "1105.3753",
-      "0612306",
-      "0309105",
-      "0703095",
-      "0401427",
       "1105.3754"
     ]
   },
@@ -28080,7 +23248,6 @@
       "1512.03194",
       "1505.00568",
       "1608.01457",
-      "0912.0192",
       "1511.06354",
       "1106.2725",
       "1509.01764"
@@ -28125,7 +23292,6 @@
       ]
     ],
     "arxiv": [
-      "0803.3728",
       "1502.02102",
       "1109.0161",
       "1108.0905",

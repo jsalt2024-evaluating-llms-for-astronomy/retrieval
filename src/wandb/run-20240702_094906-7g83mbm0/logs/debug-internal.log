@@ -1,0 +1,808 @@
+2024-07-02 09:49:06,054 INFO    StreamThr :41884 [internal.py:wandb_internal():85] W&B internal server running at pid: 41884, started at: 2024-07-02 09:49:06.053409
+2024-07-02 09:49:06,055 DEBUG   HandlerThread:41884 [handler.py:handle_request():158] handle_request: status
+2024-07-02 09:49:06,057 INFO    WriterThread:41884 [datastore.py:open_for_write():87] open: /Users/charlesoneill/retrieval/src/wandb/run-20240702_094906-7g83mbm0/run-7g83mbm0.wandb
+2024-07-02 09:49:06,058 DEBUG   SenderThread:41884 [sender.py:send():379] send: header
+2024-07-02 09:49:06,075 DEBUG   SenderThread:41884 [sender.py:send():379] send: run
+2024-07-02 09:49:06,298 INFO    SenderThread:41884 [dir_watcher.py:__init__():211] watching files in: /Users/charlesoneill/retrieval/src/wandb/run-20240702_094906-7g83mbm0/files
+2024-07-02 09:49:06,298 INFO    SenderThread:41884 [sender.py:_start_run_threads():1188] run started: 7g83mbm0 with start time 1719928146.054448
+2024-07-02 09:49:06,308 DEBUG   HandlerThread:41884 [handler.py:handle_request():158] handle_request: check_version
+2024-07-02 09:49:06,308 DEBUG   SenderThread:41884 [sender.py:send_request():406] send_request: check_version
+2024-07-02 09:49:06,391 DEBUG   HandlerThread:41884 [handler.py:handle_request():158] handle_request: run_start
+2024-07-02 09:49:06,401 DEBUG   HandlerThread:41884 [system_info.py:__init__():26] System info init
+2024-07-02 09:49:06,401 DEBUG   HandlerThread:41884 [system_info.py:__init__():41] System info init done
+2024-07-02 09:49:06,401 INFO    HandlerThread:41884 [system_monitor.py:start():194] Starting system monitor
+2024-07-02 09:49:06,402 INFO    SystemMonitor:41884 [system_monitor.py:_start():158] Starting system asset monitoring threads
+2024-07-02 09:49:06,402 INFO    HandlerThread:41884 [system_monitor.py:probe():214] Collecting system info
+2024-07-02 09:49:06,402 INFO    SystemMonitor:41884 [interfaces.py:start():188] Started cpu monitoring
+2024-07-02 09:49:06,406 INFO    SystemMonitor:41884 [interfaces.py:start():188] Started disk monitoring
+2024-07-02 09:49:06,407 INFO    SystemMonitor:41884 [interfaces.py:start():188] Started gpuapple monitoring
+2024-07-02 09:49:06,408 INFO    SystemMonitor:41884 [interfaces.py:start():188] Started memory monitoring
+2024-07-02 09:49:06,409 INFO    SystemMonitor:41884 [interfaces.py:start():188] Started network monitoring
+2024-07-02 09:49:06,828 DEBUG   HandlerThread:41884 [system_info.py:probe():152] Probing system
+2024-07-02 09:49:06,833 DEBUG   HandlerThread:41884 [system_info.py:_probe_git():137] Probing git
+2024-07-02 09:49:06,845 DEBUG   HandlerThread:41884 [system_info.py:_probe_git():145] Probing git done
+2024-07-02 09:49:06,845 DEBUG   HandlerThread:41884 [system_info.py:probe():200] Probing system done
+2024-07-02 09:49:06,845 DEBUG   HandlerThread:41884 [system_monitor.py:probe():223] {'os': 'macOS-14.3-arm64-arm-64bit', 'python': '3.12.4', 'heartbeatAt': '2024-07-02T13:49:06.828889', 'startedAt': '2024-07-02T13:49:06.047031', 'docker': None, 'cuda': None, 'args': (), 'state': 'running', 'program': '/Users/charlesoneill/retrieval/src/bag_of_words.py', 'codePathLocal': 'bag_of_words.py', 'codePath': 'src/bag_of_words.py', 'git': {'remote': 'https://github.com/jsalt2024-evaluating-llms-for-astronomy/retrieval.git', 'commit': 'e6e14227857fc02123ecd82713d82c9a348d9d6d'}, 'email': 'cponeill00@gmail.com', 'root': '/Users/charlesoneill/retrieval', 'host': 'Charless-MacBook-Pro-2.local', 'username': 'charlesoneill', 'executable': '/Users/charlesoneill/miniconda3/envs/jsalt/bin/python', 'cpu_count': 12, 'cpu_count_logical': 12, 'disk': {'/': {'total': 926.3517189025879, 'used': 441.2911796569824}}, 'gpuapple': {'type': 'Apple M2 Max', 'vendor': 'sppci_vendor_Apple'}, 'memory': {'total': 32.0}}
+2024-07-02 09:49:06,845 INFO    HandlerThread:41884 [system_monitor.py:probe():224] Finished collecting system info
+2024-07-02 09:49:06,845 INFO    HandlerThread:41884 [system_monitor.py:probe():227] Publishing system info
+2024-07-02 09:49:06,845 DEBUG   HandlerThread:41884 [system_info.py:_save_conda():209] Saving list of conda packages installed into the current environment
+2024-07-02 09:49:07,304 INFO    Thread-12 :41884 [dir_watcher.py:_on_file_created():271] file/dir created: /Users/charlesoneill/retrieval/src/wandb/run-20240702_094906-7g83mbm0/files/conda-environment.yaml
+2024-07-02 09:49:08,170 DEBUG   HandlerThread:41884 [system_info.py:_save_conda():224] Saving conda packages done
+2024-07-02 09:49:08,170 INFO    HandlerThread:41884 [system_monitor.py:probe():229] Finished publishing system info
+2024-07-02 09:49:08,172 DEBUG   SenderThread:41884 [sender.py:send():379] send: files
+2024-07-02 09:49:08,172 INFO    SenderThread:41884 [sender.py:_save_file():1454] saving file wandb-metadata.json with policy now
+2024-07-02 09:49:08,216 DEBUG   HandlerThread:41884 [handler.py:handle_request():158] handle_request: python_packages
+2024-07-02 09:49:08,216 DEBUG   SenderThread:41884 [sender.py:send_request():406] send_request: python_packages
+2024-07-02 09:49:08,216 DEBUG   SenderThread:41884 [sender.py:send():379] send: telemetry
+2024-07-02 09:49:08,217 DEBUG   HandlerThread:41884 [handler.py:handle_request():158] handle_request: stop_status
+2024-07-02 09:49:08,217 DEBUG   SenderThread:41884 [sender.py:send_request():406] send_request: stop_status
+2024-07-02 09:49:08,217 DEBUG   HandlerThread:41884 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 09:49:08,308 INFO    Thread-12 :41884 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/charlesoneill/retrieval/src/wandb/run-20240702_094906-7g83mbm0/files/conda-environment.yaml
+2024-07-02 09:49:08,309 INFO    Thread-12 :41884 [dir_watcher.py:_on_file_created():271] file/dir created: /Users/charlesoneill/retrieval/src/wandb/run-20240702_094906-7g83mbm0/files/requirements.txt
+2024-07-02 09:49:08,309 INFO    Thread-12 :41884 [dir_watcher.py:_on_file_created():271] file/dir created: /Users/charlesoneill/retrieval/src/wandb/run-20240702_094906-7g83mbm0/files/wandb-metadata.json
+2024-07-02 09:49:08,576 INFO    wandb-upload_0:41884 [upload_job.py:push():130] Uploaded file /var/folders/wg/cdt_cw_5265_z_gwnxlf0tv80000gn/T/tmp3bc3gwylwandb/goxi5qbz-wandb-metadata.json
+2024-07-02 09:49:09,228 DEBUG   HandlerThread:41884 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 09:49:09,314 INFO    Thread-12 :41884 [dir_watcher.py:_on_file_created():271] file/dir created: /Users/charlesoneill/retrieval/src/wandb/run-20240702_094906-7g83mbm0/files/output.log
+2024-07-02 09:49:10,228 DEBUG   HandlerThread:41884 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 09:49:11,230 DEBUG   HandlerThread:41884 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 09:49:11,322 INFO    Thread-12 :41884 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/charlesoneill/retrieval/src/wandb/run-20240702_094906-7g83mbm0/files/output.log
+2024-07-02 09:49:11,990 DEBUG   HandlerThread:41884 [handler.py:handle_request():158] handle_request: status_report
+2024-07-02 09:49:12,231 DEBUG   HandlerThread:41884 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 09:49:13,280 DEBUG   HandlerThread:41884 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 09:49:13,333 INFO    Thread-12 :41884 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/charlesoneill/retrieval/src/wandb/run-20240702_094906-7g83mbm0/files/output.log
+2024-07-02 09:49:14,285 DEBUG   HandlerThread:41884 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 09:49:15,285 DEBUG   HandlerThread:41884 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 09:49:15,339 INFO    Thread-12 :41884 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/charlesoneill/retrieval/src/wandb/run-20240702_094906-7g83mbm0/files/output.log
+2024-07-02 09:49:16,290 DEBUG   HandlerThread:41884 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 09:49:17,112 DEBUG   HandlerThread:41884 [handler.py:handle_request():158] handle_request: status_report
+2024-07-02 09:49:17,292 DEBUG   HandlerThread:41884 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 09:49:17,348 INFO    Thread-12 :41884 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/charlesoneill/retrieval/src/wandb/run-20240702_094906-7g83mbm0/files/output.log
+2024-07-02 09:49:18,297 DEBUG   HandlerThread:41884 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 09:49:19,299 DEBUG   HandlerThread:41884 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 09:49:19,358 INFO    Thread-12 :41884 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/charlesoneill/retrieval/src/wandb/run-20240702_094906-7g83mbm0/files/output.log
+2024-07-02 09:49:20,324 DEBUG   HandlerThread:41884 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 09:49:21,326 DEBUG   HandlerThread:41884 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 09:49:21,365 INFO    Thread-12 :41884 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/charlesoneill/retrieval/src/wandb/run-20240702_094906-7g83mbm0/files/output.log
+2024-07-02 09:49:22,331 DEBUG   HandlerThread:41884 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 09:49:22,721 DEBUG   HandlerThread:41884 [handler.py:handle_request():158] handle_request: status_report
+2024-07-02 09:49:23,221 DEBUG   HandlerThread:41884 [handler.py:handle_request():158] handle_request: stop_status
+2024-07-02 09:49:23,221 DEBUG   SenderThread:41884 [sender.py:send_request():406] send_request: stop_status
+2024-07-02 09:49:23,341 DEBUG   HandlerThread:41884 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 09:49:23,376 INFO    Thread-12 :41884 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/charlesoneill/retrieval/src/wandb/run-20240702_094906-7g83mbm0/files/output.log
+2024-07-02 09:49:24,346 DEBUG   HandlerThread:41884 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 09:49:25,351 DEBUG   HandlerThread:41884 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 09:49:25,382 INFO    Thread-12 :41884 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/charlesoneill/retrieval/src/wandb/run-20240702_094906-7g83mbm0/files/output.log
+2024-07-02 09:49:26,356 DEBUG   HandlerThread:41884 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 09:49:27,357 DEBUG   HandlerThread:41884 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 09:49:27,389 INFO    Thread-12 :41884 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/charlesoneill/retrieval/src/wandb/run-20240702_094906-7g83mbm0/files/output.log
+2024-07-02 09:49:28,295 DEBUG   HandlerThread:41884 [handler.py:handle_request():158] handle_request: status_report
+2024-07-02 09:49:28,362 DEBUG   HandlerThread:41884 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 09:49:29,363 DEBUG   HandlerThread:41884 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 09:49:29,398 INFO    Thread-12 :41884 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/charlesoneill/retrieval/src/wandb/run-20240702_094906-7g83mbm0/files/output.log
+2024-07-02 09:49:30,368 DEBUG   HandlerThread:41884 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 09:49:31,372 DEBUG   HandlerThread:41884 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 09:49:31,408 INFO    Thread-12 :41884 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/charlesoneill/retrieval/src/wandb/run-20240702_094906-7g83mbm0/files/output.log
+2024-07-02 09:49:32,377 DEBUG   HandlerThread:41884 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 09:49:33,383 DEBUG   HandlerThread:41884 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 09:49:33,383 DEBUG   HandlerThread:41884 [handler.py:handle_request():158] handle_request: status_report
+2024-07-02 09:49:33,414 INFO    Thread-12 :41884 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/charlesoneill/retrieval/src/wandb/run-20240702_094906-7g83mbm0/files/output.log
+2024-07-02 09:49:34,541 DEBUG   HandlerThread:41884 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 09:49:35,421 INFO    Thread-12 :41884 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/charlesoneill/retrieval/src/wandb/run-20240702_094906-7g83mbm0/files/output.log
+2024-07-02 09:49:35,545 DEBUG   HandlerThread:41884 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 09:49:36,550 DEBUG   HandlerThread:41884 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 09:49:37,427 INFO    Thread-12 :41884 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/charlesoneill/retrieval/src/wandb/run-20240702_094906-7g83mbm0/files/output.log
+2024-07-02 09:49:37,578 DEBUG   HandlerThread:41884 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 09:49:38,226 DEBUG   HandlerThread:41884 [handler.py:handle_request():158] handle_request: stop_status
+2024-07-02 09:49:38,226 DEBUG   SenderThread:41884 [sender.py:send_request():406] send_request: stop_status
+2024-07-02 09:49:38,490 DEBUG   HandlerThread:41884 [handler.py:handle_request():158] handle_request: status_report
+2024-07-02 09:49:38,579 DEBUG   HandlerThread:41884 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 09:49:39,438 INFO    Thread-12 :41884 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/charlesoneill/retrieval/src/wandb/run-20240702_094906-7g83mbm0/files/output.log
+2024-07-02 09:49:39,438 INFO    Thread-12 :41884 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/charlesoneill/retrieval/src/wandb/run-20240702_094906-7g83mbm0/files/config.yaml
+2024-07-02 09:49:39,635 DEBUG   HandlerThread:41884 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 09:49:40,638 DEBUG   HandlerThread:41884 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 09:49:41,448 INFO    Thread-12 :41884 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/charlesoneill/retrieval/src/wandb/run-20240702_094906-7g83mbm0/files/output.log
+2024-07-02 09:49:41,643 DEBUG   HandlerThread:41884 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 09:49:42,644 DEBUG   HandlerThread:41884 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 09:49:43,459 INFO    Thread-12 :41884 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/charlesoneill/retrieval/src/wandb/run-20240702_094906-7g83mbm0/files/output.log
+2024-07-02 09:49:43,648 DEBUG   HandlerThread:41884 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 09:49:43,877 DEBUG   HandlerThread:41884 [handler.py:handle_request():158] handle_request: status_report
+2024-07-02 09:49:44,464 INFO    Thread-12 :41884 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/charlesoneill/retrieval/src/wandb/run-20240702_094906-7g83mbm0/files/output.log
+2024-07-02 09:49:44,649 DEBUG   HandlerThread:41884 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 09:49:44,863 INFO    FileStreamThread:41884 [file_stream.py:request_with_retry():672] Filestream rate limit exceeded, retrying in 2.1 seconds. 
+2024-07-02 09:49:45,469 INFO    Thread-12 :41884 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/charlesoneill/retrieval/src/wandb/run-20240702_094906-7g83mbm0/files/output.log
+2024-07-02 09:49:45,651 DEBUG   HandlerThread:41884 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 09:49:46,474 INFO    Thread-12 :41884 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/charlesoneill/retrieval/src/wandb/run-20240702_094906-7g83mbm0/files/output.log
+2024-07-02 09:49:46,715 DEBUG   HandlerThread:41884 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 09:49:47,479 INFO    Thread-12 :41884 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/charlesoneill/retrieval/src/wandb/run-20240702_094906-7g83mbm0/files/output.log
+2024-07-02 09:49:47,720 DEBUG   HandlerThread:41884 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 09:49:48,480 INFO    Thread-12 :41884 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/charlesoneill/retrieval/src/wandb/run-20240702_094906-7g83mbm0/files/output.log
+2024-07-02 09:49:48,724 DEBUG   HandlerThread:41884 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 09:49:48,989 DEBUG   HandlerThread:41884 [handler.py:handle_request():158] handle_request: status_report
+2024-07-02 09:49:49,485 INFO    Thread-12 :41884 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/charlesoneill/retrieval/src/wandb/run-20240702_094906-7g83mbm0/files/output.log
+2024-07-02 09:49:49,736 DEBUG   HandlerThread:41884 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 09:49:50,490 INFO    Thread-12 :41884 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/charlesoneill/retrieval/src/wandb/run-20240702_094906-7g83mbm0/files/output.log
+2024-07-02 09:49:50,740 DEBUG   HandlerThread:41884 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 09:49:51,492 INFO    Thread-12 :41884 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/charlesoneill/retrieval/src/wandb/run-20240702_094906-7g83mbm0/files/output.log
+2024-07-02 09:49:51,743 DEBUG   HandlerThread:41884 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 09:49:52,498 INFO    Thread-12 :41884 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/charlesoneill/retrieval/src/wandb/run-20240702_094906-7g83mbm0/files/output.log
+2024-07-02 09:49:52,748 DEBUG   HandlerThread:41884 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 09:49:53,231 DEBUG   HandlerThread:41884 [handler.py:handle_request():158] handle_request: stop_status
+2024-07-02 09:49:53,231 DEBUG   SenderThread:41884 [sender.py:send_request():406] send_request: stop_status
+2024-07-02 09:49:53,503 INFO    Thread-12 :41884 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/charlesoneill/retrieval/src/wandb/run-20240702_094906-7g83mbm0/files/output.log
+2024-07-02 09:49:53,753 DEBUG   HandlerThread:41884 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 09:49:54,508 INFO    Thread-12 :41884 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/charlesoneill/retrieval/src/wandb/run-20240702_094906-7g83mbm0/files/output.log
+2024-07-02 09:49:54,575 DEBUG   HandlerThread:41884 [handler.py:handle_request():158] handle_request: status_report
+2024-07-02 09:49:54,772 DEBUG   HandlerThread:41884 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 09:49:55,513 INFO    Thread-12 :41884 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/charlesoneill/retrieval/src/wandb/run-20240702_094906-7g83mbm0/files/output.log
+2024-07-02 09:49:55,759 DEBUG   HandlerThread:41884 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 09:49:56,519 INFO    Thread-12 :41884 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/charlesoneill/retrieval/src/wandb/run-20240702_094906-7g83mbm0/files/output.log
+2024-07-02 09:49:56,764 DEBUG   HandlerThread:41884 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 09:49:57,524 INFO    Thread-12 :41884 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/charlesoneill/retrieval/src/wandb/run-20240702_094906-7g83mbm0/files/output.log
+2024-07-02 09:49:57,769 DEBUG   HandlerThread:41884 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 09:49:58,529 INFO    Thread-12 :41884 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/charlesoneill/retrieval/src/wandb/run-20240702_094906-7g83mbm0/files/output.log
+2024-07-02 09:49:58,772 DEBUG   HandlerThread:41884 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 09:49:59,534 INFO    Thread-12 :41884 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/charlesoneill/retrieval/src/wandb/run-20240702_094906-7g83mbm0/files/output.log
+2024-07-02 09:49:59,918 DEBUG   HandlerThread:41884 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 09:50:00,369 DEBUG   HandlerThread:41884 [handler.py:handle_request():158] handle_request: status_report
+2024-07-02 09:50:00,539 INFO    Thread-12 :41884 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/charlesoneill/retrieval/src/wandb/run-20240702_094906-7g83mbm0/files/output.log
+2024-07-02 09:50:00,961 DEBUG   HandlerThread:41884 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 09:50:01,542 INFO    Thread-12 :41884 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/charlesoneill/retrieval/src/wandb/run-20240702_094906-7g83mbm0/files/output.log
+2024-07-02 09:50:02,006 DEBUG   HandlerThread:41884 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 09:50:02,547 INFO    Thread-12 :41884 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/charlesoneill/retrieval/src/wandb/run-20240702_094906-7g83mbm0/files/output.log
+2024-07-02 09:50:03,151 DEBUG   HandlerThread:41884 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 09:50:03,552 INFO    Thread-12 :41884 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/charlesoneill/retrieval/src/wandb/run-20240702_094906-7g83mbm0/files/output.log
+2024-07-02 09:50:04,156 DEBUG   HandlerThread:41884 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 09:50:04,557 INFO    Thread-12 :41884 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/charlesoneill/retrieval/src/wandb/run-20240702_094906-7g83mbm0/files/output.log
+2024-07-02 09:50:05,161 DEBUG   HandlerThread:41884 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 09:50:05,392 DEBUG   HandlerThread:41884 [handler.py:handle_request():158] handle_request: status_report
+2024-07-02 09:50:05,562 INFO    Thread-12 :41884 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/charlesoneill/retrieval/src/wandb/run-20240702_094906-7g83mbm0/files/output.log
+2024-07-02 09:50:06,177 DEBUG   HandlerThread:41884 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 09:50:06,414 DEBUG   SystemMonitor:41884 [system_monitor.py:_start():172] Starting system metrics aggregation loop
+2024-07-02 09:50:06,415 DEBUG   SenderThread:41884 [sender.py:send():379] send: telemetry
+2024-07-02 09:50:06,415 DEBUG   SenderThread:41884 [sender.py:send():379] send: stats
+2024-07-02 09:50:06,567 INFO    Thread-12 :41884 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/charlesoneill/retrieval/src/wandb/run-20240702_094906-7g83mbm0/files/output.log
+2024-07-02 09:50:07,173 DEBUG   HandlerThread:41884 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 09:50:07,569 INFO    Thread-12 :41884 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/charlesoneill/retrieval/src/wandb/run-20240702_094906-7g83mbm0/files/output.log
+2024-07-02 09:50:08,184 DEBUG   HandlerThread:41884 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 09:50:08,236 DEBUG   HandlerThread:41884 [handler.py:handle_request():158] handle_request: stop_status
+2024-07-02 09:50:08,236 DEBUG   SenderThread:41884 [sender.py:send_request():406] send_request: stop_status
+2024-07-02 09:50:08,574 INFO    Thread-12 :41884 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/charlesoneill/retrieval/src/wandb/run-20240702_094906-7g83mbm0/files/output.log
+2024-07-02 09:50:09,189 DEBUG   HandlerThread:41884 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 09:50:09,579 INFO    Thread-12 :41884 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/charlesoneill/retrieval/src/wandb/run-20240702_094906-7g83mbm0/files/output.log
+2024-07-02 09:50:10,275 DEBUG   HandlerThread:41884 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 09:50:10,584 INFO    Thread-12 :41884 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/charlesoneill/retrieval/src/wandb/run-20240702_094906-7g83mbm0/files/output.log
+2024-07-02 09:50:10,597 DEBUG   HandlerThread:41884 [handler.py:handle_request():158] handle_request: status_report
+2024-07-02 09:50:11,282 DEBUG   HandlerThread:41884 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 09:50:11,585 INFO    Thread-12 :41884 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/charlesoneill/retrieval/src/wandb/run-20240702_094906-7g83mbm0/files/output.log
+2024-07-02 09:50:11,585 INFO    Thread-12 :41884 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/charlesoneill/retrieval/src/wandb/run-20240702_094906-7g83mbm0/files/config.yaml
+2024-07-02 09:50:12,287 DEBUG   HandlerThread:41884 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 09:50:12,586 INFO    Thread-12 :41884 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/charlesoneill/retrieval/src/wandb/run-20240702_094906-7g83mbm0/files/output.log
+2024-07-02 09:50:13,321 DEBUG   HandlerThread:41884 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 09:50:13,591 INFO    Thread-12 :41884 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/charlesoneill/retrieval/src/wandb/run-20240702_094906-7g83mbm0/files/output.log
+2024-07-02 09:50:14,327 DEBUG   HandlerThread:41884 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 09:50:14,597 INFO    Thread-12 :41884 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/charlesoneill/retrieval/src/wandb/run-20240702_094906-7g83mbm0/files/output.log
+2024-07-02 09:50:15,332 DEBUG   HandlerThread:41884 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 09:50:15,602 INFO    Thread-12 :41884 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/charlesoneill/retrieval/src/wandb/run-20240702_094906-7g83mbm0/files/output.log
+2024-07-02 09:50:15,862 DEBUG   HandlerThread:41884 [handler.py:handle_request():158] handle_request: status_report
+2024-07-02 09:50:16,349 DEBUG   HandlerThread:41884 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 09:50:16,605 INFO    Thread-12 :41884 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/charlesoneill/retrieval/src/wandb/run-20240702_094906-7g83mbm0/files/output.log
+2024-07-02 09:50:17,350 DEBUG   HandlerThread:41884 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 09:50:17,610 INFO    Thread-12 :41884 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/charlesoneill/retrieval/src/wandb/run-20240702_094906-7g83mbm0/files/output.log
+2024-07-02 09:50:18,355 DEBUG   HandlerThread:41884 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 09:50:18,616 INFO    Thread-12 :41884 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/charlesoneill/retrieval/src/wandb/run-20240702_094906-7g83mbm0/files/output.log
+2024-07-02 09:50:19,361 DEBUG   HandlerThread:41884 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 09:50:19,621 INFO    Thread-12 :41884 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/charlesoneill/retrieval/src/wandb/run-20240702_094906-7g83mbm0/files/output.log
+2024-07-02 09:50:20,363 DEBUG   HandlerThread:41884 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 09:50:20,624 INFO    Thread-12 :41884 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/charlesoneill/retrieval/src/wandb/run-20240702_094906-7g83mbm0/files/output.log
+2024-07-02 09:50:21,368 DEBUG   HandlerThread:41884 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 09:50:21,560 DEBUG   HandlerThread:41884 [handler.py:handle_request():158] handle_request: status_report
+2024-07-02 09:50:21,627 INFO    Thread-12 :41884 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/charlesoneill/retrieval/src/wandb/run-20240702_094906-7g83mbm0/files/output.log
+2024-07-02 09:50:22,368 DEBUG   HandlerThread:41884 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 09:50:22,632 INFO    Thread-12 :41884 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/charlesoneill/retrieval/src/wandb/run-20240702_094906-7g83mbm0/files/output.log
+2024-07-02 09:50:23,241 DEBUG   HandlerThread:41884 [handler.py:handle_request():158] handle_request: stop_status
+2024-07-02 09:50:23,241 DEBUG   SenderThread:41884 [sender.py:send_request():406] send_request: stop_status
+2024-07-02 09:50:23,370 DEBUG   HandlerThread:41884 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 09:50:23,637 INFO    Thread-12 :41884 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/charlesoneill/retrieval/src/wandb/run-20240702_094906-7g83mbm0/files/output.log
+2024-07-02 09:50:24,375 DEBUG   HandlerThread:41884 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 09:50:24,642 INFO    Thread-12 :41884 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/charlesoneill/retrieval/src/wandb/run-20240702_094906-7g83mbm0/files/output.log
+2024-07-02 09:50:25,377 DEBUG   HandlerThread:41884 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 09:50:25,647 INFO    Thread-12 :41884 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/charlesoneill/retrieval/src/wandb/run-20240702_094906-7g83mbm0/files/output.log
+2024-07-02 09:50:26,382 DEBUG   HandlerThread:41884 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 09:50:26,653 INFO    Thread-12 :41884 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/charlesoneill/retrieval/src/wandb/run-20240702_094906-7g83mbm0/files/output.log
+2024-07-02 09:50:27,036 DEBUG   HandlerThread:41884 [handler.py:handle_request():158] handle_request: status_report
+2024-07-02 09:50:27,499 DEBUG   HandlerThread:41884 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 09:50:27,655 INFO    Thread-12 :41884 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/charlesoneill/retrieval/src/wandb/run-20240702_094906-7g83mbm0/files/output.log
+2024-07-02 09:50:28,505 DEBUG   HandlerThread:41884 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 09:50:28,660 INFO    Thread-12 :41884 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/charlesoneill/retrieval/src/wandb/run-20240702_094906-7g83mbm0/files/output.log
+2024-07-02 09:50:29,506 DEBUG   HandlerThread:41884 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 09:50:29,665 INFO    Thread-12 :41884 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/charlesoneill/retrieval/src/wandb/run-20240702_094906-7g83mbm0/files/output.log
+2024-07-02 09:50:30,511 DEBUG   HandlerThread:41884 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 09:50:30,671 INFO    Thread-12 :41884 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/charlesoneill/retrieval/src/wandb/run-20240702_094906-7g83mbm0/files/output.log
+2024-07-02 09:50:31,642 DEBUG   HandlerThread:41884 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 09:50:31,673 INFO    Thread-12 :41884 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/charlesoneill/retrieval/src/wandb/run-20240702_094906-7g83mbm0/files/output.log
+2024-07-02 09:50:32,184 DEBUG   HandlerThread:41884 [handler.py:handle_request():158] handle_request: status_report
+2024-07-02 09:50:32,647 DEBUG   HandlerThread:41884 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 09:50:32,676 INFO    Thread-12 :41884 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/charlesoneill/retrieval/src/wandb/run-20240702_094906-7g83mbm0/files/output.log
+2024-07-02 09:50:33,652 DEBUG   HandlerThread:41884 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 09:50:33,680 INFO    Thread-12 :41884 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/charlesoneill/retrieval/src/wandb/run-20240702_094906-7g83mbm0/files/output.log
+2024-07-02 09:50:34,657 DEBUG   HandlerThread:41884 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 09:50:34,684 INFO    Thread-12 :41884 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/charlesoneill/retrieval/src/wandb/run-20240702_094906-7g83mbm0/files/output.log
+2024-07-02 09:50:35,662 DEBUG   HandlerThread:41884 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 09:50:35,689 INFO    Thread-12 :41884 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/charlesoneill/retrieval/src/wandb/run-20240702_094906-7g83mbm0/files/output.log
+2024-07-02 09:50:36,420 DEBUG   SenderThread:41884 [sender.py:send():379] send: stats
+2024-07-02 09:50:36,667 DEBUG   HandlerThread:41884 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 09:50:36,693 INFO    Thread-12 :41884 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/charlesoneill/retrieval/src/wandb/run-20240702_094906-7g83mbm0/files/output.log
+2024-07-02 09:50:37,672 DEBUG   HandlerThread:41884 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 09:50:37,696 INFO    Thread-12 :41884 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/charlesoneill/retrieval/src/wandb/run-20240702_094906-7g83mbm0/files/output.log
+2024-07-02 09:50:37,913 DEBUG   HandlerThread:41884 [handler.py:handle_request():158] handle_request: status_report
+2024-07-02 09:50:38,315 DEBUG   HandlerThread:41884 [handler.py:handle_request():158] handle_request: stop_status
+2024-07-02 09:50:38,315 DEBUG   SenderThread:41884 [sender.py:send_request():406] send_request: stop_status
+2024-07-02 09:50:38,675 DEBUG   HandlerThread:41884 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 09:50:38,697 INFO    Thread-12 :41884 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/charlesoneill/retrieval/src/wandb/run-20240702_094906-7g83mbm0/files/output.log
+2024-07-02 09:50:39,680 DEBUG   HandlerThread:41884 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 09:50:39,702 INFO    Thread-12 :41884 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/charlesoneill/retrieval/src/wandb/run-20240702_094906-7g83mbm0/files/output.log
+2024-07-02 09:50:40,685 DEBUG   HandlerThread:41884 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 09:50:40,707 INFO    Thread-12 :41884 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/charlesoneill/retrieval/src/wandb/run-20240702_094906-7g83mbm0/files/output.log
+2024-07-02 09:50:41,688 DEBUG   HandlerThread:41884 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 09:50:41,712 INFO    Thread-12 :41884 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/charlesoneill/retrieval/src/wandb/run-20240702_094906-7g83mbm0/files/output.log
+2024-07-02 09:50:42,690 DEBUG   HandlerThread:41884 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 09:50:42,713 INFO    Thread-12 :41884 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/charlesoneill/retrieval/src/wandb/run-20240702_094906-7g83mbm0/files/output.log
+2024-07-02 09:50:43,005 DEBUG   HandlerThread:41884 [handler.py:handle_request():158] handle_request: status_report
+2024-07-02 09:50:43,693 DEBUG   HandlerThread:41884 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 09:50:43,718 INFO    Thread-12 :41884 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/charlesoneill/retrieval/src/wandb/run-20240702_094906-7g83mbm0/files/output.log
+2024-07-02 09:50:44,695 DEBUG   HandlerThread:41884 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 09:50:44,723 INFO    Thread-12 :41884 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/charlesoneill/retrieval/src/wandb/run-20240702_094906-7g83mbm0/files/output.log
+2024-07-02 09:50:45,700 DEBUG   HandlerThread:41884 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 09:50:45,728 INFO    Thread-12 :41884 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/charlesoneill/retrieval/src/wandb/run-20240702_094906-7g83mbm0/files/output.log
+2024-07-02 09:50:46,705 DEBUG   HandlerThread:41884 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 09:50:46,731 INFO    Thread-12 :41884 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/charlesoneill/retrieval/src/wandb/run-20240702_094906-7g83mbm0/files/output.log
+2024-07-02 09:50:47,706 DEBUG   HandlerThread:41884 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 09:50:47,736 INFO    Thread-12 :41884 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/charlesoneill/retrieval/src/wandb/run-20240702_094906-7g83mbm0/files/output.log
+2024-07-02 09:50:48,596 DEBUG   HandlerThread:41884 [handler.py:handle_request():158] handle_request: status_report
+2024-07-02 09:50:48,717 DEBUG   HandlerThread:41884 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 09:50:48,740 INFO    Thread-12 :41884 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/charlesoneill/retrieval/src/wandb/run-20240702_094906-7g83mbm0/files/output.log
+2024-07-02 09:50:49,722 DEBUG   HandlerThread:41884 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 09:50:49,745 INFO    Thread-12 :41884 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/charlesoneill/retrieval/src/wandb/run-20240702_094906-7g83mbm0/files/output.log
+2024-07-02 09:50:50,727 DEBUG   HandlerThread:41884 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 09:50:50,747 INFO    Thread-12 :41884 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/charlesoneill/retrieval/src/wandb/run-20240702_094906-7g83mbm0/files/output.log
+2024-07-02 09:50:51,751 INFO    Thread-12 :41884 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/charlesoneill/retrieval/src/wandb/run-20240702_094906-7g83mbm0/files/output.log
+2024-07-02 09:50:51,779 DEBUG   HandlerThread:41884 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 09:50:52,756 INFO    Thread-12 :41884 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/charlesoneill/retrieval/src/wandb/run-20240702_094906-7g83mbm0/files/output.log
+2024-07-02 09:50:52,784 DEBUG   HandlerThread:41884 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 09:50:53,320 DEBUG   HandlerThread:41884 [handler.py:handle_request():158] handle_request: stop_status
+2024-07-02 09:50:53,320 DEBUG   SenderThread:41884 [sender.py:send_request():406] send_request: stop_status
+2024-07-02 09:50:53,601 DEBUG   HandlerThread:41884 [handler.py:handle_request():158] handle_request: status_report
+2024-07-02 09:50:53,759 INFO    Thread-12 :41884 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/charlesoneill/retrieval/src/wandb/run-20240702_094906-7g83mbm0/files/output.log
+2024-07-02 09:50:53,788 DEBUG   HandlerThread:41884 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 09:50:54,764 INFO    Thread-12 :41884 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/charlesoneill/retrieval/src/wandb/run-20240702_094906-7g83mbm0/files/output.log
+2024-07-02 09:50:54,789 DEBUG   HandlerThread:41884 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 09:50:55,769 INFO    Thread-12 :41884 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/charlesoneill/retrieval/src/wandb/run-20240702_094906-7g83mbm0/files/output.log
+2024-07-02 09:50:55,792 DEBUG   HandlerThread:41884 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 09:50:56,774 INFO    Thread-12 :41884 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/charlesoneill/retrieval/src/wandb/run-20240702_094906-7g83mbm0/files/output.log
+2024-07-02 09:50:56,796 DEBUG   HandlerThread:41884 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 09:50:57,780 INFO    Thread-12 :41884 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/charlesoneill/retrieval/src/wandb/run-20240702_094906-7g83mbm0/files/output.log
+2024-07-02 09:50:57,947 DEBUG   HandlerThread:41884 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 09:50:58,606 DEBUG   HandlerThread:41884 [handler.py:handle_request():158] handle_request: status_report
+2024-07-02 09:50:58,780 INFO    Thread-12 :41884 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/charlesoneill/retrieval/src/wandb/run-20240702_094906-7g83mbm0/files/output.log
+2024-07-02 09:50:58,952 DEBUG   HandlerThread:41884 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 09:50:59,786 INFO    Thread-12 :41884 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/charlesoneill/retrieval/src/wandb/run-20240702_094906-7g83mbm0/files/output.log
+2024-07-02 09:50:59,956 DEBUG   HandlerThread:41884 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 09:51:00,792 INFO    Thread-12 :41884 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/charlesoneill/retrieval/src/wandb/run-20240702_094906-7g83mbm0/files/output.log
+2024-07-02 09:51:00,961 DEBUG   HandlerThread:41884 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 09:51:01,793 INFO    Thread-12 :41884 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/charlesoneill/retrieval/src/wandb/run-20240702_094906-7g83mbm0/files/output.log
+2024-07-02 09:51:01,964 DEBUG   HandlerThread:41884 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 09:51:02,795 INFO    Thread-12 :41884 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/charlesoneill/retrieval/src/wandb/run-20240702_094906-7g83mbm0/files/output.log
+2024-07-02 09:51:02,967 DEBUG   HandlerThread:41884 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 09:51:03,616 DEBUG   HandlerThread:41884 [handler.py:handle_request():158] handle_request: status_report
+2024-07-02 09:51:03,801 INFO    Thread-12 :41884 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/charlesoneill/retrieval/src/wandb/run-20240702_094906-7g83mbm0/files/output.log
+2024-07-02 09:51:03,972 DEBUG   HandlerThread:41884 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 09:51:04,805 INFO    Thread-12 :41884 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/charlesoneill/retrieval/src/wandb/run-20240702_094906-7g83mbm0/files/output.log
+2024-07-02 09:51:04,989 DEBUG   HandlerThread:41884 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 09:51:05,805 INFO    Thread-12 :41884 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/charlesoneill/retrieval/src/wandb/run-20240702_094906-7g83mbm0/files/output.log
+2024-07-02 09:51:05,988 DEBUG   HandlerThread:41884 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 09:51:06,425 DEBUG   SenderThread:41884 [sender.py:send():379] send: stats
+2024-07-02 09:51:06,806 INFO    Thread-12 :41884 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/charlesoneill/retrieval/src/wandb/run-20240702_094906-7g83mbm0/files/output.log
+2024-07-02 09:51:06,993 DEBUG   HandlerThread:41884 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 09:51:07,812 INFO    Thread-12 :41884 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/charlesoneill/retrieval/src/wandb/run-20240702_094906-7g83mbm0/files/output.log
+2024-07-02 09:51:07,995 DEBUG   HandlerThread:41884 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 09:51:08,324 DEBUG   HandlerThread:41884 [handler.py:handle_request():158] handle_request: stop_status
+2024-07-02 09:51:08,325 DEBUG   SenderThread:41884 [sender.py:send_request():406] send_request: stop_status
+2024-07-02 09:51:08,618 DEBUG   HandlerThread:41884 [handler.py:handle_request():158] handle_request: status_report
+2024-07-02 09:51:08,817 INFO    Thread-12 :41884 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/charlesoneill/retrieval/src/wandb/run-20240702_094906-7g83mbm0/files/output.log
+2024-07-02 09:51:09,000 DEBUG   HandlerThread:41884 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 09:51:09,822 INFO    Thread-12 :41884 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/charlesoneill/retrieval/src/wandb/run-20240702_094906-7g83mbm0/files/output.log
+2024-07-02 09:51:10,007 DEBUG   HandlerThread:41884 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 09:51:10,827 INFO    Thread-12 :41884 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/charlesoneill/retrieval/src/wandb/run-20240702_094906-7g83mbm0/files/output.log
+2024-07-02 09:51:11,102 DEBUG   HandlerThread:41884 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 09:51:11,831 INFO    Thread-12 :41884 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/charlesoneill/retrieval/src/wandb/run-20240702_094906-7g83mbm0/files/output.log
+2024-07-02 09:51:12,107 DEBUG   HandlerThread:41884 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 09:51:12,836 INFO    Thread-12 :41884 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/charlesoneill/retrieval/src/wandb/run-20240702_094906-7g83mbm0/files/output.log
+2024-07-02 09:51:13,112 DEBUG   HandlerThread:41884 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 09:51:13,623 DEBUG   HandlerThread:41884 [handler.py:handle_request():158] handle_request: status_report
+2024-07-02 09:51:13,841 INFO    Thread-12 :41884 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/charlesoneill/retrieval/src/wandb/run-20240702_094906-7g83mbm0/files/output.log
+2024-07-02 09:51:14,117 DEBUG   HandlerThread:41884 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 09:51:14,847 INFO    Thread-12 :41884 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/charlesoneill/retrieval/src/wandb/run-20240702_094906-7g83mbm0/files/output.log
+2024-07-02 09:51:15,122 DEBUG   HandlerThread:41884 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 09:51:15,852 INFO    Thread-12 :41884 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/charlesoneill/retrieval/src/wandb/run-20240702_094906-7g83mbm0/files/output.log
+2024-07-02 09:51:16,128 DEBUG   HandlerThread:41884 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 09:51:16,853 INFO    Thread-12 :41884 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/charlesoneill/retrieval/src/wandb/run-20240702_094906-7g83mbm0/files/output.log
+2024-07-02 09:51:17,133 DEBUG   HandlerThread:41884 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 09:51:17,858 INFO    Thread-12 :41884 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/charlesoneill/retrieval/src/wandb/run-20240702_094906-7g83mbm0/files/output.log
+2024-07-02 09:51:18,134 DEBUG   HandlerThread:41884 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 09:51:18,628 DEBUG   HandlerThread:41884 [handler.py:handle_request():158] handle_request: status_report
+2024-07-02 09:51:18,865 INFO    Thread-12 :41884 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/charlesoneill/retrieval/src/wandb/run-20240702_094906-7g83mbm0/files/output.log
+2024-07-02 09:51:19,139 DEBUG   HandlerThread:41884 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 09:51:19,868 INFO    Thread-12 :41884 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/charlesoneill/retrieval/src/wandb/run-20240702_094906-7g83mbm0/files/output.log
+2024-07-02 09:51:20,278 DEBUG   HandlerThread:41884 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 09:51:20,872 INFO    Thread-12 :41884 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/charlesoneill/retrieval/src/wandb/run-20240702_094906-7g83mbm0/files/output.log
+2024-07-02 09:51:21,283 DEBUG   HandlerThread:41884 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 09:51:22,288 DEBUG   HandlerThread:41884 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 09:51:22,880 INFO    Thread-12 :41884 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/charlesoneill/retrieval/src/wandb/run-20240702_094906-7g83mbm0/files/output.log
+2024-07-02 09:51:23,293 DEBUG   HandlerThread:41884 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 09:51:23,330 DEBUG   HandlerThread:41884 [handler.py:handle_request():158] handle_request: stop_status
+2024-07-02 09:51:23,330 DEBUG   SenderThread:41884 [sender.py:send_request():406] send_request: stop_status
+2024-07-02 09:51:23,768 DEBUG   HandlerThread:41884 [handler.py:handle_request():158] handle_request: status_report
+2024-07-02 09:51:24,298 DEBUG   HandlerThread:41884 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 09:51:24,890 INFO    Thread-12 :41884 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/charlesoneill/retrieval/src/wandb/run-20240702_094906-7g83mbm0/files/output.log
+2024-07-02 09:51:25,344 DEBUG   HandlerThread:41884 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 09:51:26,349 DEBUG   HandlerThread:41884 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 09:51:26,897 INFO    Thread-12 :41884 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/charlesoneill/retrieval/src/wandb/run-20240702_094906-7g83mbm0/files/output.log
+2024-07-02 09:51:27,350 DEBUG   HandlerThread:41884 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 09:51:28,355 DEBUG   HandlerThread:41884 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 09:51:28,773 DEBUG   HandlerThread:41884 [handler.py:handle_request():158] handle_request: status_report
+2024-07-02 09:51:28,906 INFO    Thread-12 :41884 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/charlesoneill/retrieval/src/wandb/run-20240702_094906-7g83mbm0/files/output.log
+2024-07-02 09:51:29,360 DEBUG   HandlerThread:41884 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 09:51:30,435 DEBUG   HandlerThread:41884 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 09:51:30,915 INFO    Thread-12 :41884 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/charlesoneill/retrieval/src/wandb/run-20240702_094906-7g83mbm0/files/output.log
+2024-07-02 09:51:31,439 DEBUG   HandlerThread:41884 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 09:51:32,507 DEBUG   HandlerThread:41884 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 09:51:32,920 INFO    Thread-12 :41884 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/charlesoneill/retrieval/src/wandb/run-20240702_094906-7g83mbm0/files/output.log
+2024-07-02 09:51:33,511 DEBUG   HandlerThread:41884 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 09:51:33,777 DEBUG   HandlerThread:41884 [handler.py:handle_request():158] handle_request: status_report
+2024-07-02 09:51:34,516 DEBUG   HandlerThread:41884 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 09:51:34,929 INFO    Thread-12 :41884 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/charlesoneill/retrieval/src/wandb/run-20240702_094906-7g83mbm0/files/output.log
+2024-07-02 09:51:35,521 DEBUG   HandlerThread:41884 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 09:51:36,431 DEBUG   SenderThread:41884 [sender.py:send():379] send: stats
+2024-07-02 09:51:36,526 DEBUG   HandlerThread:41884 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 09:51:36,937 INFO    Thread-12 :41884 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/charlesoneill/retrieval/src/wandb/run-20240702_094906-7g83mbm0/files/output.log
+2024-07-02 09:51:37,531 DEBUG   HandlerThread:41884 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 09:51:38,335 DEBUG   HandlerThread:41884 [handler.py:handle_request():158] handle_request: stop_status
+2024-07-02 09:51:38,335 DEBUG   SenderThread:41884 [sender.py:send_request():406] send_request: stop_status
+2024-07-02 09:51:38,536 DEBUG   HandlerThread:41884 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 09:51:38,782 DEBUG   HandlerThread:41884 [handler.py:handle_request():158] handle_request: status_report
+2024-07-02 09:51:38,948 INFO    Thread-12 :41884 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/charlesoneill/retrieval/src/wandb/run-20240702_094906-7g83mbm0/files/output.log
+2024-07-02 09:51:39,541 DEBUG   HandlerThread:41884 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 09:51:40,546 DEBUG   HandlerThread:41884 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 09:51:40,954 INFO    Thread-12 :41884 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/charlesoneill/retrieval/src/wandb/run-20240702_094906-7g83mbm0/files/output.log
+2024-07-02 09:51:41,552 DEBUG   HandlerThread:41884 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 09:51:42,557 DEBUG   HandlerThread:41884 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 09:51:42,963 INFO    Thread-12 :41884 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/charlesoneill/retrieval/src/wandb/run-20240702_094906-7g83mbm0/files/output.log
+2024-07-02 09:51:43,559 DEBUG   HandlerThread:41884 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 09:51:43,826 DEBUG   HandlerThread:41884 [handler.py:handle_request():158] handle_request: status_report
+2024-07-02 09:51:44,565 DEBUG   HandlerThread:41884 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 09:51:44,971 INFO    Thread-12 :41884 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/charlesoneill/retrieval/src/wandb/run-20240702_094906-7g83mbm0/files/output.log
+2024-07-02 09:51:45,569 DEBUG   HandlerThread:41884 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 09:51:46,575 DEBUG   HandlerThread:41884 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 09:51:46,980 INFO    Thread-12 :41884 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/charlesoneill/retrieval/src/wandb/run-20240702_094906-7g83mbm0/files/output.log
+2024-07-02 09:51:47,580 DEBUG   HandlerThread:41884 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 09:51:48,600 DEBUG   HandlerThread:41884 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 09:51:48,831 DEBUG   HandlerThread:41884 [handler.py:handle_request():158] handle_request: status_report
+2024-07-02 09:51:48,990 INFO    Thread-12 :41884 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/charlesoneill/retrieval/src/wandb/run-20240702_094906-7g83mbm0/files/output.log
+2024-07-02 09:51:49,605 DEBUG   HandlerThread:41884 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 09:51:50,610 DEBUG   HandlerThread:41884 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 09:51:50,997 INFO    Thread-12 :41884 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/charlesoneill/retrieval/src/wandb/run-20240702_094906-7g83mbm0/files/output.log
+2024-07-02 09:51:51,615 DEBUG   HandlerThread:41884 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 09:51:52,735 DEBUG   HandlerThread:41884 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 09:51:53,008 INFO    Thread-12 :41884 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/charlesoneill/retrieval/src/wandb/run-20240702_094906-7g83mbm0/files/output.log
+2024-07-02 09:51:53,342 DEBUG   HandlerThread:41884 [handler.py:handle_request():158] handle_request: stop_status
+2024-07-02 09:51:53,342 DEBUG   SenderThread:41884 [sender.py:send_request():406] send_request: stop_status
+2024-07-02 09:51:53,879 DEBUG   HandlerThread:41884 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 09:51:53,879 DEBUG   HandlerThread:41884 [handler.py:handle_request():158] handle_request: status_report
+2024-07-02 09:51:55,017 INFO    Thread-12 :41884 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/charlesoneill/retrieval/src/wandb/run-20240702_094906-7g83mbm0/files/output.log
+2024-07-02 09:51:55,043 DEBUG   HandlerThread:41884 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 09:51:56,178 DEBUG   HandlerThread:41884 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 09:51:57,024 INFO    Thread-12 :41884 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/charlesoneill/retrieval/src/wandb/run-20240702_094906-7g83mbm0/files/output.log
+2024-07-02 09:51:57,183 DEBUG   HandlerThread:41884 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 09:51:58,188 DEBUG   HandlerThread:41884 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 09:51:58,884 DEBUG   HandlerThread:41884 [handler.py:handle_request():158] handle_request: status_report
+2024-07-02 09:51:59,034 INFO    Thread-12 :41884 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/charlesoneill/retrieval/src/wandb/run-20240702_094906-7g83mbm0/files/output.log
+2024-07-02 09:51:59,235 DEBUG   HandlerThread:41884 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 09:52:00,284 DEBUG   HandlerThread:41884 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 09:52:01,036 INFO    Thread-12 :41884 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/charlesoneill/retrieval/src/wandb/run-20240702_094906-7g83mbm0/files/output.log
+2024-07-02 09:52:01,284 DEBUG   HandlerThread:41884 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 09:52:02,289 DEBUG   HandlerThread:41884 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 09:52:03,043 INFO    Thread-12 :41884 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/charlesoneill/retrieval/src/wandb/run-20240702_094906-7g83mbm0/files/output.log
+2024-07-02 09:52:03,293 DEBUG   HandlerThread:41884 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 09:52:03,889 DEBUG   HandlerThread:41884 [handler.py:handle_request():158] handle_request: status_report
+2024-07-02 09:52:04,298 DEBUG   HandlerThread:41884 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 09:52:05,052 INFO    Thread-12 :41884 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/charlesoneill/retrieval/src/wandb/run-20240702_094906-7g83mbm0/files/output.log
+2024-07-02 09:52:05,303 DEBUG   HandlerThread:41884 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 09:52:06,434 DEBUG   SenderThread:41884 [sender.py:send():379] send: stats
+2024-07-02 09:52:06,466 DEBUG   HandlerThread:41884 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 09:52:07,058 INFO    Thread-12 :41884 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/charlesoneill/retrieval/src/wandb/run-20240702_094906-7g83mbm0/files/output.log
+2024-07-02 09:52:07,470 DEBUG   HandlerThread:41884 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 09:52:08,358 DEBUG   HandlerThread:41884 [handler.py:handle_request():158] handle_request: stop_status
+2024-07-02 09:52:08,359 DEBUG   SenderThread:41884 [sender.py:send_request():406] send_request: stop_status
+2024-07-02 09:52:08,475 DEBUG   HandlerThread:41884 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 09:52:08,914 DEBUG   HandlerThread:41884 [handler.py:handle_request():158] handle_request: status_report
+2024-07-02 09:52:09,063 INFO    Thread-12 :41884 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/charlesoneill/retrieval/src/wandb/run-20240702_094906-7g83mbm0/files/output.log
+2024-07-02 09:52:09,480 DEBUG   HandlerThread:41884 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 09:52:10,485 DEBUG   HandlerThread:41884 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 09:52:11,073 INFO    Thread-12 :41884 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/charlesoneill/retrieval/src/wandb/run-20240702_094906-7g83mbm0/files/output.log
+2024-07-02 09:52:11,488 DEBUG   HandlerThread:41884 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 09:52:12,488 DEBUG   HandlerThread:41884 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 09:52:13,081 INFO    Thread-12 :41884 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/charlesoneill/retrieval/src/wandb/run-20240702_094906-7g83mbm0/files/output.log
+2024-07-02 09:52:13,495 DEBUG   HandlerThread:41884 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 09:52:13,917 DEBUG   HandlerThread:41884 [handler.py:handle_request():158] handle_request: status_report
+2024-07-02 09:52:14,501 DEBUG   HandlerThread:41884 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 09:52:15,090 INFO    Thread-12 :41884 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/charlesoneill/retrieval/src/wandb/run-20240702_094906-7g83mbm0/files/output.log
+2024-07-02 09:52:15,505 DEBUG   HandlerThread:41884 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 09:52:16,510 DEBUG   HandlerThread:41884 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 09:52:17,096 INFO    Thread-12 :41884 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/charlesoneill/retrieval/src/wandb/run-20240702_094906-7g83mbm0/files/output.log
+2024-07-02 09:52:17,515 DEBUG   HandlerThread:41884 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 09:52:18,520 DEBUG   HandlerThread:41884 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 09:52:18,968 DEBUG   HandlerThread:41884 [handler.py:handle_request():158] handle_request: status_report
+2024-07-02 09:52:19,106 INFO    Thread-12 :41884 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/charlesoneill/retrieval/src/wandb/run-20240702_094906-7g83mbm0/files/output.log
+2024-07-02 09:52:19,525 DEBUG   HandlerThread:41884 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 09:52:20,571 DEBUG   HandlerThread:41884 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 09:52:21,113 INFO    Thread-12 :41884 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/charlesoneill/retrieval/src/wandb/run-20240702_094906-7g83mbm0/files/output.log
+2024-07-02 09:52:21,576 DEBUG   HandlerThread:41884 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 09:52:22,586 DEBUG   HandlerThread:41884 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 09:52:23,124 INFO    Thread-12 :41884 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/charlesoneill/retrieval/src/wandb/run-20240702_094906-7g83mbm0/files/output.log
+2024-07-02 09:52:23,363 DEBUG   HandlerThread:41884 [handler.py:handle_request():158] handle_request: stop_status
+2024-07-02 09:52:23,363 DEBUG   SenderThread:41884 [sender.py:send_request():406] send_request: stop_status
+2024-07-02 09:52:23,587 DEBUG   HandlerThread:41884 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 09:52:23,972 DEBUG   HandlerThread:41884 [handler.py:handle_request():158] handle_request: status_report
+2024-07-02 09:52:24,592 DEBUG   HandlerThread:41884 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 09:52:25,129 INFO    Thread-12 :41884 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/charlesoneill/retrieval/src/wandb/run-20240702_094906-7g83mbm0/files/output.log
+2024-07-02 09:52:25,596 DEBUG   HandlerThread:41884 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 09:52:26,605 DEBUG   HandlerThread:41884 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 09:52:27,135 INFO    Thread-12 :41884 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/charlesoneill/retrieval/src/wandb/run-20240702_094906-7g83mbm0/files/output.log
+2024-07-02 09:52:27,609 DEBUG   HandlerThread:41884 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 09:52:28,614 DEBUG   HandlerThread:41884 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 09:52:29,013 DEBUG   HandlerThread:41884 [handler.py:handle_request():158] handle_request: status_report
+2024-07-02 09:52:29,145 INFO    Thread-12 :41884 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/charlesoneill/retrieval/src/wandb/run-20240702_094906-7g83mbm0/files/output.log
+2024-07-02 09:52:29,618 DEBUG   HandlerThread:41884 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 09:52:30,624 DEBUG   HandlerThread:41884 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 09:52:31,151 INFO    Thread-12 :41884 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/charlesoneill/retrieval/src/wandb/run-20240702_094906-7g83mbm0/files/output.log
+2024-07-02 09:52:31,628 DEBUG   HandlerThread:41884 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 09:52:32,633 DEBUG   HandlerThread:41884 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 09:52:33,159 INFO    Thread-12 :41884 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/charlesoneill/retrieval/src/wandb/run-20240702_094906-7g83mbm0/files/output.log
+2024-07-02 09:52:33,637 DEBUG   HandlerThread:41884 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 09:52:34,577 DEBUG   HandlerThread:41884 [handler.py:handle_request():158] handle_request: status_report
+2024-07-02 09:52:34,642 DEBUG   HandlerThread:41884 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 09:52:35,166 INFO    Thread-12 :41884 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/charlesoneill/retrieval/src/wandb/run-20240702_094906-7g83mbm0/files/output.log
+2024-07-02 09:52:35,647 DEBUG   HandlerThread:41884 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 09:52:36,439 DEBUG   SenderThread:41884 [sender.py:send():379] send: stats
+2024-07-02 09:52:36,653 DEBUG   HandlerThread:41884 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 09:52:37,173 INFO    Thread-12 :41884 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/charlesoneill/retrieval/src/wandb/run-20240702_094906-7g83mbm0/files/output.log
+2024-07-02 09:52:37,658 DEBUG   HandlerThread:41884 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 09:52:38,376 DEBUG   HandlerThread:41884 [handler.py:handle_request():158] handle_request: stop_status
+2024-07-02 09:52:38,376 DEBUG   SenderThread:41884 [sender.py:send_request():406] send_request: stop_status
+2024-07-02 09:52:38,659 DEBUG   HandlerThread:41884 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 09:52:39,181 INFO    Thread-12 :41884 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/charlesoneill/retrieval/src/wandb/run-20240702_094906-7g83mbm0/files/output.log
+2024-07-02 09:52:39,664 DEBUG   HandlerThread:41884 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 09:52:39,761 DEBUG   HandlerThread:41884 [handler.py:handle_request():158] handle_request: status_report
+2024-07-02 09:52:40,669 DEBUG   HandlerThread:41884 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 09:52:41,191 INFO    Thread-12 :41884 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/charlesoneill/retrieval/src/wandb/run-20240702_094906-7g83mbm0/files/output.log
+2024-07-02 09:52:41,670 DEBUG   HandlerThread:41884 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 09:52:42,673 DEBUG   HandlerThread:41884 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 09:52:43,197 INFO    Thread-12 :41884 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/charlesoneill/retrieval/src/wandb/run-20240702_094906-7g83mbm0/files/output.log
+2024-07-02 09:52:43,743 DEBUG   HandlerThread:41884 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 09:52:44,748 DEBUG   HandlerThread:41884 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 09:52:44,907 DEBUG   HandlerThread:41884 [handler.py:handle_request():158] handle_request: status_report
+2024-07-02 09:52:45,207 INFO    Thread-12 :41884 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/charlesoneill/retrieval/src/wandb/run-20240702_094906-7g83mbm0/files/output.log
+2024-07-02 09:52:45,753 DEBUG   HandlerThread:41884 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 09:52:46,758 DEBUG   HandlerThread:41884 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 09:52:47,218 INFO    Thread-12 :41884 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/charlesoneill/retrieval/src/wandb/run-20240702_094906-7g83mbm0/files/output.log
+2024-07-02 09:52:47,762 DEBUG   HandlerThread:41884 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 09:52:48,763 DEBUG   HandlerThread:41884 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 09:52:49,227 INFO    Thread-12 :41884 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/charlesoneill/retrieval/src/wandb/run-20240702_094906-7g83mbm0/files/output.log
+2024-07-02 09:52:49,764 DEBUG   HandlerThread:41884 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 09:52:50,247 DEBUG   HandlerThread:41884 [handler.py:handle_request():158] handle_request: status_report
+2024-07-02 09:52:50,769 DEBUG   HandlerThread:41884 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 09:52:51,237 INFO    Thread-12 :41884 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/charlesoneill/retrieval/src/wandb/run-20240702_094906-7g83mbm0/files/output.log
+2024-07-02 09:52:51,774 DEBUG   HandlerThread:41884 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 09:52:52,776 DEBUG   HandlerThread:41884 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 09:52:53,242 INFO    Thread-12 :41884 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/charlesoneill/retrieval/src/wandb/run-20240702_094906-7g83mbm0/files/output.log
+2024-07-02 09:52:53,381 DEBUG   HandlerThread:41884 [handler.py:handle_request():158] handle_request: stop_status
+2024-07-02 09:52:53,381 DEBUG   SenderThread:41884 [sender.py:send_request():406] send_request: stop_status
+2024-07-02 09:52:53,859 DEBUG   HandlerThread:41884 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 09:52:54,863 DEBUG   HandlerThread:41884 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 09:52:55,253 INFO    Thread-12 :41884 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/charlesoneill/retrieval/src/wandb/run-20240702_094906-7g83mbm0/files/output.log
+2024-07-02 09:52:55,394 DEBUG   HandlerThread:41884 [handler.py:handle_request():158] handle_request: status_report
+2024-07-02 09:52:55,886 DEBUG   HandlerThread:41884 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 09:52:57,026 DEBUG   HandlerThread:41884 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 09:52:57,260 INFO    Thread-12 :41884 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/charlesoneill/retrieval/src/wandb/run-20240702_094906-7g83mbm0/files/output.log
+2024-07-02 09:52:58,031 DEBUG   HandlerThread:41884 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 09:52:59,034 DEBUG   HandlerThread:41884 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 09:52:59,271 INFO    Thread-12 :41884 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/charlesoneill/retrieval/src/wandb/run-20240702_094906-7g83mbm0/files/output.log
+2024-07-02 09:53:00,046 DEBUG   HandlerThread:41884 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 09:53:01,033 DEBUG   HandlerThread:41884 [handler.py:handle_request():158] handle_request: status_report
+2024-07-02 09:53:01,051 DEBUG   HandlerThread:41884 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 09:53:01,281 INFO    Thread-12 :41884 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/charlesoneill/retrieval/src/wandb/run-20240702_094906-7g83mbm0/files/output.log
+2024-07-02 09:53:02,056 DEBUG   HandlerThread:41884 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 09:53:03,059 DEBUG   HandlerThread:41884 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 09:53:03,289 INFO    Thread-12 :41884 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/charlesoneill/retrieval/src/wandb/run-20240702_094906-7g83mbm0/files/output.log
+2024-07-02 09:53:04,064 DEBUG   HandlerThread:41884 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 09:53:05,069 DEBUG   HandlerThread:41884 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 09:53:05,296 INFO    Thread-12 :41884 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/charlesoneill/retrieval/src/wandb/run-20240702_094906-7g83mbm0/files/output.log
+2024-07-02 09:53:06,074 DEBUG   HandlerThread:41884 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 09:53:06,148 DEBUG   HandlerThread:41884 [handler.py:handle_request():158] handle_request: status_report
+2024-07-02 09:53:06,442 DEBUG   SenderThread:41884 [sender.py:send():379] send: stats
+2024-07-02 09:53:07,079 DEBUG   HandlerThread:41884 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 09:53:07,306 INFO    Thread-12 :41884 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/charlesoneill/retrieval/src/wandb/run-20240702_094906-7g83mbm0/files/output.log
+2024-07-02 09:53:08,083 DEBUG   HandlerThread:41884 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 09:53:08,386 DEBUG   HandlerThread:41884 [handler.py:handle_request():158] handle_request: stop_status
+2024-07-02 09:53:08,386 DEBUG   SenderThread:41884 [sender.py:send_request():406] send_request: stop_status
+2024-07-02 09:53:09,087 DEBUG   HandlerThread:41884 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 09:53:09,313 INFO    Thread-12 :41884 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/charlesoneill/retrieval/src/wandb/run-20240702_094906-7g83mbm0/files/output.log
+2024-07-02 09:53:10,089 DEBUG   HandlerThread:41884 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 09:53:11,094 DEBUG   HandlerThread:41884 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 09:53:11,324 INFO    Thread-12 :41884 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/charlesoneill/retrieval/src/wandb/run-20240702_094906-7g83mbm0/files/output.log
+2024-07-02 09:53:11,447 DEBUG   HandlerThread:41884 [handler.py:handle_request():158] handle_request: status_report
+2024-07-02 09:53:12,099 DEBUG   HandlerThread:41884 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 09:53:13,104 DEBUG   HandlerThread:41884 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 09:53:13,331 INFO    Thread-12 :41884 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/charlesoneill/retrieval/src/wandb/run-20240702_094906-7g83mbm0/files/output.log
+2024-07-02 09:53:14,109 DEBUG   HandlerThread:41884 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 09:53:15,114 DEBUG   HandlerThread:41884 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 09:53:15,338 INFO    Thread-12 :41884 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/charlesoneill/retrieval/src/wandb/run-20240702_094906-7g83mbm0/files/output.log
+2024-07-02 09:53:16,119 DEBUG   HandlerThread:41884 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 09:53:16,963 DEBUG   HandlerThread:41884 [handler.py:handle_request():158] handle_request: status_report
+2024-07-02 09:53:17,124 DEBUG   HandlerThread:41884 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 09:53:17,346 INFO    Thread-12 :41884 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/charlesoneill/retrieval/src/wandb/run-20240702_094906-7g83mbm0/files/output.log
+2024-07-02 09:53:18,129 DEBUG   HandlerThread:41884 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 09:53:19,130 DEBUG   HandlerThread:41884 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 09:53:19,357 INFO    Thread-12 :41884 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/charlesoneill/retrieval/src/wandb/run-20240702_094906-7g83mbm0/files/output.log
+2024-07-02 09:53:20,135 DEBUG   HandlerThread:41884 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 09:53:21,140 DEBUG   HandlerThread:41884 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 09:53:21,365 INFO    Thread-12 :41884 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/charlesoneill/retrieval/src/wandb/run-20240702_094906-7g83mbm0/files/output.log
+2024-07-02 09:53:22,008 DEBUG   HandlerThread:41884 [handler.py:handle_request():158] handle_request: status_report
+2024-07-02 09:53:22,145 DEBUG   HandlerThread:41884 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 09:53:23,162 DEBUG   HandlerThread:41884 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 09:53:23,375 INFO    Thread-12 :41884 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/charlesoneill/retrieval/src/wandb/run-20240702_094906-7g83mbm0/files/output.log
+2024-07-02 09:53:23,391 DEBUG   HandlerThread:41884 [handler.py:handle_request():158] handle_request: stop_status
+2024-07-02 09:53:23,391 DEBUG   SenderThread:41884 [sender.py:send_request():406] send_request: stop_status
+2024-07-02 09:53:24,163 DEBUG   HandlerThread:41884 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 09:53:25,168 DEBUG   HandlerThread:41884 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 09:53:25,383 INFO    Thread-12 :41884 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/charlesoneill/retrieval/src/wandb/run-20240702_094906-7g83mbm0/files/output.log
+2024-07-02 09:53:26,173 DEBUG   HandlerThread:41884 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 09:53:27,178 DEBUG   HandlerThread:41884 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 09:53:27,393 INFO    Thread-12 :41884 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/charlesoneill/retrieval/src/wandb/run-20240702_094906-7g83mbm0/files/output.log
+2024-07-02 09:53:27,588 DEBUG   HandlerThread:41884 [handler.py:handle_request():158] handle_request: status_report
+2024-07-02 09:53:28,183 DEBUG   HandlerThread:41884 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 09:53:29,187 DEBUG   HandlerThread:41884 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 09:53:29,403 INFO    Thread-12 :41884 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/charlesoneill/retrieval/src/wandb/run-20240702_094906-7g83mbm0/files/output.log
+2024-07-02 09:53:30,192 DEBUG   HandlerThread:41884 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 09:53:31,192 DEBUG   HandlerThread:41884 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 09:53:31,413 INFO    Thread-12 :41884 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/charlesoneill/retrieval/src/wandb/run-20240702_094906-7g83mbm0/files/output.log
+2024-07-02 09:53:32,197 DEBUG   HandlerThread:41884 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 09:53:32,798 DEBUG   HandlerThread:41884 [handler.py:handle_request():158] handle_request: status_report
+2024-07-02 09:53:33,203 DEBUG   HandlerThread:41884 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 09:53:33,423 INFO    Thread-12 :41884 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/charlesoneill/retrieval/src/wandb/run-20240702_094906-7g83mbm0/files/output.log
+2024-07-02 09:53:34,207 DEBUG   HandlerThread:41884 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 09:53:35,211 DEBUG   HandlerThread:41884 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 09:53:35,430 INFO    Thread-12 :41884 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/charlesoneill/retrieval/src/wandb/run-20240702_094906-7g83mbm0/files/output.log
+2024-07-02 09:53:36,214 DEBUG   HandlerThread:41884 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 09:53:36,448 DEBUG   SenderThread:41884 [sender.py:send():379] send: stats
+2024-07-02 09:53:37,219 DEBUG   HandlerThread:41884 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 09:53:37,440 INFO    Thread-12 :41884 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/charlesoneill/retrieval/src/wandb/run-20240702_094906-7g83mbm0/files/output.log
+2024-07-02 09:53:37,885 DEBUG   HandlerThread:41884 [handler.py:handle_request():158] handle_request: status_report
+2024-07-02 09:53:38,369 DEBUG   HandlerThread:41884 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 09:53:38,396 DEBUG   HandlerThread:41884 [handler.py:handle_request():158] handle_request: stop_status
+2024-07-02 09:53:38,397 DEBUG   SenderThread:41884 [sender.py:send_request():406] send_request: stop_status
+2024-07-02 09:53:39,443 INFO    Thread-12 :41884 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/charlesoneill/retrieval/src/wandb/run-20240702_094906-7g83mbm0/files/output.log
+2024-07-02 09:53:39,479 DEBUG   HandlerThread:41884 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 09:53:40,484 DEBUG   HandlerThread:41884 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 09:53:41,453 INFO    Thread-12 :41884 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/charlesoneill/retrieval/src/wandb/run-20240702_094906-7g83mbm0/files/output.log
+2024-07-02 09:53:41,489 DEBUG   HandlerThread:41884 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 09:53:42,557 DEBUG   HandlerThread:41884 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 09:53:43,043 DEBUG   HandlerThread:41884 [handler.py:handle_request():158] handle_request: status_report
+2024-07-02 09:53:43,463 INFO    Thread-12 :41884 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/charlesoneill/retrieval/src/wandb/run-20240702_094906-7g83mbm0/files/output.log
+2024-07-02 09:53:43,562 DEBUG   HandlerThread:41884 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 09:53:44,578 DEBUG   HandlerThread:41884 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 09:53:45,474 INFO    Thread-12 :41884 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/charlesoneill/retrieval/src/wandb/run-20240702_094906-7g83mbm0/files/output.log
+2024-07-02 09:53:45,583 DEBUG   HandlerThread:41884 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 09:53:46,583 DEBUG   HandlerThread:41884 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 09:53:47,481 INFO    Thread-12 :41884 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/charlesoneill/retrieval/src/wandb/run-20240702_094906-7g83mbm0/files/output.log
+2024-07-02 09:53:47,588 DEBUG   HandlerThread:41884 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 09:53:48,593 DEBUG   HandlerThread:41884 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 09:53:48,744 DEBUG   HandlerThread:41884 [handler.py:handle_request():158] handle_request: status_report
+2024-07-02 09:53:49,489 INFO    Thread-12 :41884 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/charlesoneill/retrieval/src/wandb/run-20240702_094906-7g83mbm0/files/output.log
+2024-07-02 09:53:49,599 DEBUG   HandlerThread:41884 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 09:53:50,603 DEBUG   HandlerThread:41884 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 09:53:51,497 INFO    Thread-12 :41884 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/charlesoneill/retrieval/src/wandb/run-20240702_094906-7g83mbm0/files/output.log
+2024-07-02 09:53:51,691 DEBUG   HandlerThread:41884 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 09:53:52,693 DEBUG   HandlerThread:41884 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 09:53:53,401 DEBUG   HandlerThread:41884 [handler.py:handle_request():158] handle_request: stop_status
+2024-07-02 09:53:53,401 DEBUG   SenderThread:41884 [sender.py:send_request():406] send_request: stop_status
+2024-07-02 09:53:53,507 INFO    Thread-12 :41884 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/charlesoneill/retrieval/src/wandb/run-20240702_094906-7g83mbm0/files/output.log
+2024-07-02 09:53:53,742 DEBUG   HandlerThread:41884 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 09:53:54,052 DEBUG   HandlerThread:41884 [handler.py:handle_request():158] handle_request: status_report
+2024-07-02 09:53:54,747 DEBUG   HandlerThread:41884 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 09:53:55,517 INFO    Thread-12 :41884 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/charlesoneill/retrieval/src/wandb/run-20240702_094906-7g83mbm0/files/output.log
+2024-07-02 09:53:55,749 DEBUG   HandlerThread:41884 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 09:53:56,753 DEBUG   HandlerThread:41884 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 09:53:57,523 INFO    Thread-12 :41884 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/charlesoneill/retrieval/src/wandb/run-20240702_094906-7g83mbm0/files/output.log
+2024-07-02 09:53:57,764 DEBUG   HandlerThread:41884 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 09:53:58,769 DEBUG   HandlerThread:41884 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 09:53:59,129 DEBUG   HandlerThread:41884 [handler.py:handle_request():158] handle_request: status_report
+2024-07-02 09:53:59,529 INFO    Thread-12 :41884 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/charlesoneill/retrieval/src/wandb/run-20240702_094906-7g83mbm0/files/output.log
+2024-07-02 09:53:59,774 DEBUG   HandlerThread:41884 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 09:54:00,779 DEBUG   HandlerThread:41884 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 09:54:01,536 INFO    Thread-12 :41884 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/charlesoneill/retrieval/src/wandb/run-20240702_094906-7g83mbm0/files/output.log
+2024-07-02 09:54:01,781 DEBUG   HandlerThread:41884 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 09:54:02,786 DEBUG   HandlerThread:41884 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 09:54:03,542 INFO    Thread-12 :41884 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/charlesoneill/retrieval/src/wandb/run-20240702_094906-7g83mbm0/files/output.log
+2024-07-02 09:54:03,791 DEBUG   HandlerThread:41884 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 09:54:04,157 DEBUG   HandlerThread:41884 [handler.py:handle_request():158] handle_request: status_report
+2024-07-02 09:54:04,856 DEBUG   HandlerThread:41884 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 09:54:05,551 INFO    Thread-12 :41884 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/charlesoneill/retrieval/src/wandb/run-20240702_094906-7g83mbm0/files/output.log
+2024-07-02 09:54:05,861 DEBUG   HandlerThread:41884 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 09:54:06,453 DEBUG   SenderThread:41884 [sender.py:send():379] send: stats
+2024-07-02 09:54:06,866 DEBUG   HandlerThread:41884 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 09:54:07,561 INFO    Thread-12 :41884 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/charlesoneill/retrieval/src/wandb/run-20240702_094906-7g83mbm0/files/output.log
+2024-07-02 09:54:07,871 DEBUG   HandlerThread:41884 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 09:54:08,406 DEBUG   HandlerThread:41884 [handler.py:handle_request():158] handle_request: stop_status
+2024-07-02 09:54:08,406 DEBUG   SenderThread:41884 [sender.py:send_request():406] send_request: stop_status
+2024-07-02 09:54:08,876 DEBUG   HandlerThread:41884 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 09:54:09,173 DEBUG   HandlerThread:41884 [handler.py:handle_request():158] handle_request: status_report
+2024-07-02 09:54:09,571 INFO    Thread-12 :41884 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/charlesoneill/retrieval/src/wandb/run-20240702_094906-7g83mbm0/files/output.log
+2024-07-02 09:54:09,881 DEBUG   HandlerThread:41884 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 09:54:10,886 DEBUG   HandlerThread:41884 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 09:54:11,581 INFO    Thread-12 :41884 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/charlesoneill/retrieval/src/wandb/run-20240702_094906-7g83mbm0/files/output.log
+2024-07-02 09:54:11,892 DEBUG   HandlerThread:41884 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 09:54:12,895 DEBUG   HandlerThread:41884 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 09:54:13,592 INFO    Thread-12 :41884 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/charlesoneill/retrieval/src/wandb/run-20240702_094906-7g83mbm0/files/output.log
+2024-07-02 09:54:13,900 DEBUG   HandlerThread:41884 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 09:54:14,178 DEBUG   HandlerThread:41884 [handler.py:handle_request():158] handle_request: status_report
+2024-07-02 09:54:14,904 DEBUG   HandlerThread:41884 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 09:54:15,596 INFO    Thread-12 :41884 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/charlesoneill/retrieval/src/wandb/run-20240702_094906-7g83mbm0/files/output.log
+2024-07-02 09:54:15,909 DEBUG   HandlerThread:41884 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 09:54:16,913 DEBUG   HandlerThread:41884 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 09:54:17,607 INFO    Thread-12 :41884 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/charlesoneill/retrieval/src/wandb/run-20240702_094906-7g83mbm0/files/output.log
+2024-07-02 09:54:17,918 DEBUG   HandlerThread:41884 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 09:54:18,454 DEBUG   HandlerThread:41884 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-02 09:54:18,455 DEBUG   SenderThread:41884 [sender.py:send():379] send: history
+2024-07-02 09:54:18,455 DEBUG   SenderThread:41884 [sender.py:send_request():406] send_request: summary_record
+2024-07-02 09:54:18,456 INFO    SenderThread:41884 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-07-02 09:54:18,456 DEBUG   SenderThread:41884 [sender.py:send():379] send: telemetry
+2024-07-02 09:54:18,456 DEBUG   HandlerThread:41884 [handler.py:handle_request():158] handle_request: server_info
+2024-07-02 09:54:18,456 DEBUG   SenderThread:41884 [sender.py:send_request():406] send_request: server_info
+2024-07-02 09:54:18,503 DEBUG   SenderThread:41884 [sender.py:send():379] send: exit
+2024-07-02 09:54:18,503 INFO    SenderThread:41884 [sender.py:send_exit():586] handling exit code: 0
+2024-07-02 09:54:18,503 INFO    SenderThread:41884 [sender.py:send_exit():588] handling runtime: 312
+2024-07-02 09:54:18,504 INFO    SenderThread:41884 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-07-02 09:54:18,504 INFO    SenderThread:41884 [sender.py:send_exit():594] send defer
+2024-07-02 09:54:18,504 DEBUG   HandlerThread:41884 [handler.py:handle_request():158] handle_request: defer
+2024-07-02 09:54:18,504 INFO    HandlerThread:41884 [handler.py:handle_request_defer():184] handle defer: 0
+2024-07-02 09:54:18,504 DEBUG   SenderThread:41884 [sender.py:send_request():406] send_request: defer
+2024-07-02 09:54:18,504 INFO    SenderThread:41884 [sender.py:send_request_defer():610] handle sender defer: 0
+2024-07-02 09:54:18,504 INFO    SenderThread:41884 [sender.py:transition_state():614] send defer: 1
+2024-07-02 09:54:18,504 DEBUG   HandlerThread:41884 [handler.py:handle_request():158] handle_request: defer
+2024-07-02 09:54:18,504 INFO    HandlerThread:41884 [handler.py:handle_request_defer():184] handle defer: 1
+2024-07-02 09:54:18,504 DEBUG   SenderThread:41884 [sender.py:send_request():406] send_request: defer
+2024-07-02 09:54:18,504 INFO    SenderThread:41884 [sender.py:send_request_defer():610] handle sender defer: 1
+2024-07-02 09:54:18,504 INFO    SenderThread:41884 [sender.py:transition_state():614] send defer: 2
+2024-07-02 09:54:18,504 DEBUG   HandlerThread:41884 [handler.py:handle_request():158] handle_request: defer
+2024-07-02 09:54:18,504 INFO    HandlerThread:41884 [handler.py:handle_request_defer():184] handle defer: 2
+2024-07-02 09:54:18,504 INFO    HandlerThread:41884 [system_monitor.py:finish():203] Stopping system monitor
+2024-07-02 09:54:18,504 DEBUG   SystemMonitor:41884 [system_monitor.py:_start():179] Finished system metrics aggregation loop
+2024-07-02 09:54:18,504 DEBUG   SystemMonitor:41884 [system_monitor.py:_start():183] Publishing last batch of metrics
+2024-07-02 09:54:18,505 INFO    HandlerThread:41884 [interfaces.py:finish():200] Joined cpu monitor
+2024-07-02 09:54:18,505 INFO    HandlerThread:41884 [interfaces.py:finish():200] Joined disk monitor
+2024-07-02 09:54:18,505 INFO    HandlerThread:41884 [interfaces.py:finish():200] Joined gpuapple monitor
+2024-07-02 09:54:18,505 INFO    HandlerThread:41884 [interfaces.py:finish():200] Joined memory monitor
+2024-07-02 09:54:18,505 INFO    HandlerThread:41884 [interfaces.py:finish():200] Joined network monitor
+2024-07-02 09:54:18,505 DEBUG   SenderThread:41884 [sender.py:send_request():406] send_request: defer
+2024-07-02 09:54:18,505 INFO    SenderThread:41884 [sender.py:send_request_defer():610] handle sender defer: 2
+2024-07-02 09:54:18,505 INFO    SenderThread:41884 [sender.py:transition_state():614] send defer: 3
+2024-07-02 09:54:18,505 DEBUG   SenderThread:41884 [sender.py:send():379] send: stats
+2024-07-02 09:54:18,505 DEBUG   HandlerThread:41884 [handler.py:handle_request():158] handle_request: defer
+2024-07-02 09:54:18,505 INFO    HandlerThread:41884 [handler.py:handle_request_defer():184] handle defer: 3
+2024-07-02 09:54:18,505 DEBUG   SenderThread:41884 [sender.py:send_request():406] send_request: defer
+2024-07-02 09:54:18,505 INFO    SenderThread:41884 [sender.py:send_request_defer():610] handle sender defer: 3
+2024-07-02 09:54:18,505 INFO    SenderThread:41884 [sender.py:transition_state():614] send defer: 4
+2024-07-02 09:54:18,506 DEBUG   HandlerThread:41884 [handler.py:handle_request():158] handle_request: defer
+2024-07-02 09:54:18,506 INFO    HandlerThread:41884 [handler.py:handle_request_defer():184] handle defer: 4
+2024-07-02 09:54:18,506 DEBUG   SenderThread:41884 [sender.py:send_request():406] send_request: defer
+2024-07-02 09:54:18,506 INFO    SenderThread:41884 [sender.py:send_request_defer():610] handle sender defer: 4
+2024-07-02 09:54:18,506 INFO    SenderThread:41884 [sender.py:transition_state():614] send defer: 5
+2024-07-02 09:54:18,506 DEBUG   HandlerThread:41884 [handler.py:handle_request():158] handle_request: defer
+2024-07-02 09:54:18,506 INFO    HandlerThread:41884 [handler.py:handle_request_defer():184] handle defer: 5
+2024-07-02 09:54:18,506 DEBUG   SenderThread:41884 [sender.py:send():379] send: summary
+2024-07-02 09:54:18,506 INFO    SenderThread:41884 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-07-02 09:54:18,506 DEBUG   SenderThread:41884 [sender.py:send_request():406] send_request: defer
+2024-07-02 09:54:18,506 INFO    SenderThread:41884 [sender.py:send_request_defer():610] handle sender defer: 5
+2024-07-02 09:54:18,506 INFO    SenderThread:41884 [sender.py:transition_state():614] send defer: 6
+2024-07-02 09:54:18,506 DEBUG   HandlerThread:41884 [handler.py:handle_request():158] handle_request: defer
+2024-07-02 09:54:18,506 INFO    HandlerThread:41884 [handler.py:handle_request_defer():184] handle defer: 6
+2024-07-02 09:54:18,506 DEBUG   SenderThread:41884 [sender.py:send_request():406] send_request: defer
+2024-07-02 09:54:18,506 INFO    SenderThread:41884 [sender.py:send_request_defer():610] handle sender defer: 6
+2024-07-02 09:54:18,507 DEBUG   HandlerThread:41884 [handler.py:handle_request():158] handle_request: status_report
+2024-07-02 09:54:18,585 INFO    SenderThread:41884 [sender.py:transition_state():614] send defer: 7
+2024-07-02 09:54:18,585 DEBUG   HandlerThread:41884 [handler.py:handle_request():158] handle_request: defer
+2024-07-02 09:54:18,585 INFO    HandlerThread:41884 [handler.py:handle_request_defer():184] handle defer: 7
+2024-07-02 09:54:18,585 DEBUG   SenderThread:41884 [sender.py:send_request():406] send_request: defer
+2024-07-02 09:54:18,585 INFO    SenderThread:41884 [sender.py:send_request_defer():610] handle sender defer: 7
+2024-07-02 09:54:18,608 INFO    Thread-12 :41884 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/charlesoneill/retrieval/src/wandb/run-20240702_094906-7g83mbm0/files/config.yaml
+2024-07-02 09:54:18,608 INFO    Thread-12 :41884 [dir_watcher.py:_on_file_created():271] file/dir created: /Users/charlesoneill/retrieval/src/wandb/run-20240702_094906-7g83mbm0/files/wandb-summary.json
+2024-07-02 09:54:19,509 DEBUG   HandlerThread:41884 [handler.py:handle_request():158] handle_request: poll_exit
+2024-07-02 09:54:19,583 INFO    SenderThread:41884 [sender.py:transition_state():614] send defer: 8
+2024-07-02 09:54:19,583 DEBUG   SenderThread:41884 [sender.py:send_request():406] send_request: poll_exit
+2024-07-02 09:54:19,583 DEBUG   HandlerThread:41884 [handler.py:handle_request():158] handle_request: defer
+2024-07-02 09:54:19,584 INFO    HandlerThread:41884 [handler.py:handle_request_defer():184] handle defer: 8
+2024-07-02 09:54:19,584 DEBUG   SenderThread:41884 [sender.py:send_request():406] send_request: defer
+2024-07-02 09:54:19,584 INFO    SenderThread:41884 [sender.py:send_request_defer():610] handle sender defer: 8
+2024-07-02 09:54:19,584 INFO    SenderThread:41884 [job_builder.py:build():440] Attempting to build job artifact
+2024-07-02 09:54:19,585 INFO    SenderThread:41884 [job_builder.py:_get_source_type():569] is repo sourced job
+2024-07-02 09:54:19,614 INFO    Thread-12 :41884 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/charlesoneill/retrieval/src/wandb/run-20240702_094906-7g83mbm0/files/output.log
+2024-07-02 09:54:19,615 INFO    SenderThread:41884 [job_builder.py:build():545] adding wandb-job metadata file
+2024-07-02 09:54:19,617 INFO    SenderThread:41884 [sender.py:transition_state():614] send defer: 9
+2024-07-02 09:54:19,618 DEBUG   HandlerThread:41884 [handler.py:handle_request():158] handle_request: defer
+2024-07-02 09:54:19,618 DEBUG   SenderThread:41884 [sender.py:send():379] send: artifact
+2024-07-02 09:54:19,618 INFO    HandlerThread:41884 [handler.py:handle_request_defer():184] handle defer: 9
+2024-07-02 09:54:20,178 INFO    wandb-upload_0:41884 [upload_job.py:push():85] Skipped uploading /Users/charlesoneill/Library/Application Support/wandb/artifacts/staging/tmp910j5tcu
+2024-07-02 09:54:20,506 INFO    wandb-upload_1:41884 [upload_job.py:push():88] Uploaded file /var/folders/wg/cdt_cw_5265_z_gwnxlf0tv80000gn/T/tmp1g4k8sd0/wandb-job.json
+2024-07-02 09:54:20,514 DEBUG   HandlerThread:41884 [handler.py:handle_request():158] handle_request: poll_exit
+2024-07-02 09:54:21,600 INFO    SenderThread:41884 [sender.py:send_artifact():1530] sent artifact job-https___github.com_jsalt2024-evaluating-llms-for-astronomy_retrieval.git_src_bag_of_words.py - {'id': 'QXJ0aWZhY3Q6OTM2NDY2NTQ5', 'state': 'PENDING', 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjIzNjMwNzg3MQ==', 'latestArtifact': {'id': 'QXJ0aWZhY3Q6OTM2NDYwNTI0', 'versionIndex': 10}}}
+2024-07-02 09:54:21,601 DEBUG   SenderThread:41884 [sender.py:send_request():406] send_request: defer
+2024-07-02 09:54:21,601 INFO    SenderThread:41884 [sender.py:send_request_defer():610] handle sender defer: 9
+2024-07-02 09:54:21,601 INFO    SenderThread:41884 [dir_watcher.py:finish():358] shutting down directory watcher
+2024-07-02 09:54:21,620 INFO    SenderThread:41884 [dir_watcher.py:finish():388] scan: /Users/charlesoneill/retrieval/src/wandb/run-20240702_094906-7g83mbm0/files
+2024-07-02 09:54:21,620 INFO    SenderThread:41884 [dir_watcher.py:finish():402] scan save: /Users/charlesoneill/retrieval/src/wandb/run-20240702_094906-7g83mbm0/files/requirements.txt requirements.txt
+2024-07-02 09:54:21,621 INFO    SenderThread:41884 [dir_watcher.py:finish():402] scan save: /Users/charlesoneill/retrieval/src/wandb/run-20240702_094906-7g83mbm0/files/output.log output.log
+2024-07-02 09:54:21,621 INFO    SenderThread:41884 [dir_watcher.py:finish():402] scan save: /Users/charlesoneill/retrieval/src/wandb/run-20240702_094906-7g83mbm0/files/config.yaml config.yaml
+2024-07-02 09:54:21,624 INFO    SenderThread:41884 [dir_watcher.py:finish():402] scan save: /Users/charlesoneill/retrieval/src/wandb/run-20240702_094906-7g83mbm0/files/wandb-summary.json wandb-summary.json
+2024-07-02 09:54:21,628 INFO    SenderThread:41884 [dir_watcher.py:finish():402] scan save: /Users/charlesoneill/retrieval/src/wandb/run-20240702_094906-7g83mbm0/files/conda-environment.yaml conda-environment.yaml
+2024-07-02 09:54:21,630 INFO    SenderThread:41884 [dir_watcher.py:finish():402] scan save: /Users/charlesoneill/retrieval/src/wandb/run-20240702_094906-7g83mbm0/files/wandb-metadata.json wandb-metadata.json
+2024-07-02 09:54:21,630 INFO    SenderThread:41884 [sender.py:transition_state():614] send defer: 10
+2024-07-02 09:54:21,631 DEBUG   SenderThread:41884 [sender.py:send_request():406] send_request: poll_exit
+2024-07-02 09:54:21,631 DEBUG   HandlerThread:41884 [handler.py:handle_request():158] handle_request: defer
+2024-07-02 09:54:21,632 INFO    HandlerThread:41884 [handler.py:handle_request_defer():184] handle defer: 10
+2024-07-02 09:54:21,633 DEBUG   SenderThread:41884 [sender.py:send_request():406] send_request: defer
+2024-07-02 09:54:21,633 INFO    SenderThread:41884 [sender.py:send_request_defer():610] handle sender defer: 10
+2024-07-02 09:54:21,633 INFO    SenderThread:41884 [file_pusher.py:finish():169] shutting down file pusher
+2024-07-02 09:54:21,895 INFO    wandb-upload_0:41884 [upload_job.py:push():130] Uploaded file /Users/charlesoneill/retrieval/src/wandb/run-20240702_094906-7g83mbm0/files/requirements.txt
+2024-07-02 09:54:21,906 INFO    wandb-upload_2:41884 [upload_job.py:push():130] Uploaded file /Users/charlesoneill/retrieval/src/wandb/run-20240702_094906-7g83mbm0/files/config.yaml
+2024-07-02 09:54:21,918 INFO    wandb-upload_4:41884 [upload_job.py:push():130] Uploaded file /Users/charlesoneill/retrieval/src/wandb/run-20240702_094906-7g83mbm0/files/conda-environment.yaml
+2024-07-02 09:54:21,930 INFO    wandb-upload_3:41884 [upload_job.py:push():130] Uploaded file /Users/charlesoneill/retrieval/src/wandb/run-20240702_094906-7g83mbm0/files/wandb-summary.json
+2024-07-02 09:54:21,973 INFO    wandb-upload_1:41884 [upload_job.py:push():130] Uploaded file /Users/charlesoneill/retrieval/src/wandb/run-20240702_094906-7g83mbm0/files/output.log
+2024-07-02 09:54:22,177 INFO    Thread-11 (_thread_body):41884 [sender.py:transition_state():614] send defer: 11
+2024-07-02 09:54:22,178 DEBUG   HandlerThread:41884 [handler.py:handle_request():158] handle_request: defer
+2024-07-02 09:54:22,178 INFO    HandlerThread:41884 [handler.py:handle_request_defer():184] handle defer: 11
+2024-07-02 09:54:22,178 DEBUG   SenderThread:41884 [sender.py:send_request():406] send_request: defer
+2024-07-02 09:54:22,178 INFO    SenderThread:41884 [sender.py:send_request_defer():610] handle sender defer: 11
+2024-07-02 09:54:22,179 INFO    SenderThread:41884 [file_pusher.py:join():175] waiting for file pusher
+2024-07-02 09:54:22,180 INFO    SenderThread:41884 [sender.py:transition_state():614] send defer: 12
+2024-07-02 09:54:22,180 DEBUG   HandlerThread:41884 [handler.py:handle_request():158] handle_request: defer
+2024-07-02 09:54:22,180 INFO    HandlerThread:41884 [handler.py:handle_request_defer():184] handle defer: 12
+2024-07-02 09:54:22,181 DEBUG   SenderThread:41884 [sender.py:send_request():406] send_request: defer
+2024-07-02 09:54:22,181 INFO    SenderThread:41884 [sender.py:send_request_defer():610] handle sender defer: 12
+2024-07-02 09:54:22,181 INFO    SenderThread:41884 [file_stream.py:finish():601] file stream finish called
+2024-07-02 09:54:22,520 DEBUG   HandlerThread:41884 [handler.py:handle_request():158] handle_request: poll_exit
+2024-07-02 09:54:22,562 INFO    SenderThread:41884 [file_stream.py:finish():605] file stream finish is done
+2024-07-02 09:54:22,562 INFO    SenderThread:41884 [sender.py:transition_state():614] send defer: 13
+2024-07-02 09:54:22,562 DEBUG   SenderThread:41884 [sender.py:send_request():406] send_request: poll_exit
+2024-07-02 09:54:22,563 DEBUG   HandlerThread:41884 [handler.py:handle_request():158] handle_request: defer
+2024-07-02 09:54:22,563 INFO    HandlerThread:41884 [handler.py:handle_request_defer():184] handle defer: 13
+2024-07-02 09:54:22,564 DEBUG   SenderThread:41884 [sender.py:send_request():406] send_request: defer
+2024-07-02 09:54:22,564 INFO    SenderThread:41884 [sender.py:send_request_defer():610] handle sender defer: 13
+2024-07-02 09:54:22,564 INFO    SenderThread:41884 [sender.py:transition_state():614] send defer: 14
+2024-07-02 09:54:22,564 DEBUG   HandlerThread:41884 [handler.py:handle_request():158] handle_request: defer
+2024-07-02 09:54:22,565 DEBUG   SenderThread:41884 [sender.py:send():379] send: final
+2024-07-02 09:54:22,565 INFO    HandlerThread:41884 [handler.py:handle_request_defer():184] handle defer: 14
+2024-07-02 09:54:22,565 DEBUG   SenderThread:41884 [sender.py:send():379] send: footer
+2024-07-02 09:54:22,565 DEBUG   SenderThread:41884 [sender.py:send_request():406] send_request: defer
+2024-07-02 09:54:22,565 INFO    SenderThread:41884 [sender.py:send_request_defer():610] handle sender defer: 14
+2024-07-02 09:54:22,566 DEBUG   HandlerThread:41884 [handler.py:handle_request():158] handle_request: poll_exit
+2024-07-02 09:54:22,566 DEBUG   SenderThread:41884 [sender.py:send_request():406] send_request: poll_exit
+2024-07-02 09:54:22,567 DEBUG   HandlerThread:41884 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-02 09:54:22,567 DEBUG   HandlerThread:41884 [handler.py:handle_request():158] handle_request: get_summary
+2024-07-02 09:54:22,568 DEBUG   HandlerThread:41884 [handler.py:handle_request():158] handle_request: sampled_history
+2024-07-02 09:54:22,570 DEBUG   HandlerThread:41884 [handler.py:handle_request():158] handle_request: shutdown
+2024-07-02 09:54:22,570 INFO    HandlerThread:41884 [handler.py:finish():882] shutting down handler
+2024-07-02 09:54:23,571 INFO    WriterThread:41884 [datastore.py:close():296] close: /Users/charlesoneill/retrieval/src/wandb/run-20240702_094906-7g83mbm0/run-7g83mbm0.wandb
+2024-07-02 09:54:23,571 INFO    SenderThread:41884 [sender.py:finish():1608] shutting down sender
+2024-07-02 09:54:23,571 INFO    SenderThread:41884 [file_pusher.py:finish():169] shutting down file pusher
+2024-07-02 09:54:23,572 INFO    SenderThread:41884 [file_pusher.py:join():175] waiting for file pusher
