@@ -18,14 +18,16 @@ from evaluate import RetrievalSystem, main as evaluate_main
 from vector_store import EmbeddingClient, Document, DocumentLoader
 
 class EmbeddingRetrievalSystem(RetrievalSystem):
-    def __init__(self, dataset_path: str, embeddings_path: str = "../data/vector_store/embeddings_matrix.npy", 
+    def __init__(self, embeddings_path: str = "../data/vector_store/embeddings_matrix.npy", 
                  documents_path: str = "../data/vector_store/documents.pkl", 
-                 index_mapping_path: str = "../data/vector_store/index_mapping.pkl"):
-        self.dataset_path = dataset_path
+                 index_mapping_path: str = "../data/vector_store/index_mapping.pkl",
+                 metadata_path: str = "JSALT2024-Astro-LLMs/astro_paper_corpus"):
+        
         self.embeddings_path = embeddings_path
         self.documents_path = documents_path
         self.index_mapping_path = index_mapping_path
-        
+        self.metadata_path = metadata_path
+
         self.embeddings = None
         self.documents = None
         self.index_mapping = None
@@ -60,6 +62,9 @@ class EmbeddingRetrievalSystem(RetrievalSystem):
         print("Processing document dates...")
         self.document_dates = {doc.id: self.parse_date(doc.arxiv_id) for doc in self.documents}
         
+        print("Loading metadata...")
+        self.metadata = load_dataset(self.metadata_path, split = "train")
+
         print("Data loaded successfully.")
 
     def retrieve(self, query: str, arxiv_id: str, top_k: int = 10, return_scores = False) -> List[Tuple[str, str, float]]:
@@ -118,7 +123,7 @@ class EmbeddingRetrievalSystem(RetrievalSystem):
         return results
 
 def main():
-    retrieval_system = EmbeddingRetrievalSystem("charlieoneill/jsalt-astroph-dataset")
+    retrieval_system = EmbeddingRetrievalSystem()
     #evaluate_main(retrieval_system, "BaseSemanticSearch")
     query = "What is the stellar mass of the Milky Way?"
     arxiv_id = "2301.00001"

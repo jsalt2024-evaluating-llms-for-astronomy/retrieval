@@ -16,12 +16,12 @@ import concurrent.futures
 
 # use generate_n = 0, embed_query = True to do basic vector search (no generation)
 class HydeRetrievalSystem(EmbeddingRetrievalSystem):
-    def __init__(self, config_path: str, dataset_path: str, embeddings_path: str = "../data/vector_store/embeddings_matrix.npy", 
+    def __init__(self, config_path: str, embeddings_path: str = "../data/vector_store/embeddings_matrix.npy", 
                  documents_path: str = "../data/vector_store/documents.pkl", index_mapping_path: str = "../data/vector_store/index_mapping.pkl", 
                  generation_model: str = "claude-3-haiku-20240307", embedding_model: str = "text-embedding-3-small", 
                  temperature: float = 0.5, max_doclen: int = 500, generate_n: int = 1, embed_query = True):
         
-        super().__init__(dataset_path = dataset_path, embeddings_path = embeddings_path, documents_path = documents_path, index_mapping_path = index_mapping_path)
+        super().__init__(embeddings_path = embeddings_path, documents_path = documents_path, index_mapping_path = index_mapping_path)
 
         if max_doclen * generate_n > 8191:
             raise ValueError("Too many tokens. Please reduce max_doclen or generate_n.")
@@ -90,8 +90,7 @@ class HydeRetrievalSystem(EmbeddingRetrievalSystem):
         return vecs
 
 def main():
-    retrieval_system = HydeRetrievalSystem(dataset_path = "charlieoneill/jsalt-astroph-dataset",
-                         embeddings_path = "/users/christineye/retrieval/data/vector_store/embeddings_matrix.npy",
+    retrieval_system = HydeRetrievalSystem(embeddings_path = "/users/christineye/retrieval/data/vector_store/embeddings_matrix.npy",
                          documents_path = "/users/christineye/retrieval/data/vector_store/documents.pkl",
                          index_mapping_path = "/users/christineye/retrieval/data/vector_store/index_mapping.pkl", config_path = "/users/christineye/retrieval/config.yaml", 
                                      generate_n = 1, embed_query = False, max_doclen = 300)
