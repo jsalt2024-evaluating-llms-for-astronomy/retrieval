@@ -1,0 +1,165 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Single-doc progress: 100%|██████████████████████████████████████████████████████████████████████████████████████████████| 250/250 [02:25<00:00,  1.72it/s]
+Multi-doc progress:   2%|█▋                                                                                               | 4/231 [00:01<01:23,  2.73it/s]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Multi-doc progress:  81%|████████████████████████████████████████████████████████████████████████████▉                  | 187/231 [02:04<00:29,  1.50it/s]
+Traceback (most recent call last):
+  File "/Users/charlesoneill/retrieval/src/bag_of_words.py", line 118, in <module>
+    main()
+  File "/Users/charlesoneill/retrieval/src/bag_of_words.py", line 115, in main
+    evaluate_main(retrieval_system, "BagOfWordsDateFiltered")
+  File "/Users/charlesoneill/retrieval/src/../evaluation/evaluate.py", line 145, in main
+    results = evaluator.evaluate('../data/single_paper.json', '../data/multi_paper.json', '../data/multi_paper_sentences.json', k_values=[10, 50, 100])
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/charlesoneill/retrieval/src/../evaluation/evaluate.py", line 30, in evaluate
+    multi_results = self._evaluate_multi_document(multi_doc_file, k_values)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/charlesoneill/retrieval/src/../evaluation/evaluate.py", line 82, in _evaluate_multi_document
+    retrieved_docs = self.retrieval_system.retrieve(query, arxiv_id_clean, top_k=max(k_values))
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/charlesoneill/retrieval/src/bag_of_words.py", line 106, in retrieve
+    filtered_tfidf_matrix = self.tfidf_matrix[valid_indices]
+                            ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "/Users/charlesoneill/miniconda3/envs/jsalt/lib/python3.12/site-packages/scipy/sparse/_csr.py", line 24, in __getitem__
+    return super().__getitem__(key)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/charlesoneill/miniconda3/envs/jsalt/lib/python3.12/site-packages/scipy/sparse/_index.py", line 83, in __getitem__
+    return self._get_arrayXslice(row, col)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/charlesoneill/miniconda3/envs/jsalt/lib/python3.12/site-packages/scipy/sparse/_csr.py", line 277, in _get_arrayXslice
+    return self._major_index_fancy(row)._get_submatrix(minor=col)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/charlesoneill/miniconda3/envs/jsalt/lib/python3.12/site-packages/scipy/sparse/_compressed.py", line 767, in _major_index_fancy
+    csr_row_index(
+KeyboardInterrupt
