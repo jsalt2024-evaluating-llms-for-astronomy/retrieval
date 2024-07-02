@@ -16,12 +16,14 @@ import concurrent.futures
 
 # use generate_n = 0, embed_query = True to do basic vector search (no generation)
 class HydeRetrievalSystem(EmbeddingRetrievalSystem):
-    def __init__(self, config_path: str, embeddings_path: str = "../data/vector_store/embeddings_matrix.npy", 
+    def __init__(self, config_path: str, embeddings_path: str = "../data/vector_store/embeddings_matrix.npy", metadata_path = "../data/vector_store/metadata.json",
                  documents_path: str = "../data/vector_store/documents.pkl", index_mapping_path: str = "../data/vector_store/index_mapping.pkl", 
                  generation_model: str = "claude-3-haiku-20240307", embedding_model: str = "text-embedding-3-small", 
-                 temperature: float = 0.5, max_doclen: int = 500, generate_n: int = 1, embed_query = True):
+                 temperature: float = 0.5, max_doclen: int = 500, generate_n: int = 1, embed_query = True,
+                 weight_citation = False):
         
-        super().__init__(embeddings_path = embeddings_path, documents_path = documents_path, index_mapping_path = index_mapping_path)
+        super().__init__(embeddings_path = embeddings_path, documents_path = documents_path, index_mapping_path = index_mapping_path,
+                         metadata_path = metadata_path, weight_citation = weight_citation)
 
         if max_doclen * generate_n > 8191:
             raise ValueError("Too many tokens. Please reduce max_doclen or generate_n.")
@@ -35,13 +37,12 @@ class HydeRetrievalSystem(EmbeddingRetrievalSystem):
         self.generate_n = generate_n
         self.embed_query = embed_query
 
-        with open(config_path, 'r') as stream:
-            config = yaml.safe_load(stream)
-            self.anthropic_key = config['anthropic_api_key']
-            # self.openai_key = config['openai_api_key']
+        config = yaml.safe_load(open('../config.yaml', 'r'))
+        self.anthropic_key = config['anthropic_api_key']
+        self.cohere_key = config['cohere_api_key']
         
         self.generation_client = anthropic.Anthropic(api_key = self.anthropic_key)
-
+    
     def retrieve(self, query: str, arxiv_id: str, top_k: int = 10) -> List[Tuple[str, str, float]]:
         docs = self.generate_docs(query)
         doc_embeddings = self.embed_docs(docs)
@@ -82,18 +83,17 @@ class HydeRetrievalSystem(EmbeddingRetrievalSystem):
                     data = future.result()
                     docs.append(data)
                 except Exception as exc:
-                    print(f'Query {query} generated an exception: {exc}')
+                    pass
         return docs
 
     def embed_docs(self, docs: List[str]):
-        vecs = self.client.embed_batch(docs)
-        return vecs
+        return self.client.embed_batch(docs)
 
 def main():
     retrieval_system = HydeRetrievalSystem(embeddings_path = "/users/christineye/retrieval/data/vector_store/embeddings_matrix.npy",
                          documents_path = "/users/christineye/retrieval/data/vector_store/documents.pkl",
                          index_mapping_path = "/users/christineye/retrieval/data/vector_store/index_mapping.pkl", config_path = "/users/christineye/retrieval/config.yaml", 
-                                     generate_n = 1, embed_query = False, max_doclen = 300)
+                                     generate_n = 1, embed_query = False, max_doclen = 300, weight_citation = True)
     evaluate_main(retrieval_system, "BaseHyDE")
 
 if __name__ == "__main__":
