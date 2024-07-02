@@ -173,7 +173,6 @@ def query_ads(ref, verbose = False, incyear = True):
     results = requests.get("https://api.adsabs.harvard.edu/v1/search/query?{}".format(encoded_query), \
                         headers={'Authorization': 'Bearer ' + ads_token})
     
-    print(results.json())
     json_results = results.json()['response']['docs']
     
 
