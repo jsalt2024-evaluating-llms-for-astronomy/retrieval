@@ -1,5 +1,5 @@
 import json
-import re
+import regex as re
 import numpy as np
 import anthropic
 import requests
@@ -13,6 +13,8 @@ from urllib.parse import urlencode, quote_plus
 from tqdm import tqdm
 import arxiv
 from urllib.parse import urlencode, quote_plus
+import random
+import unicodedata
 arxiv_client = arxiv.Client()
 
 with open("/users/christineye/retrieval/config.yaml", 'r') as stream:
@@ -36,7 +38,7 @@ def load_araa(from_file = True):
                             headers={'Authorization': 'Bearer ' + ads_token})
         json_results = results.json()
     
-    return json_results['response']['docs']
+    return format_reviews(json_results['response']['docs'])
 
 def pull_arxiv_and_doi(idlist):
     """Extract the arXiv ID and DOI from the list of identifiers returned by ADS."""
@@ -113,10 +115,9 @@ def get_page_contents(reviews):
     return asyncio.run(fetch_multiple_pages(urls))
 
 
-def scrape_all_papers(reviews, batch_size = 10):
+def scrape_all_papers(reviews, from_web = False, batch_size = 10):
     """Scrape the full text & bibliographies of the ARA&A papers using Playwright."""
     reviews_with_text = []
-
     for i in tqdm(range(len(reviews) // batch_size + 1)):
         batch = reviews[i * batch_size : i * batch_size + (batch_size - 1)]
         content = get_page_contents(batch)
@@ -129,17 +130,18 @@ def scrape_all_papers(reviews, batch_size = 10):
                 review['text'] = paper['paragraphs']
                 review['fullbib'] = paper['references']
                 reviews_with_text.append(review)
-    
+
     return reviews_with_text
 
 def load_papers(from_file = True, batch_size = 10):
     """Load the ARA&A papers from a local file or scrape them."""
+    papers = []
     if from_file:
-        with open('./araa_papers.json', 'r') as f:
-            papers = json.load(f)
+        with open('./multi_data/araa_papers.json', 'r') as f:
+            for line in f:
+                papers.append(json.loads(line))
     else:
-        review_json = load_araa(from_file = True)
-        reviews = format_reviews(review_json)
+        reviews = load_araa(from_file = True)
         print('Number of reviews:', len(reviews))
         papers = scrape_all_papers(reviews, batch_size = batch_size)
     
@@ -158,9 +160,27 @@ def link_to_bib(review, citations):
     
     return cited_refs
 
+def query_ads(ref, verbose = False, incyear = True):
+    qstring = "first_author:{} ".format(ref['surnames'][0])
+    for surname in ref['surnames'][1:]:
+        if surname != "":
+            qstring += "author:{} ".format(surname)
+    if incyear: qstring += "year:{}".format(ref['year'])
+    if verbose: print(qstring)
+    
+    query = {"q": qstring, "fl": "title, year, bibcode, author, identifier", "rows":1000}
+    encoded_query = urlencode(query)
+    results = requests.get("https://api.adsabs.harvard.edu/v1/search/query?{}".format(encoded_query), \
+                        headers={'Authorization': 'Bearer ' + ads_token})
+    
+    json_results = results.json()['response']['docs']
+    
+
+    return json_results
+
 def search_arxiv(ref, verbose = False):
     """Search for the arXiv ID of a paper based on the author list and publication year."""
-    if int(ref['year']) < 2000:
+    if int(ref['year']) < 1991:
         return None
     
     # query = ""
@@ -173,28 +193,19 @@ def search_arxiv(ref, verbose = False):
     # print(query)
     # search = arxiv.Search(query = query, max_results = 10)
     # results = arxiv_client.results(search)
+    json_results = query_ads(ref, verbose, incyear = True)
+    
+    if len(json_results) == 0:
+        json_results = query_ads(ref, verbose, incyear = False)
 
-    qstring = "first_author:{} ".format(ref['surnames'][0])
-    for surname in ref['surnames'][1:]:
-        if surname != "":
-            qstring += "author:{} ".format(surname)
-    qstring += "year:{}".format(ref['year'])
-    if verbose: print(qstring)
-    
-    query = {"q": qstring, "fl": "title, year, bibcode, author, identifier", "rows":1000}
-    encoded_query = urlencode(query)
-    results = requests.get("https://api.adsabs.harvard.edu/v1/search/query?{}".format(encoded_query), \
-                        headers={'Authorization': 'Bearer ' + ads_token})
-    
-    json_results = results.json()['response']['docs']
-    
-    
     for r in json_results: # Strict match check (author order & year)
         valid = True
-        # if r.published.year > int(ref['year']) + 2 or r.published.year < int(ref['year']) - 2:
-        #     continue
+        if int(r['year']) > int(ref['year']) + 1 or int(r['year']) < int(ref['year']) - 1:
+            valid = False
+        
         for i, surname in enumerate(ref['surnames']):
-            if i > (len(r['author']) - 1) or surname not in r['author'][i]:
+            if i > (len(r['author']) - 1) or unicodedata.normalize('NFKD', surname).encode('ascii', 'ignore') not in unicodedata.normalize('NFKD', r['author'][i]).encode('ascii', 'ignore'):
+                valid = False
                 break
         
         if valid: 
@@ -207,22 +218,36 @@ def search_arxiv(ref, verbose = False):
 
 
 # PARAGRAPH SELECTION AND QUERY GENERATION
-def scrape_citations(text):
+def scrape_citations(text, replace = False):
     """Regex to scrape unique citations from a paragraph."""
-    patterns = ['([A-Z][A-Za-z´-]+) \(?(\d{4})', # Name Year
-                '([A-Z][A-Za-z´-]+) et al\. \(?(\d{4})',
-                '([A-Z][A-Za-z´-]+) & ([A-Z][a-z]+) \(?(\d{4})',
-                '([A-Z][A-Za-z´-]+),\s+([A-Z][a-z]+) & ([A-Z][a-z]+) \(?(\d{4})',
-                '([A-Z][A-Za-z]+) ([A-Z][a-zA-Z]+) et al. \(?(\d{4})',
-                '([A-Z][a-zA-Z]+[A-Z][a-zA-Z]+) et al. \(?(\d{4})',
-                '([A-Z][a-zA-Z]+\s[A-Z][a-zA-Z]+) & ([A-Z][a-zA-Z]+\s[A-Z][a-zA-Z]+) \(?(\d{4})']
+    patterns = [
+    r'([A-Z][A-Za-z´\p{L}-]+(?:\s[A-Z][a-zA-Z´\p{L}-]+)?) et al\. \(?(\d{4})',  # Name et al. (year) and First Last et al. (year)
+    r'([A-Z][A-Za-z´\p{L}-]+(?:\s[A-Z][a-zA-Z´\p{L}-]+)?) & ([A-Z][A-Za-z´\p{L}-]+(?:\s[A-Z][a-zA-Z´\p{L}-]+)?) \(?(\d{4})',  # Name & Name (year) and First Last & First Last (year)
+    r'([A-Z][A-Za-z´\p{L}-]+),\s+([A-Z][A-Za-z´\p{L}-]+) & ([A-Z][a-z]+) \(?(\d{4})',  # Name, Name & Name (year)
+    r'([A-Z][A-Za-z´\p{L}-]+) \(?(\d{4})',  # Name (year)
+    ]
     
-    citations = []
+    matches = []
     for pattern in patterns:
-        for match in re.findall(pattern, text):
-            citations.append(match)
+        matches.extend(re.findall(pattern, text))
+        if replace: text = re.sub(pattern, '', text)
     
-    return list(set(citations))
+    if replace: return list(set(matches)), text
+    
+    return list(set(matches))
+
+def sentence_level(paragraph):
+    pattern = re.compile(r'(?<=\.) (?=[A-Z])')
+    split_text = pattern.split(paragraph)
+    
+    sentences = []
+    for line in split_text:
+        citations, clean_line = scrape_citations(line, True)
+        clean_line = clean_line.replace(';', '').replace(', ,', '').replace('), ', '').replace('e.g.', '').replace('()','')
+        sentences.append((clean_line, citations))
+    
+    return sentences
+
 
 def citation_density(content, k, mode = "topk", maxn = 20):
     """Return indices of paragraphs with the highest citation density."""
@@ -254,6 +279,18 @@ def get_best_paragraphs(content, k, mode = "topk", maxn = 25):
     
     return string
 
+def get_best_sentences_from_paper(paper, k, mode = "topk", maxn = 10):
+    sentences = []
+    for paragraph in paper:
+        sentences.extend(sentence_level(paragraph))
+    
+    if mode == "topk":
+        return sorted(sentences, key = lambda x: len(x[1]), reverse = True)[:k]
+    elif mode == "threshold":
+        good_sentences = [sentence for sentence in sentences if len(sentence[1]) > k]
+        good_sentences = sorted(good_sentences, key = lambda x: len(x[1]), reverse = True)
+        return good_sentences[:maxn]
+
 def claude_paragraphs(paper):
     """Claude API call to find best paragraphs + synthetic queries."""
 
@@ -269,6 +306,21 @@ def claude_paragraphs(paper):
                 Return the 3 best question-paragraph pairs in this format: {index, question}.
                 Do not include any text before or after each {index, question}, including any introduction or rationale.""",
                 # Also return the 3 paragraphs and corresponding questions that are least on-topic and related to the research question.
+        messages=[{"role": "user",
+                "content": [{"type": "text", "text": paper,}] }]
+    )
+    
+    return message
+
+def claude_query(paper):
+    """Claude API call to find best paragraphs + synthetic queries."""
+
+    message = client.messages.create(
+        model="claude-3-5-sonnet-20240620",
+        max_tokens=500,
+        temperature=0,
+        system="""You are an expert astronomer. Given this sentence from a scientific paper, generate a focused research question for each paragraph that is answered by the sentence text.
+                Formulate the question such that it is expert-level, focused, and relevant to the sentence. Be concise.""",
         messages=[{"role": "user",
                 "content": [{"type": "text", "text": paper,}] }]
     )
@@ -296,6 +348,21 @@ def process_paper(paper, verbose = False, mode = "topk", k = 10):
     
     return pqueries
 
+def process_paper_sentences(paper, verbose = False, mode = "threshold", k = 10):
+    content = paper['text']
+    sentences = get_best_sentences_from_paper(content, k, mode)
+    if verbose: print(len(sentences))
+    
+    pqueries = []
+    for sentence in sentences:
+        sentence_text, sentence_citations = sentence
+        query = claude_query(sentence_text).content[0].text 
+        pqueries.append({'title': paper['title'], 'id': paper['id'], 
+                            'question': query, 'paragraph': sentence_text, 
+                            'citations': sentence_citations, 'bibs': link_to_bib(paper, sentence_citations)})
+
+    return pqueries
+
 def arxiv_link(pqueries):
     """Search for the arXiv ID of each citation in the paragraph."""
     
@@ -306,7 +373,7 @@ def arxiv_link(pqueries):
             if arxiv_id is not None:
                 query['arxiv'].append(arxiv_id)
     
-    query['arxiv'] = set(query['arxiv'])
+        query['arxiv'] = list(set(query['arxiv']))
             
     return pqueries
 
@@ -317,19 +384,18 @@ def main():
 
     query_pairs = []
     for paper in papers:
-        query_pairs.append(process_paper(paper['text']))
+        query_pairs.append(process_paper_sentences(paper, verbose = True, mode = "threshold", k = 5))
 
     query_pairs_formatted = {}
     for paper in query_pairs:
         for i, query in enumerate(paper):
             id_str = query['id'].split('_')[0] + '_' + str(i + 1)
-            query_pairs_formatted[id_str] = {'title':query['title'], 'question':query['question'], 
+            query_pairs_formatted[id_str] = {'title': query['title'], 'question':query['question'], 
                                             'text': query['paragraph'], 'citations':query['citations'],
                                             'arxiv': list(query['arxiv'])}
 
-    fname = ""#'../data/multi_paper_examples.json'
     
-    with open('../data/multi_paper.json', 'w') as f:
+    with open('../data/multi_paper_sentences.json', 'w') as f:
         json.dump(query_pairs_formatted, f, indent = 2)
 
 if __name__ == '__main__':
