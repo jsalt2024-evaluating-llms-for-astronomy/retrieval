@@ -1,0 +1,152 @@
+{
+  "Q001": {
+    "has_temporal_aspect": true,
+    "expected_year_filter": "year == 2024",
+    "expected_recency_weight": 8
+  },
+  "Q002": {
+    "has_temporal_aspect": true,
+    "expected_year_filter": "year >= 2000 and year < 2020",
+    "expected_recency_weight": 6
+  },
+  "Q003": {
+    "has_temporal_aspect": true,
+    "expected_year_filter": "(year < 2006) or (year >= 2006)",
+    "expected_recency_weight": 6
+  },
+  "Q004": {
+    "has_temporal_aspect": true,
+    "expected_year_filter": "year >= 2019 and year <= 2030",
+    "expected_recency_weight": 7
+  },
+  "Q005": {
+    "has_temporal_aspect": false,
+    "expected_year_filter": null,
+    "expected_recency_weight": null
+  },
+  "Q006": {
+    "has_temporal_aspect": true,
+    "expected_year_filter": "(year >= 1962 and year < 1970) or (year >= 1990 and year < 1995) or (year >= 2018 and year < 2023)",
+    "expected_recency_weight": 6
+  },
+  "Q007": {
+    "has_temporal_aspect": true,
+    "expected_year_filter": "(year < 2000 or year >= 2000)",
+    "expected_recency_weight": 5
+  },
+  "Q008": {
+    "has_temporal_aspect": true,
+    "expected_year_filter": "year >= 2000 and year < 3000",
+    "expected_recency_weight": 5
+  },
+  "Q009": {
+    "has_temporal_aspect": true,
+    "expected_year_filter": "year >= 2021",
+    "expected_recency_weight": 7
+  },
+  "Q010": {
+    "has_temporal_aspect": true,
+    "expected_year_filter": null,
+    "expected_recency_weight": 8
+  },
+  "Q011": {
+    "has_temporal_aspect": true,
+    "expected_year_filter": "year >= 1977",
+    "expected_recency_weight": 7
+  },
+  "Q012": {
+    "has_temporal_aspect": false,
+    "expected_year_filter": null,
+    "expected_recency_weight": null
+  },
+  "Q013": {
+    "has_temporal_aspect": true,
+    "expected_year_filter": "(year < 2002) or (year >= 2002)",
+    "expected_recency_weight": 3
+  },
+  "Q014": {
+    "has_temporal_aspect": true,
+    "expected_year_filter": "year == 2025",
+    "expected_recency_weight": 8
+  },
+  "Q015": {
+    "has_temporal_aspect": true,
+    "expected_year_filter": "year >= 1054 and year <= 2023",
+    "expected_recency_weight": 2
+  },
+  "Q016": {
+    "has_temporal_aspect": true,
+    "expected_year_filter": "(year >= 1990 and year < 2000) or (year >= 2020 and year < 2030)",
+    "expected_recency_weight": 5
+  },
+  "Q017": {
+    "has_temporal_aspect": true,
+    "expected_year_filter": "year >= 2021",
+    "expected_recency_weight": 8
+  },
+  "Q018": {
+    "has_temporal_aspect": true,
+    "expected_year_filter": "year == 2023",
+    "expected_recency_weight": 6
+  },
+  "Q019": {
+    "has_temporal_aspect": true,
+    "expected_year_filter": "year >= 1995 and year < 2020",
+    "expected_recency_weight": 7
+  },
+  "Q020": {
+    "has_temporal_aspect": true,
+    "expected_year_filter": null,
+    "expected_recency_weight": 8
+  },
+  "Q021": {
+    "has_temporal_aspect": true,
+    "expected_year_filter": "(year < 2010) or (year > 2020)",
+    "expected_recency_weight": 6
+  },
+  "Q022": {
+    "has_temporal_aspect": true,
+    "expected_year_filter": "(year >= 2015 and year <= 2022)",
+    "expected_recency_weight": 8
+  },
+  "Q023": {
+    "has_temporal_aspect": true,
+    "expected_year_filter": "(year >= 1996 and year <= 2008) or (year >= 2019 and year <= 2024)",
+    "expected_recency_weight": 6
+  },
+  "Q024": {
+    "has_temporal_aspect": true,
+    "expected_year_filter": "(year > 2015 and year < 2020)",
+    "expected_recency_weight": 7
+  },
+  "Q025": {
+    "has_temporal_aspect": true,
+    "expected_year_filter": "(year >= 2013 and year <= 2023)",
+    "expected_recency_weight": 7
+  },
+  "Q026": {
+    "has_temporal_aspect": true,
+    "expected_year_filter": "year >= 1972 and year <= 2022",
+    "expected_recency_weight": 7
+  },
+  "Q027": {
+    "has_temporal_aspect": true,
+    "expected_year_filter": "(year < 2005) or (year >= 2005)",
+    "expected_recency_weight": 7
+  },
+  "Q028": {
+    "has_temporal_aspect": true,
+    "expected_year_filter": "year >= 1996 and year < 2014",
+    "expected_recency_weight": 7
+  },
+  "Q029": {
+    "has_temporal_aspect": true,
+    "expected_year_filter": "year > 2016 and year < 2021",
+    "expected_recency_weight": 6
+  },
+  "Q030": {
+    "has_temporal_aspect": true,
+    "expected_year_filter": "(year < 2006) or (year >= 2014 and year < 2019)",
+    "expected_recency_weight": 7
+  }
+}
