@@ -70,7 +70,6 @@ class EmbeddingRetrievalSystem(RetrievalSystem):
         # Get the query embedding
         query_embedding = self.get_query_embedding(query)
         
-        query_date = self.parse_date(arxiv_id)
         top_results = self.rank_and_filter(query_embedding, query_date, top_k, return_scores = return_scores)
         
         return top_results
@@ -87,16 +86,16 @@ class EmbeddingRetrievalSystem(RetrievalSystem):
         for doc_id, mappings in self.index_mapping.items():
             doc_date = self.document_dates[doc_id]
             
-            if doc_date <= query_date:
+            if doc_date <= query_date: # this can stay here
                 abstract_sim = similarities[mappings['abstract']] if 'abstract' in mappings else -np.inf
                 conclusions_sim = similarities[mappings['conclusions']] if 'conclusions' in mappings else -np.inf
                 
-                if abstract_sim > conclusions_sim: score = abstract_sim
-                else: score = conclusions_sim
+                if abstract_sim > conclusions_sim: score = abstract_sim, location = 'abstract'
+                else: score = conclusions_sim, location = 'conclusions'
                 
-                filtered_results.append((doc_id, 'conclusions', score))
+                filtered_results.append((doc_id, location, score))
         
-        # Sort and get top-k results
+        # Sort and weight and get top-k results
         if self.weight_citation and self.metadata is not None:
             citation_count = np.array([self.metadata[doc_id]['citation_count'] for doc_id, _, _ in filtered_results])
             cmean, cstd = np.mean(citation_count), np.std(citation_count)

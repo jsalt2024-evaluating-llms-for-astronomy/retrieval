@@ -23,9 +23,38 @@ nltk.download('stopwords', quiet=True)
 nlp = spacy.load("en_core_web_sm")
 #spacy.cli.download('en_core_web_sm')
 nlp.add_pipe("textrank")
+from abc import ABC, abstractmethod
 
+class Filter(ABC):
+    @abstractmethod
 
-class KeywordRetrievalSystem(RetrievalSystem):
+    # we can also build the weighting system directly into this
+    def filter(self, query: str, arxiv_id: str, doc_ids: List[str] = None) -> List[str]:
+        pass
+
+class DateFilter(Filter):
+    def __init__(self, document_dates):
+        self.document_dates = document_dates # pass in from retriever object?
+
+    def parse_date(self, arxiv_id: str) -> datetime:
+        try:
+            year = int("20" + arxiv_id[:2])
+            month = int(arxiv_id[2:4])
+        except:
+            year = 2023
+            month = 1
+        return datetime(year, month, 1)
+    
+    def filter(self, query: str, arxiv_id: str, doc_ids: List[str]):
+        query_date = self.parse_date(arxiv_id)
+        filtered = set()
+        for doc in doc_ids:
+            if self.document_dates[doc] >= query_date:
+                filtered.add(doc)
+        
+        return filtered
+
+class KeywordFilter(Filter):
     def __init__(self, index_path: str = "../data/vector_store/keyword_index.json", metadata_path: str = "../data/vector_store/metadata.json",
                  remove_capitals: bool = True):
         
@@ -40,8 +69,7 @@ class KeywordRetrievalSystem(RetrievalSystem):
 
     def preprocess_text(self, text: str) -> str:
         text = ''.join(char for char in text if char.isalnum() or char.isspace())
-        if self.remove_capitals:
-            text = text.lower()
+        if self.remove_capitals: text = text.lower()
         return ' '.join(word for word in text.split() if word.lower() not in self.stopwords)
 
     def build_index(self):
@@ -71,13 +99,11 @@ class KeywordRetrievalSystem(RetrievalSystem):
         else:
             self.build_index()
 
-    def parse_doc(self, text, nret = 10):
-        #text = ' '.join(word for word in text.split() if word.lower() not in self.stopwords)
+    def parse_doc(self, text):
         local_kws = []
         doc = nlp(text)
-        # examine the top-ranked phrases in the document
-        for phrase in doc._.phrases[:nret]:
-            # print(phrase.text)
+        
+        for phrase in doc._.phrases:
             local_kws.append(phrase.text.lower())
         
         return [self.preprocess_text(word) for word in local_kws]
@@ -85,7 +111,7 @@ class KeywordRetrievalSystem(RetrievalSystem):
     def get_propn(self, text):
         result = []
         doc = nlp(text) 
-
+        
         working_str = ''
         for token in doc:
             if(token.text in nlp.Defaults.stop_words or token.text in punctuation):
@@ -94,14 +120,13 @@ class KeywordRetrievalSystem(RetrievalSystem):
                     working_str = ''
 
             if(token.pos_ == "PROPN"):
-                working_str += token.text
-                working_str += ' '
+                working_str += token.text + ' '
 
         if working_str != '': result.append(working_str.strip())
         
         return [self.preprocess_text(word) for word in result]
 
-    def keyword_filter(self, query: str, verbose = False, ne_only = True):
+    def filter(self, query: str, arxiv_id: str, doc_ids = None, verbose = False, ne_only = True):
         query_keywords = self.parse_doc(query)
         nouns = self.get_propn(query)
         if verbose: print('keywords:', query_keywords)
@@ -116,29 +141,9 @@ class KeywordRetrievalSystem(RetrievalSystem):
             ne_results = set()
             for noun in nouns:
                 if noun in self.index.keys(): ne_results |= set(self.index[noun])
-            if ne_only: return ne_results
             
-            filtered &= ne_results
-        return filtered
-    
-    def date_filter(self, results, arxiv_id):
-        query_date = self.parse_date(arxiv_id)
-        filtered = set()
-        for doc in results:
-            if self.parse_date(doc) >= query_date:
-                filtered.add(doc)
+            if ne_only: filtered = ne_results # keep only named entity results
+            else: filtered &= ne_results # take the intersection
         
+        if results is not None: filtered &= results # apply filter to results
         return filtered
-
-
-    def retrieve(self, query: str, arxiv_id: str, top_k: int = 10, verbose = True, ne_only = False) -> List[str]:
-        filtered = self.date_filter(self.keyword_filter(query, verbose, ne_only = ne_only), arxiv_id)
-        if verbose: print('Retrieved documents:', len(filtered))
-        return list(filtered)[:top_k]
-
-def main():
-    retrieval_system = KeywordRetrievalSystem(remove_capitals = True)
-    evaluate_main(retrieval_system, "ADSKeywords")
-
-if __name__ == "__main__":
-    main()
