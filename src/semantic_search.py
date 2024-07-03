@@ -79,36 +79,36 @@ class EmbeddingRetrievalSystem(RetrievalSystem):
         if self.weight_keywords:
             self.keyword_filter = KeywordFilter(index_path = "../data/vector_store/keyword_index.json", metadata = self.metadata, remove_capitals = True)
 
-    def retrieve(self, query: str, arxiv_id: str, top_k: int = 10, return_scores = False, ) -> List[Tuple[str, str, float]]:
+    def retrieve(self, query: str, arxiv_id: str, top_k: int = 10, return_scores = False) -> List[Tuple[str, str, float]]:
         query_date = self.parse_date(arxiv_id)
-        
-        # Get the query embedding
         query_embedding = self.get_query_embedding(query)
         
-        top_results = self.rank_and_filter(query_embedding, query_date, top_k, return_scores = return_scores)
-        
+        top_results = self.rank_and_filter(query, query_embedding, query_date, top_k, return_scores = return_scores)
         return top_results
     
-    def rank_and_filter(self, query_embedding: np.ndarray, query_date, top_k: int = 10, return_scores = False) -> List[Tuple[str, str, float]]:
+    def rank_and_filter(self, query, query_embedding: np.ndarray, query_date, top_k: int = 10, return_scores = False) -> List[Tuple[str, str, float]]:
         # Calculate similarities
         similarities = np.dot(self.embeddings, query_embedding)  #cosine_similarity([query_embedding], self.embeddings)[0]
         
         # Filter and rank results
+        if self.weight_keywords: keyword_matches = self.keyword_filter.filter(query)
+        
         results = []
         for doc_id, mappings in self.index_mapping.items():
-            abstract_sim = similarities[mappings['abstract']] if 'abstract' in mappings else -np.inf
-            conclusions_sim = similarities[mappings['conclusions']] if 'conclusions' in mappings else -np.inf
-            
-            if abstract_sim > conclusions_sim: 
-                results.append([doc_id, "abstract", abstract_sim])
-            else: 
-                results.append([doc_id, "conclusions", conclusions_sim])
+            if not self.weight_keywords or doc_id in keyword_matches:
+                abstract_sim = similarities[mappings['abstract']] if 'abstract' in mappings else -np.inf
+                conclusions_sim = similarities[mappings['conclusions']] if 'conclusions' in mappings else -np.inf
+                
+                if abstract_sim > conclusions_sim: 
+                    results.append([doc_id, "abstract", abstract_sim])
+                else: 
+                    results.append([doc_id, "conclusions", conclusions_sim])
                 
         
         # Sort and weight and get top-k results
         filtered_results = self.date_filter.filter(results, max_date = query_date)
         if self.weight_citation: self.citation_filter.filter(filtered_results)
-            
+
         top_results = sorted(filtered_results, key=lambda x: x[2], reverse=True)[:top_k]
 
         if return_scores:

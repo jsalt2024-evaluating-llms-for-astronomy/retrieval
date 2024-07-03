@@ -179,6 +179,8 @@ class RetrievalSystem(ABC):
         pass
 
     def parse_date(self, arxiv_id: str) -> datetime:
+        if arxiv_id.startswith('astro-ph'):
+            arxiv_id = arxiv_id.split('astro-ph')[1].split('_arXiv')[0]
         try:
             year = int("20" + arxiv_id[:2])
             month = int(arxiv_id[2:4])

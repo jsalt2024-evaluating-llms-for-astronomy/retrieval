@@ -8,12 +8,12 @@ from tqdm import tqdm
 from datetime import datetime
 import sys
 sys.path.append('../evaluation')
-
 import spacy
 from collections import Counter
 from string import punctuation
 from nltk.corpus import stopwords
 import nltk
+import math
 import pytextrank
 nltk.download('stopwords', quiet=True) 
 nlp = spacy.load("en_core_web_sm")
@@ -45,6 +45,8 @@ class DateFilter(Filter): # include time weighting eventually
         self.document_dates = document_dates
 
     def parse_date(self, arxiv_id: str) -> datetime:
+        if arxiv_id.startswith('astro-ph'):
+            arxiv_id = arxiv_id.split('astro-ph')[1].split('_arXiv')[0]
         try:
             year = int("20" + arxiv_id[:2])
             month = int(arxiv_id[2:4])
@@ -53,7 +55,10 @@ class DateFilter(Filter): # include time weighting eventually
             month = 1
         return datetime(year, month, 1)
     
-    def filter(self, docs, min_date = None, max_date = None):
+    def weight(self, time, shift, scale):
+        return 1 / (1 + math.exp((time - shift) / scale))
+
+    def filter(self, docs, min_date = None, max_date = None, time_score = 0):
         if min_date == None: min_date = datetime(1990, 1, 1)
         if max_date == None: max_date = datetime(2023, 1, 1)
 
@@ -62,21 +67,27 @@ class DateFilter(Filter): # include time weighting eventually
             if self.document_dates[doc[0]] >= min_date and self.document_dates[doc[0]] <= max_date:
                 filtered.append(doc)
         
+        if time_score != 0: # apply time weighting
+            for i, item in enumerate(filtered):
+                time_diff = (max_date - self.document_dates[filtered[i][0]]).days / 365
+                filtered[i][2] += time_score * 0.1 * self.weight(time_diff, 5, 5)
+
         return filtered
 
 class KeywordFilter(Filter):
     def __init__(self, index_path: str = "../data/vector_store/keyword_index.json", metadata_path: str = "../data/vector_store/metadata.json",
-                 remove_capitals: bool = True, metadata = None,  ne_only = True):
+                 remove_capitals: bool = True, metadata = None, ne_only = True, verbose = False):
         
         self.index_path = index_path
         self.metadata_path = metadata_path
         self.remove_capitals = remove_capitals
         self.ne_only = ne_only
         self.stopwords = set(stopwords.words('english')) 
+        self.metadata = metadata
+        self.verbose = verbose
+        self.index = None
 
-        if metadata is None:
-            self.load_or_build_index()
-        else: self.metadata = metadata
+        self.load_or_build_index()
 
     def preprocess_text(self, text: str) -> str:
         text = ''.join(char for char in text if char.isalnum() or char.isspace())
@@ -84,9 +95,8 @@ class KeywordFilter(Filter):
         return ' '.join(word for word in text.split() if word.lower() not in self.stopwords)
 
     def build_index(self):
+        print("Building index...")
         self.index = {}
-        with open(self.metadata_path, 'r') as f:
-            self.metadata = json.load(f)
 
         for i, index in tqdm(enumerate(self.metadata)):
             paper = self.metadata[index]
@@ -137,11 +147,11 @@ class KeywordFilter(Filter):
         
         return [self.preprocess_text(word) for word in result]
 
-    def filter(self, query: str, arxiv_id: str, doc_ids = None, verbose = False):
+    def filter(self, query: str, doc_ids = None):
         query_keywords = self.parse_doc(query)
         nouns = self.get_propn(query)
-        if verbose: print('keywords:', query_keywords)
-        if verbose: print('proper nouns:', nouns)
+        if self.verbose: print('keywords:', query_keywords)
+        if self.verbose: print('proper nouns:', nouns)
 
         filtered = set()
         if len(query_keywords) > 0 and not self.ne_only:
