@@ -139,13 +139,13 @@ class EmbeddingRetrievalSystem(RetrievalSystem):
         return results
 
 def main():
-    retrieval_system = EmbeddingRetrievalSystem()
-    #evaluate_main(retrieval_system, "BaseSemanticSearch")
-    query = "What is the stellar mass of the Milky Way?"
-    arxiv_id = "2301.00001"
-    top_k = 10
-    results = retrieval_system.retrieve(query, arxiv_id, top_k)
-    print(f"Retrieved documents: {results}")
+    retrieval_system = EmbeddingRetrievalSystem("charlieoneill/jsalt-astroph-dataset")
+    evaluate_main(retrieval_system, "BaseSemanticSearch")
+    # query = "What is the stellar mass of the Milky Way?"
+    # arxiv_id = "2301.00001"
+    # top_k = 10
+    # results = retrieval_system.retrieve(query, arxiv_id, top_k)
+    # print(f"Retrieved documents: {results}")
 
 if __name__ == "__main__":
     main()
