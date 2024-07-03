@@ -11,7 +11,6 @@ from tqdm import tqdm
 from datetime import datetime
 import sys
 sys.path.append('../evaluation')
-from evaluate import RetrievalSystem, main as evaluate_main
 
 import spacy
 from collections import Counter
@@ -23,18 +22,32 @@ nltk.download('stopwords', quiet=True)
 nlp = spacy.load("en_core_web_sm")
 #spacy.cli.download('en_core_web_sm')
 nlp.add_pipe("textrank")
-from abc import ABC, abstractmethod
 
-class Filter(ABC):
-    @abstractmethod
-
+class Filter():    
     # we can also build the weighting system directly into this
-    def filter(self, query: str, arxiv_id: str, doc_ids: List[str] = None) -> List[str]:
+    def filter(self, query: str, arxiv_id: str) -> List[str]:
         pass
 
-class DateFilter(Filter):
+class CitationFilter(Filter): # can do it with all metadata
+
+    def __init__(self, metadata):
+        self.metadata = metadata
+        self.citation_counts = {doc_id: self.metadata[doc_id]['citation_count'] for doc_id in self.metadata}
+    
+    def citation_weight(self, x, shift, scale):
+        return 1 / (1 + np.exp(-1 * (x - shift) / scale)) # sigmoid function
+    
+    def filter(self, doc_scores, weight = 0.2): # additive weighting
+        citation_count = np.array([self.citation_counts[doc[0]] for doc in doc_scores])
+        cmean, cstd = np.mean(citation_count), np.std(citation_count)
+        citation_score = self.citation_weight(citation_count, cmean, cstd)
+
+        for i, doc in enumerate(doc_scores):
+            doc_scores[i][2] *= weight * citation_score[i]
+
+class DateFilter(Filter): # include time weighting eventually
     def __init__(self, document_dates):
-        self.document_dates = document_dates # pass in from retriever object?
+        self.document_dates = document_dates
 
     def parse_date(self, arxiv_id: str) -> datetime:
         try:
@@ -56,16 +69,17 @@ class DateFilter(Filter):
 
 class KeywordFilter(Filter):
     def __init__(self, index_path: str = "../data/vector_store/keyword_index.json", metadata_path: str = "../data/vector_store/metadata.json",
-                 remove_capitals: bool = True):
+                 remove_capitals: bool = True, metadata = None,  ne_only = True):
         
         self.index_path = index_path
         self.metadata_path = metadata_path
         self.remove_capitals = remove_capitals
-        
-        nltk.download('stopwords', quiet=True)
+        self.ne_only = ne_only
         self.stopwords = set(stopwords.words('english')) 
 
-        self.load_or_build_index()
+        if metadata is None:
+            self.load_or_build_index()
+        else: self.metadata = metadata
 
     def preprocess_text(self, text: str) -> str:
         text = ''.join(char for char in text if char.isalnum() or char.isspace())
@@ -111,7 +125,7 @@ class KeywordFilter(Filter):
     def get_propn(self, text):
         result = []
         doc = nlp(text) 
-        
+
         working_str = ''
         for token in doc:
             if(token.text in nlp.Defaults.stop_words or token.text in punctuation):
@@ -126,14 +140,14 @@ class KeywordFilter(Filter):
         
         return [self.preprocess_text(word) for word in result]
 
-    def filter(self, query: str, arxiv_id: str, doc_ids = None, verbose = False, ne_only = True):
+    def filter(self, query: str, arxiv_id: str, doc_ids = None, verbose = False):
         query_keywords = self.parse_doc(query)
         nouns = self.get_propn(query)
         if verbose: print('keywords:', query_keywords)
         if verbose: print('proper nouns:', nouns)
 
         filtered = set()
-        if len(query_keywords) > 0 and not ne_only:
+        if len(query_keywords) > 0 and not self.ne_only:
             for keyword in query_keywords:
                 if keyword != '' and keyword in self.index.keys(): filtered |= set(self.index[keyword])
         
@@ -142,8 +156,8 @@ class KeywordFilter(Filter):
             for noun in nouns:
                 if noun in self.index.keys(): ne_results |= set(self.index[noun])
             
-            if ne_only: filtered = ne_results # keep only named entity results
+            if self.ne_only: filtered = ne_results # keep only named entity results
             else: filtered &= ne_results # take the intersection
         
-        if results is not None: filtered &= results # apply filter to results
+        if doc_ids is not None: filtered &= doc_ids # apply filter to results
         return filtered

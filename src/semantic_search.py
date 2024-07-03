@@ -10,6 +10,7 @@ from tqdm import tqdm
 from datetime import datetime
 import yaml
 from openai import OpenAI
+from filters import CitationFilter, DateFilter, KeywordFilter
 
 import sys
 sys.path.append('../evaluation')
@@ -21,13 +22,15 @@ class EmbeddingRetrievalSystem(RetrievalSystem):
     def __init__(self, embeddings_path: str = "../data/vector_store/embeddings_matrix.npy", 
                  documents_path: str = "../data/vector_store/documents.pkl", 
                  index_mapping_path: str = "../data/vector_store/index_mapping.pkl",
-                 metadata_path: str = "../data/vector_store/metadata.json", weight_citation = False):
+                 metadata_path: str = "../data/vector_store/metadata.json", weight_citation = False, weight_date = False, weight_keywords = False):
         
         self.embeddings_path = embeddings_path
         self.documents_path = documents_path
         self.index_mapping_path = index_mapping_path
         self.metadata_path = metadata_path
         self.weight_citation = weight_citation
+        self.weight_date = weight_date
+        self.weight_keywords = weight_keywords
 
         self.embeddings = None
         self.documents = None
@@ -36,6 +39,7 @@ class EmbeddingRetrievalSystem(RetrievalSystem):
         self.document_dates = []
         
         self.load_data()
+        self.init_filters()
 
         config = yaml.safe_load(open('../config.yaml', 'r'))
         self.client = EmbeddingClient(OpenAI(api_key=config['openai_api_key']))
@@ -63,6 +67,17 @@ class EmbeddingRetrievalSystem(RetrievalSystem):
             print("Could not find metadata.")
         
         print("Data loaded successfully.")
+    
+    def init_filters(self):
+        print("Loading filters...")
+        if self.weight_citation: 
+            self.citation_filter = CitationFilter(metadata = self.metadata)
+        
+        if self.weight_date:
+            self.date_filter = DateFilter(document_dates = self.document_dates)
+        
+        if self.weight_keywords:
+            self.keyword_filter = KeywordFilter(index_path = "../data/vector_store/keyword_index.json", metadata = self.metadata, remove_capitals = True)
 
     def retrieve(self, query: str, arxiv_id: str, top_k: int = 10, return_scores = False, ) -> List[Tuple[str, str, float]]:
         query_date = self.parse_date(arxiv_id)
@@ -74,9 +89,6 @@ class EmbeddingRetrievalSystem(RetrievalSystem):
         
         return top_results
     
-    def citation_weight(self, x, shift, scale):
-        return 1 / (1 + np.exp(-1 * (x - shift) / scale)) 
-
     def rank_and_filter(self, query_embedding: np.ndarray, query_date, top_k: int = 10, return_scores = False) -> List[Tuple[str, str, float]]:
         # Calculate similarities
         similarities = np.dot(self.embeddings, query_embedding)  #cosine_similarity([query_embedding], self.embeddings)[0]
@@ -90,31 +102,27 @@ class EmbeddingRetrievalSystem(RetrievalSystem):
                 abstract_sim = similarities[mappings['abstract']] if 'abstract' in mappings else -np.inf
                 conclusions_sim = similarities[mappings['conclusions']] if 'conclusions' in mappings else -np.inf
                 
-                if abstract_sim > conclusions_sim: score = abstract_sim, location = 'abstract'
-                else: score = conclusions_sim, location = 'conclusions'
+                if abstract_sim > conclusions_sim: 
+                    filtered_results.append([doc_id, "abstract", abstract_sim])
+                else: 
+                    filtered_results.append([doc_id, "conclusions", conclusions_sim])
                 
-                filtered_results.append((doc_id, location, score))
         
         # Sort and weight and get top-k results
-        if self.weight_citation and self.metadata is not None:
-            citation_count = np.array([self.metadata[doc_id]['citation_count'] for doc_id, _, _ in filtered_results])
-            cmean, cstd = np.mean(citation_count), np.std(citation_count)
-            top_results = sorted(filtered_results, key=lambda x: x[2] + 0.2 * x[2] * self.citation_weight(self.metadata[x[0]]['citation_count'], cmean, cstd), reverse=True)[:top_k]
-
-        else: 
-            top_results = sorted(filtered_results, key=lambda x: x[2], reverse=True)[:top_k]
-        
+        if self.weight_citation: self.citation_filter.filter(filtered_results)
+            
+        top_results = sorted(filtered_results, key=lambda x: x[2], reverse=True)[:top_k]
 
         if return_scores:
-            return {doc_id: score for doc_id, _, score in top_results}
+            return {doc_id: doc[2] for doc in top_results}
 
         # Only keep the document IDs
-        top_results = [doc_id for doc_id, _, _ in top_results]
+        top_results = [doc[0] for doc in top_results]
         return top_results
 
     def get_query_embedding(self, query: str) -> np.ndarray:
         embedding = self.client.embed(query)
-        return np.array(embedding, dtype=np.float32)
+        return np.array(embedding, dtype = np.float32)
     
     def get_document_texts(self, doc_ids: List[str]) -> List[Dict[str, str]]:
         results = []
