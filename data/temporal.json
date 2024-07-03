@@ -1,0 +1,242 @@
+[
+    {
+      "query_id": "Q001",
+      "query_text": "Impact of the 2024 total solar eclipse on coronal mass ejection studies",
+      "has_temporal_aspect": true,
+      "expected_year_filter": "year >= 2024",
+      "expected_recency_weight": 9,
+      "temporal_query_type": "astronomical_event_based"
+    },
+    {
+      "query_id": "Q002",
+      "query_text": "Evolution of exoplanet detection techniques in the last two decades",
+      "has_temporal_aspect": true,
+      "expected_year_filter": "year >= 2004",
+      "expected_recency_weight": 6,
+      "temporal_query_type": "relative_reference"
+    },
+    {
+      "query_id": "Q003",
+      "query_text": "Comparison of Martian atmosphere models before and after the Mars Reconnaissance Orbiter mission",
+      "has_temporal_aspect": true,
+      "expected_year_filter": null,
+      "expected_recency_weight": 0,
+      "temporal_query_type": "mission_timeline"
+    },
+    {
+      "query_id": "Q004",
+      "query_text": "Analysis of solar cycle predictions for Solar Cycle 25 (2019-2030)",
+      "has_temporal_aspect": true,
+      "expected_year_filter": "year >= 2019 AND year <= 2030",
+      "expected_recency_weight": 7,
+      "temporal_query_type": "periodic_phenomena"
+    },
+    {
+      "query_id": "Q005",
+      "query_text": "Dark matter theories in the era of gravitational wave astronomy",
+      "has_temporal_aspect": true,
+      "expected_year_filter": "year >= 2015",
+      "expected_recency_weight": 8,
+      "temporal_query_type": "technology_driven_epoch"
+    },
+    {
+      "query_id": "Q006",
+      "query_text": "Comparative study of Venusian atmospheric data from the Mariner 2 (1962), Magellan (1990-1994), and Parker Solar Probe (2018-present) missions",
+      "has_temporal_aspect": true,
+      "expected_year_filter": "year >= 1962",
+      "expected_recency_weight": 4,
+      "temporal_query_type": "multiple_time_points"
+    },
+    {
+      "query_id": "Q007",
+      "query_text": "Ancient Chinese records of Halley's Comet compared with modern orbit calculations",
+      "has_temporal_aspect": true,
+      "expected_year_filter": null,
+      "expected_recency_weight": 0,
+      "temporal_query_type": "historical_astronomy"
+    },
+    {
+      "query_id": "Q008",
+      "query_text": "Projected changes in the Andromeda galaxy's trajectory over the next billion years",
+      "has_temporal_aspect": true,
+      "expected_year_filter": null,
+      "expected_recency_weight": 5,
+      "temporal_query_type": "future_predictions"
+    },
+    {
+      "query_id": "Q009",
+      "query_text": "Analysis of stellar populations using data from the Gaia DR3 release",
+      "has_temporal_aspect": true,
+      "expected_year_filter": "year >= 2022",
+      "expected_recency_weight": 10,
+      "temporal_query_type": "data_release_timeline"
+    },
+    {
+      "query_id": "Q010",
+      "query_text": "Recent advancements in multi-messenger astronomy",
+      "has_temporal_aspect": true,
+      "expected_year_filter": null,
+      "expected_recency_weight": 9,
+      "temporal_query_type": "vague_temporal_reference"
+    },
+    {
+        "query_id": "Q011",
+        "query_text": "Changes in Jupiter's Great Red Spot observations since the Voyager missions",
+        "has_temporal_aspect": true,
+        "expected_year_filter": "year >= 1979",
+        "expected_recency_weight": 5,
+        "temporal_query_type": "mission_timeline"
+      },
+      {
+        "query_id": "Q012",
+        "query_text": "Asteroid impact predictions for the next century",
+        "has_temporal_aspect": true,
+        "expected_year_filter": "year >= 2024 AND year <= 2124",
+        "expected_recency_weight": 3,
+        "temporal_query_type": "future_predictions"
+      },
+      {
+        "query_id": "Q013",
+        "query_text": "Neutrino detection methods before and after the 2002 Nobel Prize in Physics",
+        "has_temporal_aspect": true,
+        "expected_year_filter": null,
+        "expected_recency_weight": 0,
+        "temporal_query_type": "paradigm_shift"
+      },
+      {
+        "query_id": "Q014",
+        "query_text": "Variations in Saturn's ring structure during its 2025 equinox",
+        "has_temporal_aspect": true,
+        "expected_year_filter": "year >= 2024 AND year <= 2026",
+        "expected_recency_weight": 10,
+        "temporal_query_type": "seasonal_orbital"
+      },
+      {
+        "query_id": "Q015",
+        "query_text": "Long-term effects of the Crab Nebula supernova observed in 1054 AD",
+        "has_temporal_aspect": true,
+        "expected_year_filter": "year >= 1054",
+        "expected_recency_weight": 2,
+        "temporal_query_type": "historical_astronomy"
+      },
+      {
+        "query_id": "Q016",
+        "query_text": "Comparative analysis of galaxy formation theories in the 1990s vs the 2020s",
+        "has_temporal_aspect": true,
+        "expected_year_filter": "(year >= 1990 AND year < 2000) OR (year >= 2020 AND year < 2030)",
+        "expected_recency_weight": 5,
+        "temporal_query_type": "comparative_eras"
+      },
+      {
+        "query_id": "Q017",
+        "query_text": "Impact of James Webb Space Telescope observations on early universe studies since its launch",
+        "has_temporal_aspect": true,
+        "expected_year_filter": "year >= 2022",
+        "expected_recency_weight": 10,
+        "temporal_query_type": "technology_driven_epoch"
+      },
+      {
+        "query_id": "Q018",
+        "query_text": "Lunar occultation observations during the 2023 summer solstice",
+        "has_temporal_aspect": true,
+        "expected_year_filter": "year == 2023",
+        "expected_recency_weight": 8,
+        "temporal_query_type": "observational_window"
+      },
+      {
+        "query_id": "Q019",
+        "query_text": "Evolution of dark energy models in the past quarter-century",
+        "has_temporal_aspect": true,
+        "expected_year_filter": "year >= 1999",
+        "expected_recency_weight": 6,
+        "temporal_query_type": "relative_reference"
+      },
+      {
+        "query_id": "Q020",
+        "query_text": "Latest developments in gravitational wave astronomy",
+        "has_temporal_aspect": true,
+        "expected_year_filter": null,
+        "expected_recency_weight": 9,
+        "temporal_query_type": "vague_temporal_reference"
+      },
+      {
+        "query_id": "Q021",
+        "query_text": "Comparative analysis of exoplanet atmospheres detected before 2010 or after 2020, excluding gas giants",
+        "has_temporal_aspect": true,
+        "expected_year_filter": "(year < 2010) OR (year > 2020)",
+        "expected_recency_weight": 7,
+        "temporal_query_type": "compound_boolean"
+      },
+      {
+        "query_id": "Q022",
+        "query_text": "Evolution of black hole merger models between the first LIGO detection and the latest LISA predictions",
+        "has_temporal_aspect": true,
+        "expected_year_filter": "year >= 2015 AND year <= 2024",
+        "expected_recency_weight": 8,
+        "temporal_query_type": "technology_driven_epoch"
+      },
+      {
+        "query_id": "Q023",
+        "query_text": "Solar flare predictions using data from Solar Cycle 23 (1996-2008) and the first half of Solar Cycle 25 (2019-2024)",
+        "has_temporal_aspect": true,
+        "expected_year_filter": "(year >= 1996 AND year <= 2008) OR (year >= 2019 AND year <= 2024)",
+        "expected_recency_weight": 6,
+        "temporal_query_type": "periodic_phenomena"
+      },
+      {
+        "query_id": "Q024",
+        "query_text": "Asteroid mining feasibility studies conducted after the 2015 US Commercial Space Launch Competitiveness Act but before the 2020 Artemis Accords",
+        "has_temporal_aspect": true,
+        "expected_year_filter": "year > 2015 AND year < 2020",
+        "expected_recency_weight": 5,
+        "temporal_query_type": "compound_boolean"
+      },
+      {
+        "query_id": "Q025",
+        "query_text": "Theoretical models of galactic evolution published in the 5 years before or after the 2018 Gaia DR2 release, excluding those based on ΛCDM cosmology",
+        "has_temporal_aspect": true,
+        "expected_year_filter": "(year >= 2013 AND year <= 2018) OR (year > 2018 AND year <= 2023)",
+        "expected_recency_weight": 7,
+        "temporal_query_type": "data_release_timeline"
+      },
+      {
+        "query_id": "Q026",
+        "query_text": "Impacts of major solar storms on Earth's magnetosphere in the last 50 years, focusing on events during solar maxima",
+        "has_temporal_aspect": true,
+        "expected_year_filter": "year >= 1974",
+        "expected_recency_weight": 4,
+        "temporal_query_type": "relative_reference"
+      },
+      {
+        "query_id": "Q027",
+        "query_text": "Comparisons of Martian methane detection results between Earth-based telescopes (pre-2005) and Mars orbiters (post-2005), excluding results from the Curiosity rover",
+        "has_temporal_aspect": true,
+        "expected_year_filter": "year < 2005 OR (year > 2005 AND year != 2012)",
+        "expected_recency_weight": 6,
+        "temporal_query_type": "compound_boolean"
+      },
+      {
+        "query_id": "Q028",
+        "query_text": "Advancements in adaptive optics for ground-based telescopes since the commissioning of the Keck II telescope, but prior to the first light of the Thirty Meter Telescope",
+        "has_temporal_aspect": true,
+        "expected_year_filter": "year >= 1996 AND year < 2025",
+        "expected_recency_weight": 5,
+        "temporal_query_type": "technology_driven_epoch"
+      },
+      {
+        "query_id": "Q029",
+        "query_text": "Analysis of Jupiter's atmospheric composition using data from the Juno mission, excluding the first and last years of the mission",
+        "has_temporal_aspect": true,
+        "expected_year_filter": "year > 2016 AND year < 2025",
+        "expected_recency_weight": 8,
+        "temporal_query_type": "mission_timeline"
+      },
+      {
+        "query_id": "Q030",
+        "query_text": "Observational evidence for dark matter in galaxy clusters before the Bullet Cluster observations (pre-2006) compared with studies in the last five years",
+        "has_temporal_aspect": true,
+        "expected_year_filter": "year < 2006 OR year >= 2019",
+        "expected_recency_weight": 7,
+        "temporal_query_type": "comparative_eras"
+      }
+  ]
