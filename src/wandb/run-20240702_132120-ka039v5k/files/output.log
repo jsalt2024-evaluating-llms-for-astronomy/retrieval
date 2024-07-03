@@ -1,0 +1,74 @@
+
+Multipaper sentences progress:   0%|                                                                                              | 0/250 [00:00<?, ?it/s]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Multipaper sentences progress:  12%|██████████▏                                                                          | 30/250 [01:33<11:24,  3.11s/it]
+Traceback (most recent call last):
+  File "/Users/charlesoneill/retrieval/src/hyde.py", line 79, in generate_docs
+    for future in concurrent.futures.as_completed(future_to_query):
+  File "/Users/charlesoneill/miniconda3/envs/jsalt/lib/python3.12/concurrent/futures/_base.py", line 243, in as_completed
+    waiter.event.wait(wait_timeout)
+  File "/Users/charlesoneill/miniconda3/envs/jsalt/lib/python3.12/threading.py", line 655, in wait
+    signaled = self._cond.wait(timeout)
+               ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/charlesoneill/miniconda3/envs/jsalt/lib/python3.12/threading.py", line 355, in wait
+    waiter.acquire()
+KeyboardInterrupt
+During handling of the above exception, another exception occurred:
+Traceback (most recent call last):
+  File "/Users/charlesoneill/retrieval/src/hyde.py", line 102, in <module>
+    main()
+  File "/Users/charlesoneill/retrieval/src/hyde.py", line 99, in main
+    evaluate_main(retrieval_system, "BaseHyDE")
+  File "/Users/charlesoneill/retrieval/src/../evaluation/evaluate.py", line 289, in main
+    results = evaluator.evaluate('../data/single_paper.json', '../data/multi_paper_sentences.json', k_values=[10, 50, 100])
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/charlesoneill/retrieval/src/../evaluation/evaluate.py", line 196, in evaluate
+    multipaper_sentences_results = self._evaluate_multipaper_sentences(multi_paper_sentences_file, k_values)
+                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/charlesoneill/retrieval/src/../evaluation/evaluate.py", line 243, in _evaluate_multipaper_sentences
+    retrieved_docs = self.retrieval_system.retrieve(query, arxiv_id_clean, top_k=max(k_values))
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/charlesoneill/retrieval/src/hyde.py", line 46, in retrieve
+    docs = self.generate_docs(query)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/charlesoneill/retrieval/src/hyde.py", line 77, in generate_docs
+    with concurrent.futures.ThreadPoolExecutor() as executor:
+  File "/Users/charlesoneill/miniconda3/envs/jsalt/lib/python3.12/concurrent/futures/_base.py", line 647, in __exit__
+    self.shutdown(wait=True)
+  File "/Users/charlesoneill/miniconda3/envs/jsalt/lib/python3.12/concurrent/futures/thread.py", line 238, in shutdown
+    t.join()
+  File "/Users/charlesoneill/miniconda3/envs/jsalt/lib/python3.12/threading.py", line 1147, in join
+    self._wait_for_tstate_lock()
+  File "/Users/charlesoneill/miniconda3/envs/jsalt/lib/python3.12/threading.py", line 1167, in _wait_for_tstate_lock
+    if lock.acquire(block, timeout):
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+KeyboardInterrupt
