@@ -94,21 +94,19 @@ class EmbeddingRetrievalSystem(RetrievalSystem):
         similarities = np.dot(self.embeddings, query_embedding)  #cosine_similarity([query_embedding], self.embeddings)[0]
         
         # Filter and rank results
-        filtered_results = []
+        results = []
         for doc_id, mappings in self.index_mapping.items():
-            doc_date = self.document_dates[doc_id]
+            abstract_sim = similarities[mappings['abstract']] if 'abstract' in mappings else -np.inf
+            conclusions_sim = similarities[mappings['conclusions']] if 'conclusions' in mappings else -np.inf
             
-            if doc_date <= query_date: # this can stay here
-                abstract_sim = similarities[mappings['abstract']] if 'abstract' in mappings else -np.inf
-                conclusions_sim = similarities[mappings['conclusions']] if 'conclusions' in mappings else -np.inf
-                
-                if abstract_sim > conclusions_sim: 
-                    filtered_results.append([doc_id, "abstract", abstract_sim])
-                else: 
-                    filtered_results.append([doc_id, "conclusions", conclusions_sim])
+            if abstract_sim > conclusions_sim: 
+                results.append([doc_id, "abstract", abstract_sim])
+            else: 
+                results.append([doc_id, "conclusions", conclusions_sim])
                 
         
         # Sort and weight and get top-k results
+        filtered_results = self.date_filter.filter(results, max_date = query_date)
         if self.weight_citation: self.citation_filter.filter(filtered_results)
             
         top_results = sorted(filtered_results, key=lambda x: x[2], reverse=True)[:top_k]
