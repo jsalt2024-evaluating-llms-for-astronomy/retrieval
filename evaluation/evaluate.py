@@ -202,7 +202,7 @@ class Evaluator:
 
         results = {}
         
-        single_results = self._evaluate_single_document(single_doc_file, 10)
+        single_results = self._evaluate_single_document(single_doc_file, 10) #{'success_rate': 0.84, 'reciprocal_rank': 0.7353, 'avg_precision': 0.7353} #
         results['single_doc'] = single_results
         print("Single Document Results:", single_results)
 
