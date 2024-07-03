@@ -15,6 +15,7 @@ from nltk.corpus import stopwords
 import nltk
 import math
 import pytextrank
+import ast
 nltk.download('stopwords', quiet=True) 
 nlp = spacy.load("en_core_web_sm")
 #spacy.cli.download('en_core_web_sm')
@@ -58,16 +59,33 @@ class DateFilter(Filter): # include time weighting eventually
     def weight(self, time, shift, scale):
         return 1 / (1 + math.exp((time - shift) / scale))
 
-    def filter(self, docs, min_date = None, max_date = None, time_score = 0):
-        if min_date == None: min_date = datetime(1990, 1, 1)
-        if max_date == None: max_date = datetime(2023, 1, 1)
-
+    def evaluate_filter(self, year, filter_string):
+        try:
+            # Use ast.literal_eval to safely evaluate the expression
+            result = eval(filter_string, {"__builtins__": None}, {"year": year})
+            return result
+        except Exception as e:
+            print(f"Error evaluating filter: {e}")
+            return False
+                
+    def filter(self, docs, boolean_date = None, min_date = None, max_date = None, time_score = 0):
         filtered = []
-        for doc in docs:
-            if self.document_dates[doc[0]] >= min_date and self.document_dates[doc[0]] <= max_date:
-                filtered.append(doc)
+
+        if boolean_date is not None:
+            boolean_date = boolean_date.replace("AND", "and").replace("OR", "or")
+            for doc in docs:
+                if self.evaluate_filter(self.document_dates[doc[0]].year, boolean_date):
+                    filtered.append(doc)
         
-        if time_score != 0: # apply time weighting
+        else:
+            if min_date == None: min_date = datetime(1990, 1, 1)
+            if max_date == None: max_date = datetime(2024, 7, 3)
+
+            for doc in docs:
+                if self.document_dates[doc[0]] >= min_date and self.document_dates[doc[0]] <= max_date:
+                    filtered.append(doc)
+        
+        if time_score is not None: # apply time weighting
             for i, item in enumerate(filtered):
                 time_diff = (max_date - self.document_dates[filtered[i][0]]).days / 365
                 filtered[i][2] += time_score * 0.1 * self.weight(time_diff, 5, 5)
@@ -94,18 +112,23 @@ class KeywordFilter(Filter):
         if self.remove_capitals: text = text.lower()
         return ' '.join(word for word in text.split() if word.lower() not in self.stopwords)
 
-    def build_index(self):
+    def build_index(self): # include the title in the index
         print("Building index...")
         self.index = {}
 
         for i, index in tqdm(enumerate(self.metadata)):
             paper = self.metadata[index]
-            for keyword in paper['keyword_search']:
-                term = ' '.join(word for word in keyword.lower().split() if word.lower() not in stopwords)
+            title = paper['title'][0]
+            title_keywords = set() #set(self.parse_doc(title) + self.get_propn(title))
+            for keyword in set(paper['keyword_search']) | title_keywords:
+                term = ' '.join(word for word in keyword.lower().split() if word.lower() not in self.stopwords)
                 if term not in self.index:
                     self.index[term] = []
                 
                 self.index[term].append(paper['arxiv_id'])
+        
+        with open(self.index_path, 'w') as f:
+            json.dump(self.index, f)
 
     def load_index(self):
         print("Loading existing index...")
@@ -120,18 +143,16 @@ class KeywordFilter(Filter):
         else:
             self.build_index()
 
-    def parse_doc(self, text):
+    def parse_doc(self, doc):
         local_kws = []
-        doc = nlp(text)
         
         for phrase in doc._.phrases:
             local_kws.append(phrase.text.lower())
         
         return [self.preprocess_text(word) for word in local_kws]
 
-    def get_propn(self, text):
+    def get_propn(self, doc):
         result = []
-        doc = nlp(text) 
 
         working_str = ''
         for token in doc:
@@ -148,8 +169,9 @@ class KeywordFilter(Filter):
         return [self.preprocess_text(word) for word in result]
 
     def filter(self, query: str, doc_ids = None):
-        query_keywords = self.parse_doc(query)
-        nouns = self.get_propn(query)
+        doc = nlp(query)
+        query_keywords = self.parse_doc(doc)
+        nouns = self.get_propn(doc)
         if self.verbose: print('keywords:', query_keywords)
         if self.verbose: print('proper nouns:', nouns)
 

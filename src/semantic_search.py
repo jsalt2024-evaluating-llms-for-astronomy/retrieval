@@ -11,6 +11,8 @@ from datetime import datetime
 import yaml
 from openai import OpenAI
 from filters import CitationFilter, DateFilter, KeywordFilter
+from temporal import analyze_temporal_query
+import anthropic
 
 import sys
 sys.path.append('../evaluation')
@@ -43,6 +45,7 @@ class EmbeddingRetrievalSystem(RetrievalSystem):
 
         config = yaml.safe_load(open('../config.yaml', 'r'))
         self.client = EmbeddingClient(OpenAI(api_key=config['openai_api_key']))
+        self.anthropic_client = anthropic.Anthropic(api_key=config['anthropic_api_key'])
 
     def load_data(self):
         print("Loading embeddings...")
@@ -79,16 +82,22 @@ class EmbeddingRetrievalSystem(RetrievalSystem):
         if self.weight_keywords:
             self.keyword_filter = KeywordFilter(index_path = "../data/vector_store/keyword_index.json", metadata = self.metadata, remove_capitals = True)
 
-    def retrieve(self, query: str, arxiv_id: str, top_k: int = 10, return_scores = False) -> List[Tuple[str, str, float]]:
+    def retrieve(self, query: str, arxiv_id: str, top_k: int = 10, return_scores = False, time_result = None) -> List[Tuple[str, str, float]]:
         query_date = self.parse_date(arxiv_id)
         query_embedding = self.get_query_embedding(query)
         
-        top_results = self.rank_and_filter(query, query_embedding, query_date, top_k, return_scores = return_scores)
+        if time_result is None:
+            if self.weight_date: time_result, time_taken = analyze_temporal_query(query, self.anthropic_client)
+            else: time_result = {'has_temporal_aspect': False, 'expected_year_filter': None, 'expected_recency_weight': None}
+
+        top_results = self.rank_and_filter(query, query_embedding, query_date, top_k, return_scores = return_scores, time_result = time_result)
         return top_results
     
-    def rank_and_filter(self, query, query_embedding: np.ndarray, query_date, top_k: int = 10, return_scores = False) -> List[Tuple[str, str, float]]:
+    def rank_and_filter(self, query, query_embedding: np.ndarray, query_date, top_k: int = 10, return_scores = False, time_result = None) -> List[Tuple[str, str, float]]:
+        print(time_result)
+
         # Calculate similarities
-        similarities = np.dot(self.embeddings, query_embedding)  #cosine_similarity([query_embedding], self.embeddings)[0]
+        similarities = np.dot(self.embeddings, query_embedding)
         
         # Filter and rank results
         if self.weight_keywords: keyword_matches = self.keyword_filter.filter(query)
@@ -106,7 +115,11 @@ class EmbeddingRetrievalSystem(RetrievalSystem):
                 
         
         # Sort and weight and get top-k results
-        filtered_results = self.date_filter.filter(results, max_date = query_date)
+        if time_result['has_temporal_aspect']:
+            filtered_results = self.date_filter.filter(results, boolean_date = time_result['expected_year_filter'], time_score = time_result['expected_recency_weight'], max_date = query_date)
+        else:
+            filtered_results = self.date_filter.filter(results, max_date = query_date)
+        
         if self.weight_citation: self.citation_filter.filter(filtered_results)
 
         top_results = sorted(filtered_results, key=lambda x: x[2], reverse=True)[:top_k]
