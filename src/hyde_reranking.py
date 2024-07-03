@@ -21,11 +21,13 @@ class HydeCohereRetrievalSystem(HydeRetrievalSystem):
     def __init__(self, config_path: str = '../config.yaml', embeddings_path: str = "../data/vector_store/embeddings_matrix.npy", metadata_path = "../data/vector_store/metadata.json",
                  documents_path: str = "../data/vector_store/documents.pkl", index_mapping_path: str = "../data/vector_store/index_mapping.pkl", 
                  generation_model: str = "claude-3-haiku-20240307", embedding_model: str = "text-embedding-3-small", 
-                 temperature: float = 0.5, max_doclen: int = 500, generate_n: int = 1, embed_query = True, weight_citation = False):
+                 temperature: float = 0.5, max_doclen: int = 500, generate_n: int = 1, embed_query = True, 
+                 weight_citation = False, weight_date = False, weight_keywords = False):
         
         super().__init__(config_path=config_path, embeddings_path=embeddings_path, documents_path=documents_path, index_mapping_path=index_mapping_path,
                          metadata_path=metadata_path, generation_model=generation_model, embedding_model=embedding_model,
-                         temperature=temperature, max_doclen=max_doclen, generate_n=generate_n, embed_query=embed_query, weight_citation=weight_citation)
+                         temperature=temperature, max_doclen=max_doclen, generate_n=generate_n, embed_query=embed_query, 
+                         weight_citation=weight_citation, weight_date=weight_date, weight_keywords=weight_keywords)
         
         self.cohere_client = cohere.Client(self.cohere_key)
 

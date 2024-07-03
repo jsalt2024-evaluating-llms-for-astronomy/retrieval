@@ -20,10 +20,10 @@ class HydeRetrievalSystem(EmbeddingRetrievalSystem):
                  documents_path: str = "../data/vector_store/documents.pkl", index_mapping_path: str = "../data/vector_store/index_mapping.pkl", 
                  generation_model: str = "claude-3-haiku-20240307", embedding_model: str = "text-embedding-3-small", 
                  temperature: float = 0.5, max_doclen: int = 500, generate_n: int = 1, embed_query = True,
-                 weight_citation = False):
+                 weight_citation = False, weight_date = False, weight_keywords = False):
         
         super().__init__(embeddings_path = embeddings_path, documents_path = documents_path, index_mapping_path = index_mapping_path,
-                         metadata_path = metadata_path, weight_citation = weight_citation)
+                         metadata_path = metadata_path, weight_citation = weight_citation, weight_date = weight_date, weight_keywords = weight_keywords)
 
         if max_doclen * generate_n > 8191:
             raise ValueError("Too many tokens. Please reduce max_doclen or generate_n.")
@@ -54,7 +54,7 @@ class HydeRetrievalSystem(EmbeddingRetrievalSystem):
         embedding = np.mean(np.array(doc_embeddings), axis = 0)
         query_date = self.parse_date(arxiv_id)
 
-        top_results = self.rank_and_filter(embedding, query_date = query_date, top_k = top_k)
+        top_results = self.rank_and_filter(query, embedding, query_date = query_date, top_k = top_k)
         
         return top_results
 
