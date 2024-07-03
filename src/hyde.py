@@ -13,6 +13,7 @@ import transformers
 from sklearn.metrics.pairwise import cosine_similarity
 from vector_store import EmbeddingClient, Document, DocumentLoader
 import concurrent.futures
+from temporal import analyze_temporal_query
 
 # use generate_n = 0, embed_query = True to do basic vector search (no generation)
 class HydeRetrievalSystem(EmbeddingRetrievalSystem):
@@ -43,7 +44,11 @@ class HydeRetrievalSystem(EmbeddingRetrievalSystem):
         
         self.generation_client = anthropic.Anthropic(api_key = self.anthropic_key)
     
-    def retrieve(self, query: str, arxiv_id: str, top_k: int = 10) -> List[Tuple[str, str, float]]:
+    def retrieve(self, query: str, arxiv_id: str, top_k: int = 10, time_result = None) -> List[Tuple[str, str, float]]:
+        if time_result is None:
+            if self.weight_date: time_result, time_taken = analyze_temporal_query(query, self.anthropic_client)
+            else: time_result = {'has_temporal_aspect': False, 'expected_year_filter': None, 'expected_recency_weight': None}
+
         docs = self.generate_docs(query)
         doc_embeddings = self.embed_docs(docs)
 
@@ -54,7 +59,7 @@ class HydeRetrievalSystem(EmbeddingRetrievalSystem):
         embedding = np.mean(np.array(doc_embeddings), axis = 0)
         query_date = self.parse_date(arxiv_id)
 
-        top_results = self.rank_and_filter(query, embedding, query_date = query_date, top_k = top_k)
+        top_results = self.rank_and_filter(query, embedding, query_date = query_date, top_k = top_k, time_result = time_result)
         
         return top_results
 

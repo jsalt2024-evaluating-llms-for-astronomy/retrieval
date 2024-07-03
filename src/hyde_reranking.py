@@ -16,12 +16,13 @@ import concurrent.futures
 import cohere
 from openai import OpenAI
 from hyde import HydeRetrievalSystem
+from temporal import analyze_temporal_query
 
 class HydeCohereRetrievalSystem(HydeRetrievalSystem):
     def __init__(self, config_path: str = '../config.yaml', embeddings_path: str = "../data/vector_store/embeddings_matrix.npy", metadata_path = "../data/vector_store/metadata.json",
                  documents_path: str = "../data/vector_store/documents.pkl", index_mapping_path: str = "../data/vector_store/index_mapping.pkl", 
                  generation_model: str = "claude-3-haiku-20240307", embedding_model: str = "text-embedding-3-small", 
-                 temperature: float = 0.5, max_doclen: int = 500, generate_n: int = 1, embed_query = True, 
+                 temperature: float = 0.5, max_doclen: int = 300, generate_n: int = 1, embed_query = False, 
                  weight_citation = False, weight_date = False, weight_keywords = False):
         
         super().__init__(config_path=config_path, embeddings_path=embeddings_path, documents_path=documents_path, index_mapping_path=index_mapping_path,
@@ -31,8 +32,10 @@ class HydeCohereRetrievalSystem(HydeRetrievalSystem):
         
         self.cohere_client = cohere.Client(self.cohere_key)
 
-    def retrieve(self, query: str, arxiv_id: str, top_k: int = 10) -> List[Tuple[str, str, float]]:
-        top_results = super().retrieve(query, arxiv_id, top_k = 250) # should that be hard coded
+    def retrieve(self, query: str, arxiv_id: str, top_k: int = 10, reweight = False) -> List[Tuple[str, str, float]]:
+        time_result, time_taken = analyze_temporal_query(query, self.anthropic_client)
+        
+        top_results = super().retrieve(query, arxiv_id, top_k = 250, time_result = time_result)
         
         doc_texts = self.get_document_texts(top_results)
         
@@ -50,10 +53,15 @@ class HydeCohereRetrievalSystem(HydeRetrievalSystem):
             doc_id = top_results[result.index]
             doc_text = docs_for_rerank[result.index]
             score = float(result.relevance_score)
-            #final_results.append((doc_id, doc_text, score))
-            final_results.append(doc_id)
+            final_results.append([doc_id, "", score])
+
+        if reweight:
+            if time_result['has_temporal_aspect']:
+                final_results = self.date_filter.filter(final_results, time_score = time_result['expected_recency_weight'])
+            
+            if self.weight_citation: self.citation_filter.filter(final_results)
         
-        return final_results
+        return [doc[0] for doc in final_results]
 
     def embed_docs(self, docs: List[str]):
         return self.client.embed_batch(docs)
