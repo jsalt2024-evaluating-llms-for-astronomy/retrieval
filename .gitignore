@@ -7,3 +7,4 @@ __pycache__
 # Any npy files
 *.npy
 /data/vector_store
+/src/tree.py

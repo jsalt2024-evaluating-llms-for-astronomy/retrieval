@@ -3,9 +3,6 @@ from typing import List, Dict, Tuple
 from collections import Counter
 from datasets import load_dataset
 import numpy as np
-from sklearn.feature_extraction.text import TfidfVectorizer
-from sklearn.metrics.pairwise import cosine_similarity
-import pickle
 import os
 from tqdm import tqdm
 from datetime import datetime
@@ -24,12 +21,10 @@ nlp = spacy.load("en_core_web_sm")
 nlp.add_pipe("textrank")
 
 class Filter():    
-    # we can also build the weighting system directly into this
     def filter(self, query: str, arxiv_id: str) -> List[str]:
         pass
 
 class CitationFilter(Filter): # can do it with all metadata
-
     def __init__(self, metadata):
         self.metadata = metadata
         self.citation_counts = {doc_id: self.metadata[doc_id]['citation_count'] for doc_id in self.metadata}
@@ -37,13 +32,13 @@ class CitationFilter(Filter): # can do it with all metadata
     def citation_weight(self, x, shift, scale):
         return 1 / (1 + np.exp(-1 * (x - shift) / scale)) # sigmoid function
     
-    def filter(self, doc_scores, weight = 0.2): # additive weighting
+    def filter(self, doc_scores, weight = 0.1): # additive weighting
         citation_count = np.array([self.citation_counts[doc[0]] for doc in doc_scores])
-        cmean, cstd = np.mean(citation_count), np.std(citation_count)
+        cmean, cstd = np.median(citation_count), np.std(citation_count)
         citation_score = self.citation_weight(citation_count, cmean, cstd)
 
         for i, doc in enumerate(doc_scores):
-            doc_scores[i][2] *= weight * citation_score[i]
+            doc_scores[i][2] += weight * citation_score[i]
 
 class DateFilter(Filter): # include time weighting eventually
     def __init__(self, document_dates):
@@ -58,12 +53,14 @@ class DateFilter(Filter): # include time weighting eventually
             month = 1
         return datetime(year, month, 1)
     
-    def filter(self, query: str, arxiv_id: str, doc_ids: List[str]):
-        query_date = self.parse_date(arxiv_id)
-        filtered = set()
-        for doc in doc_ids:
-            if self.document_dates[doc] >= query_date:
-                filtered.add(doc)
+    def filter(self, docs, min_date = None, max_date = None):
+        if min_date == None: min_date = datetime(1990, 1, 1)
+        if max_date == None: max_date = datetime(2023, 1, 1)
+
+        filtered = []
+        for doc in docs:
+            if self.document_dates[doc[0]] >= min_date and self.document_dates[doc[0]] <= max_date:
+                filtered.append(doc)
         
         return filtered
 
