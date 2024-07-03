@@ -1,5 +1,6 @@
 import re
 from typing import Dict, List, Set, Union
+import numpy as np
 
 def evaluate_temporal_aspect(ground_truth: Dict, predicted: Dict) -> float:
     """Evaluate the accuracy of temporal aspect detection."""
@@ -8,35 +9,35 @@ def evaluate_temporal_aspect(ground_truth: Dict, predicted: Dict) -> float:
 
 def evaluate_recency_weight(ground_truth: Dict, predicted: Dict, tolerance: float = 1.0) -> float:
     """Evaluate the accuracy of recency weight prediction within a tolerance."""
-    correct = 0
-    total = 0
+    mse_list = []
     for q in ground_truth:
         gt_weight = ground_truth[q]['expected_recency_weight']
         pred_weight = predicted[q]['expected_recency_weight']
-        
-        if gt_weight is None and pred_weight is None:
-            correct += 1
-        elif gt_weight is not None and pred_weight is not None:
-            if abs(gt_weight - pred_weight) <= tolerance:
-                correct += 1
-        total += 1
+
+        # mean-squared error
+        mse = (gt_weight - pred_weight) ** 2
+        mse_list.append(mse)
     
-    return correct / total if total > 0 else 0
+    return np.sqrt(sum(mse_list) / len(mse_list)) if mse_list else 0
+
 
 def parse_year_filter(filter_str: Union[str, None]) -> Set[int]:
     """Parse a year filter string and return a set of years that satisfy the filter."""
     if filter_str is None:
         return set(range(1950, 2025))  # If no filter, assume all years are valid
     
+    # Replace logical operators with Python equivalents
+    filter_str = filter_str.replace('AND', 'and').replace('OR', 'or').replace('NOT', 'not')
+    
     years = set()
     for year in range(1950, 2025):
-        # Replace 'year' in the filter string with the actual year
-        condition = filter_str.replace('year', str(year))
         try:
-            if eval(condition):
+            # Create a safe local environment for eval
+            safe_dict = {'year': year}
+            if eval(filter_str, {"__builtins__": None}, safe_dict):
                 years.add(year)
-        except:
-            print(f"Warning: Could not evaluate condition '{condition}' for year {year}")
+        except Exception as e:
+            print(f"Warning: Could not evaluate condition '{filter_str}' for year {year}: {str(e)}")
     return years
 
 def evaluate_year_filter(ground_truth: Dict, predicted: Dict) -> float:
@@ -57,46 +58,6 @@ def evaluate_temporal_queries(ground_truth: Dict, predicted: Dict) -> Dict:
     """Evaluate all aspects of temporal query prediction."""
     return {
         'temporal_aspect_accuracy': evaluate_temporal_aspect(ground_truth, predicted),
-        'recency_weight_accuracy': evaluate_recency_weight(ground_truth, predicted),
+        'recency_weight_mse': evaluate_recency_weight(ground_truth, predicted),
         'year_filter_iou': evaluate_year_filter(ground_truth, predicted)
     }
-
-# Example usage
-ground_truth = {
-    'Q001': {
-        'has_temporal_aspect': True,
-        'expected_year_filter': 'year >= 2020',
-        'expected_recency_weight': 8
-    },
-    'Q002': {
-        'has_temporal_aspect': True,
-        'expected_year_filter': '(year >= 2010 and year <= 2020) or year > 2022',
-        'expected_recency_weight': 5
-    },
-    'Q003': {
-        'has_temporal_aspect': False,
-        'expected_year_filter': None,
-        'expected_recency_weight': None
-    }
-}
-
-predicted = {
-    'Q001': {
-        'has_temporal_aspect': True,
-        'expected_year_filter': 'year >= 2019',
-        'expected_recency_weight': 7
-    },
-    'Q002': {
-        'has_temporal_aspect': True,
-        'expected_year_filter': 'year >= 2010 and year <= 2022',
-        'expected_recency_weight': 6
-    },
-    'Q003': {
-        'has_temporal_aspect': True,
-        'expected_year_filter': 'year >= 2000',
-        'expected_recency_weight': 3
-    }
-}
-
-results = evaluate_temporal_queries(ground_truth, predicted)
-print(results)
