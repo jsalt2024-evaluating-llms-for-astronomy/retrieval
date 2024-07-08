@@ -1,0 +1,26 @@
+
+Single-doc progress:   0%|                                                                                                                                                       | 0/250 [00:05<?, ?it/s]
+Traceback (most recent call last):
+  File "/Users/charlesoneill/retrieval/src/hyde_reranking.py", line 77, in <module>
+    main()
+  File "/Users/charlesoneill/retrieval/src/hyde_reranking.py", line 74, in main
+    evaluate_main(retrieval_system, "Rerank + Citations")
+  File "/Users/charlesoneill/retrieval/src/../evaluation/evaluate.py", line 304, in main
+    results = evaluator.evaluate('../data/single_paper.json', '../data/multi_paper_sentences.json', k_values=[10, 50, 100])
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/charlesoneill/retrieval/src/../evaluation/evaluate.py", line 207, in evaluate
+    single_results = self._evaluate_single_document(single_doc_file, 10) #{'success_rate': 0.84, 'reciprocal_rank': 0.7353, 'avg_precision': 0.7353} #
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/charlesoneill/retrieval/src/../evaluation/evaluate.py", line 241, in _evaluate_single_document
+    retrieved_docs = self.retrieval_system.retrieve(query, arxiv_id, top_k=top_k)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/charlesoneill/retrieval/src/hyde_reranking.py", line 38, in retrieve
+    top_results = super().retrieve(query, arxiv_id, top_k = 250, time_result = time_result)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/charlesoneill/retrieval/src/hyde.py", line 62, in retrieve
+    top_results = self.rank_and_filter(query, embedding, query_date = query_date, top_k = top_k, time_result = time_result)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/charlesoneill/retrieval/src/semantic_search.py", line 122, in rank_and_filter
+    if self.weight_citation: self.citation_filter.filter(filtered_results)
+                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'filter'
