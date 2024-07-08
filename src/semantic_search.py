@@ -76,8 +76,7 @@ class EmbeddingRetrievalSystem(RetrievalSystem):
         if self.weight_citation: 
             self.citation_filter = CitationFilter(metadata = self.metadata)
         
-        if self.weight_date:
-            self.date_filter = DateFilter(document_dates = self.document_dates)
+        self.date_filter = DateFilter(document_dates = self.document_dates)
         
         if self.weight_keywords:
             self.keyword_filter = KeywordFilter(index_path = "../data/vector_store/keyword_index.json", metadata = self.metadata, remove_capitals = True)
@@ -94,7 +93,7 @@ class EmbeddingRetrievalSystem(RetrievalSystem):
         return top_results
     
     def rank_and_filter(self, query, query_embedding: np.ndarray, query_date, top_k: int = 10, return_scores = False, time_result = None) -> List[Tuple[str, str, float]]:
-        print(time_result)
+        # print(time_result)
 
         # Calculate similarities
         similarities = np.dot(self.embeddings, query_embedding)
