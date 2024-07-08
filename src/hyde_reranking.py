@@ -61,7 +61,7 @@ class HydeCohereRetrievalSystem(EmbeddingRetrievalSystem):
         reranked_results = self.cohere_client.rerank(
             query=query,
             documents=docs_for_rerank,
-            model='rerank-english-v2.0',
+            model='rerank-english-v3.0',
             top_n=top_k
         )
         
