@@ -5,7 +5,7 @@ from datasets import load_dataset
 import numpy as np
 import os
 from tqdm import tqdm
-from datetime import datetime
+from datetime import datetime, date
 import sys
 sys.path.append('../evaluation')
 import spacy
@@ -28,7 +28,6 @@ class Filter():
 class CitationFilter(Filter): # can do it with all metadata
     def __init__(self, metadata):
         self.metadata = metadata
-        print(f"Metadata: {metadata}")
         self.citation_counts = {doc_id: self.metadata[doc_id]['citation_count'] for doc_id in self.metadata}
     
     def citation_weight(self, x, shift, scale):
@@ -46,7 +45,7 @@ class DateFilter(Filter): # include time weighting eventually
     def __init__(self, document_dates):
         self.document_dates = document_dates
 
-    def parse_date(self, arxiv_id: str) -> datetime:
+    def parse_date(self, arxiv_id: str) -> datetime: # only for documents
         if arxiv_id.startswith('astro-ph'):
             arxiv_id = arxiv_id.split('astro-ph')[1].split('_arXiv')[0]
         try:
@@ -55,7 +54,7 @@ class DateFilter(Filter): # include time weighting eventually
         except:
             year = 2023
             month = 1
-        return datetime(year, month, 1)
+        return date(year, month, 1)
     
     def weight(self, time, shift, scale):
         return 1 / (1 + math.exp((time - shift) / scale))
@@ -79,8 +78,8 @@ class DateFilter(Filter): # include time weighting eventually
                     filtered.append(doc)
         
         else:
-            if min_date == None: min_date = datetime(1990, 1, 1)
-            if max_date == None: max_date = datetime(2024, 7, 3)
+            if min_date == None: min_date = date(1990, 1, 1)
+            if max_date == None: max_date = date(2024, 7, 3)
 
             for doc in docs:
                 if self.document_dates[doc[0]] >= min_date and self.document_dates[doc[0]] <= max_date:
@@ -102,7 +101,6 @@ class KeywordFilter(Filter):
         self.remove_capitals = remove_capitals
         self.ne_only = ne_only
         self.stopwords = set(stopwords.words('english')) 
-        self.metadata = metadata
         self.verbose = verbose
         self.index = None
 
