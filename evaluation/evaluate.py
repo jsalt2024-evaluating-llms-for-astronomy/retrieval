@@ -171,7 +171,7 @@ from collections import defaultdict
 import wandb
 import numpy as np
 from tqdm import tqdm
-from datetime import datetime
+from datetime import datetime, date
 
 class RetrievalSystem(ABC):
     @abstractmethod
@@ -179,6 +179,9 @@ class RetrievalSystem(ABC):
         pass
 
     def parse_date(self, arxiv_id: str) -> datetime:
+        if arxiv_id is None:
+            return date.today()
+
         if arxiv_id.startswith('astro-ph'):
             arxiv_id = arxiv_id.split('astro-ph')[1].split('_arXiv')[0]
         try:
@@ -187,7 +190,7 @@ class RetrievalSystem(ABC):
         except:
             year = 2023
             month = 1
-        return datetime(year, month, 1)
+        return date(year, month, 1)
     
 
 class Evaluator:
