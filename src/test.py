@@ -16,7 +16,7 @@ class TestHydeRetrievalSystem(unittest.TestCase):
         self.assertEqual(self.retrieval_system.generate_n, 1)
         self.assertEqual(self.retrieval_system.embed_query, True)
     
-    def check_retrieve(self):
+    def test_retrieve(self):
         query = "What is the stellar mass of the Milky Way?"
         arxiv_id = None
         top_k = 10
@@ -24,9 +24,29 @@ class TestHydeRetrievalSystem(unittest.TestCase):
         
         self.retrieval_system.retrieve(query, arxiv_id, top_k, return_scores)
 
-class TestHydeCohereRetrievalSsytem(unittest.TestCase):
+        self.retrieval_system.weight_citation = True
+        self.retrieval_system.weight_keywords = True
+
+        self.retrieval_system.retrieve(query, arxiv_id, top_k, return_scores)
+
+class TestHydeCohereRetrievalSystem(unittest.TestCase):
     def setUp(self):
         self.retrieval_system = HydeCohereRetrievalSystem()
+    
+    def test_retrieve(self):
+        query = "What is the stellar mass of the Milky Way?"
+        arxiv_id = None
+        top_k = 10
+        return_scores = False
+        
+        self.retrieval_system.weight_citation = True
+        self.retrieval_system.weight_keywords = True
+
+        self.retrieval_system.retrieve(query, arxiv_id, top_k, return_scores)
+        self.retrieval_system.retrieve(query, arxiv_id, top_k, return_scores, reweight = True)
+
+def main():
+    unittest.main()
 
 if __name__ == '__main__':
-    unittest.main()
+    main()
