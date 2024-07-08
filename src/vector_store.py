@@ -28,6 +28,10 @@ class Document:
     abstract: str
     conclusions: str
     arxiv_id: str
+    title: str = None
+    score: float = None
+    n_citation: int = None
+    keywords: List[str] = None
 
 class DocumentLoader:
     def __init__(self, document_path: str = "charlieoneill/jsalt-astroph-dataset"):
