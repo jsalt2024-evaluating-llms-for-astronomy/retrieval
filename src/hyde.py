@@ -17,15 +17,12 @@ from temporal import analyze_temporal_query
 
 # use generate_n = 0, embed_query = True to do basic vector search (no generation)
 class HydeRetrievalSystem(EmbeddingRetrievalSystem):
-    def __init__(self, config_path: str, embeddings_path: str = "../data/vector_store/embeddings_matrix.npy", metadata_path = "../data/vector_store/metadata.json",
-                 documents_path: str = "../data/vector_store/documents.pkl", index_mapping_path: str = "../data/vector_store/index_mapping.pkl", 
-                 generation_model: str = "claude-3-haiku-20240307", embedding_model: str = "text-embedding-3-small", 
-                 temperature: float = 0.5, max_doclen: int = 500, generate_n: int = 1, embed_query = True,
-                 weight_citation = False, weight_date = False, weight_keywords = False):
+    def __init__(self, generation_model: str = "claude-3-haiku-20240307", embedding_model: str = "text-embedding-3-small", 
+             temperature: float = 0.5, max_doclen: int = 500, generate_n: int = 1, embed_query = True, **kwargs):
+    
+        # Handle the kwargs for the superclass init -- filters/citation weighting
+        super().__init__(**kwargs)
         
-        super().__init__(embeddings_path = embeddings_path, documents_path = documents_path, index_mapping_path = index_mapping_path,
-                         metadata_path = metadata_path, weight_citation = weight_citation, weight_date = weight_date, weight_keywords = weight_keywords)
-
         if max_doclen * generate_n > 8191:
             raise ValueError("Too many tokens. Please reduce max_doclen or generate_n.")
         
@@ -38,13 +35,12 @@ class HydeRetrievalSystem(EmbeddingRetrievalSystem):
         self.generate_n = generate_n
         self.embed_query = embed_query
 
-        config = yaml.safe_load(open('../config.yaml', 'r'))
-        self.anthropic_key = config['anthropic_api_key']
-        self.cohere_key = config['cohere_api_key']
+        self.config = yaml.safe_load(open('../config.yaml', 'r'))
+        self.anthropic_key = self.config['anthropic_api_key']
         
         self.generation_client = anthropic.Anthropic(api_key = self.anthropic_key)
     
-    def retrieve(self, query: str, arxiv_id: str, top_k: int = 10, time_result = None) -> List[Tuple[str, str, float]]:
+    def retrieve(self, query: str, arxiv_id: str = None, top_k: int = 10, return_scores = False, time_result = None) -> List[Tuple[str, str, float]]:
         if time_result is None:
             if self.weight_date: time_result, time_taken = analyze_temporal_query(query, self.anthropic_client)
             else: time_result = {'has_temporal_aspect': False, 'expected_year_filter': None, 'expected_recency_weight': None}
@@ -59,7 +55,7 @@ class HydeRetrievalSystem(EmbeddingRetrievalSystem):
         embedding = np.mean(np.array(doc_embeddings), axis = 0)
         query_date = self.parse_date(arxiv_id)
 
-        top_results = self.rank_and_filter(query, embedding, query_date = query_date, top_k = top_k, time_result = time_result)
+        top_results = self.rank_and_filter(query, embedding, query_date = query_date, top_k = top_k, return_scores = return_scores, time_result = time_result)
         
         return top_results
 
