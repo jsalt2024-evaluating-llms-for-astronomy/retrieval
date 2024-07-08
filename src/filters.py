@@ -94,11 +94,11 @@ class DateFilter(Filter): # include time weighting eventually
         return filtered
 
 class KeywordFilter(Filter):
-    def __init__(self, index_path: str = "../data/vector_store/keyword_index.json", metadata_path: str = "../data/vector_store/metadata.json",
+    def __init__(self, index_path: str = "../data/vector_store/keyword_index.json", 
                  remove_capitals: bool = True, metadata = None, ne_only = True, verbose = False):
         
         self.index_path = index_path
-        self.metadata_path = metadata_path
+        self.metadata = metadata
         self.remove_capitals = remove_capitals
         self.ne_only = ne_only
         self.stopwords = set(stopwords.words('english')) 

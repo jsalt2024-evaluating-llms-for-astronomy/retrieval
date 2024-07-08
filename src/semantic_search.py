@@ -47,6 +47,22 @@ class EmbeddingRetrievalSystem(RetrievalSystem):
         self.client = EmbeddingClient(OpenAI(api_key=config['openai_api_key']))
         self.anthropic_client = anthropic.Anthropic(api_key=config['anthropic_api_key'])
 
+    def generate_metadata(self):
+        astro_meta = load_dataset("JSALT2024-Astro-LLMs/astro_paper_corpus", split = "train")
+        keys = list(astro_meta[0].keys())
+        keys.remove('abstract')
+        keys.remove('introduction')
+        keys.remove('conclusions')
+
+        self.metadata = {}
+        for paper in astro_meta:
+            id_str = paper['arxiv_id']
+            self.metadata[id_str] = {key: paper[key] for key in keys}
+        
+        with open(self.metadata_path, 'w') as f:
+            json.dump(self.metadata, f)
+            print("Wrote metadaa to {}".format(self.metadata_path))
+
     def load_data(self):
         print("Loading embeddings...")
         self.embeddings = np.load(self.embeddings_path)
@@ -67,7 +83,8 @@ class EmbeddingRetrievalSystem(RetrievalSystem):
             with open(self.metadata_path, 'r') as f:
                 self.metadata = json.load(f)
         else:
-            print("Could not find metadata.")
+            print("Could not find path; generating metadata.")
+            self.generate_metadata()
         
         print("Data loaded successfully.")
     
