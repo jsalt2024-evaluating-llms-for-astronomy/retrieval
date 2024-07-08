@@ -16,4 +16,10 @@ Steps we need to do:
 
 3.  Use the trained SAE to store the feature activations from all abstracts. Since the SAE is trained to be sparse, we should be able to store this as a sparse matrix. (I don't think we need this, but I'm just putting it here for now.)
 
-4.  A user will send a query, and we want to construct the SAE hidden representation (i.e. the active features) and the decoded SAE reconstruction (from this hidden representation). That is, our reconstruction is just our query embedding. Then, as the user changes a slider, we boost/reduce that feature in the hidden representation, and use the decoder to reconstruct the embedding. Then, we just redo the vector-matrix multiply that represents the semantic search, which will reorder the top-k.
+4.  For a bunch of features, we use automated interpretability to label that feature, along with a confidence score in our interpretation.
+
+    i.  How many features do we label?
+
+    ii. How do we sort which features are most important to label? Probably by the bimodality of their activation distribution (i.e. activate strongly or not at all) and also how many times they activate across our dataset (we can get all of this from the sparse SAE activations matrix).
+
+5.  A user will send a query, and we want to construct the SAE hidden representation (i.e. the active features) and the decoded SAE reconstruction (from this hidden representation). That is, our reconstruction is just our query embedding. Then, as the user changes a slider, we boost/reduce that feature in the hidden representation, and use the decoder to reconstruct the embedding. Then, we just redo the vector-matrix multiply that represents the semantic search, which will reorder the top-k.
