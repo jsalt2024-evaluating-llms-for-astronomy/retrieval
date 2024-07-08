@@ -1,0 +1,28 @@
+2024-07-03 10:04:11,257 INFO    MainThread:26377 [wandb_setup.py:_flush():76] Current SDK version is 0.17.3
+2024-07-03 10:04:11,258 INFO    MainThread:26377 [wandb_setup.py:_flush():76] Configure stats pid to 26377
+2024-07-03 10:04:11,258 INFO    MainThread:26377 [wandb_setup.py:_flush():76] Loading settings from /Users/christineye/.config/wandb/settings
+2024-07-03 10:04:11,258 INFO    MainThread:26377 [wandb_setup.py:_flush():76] Loading settings from /Users/christineye/retrieval/src/wandb/settings
+2024-07-03 10:04:11,258 INFO    MainThread:26377 [wandb_setup.py:_flush():76] Loading settings from environment variables: {}
+2024-07-03 10:04:11,258 INFO    MainThread:26377 [wandb_setup.py:_flush():76] Applying setup settings: {'_disable_service': False}
+2024-07-03 10:04:11,259 INFO    MainThread:26377 [wandb_setup.py:_flush():76] Inferring run settings from compute environment: {'program_relpath': 'src/hyde_reranking.py', 'program_abspath': '/Users/christineye/retrieval/src/hyde_reranking.py', 'program': '/Users/christineye/retrieval/src/hyde_reranking.py'}
+2024-07-03 10:04:11,259 INFO    MainThread:26377 [wandb_setup.py:_flush():76] Applying login settings: {}
+2024-07-03 10:04:11,259 INFO    MainThread:26377 [wandb_init.py:_log_setup():520] Logging user logs to /Users/christineye/retrieval/src/wandb/run-20240703_100411-2gso1jg8/logs/debug.log
+2024-07-03 10:04:11,259 INFO    MainThread:26377 [wandb_init.py:_log_setup():521] Logging internal logs to /Users/christineye/retrieval/src/wandb/run-20240703_100411-2gso1jg8/logs/debug-internal.log
+2024-07-03 10:04:11,260 INFO    MainThread:26377 [wandb_init.py:init():560] calling init triggers
+2024-07-03 10:04:11,260 INFO    MainThread:26377 [wandb_init.py:init():567] wandb.init called with sweep_config: {}
+config: {}
+2024-07-03 10:04:11,260 INFO    MainThread:26377 [wandb_init.py:init():610] starting backend
+2024-07-03 10:04:11,260 INFO    MainThread:26377 [wandb_init.py:init():614] setting up manager
+2024-07-03 10:04:11,263 INFO    MainThread:26377 [backend.py:_multiprocessing_setup():105] multiprocessing start_methods=spawn,fork,forkserver, using: spawn
+2024-07-03 10:04:11,265 INFO    MainThread:26377 [wandb_init.py:init():622] backend started and connected
+2024-07-03 10:04:11,274 INFO    MainThread:26377 [wandb_init.py:init():711] updated telemetry
+2024-07-03 10:04:11,330 INFO    MainThread:26377 [wandb_init.py:init():744] communicating run to backend with 90.0 second timeout
+2024-07-03 10:04:11,576 INFO    MainThread:26377 [wandb_run.py:_on_init():2402] communicating current version
+2024-07-03 10:04:11,697 INFO    MainThread:26377 [wandb_run.py:_on_init():2411] got version response 
+2024-07-03 10:04:11,698 INFO    MainThread:26377 [wandb_init.py:init():795] starting run threads in backend
+2024-07-03 10:04:14,149 INFO    MainThread:26377 [wandb_run.py:_console_start():2380] atexit reg
+2024-07-03 10:04:14,150 INFO    MainThread:26377 [wandb_run.py:_redirect():2235] redirect: wrap_raw
+2024-07-03 10:04:14,150 INFO    MainThread:26377 [wandb_run.py:_redirect():2300] Wrapping output streams.
+2024-07-03 10:04:14,150 INFO    MainThread:26377 [wandb_run.py:_redirect():2325] Redirects installed.
+2024-07-03 10:04:14,152 INFO    MainThread:26377 [wandb_init.py:init():838] run started, returning control to user process
+2024-07-03 10:16:13,734 WARNING MsgRouterThr:26377 [router.py:message_loop():77] message_loop has been closed

@@ -15,44 +15,27 @@ from vector_store import EmbeddingClient, Document, DocumentLoader
 import concurrent.futures
 import cohere
 from openai import OpenAI
+from hyde import HydeRetrievalSystem
+from temporal import analyze_temporal_query
 
-class HydeCohereRetrievalSystem(EmbeddingRetrievalSystem):
-    def __init__(self, dataset_path: str, embeddings_path: str = "../data/vector_store/embeddings_matrix.npy", 
+class HydeCohereRetrievalSystem(HydeRetrievalSystem):
+    def __init__(self, config_path: str = '../config.yaml', embeddings_path: str = "../data/vector_store/embeddings_matrix.npy", metadata_path = "../data/vector_store/metadata.json",
                  documents_path: str = "../data/vector_store/documents.pkl", index_mapping_path: str = "../data/vector_store/index_mapping.pkl", 
                  generation_model: str = "claude-3-haiku-20240307", embedding_model: str = "text-embedding-3-small", 
-                 temperature: float = 0.5, max_doclen: int = 500, generate_n: int = 1, embed_query = True):
+                 temperature: float = 0.5, max_doclen: int = 300, generate_n: int = 1, embed_query = False, 
+                 weight_citation = False, weight_date = False, weight_keywords = False):
         
-        super().__init__(dataset_path=dataset_path, embeddings_path=embeddings_path, documents_path=documents_path, index_mapping_path=index_mapping_path)
-
-        if max_doclen * generate_n > 8191:
-            raise ValueError("Too many tokens. Please reduce max_doclen or generate_n.")
+        super().__init__(config_path=config_path, embeddings_path=embeddings_path, documents_path=documents_path, index_mapping_path=index_mapping_path,
+                         metadata_path=metadata_path, generation_model=generation_model, embedding_model=embedding_model,
+                         temperature=temperature, max_doclen=max_doclen, generate_n=generate_n, embed_query=embed_query, 
+                         weight_citation=weight_citation, weight_date=weight_date, weight_keywords=weight_keywords)
         
-        self.embedding_model = embedding_model
-        self.generation_model = generation_model
-        self.temperature = temperature
-        self.max_doclen = max_doclen
-        self.generate_n = generate_n
-        self.embed_query = embed_query
-
-        config = yaml.safe_load(open('../config.yaml', 'r'))
-        self.anthropic_key = config['anthropic_api_key']
-        self.cohere_key = config['cohere_api_key']
-        
-        self.generation_client = anthropic.Anthropic(api_key=self.anthropic_key)
         self.cohere_client = cohere.Client(self.cohere_key)
 
-    def retrieve(self, query: str, arxiv_id: str, top_k: int = 10) -> List[Tuple[str, str, float]]:
-        docs = self.generate_docs(query)
-        doc_embeddings = self.embed_docs(docs)
-
-        if self.embed_query:
-            query_emb = self.embed_docs([query])[0]
-            doc_embeddings.append(query_emb)
+    def retrieve(self, query: str, arxiv_id: str, top_k: int = 10, reweight = False) -> List[Tuple[str, str, float]]:
+        time_result, time_taken = analyze_temporal_query(query, self.anthropic_client)
         
-        embedding = np.mean(np.array(doc_embeddings), axis=0)
-        query_date = self.parse_date(arxiv_id)
-
-        top_results = self.rank_and_filter(embedding, query_date=query_date, top_k=250)
+        top_results = super().retrieve(query, arxiv_id, top_k = 250, time_result = time_result)
         
         doc_texts = self.get_document_texts(top_results)
         
@@ -70,46 +53,25 @@ class HydeCohereRetrievalSystem(EmbeddingRetrievalSystem):
             doc_id = top_results[result.index]
             doc_text = docs_for_rerank[result.index]
             score = float(result.relevance_score)
-            #final_results.append((doc_id, doc_text, score))
-            final_results.append(doc_id)
-        
-        return final_results
+            final_results.append([doc_id, "", score])
 
-    def generate_doc(self, query: str):
-        message = self.generation_client.messages.create(
-                model=self.generation_model,
-                max_tokens=self.max_doclen,
-                temperature=self.temperature,
-                system="""You are an expert astronomer. Given a scientific query, generate the abstract and conclusion of an expert-level research paper
-                            that answers the question. Stick to a maximum length of {} tokens and return just the text of the abstract and conclusion.
-                            Do not include labels for any section. Use research-specific jargon.""".format(self.max_doclen),
-                messages=[{"role": "user", "content": [{"type": "text", "text": query,}]}]
-            )
-        return message.content[0].text
-    
-    def generate_docs(self, query: str):
-        docs = []
-        with concurrent.futures.ThreadPoolExecutor() as executor:
-            future_to_query = {executor.submit(self.generate_doc, query): query for _ in range(self.generate_n)}
-            for future in concurrent.futures.as_completed(future_to_query):
-                query = future_to_query[future]
-                try:
-                    data = future.result()
-                    docs.append(data)
-                except Exception as exc:
-                    pass
-        return docs
+        if reweight:
+            if time_result['has_temporal_aspect']:
+                final_results = self.date_filter.filter(final_results, time_score = time_result['expected_recency_weight'])
+            
+            if self.weight_citation: self.citation_filter.filter(final_results)
+        
+        return [doc[0] for doc in final_results]
 
     def embed_docs(self, docs: List[str]):
         return self.client.embed_batch(docs)
 
 def main():
-    retrieval_system = HydeCohereRetrievalSystem(dataset_path="charlieoneill/jsalt-astroph-dataset",
-                         embeddings_path="../data/vector_store/embeddings_matrix.npy",
+    retrieval_system = HydeCohereRetrievalSystem(embeddings_path="../data/vector_store/embeddings_matrix.npy",
                          documents_path="../data/vector_store/documents.pkl",
                          index_mapping_path="../data/vector_store/index_mapping.pkl", 
-                         generate_n=1, embed_query=False, max_doclen=300)
-    evaluate_main(retrieval_system, "HyDECohereRerank")
+                         generate_n=1, embed_query=False, max_doclen=300, weight_citation=True)
+    evaluate_main(retrieval_system, "Rerank + Citations")
 
 if __name__ == "__main__":
     main()

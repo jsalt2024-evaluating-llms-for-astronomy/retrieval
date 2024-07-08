@@ -96,7 +96,7 @@ class BagOfWordsRetrievalSystem(RetrievalSystem):
         else:
             self.build_index()
 
-    def retrieve(self, query: str, arxiv_id: str, top_k: int = 10) -> List[str]:
+    def retrieve(self, query: str, arxiv_id: str, top_k: int = 10, return_scores = False):
         query_date = self.parse_date(arxiv_id)
         processed_query = self.preprocess_text(query)
         query_vector = self.vectorizer.transform([processed_query])
@@ -107,7 +107,10 @@ class BagOfWordsRetrievalSystem(RetrievalSystem):
 
         similarities = cosine_similarity(query_vector, filtered_tfidf_matrix).flatten()
         top_indices = similarities.argsort()[-top_k:][::-1]
-
+        
+        if return_scores:
+            return {self.document_ids[valid_indices[i]]: similarities[i] for i in top_indices}
+        
         return [self.document_ids[valid_indices[i]] for i in top_indices]
 
 def main():

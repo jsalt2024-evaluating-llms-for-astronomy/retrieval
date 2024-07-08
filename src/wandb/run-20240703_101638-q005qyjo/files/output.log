@@ -1,0 +1,787 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Single-doc progress: 100%|█████████████████████████████████████████████████| 250/250 [35:38<00:00,  8.55s/it]
+Multipaper sentences progress:   0%|                                                 | 0/488 [00:00<?, ?it/s]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Multipaper sentences progress:  92%|██████████████████████████████████   | 449/488 [2:07:51<11:06, 17.09s/it]
+Traceback (most recent call last):
+  File "/Users/christineye/retrieval/src/hyde.py", line 80, in generate_docs
+    for future in concurrent.futures.as_completed(future_to_query):
+  File "/Users/christineye/anaconda3/envs/jsalt-retrieval/lib/python3.10/concurrent/futures/_base.py", line 245, in as_completed
+    waiter.event.wait(wait_timeout)
+  File "/Users/christineye/anaconda3/envs/jsalt-retrieval/lib/python3.10/threading.py", line 600, in wait
+    signaled = self._cond.wait(timeout)
+  File "/Users/christineye/anaconda3/envs/jsalt-retrieval/lib/python3.10/threading.py", line 320, in wait
+    waiter.acquire()
+KeyboardInterrupt
+During handling of the above exception, another exception occurred:
+Traceback (most recent call last):
+  File "/Users/christineye/retrieval/src/hyde_reranking.py", line 67, in <module>
+    main()
+  File "/Users/christineye/retrieval/src/hyde_reranking.py", line 64, in main
+    evaluate_main(retrieval_system, "Rerank + Citations")
+  File "/Users/christineye/retrieval/src/../evaluation/evaluate.py", line 302, in main
+    results = evaluator.evaluate('../data/single_paper.json', '../data/multi_paper_sentences.json', k_values=[10, 50, 100])
+  File "/Users/christineye/retrieval/src/../evaluation/evaluate.py", line 209, in evaluate
+    multipaper_sentences_results = self._evaluate_multipaper_sentences(multi_paper_sentences_file, k_values)
+  File "/Users/christineye/retrieval/src/../evaluation/evaluate.py", line 256, in _evaluate_multipaper_sentences
+    retrieved_docs = self.retrieval_system.retrieve(query, arxiv_id_clean, top_k=max(k_values))
+  File "/Users/christineye/retrieval/src/hyde_reranking.py", line 33, in retrieve
+    top_results = super().retrieve(query, arxiv_id, top_k = 250) # should that be hard coded
+  File "/Users/christineye/retrieval/src/hyde.py", line 47, in retrieve
+    docs = self.generate_docs(query)
+  File "/Users/christineye/retrieval/src/hyde.py", line 78, in generate_docs
+    with concurrent.futures.ThreadPoolExecutor() as executor:
+  File "/Users/christineye/anaconda3/envs/jsalt-retrieval/lib/python3.10/concurrent/futures/_base.py", line 636, in __exit__
+    self.shutdown(wait=True)
+  File "/Users/christineye/anaconda3/envs/jsalt-retrieval/lib/python3.10/concurrent/futures/thread.py", line 229, in shutdown
+    t.join()
+  File "/Users/christineye/anaconda3/envs/jsalt-retrieval/lib/python3.10/threading.py", line 1089, in join
+    self._wait_for_tstate_lock()
+  File "/Users/christineye/anaconda3/envs/jsalt-retrieval/lib/python3.10/threading.py", line 1105, in _wait_for_tstate_lock
+    elif lock.acquire(block, timeout):
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "/Users/christineye/retrieval/src/hyde.py", line 80, in generate_docs
+    for future in concurrent.futures.as_completed(future_to_query):
+  File "/Users/christineye/anaconda3/envs/jsalt-retrieval/lib/python3.10/concurrent/futures/_base.py", line 245, in as_completed
+    waiter.event.wait(wait_timeout)
+  File "/Users/christineye/anaconda3/envs/jsalt-retrieval/lib/python3.10/threading.py", line 600, in wait
+    signaled = self._cond.wait(timeout)
+  File "/Users/christineye/anaconda3/envs/jsalt-retrieval/lib/python3.10/threading.py", line 320, in wait
+    waiter.acquire()
+KeyboardInterrupt
+During handling of the above exception, another exception occurred:
+Traceback (most recent call last):
+  File "/Users/christineye/retrieval/src/hyde_reranking.py", line 67, in <module>
+    main()
+  File "/Users/christineye/retrieval/src/hyde_reranking.py", line 64, in main
+    evaluate_main(retrieval_system, "Rerank + Citations")
+  File "/Users/christineye/retrieval/src/../evaluation/evaluate.py", line 302, in main
+    results = evaluator.evaluate('../data/single_paper.json', '../data/multi_paper_sentences.json', k_values=[10, 50, 100])
+  File "/Users/christineye/retrieval/src/../evaluation/evaluate.py", line 209, in evaluate
+    multipaper_sentences_results = self._evaluate_multipaper_sentences(multi_paper_sentences_file, k_values)
+  File "/Users/christineye/retrieval/src/../evaluation/evaluate.py", line 256, in _evaluate_multipaper_sentences
+    retrieved_docs = self.retrieval_system.retrieve(query, arxiv_id_clean, top_k=max(k_values))
+  File "/Users/christineye/retrieval/src/hyde_reranking.py", line 33, in retrieve
+    top_results = super().retrieve(query, arxiv_id, top_k = 250) # should that be hard coded
+  File "/Users/christineye/retrieval/src/hyde.py", line 47, in retrieve
+    docs = self.generate_docs(query)
+  File "/Users/christineye/retrieval/src/hyde.py", line 78, in generate_docs
+    with concurrent.futures.ThreadPoolExecutor() as executor:
+  File "/Users/christineye/anaconda3/envs/jsalt-retrieval/lib/python3.10/concurrent/futures/_base.py", line 636, in __exit__
+    self.shutdown(wait=True)
+  File "/Users/christineye/anaconda3/envs/jsalt-retrieval/lib/python3.10/concurrent/futures/thread.py", line 229, in shutdown
+    t.join()
+  File "/Users/christineye/anaconda3/envs/jsalt-retrieval/lib/python3.10/threading.py", line 1089, in join
+    self._wait_for_tstate_lock()
+  File "/Users/christineye/anaconda3/envs/jsalt-retrieval/lib/python3.10/threading.py", line 1105, in _wait_for_tstate_lock
+    elif lock.acquire(block, timeout):
+KeyboardInterrupt
+Exception ignored in: <module 'threading' from '/Users/christineye/anaconda3/envs/jsalt-retrieval/lib/python3.10/threading.py'>
+Traceback (most recent call last):
+  File "/Users/christineye/anaconda3/envs/jsalt-retrieval/lib/python3.10/threading.py", line 1525, in _shutdown
+    atexit_call()
+  File "/Users/christineye/anaconda3/envs/jsalt-retrieval/lib/python3.10/concurrent/futures/thread.py", line 31, in _python_exit
+    t.join()
+  File "/Users/christineye/anaconda3/envs/jsalt-retrieval/lib/python3.10/threading.py", line 1089, in join
+    self._wait_for_tstate_lock()
+  File "/Users/christineye/anaconda3/envs/jsalt-retrieval/lib/python3.10/threading.py", line 1105, in _wait_for_tstate_lock
+    elif lock.acquire(block, timeout):
+KeyboardInterrupt:
