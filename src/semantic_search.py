@@ -91,13 +91,11 @@ class EmbeddingRetrievalSystem(RetrievalSystem):
     
     def init_filters(self):
         print("Loading filters...")
-        if self.weight_citation:
-            self.citation_filter = CitationFilter(metadata = self.metadata)
+        self.citation_filter = CitationFilter(metadata = self.metadata)
         
         self.date_filter = DateFilter(document_dates = self.document_dates)
         
-        if self.weight_keywords:
-            self.keyword_filter = KeywordFilter(index_path = "../data/vector_store/keyword_index.json", metadata = self.metadata, remove_capitals = True)
+        self.keyword_filter = KeywordFilter(index_path = "../data/vector_store/keyword_index.json", metadata = self.metadata, remove_capitals = True)
 
     def retrieve(self, query: str, arxiv_id: str = None, top_k: int = 10, return_scores = False, time_result = None) -> List[Tuple[str, str, float]]:
         query_date = self.parse_date(arxiv_id)
