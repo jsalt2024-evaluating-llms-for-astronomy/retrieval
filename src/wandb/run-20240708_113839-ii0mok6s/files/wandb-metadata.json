@@ -1,0 +1,37 @@
+{
+    "os": "macOS-14.3-arm64-arm-64bit",
+    "python": "3.12.4",
+    "heartbeatAt": "2024-07-08T15:38:40.040758",
+    "startedAt": "2024-07-08T15:38:39.157681",
+    "docker": null,
+    "cuda": null,
+    "args": [],
+    "state": "running",
+    "program": "/Users/charlesoneill/retrieval/src/hyde_reranking.py",
+    "codePathLocal": "hyde_reranking.py",
+    "codePath": "src/hyde_reranking.py",
+    "git": {
+        "remote": "https://github.com/jsalt2024-evaluating-llms-for-astronomy/retrieval.git",
+        "commit": "f0746a245aa48ee53f29a5ea1f018e5d10bb4616"
+    },
+    "email": "cponeill00@gmail.com",
+    "root": "/Users/charlesoneill/retrieval",
+    "host": "Charless-MacBook-Pro-2.local",
+    "username": "charlesoneill",
+    "executable": "/Users/charlesoneill/miniconda3/envs/jsalt/bin/python",
+    "cpu_count": 12,
+    "cpu_count_logical": 12,
+    "disk": {
+        "/": {
+            "total": 926.3517189025879,
+            "used": 442.90898513793945
+        }
+    },
+    "gpuapple": {
+        "type": "Apple M2 Max",
+        "vendor": "sppci_vendor_Apple"
+    },
+    "memory": {
+        "total": 32.0
+    }
+}

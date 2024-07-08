@@ -28,6 +28,7 @@ class Filter():
 class CitationFilter(Filter): # can do it with all metadata
     def __init__(self, metadata):
         self.metadata = metadata
+        print(f"Metadata: {metadata}")
         self.citation_counts = {doc_id: self.metadata[doc_id]['citation_count'] for doc_id in self.metadata}
     
     def citation_weight(self, x, shift, scale):
