@@ -12,7 +12,6 @@ import yaml
 from urllib.parse import urlencode, quote_plus
 from tqdm import tqdm
 import arxiv
-from urllib.parse import urlencode, quote_plus
 import random
 import unicodedata
 arxiv_client = arxiv.Client()

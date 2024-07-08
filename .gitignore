@@ -8,3 +8,4 @@ __pycache__
 *.npy
 /data/vector_store
 /src/tree.py
+evaluation/arxiv_code.py
