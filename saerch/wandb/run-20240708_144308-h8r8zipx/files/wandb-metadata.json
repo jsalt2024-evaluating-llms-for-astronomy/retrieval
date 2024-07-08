@@ -1,0 +1,37 @@
+{
+    "os": "macOS-14.3-arm64-arm-64bit",
+    "python": "3.12.4",
+    "heartbeatAt": "2024-07-08T18:43:09.380906",
+    "startedAt": "2024-07-08T18:43:08.187995",
+    "docker": null,
+    "cuda": null,
+    "args": [],
+    "state": "running",
+    "program": "/Users/charlesoneill/retrieval/saerch/train.py",
+    "codePathLocal": "train.py",
+    "codePath": "saerch/train.py",
+    "git": {
+        "remote": "https://github.com/jsalt2024-evaluating-llms-for-astronomy/retrieval.git",
+        "commit": "56ad92578aafa41a0efbe6e94fb402d465f30e0a"
+    },
+    "email": "cponeill00@gmail.com",
+    "root": "/Users/charlesoneill/retrieval",
+    "host": "Charless-MacBook-Pro-2.local",
+    "username": "charlesoneill",
+    "executable": "/Users/charlesoneill/miniconda3/envs/saerch/bin/python",
+    "cpu_count": 12,
+    "cpu_count_logical": 12,
+    "disk": {
+        "/": {
+            "total": 926.3517189025879,
+            "used": 472.2775650024414
+        }
+    },
+    "gpuapple": {
+        "type": "Apple M2 Max",
+        "vendor": "sppci_vendor_Apple"
+    },
+    "memory": {
+        "total": 32.0
+    }
+}
