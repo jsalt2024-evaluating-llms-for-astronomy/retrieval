@@ -74,7 +74,7 @@ class EmbeddingRetrievalSystem(RetrievalSystem):
     def init_filters(self):
         print("Loading filters...")
         if self.weight_citation: 
-            self.citation_filter = CitationFilter(metadata = self.metadata)
+            self.citation_filter = None #CitationFilter(metadata = self.metadata)
         
         self.date_filter = DateFilter(document_dates = self.document_dates)
         
@@ -119,7 +119,7 @@ class EmbeddingRetrievalSystem(RetrievalSystem):
         else:
             filtered_results = self.date_filter.filter(results, max_date = query_date)
         
-        if self.weight_citation: self.citation_filter.filter(filtered_results)
+        #if self.weight_citation: self.citation_filter.filter(filtered_results)
 
         top_results = sorted(filtered_results, key=lambda x: x[2], reverse=True)[:top_k]
 

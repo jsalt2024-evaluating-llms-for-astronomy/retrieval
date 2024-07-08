@@ -70,7 +70,7 @@ def main():
     retrieval_system = HydeCohereRetrievalSystem(embeddings_path="../data/vector_store/embeddings_matrix.npy",
                          documents_path="../data/vector_store/documents.pkl",
                          index_mapping_path="../data/vector_store/index_mapping.pkl", 
-                         generate_n=1, embed_query=False, max_doclen=300, weight_citation=True)
+                         generate_n=1, embed_query=False, max_doclen=500, weight_citation=True)
     evaluate_main(retrieval_system, "Rerank + Citations")
 
 if __name__ == "__main__":
