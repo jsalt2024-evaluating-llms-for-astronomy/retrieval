@@ -49,7 +49,7 @@ class EmbeddingRetrievalSystem(RetrievalSystem):
 
     def generate_metadata(self):
         astro_meta = load_dataset("JSALT2024-Astro-LLMs/astro_paper_corpus", split = "train")
-        keys = list(paper.keys())
+        keys = list(astro_meta[0].keys())
         keys.remove('abstract')
         keys.remove('introduction')
         keys.remove('conclusions')
