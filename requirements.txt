@@ -16,3 +16,5 @@ requests
 transformers
 openai
 wandb
+cohere
+spacy

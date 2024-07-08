@@ -1,0 +1,407 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Single-doc progress: 100%|█████████████████████████████████████████████████| 250/250 [35:53<00:00,  8.61s/it]
+Multipaper sentences progress:   0%|                                                 | 0/488 [00:00<?, ?it/s]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Multipaper sentences progress:   7%|██▏                               | 32/488 [2:07:26<30:16:07, 238.96s/it]
+Traceback (most recent call last):
+  File "/Users/christineye/anaconda3/envs/jsalt-retrieval/lib/python3.10/site-packages/httpx/_transports/default.py", line 69, in map_httpcore_exceptions
+    yield
+  File "/Users/christineye/anaconda3/envs/jsalt-retrieval/lib/python3.10/site-packages/httpx/_transports/default.py", line 233, in handle_request
+    resp = self._pool.handle_request(req)
+  File "/Users/christineye/anaconda3/envs/jsalt-retrieval/lib/python3.10/site-packages/httpcore/_sync/connection_pool.py", line 216, in handle_request
+    raise exc from None
+  File "/Users/christineye/anaconda3/envs/jsalt-retrieval/lib/python3.10/site-packages/httpcore/_sync/connection_pool.py", line 196, in handle_request
+    response = connection.handle_request(
+  File "/Users/christineye/anaconda3/envs/jsalt-retrieval/lib/python3.10/site-packages/httpcore/_sync/connection.py", line 101, in handle_request
+    return self._connection.handle_request(request)
+  File "/Users/christineye/anaconda3/envs/jsalt-retrieval/lib/python3.10/site-packages/httpcore/_sync/http11.py", line 143, in handle_request
+    raise exc
+  File "/Users/christineye/anaconda3/envs/jsalt-retrieval/lib/python3.10/site-packages/httpcore/_sync/http11.py", line 113, in handle_request
+    ) = self._receive_response_headers(**kwargs)
+  File "/Users/christineye/anaconda3/envs/jsalt-retrieval/lib/python3.10/site-packages/httpcore/_sync/http11.py", line 186, in _receive_response_headers
+    event = self._receive_event(timeout=timeout)
+  File "/Users/christineye/anaconda3/envs/jsalt-retrieval/lib/python3.10/site-packages/httpcore/_sync/http11.py", line 224, in _receive_event
+    data = self._network_stream.read(
+  File "/Users/christineye/anaconda3/envs/jsalt-retrieval/lib/python3.10/site-packages/httpcore/_backends/sync.py", line 124, in read
+    with map_exceptions(exc_map):
+  File "/Users/christineye/anaconda3/envs/jsalt-retrieval/lib/python3.10/contextlib.py", line 153, in __exit__
+    self.gen.throw(typ, value, traceback)
+  File "/Users/christineye/anaconda3/envs/jsalt-retrieval/lib/python3.10/site-packages/httpcore/_exceptions.py", line 14, in map_exceptions
+    raise to_exc(exc) from exc
+httpcore.ReadTimeout: The read operation timed out
+The above exception was the direct cause of the following exception:
+Traceback (most recent call last):
+  File "/Users/christineye/retrieval/src/hyde_reranking.py", line 67, in <module>
+    main()
+  File "/Users/christineye/retrieval/src/hyde_reranking.py", line 64, in main
+    evaluate_main(retrieval_system, "Rerank + Citations")
+  File "/Users/christineye/retrieval/src/../evaluation/evaluate.py", line 302, in main
+    results = evaluator.evaluate('../data/single_paper.json', '../data/multi_paper_sentences.json', k_values=[10, 50, 100])
+  File "/Users/christineye/retrieval/src/../evaluation/evaluate.py", line 209, in evaluate
+    multipaper_sentences_results = self._evaluate_multipaper_sentences(multi_paper_sentences_file, k_values)
+  File "/Users/christineye/retrieval/src/../evaluation/evaluate.py", line 256, in _evaluate_multipaper_sentences
+    retrieved_docs = self.retrieval_system.retrieve(query, arxiv_id_clean, top_k=max(k_values))
+  File "/Users/christineye/retrieval/src/hyde_reranking.py", line 39, in retrieve
+    reranked_results = self.cohere_client.rerank(
+  File "/Users/christineye/anaconda3/envs/jsalt-retrieval/lib/python3.10/site-packages/cohere/base_client.py", line 1557, in rerank
+    _response = self._client_wrapper.httpx_client.request(
+  File "/Users/christineye/anaconda3/envs/jsalt-retrieval/lib/python3.10/site-packages/cohere/core/http_client.py", line 171, in request
+    response = self.httpx_client.request(
+  File "/Users/christineye/anaconda3/envs/jsalt-retrieval/lib/python3.10/site-packages/httpx/_client.py", line 827, in request
+    return self.send(request, auth=auth, follow_redirects=follow_redirects)
+  File "/Users/christineye/anaconda3/envs/jsalt-retrieval/lib/python3.10/site-packages/httpx/_client.py", line 914, in send
+    response = self._send_handling_auth(
+  File "/Users/christineye/anaconda3/envs/jsalt-retrieval/lib/python3.10/site-packages/httpx/_client.py", line 942, in _send_handling_auth
+    response = self._send_handling_redirects(
+  File "/Users/christineye/anaconda3/envs/jsalt-retrieval/lib/python3.10/site-packages/httpx/_client.py", line 979, in _send_handling_redirects
+    response = self._send_single_request(request)
+  File "/Users/christineye/anaconda3/envs/jsalt-retrieval/lib/python3.10/site-packages/httpx/_client.py", line 1015, in _send_single_request
+    response = transport.handle_request(request)
+  File "/Users/christineye/anaconda3/envs/jsalt-retrieval/lib/python3.10/site-packages/httpx/_transports/default.py", line 232, in handle_request
+    with map_httpcore_exceptions():
+  File "/Users/christineye/anaconda3/envs/jsalt-retrieval/lib/python3.10/contextlib.py", line 153, in __exit__
+    self.gen.throw(typ, value, traceback)
+  File "/Users/christineye/anaconda3/envs/jsalt-retrieval/lib/python3.10/site-packages/httpx/_transports/default.py", line 86, in map_httpcore_exceptions
+    raise mapped_exc(message) from exc
+httpx.ReadTimeout: The read operation timed out
+Traceback (most recent call last):
+  File "/Users/christineye/anaconda3/envs/jsalt-retrieval/lib/python3.10/site-packages/httpx/_transports/default.py", line 69, in map_httpcore_exceptions
+    yield
+  File "/Users/christineye/anaconda3/envs/jsalt-retrieval/lib/python3.10/site-packages/httpx/_transports/default.py", line 233, in handle_request
+    resp = self._pool.handle_request(req)
+  File "/Users/christineye/anaconda3/envs/jsalt-retrieval/lib/python3.10/site-packages/httpcore/_sync/connection_pool.py", line 216, in handle_request
+    raise exc from None
+  File "/Users/christineye/anaconda3/envs/jsalt-retrieval/lib/python3.10/site-packages/httpcore/_sync/connection_pool.py", line 196, in handle_request
+    response = connection.handle_request(
+  File "/Users/christineye/anaconda3/envs/jsalt-retrieval/lib/python3.10/site-packages/httpcore/_sync/connection.py", line 101, in handle_request
+    return self._connection.handle_request(request)
+  File "/Users/christineye/anaconda3/envs/jsalt-retrieval/lib/python3.10/site-packages/httpcore/_sync/http11.py", line 143, in handle_request
+    raise exc
+  File "/Users/christineye/anaconda3/envs/jsalt-retrieval/lib/python3.10/site-packages/httpcore/_sync/http11.py", line 113, in handle_request
+    ) = self._receive_response_headers(**kwargs)
+  File "/Users/christineye/anaconda3/envs/jsalt-retrieval/lib/python3.10/site-packages/httpcore/_sync/http11.py", line 186, in _receive_response_headers
+    event = self._receive_event(timeout=timeout)
+  File "/Users/christineye/anaconda3/envs/jsalt-retrieval/lib/python3.10/site-packages/httpcore/_sync/http11.py", line 224, in _receive_event
+    data = self._network_stream.read(
+  File "/Users/christineye/anaconda3/envs/jsalt-retrieval/lib/python3.10/site-packages/httpcore/_backends/sync.py", line 124, in read
+    with map_exceptions(exc_map):
+  File "/Users/christineye/anaconda3/envs/jsalt-retrieval/lib/python3.10/contextlib.py", line 153, in __exit__
+    self.gen.throw(typ, value, traceback)
+  File "/Users/christineye/anaconda3/envs/jsalt-retrieval/lib/python3.10/site-packages/httpcore/_exceptions.py", line 14, in map_exceptions
+    raise to_exc(exc) from exc
+httpcore.ReadTimeout: The read operation timed out
+The above exception was the direct cause of the following exception:
+Traceback (most recent call last):
+  File "/Users/christineye/retrieval/src/hyde_reranking.py", line 67, in <module>
+    main()
+  File "/Users/christineye/retrieval/src/hyde_reranking.py", line 64, in main
+    evaluate_main(retrieval_system, "Rerank + Citations")
+  File "/Users/christineye/retrieval/src/../evaluation/evaluate.py", line 302, in main
+    results = evaluator.evaluate('../data/single_paper.json', '../data/multi_paper_sentences.json', k_values=[10, 50, 100])
+  File "/Users/christineye/retrieval/src/../evaluation/evaluate.py", line 209, in evaluate
+    multipaper_sentences_results = self._evaluate_multipaper_sentences(multi_paper_sentences_file, k_values)
+  File "/Users/christineye/retrieval/src/../evaluation/evaluate.py", line 256, in _evaluate_multipaper_sentences
+    retrieved_docs = self.retrieval_system.retrieve(query, arxiv_id_clean, top_k=max(k_values))
+  File "/Users/christineye/retrieval/src/hyde_reranking.py", line 39, in retrieve
+    reranked_results = self.cohere_client.rerank(
+  File "/Users/christineye/anaconda3/envs/jsalt-retrieval/lib/python3.10/site-packages/cohere/base_client.py", line 1557, in rerank
+    _response = self._client_wrapper.httpx_client.request(
+  File "/Users/christineye/anaconda3/envs/jsalt-retrieval/lib/python3.10/site-packages/cohere/core/http_client.py", line 171, in request
+    response = self.httpx_client.request(
+  File "/Users/christineye/anaconda3/envs/jsalt-retrieval/lib/python3.10/site-packages/httpx/_client.py", line 827, in request
+    return self.send(request, auth=auth, follow_redirects=follow_redirects)
+  File "/Users/christineye/anaconda3/envs/jsalt-retrieval/lib/python3.10/site-packages/httpx/_client.py", line 914, in send
+    response = self._send_handling_auth(
+  File "/Users/christineye/anaconda3/envs/jsalt-retrieval/lib/python3.10/site-packages/httpx/_client.py", line 942, in _send_handling_auth
+    response = self._send_handling_redirects(
+  File "/Users/christineye/anaconda3/envs/jsalt-retrieval/lib/python3.10/site-packages/httpx/_client.py", line 979, in _send_handling_redirects
+    response = self._send_single_request(request)
+  File "/Users/christineye/anaconda3/envs/jsalt-retrieval/lib/python3.10/site-packages/httpx/_client.py", line 1015, in _send_single_request
+    response = transport.handle_request(request)
+  File "/Users/christineye/anaconda3/envs/jsalt-retrieval/lib/python3.10/site-packages/httpx/_transports/default.py", line 232, in handle_request
+    with map_httpcore_exceptions():
+  File "/Users/christineye/anaconda3/envs/jsalt-retrieval/lib/python3.10/contextlib.py", line 153, in __exit__
+    self.gen.throw(typ, value, traceback)
+  File "/Users/christineye/anaconda3/envs/jsalt-retrieval/lib/python3.10/site-packages/httpx/_transports/default.py", line 86, in map_httpcore_exceptions
+    raise mapped_exc(message) from exc
+httpx.ReadTimeout: The read operation timed out

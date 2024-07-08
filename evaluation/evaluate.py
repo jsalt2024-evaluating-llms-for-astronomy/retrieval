@@ -171,17 +171,32 @@ from collections import defaultdict
 import wandb
 import numpy as np
 from tqdm import tqdm
+from datetime import datetime
 
 class RetrievalSystem(ABC):
     @abstractmethod
     def retrieve(self, query: str, arxiv_id: str, top_k: int = 100) -> List[str]:
         pass
 
+    def parse_date(self, arxiv_id: str) -> datetime:
+        if arxiv_id.startswith('astro-ph'):
+            arxiv_id = arxiv_id.split('astro-ph')[1].split('_arXiv')[0]
+        try:
+            year = int("20" + arxiv_id[:2])
+            month = int(arxiv_id[2:4])
+        except:
+            year = 2023
+            month = 1
+        return datetime(year, month, 1)
+    
+
 class Evaluator:
     def __init__(self, retrieval_system: RetrievalSystem, system_name: str, wandb_log: bool = True):
         self.retrieval_system = retrieval_system
         self.system_name = system_name
         self.wandb_log = wandb_log
+    
+    
 
     def evaluate(self, single_doc_file: str, multi_paper_sentences_file: str, k_values: List[int] = [10, 50, 100]) -> Dict[str, Dict[str, float]]:
         if self.wandb_log:
