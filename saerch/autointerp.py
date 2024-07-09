@@ -98,7 +98,7 @@ Work through the steps thoroughly and analytically to predict whether the neuron
             return json.load(f)
     
     def load_embeddings(self) -> np.ndarray:
-        with open(DATA_DIR / "vector_store/embeddings.npy", 'rb') as f:
+        with open(DATA_DIR / "vector_store/embeddings_matrix.npy", 'rb') as f:
             return np.load(f)
 
     def get_feature_activations(self, m: int, min_length: int = 100) -> Tuple[List[Tuple], List[Tuple]]:
@@ -112,9 +112,11 @@ Work through the steps thoroughly and analytically to predict whether the neuron
         sorted_activated_indices = activated_indices[np.argsort(-activation_values[activated_indices])]
         
         top_m_abstracts = []
+        top_m_indices = []
         for i in sorted_activated_indices:
             if len(abstracts[i]) > min_length:
                 top_m_abstracts.append((doc_ids[i], abstracts[i], activation_values[i]))
+                top_m_indices.append(i)
             if len(top_m_abstracts) == m:
                 break
         
@@ -122,12 +124,13 @@ Work through the steps thoroughly and analytically to predict whether the neuron
         zero_activation_samples = []
         # np.random.shuffle(zero_activation_indices)
         
-        active_embedding = np.mean([abstract[2] for abstract in top_m_abstracts])
-        cosine_similarities = np.dot(active_embedding, self.embeddings[zero_activation_indices])
+        active_embedding = np.array([self.embeddings[i] for i in top_m_indices]).mean(axis = 0)  
+        cosine_similarities = np.dot(active_embedding, self.embeddings[zero_activation_indices].T)
         cosine_pairs = [(index, cosine_similarities[i]) for i, index in enumerate(zero_activation_indices)]
         cosine_pairs.sort(key=lambda x: -x[1])
         
         for i, cosine_sim in cosine_pairs:
+        # for i in zero_activation_indices:
             if len(abstracts[i]) > min_length:
                 zero_activation_samples.append((doc_ids[i], abstracts[i], 0))
             if len(zero_activation_samples) == m:
