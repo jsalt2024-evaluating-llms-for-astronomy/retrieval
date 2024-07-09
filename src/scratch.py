@@ -166,32 +166,37 @@
 #     main()
 
 import os
-import shutil
-from huggingface_hub import Repository
+from huggingface_hub import HfApi, create_repo
 
-# Replace these with your Hugging Face repo details and local directory
-hf_repo_id = "JSALT2024-Astro-LLMs/jsalt-astro-embeddings"
-local_directory = "../data/vector_store"
+# Replace these with your Hugging Face details and local directory
 hf_token = "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"
+hf_repo_id = "JSALT2024-Astro-LLMs/astro-embeddings"
+local_directory = "../data/vector_store"
 
-# Clone the repository locally
-repo = Repository(local_dir="./hf_repo", clone_from=hf_repo_id, use_auth_token=hf_token)
+# Initialize the Hugging Face API
+api = HfApi()
 
-# Remove all files in the local clone of the Hugging Face repository
-for root, dirs, files in os.walk(repo.local_dir, topdown=False):
-    for name in files:
-        os.remove(os.path.join(root, name))
-    for name in dirs:
-        os.rmdir(os.path.join(root, name))
+# Create the new repository
+create_repo(repo_id=hf_repo_id, token=hf_token, exist_ok=True)
 
-# Copy all files from the specified local directory to the local clone of the Hugging Face repository
-for item in os.listdir(local_directory):
-    s = os.path.join(local_directory, item)
-    d = os.path.join(repo.local_dir, item)
-    if os.path.isdir(s):
-        shutil.copytree(s, d, dirs_exist_ok=True)
-    else:
-        shutil.copy2(s, d)
+# Function to upload a file or directory
+def upload_to_hf(local_path, repo_path):
+    if os.path.isfile(local_path):
+        print(f"Uploading file: {local_path}")
+        api.upload_file(
+            path_or_fileobj=local_path,
+            path_in_repo=repo_path,
+            repo_id=hf_repo_id,
+            token=hf_token
+        )
+    elif os.path.isdir(local_path):
+        for item in os.listdir(local_path):
+            item_local_path = os.path.join(local_path, item)
+            item_repo_path = os.path.join(repo_path, item)
+            upload_to_hf(item_local_path, item_repo_path)
 
-# Commit and push the changes to the Hugging Face repository
-repo.push_to_hub(commit_message="Replaced all files with files from data/vector_store")
+# Start the upload process
+print(f"Starting upload of {local_directory} to {hf_repo_id}")
+upload_to_hf(local_directory, "")
+
+print("Upload completed successfully!")
