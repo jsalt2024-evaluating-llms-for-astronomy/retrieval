@@ -1,1 +1,1 @@
-{"total_loss": 0.3863033354282379, "reconstruction_loss": 0.3058643341064453, "auxiliary_loss": 2.5740480422973633, "dead_latents_proportion": 0.0, "l0_norm": 32, "step": 1331, "_timestamp": 1720557501.7437341, "_runtime": 997.6903102397919, "_step": 1330}
+{"total_loss": 0.3518857955932617, "reconstruction_loss": 0.2650686800479889, "auxiliary_loss": 2.7781476974487305, "dead_latents_proportion": 0.0, "l0_norm": 32, "step": 2129, "_timestamp": 1720558167.938186, "_runtime": 1663.8847620487213, "_step": 2128}
