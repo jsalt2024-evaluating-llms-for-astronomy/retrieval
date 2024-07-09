@@ -25,3 +25,4 @@ config: {'n_dirs': 9216, 'd_model': 1536, 'k': 64, 'auxk': 128, 'batch_size': 10
 2024-07-09 11:42:24,394 INFO    MainThread:31464 [wandb_run.py:_redirect():2300] Wrapping output streams.
 2024-07-09 11:42:24,394 INFO    MainThread:31464 [wandb_run.py:_redirect():2325] Redirects installed.
 2024-07-09 11:42:24,395 INFO    MainThread:31464 [wandb_init.py:init():847] run started, returning control to user process
+2024-07-09 12:01:49,872 WARNING MsgRouterThr:31464 [router.py:message_loop():77] message_loop has been closed
