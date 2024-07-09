@@ -159,7 +159,7 @@ def main():
     auxk = 128 #256
     batch_size = 1024
     lr = 1e-4
-    epochs = 10
+    epochs = 50
     auxk_coef = 1/32
     clip_grad = 1.0
 
