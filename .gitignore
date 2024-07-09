@@ -9,3 +9,6 @@ __pycache__
 /data/vector_store
 /src/tree.py
 evaluation/arxiv_code.py
+/saerch/checkpoint
+/saerch/checkpoint
+/saerch/checkpoints
