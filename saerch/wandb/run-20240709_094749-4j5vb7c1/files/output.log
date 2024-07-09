@@ -1,0 +1,83 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Epoch 1/10: 100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 266/266 [00:53<00:00,  4.93it/s]
+Epoch 1, Average Loss: 0.1972
+Model saved to checkpoints/vanilla_12288_0.001_epoch_1.pth
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Epoch 2/10:  98%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▉   | 261/266 [00:51<00:00,  5.04it/s]
+Epoch 2, Average Loss: 0.0250
+Epoch 2/10: 100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 266/266 [00:52<00:00,  5.04it/s]
+
+
+
+
+
+
+
+
+
+
+Epoch 3/10:  41%|████████████████████████████████████████████████████████████████████                                                                                                  | 109/266 [00:22<00:32,  4.82it/s]
+Traceback (most recent call last):
+  File "/Users/charlesoneill/retrieval/saerch/vanilla_sae.py", line 137, in <module>
+    main()
+  File "/Users/charlesoneill/retrieval/saerch/vanilla_sae.py", line 132, in main
+    train(sae, train_loader, optimizer, epochs, l1_lambda, clip_grad, model_name=model_name)
+  File "/Users/charlesoneill/retrieval/saerch/vanilla_sae.py", line 78, in train
+    torch.nn.utils.clip_grad_norm_(sae.parameters(), clip_grad)
+  File "/Users/charlesoneill/miniconda3/envs/saerch/lib/python3.12/site-packages/torch/nn/utils/clip_grad.py", line 20, in _no_grad_wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/charlesoneill/miniconda3/envs/saerch/lib/python3.12/site-packages/torch/nn/utils/clip_grad.py", line 67, in clip_grad_norm_
+    norms.extend(torch._foreach_norm(device_grads, norm_type))
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+KeyboardInterrupt
