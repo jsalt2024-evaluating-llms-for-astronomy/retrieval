@@ -1,0 +1,79 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Epoch 1/10: 100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 266/266 [01:29<00:00,  2.98it/s]
+Epoch 2/10:   0%|▌                                                                                                                                                       | 1/266 [00:00<01:30,  2.94it/s]
+Epoch 1, Average Loss: 0.6934
+
+
+
+
+Epoch 2/10:  11%|████████████████▍                                                                                                                                      | 29/266 [00:09<01:20,  2.95it/s]
+Traceback (most recent call last):
+  File "/Users/charlesoneill/retrieval/saerch/train.py", line 190, in <module>
+    main()
+  File "/Users/charlesoneill/retrieval/saerch/train.py", line 185, in main
+    train(ae, train_loader, optimizer, epochs, auxk_coef, clip_grad, model_name=model_name)
+  File "/Users/charlesoneill/retrieval/saerch/train.py", line 114, in train
+    recons, info = ae(x)
+                   ^^^^^
+  File "/Users/charlesoneill/miniconda3/envs/saerch/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1532, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/charlesoneill/miniconda3/envs/saerch/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1541, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/charlesoneill/retrieval/saerch/train.py", line 31, in forward
+    latents_pre_act = self.encoder(x) + self.latent_bias
+                      ^^^^^^^^^^^^^^^
+  File "/Users/charlesoneill/miniconda3/envs/saerch/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1532, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/charlesoneill/miniconda3/envs/saerch/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1541, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/charlesoneill/miniconda3/envs/saerch/lib/python3.12/site-packages/torch/nn/modules/linear.py", line 116, in forward
+    return F.linear(input, self.weight, self.bias)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+KeyboardInterrupt

@@ -7,6 +7,7 @@ from torch.utils.data import DataLoader, TensorDataset
 from tqdm import tqdm
 import wandb
 import os
+import glob
 
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
@@ -102,9 +103,10 @@ def init_from_data_(ae, data_sample):
 
     nn.init.zeros_(ae.latent_bias)
 
-def train(ae, train_loader, optimizer, epochs, auxk_coef, clip_grad=None, save_dir="checkpoints"):
+def train(ae, train_loader, optimizer, epochs, k, auxk_coef, clip_grad=None, save_dir="checkpoints", model_name=""):
     os.makedirs(save_dir, exist_ok=True)
     step = 0
+    num_batches = len(train_loader)
     for epoch in range(epochs):
         ae.train()
         total_loss = 0
@@ -116,14 +118,15 @@ def train(ae, train_loader, optimizer, epochs, auxk_coef, clip_grad=None, save_d
             loss.backward()
             step += 1
 
-            # calculate number of dead latents (not fired in last 100 steps)
-            dead_latents = (ae.stats_last_nonzero > 100).sum().item()
+            # calculate proportion of dead latents (not fired in last num_batches = 1 epoch)
+            dead_latents_prop = (ae.stats_last_nonzero > num_batches).float().mean().item()
 
             wandb.log({
                 "total_loss": loss.item(),
                 "reconstruction_loss": recons_loss.item(),
                 "auxiliary_loss": auxk_loss.item(),
-                "dead_latents": dead_latents,
+                "dead_latents_proportion": dead_latents_prop,
+                "l0_norm": k,
                 "step": step
             })
             
@@ -140,23 +143,30 @@ def train(ae, train_loader, optimizer, epochs, auxk_coef, clip_grad=None, save_d
         avg_loss = total_loss / len(train_loader)
         print(f"Epoch {epoch+1}, Average Loss: {avg_loss:.4f}")
 
-        # save model after each epoch
-        save_path = os.path.join(save_dir, f"sae_model_epoch_{epoch+1}.pth")
+        # Delete previous model saves for this configuration
+        for old_model in glob.glob(os.path.join(save_dir, f"{model_name}_epoch_*.pth")):
+            os.remove(old_model)
+
+        # Save new model
+        save_path = os.path.join(save_dir, f"{model_name}_epoch_{epoch+1}.pth")
         torch.save(ae.state_dict(), save_path)
         print(f"Model saved to {save_path}")
 
 def main():
-    n_dirs = 32768
     d_model = 1536
-    k = 32
-    auxk = 256
+    n_dirs = d_model * 6
+    k = 64
+    auxk = 128 #256
     batch_size = 1024
     lr = 1e-4
-    epochs = 10
+    epochs = 50
     auxk_coef = 1/32
     clip_grad = 1.0
 
-    wandb.init(project="saerch", config={
+    # Create model name
+    model_name = f"{k}_{n_dirs}_{auxk}_final"
+
+    wandb.init(project="saerch", name=model_name, config={
         "n_dirs": n_dirs,
         "d_model": d_model,
         "k": k,
@@ -175,11 +185,11 @@ def main():
     train_loader = DataLoader(dataset, batch_size=batch_size, shuffle=True)
 
     ae = FastAutoencoder(n_dirs, d_model, k, auxk).to(device)
-    init_from_data_(ae, data_tensor[:10000].to(device))  # Initialize using a subset of data
+    init_from_data_(ae, data_tensor[:10000].to(device))
 
     optimizer = optim.Adam(ae.parameters(), lr=lr)
 
-    train(ae, train_loader, optimizer, epochs, auxk_coef, clip_grad)
+    train(ae, train_loader, optimizer, epochs, k, auxk_coef, clip_grad, model_name=model_name)
 
     wandb.finish()
 
