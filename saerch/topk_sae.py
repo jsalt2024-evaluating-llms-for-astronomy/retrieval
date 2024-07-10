@@ -154,12 +154,21 @@ def train(ae, train_loader, optimizer, epochs, k, auxk_coef, clip_grad=None, sav
 
 def main():
     d_model = 1536
+<<<<<<< HEAD
     n_dirs = d_model * 8
     k = 128
     auxk = 192
     batch_size = 1024
     lr = 1e-4
     epochs = 10
+=======
+    n_dirs = d_model * 6
+    k = 64
+    auxk = 128 #256
+    batch_size = 1024
+    lr = 1e-4
+    epochs = 50
+>>>>>>> 78e6f49c8b1ad18c9ca7ec500fc84eb799afd3b1
     auxk_coef = 1/32
     clip_grad = 1.0
 
@@ -194,4 +203,8 @@ def main():
     wandb.finish()
 
 if __name__ == "__main__":
+<<<<<<< HEAD
     main()
+=======
+    main()
+>>>>>>> 78e6f49c8b1ad18c9ca7ec500fc84eb799afd3b1

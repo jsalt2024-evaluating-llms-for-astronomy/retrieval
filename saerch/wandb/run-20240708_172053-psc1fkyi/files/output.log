@@ -1,0 +1,56 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Epoch 1/10: 100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 266/266 [01:30<00:00,  2.94it/s]
+Traceback (most recent call last):
+  File "/Users/charlesoneill/retrieval/saerch/train.py", line 194, in <module>
+    main()
+  File "/Users/charlesoneill/retrieval/saerch/train.py", line 189, in main
+    train(ae, train_loader, optimizer, epochs, auxk_coef, clip_grad, model_name=model_name)
+  File "/Users/charlesoneill/retrieval/saerch/train.py", line 144, in train
+    for old_model in glob.glob(os.path.join(save_dir, f"{model_name}_epoch_*.pth")):
+                     ^^^^
+NameError: name 'glob' is not defined. Did you forget to import 'glob'
+Epoch 1, Average Loss: 0.6207

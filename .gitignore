@@ -8,7 +8,9 @@ __pycache__
 *.npy
 /data/vector_store
 /src/tree.py
-evaluation/arxiv_code.py
-/saerch/checkpoint
-/saerch/checkpoint
+# Ignore any pth files
+*.pth
+# Ignore saerch/checkpoints
 /saerch/checkpoints
+# Ignore src/hf_repo
+/src/hf_repo
