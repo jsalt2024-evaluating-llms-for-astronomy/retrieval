@@ -28,9 +28,13 @@ config: {}
 2024-07-08 11:39:32,546 INFO    MainThread:52997 [wandb_init.py:init():838] run started, returning control to user process
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 2024-07-08 12:14:40,450 WARNING MsgRouterThr:52997 [router.py:message_loop():77] message_loop has been closed
 =======
 >>>>>>> 91c9f2f6d549b0feaee357bbade930c0f0ce53c2
 =======
 2024-07-08 12:14:40,450 WARNING MsgRouterThr:52997 [router.py:message_loop():77] message_loop has been closed
 >>>>>>> 76f53e3898c8c5a63efb121b4b7270a9674e94d4
+=======
+2024-07-08 12:14:40,450 WARNING MsgRouterThr:52997 [router.py:message_loop():77] message_loop has been closed
+>>>>>>> main

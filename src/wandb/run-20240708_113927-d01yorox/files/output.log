@@ -210,8 +210,11 @@
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 76f53e3898c8c5a63efb121b4b7270a9674e94d4
+=======
+>>>>>>> main
 
 
 
@@ -276,9 +279,13 @@ Traceback (most recent call last):
   File "/Users/charlesoneill/miniconda3/envs/jsalt/lib/python3.12/site-packages/cohere/base_client.py", line 1575, in rerank
     raise BadRequestError(
 <<<<<<< HEAD
+<<<<<<< HEAD
 cohere.errors.bad_request_error.BadRequestError: status_code: 400, body: {'message': 'invalid request: list of documents must not be empty'}
 =======
 >>>>>>> 91c9f2f6d549b0feaee357bbade930c0f0ce53c2
 =======
 cohere.errors.bad_request_error.BadRequestError: status_code: 400, body: {'message': 'invalid request: list of documents must not be empty'}
 >>>>>>> 76f53e3898c8c5a63efb121b4b7270a9674e94d4
+=======
+cohere.errors.bad_request_error.BadRequestError: status_code: 400, body: {'message': 'invalid request: list of documents must not be empty'}
+>>>>>>> main
