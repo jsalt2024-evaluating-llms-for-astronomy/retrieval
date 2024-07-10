@@ -199,7 +199,10 @@ def upload_to_hf(local_path, repo_path):
 print(f"Starting upload of {local_directory} to {hf_repo_id}")
 upload_to_hf(local_directory, "")
 
+<<<<<<< HEAD
 print("Upload completed successfully!")
+<<<<<<< HEAD
+=======
 
 
 # import os
@@ -347,3 +350,7 @@ print("Upload completed successfully!")
 
 # if __name__ == "__main__":
 #     main()
+>>>>>>> 76f53e3898c8c5a63efb121b4b7270a9674e94d4
+=======
+print("Upload completed successfully!")
+>>>>>>> main

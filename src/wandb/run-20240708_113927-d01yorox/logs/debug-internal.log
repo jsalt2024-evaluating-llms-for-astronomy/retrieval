@@ -2598,6 +2598,13 @@
 2024-07-08 12:08:28,684 DEBUG   HandlerThread:53019 [handler.py:handle_request():158] handle_request: internal_messages
 2024-07-08 12:08:29,689 DEBUG   HandlerThread:53019 [handler.py:handle_request():158] handle_request: internal_messages
 2024-07-08 12:08:30,694 DEBUG   HandlerThread:53019 [handler.py:handle_request():158] handle_request: internal_messages
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 76f53e3898c8c5a63efb121b4b7270a9674e94d4
+=======
+>>>>>>> main
 2024-07-08 12:08:31,449 INFO    Thread-12 :53019 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/charlesoneill/retrieval/src/wandb/run-20240708_113927-d01yorox/files/output.log
 2024-07-08 12:08:31,695 DEBUG   HandlerThread:53019 [handler.py:handle_request():158] handle_request: internal_messages
 2024-07-08 12:08:32,700 DEBUG   HandlerThread:53019 [handler.py:handle_request():158] handle_request: internal_messages
@@ -3275,3 +3282,11 @@
 2024-07-08 12:14:40,447 INFO    SenderThread:53019 [sender.py:finish():1608] shutting down sender
 2024-07-08 12:14:40,448 INFO    SenderThread:53019 [file_pusher.py:finish():169] shutting down file pusher
 2024-07-08 12:14:40,448 INFO    SenderThread:53019 [file_pusher.py:join():175] waiting for file pusher
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 91c9f2f6d549b0feaee357bbade930c0f0ce53c2
+=======
+>>>>>>> 76f53e3898c8c5a63efb121b4b7270a9674e94d4
+=======
+>>>>>>> main

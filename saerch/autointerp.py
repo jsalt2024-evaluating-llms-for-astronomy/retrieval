@@ -81,6 +81,7 @@ Work through the steps thoroughly and analytically to predict whether the neuron
         self.num_samples = num_samples
         self.topk_indices, self.topk_values = self.load_sae_data()
         self.abstract_texts = self.load_abstract_texts()
+        self.embeddings = self.load_embeddings()
 
     @staticmethod
     def load_config(config_path: Path) -> Dict:
@@ -96,6 +97,10 @@ Work through the steps thoroughly and analytically to predict whether the neuron
         with open(DATA_DIR / "vector_store/abstract_texts.json", 'r') as f:
             return json.load(f)
 
+    def load_embeddings(self) -> np.ndarray:
+        with open(DATA_DIR / "vector_store/embeddings_matrix.npy", 'rb') as f:
+            return np.load(f)
+
     def get_feature_activations(self, m: int, min_length: int = 100) -> Tuple[List[Tuple], List[Tuple]]:
         doc_ids = self.abstract_texts['doc_ids']
         abstracts = self.abstract_texts['abstracts']
@@ -107,16 +112,25 @@ Work through the steps thoroughly and analytically to predict whether the neuron
         sorted_activated_indices = activated_indices[np.argsort(-activation_values[activated_indices])]
         
         top_m_abstracts = []
+        top_m_indices = []
         for i in sorted_activated_indices:
             if len(abstracts[i]) > min_length:
                 top_m_abstracts.append((doc_ids[i], abstracts[i], activation_values[i]))
+                top_m_indices.append(i)
             if len(top_m_abstracts) == m:
                 break
         
         zero_activation_indices = np.where(~feature_mask.any(axis=1))[0]
         zero_activation_samples = []
-        np.random.shuffle(zero_activation_indices)
-        for i in zero_activation_indices:
+        # np.random.shuffle(zero_activation_indices)
+        
+        active_embedding = np.array([self.embeddings[i] for i in top_m_indices]).mean(axis = 0)  
+        cosine_similarities = np.dot(active_embedding, self.embeddings[zero_activation_indices].T)
+        cosine_pairs = [(index, cosine_similarities[i]) for i, index in enumerate(zero_activation_indices)]
+        cosine_pairs.sort(key=lambda x: -x[1])
+        
+        for i, cosine_sim in cosine_pairs:
+        # for i in zero_activation_indices:
             if len(abstracts[i]) > min_length:
                 zero_activation_samples.append((doc_ids[i], abstracts[i], 0))
             if len(zero_activation_samples) == m:
