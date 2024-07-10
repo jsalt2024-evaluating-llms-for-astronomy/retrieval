@@ -1,0 +1,34 @@
+2024-07-10 10:12:45,042 INFO    MainThread:10117 [wandb_setup.py:_flush():76] Current SDK version is 0.17.4
+2024-07-10 10:12:45,043 INFO    MainThread:10117 [wandb_setup.py:_flush():76] Configure stats pid to 10117
+2024-07-10 10:12:45,043 INFO    MainThread:10117 [wandb_setup.py:_flush():76] Loading settings from /Users/charlesoneill/.config/wandb/settings
+2024-07-10 10:12:45,043 INFO    MainThread:10117 [wandb_setup.py:_flush():76] Loading settings from /Users/charlesoneill/retrieval/saerch/wandb/settings
+2024-07-10 10:12:45,043 INFO    MainThread:10117 [wandb_setup.py:_flush():76] Loading settings from environment variables: {}
+2024-07-10 10:12:45,043 INFO    MainThread:10117 [wandb_setup.py:_flush():76] Applying setup settings: {'_disable_service': False}
+2024-07-10 10:12:45,043 INFO    MainThread:10117 [wandb_setup.py:_flush():76] Inferring run settings from compute environment: {'program_relpath': 'saerch/topk_sae.py', 'program_abspath': '/Users/charlesoneill/retrieval/saerch/topk_sae.py', 'program': '/Users/charlesoneill/retrieval/saerch/topk_sae.py'}
+2024-07-10 10:12:45,043 INFO    MainThread:10117 [wandb_setup.py:_flush():76] Applying login settings: {}
+2024-07-10 10:12:45,043 INFO    MainThread:10117 [wandb_init.py:_log_setup():529] Logging user logs to /Users/charlesoneill/retrieval/saerch/wandb/run-20240710_101245-34r7lfmp/logs/debug.log
+2024-07-10 10:12:45,043 INFO    MainThread:10117 [wandb_init.py:_log_setup():530] Logging internal logs to /Users/charlesoneill/retrieval/saerch/wandb/run-20240710_101245-34r7lfmp/logs/debug-internal.log
+2024-07-10 10:12:45,043 INFO    MainThread:10117 [wandb_init.py:init():569] calling init triggers
+2024-07-10 10:12:45,043 INFO    MainThread:10117 [wandb_init.py:init():576] wandb.init called with sweep_config: {}
+config: {'n_dirs': 9216, 'd_model': 1536, 'k': 64, 'auxk': 128, 'batch_size': 1024, 'lr': 0.0001, 'epochs': 50, 'auxk_coef': 0.03125, 'clip_grad': 1.0, 'device': 'cpu'}
+2024-07-10 10:12:45,044 INFO    MainThread:10117 [wandb_init.py:init():619] starting backend
+2024-07-10 10:12:45,044 INFO    MainThread:10117 [wandb_init.py:init():623] setting up manager
+2024-07-10 10:12:45,045 INFO    MainThread:10117 [backend.py:_multiprocessing_setup():105] multiprocessing start_methods=spawn,fork,forkserver, using: spawn
+2024-07-10 10:12:45,048 INFO    MainThread:10117 [wandb_init.py:init():631] backend started and connected
+2024-07-10 10:12:45,050 INFO    MainThread:10117 [wandb_init.py:init():720] updated telemetry
+2024-07-10 10:12:45,067 INFO    MainThread:10117 [wandb_init.py:init():753] communicating run to backend with 90.0 second timeout
+2024-07-10 10:12:45,317 INFO    MainThread:10117 [wandb_run.py:_on_init():2402] communicating current version
+2024-07-10 10:12:45,401 INFO    MainThread:10117 [wandb_run.py:_on_init():2411] got version response 
+2024-07-10 10:12:45,401 INFO    MainThread:10117 [wandb_init.py:init():804] starting run threads in backend
+2024-07-10 10:12:47,788 INFO    MainThread:10117 [wandb_run.py:_console_start():2380] atexit reg
+2024-07-10 10:12:47,788 INFO    MainThread:10117 [wandb_run.py:_redirect():2235] redirect: wrap_raw
+2024-07-10 10:12:47,788 INFO    MainThread:10117 [wandb_run.py:_redirect():2300] Wrapping output streams.
+2024-07-10 10:12:47,788 INFO    MainThread:10117 [wandb_run.py:_redirect():2325] Redirects installed.
+2024-07-10 10:12:47,789 INFO    MainThread:10117 [wandb_init.py:init():847] run started, returning control to user process
+2024-07-10 11:06:33,460 INFO    MainThread:10117 [wandb_run.py:_finish():2109] finishing run charlieoneill/saerch/34r7lfmp
+2024-07-10 11:06:33,462 INFO    MainThread:10117 [wandb_run.py:_atexit_cleanup():2349] got exitcode: 0
+2024-07-10 11:06:33,462 INFO    MainThread:10117 [wandb_run.py:_restore():2332] restore
+2024-07-10 11:06:33,462 INFO    MainThread:10117 [wandb_run.py:_restore():2338] restore done
+2024-07-10 11:06:39,930 INFO    MainThread:10117 [wandb_run.py:_footer_history_summary_info():3991] rendering history
+2024-07-10 11:06:39,930 INFO    MainThread:10117 [wandb_run.py:_footer_history_summary_info():4023] rendering summary
+2024-07-10 11:06:39,932 INFO    MainThread:10117 [wandb_run.py:_footer_sync_info():3950] logging synced files

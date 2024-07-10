@@ -1,0 +1,37 @@
+{
+    "os": "macOS-14.3-arm64-arm-64bit",
+    "python": "3.12.4",
+    "heartbeatAt": "2024-07-10T14:12:45.786887",
+    "startedAt": "2024-07-10T14:12:45.038629",
+    "docker": null,
+    "cuda": null,
+    "args": [],
+    "state": "running",
+    "program": "/Users/charlesoneill/retrieval/saerch/topk_sae.py",
+    "codePathLocal": "topk_sae.py",
+    "codePath": "saerch/topk_sae.py",
+    "git": {
+        "remote": "https://github.com/jsalt2024-evaluating-llms-for-astronomy/retrieval.git",
+        "commit": "78e6f49c8b1ad18c9ca7ec500fc84eb799afd3b1"
+    },
+    "email": "cponeill00@gmail.com",
+    "root": "/Users/charlesoneill/retrieval",
+    "host": "Charless-MacBook-Pro-2.local",
+    "username": "charlesoneill",
+    "executable": "/Users/charlesoneill/miniconda3/envs/saerch/bin/python",
+    "cpu_count": 12,
+    "cpu_count_logical": 12,
+    "disk": {
+        "/": {
+            "total": 926.3517189025879,
+            "used": 491.5942192077637
+        }
+    },
+    "gpuapple": {
+        "type": "Apple M2 Max",
+        "vendor": "sppci_vendor_Apple"
+    },
+    "memory": {
+        "total": 32.0
+    }
+}

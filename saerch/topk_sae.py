@@ -12,12 +12,13 @@ import glob
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
 class FastAutoencoder(nn.Module):
-    def __init__(self, n_dirs: int, d_model: int, k: int, auxk: int):
+    def __init__(self, n_dirs: int, d_model: int, k: int, auxk: int, dead_steps_threshold: int = 266):
         super().__init__()
         self.n_dirs = n_dirs
         self.d_model = d_model
         self.k = k
         self.auxk = auxk
+        self.dead_steps_threshold = dead_steps_threshold
 
         self.encoder = nn.Linear(d_model, n_dirs, bias=False)
         self.decoder = nn.Linear(n_dirs, d_model, bias=False)
@@ -31,12 +32,14 @@ class FastAutoencoder(nn.Module):
         x = x - self.pre_bias
         latents_pre_act = self.encoder(x) + self.latent_bias
 
+        # Main top-k selection
         topk_values, topk_indices = torch.topk(latents_pre_act, k=self.k, dim=-1)
         topk_values = F.relu(topk_values)
 
         latents = torch.zeros_like(latents_pre_act)
         latents.scatter_(-1, topk_indices, topk_values)
 
+        # Update stats_last_nonzero
         self.stats_last_nonzero += 1
         self.stats_last_nonzero.scatter_(0, topk_indices.unique(), 0)
 
@@ -44,7 +47,14 @@ class FastAutoencoder(nn.Module):
 
         # AuxK
         if self.auxk is not None:
-            auxk_values, auxk_indices = torch.topk(latents_pre_act, k=self.auxk, dim=-1)
+            # Create dead latents mask
+            dead_mask = (self.stats_last_nonzero > self.dead_steps_threshold).float()
+            
+            # Apply mask to latents_pre_act
+            dead_latents_pre_act = latents_pre_act * dead_mask
+            
+            # Select top-k_aux from dead latents
+            auxk_values, auxk_indices = torch.topk(dead_latents_pre_act, k=self.auxk, dim=-1)
             auxk_values = F.relu(auxk_values)
         else:
             auxk_values, auxk_indices = None, None
@@ -54,6 +64,7 @@ class FastAutoencoder(nn.Module):
             "topk_values": topk_values,
             "auxk_indices": auxk_indices,
             "auxk_values": auxk_values,
+            "latents_pre_act": latents_pre_act,
         }
 
     def decode_sparse(self, indices, values):
@@ -81,8 +92,11 @@ def loss_fn(ae, x, recons, info, auxk_coef):
     recons_loss = normalized_mse(recons, x)
     
     if ae.auxk is not None:
-        auxk_recons = ae.decode_sparse(info["auxk_indices"], info["auxk_values"])
-        auxk_loss = normalized_mse(auxk_recons, x - recons.detach() + ae.pre_bias.detach())
+        e = x - recons.detach()  # reconstruction error
+        auxk_latents = torch.zeros_like(info["latents_pre_act"])
+        auxk_latents.scatter_(-1, info["auxk_indices"], info["auxk_values"])
+        e_hat = ae.decoder(auxk_latents)  # reconstruction of error using dead latents
+        auxk_loss = normalized_mse(e_hat, e)
         total_loss = recons_loss + auxk_coef * auxk_loss
     else:
         auxk_loss = torch.tensor(0.0, device=device)
@@ -154,26 +168,17 @@ def train(ae, train_loader, optimizer, epochs, k, auxk_coef, clip_grad=None, sav
 
 def main():
     d_model = 1536
-<<<<<<< HEAD
-    n_dirs = d_model * 8
-    k = 128
-    auxk = 192
-    batch_size = 1024
-    lr = 1e-4
-    epochs = 10
-=======
     n_dirs = d_model * 6
     k = 64
     auxk = 128 #256
     batch_size = 1024
     lr = 1e-4
     epochs = 50
->>>>>>> 78e6f49c8b1ad18c9ca7ec500fc84eb799afd3b1
     auxk_coef = 1/32
     clip_grad = 1.0
 
     # Create model name
-    model_name = f"{k}_{n_dirs}_{auxk}_final"
+    model_name = f"{k}_{n_dirs}_{auxk}_auxk"
 
     wandb.init(project="saerch", name=model_name, config={
         "n_dirs": n_dirs,
@@ -203,8 +208,4 @@ def main():
     wandb.finish()
 
 if __name__ == "__main__":
-<<<<<<< HEAD
     main()
-=======
-    main()
->>>>>>> 78e6f49c8b1ad18c9ca7ec500fc84eb799afd3b1

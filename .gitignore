@@ -14,3 +14,4 @@ __pycache__
 /saerch/checkpoints
 # Ignore src/hf_repo
 /src/hf_repo
+/data/vector_store_old
