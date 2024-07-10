@@ -25,3 +25,10 @@ config: {'n_dirs': 9216, 'd_model': 1536, 'k': 64, 'auxk': 128, 'batch_size': 10
 2024-07-10 10:12:47,788 INFO    MainThread:10117 [wandb_run.py:_redirect():2300] Wrapping output streams.
 2024-07-10 10:12:47,788 INFO    MainThread:10117 [wandb_run.py:_redirect():2325] Redirects installed.
 2024-07-10 10:12:47,789 INFO    MainThread:10117 [wandb_init.py:init():847] run started, returning control to user process
+2024-07-10 11:06:33,460 INFO    MainThread:10117 [wandb_run.py:_finish():2109] finishing run charlieoneill/saerch/34r7lfmp
+2024-07-10 11:06:33,462 INFO    MainThread:10117 [wandb_run.py:_atexit_cleanup():2349] got exitcode: 0
+2024-07-10 11:06:33,462 INFO    MainThread:10117 [wandb_run.py:_restore():2332] restore
+2024-07-10 11:06:33,462 INFO    MainThread:10117 [wandb_run.py:_restore():2338] restore done
+2024-07-10 11:06:39,930 INFO    MainThread:10117 [wandb_run.py:_footer_history_summary_info():3991] rendering history
+2024-07-10 11:06:39,930 INFO    MainThread:10117 [wandb_run.py:_footer_history_summary_info():4023] rendering summary
+2024-07-10 11:06:39,932 INFO    MainThread:10117 [wandb_run.py:_footer_sync_info():3950] logging synced files
