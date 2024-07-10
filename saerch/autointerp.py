@@ -118,23 +118,16 @@ Work through the steps thoroughly and analytically to predict whether the neuron
         sorted_activated_indices = activated_indices[np.argsort(-activation_values[activated_indices])]
         
         top_m_abstracts = []
-<<<<<<< HEAD
         top_m_indices = []
         for i in sorted_activated_indices:
             if len(abstracts[i]) > min_length:
                 top_m_abstracts.append((doc_ids[i], abstracts[i], activation_values[i]))
                 top_m_indices.append(i)
-=======
-        for i in sorted_activated_indices:
-            if len(abstracts[i]) > min_length:
-                top_m_abstracts.append((doc_ids[i], abstracts[i], activation_values[i]))
->>>>>>> 78e6f49c8b1ad18c9ca7ec500fc84eb799afd3b1
             if len(top_m_abstracts) == m:
                 break
         
         zero_activation_indices = np.where(~feature_mask.any(axis=1))[0]
         zero_activation_samples = []
-<<<<<<< HEAD
         # np.random.shuffle(zero_activation_indices)
         
         active_embedding = np.array([self.embeddings[i] for i in top_m_indices]).mean(axis = 0)  
@@ -144,10 +137,6 @@ Work through the steps thoroughly and analytically to predict whether the neuron
         
         for i, cosine_sim in cosine_pairs:
         # for i in zero_activation_indices:
-=======
-        np.random.shuffle(zero_activation_indices)
-        for i in zero_activation_indices:
->>>>>>> 78e6f49c8b1ad18c9ca7ec500fc84eb799afd3b1
             if len(abstracts[i]) > min_length:
                 zero_activation_samples.append((doc_ids[i], abstracts[i], 0))
             if len(zero_activation_samples) == m:
@@ -203,12 +192,8 @@ def main(feature_index: int, num_samples: int):
     
     divider = 3
     test_abstracts = [abstract for _, abstract, _ in top_abstracts[num_samples//divider:] + zero_abstracts[num_samples//divider:]]
-<<<<<<< HEAD
     # ground_truth = [1] * (num_samples//divider) + [0] * (num_samples//divider)
     ground_truth = [1] * len(top_abstracts[num_samples//divider:]) + [0] * len(zero_abstracts[num_samples//divider:])
-=======
-    ground_truth = [1] * (num_samples//divider) + [0] * (num_samples//divider)
->>>>>>> 78e6f49c8b1ad18c9ca7ec500fc84eb799afd3b1
     
     predictions = analyzer.predict_activations(interpretation, test_abstracts)
     correlation, f1 = analyzer.evaluate_predictions(ground_truth, predictions)

@@ -208,6 +208,7 @@
 
 
 
+<<<<<<< HEAD
 
 
 
@@ -272,3 +273,5 @@ Traceback (most recent call last):
   File "/Users/charlesoneill/miniconda3/envs/jsalt/lib/python3.12/site-packages/cohere/base_client.py", line 1575, in rerank
     raise BadRequestError(
 cohere.errors.bad_request_error.BadRequestError: status_code: 400, body: {'message': 'invalid request: list of documents must not be empty'}
+=======
+>>>>>>> 91c9f2f6d549b0feaee357bbade930c0f0ce53c2
