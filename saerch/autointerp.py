@@ -31,7 +31,7 @@ You will be given several examples of text that activate the neuron, along with 
 You will also be given several examples of text that doesn't activate the neuron. This means the feature, topic or concept is not present in these texts.
 
 OUTPUT_DESCRIPTION:
-Given the inputs provided, complete the following tasks.
+Given the inputs provided, complete the following tasks. Be concise, and information dense. Don't waste a single word of reasoning.
 
 Step 1: Based on the MAX_ACTIVATING_EXAMPLES provided, write down potential topics, concepts, and features that they share in common. These will need to be specific - remember, all of the text comes from astronomy, so these need to be highly specific astronomy concepts. You may need to look at different levels of granularity (i.e. subsets of a more general topic). List as many as you can think of. Give higher weight to concepts more present/prominent in examples with higher activations.
 Step 2: Based on the zero activating examples, rule out any of the topics/concepts/features listed above that are in the zero-activating examples. Systematically go through your list above.
@@ -134,8 +134,9 @@ Work through the steps thoroughly and analytically to predict whether the neuron
         )
         
         response = self.client.chat.completions.create(
-            model="gpt-4o",
-            messages=[{"role": "user", "content": prompt}]
+            model="gpt-4o", #"gpt-3.5-turbo", #"gpt-4o",
+            messages=[{"role": "user", "content": prompt}],
+            temperature=0.0,
         )
         
         return response.choices[0].message.content.split("FINAL:")[1].strip()
@@ -146,11 +147,17 @@ Work through the steps thoroughly and analytically to predict whether the neuron
         for abstract in tqdm(abstracts):
             prompt = self.PREDICTION_BASE_PROMPT.format(description=interpretation, abstract=abstract)
             response = self.client.chat.completions.create(
-                model="gpt-3.5-turbo", #"gpt-4o",
-                messages=[{"role": "user", "content": prompt}]
+                model="gpt-3.5-turbo", #"gpt-4o"
+                messages=[{"role": "user", "content": prompt}],
+                temperature=0.0,
             )
-            prediction = response.choices[0].message.content.split("PREDICTION:")[1].strip()
-            predictions.append(float(prediction.replace("*", "")))
+            response_text = response.choices[0].message.content
+            try:
+                prediction = response_text.split("PREDICTION:")[1].strip()
+                predictions.append(float(prediction.replace("*", "")))
+            except Exception as e:
+                logging.error(f"Error predicting activation: {e}")
+                predictions.append(0.0)
         
         return predictions
 
@@ -170,9 +177,9 @@ def main(feature_index: int, num_samples: int):
     interpretation = analyzer.generate_interpretation(top_abstracts, zero_abstracts)
     logging.info(f"Interpretation: {interpretation}")
     
-    divider = 3
-    test_abstracts = [abstract for _, abstract, _ in top_abstracts[num_samples//divider:] + zero_abstracts[num_samples//divider:]]
-    ground_truth = [1] * (num_samples//divider) + [0] * (num_samples//divider)
+    num_test_samples = 4
+    test_abstracts = [abstract for _, abstract, _ in top_abstracts[-num_test_samples:] + zero_abstracts[-num_test_samples:]]
+    ground_truth = [1] * num_test_samples + [0] * num_test_samples
     
     predictions = analyzer.predict_activations(interpretation, test_abstracts)
     correlation, f1 = analyzer.evaluate_predictions(ground_truth, predictions)
