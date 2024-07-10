@@ -199,9 +199,6 @@ def upload_to_hf(local_path, repo_path):
 print(f"Starting upload of {local_directory} to {hf_repo_id}")
 upload_to_hf(local_directory, "")
 
-print("Upload completed successfully!")
-
-
 # import os
 # import pickle
 # import numpy as np

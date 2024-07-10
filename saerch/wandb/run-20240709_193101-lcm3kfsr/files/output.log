@@ -1,0 +1,337 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Epoch 1/10: 100%|█████████████████████████████| 266/266 [01:49<00:00,  2.43it/s]
+Epoch 2/10:   0%|                               | 1/266 [00:00<01:46,  2.49it/s]
+Epoch 1, Average Loss: 0.7633
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Epoch 2/10:  99%|████████████████████████████▊| 264/266 [01:48<00:00,  2.42it/s]
+Epoch 2, Average Loss: 0.5821
+Epoch 2/10: 100%|█████████████████████████████| 266/266 [01:49<00:00,  2.44it/s]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Epoch 3/10: 100%|████████████████████████████▉| 265/266 [01:49<00:00,  2.28it/s]
+Epoch 3, Average Loss: 0.5146
+Epoch 3/10: 100%|█████████████████████████████| 266/266 [01:50<00:00,  2.42it/s]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Epoch 4/10: 100%|█████████████████████████████| 266/266 [02:05<00:00,  2.12it/s]
+Epoch 5/10:   1%|▏                              | 2/266 [00:00<02:04,  2.13it/s]
+Epoch 4, Average Loss: 0.4795
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Epoch 5/10:  99%|████████████████████████████▋| 263/266 [02:06<00:01,  2.10it/s]
+Epoch 5, Average Loss: 0.4578
+Epoch 5/10: 100%|█████████████████████████████| 266/266 [02:08<00:00,  2.08it/s]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Epoch 6/10:  26%|███████▋                      | 68/266 [00:35<01:43,  1.90it/s]
+Traceback (most recent call last):
+  File "/Users/christineye/retrieval/saerch/topk_sae.py", line 197, in <module>
+    main()
+  File "/Users/christineye/retrieval/saerch/topk_sae.py", line 192, in main
+    train(ae, train_loader, optimizer, epochs, k, auxk_coef, clip_grad, model_name=model_name)
+  File "/Users/christineye/retrieval/saerch/topk_sae.py", line 117, in train
+    loss, recons_loss, auxk_loss = loss_fn(ae, x, recons, info, auxk_coef)
+  File "/Users/christineye/retrieval/saerch/topk_sae.py", line 84, in loss_fn
+    auxk_recons = ae.decode_sparse(info["auxk_indices"], info["auxk_values"])
+  File "/Users/christineye/retrieval/saerch/topk_sae.py", line 62, in decode_sparse
+    return self.decoder(latents) + self.pre_bias
+  File "/Users/christineye/anaconda3/envs/jsalt-retrieval/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1511, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/Users/christineye/anaconda3/envs/jsalt-retrieval/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1520, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/Users/christineye/anaconda3/envs/jsalt-retrieval/lib/python3.10/site-packages/torch/nn/modules/linear.py", line 116, in forward
+    return F.linear(input, self.weight, self.bias)
+KeyboardInterrupt

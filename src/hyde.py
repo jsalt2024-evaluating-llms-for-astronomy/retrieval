@@ -18,7 +18,7 @@ from temporal import analyze_temporal_query
 # use generate_n = 0, embed_query = True to do basic vector search (no generation)
 class HydeRetrievalSystem(EmbeddingRetrievalSystem):
     def __init__(self, generation_model: str = "claude-3-haiku-20240307", embedding_model: str = "text-embedding-3-small", 
-             temperature: float = 0.5, max_doclen: int = 500, generate_n: int = 1, embed_query = True, **kwargs):
+             temperature: float = 0.5, max_doclen: int = 500, generate_n: int = 1, embed_query = True, conclusion = True, **kwargs):
     
         # Handle the kwargs for the superclass init -- filters/citation weighting
         super().__init__(**kwargs)
@@ -30,10 +30,11 @@ class HydeRetrievalSystem(EmbeddingRetrievalSystem):
         self.generation_model = generation_model
 
         # HYPERPARAMETERS
-        self.temperature = temperature
-        self.max_doclen = max_doclen
-        self.generate_n = generate_n
-        self.embed_query = embed_query
+        self.temperature = temperature # generation temperature
+        self.max_doclen = max_doclen # max tokens for generation
+        self.generate_n = generate_n # how many documents
+        self.embed_query = embed_query # embed the query vector?
+        self.conclusion = conclusion # generate conclusion as well?
 
         self.config = yaml.safe_load(open('../config.yaml', 'r'))
         self.anthropic_key = self.config['anthropic_api_key']
@@ -60,14 +61,19 @@ class HydeRetrievalSystem(EmbeddingRetrievalSystem):
         return top_results
 
     def generate_doc(self, query: str):
+        prompt = """You are an expert astronomer. Given a scientific query, generate the abstract"""
+        if self.conclusion: 
+            prompt += " and conclusion"
+        prompt += """ of an expert-level research paper
+                            that answers the question. Stick to a maximum length of {} tokens and return just the text of the abstract and conclusion.
+                            Do not include labels for any section. Use research-specific jargon.""".format(self.max_doclen),
+                
+
         message = self.generation_client.messages.create(
                 model = self.generation_model,
                 max_tokens = self.max_doclen,
                 temperature = self.temperature,
-                system = """You are an expert astronomer. Given a scientific query, generate the abstract and conclusion of an expert-level research paper
-                            that answers the question. Stick to a maximum length of {} tokens and return just the text of the abstract and conclusion.
-                            Do not include labels for any section. Use research-specific jargon.""".format(self.max_doclen),
-                
+                system = prompt,
                 messages=[{ "role": "user",
                         "content": [{"type": "text", "text": query,}] }]
             )
