@@ -3,7 +3,9 @@ import json
 import logging
 import time
 from pathlib import Path
-from typing import List, Tuple, Dict
+from typing import List, Tuple, Dict, Any
+from dataclasses import dataclass, asdict
+import concurrent.futures
 
 import numpy as np
 import yaml
@@ -11,13 +13,48 @@ from openai import OpenAI
 from scipy.stats import pearsonr
 from sklearn.metrics import f1_score
 from tqdm import tqdm
+import tenacity
 
 # Constants
 CONFIG_PATH = Path("../config.yaml")
 DATA_DIR = Path("../data")
 SAE_DATA_DIR = Path("sae_data")
+OUTPUT_FILE = Path("feature_analysis_results.json")
+CHECKPOINT_FILE = Path("checkpoint.json")
+SAVE_INTERVAL = 10
 
-class NeuronAnalyzer:
+@dataclass
+class Feature:
+    index: int
+    label: str
+    reasoning: str
+    f1: float
+    pearson_correlation: float
+    density: float
+
+class RateLimiter:
+    def __init__(self, max_calls: int, time_period: float):
+        self.max_calls = max_calls
+        self.time_period = time_period
+        self.calls = []
+
+    def __call__(self, func):
+        @tenacity.retry(
+            wait=tenacity.wait_fixed(self.time_period / self.max_calls),
+            retry=tenacity.retry_if_exception_type(Exception),
+            stop=tenacity.stop_after_attempt(5),
+            before_sleep=lambda retry_state: print(f"Rate limit exceeded. Retrying in {self.time_period / self.max_calls} seconds...")
+        )
+        def wrapper(*args, **kwargs):
+            current_time = time.time()
+            self.calls = [t for t in self.calls if current_time - t < self.time_period]
+            if len(self.calls) >= self.max_calls:
+                raise Exception("Rate limit exceeded")
+            self.calls.append(current_time)
+            return func(*args, **kwargs)
+        return wrapper
+
+class BatchNeuronAnalyzer:
     AUTOINTERP_PROMPT = """ 
 You are a meticulous AI and astronomy researcher conducting an important investigation into a certain neuron in a language model trained on astrophysics papers. Your task is to figure out what sort of behaviour this neuron is responsible for -- namely, on what general concepts, features, topics does this neuron fire? Here's how you'll complete the task:
 
@@ -74,11 +111,9 @@ Here is the abstract to predict:
 Work through the steps thoroughly and analytically to predict whether the neuron will activate on this abstract.
 """
 
-    def __init__(self, config_path: Path, feature_index: int, num_samples: int):
+    def __init__(self, config_path: Path):
         self.config = self.load_config(config_path)
         self.client = OpenAI(api_key=self.config['openai_api_key'])
-        self.feature_index = feature_index
-        self.num_samples = num_samples
         self.topk_indices, self.topk_values = self.load_sae_data()
         self.abstract_texts = self.load_abstract_texts()
 
@@ -96,11 +131,11 @@ Work through the steps thoroughly and analytically to predict whether the neuron
         with open(DATA_DIR / "vector_store/abstract_texts.json", 'r') as f:
             return json.load(f)
 
-    def get_feature_activations(self, m: int, min_length: int = 100) -> Tuple[List[Tuple], List[Tuple]]:
+    def get_feature_activations(self, feature_index: int, m: int, min_length: int = 100) -> Tuple[List[Tuple], List[Tuple]]:
         doc_ids = self.abstract_texts['doc_ids']
         abstracts = self.abstract_texts['abstracts']
         
-        feature_mask = self.topk_indices == self.feature_index
+        feature_mask = self.topk_indices == feature_index
         activated_indices = np.where(feature_mask.any(axis=1))[0]
         activation_values = np.where(feature_mask, self.topk_values, 0).max(axis=1)
         
@@ -124,6 +159,7 @@ Work through the steps thoroughly and analytically to predict whether the neuron
         
         return top_m_abstracts, zero_activation_samples
 
+    @RateLimiter(max_calls=3, time_period=60)
     def generate_interpretation(self, top_abstracts: List[Tuple], zero_abstracts: List[Tuple]) -> str:
         max_activating_examples = "\n\n------------------------\n".join([f"Activation:{activation:.3f}\n{abstract}" for _, abstract, activation in top_abstracts])
         zero_activating_examples = "\n\n------------------------\n".join([abstract for _, abstract, _ in zero_abstracts])
@@ -134,20 +170,20 @@ Work through the steps thoroughly and analytically to predict whether the neuron
         )
         
         response = self.client.chat.completions.create(
-            model="gpt-3.5-turbo", #"gpt-4o",
+            model="gpt-4o",
             messages=[{"role": "user", "content": prompt}],
             temperature=0.0,
         )
         
-        return response.choices[0].message.content.split("FINAL:")[1].strip()
+        return response.choices[0].message.content
 
     def predict_activations(self, interpretation: str, abstracts: List[str]) -> List[float]:
         predictions = []
         
-        for abstract in tqdm(abstracts):
+        for abstract in tqdm(abstracts, desc="Predicting activations", leave=False):
             prompt = self.PREDICTION_BASE_PROMPT.format(description=interpretation, abstract=abstract)
             response = self.client.chat.completions.create(
-                model="gpt-3.5-turbo", #"gpt-4o"
+                model="gpt-3.5-turbo",
                 messages=[{"role": "user", "content": prompt}],
                 temperature=0.0,
             )
@@ -168,31 +204,74 @@ Work through the steps thoroughly and analytically to predict whether the neuron
         f1 = f1_score(ground_truth, binary_predictions)
         return correlation, f1
 
-def main(feature_index: int, num_samples: int):
-    start = time.time()
-    logging.basicConfig(level=logging.INFO)
-    analyzer = NeuronAnalyzer(CONFIG_PATH, feature_index, num_samples)
-    
-    top_abstracts, zero_abstracts = analyzer.get_feature_activations(num_samples)
-    interpretation = analyzer.generate_interpretation(top_abstracts, zero_abstracts)
-    logging.info(f"Interpretation: {interpretation}")
-    
-    num_test_samples = 4
-    test_abstracts = [abstract for _, abstract, _ in top_abstracts[-num_test_samples:] + zero_abstracts[-num_test_samples:]]
-    ground_truth = [1] * num_test_samples + [0] * num_test_samples
-    
-    predictions = analyzer.predict_activations(interpretation, test_abstracts)
-    correlation, f1 = analyzer.evaluate_predictions(ground_truth, predictions)
-    
-    logging.info(f"Pearson correlation: {correlation}")
-    logging.info(f"F1 score: {f1}")
+    def analyze_feature(self, feature_index: int, num_samples: int) -> Feature:
+        top_abstracts, zero_abstracts = self.get_feature_activations(feature_index, num_samples)
+        interpretation_full = self.generate_interpretation(top_abstracts, zero_abstracts)
+        interpretation = interpretation_full.split("FINAL:")[1].strip()
 
-    logging.info(f"Time taken: {time.time() - start:.2f} seconds")
+        num_test_samples = 4
+        test_abstracts = [abstract for _, abstract, _ in top_abstracts[-num_test_samples:] + zero_abstracts[-num_test_samples:]]
+        ground_truth = [1] * num_test_samples + [0] * num_test_samples
+
+        predictions = self.predict_activations(interpretation, test_abstracts)
+        correlation, f1 = self.evaluate_predictions(ground_truth, predictions)
+
+        density = (self.topk_indices == feature_index).any(axis=1).mean()
+
+        return Feature(
+            index=feature_index,
+            label=interpretation,
+            reasoning=interpretation_full,
+            f1=f1,
+            pearson_correlation=correlation,
+            density=density
+        )
+
+def save_results(results: List[Dict], filename: Path):
+    with open(filename, 'w') as f:
+        json.dump(results, f, indent=2)
+
+def load_results(filename: Path) -> List[Dict]:
+    if filename.exists():
+        with open(filename, 'r') as f:
+            return json.load(f)
+    return []
+
+def main():
+    logging.basicConfig(level=logging.INFO)
+    analyzer = BatchNeuronAnalyzer(CONFIG_PATH)
+
+    num_features = analyzer.topk_indices.shape[1]
+    num_samples = 10
+
+    # Load existing results and determine the starting point
+    results = load_results(OUTPUT_FILE)
+    start_index = max([feature['index'] for feature in results], default=-1) + 1
+
+    logging.info(f"Starting analysis from feature index {start_index}")
+
+    with concurrent.futures.ThreadPoolExecutor(max_workers=5) as executor:
+        future_to_index = {executor.submit(analyzer.analyze_feature, i, num_samples): i 
+                           for i in range(start_index, num_features)}
+        
+        for future in tqdm(concurrent.futures.as_completed(future_to_index), 
+                           total=num_features - start_index, 
+                           desc="Analysing features"):
+            feature_index = future_to_index[future]
+            try:
+                feature = future.result()
+                results.append(asdict(feature))
+                
+                # Save checkpoint
+                if len(results) % SAVE_INTERVAL == 0:
+                    save_results(results, OUTPUT_FILE)
+                    logging.info(f"Checkpoint saved. Processed {len(results)} features.")
+                
+            except Exception as exc:
+                logging.error(f"Feature {feature_index} generated an exception: {exc}")
+
+    save_results(results, OUTPUT_FILE)
+    logging.info(f"Analysis complete. Results saved to {OUTPUT_FILE}")
 
 if __name__ == "__main__":
-    parser = argparse.ArgumentParser(description="Analyze neuron activations in astrophysics papers.")
-    parser.add_argument("feature_index", type=int, help="Index of the feature to analyze")
-    parser.add_argument("--num_samples", type=int, default=10, help="Number of samples to use for analysis")
-    args = parser.parse_args()
-    
-    main(args.feature_index, args.num_samples)
+    main()
