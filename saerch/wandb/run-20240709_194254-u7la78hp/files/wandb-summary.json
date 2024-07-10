@@ -1,0 +1,1 @@
+{"total_loss": 0.5458823442459106, "reconstruction_loss": 0.43630778789520264, "auxiliary_loss": 1.753192663192749, "dead_latents_proportion": 0.01171875, "l0_norm": 16, "step": 746, "_timestamp": 1720569235.591669, "_runtime": 661.1864991188049, "_step": 745, "_wandb": {"runtime": 661}}

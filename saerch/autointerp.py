@@ -186,7 +186,8 @@ def main(feature_index: int, num_samples: int):
     
     divider = 3
     test_abstracts = [abstract for _, abstract, _ in top_abstracts[num_samples//divider:] + zero_abstracts[num_samples//divider:]]
-    ground_truth = [1] * (num_samples//divider) + [0] * (num_samples//divider)
+    # ground_truth = [1] * (num_samples//divider) + [0] * (num_samples//divider)
+    ground_truth = [1] * len(top_abstracts[num_samples//divider:]) + [0] * len(zero_abstracts[num_samples//divider:])
     
     predictions = analyzer.predict_activations(interpretation, test_abstracts)
     correlation, f1 = analyzer.evaluate_predictions(ground_truth, predictions)
