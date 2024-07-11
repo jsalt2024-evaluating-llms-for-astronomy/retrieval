@@ -1,0 +1,722 @@
+[
+  {
+    "feature_index": 5000,
+    "interpreter_model": "gpt-4o",
+    "predictor_model": "gpt-4o",
+    "interpretation": "Lookback time in cosmology",
+    "correlation": 0.9968642130380986,
+    "f1_score": 1.0
+  },
+  {
+    "feature_index": 5000,
+    "interpreter_model": "gpt-4o",
+    "predictor_model": "gpt-3.5-turbo",
+    "interpretation": "Lookback time in cosmology",
+    "correlation": 0.4469044260226316,
+    "f1_score": 0.7272727272727273
+  },
+  {
+    "feature_index": 5000,
+    "interpreter_model": "gpt-3.5-turbo",
+    "predictor_model": "gpt-3.5-turbo",
+    "interpretation": "Observational constraints in cosmology.",
+    "correlation": 0.1507556722888818,
+    "f1_score": 0.6666666666666666
+  },
+  {
+    "feature_index": 5001,
+    "interpreter_model": "gpt-4o",
+    "predictor_model": "gpt-4o",
+    "interpretation": "Scaling relations in astrophysics**",
+    "correlation": 0.916270832672289,
+    "f1_score": 0.8888888888888888
+  },
+  {
+    "feature_index": 5001,
+    "interpreter_model": "gpt-4o",
+    "predictor_model": "gpt-3.5-turbo",
+    "interpretation": "Scaling relations in astrophysics**",
+    "correlation": 0.6193235372853323,
+    "f1_score": 0.7272727272727273
+  },
+  {
+    "feature_index": 5001,
+    "interpreter_model": "gpt-3.5-turbo",
+    "predictor_model": "gpt-3.5-turbo",
+    "interpretation": "Scaling relations in astronomy.",
+    "correlation": 0.6255432421712241,
+    "f1_score": 0.7272727272727273
+  },
+  {
+    "feature_index": 5002,
+    "interpreter_model": "gpt-4o",
+    "predictor_model": "gpt-4o",
+    "interpretation": "Gamma-ray observatories for multimessenger astronomy",
+    "correlation": 0.9934961681072111,
+    "f1_score": 1.0
+  },
+  {
+    "feature_index": 5002,
+    "interpreter_model": "gpt-4o",
+    "predictor_model": "gpt-3.5-turbo",
+    "interpretation": "Gamma-ray observatories for multimessenger astronomy",
+    "correlation": 0.2838874869788345,
+    "f1_score": 0.6
+  },
+  {
+    "feature_index": 5002,
+    "interpreter_model": "gpt-3.5-turbo",
+    "predictor_model": "gpt-3.5-turbo",
+    "interpretation": "Gamma-ray observatories and multimessenger astrophysics.",
+    "correlation": 0.709885207532891,
+    "f1_score": 0.7272727272727273
+  },
+  {
+    "feature_index": 5003,
+    "interpreter_model": "gpt-4o",
+    "predictor_model": "gpt-4o",
+    "interpretation": "AB Aurigae circumstellar disk",
+    "correlation": 0.9980334297585028,
+    "f1_score": 1.0
+  },
+  {
+    "feature_index": 5003,
+    "interpreter_model": "gpt-4o",
+    "predictor_model": "gpt-3.5-turbo",
+    "interpretation": "AB Aurigae circumstellar disk",
+    "correlation": 0.8192880303729139,
+    "f1_score": 0.8888888888888888
+  },
+  {
+    "feature_index": 5003,
+    "interpreter_model": "gpt-3.5-turbo",
+    "predictor_model": "gpt-3.5-turbo",
+    "interpretation": "AB Aurigae star system features.",
+    "correlation": 0.8562961288346913,
+    "f1_score": 0.8888888888888888
+  },
+  {
+    "feature_index": 5004,
+    "interpreter_model": "gpt-4o",
+    "predictor_model": "gpt-4o",
+    "interpretation": "Virtual Observatory and Registry Systems",
+    "correlation": 0.0,
+    "f1_score": 0.0
+  },
+  {
+    "feature_index": 5004,
+    "interpreter_model": "gpt-4o",
+    "predictor_model": "gpt-3.5-turbo",
+    "interpretation": "Virtual Observatory and Registry Systems",
+    "correlation": 0.3049971406652092,
+    "f1_score": 0.6666666666666666
+  },
+  {
+    "feature_index": 5004,
+    "interpreter_model": "gpt-3.5-turbo",
+    "predictor_model": "gpt-3.5-turbo",
+    "interpretation": "Advanced astronomical technologies and theoretical models.",
+    "correlation": 0.1348399724926485,
+    "f1_score": 0.6666666666666666
+  },
+  {
+    "feature_index": 5005,
+    "interpreter_model": "gpt-4o",
+    "predictor_model": "gpt-4o",
+    "interpretation": "Cosmic and Gravitational Birefringence",
+    "correlation": 0.9989061072386719,
+    "f1_score": 1.0
+  },
+  {
+    "feature_index": 5005,
+    "interpreter_model": "gpt-4o",
+    "predictor_model": "gpt-3.5-turbo",
+    "interpretation": "Cosmic and Gravitational Birefringence",
+    "correlation": 0.6635609328057133,
+    "f1_score": 0.7272727272727273
+  },
+  {
+    "feature_index": 5005,
+    "interpreter_model": "gpt-3.5-turbo",
+    "predictor_model": "gpt-3.5-turbo",
+    "interpretation": "Birefringence phenomena in cosmology.",
+    "correlation": 0.698836241921708,
+    "f1_score": 0.8
+  },
+  {
+    "feature_index": 1000,
+    "interpreter_model": "gpt-4o",
+    "predictor_model": "gpt-4o",
+    "interpretation": "Intra-Day Variability (IDV) in radio sources",
+    "correlation": 0.9981498596548617,
+    "f1_score": 1.0
+  },
+  {
+    "feature_index": 1000,
+    "interpreter_model": "gpt-4o",
+    "predictor_model": "gpt-3.5-turbo",
+    "interpretation": "Intra-Day Variability (IDV) in radio sources",
+    "correlation": 0.7097023827481859,
+    "f1_score": 0.8
+  },
+  {
+    "feature_index": 1000,
+    "interpreter_model": "gpt-3.5-turbo",
+    "predictor_model": "gpt-3.5-turbo",
+    "interpretation": "Intra-day variability (IDV) observations in quasars.",
+    "correlation": 0.9339231649743303,
+    "f1_score": 1.0
+  },
+  {
+    "feature_index": 1001,
+    "interpreter_model": "gpt-4o",
+    "predictor_model": "gpt-4o",
+    "interpretation": "Mathematical models in astronomy",
+    "correlation": 0.5570860145311556,
+    "f1_score": 0.75
+  },
+  {
+    "feature_index": 1001,
+    "interpreter_model": "gpt-4o",
+    "predictor_model": "gpt-3.5-turbo",
+    "interpretation": "Mathematical models in astronomy",
+    "correlation": -0.4138029443011839,
+    "f1_score": 0.4444444444444444
+  },
+  {
+    "feature_index": 1001,
+    "interpreter_model": "gpt-3.5-turbo",
+    "predictor_model": "gpt-3.5-turbo",
+    "interpretation": "Orthogonal functions and series.",
+    "correlation": -0.1267731382092775,
+    "f1_score": 0.3333333333333333
+  },
+  {
+    "feature_index": 1002,
+    "interpreter_model": "gpt-4o",
+    "predictor_model": "gpt-4o",
+    "interpretation": "Wolf-Rayet stars, WC/WO types",
+    "correlation": 0.9993920109686636,
+    "f1_score": 1.0
+  },
+  {
+    "feature_index": 1002,
+    "interpreter_model": "gpt-4o",
+    "predictor_model": "gpt-3.5-turbo",
+    "interpretation": "Wolf-Rayet stars, WC/WO types",
+    "correlation": 0.8239751233595748,
+    "f1_score": 0.8888888888888888
+  },
+  {
+    "feature_index": 1002,
+    "interpreter_model": "gpt-3.5-turbo",
+    "predictor_model": "gpt-3.5-turbo",
+    "interpretation": "WC stars",
+    "correlation": 0.7913840153767413,
+    "f1_score": 0.8888888888888888
+  },
+  {
+    "feature_index": 1003,
+    "interpreter_model": "gpt-4o",
+    "predictor_model": "gpt-4o",
+    "interpretation": "High-energy astrophysical phenomena",
+    "correlation": -0.3835706411883073,
+    "f1_score": 0.5454545454545454
+  },
+  {
+    "feature_index": 1003,
+    "interpreter_model": "gpt-4o",
+    "predictor_model": "gpt-3.5-turbo",
+    "interpretation": "High-energy astrophysical phenomena",
+    "correlation": -0.6172133998483675,
+    "f1_score": 0.5454545454545454
+  },
+  {
+    "feature_index": 1003,
+    "interpreter_model": "gpt-3.5-turbo",
+    "predictor_model": "gpt-3.5-turbo",
+    "interpretation": "Coalescence time of compact binary systems.",
+    "correlation": 0.2942847571110839,
+    "f1_score": 0.6666666666666666
+  },
+  {
+    "feature_index": 1004,
+    "interpreter_model": "gpt-4o",
+    "predictor_model": "gpt-4o",
+    "interpretation": "Detailed physical modeling and simulations in astrophysics.",
+    "correlation": 0.4962168435058351,
+    "f1_score": 0.8
+  },
+  {
+    "feature_index": 1004,
+    "interpreter_model": "gpt-4o",
+    "predictor_model": "gpt-3.5-turbo",
+    "interpretation": "Detailed physical modeling and simulations in astrophysics.",
+    "correlation": -0.3493335058437492,
+    "f1_score": 0.5454545454545454
+  },
+  {
+    "feature_index": 1004,
+    "interpreter_model": "gpt-3.5-turbo",
+    "predictor_model": "gpt-3.5-turbo",
+    "interpretation": "Modeling and Simulations in Astrophysics.",
+    "correlation": 0.7117596552280026,
+    "f1_score": 0.8
+  },
+  {
+    "feature_index": 1005,
+    "interpreter_model": "gpt-4o",
+    "predictor_model": "gpt-4o",
+    "interpretation": "Specific observational techniques in astrophysics",
+    "correlation": -0.36364878269900747,
+    "f1_score": 0.4444444444444444
+  },
+  {
+    "feature_index": 1005,
+    "interpreter_model": "gpt-4o",
+    "predictor_model": "gpt-3.5-turbo",
+    "interpretation": "Specific observational techniques in astrophysics",
+    "correlation": -0.4256027778937752,
+    "f1_score": 0.4444444444444444
+  },
+  {
+    "feature_index": 1005,
+    "interpreter_model": "gpt-3.5-turbo",
+    "predictor_model": "gpt-3.5-turbo",
+    "interpretation": "Solar Cycle Effects on EUV Radiances.",
+    "correlation": -0.09053574604251853,
+    "f1_score": 0.4
+  },
+  {
+    "feature_index": 2000,
+    "interpreter_model": "gpt-4o",
+    "predictor_model": "gpt-4o",
+    "interpretation": "XENON experiment and dark matter detection",
+    "correlation": 0.999519654123274,
+    "f1_score": 1.0
+  },
+  {
+    "feature_index": 2000,
+    "interpreter_model": "gpt-4o",
+    "predictor_model": "gpt-3.5-turbo",
+    "interpretation": "XENON experiment and dark matter detection",
+    "correlation": 0.9201916185966588,
+    "f1_score": 0.8571428571428571
+  },
+  {
+    "feature_index": 2000,
+    "interpreter_model": "gpt-3.5-turbo",
+    "predictor_model": "gpt-3.5-turbo",
+    "interpretation": "Neuron is likely firing on the concept of \"Direct Dark Matter Detection with XENON Experiment\".",
+    "correlation": 0.9851968992595659,
+    "f1_score": 1.0
+  },
+  {
+    "feature_index": 2001,
+    "interpreter_model": "gpt-4o",
+    "predictor_model": "gpt-4o",
+    "interpretation": "Silicon carbide (SiC) in astrophysics",
+    "correlation": 0.9999999999999999,
+    "f1_score": 1.0
+  },
+  {
+    "feature_index": 2001,
+    "interpreter_model": "gpt-4o",
+    "predictor_model": "gpt-3.5-turbo",
+    "interpretation": "Silicon carbide (SiC) in astrophysics",
+    "correlation": 0.6667506667510001,
+    "f1_score": 0.8
+  },
+  {
+    "feature_index": 2001,
+    "interpreter_model": "gpt-3.5-turbo",
+    "predictor_model": "gpt-3.5-turbo",
+    "interpretation": "SiC in Astrophysics.",
+    "correlation": 0.806481619846843,
+    "f1_score": 0.8888888888888888
+  },
+  {
+    "feature_index": 2002,
+    "interpreter_model": "gpt-4o",
+    "predictor_model": "gpt-4o",
+    "interpretation": "Sample selection and truncation in data analysis",
+    "correlation": 0.5388159060803247,
+    "f1_score": 0.0
+  },
+  {
+    "feature_index": 2002,
+    "interpreter_model": "gpt-4o",
+    "predictor_model": "gpt-3.5-turbo",
+    "interpretation": "Sample selection and truncation in data analysis",
+    "correlation": 0.04472135954999576,
+    "f1_score": 0.5714285714285714
+  },
+  {
+    "feature_index": 2002,
+    "interpreter_model": "gpt-3.5-turbo",
+    "predictor_model": "gpt-3.5-turbo",
+    "interpretation": "Sample selection effects in astronomy data analysis.",
+    "correlation": 0.08199200616907874,
+    "f1_score": 0.6
+  },
+  {
+    "feature_index": 2003,
+    "interpreter_model": "gpt-4o",
+    "predictor_model": "gpt-4o",
+    "interpretation": "Cyborg Astrobiologist System",
+    "correlation": -0.16012815380508713,
+    "f1_score": 0.0
+  },
+  {
+    "feature_index": 2003,
+    "interpreter_model": "gpt-4o",
+    "predictor_model": "gpt-3.5-turbo",
+    "interpretation": "Cyborg Astrobiologist System",
+    "correlation": 0.3242722175627608,
+    "f1_score": 0.5714285714285714
+  },
+  {
+    "feature_index": 2003,
+    "interpreter_model": "gpt-3.5-turbo",
+    "predictor_model": "gpt-3.5-turbo",
+    "interpretation": "Cyborg Astrobiologist System: Field Geology and Computer Vision.",
+    "correlation": 0.11211526391279042,
+    "f1_score": 0.5
+  },
+  {
+    "feature_index": 2004,
+    "interpreter_model": "gpt-4o",
+    "predictor_model": "gpt-4o",
+    "interpretation": "Matter-antimatter asymmetry in universe",
+    "correlation": 0.5954913341754137,
+    "f1_score": 0.6666666666666666
+  },
+  {
+    "feature_index": 2004,
+    "interpreter_model": "gpt-4o",
+    "predictor_model": "gpt-3.5-turbo",
+    "interpretation": "Matter-antimatter asymmetry in universe",
+    "correlation": 0.43454207580216914,
+    "f1_score": 0.6666666666666666
+  },
+  {
+    "feature_index": 2004,
+    "interpreter_model": "gpt-3.5-turbo",
+    "predictor_model": "gpt-3.5-turbo",
+    "interpretation": "Matter-Antimatter Asymmetry in the Universe",
+    "correlation": 0.4288095277183998,
+    "f1_score": 0.5714285714285714
+  },
+  {
+    "feature_index": 2005,
+    "interpreter_model": "gpt-4o",
+    "predictor_model": "gpt-4o",
+    "interpretation": "Specific, detailed, niche astronomy topics",
+    "correlation": -0.17960530202677516,
+    "f1_score": 0.6666666666666666
+  },
+  {
+    "feature_index": 2005,
+    "interpreter_model": "gpt-4o",
+    "predictor_model": "gpt-3.5-turbo",
+    "interpretation": "Specific, detailed, niche astronomy topics",
+    "correlation": 0.11445713905747731,
+    "f1_score": 0.7272727272727273
+  },
+  {
+    "feature_index": 2005,
+    "interpreter_model": "gpt-3.5-turbo",
+    "predictor_model": "gpt-3.5-turbo",
+    "interpretation": "Indigenous Astronomy and Cultural Astronomy.",
+    "correlation": -0.06197765075688064,
+    "f1_score": 0.5714285714285714
+  },
+  {
+    "feature_index": 0,
+    "interpreter_model": "gpt-4o",
+    "predictor_model": "gpt-4o",
+    "interpretation": "Triaxial models in astrophysics",
+    "correlation": 0.9972413740548082,
+    "f1_score": 1.0
+  },
+  {
+    "feature_index": 0,
+    "interpreter_model": "gpt-4o",
+    "predictor_model": "gpt-3.5-turbo",
+    "interpretation": "Triaxial models in astrophysics",
+    "correlation": 0.8663686463212852,
+    "f1_score": 0.8888888888888888
+  },
+  {
+    "feature_index": 0,
+    "interpreter_model": "gpt-3.5-turbo",
+    "predictor_model": "gpt-3.5-turbo",
+    "interpretation": "Triaxiality in Astrophysical Systems.",
+    "correlation": 0.6549067160851004,
+    "f1_score": 0.8
+  },
+  {
+    "feature_index": 1,
+    "interpreter_model": "gpt-4o",
+    "predictor_model": "gpt-4o",
+    "interpretation": "Detailed studies of outer Solar System small bodies",
+    "correlation": 0.9990189175875093,
+    "f1_score": 1.0
+  },
+  {
+    "feature_index": 1,
+    "interpreter_model": "gpt-4o",
+    "predictor_model": "gpt-3.5-turbo",
+    "interpretation": "Detailed studies of outer Solar System small bodies",
+    "correlation": 0.9964684998585457,
+    "f1_score": 1.0
+  },
+  {
+    "feature_index": 1,
+    "interpreter_model": "gpt-3.5-turbo",
+    "predictor_model": "gpt-3.5-turbo",
+    "interpretation": "Stellar occultation by centaurs and trans-Neptunian objects (TNOs)",
+    "correlation": 0.9854582521465627,
+    "f1_score": 1.0
+  },
+  {
+    "feature_index": 2,
+    "interpreter_model": "gpt-4o",
+    "predictor_model": "gpt-4o",
+    "interpretation": "Strange quark matter and stars**",
+    "correlation": 0.9980501621084215,
+    "f1_score": 1.0
+  },
+  {
+    "feature_index": 2,
+    "interpreter_model": "gpt-4o",
+    "predictor_model": "gpt-3.5-turbo",
+    "interpretation": "Strange quark matter and stars**",
+    "correlation": 0.7272975653980149,
+    "f1_score": 0.75
+  },
+  {
+    "feature_index": 2,
+    "interpreter_model": "gpt-3.5-turbo",
+    "predictor_model": "gpt-3.5-turbo",
+    "interpretation": "Strange Quark Matter in Cosmic Ray Flux and Exotic Events",
+    "correlation": 0.676210153506926,
+    "f1_score": 0.6666666666666666
+  },
+  {
+    "feature_index": 3,
+    "interpreter_model": "gpt-4o",
+    "predictor_model": "gpt-4o",
+    "interpretation": "Cosmological observables in general relativity",
+    "correlation": 0.7640062542598398,
+    "f1_score": 0.8888888888888888
+  },
+  {
+    "feature_index": 3,
+    "interpreter_model": "gpt-4o",
+    "predictor_model": "gpt-3.5-turbo",
+    "interpretation": "Cosmological observables in general relativity",
+    "correlation": 0.6933752452815363,
+    "f1_score": 0.8
+  },
+  {
+    "feature_index": 3,
+    "interpreter_model": "gpt-3.5-turbo",
+    "predictor_model": "gpt-3.5-turbo",
+    "interpretation": "Observables in astrophysics.",
+    "correlation": 0.24764650302389885,
+    "f1_score": 0.7272727272727273
+  },
+  {
+    "feature_index": 4,
+    "interpreter_model": "gpt-4o",
+    "predictor_model": "gpt-4o",
+    "interpretation": "Implicit numerical methods in astrophysics",
+    "correlation": 0.8079606251752645,
+    "f1_score": 0.8571428571428571
+  },
+  {
+    "feature_index": 4,
+    "interpreter_model": "gpt-4o",
+    "predictor_model": "gpt-3.5-turbo",
+    "interpretation": "Implicit numerical methods in astrophysics",
+    "correlation": 0.39813157333095617,
+    "f1_score": 0.6666666666666666
+  },
+  {
+    "feature_index": 4,
+    "interpreter_model": "gpt-3.5-turbo",
+    "predictor_model": "gpt-3.5-turbo",
+    "interpretation": "Implicit numerical algorithms for solving hydrodynamical equations.",
+    "correlation": 0.3788601246750597,
+    "f1_score": 0.5
+  },
+  {
+    "feature_index": 5,
+    "interpreter_model": "gpt-4o",
+    "predictor_model": "gpt-4o",
+    "interpretation": "Magnetic fields in specific stars**",
+    "correlation": 0.5534895241076114,
+    "f1_score": 0.6666666666666666
+  },
+  {
+    "feature_index": 5,
+    "interpreter_model": "gpt-4o",
+    "predictor_model": "gpt-3.5-turbo",
+    "interpretation": "Magnetic fields in specific stars**",
+    "correlation": 0.7897539744795119,
+    "f1_score": 0.8888888888888888
+  },
+  {
+    "feature_index": 5,
+    "interpreter_model": "gpt-3.5-turbo",
+    "predictor_model": "gpt-3.5-turbo",
+    "interpretation": "Magnetic variability and properties of stars in stellar associations and star-forming regions.",
+    "correlation": 2.7755575615628914e-17,
+    "f1_score": 0.25
+  },
+  {
+    "feature_index": 10,
+    "interpreter_model": "gpt-4o",
+    "predictor_model": "gpt-4o",
+    "interpretation": "Pulsars and Neutron Stars",
+    "correlation": 0.8222195668294268,
+    "f1_score": 0.8571428571428571
+  },
+  {
+    "feature_index": 10,
+    "interpreter_model": "gpt-4o",
+    "predictor_model": "gpt-3.5-turbo",
+    "interpretation": "Pulsars and Neutron Stars",
+    "correlation": 0.9764780416535954,
+    "f1_score": 1.0
+  },
+  {
+    "feature_index": 10,
+    "interpreter_model": "gpt-3.5-turbo",
+    "predictor_model": "gpt-3.5-turbo",
+    "interpretation": "Pulsar Observations and Analysis.",
+    "correlation": 0.7620058808927361,
+    "f1_score": 0.8888888888888888
+  },
+  {
+    "feature_index": 11,
+    "interpreter_model": "gpt-4o",
+    "predictor_model": "gpt-4o",
+    "interpretation": "Specific, detailed, technical astronomy research",
+    "correlation": -0.376432954410164,
+    "f1_score": 0.5454545454545454
+  },
+  {
+    "feature_index": 11,
+    "interpreter_model": "gpt-4o",
+    "predictor_model": "gpt-3.5-turbo",
+    "interpretation": "Specific, detailed, technical astronomy research",
+    "correlation": 0.16903085094570328,
+    "f1_score": 0.6666666666666666
+  },
+  {
+    "feature_index": 11,
+    "interpreter_model": "gpt-3.5-turbo",
+    "predictor_model": "gpt-3.5-turbo",
+    "interpretation": "Historical and Institutional Analysis of Kapteyn's Astronomical Laboratory",
+    "correlation": -0.09896086871310632,
+    "f1_score": 0.0
+  },
+  {
+    "feature_index": 12,
+    "interpreter_model": "gpt-4o",
+    "predictor_model": "gpt-4o",
+    "interpretation": "El Gordo galaxy cluster features",
+    "correlation": 0.7617625570010607,
+    "f1_score": 0.8571428571428571
+  },
+  {
+    "feature_index": 12,
+    "interpreter_model": "gpt-4o",
+    "predictor_model": "gpt-3.5-turbo",
+    "interpretation": "El Gordo galaxy cluster features",
+    "correlation": 0.5797655118929443,
+    "f1_score": 0.75
+  },
+  {
+    "feature_index": 12,
+    "interpreter_model": "gpt-3.5-turbo",
+    "predictor_model": "gpt-3.5-turbo",
+    "interpretation": "Analysis of El Gordo galaxy cluster.",
+    "correlation": 0.5105484250176597,
+    "f1_score": 0.75
+  },
+  {
+    "feature_index": 13,
+    "interpreter_model": "gpt-4o",
+    "predictor_model": "gpt-4o",
+    "interpretation": "Rates of astrophysical events",
+    "correlation": 0.7781952794117422,
+    "f1_score": 0.8888888888888888
+  },
+  {
+    "feature_index": 13,
+    "interpreter_model": "gpt-4o",
+    "predictor_model": "gpt-3.5-turbo",
+    "interpretation": "Rates of astrophysical events",
+    "correlation": -0.044946657497549385,
+    "f1_score": 0.5454545454545454
+  },
+  {
+    "feature_index": 13,
+    "interpreter_model": "gpt-3.5-turbo",
+    "predictor_model": "gpt-3.5-turbo",
+    "interpretation": "Supernova rates and stellar populations.",
+    "correlation": 0.6483479688964817,
+    "f1_score": 0.75
+  },
+  {
+    "feature_index": 14,
+    "interpreter_model": "gpt-4o",
+    "predictor_model": "gpt-4o",
+    "interpretation": "Heliosphere and cosmic ray modulation",
+    "correlation": 0.8907674719473075,
+    "f1_score": 0.8888888888888888
+  },
+  {
+    "feature_index": 14,
+    "interpreter_model": "gpt-4o",
+    "predictor_model": "gpt-3.5-turbo",
+    "interpretation": "Heliosphere and cosmic ray modulation",
+    "correlation": 0.06696495301824251,
+    "f1_score": 0.4444444444444444
+  },
+  {
+    "feature_index": 14,
+    "interpreter_model": "gpt-3.5-turbo",
+    "predictor_model": "gpt-3.5-turbo",
+    "interpretation": "Heliosphere and its Structure.",
+    "correlation": 0.6173007879471573,
+    "f1_score": 0.8
+  },
+  {
+    "feature_index": 15,
+    "interpreter_model": "gpt-4o",
+    "predictor_model": "gpt-4o",
+    "interpretation": "Geant4 simulations in X-ray optics",
+    "correlation": -0.20851441405707474,
+    "f1_score": 0.0
+  },
+  {
+    "feature_index": 15,
+    "interpreter_model": "gpt-4o",
+    "predictor_model": "gpt-3.5-turbo",
+    "interpretation": "Geant4 simulations in X-ray optics",
+    "correlation": -0.277255326164482,
+    "f1_score": 0.4444444444444444
+  },
+  {
+    "feature_index": 15,
+    "interpreter_model": "gpt-3.5-turbo",
+    "predictor_model": "gpt-3.5-turbo",
+    "interpretation": "Geant4 simulations.",
+    "correlation": 0.6149400462680907,
+    "f1_score": 0.75
+  }
+]

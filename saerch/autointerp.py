@@ -122,7 +122,6 @@ Work through the steps thoroughly and analytically to predict whether the neuron
         
         zero_activation_indices = np.where(~feature_mask.any(axis=1))[0]
         zero_activation_samples = []
-        # np.random.shuffle(zero_activation_indices)
         
         active_embedding = np.array([self.embeddings[i] for i in top_m_indices]).mean(axis = 0)  
         cosine_similarities = np.dot(active_embedding, self.embeddings[zero_activation_indices].T)
@@ -148,7 +147,7 @@ Work through the steps thoroughly and analytically to predict whether the neuron
         )
         
         response = self.client.chat.completions.create(
-            model="gpt-3.5-turbo", #"gpt-4o",
+            model="gpt-4o", #"gpt-3.5-turbo",
             messages=[{"role": "user", "content": prompt}],
             temperature=0.0,
         )
@@ -161,7 +160,7 @@ Work through the steps thoroughly and analytically to predict whether the neuron
         for abstract in tqdm(abstracts):
             prompt = self.PREDICTION_BASE_PROMPT.format(description=interpretation, abstract=abstract)
             response = self.client.chat.completions.create(
-                model="gpt-3.5-turbo", #"gpt-4o"
+                model="gpt-4o", #"gpt-3.5-turbo",
                 messages=[{"role": "user", "content": prompt}],
                 temperature=0.0,
             )
