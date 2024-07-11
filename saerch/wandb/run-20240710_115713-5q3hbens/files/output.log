@@ -1,0 +1,8 @@
+Traceback (most recent call last):
+  File "/Users/christineye/retrieval/saerch/topk_sae.py", line 224, in <module>
+    main()
+  File "/Users/christineye/retrieval/saerch/topk_sae.py", line 209, in main
+    data = np.load("../data/vector_store/abstract_embeddings.npy")
+  File "/Users/christineye/anaconda3/envs/jsalt-retrieval/lib/python3.10/site-packages/numpy/lib/npyio.py", line 427, in load
+    fid = stack.enter_context(open(os_fspath(file), "rb"))
+FileNotFoundError: [Errno 2] No such file or directory: '../data/vector_store/abstract_embeddings.npy'
