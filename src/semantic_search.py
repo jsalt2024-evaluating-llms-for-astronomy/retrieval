@@ -61,7 +61,7 @@ class EmbeddingRetrievalSystem(RetrievalSystem):
         
         with open(self.metadata_path, 'w') as f:
             json.dump(self.metadata, f)
-            print("Wrote metadaa to {}".format(self.metadata_path))
+            print("Wrote metadata to {}".format(self.metadata_path))
 
     def load_data(self):
         print("Loading embeddings...")
