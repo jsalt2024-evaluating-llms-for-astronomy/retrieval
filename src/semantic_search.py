@@ -95,7 +95,7 @@ class EmbeddingRetrievalSystem(RetrievalSystem):
         
         self.date_filter = DateFilter(document_dates = self.document_dates)
         
-        self.keyword_filter = KeywordFilter(index_path = "../data/vector_store/keyword_index.json", metadata = self.metadata, remove_capitals = True)
+        self.keyword_filter = KeywordFilter(index_path = "../data/vector_store/keyword_index.json", metadata = self.metadata, remove_capitals = True, ne_only = True)
 
     def retrieve(self, query: str, arxiv_id: str = None, top_k: int = 10, return_scores = False, time_result = None) -> List[Tuple[str, str, float]]:
         query_date = self.parse_date(arxiv_id)
