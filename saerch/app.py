@@ -14,10 +14,13 @@ EMBEDDING_MODEL = "text-embedding-3-small"
 # Load pre-computed embeddings and texts
 embeddings_path = "../data/vector_store/abstract_embeddings.npy"
 texts_path = "../data/vector_store/abstract_texts.json"
+feature_analysis_path = "sae_data/feature_analysis_results.json"
 
 abstract_embeddings = np.load(embeddings_path)
 with open(texts_path, 'r') as f:
     abstract_texts = json.load(f)
+with open(feature_analysis_path, 'r') as f:
+    feature_analysis = json.load(f)
 
 def get_embedding(text: Optional[str], model: str = EMBEDDING_MODEL) -> Optional[np.ndarray]:
     try:
@@ -42,7 +45,7 @@ def process_query(query):
 
 def create_app():
     with gr.Blocks() as app:
-        gr.Markdown("# SAErch.ai")
+        gr.Markdown("# Semantic Search with Sparse Autoencoder")
 
         with gr.Row():
             with gr.Column(scale=3):
@@ -51,14 +54,23 @@ def create_app():
                 results_output = gr.JSON(label="Top 10 Document IDs")
 
             with gr.Column(scale=1):
-                gr.Markdown("## Adjust Dimensions")
-                dimension_search = gr.Textbox(label="Search dimensions")
-                sliders = [gr.Slider(minimum=-1, maximum=1, step=0.01, label=f"Dim {i}") for i in range(10)]  # Assuming 10 dimensions for now
+                with gr.Accordion("Adjust Dimensions", open=False):
+                    dimension_search = gr.Textbox(label="Search dimensions")
+                    sliders = []
+                    for feature in feature_analysis:
+                        slider = gr.Slider(
+                            minimum=-1, 
+                            maximum=1, 
+                            step=0.01, 
+                            label=feature['label'],
+                            info=f"Index: {feature['index']}"
+                        )
+                        sliders.append(slider)
 
         search_button.click(process_query, inputs=query_input, outputs=results_output)
 
         # Placeholder for slider functionality
-        for i, slider in enumerate(sliders):
+        for slider in sliders:
             slider.change(
                 lambda x: x,  # Placeholder function
                 inputs=slider,

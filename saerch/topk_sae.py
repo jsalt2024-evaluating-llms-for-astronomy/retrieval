@@ -81,8 +81,8 @@ class FastAutoencoder(nn.Module):
             "latents_jump": latents_jump,
         }
 
-    def decode_sparse(self, indices, values): # for inference
-        latents = torch.zeros(indices.shape[0], self.n_dirs, device=indices.device)
+    def decode_sparse(self, indices, values):
+        latents = torch.zeros(self.n_dirs, device=indices.device)
         latents.scatter_(-1, indices, values)
         return self.decoder(latents) + self.pre_bias
     

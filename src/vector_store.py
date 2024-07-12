@@ -8,6 +8,7 @@ from openai import OpenAI
 from datasets import load_dataset
 import yaml
 import time
+from dataclasses import dataclass, asdict, field
 
 class EmbeddingClient:
     def __init__(self, client: OpenAI, model: str = "text-embedding-3-small"):
@@ -27,7 +28,7 @@ class Document:
     id: str
     abstract: str
     conclusions: str
-    arxiv_id: str
+    arxiv_id: str = field(default="")
     title: str = None
     score: float = None
     n_citation: int = None

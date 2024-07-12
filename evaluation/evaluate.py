@@ -194,7 +194,7 @@ class RetrievalSystem(ABC):
     
 
 class Evaluator:
-    def __init__(self, retrieval_system: RetrievalSystem, system_name: str, wandb_log: bool = True):
+    def __init__(self, retrieval_system: RetrievalSystem, system_name: str, wandb_log: bool = False):
         self.retrieval_system = retrieval_system
         self.system_name = system_name
         self.wandb_log = wandb_log
@@ -207,7 +207,7 @@ class Evaluator:
 
         results = {}
         
-        single_results = {'success_rate': 0.876, 'reciprocal_rank': 0.7216095238095238, 'avg_precision': 0.7216095238095238} #self._evaluate_single_document(single_doc_file, 10) #{'success_rate': 0.84, 'reciprocal_rank': 0.7353, 'avg_precision': 0.7353} #
+        single_results = self._evaluate_single_document(single_doc_file, 10) #{'success_rate': 0.876, 'reciprocal_rank': 0.7216095238095238, 'avg_precision': 0.7216095238095238}
         results['single_doc'] = single_results
         print("Single Document Results:", single_results)
 
@@ -242,10 +242,14 @@ class Evaluator:
                     if question_type in data:
                         query = data[question_type]
                         retrieved_docs = self.retrieval_system.retrieve(query, arxiv_id, top_k=top_k)
+                        print(f"Retrieved docs: {retrieved_docs}")
+                        print(f"Arxiv id: {arxiv_id}")
                         
                         results['success_rate'].append(int(arxiv_id in retrieved_docs))
                         results['reciprocal_rank'].append(self._calculate_reciprocal_rank(retrieved_docs, arxiv_id))
                         results['avg_precision'].append(self._calculate_avg_precision(retrieved_docs, arxiv_id))
+
+                        print(f'Reciprocal rank: {results["reciprocal_rank"][-1]}') 
 
                         pbar.update(1)
         

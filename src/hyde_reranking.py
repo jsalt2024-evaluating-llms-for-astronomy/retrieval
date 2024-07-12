@@ -33,6 +33,9 @@ class HydeCohereRetrievalSystem(HydeRetrievalSystem):
         
         docs_for_rerank = [f"Abstract: {doc['abstract']}\nConclusions: {doc['conclusions']}" for doc in doc_texts]
         
+        if len(docs_for_rerank) == 0:
+            return []
+        
         reranked_results = self.cohere_client.rerank(
             query=query,
             documents=docs_for_rerank,
@@ -48,7 +51,6 @@ class HydeCohereRetrievalSystem(HydeRetrievalSystem):
             final_results.append([doc_id, "", score])
 
         if reweight:
-            print("Reweighting scores.")
             if time_result['has_temporal_aspect']:
                 final_results = self.date_filter.filter(final_results, time_score = time_result['expected_recency_weight'])
             
@@ -68,6 +70,11 @@ def main():
                          index_mapping_path="../data/vector_store/index_mapping.pkl", 
                          generate_n=1, embed_query=False, max_doclen=500, weight_citation=False, weight_keywords = True)
     evaluate_main(retrieval_system, "Rerank + Keywords")
+    # query = "What is the stellar mass of the Milky Way?"
+    # arxiv_id = "2301.00001"
+    # top_k = 10
+    # results = retrieval_system.retrieve(query, arxiv_id, top_k)
+    # print(f"Retrieved documents: {results}")
 
 if __name__ == "__main__":
     main()

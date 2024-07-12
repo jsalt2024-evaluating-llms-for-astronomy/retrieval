@@ -115,27 +115,33 @@ class EmbeddingRetrievalSystem(RetrievalSystem):
         similarities = np.dot(self.embeddings, query_embedding)
         
         # Filter and rank results
-        if self.weight_keywords: keyword_matches = self.keyword_filter.filter(query)
+        if self.weight_keywords: 
+            keyword_matches = self.keyword_filter.filter(query)
+
         
         results = []
         for doc_id, mappings in self.index_mapping.items():
-            if not self.weight_keywords or doc_id in keyword_matches:
-                abstract_sim = similarities[mappings['abstract']] if 'abstract' in mappings else -np.inf
-                conclusions_sim = similarities[mappings['conclusions']] if 'conclusions' in mappings else -np.inf
-                
-                if abstract_sim > conclusions_sim: 
-                    results.append([doc_id, "abstract", abstract_sim])
-                else: 
-                    results.append([doc_id, "conclusions", conclusions_sim])
+            #if not self.weight_keywords or doc_id in keyword_matches:
+            # print("Doc ID: ", doc_id)
+            # print("Mappings: ", mappings)
+            abstract_sim = similarities[mappings['abstract']] if 'abstract' in mappings else -np.inf
+            conclusions_sim = similarities[mappings['conclusions']] if 'conclusions' in mappings else -np.inf
+            
+            if abstract_sim > conclusions_sim: 
+                results.append([doc_id, "abstract", abstract_sim])
+            else: 
+                results.append([doc_id, "conclusions", conclusions_sim])
                 
         
         # Sort and weight and get top-k results
-        if time_result['has_temporal_aspect']:
-            filtered_results = self.date_filter.filter(results, boolean_date = time_result['expected_year_filter'], time_score = time_result['expected_recency_weight'], max_date = query_date)
-        else:
-            filtered_results = self.date_filter.filter(results, max_date = query_date)
+        # if time_result['has_temporal_aspect']:
+        #     filtered_results = self.date_filter.filter(results, boolean_date = time_result['expected_year_filter'], time_score = time_result['expected_recency_weight'], max_date = query_date)
+        # else:
+        #     filtered_results = self.date_filter.filter(results, max_date = query_date)
         
-        if self.weight_citation: self.citation_filter.filter(filtered_results)
+        # if self.weight_citation: self.citation_filter.filter(filtered_results)
+
+        filtered_results = results
 
         top_results = sorted(filtered_results, key=lambda x: x[2], reverse=True)[:top_k]
 
