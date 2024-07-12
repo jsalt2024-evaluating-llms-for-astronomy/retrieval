@@ -66,7 +66,7 @@ class HydeRetrievalSystem(EmbeddingRetrievalSystem):
             prompt += " and conclusion"
         prompt += """ of an expert-level research paper
                             that answers the question. Stick to a maximum length of {} tokens and return just the text of the abstract and conclusion.
-                            Do not include labels for any section. Use research-specific jargon.""".format(self.max_doclen),
+                            Do not include labels for any section. Use research-specific jargon.""".format(self.max_doclen)
                 
 
         message = self.generation_client.messages.create(
