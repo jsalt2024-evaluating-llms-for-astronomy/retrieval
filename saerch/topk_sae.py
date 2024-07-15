@@ -85,6 +85,16 @@ class FastAutoencoder(nn.Module):
         latents = torch.zeros(self.n_dirs, device=indices.device)
         latents.scatter_(-1, indices, values)
         return self.decoder(latents) + self.pre_bias
+
+    def decode_clamp(self, latents, clamp):
+        topk_values, topk_indices = torch.topk(latents, k = 64, dim=-1)
+        topk_values = F.relu(topk_values)
+        latents = torch.zeros_like(latents)
+        latents.scatter_(-1, topk_indices, topk_values)
+        # multiply latents by clamp, which is 1D but has has the same size as each latent vector
+        latents = latents * clamp
+        
+        return self.decoder(latents) + self.pre_bias
     
     def decode_at_k(self, latents, k):
         topk_values, topk_indices = torch.topk(latents, k=k, dim=-1)
