@@ -16,7 +16,7 @@ import tenacity
 CONFIG_PATH = Path("../config.yaml")
 DATA_DIR = Path("../data")
 SAE_DATA_DIR = Path("sae_data")
-OUTPUT_FILE = Path("feature_analysis_results_32.json")
+OUTPUT_FILE = Path("feature_analysis_results_16.json")
 SAVE_INTERVAL = 10
 
 @dataclass
@@ -102,8 +102,8 @@ Work through the steps thoroughly and analytically to predict whether the neuron
             return yaml.safe_load(f)
 
     def load_sae_data(self) -> Tuple[np.ndarray, np.ndarray]:
-        topk_indices = np.load(SAE_DATA_DIR / "topk_indices_32.npy")
-        topk_values = np.load(SAE_DATA_DIR / "topk_values_32.npy")
+        topk_indices = np.load(SAE_DATA_DIR / "topk_indices_16.npy")
+        topk_values = np.load(SAE_DATA_DIR / "topk_values_16.npy")
         return topk_indices, topk_values
 
     def load_abstract_texts(self) -> Dict:
@@ -236,7 +236,7 @@ def load_results(filename: Path) -> List[Dict]:
 def main():
     analyzer = BatchNeuronAnalyzer(CONFIG_PATH)
 
-    num_features = 6144
+    num_features = 3072
     num_samples = 10
 
     # Load existing results and determine the starting point

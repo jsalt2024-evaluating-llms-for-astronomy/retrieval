@@ -187,19 +187,21 @@ def main():
     ae.eval()
 
     # Load abstract embeddings
-    abstract_embeddings = np.load("../data/vector_store/abstract_embeddings.npy")
-    abstract_embeddings = abstract_embeddings.astype(np.float32)
+    # abstract_embeddings = np.load("../data/vector_store/abstract_embeddings.npy")
+    # abstract_embeddings = abstract_embeddings.astype(np.float32)
 
-    topk_indices = np.load("sae_data/topk_indices.npy")
-    topk_values = np.load("sae_data/topk_values.npy")
+    # topk_indices = np.load("sae_data/topk_indices.npy")
+    # topk_values = np.load("sae_data/topk_values.npy")
     
-    mat, norms = co_occurrence(topk_indices)
+    # mat, norms = co_occurrence(topk_indices)
     # mat_vert = mat/(norms + 1)[:, None]
     # mat_horz = mat/(norms + 1)[None, :]
     # mat_herm = (mat_vert + mat_horz)/2
 
-    np.save("unnorm_cooccurrence.npy", mat)
-    np.save('occurrence_norms.npy', norms)
+    # np.save("unnorm_cooccurrence.npy", mat)
+    # np.save('occurrence_norms.npy', norms)
+
+    # Sample trees
 
 if __name__ == "__main__":
     main()
