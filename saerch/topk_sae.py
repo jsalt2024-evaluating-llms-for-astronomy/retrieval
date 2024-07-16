@@ -85,6 +85,16 @@ class FastAutoencoder(nn.Module):
         latents = torch.zeros(self.n_dirs, device=indices.device)
         latents.scatter_(-1, indices, values)
         return self.decoder(latents) + self.pre_bias
+
+    def decode_clamp(self, latents, clamp):
+        topk_values, topk_indices = torch.topk(latents, k = 64, dim=-1)
+        topk_values = F.relu(topk_values)
+        latents = torch.zeros_like(latents)
+        latents.scatter_(-1, topk_indices, topk_values)
+        # multiply latents by clamp, which is 1D but has has the same size as each latent vector
+        latents = latents * clamp
+        
+        return self.decoder(latents) + self.pre_bias
     
     def decode_at_k(self, latents, k):
         topk_values, topk_indices = torch.topk(latents, k=k, dim=-1)
@@ -191,19 +201,19 @@ def train(ae, train_loader, optimizer, epochs, k, auxk_coef, multik_coef, clip_g
 
 def main():
     d_model = 1536
-    n_dirs = d_model * 6
-    k = 64
-    auxk = 128 #256
+    n_dirs = d_model * 2
+    k = 16
+    auxk = 24 #256
     multik = 256
     batch_size = 1024
     lr = 1e-4
-    epochs = 10
+    epochs = 50
     auxk_coef = 1/32
     clip_grad = 1.0
     multik_coef = 0 # turn it off
 
     # Create model name
-    model_name = f"{k}_{n_dirs}_{auxk}_{multik}_multik"
+    model_name = f"{k}_{n_dirs}_{auxk}_auxk"
 
     wandb.init(project="saerch", name=model_name, config={
         "n_dirs": n_dirs,

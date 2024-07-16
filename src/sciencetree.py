@@ -13,8 +13,9 @@ generation_client = anthropic.Anthropic(api_key = anthropic_key)
 modes = ['Science Goal', 'Science Objective', 'Physical Parameter', 'Astronomical Observable']
 
 class scienceTreeNode():
-    def __init__(self, text, retriever, n = 2, temperature = 0.5, background = None, mode = 0, generation_model = "claude-3-5-sonnet-20240620"):
+    def __init__(self, text, year, retriever, n = 2, temperature = 0.5, background = None, experiment = None, mode = 0, generation_model = "claude-3-5-sonnet-20240620"):
         self.text = text
+        self.year = year
         self.retriever = retriever
         self.generation_model = generation_model
         self.mode = mode
@@ -23,9 +24,12 @@ class scienceTreeNode():
         
         self.background = background
         if background is None:
-            self.background = """You are an expert astronomer trying to understand the science case for a future NASA observatory."""
+            self.background = """You are an expert astronomer trying to understand the science case for a future observatory."""
                             # The system will be a space-based X-ray telescope with high-resolution imaging and spectroscopy."""
-            self.background += """The system will be a space-based IR/O/UV telescope with high-contrast (10-10) imaging and spectroscopy. """
+                            # The system will be a space-based IR/O/UV telescope with high-contrast (10-10) imaging and spectroscopy. """
+            
+            if experiment is not None:
+                self.background += experiment
         
         self.children = []
         
@@ -33,7 +37,8 @@ class scienceTreeNode():
             self.children = self.generate(temperature, self.n)
     
     def generate(self, temperature = 0.5, n = 2):
-        docs = self.retriever.retrieve(self.text, "2401.0001", top_k = 10)
+        yearstr = str(self.year // 100) + "01.0001"
+        docs = self.retriever.retrieve(self.text, yearstr, top_k = 10)
         doc_texts = self.retriever.get_document_texts(docs)
         input_text = modes[self.mode] + ": " + self.text + "\n"
         for doc in doc_texts:
@@ -83,39 +88,39 @@ def generate_latex_tree(root, depth):
 def print_latex_tree(root):
     latex_tree = generate_latex_tree(root, depth = 1)
     latex_code = f"""
-        \\documentclass{{article}}
-        \\usepackage[paperheight=8.5in,paperwidth=13.0in]{{geometry}}
-        \\usepackage{{tikz}}
-        \\usetikzlibrary{{fit, positioning}}
-        \\usepackage{{forest}}
-        \\begin{{document}}
-        \\centering
-        \\begin{{forest}}
-        for tree={{
-            draw,
-            rectangle,
-            rounded corners,
-            align=center,
-            inner sep=2pt,
-            anchor=north,
-            fit tree
-        }}
-        {latex_tree}
-        \\end{{forest}}
-        \\end{{document}}
+\\documentclass{{article}}
+\\usepackage[paperheight=8.5in,paperwidth=13.0in]{{geometry}}
+\\usepackage{{tikz}}
+\\usetikzlibrary{{fit, positioning}}
+\\usepackage{{forest}}
+\\begin{{document}}
+\\centering
+\\begin{{forest}}
+for tree={{
+    draw,
+    rectangle,
+    rounded corners,
+    align=center,
+    inner sep=2pt,
+    anchor=north,
+    fit tree
+}}
+{latex_tree}
+\\end{{forest}}
+\\end{{document}}
         """
     print(latex_code)
 
-retrieval_mode = "semantic"
+# retrieval_mode = "semantic"
 
-if retrieval_mode == "semantic":
-    retriever = semantic_search.EmbeddingRetrievalSystem()
-elif retrieval_mode == "hyde":
-    retriever = hyde.HydeRetrievalSystem(config_path="../config.yaml")
-elif retrieval_mode == "hydecohere":
-    retriever = hyde_reranking.HydeCohereRetrievalSystem()
-else:
-    print("No retrieval system selected.")
+# if retrieval_mode == "semantic":
+#     retriever = semantic_search.EmbeddingRetrievalSystem()
+# elif retrieval_mode == "hyde":
+#     retriever = hyde.HydeRetrievalSystem(config_path="../config.yaml")
+# elif retrieval_mode == "hydecohere":
+#     retriever = hyde_reranking.HydeCohereRetrievalSystem()
+# else:
+#     print("No retrieval system selected.")
 
-tree = scienceTreeNode(text = "Map out nearby planetary systems and understand the diversity of the worlds they contain", retriever = retriever)
-print_latex_tree(tree)
+#tree = scienceTreeNode(text = "Map out nearby planetary systems and understand the diversity of the worlds they contain", retriever = retriever)
+#print_latex_tree(tree)
