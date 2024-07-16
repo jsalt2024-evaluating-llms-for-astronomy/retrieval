@@ -99,6 +99,7 @@ def get_all_scores(labels, batch_size=100):
 
 def clean(label):
     label = label.split(' in astronomy')[0].split(' in astrophysics')[0].split(' in physics')[0].split(' in astronomical')[0].split(' in astrophysical')[0]
+    label = label.split(' in Astronomy')[0].split(' in Astrophysics')[0].split(' in Physics')[0].split(' in Astronomical')[0].split(' in Astrophysical')[0]
     if len(re.findall(r"""["'][A-Za-z]["']""", label)) > 0:
         return ""
     if len(re.findall(r"[Kk]eyword", label)) > 0:

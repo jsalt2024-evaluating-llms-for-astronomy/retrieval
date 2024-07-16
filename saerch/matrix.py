@@ -25,8 +25,8 @@ def co_occurrence(topk_indices, k = 64, ndir=9216):
     return co_occurrence, norms
 
 def kill_symmetry(mat, node_vals):
-    for i in range(len(mat.shape[0])):
-        for j in range(len(mat.shape[1])):
+    for i in range(mat.shape[0]):
+        for j in range(mat.shape[1]):
             if node_vals[i] >= node_vals[j]:
                 mat[i, j] = 0
     return mat
@@ -41,15 +41,25 @@ def node_neighbors(G, node, direction):
     
     return nodes
 
-def make_graph(mat, clean_results, filename = 'graph.graphml'):
-    G = nx.from_numpy_array(mat, create_using=nx.Graph())
+def make_graph(mat, clean_results, directed = True, filename = 'feature_graph.graphml'):
+    node_density = [np.log10(feature['density']) for feature in clean_results.values()]
+    
+    if directed:
+        mat = kill_symmetry(mat, node_density)
+        G = nx.from_numpy_array(mat, create_using=nx.DiGraph())
+    else:
+        G = nx.from_numpy_array(mat, create_using=nx.Graph())
     #auto_labels_indexed = {label['index']: label for label in auto_results}
     
-    node_names = [feature['label'] for feature in clean_results]
+    
+    node_names = [feature for feature in clean_results]
     mapping_name = {i: node_names[i] for i in range(len(node_names))}
-    node_density = [np.log10(feature['density']) for feature in clean_results]
     mapping_density = {i: node_density[i] for i in range(len(node_density))}
-
+    
+    node_index = [feature['index'] for feature in clean_results.values()]
+    mapping_index = {i: node_index[i] for i in range(len(node_index))}
+    
+    nx.set_node_attributes(G, mapping_index, 'index')
     nx.set_node_attributes(G, mapping_density, 'density')
     G = nx.relabel_nodes(G, mapping_name, 'label')
 
@@ -61,9 +71,11 @@ def make_MST(mat, clean_results, filename = 'mst.graphml', algorithm = 'kruskal'
     G = nx.from_numpy_array(mat, create_using=nx.Graph())
 
     node_names = [feature for feature in clean_results]
-    mapping_name = {i: node_names[i] for i in range(len(node_names))}
     node_density = [np.log10(feature['density']) for feature in clean_results.values()]
+    node_index = [feature['index'] for feature in clean_results.values()]
     mapping_density = {i: node_density[i] for i in range(len(node_density))}
+    mapping_index = {i: node_index[i] for i in range(len(node_index))}
+    nx.set_node_attributes(G, mapping_index, 'index')
     nx.set_node_attributes(G, mapping_density, 'density')
     
     G_tree = nx.maximum_spanning_tree(G, algorithm = algorithm)
@@ -73,16 +85,16 @@ def make_MST(mat, clean_results, filename = 'mst.graphml', algorithm = 'kruskal'
         G_tree_directed.add_node(node[0], **node[1])
 
     for u, v, data in G_tree.edges(data=True):
-        if node_density[u] < node_density[v]:
+        if node_density[u] > node_density[v]:
             G_tree_directed.add_edge(u, v, **data)
         else:
             G_tree_directed.add_edge(v, u, **data)
 
+    mapping_name = {i: node_names[i] for i in range(len(node_names))}
     G_tree_directed = nx.relabel_nodes(G_tree_directed, mapping_name, 'label')
-
     nx.write_graphml(G_tree_directed, filename)
 
-    return G_tree, G_tree_directed
+    return G_tree_directed
 
 def get_norm_cooc(unnorm_mat, norm, clean_labels, direction = "vertical", threshold = 0.1, poisson = False, exp = True):
     if poisson:
@@ -101,6 +113,62 @@ def get_norm_cooc(unnorm_mat, norm, clean_labels, direction = "vertical", thresh
         clean_mat[clean_mat > 0] = np.exp(clean_mat[clean_mat > 0])
 
     return clean_mat
+
+def level_subtree(G_tree):
+    subtrees = []
+    for node in G_tree.nodes:
+        if G_tree.in_degree(node) == 0 and G_tree.out_degree(node) > 2:
+            subtree = nx.dfs_tree(G_tree, node)
+            subtrees.append((node, subtree, subtree.number_of_nodes()))
+    return subtrees
+
+def print_subtree(subtree, clean_labels, all_children = [], verbose = True):
+    if verbose: print('root: ', subtree[0])
+    for node in subtree[1].nodes:
+        if node != subtree[0]:
+            if verbose: print(node)
+            all_children.append((node, clean_labels[node]['index']))
+
+            if subtree[1].out_degree(node) > 0:
+               node, all_children = print_subtree((node, subtree[1].subgraph(node)), clean_labels, all_children, verbose)
+    
+    return subtree[0], all_children
+
+def recursive_subtree(G_tree):
+    subtrees = level_subtree(G_tree)
+    
+    for subtree in subtrees:
+        if subtree[1].number_of_nodes() > 2:
+            without_root = subtree[1].copy()
+            without_root.remove_node(subtree[0])
+            subtrees += recursive_subtree(without_root)
+
+    return subtrees  
+
+def delete_top(mat, norms, subtrees, clean_labels):
+    new_clean_labels = clean_labels.copy()
+    for subtree in subtrees:
+        try:
+            new_clean_labels.pop(subtree[0])
+        except:
+            pass
+
+    new_cooc = get_norm_cooc(mat, norms, new_clean_labels, poisson = False)
+    
+    G_tree_directed = make_MST(new_cooc, new_clean_labels)
+    return new_clean_labels, G_tree_directed
+
+
+def subtree_iterate(mat, norms, G_tree, clean_labels, n = 3):
+    subtrees = recursive_subtree(G_tree)
+    all_subtrees = [subtrees]
+    for i in range(n):
+        new_clean_labels, new_G_tree = delete_top(mat, norms, subtrees, clean_labels)
+        subtrees = recursive_subtree(new_G_tree)
+        all_subtrees.append(subtrees)
+        clean_labels = new_clean_labels
+        
+    return all_subtrees
 
 
 def main():

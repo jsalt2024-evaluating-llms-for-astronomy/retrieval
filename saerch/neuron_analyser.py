@@ -16,7 +16,7 @@ import tenacity
 CONFIG_PATH = Path("../config.yaml")
 DATA_DIR = Path("../data")
 SAE_DATA_DIR = Path("sae_data")
-OUTPUT_FILE = Path("feature_analysis_results.json")
+OUTPUT_FILE = Path("feature_analysis_results_32.json")
 SAVE_INTERVAL = 10
 
 @dataclass
@@ -44,7 +44,7 @@ You will also be given several examples of paper abstracts that doesn't activate
 OUTPUT_DESCRIPTION:
 Given the inputs provided, complete the following tasks. Be concise, and information dense. Don't waste a single word of reasoning.
 
-Step 1: Based on the MAX_ACTIVATING_EXAMPLES provided, write down potential topics, concepts, and features that they share in common. These will need to be specific - remember, all of the text comes from astronomy, so these need to be highly specific astronomy concepts. You may need to look at different levels of granularity (i.e. subsets of a more general topic). List as many as you can think of. However, the only requirement is that all abstracts contain this feature.
+Step 1: Based on the MAX_ACTIVATING_EXAMPLES provided, write down potential topics, concepts, and features that all examples share in common. These can be abstract but will need to be specific - remember, all of the text comes from astronomy, so these need to be highly specific astronomy concepts. You may need to look at different levels of granularity (i.e. subsets of a more general topic). List as many as you can think of. However, the only requirement is that all abstracts contain this feature.
 Step 2: Based on the zero activating examples, rule out any of the topics/concepts/features listed above that are in the zero-activating examples. Systematically go through your list above.
 Step 3: Based on the above two steps, perform a thorough analysis of which feature, concept or topic, at what level of granularity, is likely to activate this neuron. Use Occam's razor, the simplest explanation possible, as long as it fits the provided evidence. Opt for general concepts, features and topics. Be highly rational and analytical here.
 Step 4: Based on step 4, summarise this concept in 1-8 words, in the form "FINAL: <explanation>". Do NOT return anything after this. 
@@ -102,8 +102,8 @@ Work through the steps thoroughly and analytically to predict whether the neuron
             return yaml.safe_load(f)
 
     def load_sae_data(self) -> Tuple[np.ndarray, np.ndarray]:
-        topk_indices = np.load(SAE_DATA_DIR / "topk_indices.npy")
-        topk_values = np.load(SAE_DATA_DIR / "topk_values.npy")
+        topk_indices = np.load(SAE_DATA_DIR / "topk_indices_32.npy")
+        topk_values = np.load(SAE_DATA_DIR / "topk_values_32.npy")
         return topk_indices, topk_values
 
     def load_abstract_texts(self) -> Dict:
@@ -236,7 +236,7 @@ def load_results(filename: Path) -> List[Dict]:
 def main():
     analyzer = BatchNeuronAnalyzer(CONFIG_PATH)
 
-    num_features = 9216
+    num_features = 6144
     num_samples = 10
 
     # Load existing results and determine the starting point
