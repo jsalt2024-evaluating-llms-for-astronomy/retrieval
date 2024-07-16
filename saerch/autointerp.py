@@ -101,7 +101,10 @@ Work through the steps thoroughly and analytically to predict whether the neuron
         with open(DATA_DIR / "vector_store/embeddings_matrix.npy", 'rb') as f:
             return np.load(f)
 
-    def get_feature_activations(self, m: int, min_length: int = 100) -> Tuple[List[Tuple], List[Tuple]]:
+    def get_feature_activations(self, m: int, min_length: int = 100, feature_index = None) -> Tuple[List[Tuple], List[Tuple]]:
+        if feature_index is not None:
+            self.feature_index = feature_index
+        
         doc_ids = self.abstract_texts['doc_ids']
         abstracts = self.abstract_texts['abstracts']
         
@@ -120,11 +123,20 @@ Work through the steps thoroughly and analytically to predict whether the neuron
             if len(top_m_abstracts) == m:
                 break
         
+        if len(top_m_indices) == 0:
+            logging.warning(f"No samples found for feature {self.feature_index}")
+            return [], []
+
         zero_activation_indices = np.where(~feature_mask.any(axis=1))[0]
         zero_activation_samples = []
-        
-        active_embedding = np.array([self.embeddings[i] for i in top_m_indices]).mean(axis = 0)  
+        #print(self.embeddings.shape)
+        #print(len(zero_activation_indices))
+        active_embedding = np.array([self.embeddings[i] for i in top_m_indices])
+        #print(active_embedding.shape)
+        #print(top_m_indices)
+        active_embedding = active_embedding.mean(axis = 0) 
         cosine_similarities = np.dot(active_embedding, self.embeddings[zero_activation_indices].T)
+        #print(cosine_similarities.shape)
         cosine_pairs = [(index, cosine_similarities[i]) for i, index in enumerate(zero_activation_indices)]
         cosine_pairs.sort(key=lambda x: -x[1])
         

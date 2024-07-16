@@ -1,0 +1,6 @@
+started the run
+calculating the distance matrices for estimator: EMD, scale: 100
+started the run
+calculating the distance matrices for estimator: EMD, scale: 100
+started the run
+calculating the distance matrices for estimator: EMD, scale: 100
