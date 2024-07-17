@@ -72,7 +72,7 @@ class scienceTreeNode():
         for pair in message.split('\n'):
             if '{' and '}' in pair:
                 child = pair.split('{')[1].replace('}', '')
-                children.append(scienceTreeNode(text = child, background = self.background, n = self.n, retriever = self.retriever, generation_model = self.generation_model, mode = self.mode + 1))
+                children.append(scienceTreeNode(text = child, year = self.year, background = self.background, n = self.n, retriever = self.retriever, generation_model = self.generation_model, mode = self.mode + 1))
         
         return children
     
