@@ -110,6 +110,7 @@ class multi_model():
                 
             targets = next_targets
         
+        # 16 --> 64 directly
         if len(nns_list) == len(self.model_list):
             print('self consistency ', nns_list[-1][ind], self.model_list[-1].get_feature_names(nns_list[-1][ind]))
             print(get_cosine_sim(self.model_list[0].feature_vectors, self.model_list[-1].feature_vectors, ind, nns_list[-1][ind]))
@@ -207,7 +208,7 @@ class model():
         neuron.topk_indices = self.topk_indices
         neuron.topk_values = self.topk_values
         
-        return neuron.get_feature_activations(self, n, feature_index)
+        return neuron.get_feature_activations(m = n, feature_index = feature_index)
 
     def get_families(self, n = 3): # iterative family finding in the MST
         G_tree = matrix.make_MST(self.clean_cooc, self.clean_labels)
