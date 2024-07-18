@@ -201,9 +201,9 @@ def train(ae, train_loader, optimizer, epochs, k, auxk_coef, multik_coef, clip_g
 
 def main():
     d_model = 1536
-    n_dirs = d_model * 2
-    k = 16
-    auxk = 24 #256
+    n_dirs = d_model * 4
+    k = 64
+    auxk = 128 #256
     multik = 256
     batch_size = 1024
     lr = 1e-4

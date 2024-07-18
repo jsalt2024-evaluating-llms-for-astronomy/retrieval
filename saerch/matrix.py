@@ -12,15 +12,33 @@ import networkx as nx
 torch.set_grad_enabled(False)
 device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
 
-def co_occurrence(topk_indices, k = 64, ndir=9216):
-    co_occurrence = np.zeros((ndir, ndir))
-    norms = np.zeros(ndir)
-    for i in tqdm(range(topk_indices.shape[0]), desc="Calculating co-occurrence"):
-        for j in range(k):
-            norms[topk_indices[i, j]] += 1
-            for l in range(j + 1, k):
-                co_occurrence[topk_indices[i, j], topk_indices[i, l]] += 1
-                co_occurrence[topk_indices[i, l], topk_indices[i, j]] += 1
+# def co_occurrence(topk_indices, k = 64, ndir=9216):
+#     co_occurrence = np.zeros((ndir, ndir))
+#     norms = np.zeros(ndir)
+#     for i in tqdm(range(topk_indices.shape[0]), desc="Calculating co-occurrence"):
+#         for j in range(k):
+#             norms[topk_indices[i, j]] += 1
+#             for l in range(j + 1, k):
+#                 co_occurrence[topk_indices[i, j], topk_indices[i, l]] += 1
+#                 co_occurrence[topk_indices[i, l], topk_indices[i, j]] += 1
+
+#     return co_occurrence, norms
+
+def activations(topk_indices, topk_values, ndir = 9216, nex = 271494, mode = 'onehot'):
+    print(nex, ndir)
+    activations = torch.zeros((int(nex), int(ndir)))
+    if mode == 'value':
+        activations = activations.scatter_(1, torch.tensor(topk_indices), torch.tensor(topk_values))
+        activations /= activations.norm(dim = 0)
+    elif mode == 'onehot':
+        activations = activations.scatter_(1, torch.tensor(topk_indices), 1)
+    
+    return activations
+
+def co_occurrence(activations):
+    co_occurrence = np.dot(activations.T, activations)
+    norms = co_occurrence.diagonal()
+    np.fill_diagonal(co_occurrence, 0)
 
     return co_occurrence, norms
 
@@ -41,7 +59,7 @@ def node_neighbors(G, node, direction):
     
     return nodes
 
-def make_graph(mat, clean_results, directed = True, filename = 'feature_graph.graphml'):
+def make_graph(mat, clean_results, directed = True, set_names = True, filename = 'feature_graph.graphml'):
     node_density = [np.log10(feature['density']) for feature in clean_results.values()]
     
     if directed:
@@ -61,13 +79,13 @@ def make_graph(mat, clean_results, directed = True, filename = 'feature_graph.gr
     
     nx.set_node_attributes(G, mapping_index, 'index')
     nx.set_node_attributes(G, mapping_density, 'density')
-    G = nx.relabel_nodes(G, mapping_name, 'label')
+    if set_names: G = nx.relabel_nodes(G, mapping_name, 'label')
 
     nx.write_graphml(G, filename)
 
     return G
 
-def make_MST(mat, clean_results, filename = 'mst.graphml', algorithm = 'kruskal', add_noise = False):
+def make_MST(mat, clean_results, filename = None, algorithm = 'kruskal', add_noise = False):
     G = nx.from_numpy_array(mat, create_using=nx.Graph())
 
     node_names = [feature for feature in clean_results]
@@ -92,7 +110,9 @@ def make_MST(mat, clean_results, filename = 'mst.graphml', algorithm = 'kruskal'
 
     mapping_name = {i: node_names[i] for i in range(len(node_names))}
     G_tree_directed = nx.relabel_nodes(G_tree_directed, mapping_name, 'label')
-    nx.write_graphml(G_tree_directed, filename)
+    
+    if filename is not None:
+        nx.write_graphml(G_tree_directed, filename)
 
     return G_tree_directed
 
@@ -162,6 +182,7 @@ def delete_top(mat, norms, subtrees, clean_labels):
 def subtree_iterate(mat, norms, G_tree, clean_labels, n = 3):
     subtrees = recursive_subtree(G_tree)
     all_subtrees = [subtrees]
+    
     for i in range(n):
         new_clean_labels, new_G_tree = delete_top(mat, norms, subtrees, clean_labels)
         subtrees = recursive_subtree(new_G_tree)

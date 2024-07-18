@@ -112,7 +112,7 @@ def clean(label):
         return ""
     return label
 
-def get_clean_labels(auto_results):
+def get_clean_labels(auto_results, thresh = 0.6):
     clean_labels = {}
     for result in auto_results:
         label = result['label']
@@ -120,7 +120,7 @@ def get_clean_labels(auto_results):
         
         if clean_label != "":
             result['clean_label'] = clean_label
-            if result['f1'] >= 0.6 and result['pearson_correlation'] >= 0.6:
+            if result['f1'] >= thresh and result['pearson_correlation'] >= thresh:
                 if clean_label not in clean_labels.keys():
                     clean_labels[clean_label] = {'index': result['index'], 'density': result['density'], 'f1': result['f1'], 'pearson_correlation': result['pearson_correlation'],}
                 else:
