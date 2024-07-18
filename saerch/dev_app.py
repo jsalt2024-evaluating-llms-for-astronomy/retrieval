@@ -17,7 +17,7 @@ EMBEDDING_MODEL = "text-embedding-3-small"
 # Load pre-computed embeddings and texts
 embeddings_path = "../data/vector_store/abstract_embeddings.npy"
 texts_path = "../data/vector_store/abstract_texts.json"
-feature_analysis_path = "sae_data/feature_analysis_results.json"
+feature_analysis_path = "sae_data/feature_analysis_results_64.json"
 metadata_path = 'sae_data/astro_paper_metadata.csv'
 
 abstract_embeddings = np.load(embeddings_path)

@@ -15,5 +15,6 @@ __pycache__
 # Ignore src/hf_repo
 /src/hf_repo
 /data/vector_store_old
+/data/vector_store_csLG
 # Any wandb folders
 wandb

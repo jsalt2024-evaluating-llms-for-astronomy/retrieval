@@ -201,10 +201,10 @@ def train(ae, train_loader, optimizer, epochs, k, auxk_coef, multik_coef, clip_g
 
 def main():
     d_model = 1536
-    n_dirs = d_model * 2
-    k = 16
-    auxk = 24 #256
-    multik = 256
+    n_dirs = 9216
+    k = 64
+    auxk = k*2 #256
+    multik = 128
     batch_size = 1024
     lr = 1e-4
     epochs = 50
@@ -212,8 +212,10 @@ def main():
     clip_grad = 1.0
     multik_coef = 0 # turn it off
 
+    csLG = True
+
     # Create model name
-    model_name = f"{k}_{n_dirs}_{auxk}_auxk"
+    model_name = f"{k}_{n_dirs}_{auxk}_auxk" if not csLG else f"{k}_{n_dirs}_{auxk}_auxk_csLG"
 
     wandb.init(project="saerch", name=model_name, config={
         "n_dirs": n_dirs,
@@ -229,8 +231,15 @@ def main():
         "device": device.type
     })
 
-    data = np.load("../data/vector_store/abstract_embeddings.npy")
+    if not csLG:
+        data = np.load("../data/vector_store/abstract_embeddings.npy")
+        print("Doing astro.ph...")
+    else:
+        data = np.load("../data/vector_store_csLG/abstract_embeddings.npy")
+        print("Doing csLG...")
     data_tensor = torch.from_numpy(data).float()
+    # Print shape
+    print(f"Data shape: {data_tensor.shape}")
     dataset = TensorDataset(data_tensor)
     train_loader = DataLoader(dataset, batch_size=batch_size, shuffle=True)
 

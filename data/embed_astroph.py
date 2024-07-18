@@ -17,7 +17,7 @@ config = yaml.safe_load(open('../config.yaml', 'r'))
 client = OpenAI(api_key=config['openai_api_key'])
 
 # Configuration
-DATASET_NAME = "charlieoneill/jsalt-astroph-dataset"
+DATASET_NAME = "charlieoneill/cs.LG" #"charlieoneill/jsalt-astroph-dataset"
 BATCH_SIZE = 100
 SAVE_INTERVAL = 1000
 OUTPUT_DIR = "embeddings"
@@ -60,13 +60,23 @@ def get_embedding(text: Optional[str], model: str = EMBEDDING_MODEL) -> Optional
             print(f"Error getting embedding (attempt {attempt + 1}/{MAX_RETRIES}): {e}. Retrying in {sleep_time:.2f} seconds.")
             time.sleep(sleep_time)
 
+# def process_batch(batch: Dict) -> Dict[str, Dict[str, Optional[np.ndarray]]]:
+#     embeddings = {}
+#     print(f"batch['filename']: {batch['filename']}")
+#     for i in range(len(batch['filename'])):
+#         filename = f"{batch['subfolder'][i]}/{batch['filename'][i]}"
+#         embeddings[filename] = {
+#             'abstract': get_embedding(batch['abstract'][i]),
+#         }
+#     return embeddings
+
 def process_batch(batch: Dict) -> Dict[str, Dict[str, Optional[np.ndarray]]]:
     embeddings = {}
-    for i in range(len(batch['filename'])):
-        filename = f"{batch['subfolder'][i]}/{batch['filename'][i]}"
+    # print(f"batch['id']: {batch['id']}")
+    for i in range(len(batch['id'])):
+        filename = f"{batch['id'][i]}"
         embeddings[filename] = {
             'abstract': get_embedding(batch['abstract'][i]),
-            'conclusions': get_embedding(batch['conclusions'][i])
         }
     return embeddings
 
@@ -79,7 +89,7 @@ def load_embeddings(filename: str) -> Dict:
         return pickle.load(f)
 
 def find_last_checkpoint() -> Tuple[Dict, int]:
-    checkpoint_files = glob.glob(f"{OUTPUT_DIR}/embeddings_*.pkl")
+    checkpoint_files = glob.glob(f"{OUTPUT_DIR}/embeddings_csLG_*.pkl")
     if not checkpoint_files:
         return {}, 0
     
@@ -89,9 +99,9 @@ def find_last_checkpoint() -> Tuple[Dict, int]:
     return embeddings, last_processed
 
 def cleanup_old_checkpoints(keep_file: str):
-    checkpoint_files = glob.glob(f"{OUTPUT_DIR}/embeddings_*.pkl")
+    checkpoint_files = glob.glob(f"{OUTPUT_DIR}/embeddings_csLG_*.pkl")
     for file in checkpoint_files:
-        if file != keep_file and file != f"{OUTPUT_DIR}/embeddings_final.pkl":
+        if file != keep_file and file != f"{OUTPUT_DIR}/embeddings_final_csLG.pkl":
             os.remove(file)
             print(f"Deleted old checkpoint: {file}")
 
@@ -118,7 +128,7 @@ def main():
                 processed_count += len(batch_embeddings)
 
                 if processed_count % SAVE_INTERVAL == 0:
-                    checkpoint_file = f"{OUTPUT_DIR}/embeddings_{processed_count}.pkl"
+                    checkpoint_file = f"{OUTPUT_DIR}/embeddings_csLG_{processed_count}.pkl"
                     save_embeddings(all_embeddings, checkpoint_file)
                     print(f"Saved embeddings for {processed_count} documents")
                     cleanup_old_checkpoints(checkpoint_file)
@@ -126,7 +136,7 @@ def main():
             except Exception as e:
                 print(f"Batch starting at index {batch_index} generated an exception: {e}")
 
-    final_file = f"{OUTPUT_DIR}/embeddings_final.pkl"
+    final_file = f"{OUTPUT_DIR}/embeddings_final_csLG.pkl"
     save_embeddings(all_embeddings, final_file)
     cleanup_old_checkpoints(final_file)
     print(f"Finished processing. Total documents embedded: {processed_count}")
