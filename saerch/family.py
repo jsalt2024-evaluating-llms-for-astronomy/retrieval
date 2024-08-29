@@ -18,7 +18,7 @@ BATCH_SIZE = 1024
 CONFIG = '../config.yaml'
 neuron = NeuronAnalyzer(CONFIG, 1, 10) # default settings
 
-def nn_hierarchy(ae_large, ae_small, save_path = None): # nearest neighbors hierarchy
+def nn_hierarchy(ae_large, large_results_by_id, ae_small, small_results_by_id, save_path = None): # nearest neighbors hierarchy
     feats = np.arange(ae_small.n_dirs)
     nns = {int(feat): [] for feat in feats}
 
@@ -30,7 +30,7 @@ def nn_hierarchy(ae_large, ae_small, save_path = None): # nearest neighbors hier
 
     for i, match in enumerate(matches):
         if match in nns.keys():
-            nns[int(match)].append(i)
+            nns[(int(match), small_results_by_id[int(match)]['label'])].append((i, large_results_by_id[i]['label']))
     
     if save_path is not None:
         json.dump(nns, open(save_path, 'w'))

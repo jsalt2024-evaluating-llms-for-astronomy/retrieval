@@ -41,7 +41,7 @@ class EmbeddingRetrievalSystem(RetrievalSystem):
         self.document_dates = []
         
         self.load_data()
-        self.init_filters()
+        # self.init_filters()
 
         config = yaml.safe_load(open('../config.yaml', 'r'))
         self.client = EmbeddingClient(OpenAI(api_key=config['openai_api_key']))
@@ -78,14 +78,14 @@ class EmbeddingRetrievalSystem(RetrievalSystem):
         print("Processing document dates...")
         self.document_dates = {doc.id: self.parse_date(doc.arxiv_id) for doc in self.documents}
         
-        if os.path.exists(self.metadata_path):
-            print("Loading metadata...")
-            with open(self.metadata_path, 'r') as f:
-                self.metadata = json.load(f)
-            print("Loaded metadata.")
-        else:
-            print("Could not find path; generating metadata.")
-            self.generate_metadata()
+        # if os.path.exists(self.metadata_path):
+        #     print("Loading metadata...")
+        #     with open(self.metadata_path, 'r') as f:
+        #         self.metadata = json.load(f)
+        #     print("Loaded metadata.")
+        # else:
+        #     print("Could not find path; generating metadata.")
+        #     self.generate_metadata()
         
         print("Data loaded successfully.")
     
